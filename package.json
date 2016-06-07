@@ -1,0 +1,71 @@
+{
+ "name": "uxcore",
+ "version": "0.2.0",
+ "description": "React Components livnig for enterprise-class pc backend application",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/uxcore/uxcore.git"
+ },
+ "keywords": [
+  "react-component",
+  "uxcore"
+ ],
+ "author": "eternalsky",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/uxcore/uxcore/issues"
+ },
+ "homepage": "https://github.com/uxcore/uxcore#readme",
+ "devDependencies": {
+  "colors": "~1.1.2",
+  "cross-spawn": "~4.0.0",
+  "git-rev": "~0.2.1",
+  "gulp-clean-css": "~2.0.9",
+  "gulp-rename": "~1.2.2",
+  "gulp-uglify": "~1.5.3",
+  "html-wiring": "~1.2.0",
+  "inquirer": "~1.0.3",
+  "promise": "~7.1.1",
+  "uxcore-alert": "0.2.2",
+  "uxcore-badge": "0.1.1",
+  "uxcore-button": "0.4.5",
+  "uxcore-calendar": "0.4.1",
+  "uxcore-carousel": "0.1.2",
+  "uxcore-checkbox-group": "1.1.1",
+  "uxcore-collapse": "1.1.1",
+  "uxcore-crumb": "0.2.1",
+  "uxcore-dialog": "0.3.8",
+  "uxcore-dropdown": "0.2.6",
+  "uxcore-form": "1.4.4",
+  "uxcore-formatter": "0.1.2",
+  "uxcore-grid": "1.2.2",
+  "uxcore-kuma": "2.1.12",
+  "uxcore-layout": "1.0.5",
+  "uxcore-load-more": "0.1.2",
+  "uxcore-mention": "0.1.10",
+  "uxcore-menu": "1.1.1",
+  "uxcore-message": "0.2.4",
+  "uxcore-pagination": "0.2.2",
+  "uxcore-pickable": "1.1.0",
+  "uxcore-popover": "0.3.4",
+  "uxcore-progress": "1.1.1",
+  "uxcore-radiogroup": "1.2.0",
+  "uxcore-rate": "0.1.2",
+  "uxcore-select2": "0.2.7",
+  "uxcore-steps": "1.1.3",
+  "uxcore-switch": "~0.1.2",
+  "uxcore-table": "1.5.1",
+  "uxcore-tabs": "0.4.4",
+  "uxcore-tooltip": "0.3.4",
+  "uxcore-totop": "0.1.2",
+  "uxcore-transfer": "0.2.8",
+  "uxcore-tree": "0.1.11",
+  "uxcore-uploader": "1.4.1",
+  "uxcore-validator": "0.2.0",
+  "webpack": "~1.13.1"
+ }
+}
