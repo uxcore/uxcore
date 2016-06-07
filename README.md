@@ -13,10 +13,63 @@ UXCore is a set of [React](http://facebook.github.io/react/) Components that is 
 
 Check out our [documentation site](http://uxco.re/) for live examples. 
 
-[Learn how to use Uxcore in your project](http://uxco.re/start/base/)
+[Learn how to use Uxcore in your project.](http://uxco.re/start/base/)
 
-Before posting an issue, please read the [CHANGELOG](https://github.com/uxcore/uxcore/releases)
+Before posting an issue, please read the [CHANGELOG](https://github.com/uxcore/uxcore/releases) and the README and the documentation to check the recently updated.
 
+
+## Installation
+
+The fastest way to get started is to serve JavaScript from the CDN
+
+```html
+<link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.0.7/orange.min.css">
+<script src="//g.alicdn.com/uxcore/uxcore/0.1.5/uxcore.min.js">
+```
+
+if you'd like to use [npm](npmjs.com)
+
+```sh
+npm install uxcore
+```
+
+## Usage
+
+### For cdn
+
+```jsx
+const {Button} = Uxcore;
+ReactDOM.render(<Button />, mountNode);
+```
+
+### For npm
+```jsx
+import {Button} from 'uxcore';
+ReactDOM.render(<Button />, mountNode);
+```
+
+And import style mannally
+
+```jsx
+import 'uxcore/assets/iconfont.css';
+import 'uxcore/assets/orange.css';
+```
+
+## Browser Support
+
+Mainstream browsers and Internet Explorer 8+. For IE 8, see [react-ie8](https://github.com/xcatliu/react-ie8) to get support.  
+
+## Customization
+
+We have implemented two default themes(orange/blue) to render UXCore Components. Theme customization is simple using our online [design tools](http://uxco.re/theme/builder).
+
+## Contribute
+
+Yes please! See the [CONTRIBUTING](https://github.com/uxcore/uxcore/blob/master/CONTRIBUTING.md) for details.
+
+## License
+
+This project is licensed under the terms of the [MIT license](This project is licensed under the terms of the MIT license)
 
 
 
