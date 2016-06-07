@@ -25,4 +25,5 @@ spm_modules
 .cache
 dist
 build
+lib
 assets/**/*.css
