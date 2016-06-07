@@ -13,7 +13,7 @@ Bug reports and feature requests are appreciated. However, for how-to questions 
 
 ### Submitting a Pull Request
 
-As you see, UXCore Component is maintained in each project. Pull Request should be submitted in component project. Enhancements mentioned below are welcome to help UXCore moving faster.
+As you see, UXCore Component is maintained in each project. Pull Request should be submitted in the corresponding component project. Enhancements mentioned below are welcome to help UXCore moving faster.
 
 * DOCS: typo or missing API/Props, readability enhanment
 * BUG Fix: list in issues.

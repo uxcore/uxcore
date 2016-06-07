@@ -15,8 +15,20 @@ module.exports = {
     },
     module: {},
     externals: {
-        react: 'var React', // 相当于把全局的React作为模块的返回 module.exports = React;
-        'react-dom': 'var ReactDOM'
+        react: {
+            root: 'React',
+            var: 'React',
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react'
+        }, 
+        'react-dom': {
+            root: 'ReactDOM',
+            var: 'ReactDOM',
+            commonjs: 'react-dom',
+            commonjs2: 'react-dom',
+            amd: 'react-dom'
+        }
     },
     plugins: [
         new webpack.optimize.DedupePlugin()

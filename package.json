@@ -1,8 +1,8 @@
 {
  "name": "uxcore",
- "version": "0.2.0",
- "description": "React Components livnig for enterprise-class pc backend application",
- "main": "index.js",
+ "version": "0.2.1",
+ "description": "React Components living for enterprise-class pc backend application",
+ "main": "lib/uxcore",
  "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1"
  },
@@ -11,7 +11,13 @@
   "url": "git+https://github.com/uxcore/uxcore.git"
  },
  "keywords": [
+  "react",
   "react-component",
+  "component",
+  "components",
+  "ui",
+  "framework",
+  "frontend",
   "uxcore"
  ],
  "author": "eternalsky",
