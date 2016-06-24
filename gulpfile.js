@@ -211,7 +211,7 @@ gulp.task('theme_clean', function(done) {
     });
 })
 
-gulp.task('pub', ['js_uglify', 'copy_css', 'iconfont'], function() {
+gulp.task('pub', ['js_uglify', 'theme_transport'], function() {
     getQuestions().then(function(questions) {
         inquirer.prompt(questions).then(function(answers) {
             pkg.version = answers.version;
@@ -226,4 +226,4 @@ gulp.task('pub', ['js_uglify', 'copy_css', 'iconfont'], function() {
     }).catch(function(err) {console.log(err);});
 });
 
-gulp.task('default', ['js_uglify', 'copy_css', 'iconfont']);
+gulp.task('default', ['js_uglify', 'theme_transport']);
