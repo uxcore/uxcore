@@ -1,6 +1,12 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var less = require('gulp-less');
+var clean = require('gulp-clean');
+var cleancss = require('gulp-cleancss');
+var concat = require('gulp-concat');
+var LessPluginAutoPrefix = require('less-plugin-autoprefix');
+var LessPluginInlineUrls = require('less-plugin-inline-urls');
 var cleancss = require('gulp-clean-css');
 var webpack = require('webpack');
 var Promise = require('promise');
@@ -9,6 +15,19 @@ var file = require('html-wiring');
 var inquirer = require('inquirer');
 var spawn = require('cross-spawn');
 var colors = require('colors/safe');
+var rimraf = require('rimraf');
+
+var autoprefix = new LessPluginAutoPrefix({
+    browsers: ['last 2 versions', 'not ie < 8']
+});
+
+var cleancssOption = {
+    advanced: false,
+    aggressiveMerging: false,
+    sourceMap: true,
+    compatibility: 'ie8',
+    debug: true
+};
 
 colors.setTheme({
     info: ['bold', 'green']
@@ -47,58 +66,58 @@ var versionCompare = function(a, b) {
 }
 
 var getQuestions = function() {
-        var me = this;
-        return new Promise(function(resolve, reject) {
-            git.branch(function(branch) {
-                var defaultBranch = branch;
-                var defaultNpm = 'npm';
-                var questions = [
-                    {
-                        type: 'input',
-                        name: 'version',
-                        message: 'please enter the package version to publish (should be xx.xx.xx)',
-                        default: pkg.version,
-                        validate: function(input) {
-                            if (/\d+\.\d+\.\d+/.test(input)) {
-                                if (versionCompare(input, pkg.version)) {
-                                    return true;
-                                }
-                                else {
-                                    return "the version you entered should be larger than now"
-                                }
-                            }
-                            else {
-                                return "the version you entered is not valid"
-                            }
-                        }
-                    },
-                    {
-                        type: 'input',
-                        name: 'branch',
-                        message: 'which branch you want to push',
-                        default: defaultBranch
-                    },
-                    {
-                        type: 'input',
-                        name: 'npm',
-                        message: 'which npm you want to publish',
-                        default: defaultNpm,
-                        validate: function(input) {
-                            if (/npm/.test(input)) {
+    var me = this;
+    return new Promise(function(resolve, reject) {
+        git.branch(function(branch) {
+            var defaultBranch = branch;
+            var defaultNpm = 'npm';
+            var questions = [
+                {
+                    type: 'input',
+                    name: 'version',
+                    message: 'please enter the package version to publish (should be xx.xx.xx)',
+                    default: pkg.version,
+                    validate: function(input) {
+                        if (/\d+\.\d+\.\d+/.test(input)) {
+                            if (versionCompare(input, pkg.version)) {
                                 return true;
                             }
                             else {
-                                return "it seems not a valid npm"
+                                return "the version you entered should be larger than now"
                             }
                         }
+                        else {
+                            return "the version you entered is not valid"
+                        }
                     }
-                ];
-                resolve(questions);
-            });
-        })
-    }
+                },
+                {
+                    type: 'input',
+                    name: 'branch',
+                    message: 'which branch you want to push',
+                    default: defaultBranch
+                },
+                {
+                    type: 'input',
+                    name: 'npm',
+                    message: 'which npm you want to publish',
+                    default: defaultNpm,
+                    validate: function(input) {
+                        if (/npm/.test(input)) {
+                            return true;
+                        }
+                        else {
+                            return "it seems not a valid npm"
+                        }
+                    }
+                }
+            ];
+            resolve(questions);
+        });
+    })
+};
 
-gulp.task('js_build', function(done) {
+gulp.task('js_build', ['js_clean'], function(done) {
     var compiler = webpack(webpackCfg, function(err, stats) {
         if (err) {
             console.log(err);
@@ -127,15 +146,51 @@ gulp.task('js_uglify', ['js_build'], function(done) {
         });
 });
 
-gulp.task('copy_css', function(done) {
-    gulp.src(['./node_modules/uxcore-kuma/dist/**.css'])
+gulp.task('theme', ['theme_clean', 'iconfont'], function(done) {
+    gulp.src(['./style/theme/**/*.less'])
+        .pipe(less({
+            plugins: [autoprefix, LessPluginInlineUrls]
+        }))
         .pipe(gulp.dest('./assets'))
         .on('end', function() {
             done();
         });
 });
 
-gulp.task('iconfont', function(done) {
+
+gulp.task('theme_transport', ['theme'], function() {
+    var themes = ['blue', 'orange'];
+    themes.forEach(function(theme) {
+        gulp.src(['./assets/' + theme + '/kuma.css'])
+            .pipe(concat(theme + '.css'))
+            .pipe(gulp.dest('./assets'))
+            .pipe(cleancss(cleancssOption))
+            .pipe(rename({
+                suffix: '.min'
+            }))
+            .pipe(gulp.dest('./assets'));
+    });
+    themes.forEach(function(theme) {
+        gulp.src(['./assets/' + theme + '/compatible.css'])
+            .pipe(rename({
+                prefix: theme + '-'
+            }))
+            .pipe(gulp.dest('./assets'))
+            .pipe(cleancss(cleancssOption))
+            .pipe(rename({
+                suffix: '.min'
+            }))
+            .pipe(gulp.dest('./assets'));
+    });
+    themes.forEach(function(theme) {
+        gulp.src(['./assets/' + theme + '/'])
+            .pipe(clean({
+                read: false
+            }));
+    });
+})
+
+gulp.task('iconfont', ['theme_clean'], function(done) {
     gulp.src(['./iconfont.css'])
         .pipe(cleancss({compatibility: 'ie8'}))
         .pipe(gulp.dest('./assets'))
@@ -144,6 +199,17 @@ gulp.task('iconfont', function(done) {
         });
 });
 
+gulp.task('js_clean', function(done) {
+    rimraf('./lib', {}, function() {
+        done();
+    });
+});
+
+gulp.task('theme_clean', function(done) {
+    rimraf('./assets', {}, function() {
+        done();
+    });
+})
 
 gulp.task('pub', ['js_uglify', 'copy_css', 'iconfont'], function() {
     getQuestions().then(function(questions) {
