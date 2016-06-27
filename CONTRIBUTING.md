@@ -9,7 +9,7 @@ Before pulling requests or reporting bugs, please check out the pull requests tr
 
 ### Opening a Issue 
 
-Bug reports and feature requests are appreciated. However, for how-to questions and non-issues (like issues about React), please use [StackOverflow](http://stackoverflow.com/questions/tagged/uxcore) or [SegmentFault](https://segmentfault.com/) instead of Github issues.
+Bug reports and feature requests are appreciated. However, for how-to questions and non-issues (like issues about React), please use [StackOverflow](http://stackoverflow.com/questions/tagged/uxcore) or [SegmentFault](https://segmentfault.com/t/uxcore) instead of Github issues.
 
 ### Submitting a Pull Request
 
