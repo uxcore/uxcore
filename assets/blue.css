@@ -2018,7 +2018,7 @@ a {
   color: #3B8FD9;
 }
 a:visited {
-  color: #1A78B8;
+  color: #3B8FD9;
 }
 a:hover {
   color: #1A78B8;
@@ -2028,6 +2028,13 @@ a:active {
 }
 a:disabled {
   color: #ccc;
+}
+a.weak-link {
+  color: #333;
+  text-decoration: underline;
+}
+a.weaker-link {
+  color: #333;
 }
 /* kuma.loading 样式模块 */
 /*small*/
