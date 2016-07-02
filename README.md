@@ -57,8 +57,14 @@ import 'uxcore/assets/orange.css';
 
 ### import component as required
 
+Install the component
+
+```sh
+npm install uxcore-button
+```
+
 ```jsx
-import Button from 'uxcore-button'
+import Button from 'uxcore-button';
 ```
 
 And import style in your less file
