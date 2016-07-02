@@ -60,7 +60,7 @@ import 'uxcore/assets/orange.css';
 Install the component
 
 ```sh
-npm install uxcore-button
+npm install uxcore-button kuma-base
 ```
 
 ```jsx
