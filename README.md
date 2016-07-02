@@ -61,10 +61,10 @@ import 'uxcore/assets/orange.css';
 import Button from 'uxcore-button'
 ```
 
-And import style(less)
+And import style in your less file
 
 ```less
-import 'kuma-base/theme/blue.less'; // or orange.less global variables 
+import 'kuma-base/theme/blue.less'; // or orange.less global variables which components need
 import 'kuma-base/core.less'; // base element style and reset
 import 'uxcore-button/src/Button.less'; // component style
 ```
