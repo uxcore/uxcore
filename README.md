@@ -50,10 +50,25 @@ ReactDOM.render(<Button />, mountNode);
 
 And import style mannally
 
-```jsx
+```css
 import 'uxcore/assets/iconfont.css';
 import 'uxcore/assets/orange.css';
 ```
+
+### import component as required
+
+```jsx
+import Button from 'uxcore-button'
+```
+
+And import style(less)
+
+```less
+import 'kuma-base/theme/blue.less'; // or orange.less global variables 
+import 'kuma-base/core.less'; // base element style and reset
+import 'uxcore-button/src/Button.less'; // component style
+```
+
 
 ## Browser Support
 
