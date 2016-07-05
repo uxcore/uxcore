@@ -6236,6 +6236,7 @@ a.kuma-button-swhite {
 }
 .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-status .close-action .kuma-icon {
   font-size: 16px;
+  vertical-align: middle;
 }
 .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-status .close-action:hover {
   text-decoration: none;

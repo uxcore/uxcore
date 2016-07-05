@@ -4093,6 +4093,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-status .close-action .kuma-icon {
   font-size: 16px;
+  vertical-align: middle;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-status .close-action:hover {
   text-decoration: none;

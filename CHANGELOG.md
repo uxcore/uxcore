@@ -1,5 +1,25 @@
 ## HEAD
 
+## 0.3.0
+
+`2016-07-05`
+
+- [Component] Dialog: `FIXED` remove console
+- [Component] Dialog: `NEW` add polish support.
+- [Component] Uploader: `CHANGED` queueCapacity will concern props.fileList
+- [Component] Uploader: `FIXED` fix issue [#15](https://github.com/uxcore/uxcore-uploader/issues/15) [#16](https://github.com/uxcore/uxcore-uploader/issues/16) [#17](https://github.com/uxcore/uxcore-uploader/issues/17)
+- [Component] Uploader: `CHANGED` add className for download & preview button
+- [Component] Uploader: `CHANGED` remove Progress.isSupport
+- [Component] Uploader: `NEW` add server render support
+- [Component] Uploader: `CHANGED` add download property in download link
+- [Component] Uploader: `FIXED` fix response process bug.
+- [Component] Uploader: `CHANGED` cancel icon style fix (#24)
+- [Component] Uploader: `NEW` add polish support.
+- [Component] Tag: `NEW` add polish support
+- [Component] Calendar: `NEW` add polish support.
+- [Component] Form: `CHANGED` do not trigger jsxonChange when resetValues() & setValues() & jsxvalues change.
+
+
 ## 0.2.3
 
 `2016-06-29`
