@@ -45,6 +45,8 @@ ReactDOM.render(<Button />, mountNode);
 ### For npm
 ```jsx
 import {Button} from 'uxcore';
+// or
+import Button from 'uxcore/lib/Button';
 ReactDOM.render(<Button />, mountNode);
 ```
 

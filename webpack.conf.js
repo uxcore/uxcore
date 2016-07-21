@@ -7,7 +7,7 @@ module.exports = {
     index: './index',
   },
   output: {
-    path: path.join(process.cwd(), './lib'),
+    path: path.join(process.cwd(), './build'),
     filename: 'uxcore.js',
     library: 'Uxcore',
     libraryTarget: 'umd',

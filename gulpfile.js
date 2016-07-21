@@ -15,6 +15,8 @@ var inquirer = require('inquirer');
 var spawn = require('cross-spawn');
 var colors = require('colors/safe');
 var rimraf = require('rimraf');
+var childProcess = require('child_process');
+var path = require('path');
 
 var autoprefix = new LessPluginAutoPrefix({
   browsers: ['last 2 versions', 'not ie < 8'],
@@ -26,6 +28,19 @@ var cleancssOption = {
   sourceMap: true,
   compatibility: 'ie8',
   debug: true,
+};
+
+var runCmd = function (cmd, args, fn) {
+  var options = args || [];
+  var runner = childProcess.spawn(cmd, options, {
+    // keep color
+    stdio: 'inherit',
+  });
+  runner.on('close', (code) => {
+    if (fn) {
+      fn(code);
+    }
+  });
 };
 
 var webpackCfg = require('./webpack.conf.js');
@@ -56,7 +71,7 @@ function getQuestions() {
           name: 'version',
           message: 'please enter the package version to publish (should be xx.xx.xx)',
           default: pkg.version,
-          validate: function(input) {
+          validate: function (input) {
             if (/\d+\.\d+\.\d+/.test(input)) {
               if (versionCompare(input, pkg.version)) {
                 return true;
@@ -98,8 +113,7 @@ gulp.task('js_build', ['js_clean'], function (done) {
   webpack(webpackCfg, function (err, stats) {
     if (err) {
       console.log(err);
-    }
-    else {
+    } else {
       console.log('webpack log:' + stats.toString({
         hash: false,
         chunks: false,
@@ -111,13 +125,13 @@ gulp.task('js_build', ['js_clean'], function (done) {
 });
 
 
-gulp.task('js_uglify', ['js_build'], function(done) {
-  gulp.src('./lib/uxcore.js')
+gulp.task('js_uglify', ['js_build'], function (done) {
+  gulp.src('./build/uxcore.js')
       .pipe(uglify({
         mangle: false,
       }))
       .pipe(rename('uxcore.min.js'))
-      .pipe(gulp.dest('./lib'))
+      .pipe(gulp.dest('./build'))
       .on('end', function () {
         done();
       });
@@ -177,7 +191,7 @@ gulp.task('iconfont', ['theme_clean'], function (done) {
 });
 
 gulp.task('js_clean', function (done) {
-  rimraf('./lib', {}, function () {
+  rimraf('./build', {}, function () {
     done();
   });
 });
@@ -201,6 +215,13 @@ gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
       spawn.sync(answers.npm, ['publish'], { stdio: 'inherit' });
     }).catch(function (err) { console.log(err); });
   }).catch(function (err) { console.log(err); });
+});
+
+gulp.task('test', function (done) {
+  var mochaBin = require.resolve('mocha/bin/mocha');
+  var testFile = path.join(process.cwd(), './tests/index.js');
+  var args = [mochaBin, testFile];
+  runCmd('node', args, done);
 });
 
 gulp.task('default', ['js_uglify', 'theme_transport']);

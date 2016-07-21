@@ -1,5 +1,11 @@
 ## HEAD
 
+## 0.3.1
+
+`2016-07-22`
+
+- [General] support import single component from uxcore
+
 ## 0.3.0
 
 `2016-07-05`
