@@ -1,5 +1,11 @@
 ## HEAD
 
+## 0.3.2
+
+`2016-07-27`
+
+- [General] `FIXED` move uxcore component from devDependency to dependency
+
 ## 0.3.1
 
 `2016-07-22`
