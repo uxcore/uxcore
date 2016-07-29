@@ -1,5 +1,11 @@
 ## HEAD
 
+## 0.3.3
+
+`2016-07-29`
+
+- [General] `FIXED` fix bug imported from rc-dropdown
+
 ## 0.3.2
 
 `2016-07-27`
