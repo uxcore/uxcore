@@ -218,9 +218,9 @@ gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
 });
 
 gulp.task('test', function (done) {
-  var mochaBin = require.resolve('mocha/bin/mocha');
-  var testFile = path.join(process.cwd(), './tests/index.js');
-  var args = [mochaBin, testFile];
+  var karmaBin = require.resolve('karma/bin/karma');
+  var karmaConfig = path.join(__dirname, './karma.phantomjs.conf.js');
+  var args = [karmaBin, 'start', karmaConfig];
   runCmd('node', args, done);
 });
 

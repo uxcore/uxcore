@@ -8,10 +8,12 @@ var expect = require('expect.js');
 
 var uxcore = require('../build/uxcore');
 
+console.log(uxcore);
+
 describe('bundle', function () {
   it('all uxcore devDependencies should be included', function (done) {
     var pass = true;
-    components.forEach(function(item) {
+    components.forEach(function check(item) {
       var componentName = _.capitalize(_.camelCase(item.split('-').slice(1).join('-')));
       console.log(typeof uxcore[componentName]);
       pass = typeof uxcore[componentName] === 'object';
