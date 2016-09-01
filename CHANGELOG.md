@@ -1,6 +1,47 @@
 ## 
 
-## 0.3.4
+## 0.4.0
+
+`2016-09-01`
+
+- [Component] Calendar: `FIXED` fix select time btn style bug
+- [Component] Carousel: `FIXED` fix issue [#2](https://github.com/uxcore/uxcore-carousel/issues/2)
+- [Component] Carousel: `CHANGED` new style
+- [Component] Carousel: `CHANGED` update react-slick to ~0.12.0
+- [Component] Collapse: `CHANGED` update UI
+- [Component] Dropdown: `CHANGED` add animation
+- [Component] Form: `CHANGED` support Child is null
+- [Component] Form: `CHANGED` doValidate support param `always` which make doValidate always set the field error state to true/false.
+- [Component] Form: `FIXED` fix server render bug 
+- [Component] Formatter: `CHANGED` date method can handle undefined/null properly  
+- [Component] Menu: `CHANGED` style change
+- [Component] Pagination: `CHANGED` update dependency `uxcore-select` to ~0.3.0
+- [Component] Pagination: `FIXED` fix pagination size changer style bug
+- [Component] Pickable: `NEW` add new type hook
+- [Component] Rate: `FIXED` always style bug [#8](https://github.com/uxcore/uxcore-rate/issues/8)
+- [Component] Rate: `NEW` add prop tipShow
+- [Component] Rate: `CHANGED` all stars before the one hovered should be acitve. (#4)
+- [Component] Select: `FIXED` selected value text overflow (uxcore [#13](https://github.com/uxcore/uxcore/issues/13))
+- [Component] Select: `FIXED` placeholder style bug in multiple mode
+- [Component] Select: `FIXED` dropdown menu will be hidden when drag scrollbar in IE. [#15](https://github.com/uxcore/uxcore-select2/issues/15)
+- [Component] Select: `FIXED` fix selected value style bug
+- [Component] Select: `CHANGED` update dependency `rc-select` to ~6.4.0
+- [Component] Steps: `FIXED` export bug
+- [Component] Steps: `FIXED` add props `className`.
+- [Component] Steps: `FIXED` style issue under IE8.
+- [Component] Table: `CHANGED` change default fitResponse 
+- [Component] Table: `CHANGED` support column.collapseNum
+- [Component] Table: `CHANGED` table will listen props.fetchParams change.
+- [Component] Table: `FIXED` fetchData caused by fetchParams change will pass the out-dated params.
+- [Component] Table: `FIXED` saveRow bug [#155](https://github.com/uxcore/uxcore-table/issues/155)
+- [Component] Table: `FIXED` missing deepcopy protect when passing parma in column.action. [#154](https://github.com/uxcore/uxcore-table/issues/154)
+- [Component] Tabs: `NEW` support prop className 
+- [Component] Totop: `CHANGED` new style
+- [Component] Transfer: `FIXED` fix bug in locateItem and _removeJustMoved
+- [Component] Transfer: `CHANGED` apply new style
+- [Component] Transfer: `CHANGED` add `height` props
+- [Component] Tree: `CHANGED` update rc-tree to ~1.1.0
+- [Component] Uploader: `FIXED` fix `preventDuplicate`
 
 `2016-08-11`
 

@@ -2966,7 +2966,8 @@ a.weaker-link {
   margin-top: 2px;
 }
 .kuma-calendar-today-btn,
-.kuma-calendar-ok-btn {
+.kuma-calendar-ok-btn,
+.kuma-calendar-time-picker-btn {
   display: inline-block;
   padding: 4px 5px;
   text-align: center;
@@ -2974,17 +2975,20 @@ a.weaker-link {
   border-radius: 3px;
 }
 .kuma-calendar-today-btn:hover,
-.kuma-calendar-ok-btn:hover {
+.kuma-calendar-ok-btn:hover,
+.kuma-calendar-time-picker-btn:hover {
   cursor: pointer;
   color: #f37327;
   background: #fff9f5;
 }
 .kuma-calendar-today-btn-disabled,
-.kuma-calendar-ok-btn-disabled {
+.kuma-calendar-ok-btn-disabled,
+.kuma-calendar-time-picker-btn-disabled {
   color: #bbb;
 }
 .kuma-calendar-today-btn-disabled:hover,
-.kuma-calendar-ok-btn-disabled:hover {
+.kuma-calendar-ok-btn-disabled:hover,
+.kuma-calendar-time-picker-btn-disabled:hover {
   color: #bbb;
 }
 .kuma-calendar-time-input {
@@ -4156,6 +4160,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-page-options-size-changer .kuma-select2-selection {
   background: #f5f5f5;
 }
+.kuma-page-options-size-changer .kuma-select2-selection-selected-value {
+  padding-right: 0px;
+}
 .kuma-page-options-quick-jumper {
   margin-left: 0px;
   height: 34px;
@@ -4320,7 +4327,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   box-sizing: border-box;
   display: block;
   background-color: #fff;
-  border: 1px solid #d9d9d9;
   border-radius: 0px;
   border: 1px solid #dbdbdb;
 }
@@ -4329,6 +4335,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-select2-selection:active {
   border-color: #ccc;
+}
+.kuma-select2-selection__placeholder {
+  position: absolute;
+  top: 0;
+  color: #aaa;
+  line-height: 34px;
 }
 .kuma-select2-focused .kuma-select2-selection {
   border-color: #ccc;
@@ -4340,9 +4352,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-color: #ccc;
 }
 .kuma-select2-selection-selected-value {
-  overflow: hidden;
-  padding-right: 10px;
-  text-overflow: ellipsis;
+  position: absolute;
+  left: 10px;
+  top: 0;
 }
 .kuma-select2-selection--single {
   height: 36px;
@@ -4358,9 +4370,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
+  height: 100%;
   text-overflow: ellipsis;
   padding-left: 10px;
-  padding-right: 20px;
+  margin-right: 20px;
   line-height: 34px;
 }
 .kuma-select2-selection--single .kuma-select2-selection__clear {
@@ -4420,6 +4434,15 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   outline: 0;
   width: 100%;
 }
+.kuma-select2-search--inline .kuma-select2-search__field::-ms-clear {
+  display: none;
+}
+.kuma-select2-search--inline .kuma-select2-search__field__mirror {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  white-space: pre;
+}
 .kuma-select2-search--inline .kuma-select2-selection-selected-value {
   position: absolute;
   left: 0;
@@ -4457,7 +4480,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   padding-left: 8px;
   padding-bottom: 2px;
 }
-.kuma-select2-selection--multiple > ul > li {
+.kuma-select2-selection--multiple .kuma-select2-selection__rendered > ul > li {
   margin-top: 4px;
   height: 26px;
   line-height: 26px;
@@ -4556,8 +4579,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   top: -9999px;
   position: absolute;
   outline: none;
-  max-height: 250px;
-  overflow-y: auto;
 }
 .kuma-select2-dropdown-hidden {
   display: none;
@@ -4568,6 +4589,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   padding: 0;
   list-style: none;
   z-index: 9999;
+  max-height: 250px;
+  overflow-y: auto;
 }
 .kuma-select2-dropdown-menu > li {
   margin: 0;
@@ -4782,12 +4805,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-select2-dropdown-placement-topLeft.slideUp-leave-active {
   visibility: visible;
   animation-name: slideDownOut;
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* IE10/11-specific styles go here */
-  .kuma-select2-selection--multiple .kuma-select2-search--inline .kuma-select2-search__field {
-    width: 50px!important;
-  }
 }
 /**
  * Tabs Component Style for uxcore
@@ -5452,7 +5469,6 @@ a.kuma-button-swhite {
 }
 .kuma-dropdown-inline-wrap {
   position: relative;
-  z-index: 1071;
   display: inline-block;
   padding: 8px 15px;
   background-color: #fff;
@@ -5461,10 +5477,109 @@ a.kuma-button-swhite {
   border: 1px solid #dbdbdb;
   border-bottom: 1px solid #fff;
 }
+.kuma-dropdown-inline-wrap-open {
+  z-index: 1071;
+}
 .kuma-dropdown-inline .kuma-dropdown-menu {
   margin-top: -8px;
   box-shadow: none;
   border-radius: 0;
+}
+@keyframes slideUpIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: scaleY(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0 0;
+    transform: scaleY(1);
+  }
+}
+@keyframes slideUpOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0 0;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: scaleY(0.8);
+  }
+}
+@keyframes slideDownIn {
+  0% {
+    opacity: 0;
+    transform-origin: 100% 100%;
+    transform: scaleY(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 100% 100%;
+    transform: scaleY(1);
+  }
+}
+@keyframes slideDownOut {
+  0% {
+    opacity: 1;
+    transform-origin: 100% 100%;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 100% 100%;
+    transform: scaleY(0.8);
+  }
+}
+.kuma-dropdown-placement-bottomLeft.slideUp-enter,
+.kuma-dropdown-placement-bottomLeft.slideUp-appear {
+  opacity: 0;
+  transform-origin: 0 0;
+  transform: scaleY(0.8);
+  animation-timing-function: ease;
+  animation-duration: .3s;
+}
+.kuma-dropdown-placement-bottomLeft.slideUp-enter-active,
+.kuma-dropdown-placement-bottomLeft.slideUp-appear-active {
+  visibility: visible;
+  animation-name: slideUpIn;
+}
+.kuma-dropdown-placement-bottomLeft.slideUp-leave {
+  opacity: 1;
+  transform-origin: 0 0;
+  transform: scaleY(1);
+  animation-timing-function: ease;
+  animation-duration: .3s;
+}
+.kuma-dropdown-placement-bottomLeft.slideUp-leave-active {
+  visibility: visible;
+  animation-name: slideUpOut;
+}
+.kuma-dropdown-placement-topLeft.slideUp-enter,
+.kuma-dropdown-placement-topLeft.slideUp-appear {
+  opacity: 0;
+  transform-origin: 100% 100%;
+  transform: scaleY(0.8);
+  animation-timing-function: ease;
+  animation-duration: .3s;
+}
+.kuma-dropdown-placement-topLeft.slideUp-enter-active,
+.kuma-dropdown-placement-topLeft.slideUp-appear-active {
+  visibility: visible;
+  animation-name: slideDownIn;
+}
+.kuma-dropdown-placement-topLeft.slideUp-leave {
+  opacity: 1;
+  transform-origin: 100% 100%;
+  transform: scaleY(1);
+  animation-timing-function: ease;
+  animation-duration: .3s;
+}
+.kuma-dropdown-placement-topLeft.slideUp-leave-active {
+  visibility: visible;
+  animation-name: slideDownOut;
 }
 /**
  * Tree Component Style for uxcore
@@ -5483,7 +5598,7 @@ a.kuma-button-swhite {
   list-style: none;
   white-space: nowrap;
   outline: 0;
-  line-height: 18px;
+  line-height: 24px;
 }
 .kuma-tree li ul {
   margin: 0;
@@ -5494,17 +5609,21 @@ a.kuma-button-swhite {
 }
 .kuma-tree li a {
   display: inline-block;
-  margin: 0;
+  padding: 2px 6px;
   cursor: pointer;
-  height: 18px;
   text-decoration: none;
   line-height: 18px;
   vertical-align: middle;
   color: #666;
 }
+.kuma-tree li a:hover {
+  background-color: #fff6f0;
+}
+.kuma-tree li a.kuma-tree-node-selected {
+  color: #f37327;
+}
 .kuma-tree li span.kuma-tree-switcher-noop,
 .kuma-tree li span.kuma-tree-switcher,
-.kuma-tree li span.kuma-tree-checkbox,
 .kuma-tree li span.kuma-tree-iconEle {
   margin-right: 2px;
   width: 18px;
@@ -5551,27 +5670,6 @@ a.kuma-button-swhite {
 .kuma-tree li span.kuma-tree-switcher.kuma-tree-bottom_close {
   background-position: -94px -36px;
 }
-.kuma-tree li span.kuma-tree-switcher.kuma-tree-noline_open {
-  background-position: -115px -72px;
-}
-.kuma-tree li span.kuma-tree-switcher.kuma-tree-noline_close {
-  background-position: -97px -72px;
-}
-.kuma-tree li span.kuma-tree-checkbox {
-  width: 14px;
-  height: 14px;
-  margin: 0 3px;
-  background-position: 0 0;
-}
-.kuma-tree li span.kuma-tree-checkbox.kuma-tree-checkbox-checked {
-  background-position: -15px 0;
-}
-.kuma-tree li span.kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
-  background-position: -15px -28px;
-}
-.kuma-tree li span.kuma-tree-checkbox-disabled {
-  background-position: 0 -28px !important;
-}
 .kuma-tree-child-tree {
   display: none;
 }
@@ -5582,8 +5680,61 @@ a.kuma-button-swhite {
 .kuma-tree-treenode-disabled > a {
   color: gray;
 }
-.kuma-tree-node-selected {
-  background-color: #f2f2f2;
+.use-svg .kuma-tree-switcher.kuma-tree-noline_open {
+  background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
+  background-size: 50% 50%;
+}
+.use-svg .kuma-tree-switcher.kuma-tree-noline_close {
+  background: url('https://img.alicdn.com/tps/TB17BHzJVXXXXXEXXXXXXXXXXXX-10-14.svg') 50% 50% no-repeat;
+  background-size: 50% 50%;
+}
+.use-svg .kuma-tree-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 3px;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+}
+.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+}
+.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked.kuma-tree-checkbox-disabled {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+}
+.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+}
+.use-svg .kuma-tree-checkbox-checkbox-disabled {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+}
+.no-svg .kuma-tree-switcher.kuma-tree-noline_open {
+  background-position: -115px -72px;
+}
+.no-svg .kuma-tree-switcher.kuma-tree-noline_close {
+  background-position: -97px -72px;
+}
+.no-svg .kuma-tree-checkbox {
+  margin-right: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background-image: url('https://aliwork.alicdn.com/tps/TB1k_tsKpXXXXcQXFXXXXXXXXXX-130-87.png');
+  width: 14px;
+  height: 14px;
+  background-position: 0 0;
+}
+.no-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked {
+  background-position: -15px 0;
+}
+.no-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
+  background-position: -15px -28px;
+}
+.no-svg .kuma-tree-checkbox-disabled {
+  background-position: 0 -28px !important;
 }
 /**
  * Mention Component Style for uxcore
@@ -6567,18 +6718,18 @@ a.kuma-button-swhite {
   background: #ccc;
 }
 /**
-* Collapse Component Style for uxcore
+* Collapse Component Style for UXCore
 * @author vicent.bian
 *
-* Copyright 2014-2015, Uxcore Team, Alinw.
+* Copyright 2014-2015, UXCore Team, Alinw.
 * All rights reserved.
 */
 .kuma-collapse {
-  background-color: #f4f4f4;
-  border: 1px solid #e8e8e8;
+  background-color: #f7f7f7;
+  border: 1px solid #dbdbdb;
 }
 .kuma-collapse > .kuma-collapse-item {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #dbdbdb;
 }
 .kuma-collapse > .kuma-collapse-item:first-child {
   border-top: none;
@@ -6587,29 +6738,32 @@ a.kuma-button-swhite {
   height: 38px;
   line-height: 38px;
   padding-left: 32px;
-  color: #333;
+  padding-right: 16px;
+  font-size: 14px;
+  color: #666;
   cursor: pointer;
   position: relative;
 }
 .kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow {
   position: absolute;
-  top: -1px;
-  left: 16px;
+  top: 0;
+  left: 0;
   display: inline-block;
-  margin-right: 8px;
-  color: #333;
+  color: #999;
   vertical-align: middle;
   font-style: normal;
+  width: 32px;
+  text-align: center;
 }
 .kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow:before {
   font-family: 'kuma' !important;
   content: "\e615";
-  font-size: 16px;
+  font-size: 14px;
 }
 .kuma-collapse-content {
   display: none;
   overflow: hidden;
-  color: #333;
+  color: #666;
   padding: 0 16px;
   background-color: #fff;
 }
@@ -7045,6 +7199,7 @@ a.kuma-button-swhite {
   text-align: center;
   line-height: 22px;
   font-size: 12px;
+  vertical-align: middle;
 }
 .kuma-step .kuma-step-main {
   color: #666;
@@ -7200,7 +7355,7 @@ a.kuma-button-swhite {
   line-height: 10px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-head {
-  top: 11px;
+  top: 9px;
   left: 6px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon {
@@ -7243,7 +7398,7 @@ a.kuma-button-swhite {
   padding-left: 0;
   list-style: none;
   z-index: 1001;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #dbdbdb;
   color: #333;
   background: #fff;
 }
@@ -7368,7 +7523,7 @@ a.kuma-button-swhite {
 .kuma-menu-horizontal {
   background-color: #FBFBFB;
   border: none;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #dbdbdb;
   padding-left: 24px;
   z-index: 0;
 }
@@ -7795,6 +7950,24 @@ a.kuma-button-swhite {
   width: 42px;
   bottom: 20px;
   right: 140px;
+  /*.btn {
+        line-height: 20px;
+        display: block;
+        clear: both;
+        float: left;
+        overflow: hidden;
+        width: 42px;
+        height: 42px;
+        margin-bottom: 2px;
+        cursor: pointer;
+        text-align: center;
+        text-indent: -9999px;
+        background: #e0e0e0 url(https://gtms02.alicdn.com/tps/i2/TB1tsuQGXXXXXbmXXXXnHduKXXX-250-86.png) no-repeat;
+        background-position: left top;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }*/
   /* 普通尺寸，默认矩形风格 end */
   /* 普通尺寸，圆形风格 */
   /* 普通尺寸，圆形风格 end */
@@ -7804,42 +7977,60 @@ a.kuma-button-swhite {
 .kuma-totop .kuma-totop-other {
   width: 42px;
   float: left;
+  margin-top: 4px;
 }
-.kuma-totop .btn {
-  line-height: 20px;
-  display: block;
-  clear: both;
-  float: left;
-  overflow: hidden;
+.kuma-totop .box {
   width: 42px;
   height: 42px;
-  margin-bottom: 2px;
-  cursor: pointer;
-  text-align: center;
-  text-indent: -9999px;
-  background: #e0e0e0 url(https://gtms02.alicdn.com/tps/i2/TB1tsuQGXXXXXbmXXXXnHduKXXX-250-86.png) no-repeat;
-  background-position: left top;
+  box-sizing: border-box;
+  margin-top: 4px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  font-size: 14px;
 }
-.kuma-totop .btn:last-child {
-  margin-bottom: 0;
+.kuma-totop .box:hover {
+  background-color: #999;
+  border-color: #999;
 }
-.kuma-totop .gotop {
+.kuma-totop .box:hover .box-text {
+  display: inline-block;
+}
+.kuma-totop .box:hover .box-icon {
   display: none;
-  background-position: left top;
 }
-.kuma-totop .gotop:hover {
-  background-position: -52px 0;
-  background-color: #b2b2b2;
+.kuma-totop .box-window {
+  display: block;
+  text-align: center;
 }
-.kuma-totop .gotop.show {
-  display: inline;
+.kuma-totop .box-text {
+  display: none;
+  line-height: 42px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.kuma-totop .box-icon {
+  font-size: 20px;
+  color: #999;
+  line-height: 42px;
+}
+.kuma-totop .gotop-box {
+  display: none;
+  /*background-position: left top;
+        &:hover {
+            background-position: -52px 0;
+            background-color: #b2b2b2;
+        }*/
+}
+.kuma-totop .gotop-box.show {
+  display: block;
 }
 .kuma-totop .feedback {
-  background-position: 0 -44px;
-}
-.kuma-totop .feedback:hover {
-  background-position: -104px -44px;
-  background-color: #b2b2b2;
+  /*background-position: 0 -44px;
+        &:hover {
+            background-position: -104px -44px;
+            background-color: #b2b2b2;
+        }*/
 }
 .kuma-totop.mcircle .btn {
   border-radius: 42px;
@@ -8262,6 +8453,26 @@ a.kuma-button-swhite {
   line-height: 16px;
   margin-left: 9px;
 }
+.kuma-pickable-item-hook.active {
+  border-color: #fa7e37;
+  background: white;
+  background: linear-gradient(-45deg, transparent 10px, white 0), linear-gradient(45deg, transparent 15px, #fa7e37 0);
+  position: relative;
+  color: #333;
+}
+.kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook {
+  position: absolute;
+  height: 10px;
+  line-height: 10px;
+  color: white;
+  font-size: 10px;
+  right: 0;
+  bottom: 0px;
+}
+.kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook:before {
+  content: "\e611";
+  font-family: kuma !important;
+}
 /**
  * Carousel Component Style for uxcore, customed from slick-carousel
  * @author eternaslky
@@ -8281,7 +8492,7 @@ a.kuma-button-swhite {
 .kuma-carousel .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
+  height: 24px;
   width: 20px;
   line-height: 0px;
   font-size: 0px;
@@ -8325,63 +8536,62 @@ a.kuma-button-swhite {
   -moz-osx-font-smoothing: grayscale;
 }
 .kuma-carousel .slick-prev {
-  left: 20px;
+  left: 10px;
 }
 .kuma-carousel .slick-prev[dir="rtl"] {
   left: auto;
-  right: 20px;
+  right: 10px;
+}
+.kuma-carousel .slick-prev[dir="rtl"]:before {
+  content: "\e643";
 }
 .kuma-carousel .slick-prev:before {
   content: "\e644";
 }
-.kuma-carousel .slick-prev:before[dir="rtl"] {
-  content: "\e643";
-}
 .kuma-carousel .slick-next {
-  right: 20px;
+  right: 10px;
 }
 .kuma-carousel .slick-next[dir="rtl"] {
-  left: 20px;
+  left: 10px;
   right: auto;
+}
+.kuma-carousel .slick-next[dir="rtl"]:before {
+  content: "\e644";
 }
 .kuma-carousel .slick-next:before {
   content: "\e643";
 }
-.kuma-carousel .slick-next:before[dir="rtl"] {
-  content: "\e644";
-}
-.kuma-carousel .slick-slider {
-  margin-bottom: 30px;
-}
 .kuma-carousel .slick-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   list-style: none;
   display: block;
-  text-align: center;
-  padding: 0;
+  text-align: right;
+  padding-right: 10px;
   width: 100%;
 }
 .kuma-carousel .slick-dots li {
   position: relative;
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 5px;
+  height: 4px;
+  width: 8px;
+  margin-left: 4px;
   padding: 0;
+  font-size: 0px;
   cursor: pointer;
 }
 .kuma-carousel .slick-dots li button {
   border: 0;
-  background: transparent;
+  background: #FFF;
+  opacity: .5;
+  filter: alpha(opacity=50);
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 4px;
+  width: 8px;
   outline: none;
   line-height: 0px;
   font-size: 0px;
   color: transparent;
-  padding: 5px;
   cursor: pointer;
 }
 .kuma-carousel .slick-dots li button:hover,
@@ -8396,9 +8606,9 @@ a.kuma-button-swhite {
   position: absolute;
   top: 0;
   left: 0;
-  content: "\e660";
   width: 20px;
   height: 20px;
+  background: red;
   font-family: "kuma";
   font-size: 6px;
   line-height: 20px;
@@ -8408,7 +8618,7 @@ a.kuma-button-swhite {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.kuma-carousel .slick-dots li.slick-active button:before {
+.kuma-carousel .slick-dots li.slick-active button {
   color: white;
   opacity: 1;
 }
@@ -9127,10 +9337,10 @@ a.kuma-button-swhite {
 .kuma-rate-item.active {
   color: #f37327;
 }
-.kuma-rate-item:hover .kuma-icon {
-  color: #fa7e37;
-  transform: scale(1.1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+.kuma-rate-always-tip-container {
+  width: 130px;
+  color: #999;
+  text-align: center;
 }
 /**
  * Switch Component Style for uxcore
