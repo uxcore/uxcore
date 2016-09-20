@@ -238,6 +238,13 @@
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * Album Component Style for uxcore
+ * @author vincent.bian
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore .kuma-calendar {
   box-sizing: border-box;
@@ -8067,4 +8074,215 @@ a .uxcore-count:active {
 .uxcore .uxcore-tag-popup-delete i {
   color: #F37327;
   margin-right: 8px;
+}
+.uxcore .kuma-uxcore-album.no-rgba .album-overlay {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxOUU4MUM2RjM1REYxMUU2QURFRDlDNkZERjM3QTYxQSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxOUU4MUM3MDM1REYxMUU2QURFRDlDNkZERjM3QTYxQSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE5RTgxQzZEMzVERjExRTZBREVEOUM2RkRGMzdBNjFBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE5RTgxQzZFMzVERjExRTZBREVEOUM2RkRGMzdBNjFBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+fkgY4wAAABtJREFUeNpiZGBgOMNABGBiIBKMKqSOQoAAAwBVNQDgpAAyvAAAAABJRU5ErkJggg==') repeat;
+}
+.uxcore .kuma-uxcore-album.no-rgba .album-overlay .album-control,
+.uxcore .kuma-uxcore-album.no-rgba .album-overlay .album-carousel-control {
+  background-color: #666;
+}
+.uxcore .kuma-uxcore-album .album-icon {
+  font-family: kuma!important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.uxcore .kuma-uxcore-album .album-cover {
+  position: relative;
+}
+.uxcore .kuma-uxcore-album .album-cover > .album-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.uxcore .kuma-uxcore-album .album-cover > .album-item > img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.uxcore .kuma-uxcore-album .album-cover:hover:before {
+  content: '\e63d';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(51, 51, 51, 0.6);
+  border-radius: 16px 16px;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+}
+.uxcore .kuma-uxcore-album .album-cover:hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.uxcore .kuma-uxcore-album .album-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -70px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 50px;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control.disabled {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control.album-prev {
+  left: 0;
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control.album-prev:before {
+  content: '\e644';
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control.album-next {
+  right: 0;
+}
+.uxcore .kuma-uxcore-album .album-overlay > .album-control.album-next:before {
+  content: '\e643';
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage {
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+  padding: 20px 20px 120px;
+  height: 100%;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage > .album-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage > .album-item > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-close:hover {
+  text-decoration: none;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-close:after {
+  content: '\e610';
+}
+.uxcore .kuma-uxcore-album .album-carousel {
+  position: relative;
+  margin: 0 20px;
+  padding: 0 36px;
+  z-index: 1;
+}
+.uxcore .kuma-uxcore-album .album-carousel-container {
+  overflow: hidden;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list {
+  position: relative;
+  white-space: nowrap;
+  transition: transform cubic-bezier(0.6, 0, 0.3, 1) 1s;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > li {
+  position: relative;
+  display: inline-block;
+  margin: 0 6px;
+  width: 120px;
+  height: 72px;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > li .album-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 72px;
+  z-index: -1;
+  text-align: center;
+  opacity: .6;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > li.active {
+  border: 2px solid #fff;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > li.active .album-item {
+  left: -2px;
+  top: -2px;
+  opacity: 1;
+}
+.uxcore .kuma-uxcore-album .album-carousel-control {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 72px;
+  font-size: 26px;
+}
+.uxcore .kuma-uxcore-album .album-carousel-control:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+.uxcore .kuma-uxcore-album .album-carousel-control.disabled {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+.uxcore .kuma-uxcore-album .album-carousel-control.control-prev {
+  left: 0;
+  top: 0;
+}
+.uxcore .kuma-uxcore-album .album-carousel-control.control-prev:before {
+  content: '\e644';
+}
+.uxcore .kuma-uxcore-album .album-carousel-control.control-next {
+  right: 0;
+  top: 0;
+}
+.uxcore .kuma-uxcore-album .album-carousel-control.control-next:before {
+  content: '\e643';
 }

@@ -1,4 +1,8 @@
-## 
+## 0.4.1
+
+`2016-09-20`
+
+- [General] `NEW` add new component `Album` 
 
 ## 0.4.0
 

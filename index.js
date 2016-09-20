@@ -1,3 +1,4 @@
+var Album = require('./lib/Album');
 var Alert = require('./lib/Alert');
 var Animate = require('./lib/Animate');
 var Badge = require('./lib/Badge');
@@ -39,6 +40,7 @@ var Uploader = require('./lib/Uploader');
 var Validator = require('./lib/Validator');
 
 module.exports = {
+  Album: Album,
   Alert: Alert,
   Animate: Animate,
   Badge: Badge,

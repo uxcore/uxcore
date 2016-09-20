@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.4.0",
+ "version": "0.4.1",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -68,6 +68,7 @@
   "webpack": "~1.13.1"
  },
  "dependencies": {
+  "uxcore-album": "^0.1.2",
   "uxcore-alert": "0.2.2",
   "uxcore-animate": "0.1.2",
   "uxcore-badge": "0.1.1",
