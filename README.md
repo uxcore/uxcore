@@ -24,7 +24,7 @@ The fastest way to get started is to serve JavaScript from the CDN
 
 ```html
 <link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.0.7/orange.min.css">
-<script src="//g.alicdn.com/uxcore/uxcore/0.1.5/uxcore.min.js">
+<script src="//g.alicdn.com/uxcore/uxcore/0.1.8/uxcore.min.js">
 ```
 
 if you'd like to use [npm](npmjs.com)
