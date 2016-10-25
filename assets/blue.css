@@ -2042,7 +2042,7 @@ a.weaker-link {
   width: 24px;
   height: 24px;
   background: url('https://aliwork.alicdn.com/tps/TB1NR2TMXXXXXX9XVXXXXXXXXXX-24-12.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg');
+  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
   background-size: contain;
 }
 /*middle*/
@@ -2050,7 +2050,7 @@ a.weaker-link {
   width: 36px;
   height: 36px;
   background: url('https://aliwork.alicdn.com/tps/TB1BjnZMXXXXXa7XFXXXXXXXXXX-36-18.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg');
+  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
   background-size: contain;
 }
 /*large*/
@@ -2058,7 +2058,7 @@ a.weaker-link {
   width: 48px;
   height: 48px;
   background: url('https://aliwork.alicdn.com/tps/TB1LV66MXXXXXbQXpXXXXXXXXXX-48-24.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg');
+  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
   background-size: contain;
 }
 .kuma-table thead th {
@@ -2300,8 +2300,44 @@ a.weaker-link {
 .bg-query-color {
   background-color: #24bee8;
 }
-.kuma-table {
-  width: 100%;
+.svg-primary-fill {
+  fill: #2599f2;
+}
+.svg-secondary-fill {
+  fill: #2c2f33;
+}
+.svg-primary-dark-fill {
+  fill: #1a93f0;
+}
+.svg-primary-light-fill {
+  fill: #34a4fa;
+}
+.svg-primary-lighter-fill {
+  fill: #f2f9ff;
+}
+.svg-white-fill {
+  fill: #fff;
+}
+.svg-gray-fill {
+  fill: #666;
+}
+.svg-gray-lighter-fill {
+  fill: #ccc;
+}
+.svg-danger-fill {
+  fill: #F04631;
+}
+.svg-warning-fill {
+  fill: #f5a12a;
+}
+.svg-success-fill {
+  fill: #66bd5c;
+}
+.svg-info-fill {
+  fill: #45a8e6;
+}
+.svg-query-fill {
+  fill: #24bee8;
 }
 .kuma-input {
   padding: 5px 10px;
@@ -2313,6 +2349,9 @@ a.weaker-link {
   padding: 9px 10px;
   overflow: auto;
   resize: vertical;
+}
+.kuma-table {
+  width: 100%;
 }
 /**
  * Calendar Component Style for uxcore
@@ -2429,6 +2468,12 @@ a.weaker-link {
 .kuma-calendar-year-calendar-container .kuma-calendar-year-panel {
   position: relative;
 }
+.kuma-calendar-two-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
+  width: 152px;
+}
+.kuma-calendar-one-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
+  width: 304px;
+}
 @keyframes slideUpIn {
   0% {
     opacity: 0;
@@ -2536,11 +2581,23 @@ a.weaker-link {
 .kuma-calendar-picker-input .kuma-input[disabled] {
   background-color: #e8e8e8;
 }
-.kuma-calendar-picker-input .kuma-icon-calender {
+.kuma-calendar-picker-input .kuma-icon-calender,
+.kuma-calendar-picker-input .kuma-icon-close {
   position: absolute;
   color: #999;
   top: 7px;
   right: 10px;
+  transition: color .3s ease,opacity .15s ease;
+}
+.kuma-calendar-picker-input .kuma-icon-close {
+  opacity: 0;
+  cursor: pointer;
+}
+.kuma-calendar-picker-input:hover .kuma-icon-close {
+  opacity: 1;
+}
+.kuma-calendar-picker-input:hover .kuma-icon-calender__has-clear {
+  opacity: 0;
 }
 .kuma-calendar-picker {
   position: absolute;
@@ -3626,6 +3683,12 @@ li.kuma-time-picker-panel-select-option-disabled {
 li.kuma-time-picker-panel-select-option-disabled:hover {
   background: transparent;
   cursor: not-allowed;
+}
+.kuma-calendar-two-time-panel .kuma-time-picker-panel-select ul {
+  width: 152px;
+}
+.kuma-calendar-one-time-panel .kuma-time-picker-panel-select ul {
+  width: 303px;
 }
 .kuma-calendar-date-content-box {
   text-align: center;
@@ -6582,36 +6645,35 @@ a.kuma-button-swhite {
   font-size: 12px;
 }
 .kuma-uxtransfer-container th {
-  padding: 15px 0;
-  line-height: 30px;
+  line-height: 28px;
+  font-weight: 400;
 }
 .kuma-uxtransfer-container th > .title {
   float: left;
   padding: 0 10px;
-  background-color: #ffa200;
-  border-radius: 0 3px 3px 0;
-  color: #fff;
+  background-color: #f5f5f5;
+  color: #666;
 }
-.kuma-uxtransfer-container th > .searchBar {
+.kuma-uxtransfer-container th .check-all {
   float: right;
-  position: relative;
-}
-.kuma-uxtransfer-container th > .searchBar .kuma-icon {
-  position: absolute;
-  right: 28px;
-  color: #ccc;
-  top: 2px;
-  cursor: pointer;
-}
-.kuma-uxtransfer-container th > .searchBar .kuma-input {
-  margin-right: 20px;
-  width: 160px;
-  border-radius: 0;
 }
 .kuma-uxtransfer-container th.left-head,
 .kuma-uxtransfer-container th.right-head {
   background-color: #fff;
-  border: 1px solid #ebebeb;
+}
+.kuma-uxtransfer-container .searchBar {
+  position: relative;
+}
+.kuma-uxtransfer-container .searchBar .kuma-icon {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  color: #999;
+  cursor: pointer;
+}
+.kuma-uxtransfer-container .searchBar .kuma-input {
+  height: 28px;
+  border-color: #dbdbdb;
 }
 .kuma-uxtransfer-container td {
   padding: 0;
@@ -6619,27 +6681,22 @@ a.kuma-button-swhite {
 }
 .kuma-uxtransfer-container td.left-block,
 .kuma-uxtransfer-container td.right-block {
+  padding: 4px;
+  width: 170px;
   background-color: #fff;
-  border-width: 0 1px 1px;
-  border-style: solid;
-  border-color: #ebebeb;
+  border: 1px solid #dbdbdb;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block {
-  width: 300px;
-  height: 300px;
-  padding: 5px 10px;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a {
   display: block;
-  margin-bottom: 2px;
-  width: 280px;
-  height: 30px;
-  padding: 0 10px;
+  height: 24px;
+  padding: 0 15px 0 10px;
+  line-height: 24px;
+  color: #333;
   overflow: hidden;
-  line-height: 30px;
-  color: #999;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a:hover,
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a:focus {
@@ -6649,14 +6706,13 @@ a.kuma-button-swhite {
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected {
   position: relative;
-  background-color: #f90;
-  color: #fff;
+  color: #2599f2;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected:before {
-  content: "\e601";
+  content: "\e611";
   display: block;
   position: absolute;
-  right: 10px;
+  right: 5px;
   top: 1px;
   font-family: kuma!important;
   font-size: 16px;
@@ -6669,7 +6725,7 @@ a.kuma-button-swhite {
   background-color: #f7f7f7;
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons {
-  width: 90px;
+  width: 40px;
   text-align: center;
   vertical-align: middle;
   line-height: 0;
@@ -6677,11 +6733,11 @@ a.kuma-button-swhite {
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 29px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
+  border: 1px solid #dbdbdb;
+  background-color: #e8e8e8;
   margin-bottom: 10px;
   text-align: center;
   color: #ccc;
@@ -6690,19 +6746,15 @@ a.kuma-button-swhite {
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:focus {
   text-decoration: none;
 }
-.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a.enable:active,
-.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:active {
-  border-color: #2c2f33;
-  color: #2c2f33;
-}
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a.enable {
+  background-color: #2599f2;
   border-color: #2599f2;
-  color: #2599f2;
+  color: #fff;
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:before {
   content: '\e615';
   font-family: kuma!important;
-  font-size: 24px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: .2px;
   -moz-osx-font-smoothing: grayscale;
@@ -6711,11 +6763,12 @@ a.kuma-button-swhite {
   content: '\e616';
 }
 .uxTransfer.disabled .kuma-uxtransfer-buttons > a {
-  background: #ccc;
+  background: #e8e8e8;
+  border-color: #dbdbdb;
   color: #fff;
 }
 .uxTransfer.disabled .kuma-uxtransfer-block a.selected {
-  background: #ccc;
+  background: #e8e8e8;
 }
 /**
 * Collapse Component Style for UXCore
@@ -6953,6 +7006,12 @@ a.kuma-button-swhite {
   padding-top: 6px;
 }
 .kuma-switch-uxform-field .kuma-uxform-field-content.view-mode {
+  padding-top: 9px;
+}
+.kuma-pickable-uxform-field .kuma-uxform-field-content {
+  padding-top: 4px;
+}
+.kuma-pickable-uxform-field .kuma-uxform-field-content.view-mode {
   padding-top: 9px;
 }
 .kuma-cascade-date-uxform-field .kuma-calendar-picker-input {

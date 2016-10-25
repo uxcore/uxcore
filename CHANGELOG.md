@@ -1,3 +1,16 @@
+## 0.4.2
+
+`2016-10-25`
+
+- [Component] Form: `NEW` add new FormField `PickableFormField`
+- [Component] Form: `CHANGED` update `PickableFormField` to ~0.2.0
+- [Component] Form: `CHANGED` CascadeSelectFormField support `allowClear`
+- [Component] Form: `CHANGED` update `uxcore-date-form-field` to ~0.4.0
+- [Component] Calendar: `NEW` new props `showSecond` `showHour`
+- [Component] Calendar: `FIXED` missing method `getTimeConfig` 
+- [Component] Calendar: `CHANGED` add prop `timezone` to fix calendar timezone
+- [Component] Calendar: `CHANGED` all panel support clear icon
+
 ## 0.4.1
 
 `2016-09-20`
