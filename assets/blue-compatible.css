@@ -775,7 +775,7 @@
   border-radius: 3px;
   font-size: 16px;
   line-height: 24px;
-  text-indent: 999em;
+  text-indent: -999em;
 }
 .uxcore .kuma-calendar-prev-month-btn:hover,
 .uxcore .kuma-calendar-next-month-btn:hover,
@@ -1063,7 +1063,7 @@
   width: 24px;
   padding: 0px;
   border-radius: 3px;
-  text-indent: 999em;
+  text-indent: -999em;
 }
 .uxcore .kuma-calendar-month-panel-prev-year-btn:hover,
 .uxcore .kuma-calendar-month-panel-next-year-btn:hover {
@@ -1211,7 +1211,7 @@
   top: 9px;
   width: 24px;
   border-radius: 3px;
-  text-indent: 999em;
+  text-indent: -999em;
 }
 .uxcore .kuma-calendar-year-panel-prev-decade-btn:hover,
 .uxcore .kuma-calendar-year-panel-next-decade-btn:hover {
@@ -1344,7 +1344,7 @@
   line-height: 24px;
   display: inline-block;
   border-radius: 3px;
-  text-indent: 999em;
+  text-indent: -999em;
 }
 .uxcore .kuma-calendar-decade-panel-prev-century-btn:hover,
 .uxcore .kuma-calendar-decade-panel-next-century-btn:hover {
@@ -1606,7 +1606,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   -webkit-overflow-scrolling: touch;
   outline: 0 none;
 }
-.uxcore .kuma-dlg-wrap.vertical-center-dailog {
+.uxcore .kuma-dlg-wrap.vertical-center-dialog {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1614,7 +1614,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   -ms-flex-pack: center;
       justify-content: center;
 }
-.uxcore .kuma-dlg-wrap.vertical-center-dailog .kuma-dlg {
+.uxcore .kuma-dlg-wrap.vertical-center-dialog .kuma-dlg {
   top: 0;
 }
 .uxcore .kuma-dlg-wrap .kuma-dlg {
@@ -2867,7 +2867,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   min-height: 40px;
   line-height: 40px;
   background-color: #000;
-  z-index: 100;
+  z-index: 10;
   left: 0px;
   top: 0px;
   opacity: .3;
@@ -2909,15 +2909,56 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   margin-right: 10px;
 }
-.uxcore .kuma-uxtable-actionbar-item.kuma-button {
-  padding: 0 30px;
+.uxcore .kuma-uxtable-column-picker {
+  float: right;
+  position: relative;
 }
-.uxcore .g-fr {
+.uxcore .kuma-uxtable-column-picker .kuma-icon-list {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #999;
+}
+.uxcore .kuma-uxtable-column-picker-title {
+  vertical-align: middle;
+}
+.uxcore .kuma-uxtable-column-picker-trigger {
+  padding: 4px 10px;
+  z-index: 12;
+  position: relative;
+  background: white;
+}
+.uxcore .kuma-uxtable-column-picker-trigger.kuma-uxtable-column-picker-trigger__dropdown-visible {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.uxcore .kuma-uxtable-column-picker-trigger.kuma-uxtable-column-picker-trigger__dropdown-visible:after {
+  background-color: #fff;
+  height: 4px;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  right: 0px;
+}
+.uxcore .kuma-uxtable-column-picker-dropdown {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  z-index: 11;
+  background: white;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  padding: 10px 20px;
+  min-height: 200px;
+  min-width: 200px;
+}
+.uxcore .kuma-uxtable-column-picker-dropdown .kuma-tree {
   float: right;
 }
-.uxcore a.kuma-button-swhite {
-  line-height: 26px;
-  height: 28px;
+.uxcore .kuma-uxtable-column-picker-dropdown .kuma-tree.no-group {
+  float: left;
+}
+.uxcore .kuma-uxtable-column-picker-dropdown .kuma-tree li span.kuma-tree-switcher {
+  display: none;
 }
 .uxcore .kuma-uxtable-searchbar {
   float: right;
@@ -2936,6 +2977,24 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-searchbar .kuma-icon-search:hover {
   color: #333;
+}
+.uxcore .kuma-uxtable-linkbar {
+  float: right;
+  line-height: 30px;
+}
+.uxcore .kuma-uxtable-linkbar a {
+  vertical-align: middle;
+}
+.uxcore .kuma-uxtable-linkbar-cutoff {
+  border-right: 1px solid #dbdbdb;
+  height: 14px;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.uxcore .kuma-uxtable-linkbar-item {
+  cursor: pointer;
+  display: inline-block;
 }
 .uxcore .kuma-uxtable {
   border-collapse: collapse;
@@ -2971,6 +3030,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-header {
   background-color: #f5f5f5;
+  font-size: 14px;
   font-weight: 600;
   min-width: 100%;
   white-space: nowrap;
@@ -3106,8 +3166,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
 }
 .uxcore .kuma-uxtable-tree-icon > .kuma-icon {
-  font-size: 14px;
+  font-size: 16px;
   color: #999999;
+}
+.uxcore .kuma-uxtable-tree-icon > .kuma-icon:before {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  zoom: 1;
+}
+.uxcore .kuma-uxtable-tree-icon > .kuma-icon.kuma-icon-triangle-right__open:before {
+  transform: rotate(90deg);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+  -ms-transform: rotate(90deg);
 }
 .uxcore .kuma-uxtable-emptyicon {
   width: 22px;
@@ -3128,29 +3198,49 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-h-sort {
   position: relative;
-  vertical-align: top;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 20px;
+  width: 14px;
+  display: inline-block;
   color: #999;
 }
 .uxcore .kuma-uxtable-h-sort .kuma-icon {
   font-size: 13px;
+  height: 14px;
+  line-height: 11px;
+  position: absolute;
   -webkit-text-stroke-width: 0;
 }
 .uxcore .kuma-uxtable-h-sort .kuma-icon.active {
   color: #2599f2;
 }
-.uxcore .kuma-uxtable-h-sort .kuma-icon-iconfontdown {
-  margin-left: -7px;
+.uxcore .kuma-uxtable-h-sort .kuma-icon-triangle-up {
+  top: 0;
+}
+.uxcore .kuma-uxtable-h-sort .kuma-icon-triangle-down {
+  bottom: 0;
 }
 .uxcore .action-container .action {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
 }
+.uxcore .action-container .action.collapse-one {
+  padding: 0 13px;
+}
+.uxcore .action-container .action.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.uxcore .action-container .action i {
+  color: #3B8FD9;
+}
+.uxcore .action-container .action.kuma-button i {
+  color: #2599f2;
+}
 .uxcore .action-container .action + .action {
   margin-left: 10px;
-}
-.uxcore .action-container .kuma-icon-triangle-down {
-  color: #999;
 }
 .uxcore .action-container .split {
   color: #ccc;
@@ -3203,7 +3293,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-body-scroll {
   position: relative;
-  float: left;
   overflow: auto;
   z-index: 1;
   height: 100%;
@@ -3219,7 +3308,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-header-scroll {
   position: static;
-  float: left;
   overflow-x: hidden;
   z-index: 1;
   height: 100%;
@@ -3255,7 +3343,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
 }
 .uxcore .kuma-uxtable-row-tree-selector {
   margin-right: 12px;
@@ -3272,6 +3359,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells {
   background: white;
 }
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells:hover {
+  background: #f2f9ff;
+}
 .uxcore .kuma-uxtable-border-line .kuma-uxtable-row .kuma-uxtable-row-cells {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -3287,6 +3377,20 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-border-line .kuma-uxtable-header-group-name {
   border-right: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
+}
+.uxcore .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  padding: 4px 12px;
+}
+.uxcore .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item a {
+  color: #3B8FD9;
+  cursor: pointer;
+}
+.uxcore .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item.kuma-dropdown-menu-item-disabled {
+  background: #e8e8e8;
+}
+.uxcore .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item.kuma-dropdown-menu-item-disabled a {
+  color: #ccc;
+  cursor: not-allowed;
 }
 .uxcore .kuma-dropdown {
   position: absolute;
@@ -8305,4 +8409,73 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-uxcore-album .album-carousel-control.control-next:before {
   content: '\e643';
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right {
+  direction: ltl;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left {
+  direction: rtl;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .album-overlay {
+  direction: ltr;
+}
+.uxcore .kuma-uxcore-album.has-thumb .album-cover {
+  display: inline-block;
+  margin: 0 5px;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview {
+  margin: 0 5px;
+  display: inline-block;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control {
+  color: #f00;
+  background: #f5f5f5;
+  color: #999;
+  width: 120px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  left: 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control:hover {
+  cursor: pointer;
+  background: #f2f9ff;
+  color: #999;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.disabled {
+  background: #f5f5f5;
+  color: #ccc;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-up {
+  top: 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-up:before {
+  content: '\e641';
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-down {
+  bottom: 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-down:before {
+  content: '\e642';
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container {
+  margin: 25px 0;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container .album-carousel-list {
+  width: 120px;
+  white-space: normal;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container .album-carousel-list > li {
+  margin: 6px 0;
+  display: block;
+  cursor: pointer;
+}
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container .album-carousel-list > li.active {
+  border-color: transparent;
 }

@@ -1,3 +1,37 @@
+## 0.4.3
+
+`2016-11-02`
+
+- [Component] Table: `CHANGED` actionBar button type (the first is outline  & others are secondary)
+- [Component] Table: `CHANGED` change header title font-size to 14px
+- [Component] Table: `CHANGED` lint (reduce errors numbrt to 24)
+- [Component] Table: `CHANGED` change tree icon in subComp mode.
+- [Component] Table: `CHANGED` `column.collapseNum` will support string
+- [Component] Table: `CHANGED` new action column
+- [Component] Table: `CHANGED` new column picker
+- [Component] Table: `CHANGED` js style standardization `Cell/index`, `ActionBar`, `SearchBar`
+- [Component] Table: `CHANGED` replace `deepcopy` with `lodash/cloneDeep`
+- [Component] Table: `CHANGED` order icon change
+- [Component] Table: `NEW` add link bar
+- [Component] Table: `FIXED` columnPicker can hide all columns.
+- [Component] Table: `FIXED` treeIcon cell should not has right border when className is kuma-uxtable-border-line.
+- [Component] Table: `FIXED` body width calculation bug when there is fixed columns & width is not defined.
+- [Component] Table: `FIXED` bodyHeight calculation bug [#132](https://github.com/uxcore/uxcore-table/issues/132)
+- [Component] Table: `FIXED` emptyText lineHeight calculation bug [#133](https://github.com/uxcore/uxcore-table/issues/133)
+- [Component] Album: `NEW` 增加缩略图功能
+- [Component] Calendar: `FIXED` text-indent cause scroll issue.
+- [Component] Carousel: `CHANGED` update react-slick to ~0.14.0
+- [Component] Dialog: `CHANGED` set `vertical-center-dialog` as default wrapClassName
+- [Component] Mention: `FIXED` inputEditor & textareaEditor trigger change event when mention addded.
+- [Component] Mention: `FIXED` issue when mention's 'matchRange' props start from 0.
+- [Component] Mention: `CHANGED` change panel's position with inputEditor & textareaEditor.
+- [Component] Mention: `FIXED` fixed 'onChange' not trigger in inputEditor & textareaEditor.  
+- [Component] Steps: `FIXED` missing react import
+- [Component] Tabs: `NEW` support switch when the number of items is too large
+- [Component] Tree: `FIXED` fix arraysEqual missing 
+- [Component] Tree: `CHANGED` rewrite rc-tree render logic, move supportSvg judge to `render`
+- [Component] Uploader: `FIXED` fix file.response.getJson bug when upload fails.
+
 ## 0.4.2
 
 `2016-10-25`
