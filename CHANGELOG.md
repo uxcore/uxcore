@@ -1,3 +1,50 @@
+## 0.4.4
+
+`2016-12-01`
+
+- [Component] Album: `CHANGED` `thumbPlacement` support `bottom/top` 
+- [Component] Album: `NEW` add direct method to Album which can make the component be using easily more widely.
+- [Component] Calendar: `FIXED` can not reset input value if value is null in React@15.x
+- [Component] Carousel: `CHANGED` support new props `largeArrowsAndDots` & `centerDots`
+- [Component] Carousel: `CHANGED` update react-slick to ~0.14.0
+- [Component] CascadeSelect: `CHANGED` another efficient way to fix issue #7
+- [Component] CascadeSelect: `CHANGED` subMenu won't be hide before selected options's length is larger than cascadeSize when cascadeSize is not equal to options level. [#7](https://github.com/uxcore/uxcore-cascade-select/issues/7)
+- [Component] CascadeSelect: `FIXED` add support for browsers that does not implement array.prototype.find. 
+- [Component] CascadeSelect: `CHANGED` beforeRender default value optimazition
+- [Component] CascadeSelect: `FIXED` input height bug
+- [Component] Dialog: `CHANGED` remove loading props on button  
+- [Component] Dialog: `NEW` props `htmlClassName`
+- [Component] Dialog: `FIXED` if html overflow is scroll, dialog can be scrolled as well.
+- [Component] Form: `CHANGED` add subComp TextAreaCount for TextAreaFormField
+- [Component] Form: `CHANGED` RadioFormField support `jsxdisabled`
+- [Component] Form: `CHANGED` EditorFormField jsxcontent is deprecated. use jsxvalues directly.
+- [Component] Form: `CHANGED` getValues method will return a promise if asyncValidate is true 
+- [Component] Form: `FIXED` searchFormField lineHeight bug
+- [Component] Form: `NEW` add new prop `asyncValidate`
+- [Component] Mention: `FIXED` click on the contentEditable's placeholder, the editor can't focus. 
+- [Component] Menu: `CHANGED` to rc-menu@4.13.0
+- [Component] Message: `CHANGED` change `z-index` to 1070
+- [Component] Pickable: `CHANGED` small style change in hook mode 
+- [Component] Popover: `FIXED` prop `delay` fail to work
+- [Component] Popover: `CHANGED` new scaffold
+- [Component] Popover: `CHANGED` airbnb javascript style lint
+- [Component] Radiogroup: `CHANGED` support new props `disabled`
+- [Component] Steps: `FIXED` style bug when only one step set description
+- [Component] Table: `FIXED` setState may be triggered in componentWillMount
+- [Component] Table: `FIXED` rowData passed in method `addRowClassName` may be undefined
+- [Component] Table: `FIXED` SelectCellField: bug when value is undefined
+- [Component] Table: `FIXED` multiline reset is not thorough
+- [Component] Table: `CHANGED` set default labelInValue in SelectCellField 
+- [Component] Table: `CHANGED` new empty data
+- [Component] Table: `CHANGED` action will not render if render function return false [#158](https://github.com/uxcore/uxcore-table/issues/158)
+- [Component] Table: `FIXED` props `levels` fail to work [#157](https://github.com/uxcore/uxcore-table/issues/157)
+- [Component] Tabs: `FIXED` brick & filter style bug
+- [Component] Tabs: `FIXED` fix border-bottom style bug ([#13](https://github.com/uxcore/uxcore-tabs/issues/13))
+- [Component] Tabs: `CHANGED` set the height of the tabpane to 0 when inactive
+- [Component] Tabs: `NEW` support switch when the number of items is too large
+- [Component] Tree: `FIXED` loading icon missing
+- [Component] Uploader: `FIXED` fix file.response.getJson bug when upload fails.
+
 ## 0.4.3
 
 `2016-11-02`
@@ -18,7 +65,7 @@
 - [Component] Table: `FIXED` body width calculation bug when there is fixed columns & width is not defined.
 - [Component] Table: `FIXED` bodyHeight calculation bug [#132](https://github.com/uxcore/uxcore-table/issues/132)
 - [Component] Table: `FIXED` emptyText lineHeight calculation bug [#133](https://github.com/uxcore/uxcore-table/issues/133)
-- [Component] Album: `NEW` 增加缩略图功能
+- [Component] Album: `NEW` Add thumbnails
 - [Component] Calendar: `FIXED` text-indent cause scroll issue.
 - [Component] Carousel: `CHANGED` update react-slick to ~0.14.0
 - [Component] Dialog: `CHANGED` set `vertical-center-dialog` as default wrapClassName

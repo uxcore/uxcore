@@ -2749,34 +2749,128 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab-bar .kuma-tab-tab-active {
   color: #333;
 }
-.uxcore .kuma-tab-bar .kuma-tab-tab-inner {
-  display: block;
-}
 .uxcore .kuma-tab-bar .kuma-tab-tab-disabled {
   color: #ccc;
+}
+.uxcore .kuma-tab-content {
+  zoom: 1;
+}
+.uxcore .kuma-tab-content .kuma-tab-tabpane {
+  overflow: auto;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 .uxcore .kuma-tab-content .kuma-tab-tabpane-hidden {
   display: none;
 }
+.uxcore .kuma-tab-content-animated {
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  display: -ms-flexbox;
+  display: flex;
+  will-change: transform;
+}
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav {
   position: relative;
+  display: inline-block;
+  transform-origin: 0 0;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
   position: absolute;
-  top: -1px;
+  top: 0px;
   height: 3px;
   background-color: #f37327;
   z-index: 1;
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  transform-origin: 0 0;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar-animated,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar-animated {
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-animated,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-animated {
+  transition: transform 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-wrap,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-wrap {
+  overflow: hidden;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
+  padding: 0 45px;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+  line-height: 49px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  margin-right: -2px;
+  width: 32px;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  color: #666;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev-icon,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev-icon,
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next-icon,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next-icon {
+  display: inline-block;
+  font-smoothing: antialiased;
+  text-stroke-width: 0;
+  font-family: kuma;
+  font-size: 16px;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev-icon:before,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev-icon:before,
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next-icon:before,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next-icon:before {
+  display: block;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next-icon:before,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next-icon:before {
+  content: "\e643";
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev-icon:before,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev-icon:before {
+  content: "\e644";
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
+  right: 2px;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev {
+  left: 0;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-btn-disabled,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-btn-disabled {
+  color: #ccc;
+  cursor: not-allowed;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar {
   background-color: #f7f7f7;
+  height: 49px;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container {
   height: 49px;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 0;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab {
   margin-left: -1px;
@@ -2784,26 +2878,25 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 49px;
   font-size: 16px;
 }
-.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-inner {
-  padding: 0 45px;
-}
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-active {
   position: relative;
-  background-color: #fff;
-}
-.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-active .kuma-tab-tab-inner {
-  height: 49px;
   background-color: #fff;
   border-width: 0 1px;
   border-color: transparent #dbdbdb;
   border-style: solid;
 }
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next {
+  background-color: #f7f7f7;
+  line-height: 49px;
+}
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar {
   background-color: #f7f7f7;
+  height: 39px;
 }
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-container {
   height: 39px;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 0;
 }
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
   margin-left: -1px;
@@ -2811,19 +2904,17 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 39px;
   font-size: 14px;
 }
-.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-inner {
-  padding: 0 45px;
-}
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active {
   position: relative;
-  background-color: #fff;
-}
-.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active .kuma-tab-tab-inner {
-  height: 39px;
   background-color: #fff;
   border-width: 0 1px;
   border-color: transparent #dbdbdb;
   border-style: solid;
+}
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
+  background-color: #f7f7f7;
+  line-height: 39px;
 }
 .uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-nav-container {
   padding: 20px 30px;
@@ -2832,14 +2923,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: 30px;
   line-height: 30px;
   font-size: 14px;
-}
-.uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-inner {
   padding: 0 25px;
 }
 .uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-active {
   background: #fef7f2;
   border-radius: 2px;
   color: #f37327;
+}
+.uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-next {
+  display: none;
 }
 .uxcore .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-nav-container {
   padding: 20px 30px;
@@ -2853,12 +2946,176 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: 1px solid #dbdbdb;
   border-left: 0 none;
   font-size: 14px;
-}
-.uxcore .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-inner {
   padding: 0 30px;
 }
 .uxcore .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-active {
   background-color: #ededed;
+}
+.uxcore .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-prev,
+.uxcore .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-next {
+  display: none;
+}
+.uxcore .kuma-tab.kuma-tab-filter.kuma-tab-top .kuma-tab-bar,
+.uxcore .kuma-tab.kuma-tab-brick.kuma-tab-top .kuma-tab-bar {
+  border-bottom: none;
+}
+.uxcore .kuma-tab-top,
+.uxcore .kuma-tab-bottom {
+  overflow-x: hidden;
+}
+.uxcore .kuma-tab-top .kuma-tab-nav-container-scrolling,
+.uxcore .kuma-tab-bottom .kuma-tab-nav-container-scrolling {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.uxcore .kuma-tab-top .kuma-tab-nav-scroll,
+.uxcore .kuma-tab-bottom .kuma-tab-nav-scroll {
+  width: 99999px;
+}
+.uxcore .kuma-tab-top .kuma-tab-nav-wrap,
+.uxcore .kuma-tab-bottom .kuma-tab-nav-wrap {
+  width: 100%;
+}
+.uxcore .kuma-tab-top .kuma-tab-content-animated,
+.uxcore .kuma-tab-bottom .kuma-tab-content-animated {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.uxcore .kuma-tab-top .kuma-tab-content-animated .kuma-tab-tabpane,
+.uxcore .kuma-tab-bottom .kuma-tab-content-animated .kuma-tab-tabpane {
+  width: 100%;
+  display: block;
+}
+.uxcore .kuma-tab-top .kuma-tab-content-animated .kuma-tab-tabpane-inactive,
+.uxcore .kuma-tab-bottom .kuma-tab-content-animated .kuma-tab-tabpane-inactive {
+  opacity: 0;
+  height: 0;
+}
+.uxcore .kuma-tab-top {
+  border-bottom: 2px solid #f3f3f3;
+}
+.uxcore .kuma-tab-top .kuma-tab-bar {
+  border-bottom: 1px solid #f3f3f3;
+}
+.uxcore .kuma-tab-bottom {
+  border-top: 2px solid #f3f3f3;
+}
+.uxcore .kuma-tab-bottom .kuma-tab-bar {
+  border-top: 1px solid #f3f3f3;
+}
+.uxcore .kuma-tab-left,
+.uxcore .kuma-tab-right {
+  overflow-y: hidden;
+  height: 100%;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar,
+.uxcore .kuma-tab-right .kuma-tab-bar {
+  height: 100%;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container {
+  height: 100% !important;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-nav-wrap,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-nav-wrap {
+  height: 100%;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-nav.kuma-tab-nav-animated .kuma-tab-ink-bar,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-nav.kuma-tab-nav-animated .kuma-tab-ink-bar {
+  width: 2px;
+  height: 49px;
+  top: 0;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab-prev,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab-prev {
+  top: 2px;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab {
+  display: block;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab-next-icon:before,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab-next-icon:before {
+  content: "\e642";
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab-prev-icon:before,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-tab-prev-icon:before {
+  content: "\e641";
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container-scrolling,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container-scrolling {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: auto;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-prev,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-prev,
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-next,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-next {
+  margin-top: -2px;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-next,
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-next {
+  bottom: 0;
+  top: auto;
+}
+.uxcore .kuma-tab-left .kuma-tab-content-animated,
+.uxcore .kuma-tab-right .kuma-tab-content-animated {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transform: none!important;
+  height: 100%;
+}
+.uxcore .kuma-tab-left .kuma-tab-content-animated .kuma-tab-tabpane,
+.uxcore .kuma-tab-right .kuma-tab-content-animated .kuma-tab-tabpane {
+  height: 100%;
+}
+.uxcore .kuma-tab-left .kuma-tab-content-animated .kuma-tab-tabpane-inactive,
+.uxcore .kuma-tab-right .kuma-tab-content-animated .kuma-tab-tabpane-inactive {
+  display: none;
+}
+.uxcore .kuma-tab-left {
+  border-right: 2px solid #f3f3f3;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar {
+  float: left;
+  margin-bottom: 0;
+  border-right: 1px solid #f3f3f3;
+}
+.uxcore .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-nav.kuma-tab-nav-animated .kuma-tab-ink-bar {
+  right: 0;
+}
+.uxcore .kuma-tab-left .kuma-tab-content-animated {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.uxcore .kuma-tab-left .kuma-tab-content-animated .kuma-tab-tabpane {
+  height: 100%;
+}
+.uxcore .kuma-tab-right {
+  border-left: 2px solid #f3f3f3;
+}
+.uxcore .kuma-tab-right .kuma-tab-bar {
+  float: right;
+  margin-left: 10px;
+  border-left: 1px solid #f3f3f3;
+}
+.uxcore .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container .kuma-tab-nav.kuma-tab-nav-animated .kuma-tab-ink-bar {
+  left: 0;
+}
+.uxcore .no-flexbox .kuma-tab-content {
+  transform: none !important;
+  overflow: auto;
+}
+.uxcore .no-csstransitions .kuma-tab-tabpane-inactive,
+.uxcore .no-flexbox .kuma-tab-tabpane-inactive,
+.uxcore .kuma-tab-content-no-animated .kuma-tab-tabpane-inactive {
+  display: none !important;
 }
 .uxcore .kuma-uxmask {
   position: absolute;
@@ -2963,6 +3220,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-searchbar {
   float: right;
   position: relative;
+  width: 355px;
 }
 .uxcore .kuma-uxtable-searchbar .kuma-input {
   height: 32px;
@@ -2970,7 +3228,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-searchbar .kuma-icon-search {
   position: absolute;
   line-height: 16px;
-  color: #ccc;
+  color: #999;
   right: 8px;
   top: 8px;
   cursor: pointer;
@@ -2981,6 +3239,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-linkbar {
   float: right;
   line-height: 30px;
+  margin-right: 10px;
 }
 .uxcore .kuma-uxtable-linkbar a {
   vertical-align: middle;
@@ -3120,6 +3379,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-row.multiline .kuma-uxtable-cell .default-cell {
   white-space: normal;
   height: auto;
+}
+.uxcore .kuma-uxtable-row.multiline .kuma-uxtable-cell > div {
+  height: auto;
+  white-space: normal;
 }
 .uxcore .kuma-uxtable-cell-field.hasError .kuma-input,
 .uxcore .kuma-uxtable-cell-field.hasError .kuma-select2-selection {
@@ -3642,6 +3905,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background-attachment: scroll;
   background-image: url('https://aliwork.alicdn.com/tps/TB1k_tsKpXXXXcQXFXXXXXXXXXX-130-87.png');
 }
+.uxcore .kuma-tree li span.kuma-tree-icon_loading {
+  margin-right: 2px;
+  background: url('https://t.alipayobjects.com/images/rmsweb/T1YxhiXgJbXXXXXXXX.gif') no-repeat scroll 0 0;
+}
 .uxcore .kuma-tree li span.kuma-tree-switcher-noop {
   background-image: none;
 }
@@ -3686,11 +3953,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .use-svg .kuma-tree-switcher.kuma-tree-noline_open {
   background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
-  background-size: 50% 50%;
+  background-size: 50% auto;
 }
 .uxcore .use-svg .kuma-tree-switcher.kuma-tree-noline_close {
-  background: url('https://img.alicdn.com/tps/TB17BHzJVXXXXXEXXXXXXXXXXXX-10-14.svg') 50% 50% no-repeat;
-  background-size: 50% 50%;
+  background: url('https://img.alicdn.com/tps/TB17BHzJVXXXXXEXXXXXXXXXXXX-10-14.svg') 50% no-repeat;
+  background-size: auto 50%;
 }
 .uxcore .use-svg .kuma-tree-checkbox {
   display: inline-block;
@@ -4962,7 +5229,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-search-uxform-field .kuma-select2-selection--single {
   height: 32px;
 }
-.uxcore .kuma-search-uxform-field .kuma-select2-selection--single .kuma-select2-selection__rendered {
+.uxcore .kuma-search-uxform-field .kuma-select2-selection--single .kuma-select2-selection__rendered,
+.uxcore .kuma-search-uxform-field .kuma-select2-selection--single .kuma-select2-selection__placeholder {
   line-height: 30px;
 }
 .uxcore .kuma-search-uxform-field .kuma-uxform-main-search.has-class .kuma-select2-selection {
@@ -5026,6 +5294,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-cascade-select-uxform-field .kuma-select2 {
   width: 200px;
+}
+.uxcore .kuma-textarea-uxform-field .has-count {
+  position: relative;
+}
+.uxcore .kuma-textarea-uxform-field .has-count .kuma-uxform-textarea-count {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 .uxcore .kuma-progress-line-wrap {
   display: inline-block;
@@ -6206,7 +6482,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: fixed;
   margin-bottom: -45px;
   bottom: 50%;
-  z-index: 1000;
+  z-index: 1070;
   max-width: 300px;
 }
 .uxcore .kuma-message-content {
@@ -6339,7 +6615,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-pickable-item-hook.active {
   border-color: #fa7e37;
   background: white;
-  background: linear-gradient(-45deg, transparent 10px, white 0), linear-gradient(45deg, transparent 15px, #fa7e37 0);
+  background: linear-gradient(-45deg, transparent 11px, white 0), linear-gradient(45deg, transparent 15px, #fa7e37 0);
   position: relative;
   color: #333;
 }
@@ -6350,7 +6626,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: white;
   font-size: 10px;
   right: 0;
-  bottom: 0px;
+  bottom: -1px;
 }
 .uxcore .kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook:before {
   content: "\e611";
@@ -6361,6 +6637,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   /* Arrows */
   /* Dots */
 }
+.uxcore .kuma-carousel:hover .slick-prev,
+.uxcore .kuma-carousel:hover .slick-next {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
 .uxcore .kuma-carousel .slick-loading .slick-list {
   background: #fff url('https://gtms02.alicdn.com/tps/i2/TB1ZOqiLpXXXXcMXpXXBStGGXXX-32-32.gif') center center no-repeat;
 }
@@ -6368,12 +6649,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-carousel .slick-next {
   position: absolute;
   display: block;
-  height: 24px;
-  width: 20px;
+  opacity: 0;
+  z-index: 1;
+  height: 37px;
+  width: 24px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(51, 51, 51, 0.47);
   color: transparent;
   top: 50%;
   margin-top: -10px \9;
@@ -6384,17 +6667,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   outline: none;
 }
 .uxcore .kuma-carousel .slick-prev:hover,
-.uxcore .kuma-carousel .slick-next:hover,
-.uxcore .kuma-carousel .slick-prev:focus,
-.uxcore .kuma-carousel .slick-next:focus {
+.uxcore .kuma-carousel .slick-next:hover {
   outline: none;
   background: rgba(0, 0, 0, 0.5);
   color: transparent;
 }
 .uxcore .kuma-carousel .slick-prev:hover:before,
-.uxcore .kuma-carousel .slick-next:hover:before,
-.uxcore .kuma-carousel .slick-prev:focus:before,
-.uxcore .kuma-carousel .slick-next:focus:before {
+.uxcore .kuma-carousel .slick-next:hover:before {
   opacity: 1;
 }
 .uxcore .kuma-carousel .slick-prev.slick-disabled:before,
@@ -6577,6 +6856,26 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
   height: auto;
   border: 1px solid transparent;
+}
+.uxcore .kuma-carousel-dots-centered .slick-dots {
+  text-align: center;
+}
+.uxcore .kuma-carousel-large-mode .slick-prev,
+.uxcore .kuma-carousel-large-mode .slick-next {
+  width: 36px;
+  height: 55px;
+}
+.uxcore .kuma-carousel-large-mode .slick-prev:before,
+.uxcore .kuma-carousel-large-mode .slick-next:before {
+  font-size: 36px;
+}
+.uxcore .kuma-carousel-large-mode .slick-dots li {
+  width: 16px;
+  height: 4px;
+}
+.uxcore .kuma-carousel-large-mode .slick-dots li button {
+  width: 16px;
+  height: 4px;
 }
 .uxcore .animate {
   -webkit-animation-timing-function: ease;
@@ -8299,6 +8598,9 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album .album-overlay > .album-control.album-next:before {
   content: '\e643';
 }
+.uxcore .kuma-uxcore-album .album-overlay.album-overlay-no-control .album-stage {
+  padding: 20px;
+}
 .uxcore .kuma-uxcore-album .album-overlay .album-stage {
   margin-bottom: -100px;
   padding-bottom: 100px;
@@ -8323,6 +8625,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-uxcore-album .album-overlay .album-close {
   position: absolute;
+  cursor: pointer;
   right: 16px;
   top: 16px;
   font-size: 30px;
@@ -8381,6 +8684,7 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album .album-carousel-control {
   position: absolute;
   display: inline-block;
+  cursor: pointer;
   width: 24px;
   height: 72px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -8419,14 +8723,30 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .album-overlay {
   direction: ltr;
 }
-.uxcore .kuma-uxcore-album.has-thumb .album-cover {
-  display: inline-block;
-  margin: 0 5px;
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  direction: rtl;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .album-overlay {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+  direction: ltr;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .album-overlay {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
 }
 .uxcore .kuma-uxcore-album.has-thumb .thumbs-preview {
-  margin: 0 5px;
   display: inline-block;
-  width: 120px;
   margin: 0;
   padding: 0;
 }
@@ -8434,11 +8754,7 @@ a .uxcore-count:active {
   color: #f00;
   background: #f5f5f5;
   color: #999;
-  width: 120px;
   text-align: center;
-  height: 20px;
-  line-height: 20px;
-  left: 0;
 }
 .uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control:hover {
   cursor: pointer;
@@ -8449,33 +8765,117 @@ a .uxcore-count:active {
   background: #f5f5f5;
   color: #ccc;
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-up {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .album-cover,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .album-cover {
+  display: inline-block;
+  margin: 0 5px;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-control,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-control {
+  width: 120px;
+  height: 20px;
+  line-height: 20px;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-control.control-up,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-control.control-up {
   top: 0;
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-up:before {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-control.control-up:before,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-control.control-up:before {
   content: '\e641';
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-down {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-control.control-down,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-control.control-down {
   bottom: 0;
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.control-down:before {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-control.control-down:before,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-control.control-down:before {
   content: '\e642';
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container {
   margin: 25px 0;
   position: absolute;
   top: 0;
   overflow: hidden;
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container .album-carousel-list {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list {
   width: 120px;
   white-space: normal;
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container .album-carousel-list > li {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > li,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > li {
   margin: 6px 0;
   display: block;
   cursor: pointer;
 }
-.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-container .album-carousel-list > li.active {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > li.active,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > li.active {
   border-color: transparent;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item {
+  background: #fff;
+  border: 1px solid #ededed;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .album-cover,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .album-cover {
+  display: inline-block;
+  margin: 5px 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container {
+  margin: 0 25px;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list {
+  width: 120px;
+  white-space: normal;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > li,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > li {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+  margin: 0 6px;
+  display: block;
+  cursor: pointer;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > li.active,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > li.active {
+  border-color: transparent;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item {
+  background: #fff;
+  border: 1px solid #ededed;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+  width: 20px;
+  height: 70px;
+  line-height: 70px;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-up,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-up {
+  left: 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-up:before,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-up:before {
+  content: '\e644';
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-down,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-down {
+  right: 0;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-down:before,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-down:before {
+  content: '\e643';
 }
