@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 var less = require('gulp-less');
 var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
+var cssimport = require('gulp-cssimport');
 var concat = require('gulp-concat');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
@@ -183,6 +184,7 @@ gulp.task('theme_transport', ['theme'], function () {
 
 gulp.task('iconfont', ['theme_clean'], function (done) {
   gulp.src(['./iconfont.css'])
+      .pipe(cssimport())
       .pipe(cleancss({ compatibility: 'ie8' }))
       .pipe(gulp.dest('./assets'))
       .on('end', function () {
