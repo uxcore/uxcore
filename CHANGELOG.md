@@ -1,3 +1,38 @@
+## 0.4.5
+
+`2016-12-27`
+
+- [Component] Album: `NEW` API support img list & thumbnails
+- [Component] Calendar: `NEW` add new method `getTriggerNode`
+- [Component] CheckboxGroup: `CHANGED` type of value can be `number` or `string`
+- [Component] Dialog: `CHANGED` default texts of buttons change 
+- [Component] Dialog: `FIXED` position bug in IE browser
+- [Component] Form: `CHANGED` add new API `createFormField`
+- [Component] Form: `CHANGED` update `uxcore-date-form-field` to ~0.5.0 
+- [Component] Form: `FIXED` textarea height bug [#121](https://github.com/uxcore/uxcore-form/issues/121)
+- [Component] Form: `CHANGED` EditorFormField add new API `setContent`
+- [Component] Mention: `CHANGED` editor's width propType.
+- [Component] Mention: `CHANGED` add value props.
+- [Component] Menu: `NEW` add new style `kuma-menu-none-border`
+- [Component] Progress: `FIXED` vertical align of the text with the line. 
+- [Component] Table: `NEW` add type `check` to support inline checkbox editing
+- [Component] Table: `NEW` add new API `moveRowUp` & `moveRowDown`
+- [Component] Table: `NEW` new API `createCellField`
+- [Component] Table: `CHANGED` `SelectCellField` support `searchDelay` in order to optimize search performance
+- [Component] Table: `CHANGED` move all APIs to `methods.js`
+- [Component] Table: `CHANGED` RadioCellField support `config.data`
+- [Component] Table: `CHANGED` more powerful SelectCellField
+- [Component] Table: `CHANGED` add DateCellField
+- [Component] Table: `CHANGED` depend on `uxcore-cell-field`
+- [Component] Table: `FIXED` onPagerChange fail to be triggered in fetchLocalData mode.
+- [Component] Transfer: `CHANGED` remove head background color
+- [Component] Transfer: `CHANGED` fix Transfer width to 380px
+- [Component] Transfer: `CHANGED` search input placeholder
+- [Component] Transfer: `FIXED` fix bug in locateItem, index do not match
+- [Component] Tree: `FIXED` server render support [#3](https://github.com/uxcore/uxcore-tree/issues/3)
+- [Component] TreeSelect: `FIXED` add missing loading icon.
+
+
 ## 0.4.4
 
 `2016-12-01`
