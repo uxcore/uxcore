@@ -23,8 +23,8 @@ Before posting an issue, please read the [CHANGELOG](https://github.com/uxcore/u
 The fastest way to get started is to serve JavaScript from the CDN
 
 ```html
-<link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.0.7/orange.min.css">
-<script src="//g.alicdn.com/uxcore/uxcore/0.1.8/uxcore.min.js">
+<link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.0.19/orange.min.css">
+<script src="//g.alicdn.com/uxcore/uxcore/0.1.9/uxcore.min.js">
 ```
 
 if you'd like to use [npm](npmjs.com)
@@ -52,9 +52,9 @@ ReactDOM.render(<Button />, mountNode);
 
 And import style mannally
 
-```css
-import 'uxcore/assets/iconfont.css';
-import 'uxcore/assets/orange.css';
+```less
+@import '~uxcore/assets/iconfont.css';
+@import '~uxcore/assets/orange.css';
 ```
 
 ### import component as required
@@ -72,9 +72,9 @@ import Button from 'uxcore-button';
 And import style in your less file
 
 ```less
-import 'kuma-base/theme/blue.less'; // or orange.less global variables which components need
-import 'kuma-base/core.less'; // base element style and reset
-import 'uxcore-button/src/Button.less'; // component style
+@import '~kuma-base/theme/blue.less'; // or orange.less global variables which components need
+@import '~kuma-base/core.less'; // base element style and reset
+@import '~uxcore-button/src/Button.less'; // component style
 ```
 
 
