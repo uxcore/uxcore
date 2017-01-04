@@ -245,6 +245,13 @@
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * EmptyData Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore .kuma-calendar {
   box-sizing: border-box;
@@ -1993,7 +2000,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   list-style: none;
   float: left;
   background-color: #fff;
-  transition: background-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: background-color 0.3s ease-out 0s;
 }
 .uxcore .kuma-page-item a {
   text-decoration: none;
@@ -2782,7 +2789,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: 3px;
   background-color: #2599f2;
   z-index: 1;
-  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  transition: all ease-out 0.3s;
   transform-origin: 0 0;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar-animated,
@@ -5178,6 +5185,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-color: #F04631;
   background-color: #fff4f2;
 }
+.uxcore .kuma-uxform-field-content .kuma-radio-group-item,
+.uxcore .kuma-uxform-field-content .kuma-checkbox-group-item {
+  margin-bottom: 8px;
+}
 .uxcore .kuma-button-group-uxform-field {
   padding-left: 100px;
 }
@@ -6919,6 +6930,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: auto;
   border: 1px solid transparent;
 }
+.uxcore .kuma-carousel-always-show-arrows {
+  /* Arrows */
+}
+.uxcore .kuma-carousel-always-show-arrows .slick-prev,
+.uxcore .kuma-carousel-always-show-arrows .slick-next {
+  opacity: 1;
+}
 .uxcore .kuma-carousel-dots-centered .slick-dots {
   text-align: center;
 }
@@ -7565,6 +7583,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
+  overflow: hidden;
   width: 64px;
   height: 24px;
   line-height: 22px;
@@ -7708,11 +7727,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-badge-zoom-appear,
 .uxcore .kuma-badge-zoom-enter {
-  animation: antZoomBadgeIn 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: antZoomBadgeIn 0.3s ease-out;
   animation-fill-mode: both;
 }
 .uxcore .kuma-badge-zoom-leave {
-  animation: antZoomBadgeOut 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: antZoomBadgeOut 0.3s ease-out;
   animation-fill-mode: both;
 }
 .uxcore .kuma-badge-not-a-wrapper .uxcore .kuma-badge-count {
@@ -7732,7 +7751,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-scroll-number-only {
   display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s ease-out;
 }
 .uxcore .kuma-scroll-number.not-support-css-animation .uxcore .kuma-scroll-number-only > p {
   display: none;
@@ -8944,4 +8963,26 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-down:before,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-down:before {
   content: '\e643';
+}
+.uxcore .kuma-empty-data {
+  text-align: center;
+}
+.uxcore .kuma-empty-data.normal .kuma-empty-data-icon {
+  width: 82px;
+  height: 82px;
+}
+.uxcore .kuma-empty-data.large .kuma-empty-data-icon {
+  width: 192px;
+  height: 192px;
+}
+.uxcore .kuma-empty-data.large .kuma-empty-data-content {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.uxcore .kuma-empty-data-icon {
+  background-size: 100% 100%;
+  display: inline-block;
+}
+.uxcore .kuma-empty-data-content {
+  color: #999;
 }

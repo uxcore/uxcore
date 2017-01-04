@@ -1,3 +1,21 @@
+## 0.4.6
+
+`2016-01-04`
+
+- [General] add new component `EmptyData`
+- [Component] Carousel: `CHANGED` props `arrows` can be `always/hover`
+- [Component] Carousel: `CHANGED` change default ease to `ease-out`
+- [Component] CascadeSelect: `FIXED` even if default value is error, options should show correctly [#11](https://github.com/uxcore/uxcore-cascade-select/issues/11)
+- [Component] CascadeSelect: `FIXED` throw error if options cannot match value [#9](https://github.com/uxcore/uxcore-cascade-select/issues/9)
+- [Component] Form: `CHANGED` checkbox & radio style change
+- [Component] Formatter: `CHANGED` use default delimeter only delimeter is undefined
+- [Component] Switch: `FIXED` style when content overflow
+- [Component] Table: `NEW` add new prop `rowSelection.isDisabled`
+- [Component] Table: `FIXED` `column.rules` fail to work in `SelectCellField`
+- [Component] Tree: `FIXED` server render bug (missing document)
+- [Component] Tree: `FIXED` Table depends on refs.tree
+
+
 ## 0.4.5
 
 `2016-12-27`

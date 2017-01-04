@@ -11,6 +11,7 @@ var Collapse = require('./lib/Collapse');
 var Crumb = require('./lib/Crumb');
 var Dialog = require('./lib/Dialog');
 var Dropdown = require('./lib/Dropdown');
+var EmptyData = require('./lib/EmptyData');
 var Form = require('./lib/Form');
 var Formatter = require('./lib/Formatter');
 var Grid = require('./lib/Grid');
@@ -53,6 +54,7 @@ module.exports = {
   Crumb: Crumb,
   Dialog: Dialog,
   Dropdown: Dropdown,
+  EmptyData: EmptyData,
   Form: Form,
   Formatter: Formatter,
   Grid: Grid,
