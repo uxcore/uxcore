@@ -1,6 +1,12 @@
+## 0.4.7
+
+`2017-01-12`
+
+- [HotFix] fix compitable style svg path error
+
 ## 0.4.6
 
-`2016-01-04`
+`2017-01-04`
 
 - [General] add new component `EmptyData`
 - [Component] Carousel: `CHANGED` props `arrows` can be `always/hover`
