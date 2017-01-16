@@ -252,6 +252,13 @@
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * Splitter Component Style for uxcore
+ * @author vincent.bian
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore .kuma-calendar {
   box-sizing: border-box;
@@ -264,6 +271,9 @@
 }
 .uxcore .kuma-calendar a {
   text-decoration: none;
+}
+.uxcore .kuma-calendar * {
+  transition: all 0.15s ease-out;
 }
 .uxcore .kuma-calendar-input-wrap {
   position: relative;
@@ -367,101 +377,89 @@
 .uxcore .kuma-calendar-one-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
   width: 304px;
 }
-@keyframes slideUpIn {
+@keyframes calendarSlideInDown {
   0% {
     opacity: 0;
-    transform-origin: 0 0;
-    transform: scaleY(0.8);
+    transform: translate(0, 10px);
   }
   100% {
     opacity: 1;
-    transform-origin: 0 0;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
-@keyframes slideUpOut {
+@keyframes calendarSlideOutDown {
   0% {
     opacity: 1;
-    transform-origin: 0 0;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
   100% {
     opacity: 0;
-    transform-origin: 0 0;
-    transform: scaleY(0.8);
+    transform: translate(0, 10px);
   }
 }
-@keyframes slideDownIn {
+@keyframes calendarSlideInUp {
   0% {
     opacity: 0;
-    transform-origin: 100% 100%;
-    transform: scaleY(0.8);
+    transform: translate(0, -10px);
   }
   100% {
     opacity: 1;
-    transform-origin: 100% 100%;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
-@keyframes slideDownOut {
+@keyframes calendarSlideOutUp {
   0% {
     opacity: 1;
-    transform-origin: 100% 100%;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
   100% {
     opacity: 0;
-    transform-origin: 100% 100%;
-    transform: scaleY(0.8);
+    transform: translate(0, -10px);
   }
 }
-.uxcore .kuma-calendar-picker-placement-bottomLeft.slideUp-enter,
-.uxcore .kuma-calendar-picker-placement-bottomLeft.slideUp-appear {
+.uxcore .kuma-calendar-picker-placement-bottomLeft.calendarSlideUp-enter,
+.uxcore .kuma-calendar-picker-placement-bottomLeft.calendarSlideUp-appear {
   opacity: 0;
-  transform-origin: 0 0;
-  transform: scaleY(0.8);
-  animation-timing-function: ease;
+  transform: translate(0, 10px);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-calendar-picker-placement-bottomLeft.slideUp-enter-active,
-.uxcore .kuma-calendar-picker-placement-bottomLeft.slideUp-appear-active {
+.uxcore .kuma-calendar-picker-placement-bottomLeft.calendarSlideUp-enter-active,
+.uxcore .kuma-calendar-picker-placement-bottomLeft.calendarSlideUp-appear-active {
   visibility: visible;
-  animation-name: slideUpIn;
+  animation-name: calendarSlideInDown;
 }
-.uxcore .kuma-calendar-picker-placement-bottomLeft.slideUp-leave {
+.uxcore .kuma-calendar-picker-placement-bottomLeft.calendarSlideUp-leave {
   opacity: 1;
-  transform-origin: 0 0;
-  transform: scaleY(1);
-  animation-timing-function: ease;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-calendar-picker-placement-bottomLeft.slideUp-leave-active {
+.uxcore .kuma-calendar-picker-placement-bottomLeft.calendarSlideUp-leave-active {
   visibility: visible;
-  animation-name: slideUpOut;
+  animation-name: calendarSlideOutDown;
 }
-.uxcore .kuma-calendar-picker-placement-topLeft.slideUp-enter,
-.uxcore .kuma-calendar-picker-placement-topLeft.slideUp-appear {
+.uxcore .kuma-calendar-picker-placement-topLeft.calendarSlideUp-enter,
+.uxcore .kuma-calendar-picker-placement-topLeft.calendarSlideUp-appear {
   opacity: 0;
-  transform-origin: 100% 100%;
-  transform: scaleY(0.8);
-  animation-timing-function: ease;
+  transform: translate(0, -10px);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-calendar-picker-placement-topLeft.slideUp-enter-active,
-.uxcore .kuma-calendar-picker-placement-topLeft.slideUp-appear-active {
+.uxcore .kuma-calendar-picker-placement-topLeft.calendarSlideUp-enter-active,
+.uxcore .kuma-calendar-picker-placement-topLeft.calendarSlideUp-appear-active {
   visibility: visible;
-  animation-name: slideDownIn;
+  animation-name: calendarSlideInUp;
 }
-.uxcore .kuma-calendar-picker-placement-topLeft.slideUp-leave {
+.uxcore .kuma-calendar-picker-placement-topLeft.calendarSlideUp-leave {
   opacity: 1;
-  transform-origin: 100% 100%;
-  transform: scaleY(1);
-  animation-timing-function: ease;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-calendar-picker-placement-topLeft.slideUp-leave-active {
+.uxcore .kuma-calendar-picker-placement-topLeft.calendarSlideUp-leave-active {
   visibility: visible;
-  animation-name: slideDownOut;
+  animation-name: calendarSlideOutUp;
 }
 .uxcore .kuma-calendar-picker-input {
   position: relative;
@@ -1693,29 +1691,27 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-left: 8px;
   margin-bottom: 0;
 }
-@keyframes threeFallVertical {
+@keyframes dialogSlideInDown {
   0% {
     opacity: 0;
-    transform: perspective(1300px) rotateX(-90deg);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
-    transform: perspective(1300px) rotateX(0deg);
+    transform: translateY(0%);
   }
 }
-.uxcore .threeFallV-enter,
-.uxcore .threeFallV-appear {
-  opacity: 0;
-  transform: perspective(1300px) rotateX(-90deg);
-  animation-timing-function: ease;
-  animation-duration: .3s;
+@keyframes dialogSlideOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
-.uxcore .threeFallV-enter-active,
-.uxcore .threeFallV-appear-active {
-  visibility: visible;
-  animation-name: threeFallVertical;
-}
-@keyframes fadeIn {
+@keyframes dialogFadeIn {
   0% {
     opacity: 0;
   }
@@ -1723,16 +1719,50 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
 }
-.uxcore .fade-enter,
-.uxcore .fade-appear {
+@keyframes dialogFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.uxcore .dialogFade-enter,
+.uxcore .dialogFade-appear {
   opacity: 0;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .fade-enter-active,
-.uxcore .fade-appear-active {
-  visibility: visible;
-  animation-name: fadeIn;
+.uxcore .dialogFade-enter-active,
+.uxcore .dialogFade-appear-active {
+  animation-name: dialogFadeIn;
+}
+.uxcore .dialogFade-leave {
+  opacity: 1;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .dialogFade-leave-active {
+  animation-name: dialogFadeOut;
+}
+.uxcore .dialogSlideDown-enter,
+.uxcore .dialogSlideDown-appear {
+  opacity: 0;
+  transform: translateY(30px);
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .dialogSlideDown-enter-active,
+.uxcore .dialogSlideDown-appear-active {
+  animation-name: dialogSlideInDown;
+}
+.uxcore .dialogSlideDown-leave {
+  opacity: 1;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .dialogSlideDown-leave-active {
+  animation-name: dialogSlideOutDown;
 }
 .uxcore .kuma-dlg-wrap-hidden > .uxcore .kuma-dlg-mask {
   display: none;
@@ -1844,10 +1874,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-left-color: #fff;
 }
 .uxcore .kuma-tooltip-placement-leftTop .kuma-tooltip-arrow {
-  top: 15%;
+  top: 25%;
 }
 .uxcore .kuma-tooltip-placement-leftBottom .kuma-tooltip-arrow {
-  top: 85%;
+  top: 75%;
 }
 .uxcore .kuma-tooltip-placement-top,
 .uxcore .kuma-tooltip-placement-topLeft,
@@ -1934,10 +1964,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-right-color: #fff;
 }
 .uxcore .kuma-tooltip-placement-rightTop .kuma-tooltip-arrow {
-  top: 15%;
+  top: 25%;
 }
 .uxcore .kuma-tooltip-placement-rightBottom .kuma-tooltip-arrow {
-  top: 85%;
+  top: 75%;
 }
 .uxcore .kuma-tooltip-arrow {
   position: absolute;
@@ -1965,6 +1995,214 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-align: center;
   text-decoration: none;
   background-color: #fff;
+}
+@keyframes tipSlideInLeft {
+  0% {
+    transform: translate(-10px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes tipSlideOutLeft {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-10px, 0);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-tooltip-placement-right.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-rightTop.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-rightBottom.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-right.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-rightTop.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-rightBottom.tip-slide-appear {
+  opacity: 0;
+  transform: translate(-10px, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-right.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-rightTop.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-rightBottom.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-right.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-rightTop.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-rightBottom.tip-slide-appear-active {
+  animation-name: tipSlideInLeft;
+}
+.uxcore .kuma-tooltip-placement-right.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-rightTop.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-rightBottom.tip-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-right.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-rightTop.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-rightBottom.tip-slide-leave-active {
+  animation-name: tipSlideOutLeft;
+}
+@keyframes tipSlideInRight {
+  0% {
+    transform: translate(10px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes tipSlideOutRight {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10px, 0);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-tooltip-placement-left.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-leftTop.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-leftBottom.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-left.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-leftTop.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-leftBottom.tip-slide-appear {
+  opacity: 0;
+  transform: translate(10px, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-left.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-leftTop.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-leftBottom.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-left.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-leftTop.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-leftBottom.tip-slide-appear-active {
+  animation-name: tipSlideInRight;
+}
+.uxcore .kuma-tooltip-placement-left.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-leftTop.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-leftBottom.tip-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-left.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-leftTop.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-leftBottom.tip-slide-leave-active {
+  animation-name: tipSlideOutRight;
+}
+@keyframes tipSlideInBottom {
+  0% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes tipSlideOutBottom {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-tooltip-placement-top.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-topLeft.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-topRight.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-top.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-topLeft.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-topRight.tip-slide-appear {
+  opacity: 0;
+  transform: translate(0, 10px);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-top.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-topLeft.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-topRight.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-top.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-topLeft.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-topRight.tip-slide-appear-active {
+  animation-name: tipSlideInBottom;
+}
+.uxcore .kuma-tooltip-placement-top.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-topLeft.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-topRight.tip-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-top.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-topLeft.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-topRight.tip-slide-leave-active {
+  animation-name: tipSlideOutBottom;
+}
+@keyframes tipSlideInTop {
+  0% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes tipSlideOutTop {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-tooltip-placement-bottom.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-bottomRight.tip-slide-enter,
+.uxcore .kuma-tooltip-placement-bottom.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-appear,
+.uxcore .kuma-tooltip-placement-bottomRight.tip-slide-appear {
+  opacity: 0;
+  transform: translate(0, -10px);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-bottom.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-bottomRight.tip-slide-enter-active,
+.uxcore .kuma-tooltip-placement-bottom.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-appear-active,
+.uxcore .kuma-tooltip-placement-bottomRight.tip-slide-appear-active {
+  animation-name: tipSlideInTop;
+}
+.uxcore .kuma-tooltip-placement-bottom.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-leave,
+.uxcore .kuma-tooltip-placement-bottomRight.tip-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-tooltip-placement-bottom.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-leave-active,
+.uxcore .kuma-tooltip-placement-bottomRight.tip-slide-leave-active {
+  animation-name: tipSlideOutTop;
 }
 .uxcore .kuma-page {
   font-size: 12px;
@@ -2252,6 +2490,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-color: #999 transparent transparent transparent;
   border-style: solid;
   border-width: 4px 4px 0 4px;
+  transition: all 0.3s ease-out;
 }
 .uxcore .kuma-select2-selection {
   outline: none;
@@ -2545,6 +2784,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: 1px solid #dedede;
 }
 .uxcore .kuma-select2-dropdown-menu li.kuma-select2-dropdown-menu-item {
+  transition: all 0.15s ease-out;
   margin: 0;
   position: relative;
   display: block;
@@ -2595,8 +2835,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: none;
 }
 .uxcore .kuma-select2-open .kuma-select2-arrow b {
-  border-color: transparent transparent #888 transparent;
-  border-width: 0 4px 4px 4px;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
 }
 .uxcore .kuma-select2-selected-has-icon li.kuma-select2-dropdown-menu-item-selected {
   padding-right: 20px;
@@ -2645,101 +2885,89 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   z-index: 1;
   box-shadow: none;
 }
-@keyframes slideUpIn {
+@keyframes selectSlideInDown {
   0% {
     opacity: 0;
-    transform-origin: 0 0;
-    transform: scaleY(0.8);
+    transform: translate(0, 10px);
   }
   100% {
     opacity: 1;
-    transform-origin: 0 0;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
-@keyframes slideUpOut {
+@keyframes selectSlideOutDown {
   0% {
     opacity: 1;
-    transform-origin: 0 0;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
   100% {
     opacity: 0;
-    transform-origin: 0 0;
-    transform: scaleY(0.8);
+    transform: translate(0, 10px);
   }
 }
-@keyframes slideDownIn {
+@keyframes selectSlideInUp {
   0% {
     opacity: 0;
-    transform-origin: 100% 100%;
-    transform: scaleY(0.8);
+    transform: translate(0, -10px);
   }
   100% {
     opacity: 1;
-    transform-origin: 100% 100%;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
-@keyframes slideDownOut {
+@keyframes selectSlideOutUp {
   0% {
     opacity: 1;
-    transform-origin: 100% 100%;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
   100% {
     opacity: 0;
-    transform-origin: 100% 100%;
-    transform: scaleY(0.8);
+    transform: translate(0, -10px);
   }
 }
-.uxcore .kuma-select2-dropdown-placement-bottomLeft.slideUp-enter,
-.uxcore .kuma-select2-dropdown-placement-bottomLeft.slideUp-appear {
+.uxcore .kuma-select2-dropdown-placement-bottomLeft.selectSlideUp-enter,
+.uxcore .kuma-select2-dropdown-placement-bottomLeft.selectSlideUp-appear {
   opacity: 0;
-  transform-origin: 0 0;
-  transform: scaleY(0.8);
-  animation-timing-function: ease;
+  transform: translate(0, 10px);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-select2-dropdown-placement-bottomLeft.slideUp-enter-active,
-.uxcore .kuma-select2-dropdown-placement-bottomLeft.slideUp-appear-active {
+.uxcore .kuma-select2-dropdown-placement-bottomLeft.selectSlideUp-enter-active,
+.uxcore .kuma-select2-dropdown-placement-bottomLeft.selectSlideUp-appear-active {
   visibility: visible;
-  animation-name: slideUpIn;
+  animation-name: selectSlideInDown;
 }
-.uxcore .kuma-select2-dropdown-placement-bottomLeft.slideUp-leave {
+.uxcore .kuma-select2-dropdown-placement-bottomLeft.selectSlideUp-leave {
   opacity: 1;
-  transform-origin: 0 0;
-  transform: scaleY(1);
-  animation-timing-function: ease;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-select2-dropdown-placement-bottomLeft.slideUp-leave-active {
+.uxcore .kuma-select2-dropdown-placement-bottomLeft.selectSlideUp-leave-active {
   visibility: visible;
-  animation-name: slideUpOut;
+  animation-name: selectSlideOutDown;
 }
-.uxcore .kuma-select2-dropdown-placement-topLeft.slideUp-enter,
-.uxcore .kuma-select2-dropdown-placement-topLeft.slideUp-appear {
+.uxcore .kuma-select2-dropdown-placement-topLeft.selectSlideUp-enter,
+.uxcore .kuma-select2-dropdown-placement-topLeft.selectSlideUp-appear {
   opacity: 0;
-  transform-origin: 100% 100%;
-  transform: scaleY(0.8);
-  animation-timing-function: ease;
+  transform: translate(0, -10px);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-select2-dropdown-placement-topLeft.slideUp-enter-active,
-.uxcore .kuma-select2-dropdown-placement-topLeft.slideUp-appear-active {
+.uxcore .kuma-select2-dropdown-placement-topLeft.selectSlideUp-enter-active,
+.uxcore .kuma-select2-dropdown-placement-topLeft.selectSlideUp-appear-active {
   visibility: visible;
-  animation-name: slideDownIn;
+  animation-name: selectSlideInUp;
 }
-.uxcore .kuma-select2-dropdown-placement-topLeft.slideUp-leave {
+.uxcore .kuma-select2-dropdown-placement-topLeft.selectSlideUp-leave {
   opacity: 1;
-  transform-origin: 100% 100%;
-  transform: scaleY(1);
-  animation-timing-function: ease;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-select2-dropdown-placement-topLeft.slideUp-leave-active {
+.uxcore .kuma-select2-dropdown-placement-topLeft.selectSlideUp-leave-active {
   visibility: visible;
-  animation-name: slideDownOut;
+  animation-name: selectSlideOutUp;
 }
 .uxcore .kuma-tab {
   border: 1px solid #dbdbdb;
@@ -2748,6 +2976,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: none;
 }
 .uxcore .kuma-tab-bar .kuma-tab-tab {
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
@@ -2758,6 +2987,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tab-bar .kuma-tab-tab-disabled {
   color: #ccc;
+}
+.uxcore .kuma-tab-bar .kuma-tab-tab:hover {
+  color: #2599f2;
 }
 .uxcore .kuma-tab-content {
   zoom: 1;
@@ -2771,7 +3003,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: none;
 }
 .uxcore .kuma-tab-content-animated {
-  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   display: -ms-flexbox;
   display: flex;
   will-change: transform;
@@ -2791,14 +3022,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   z-index: 1;
   transition: all ease-out 0.3s;
   transform-origin: 0 0;
-}
-.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar-animated,
-.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar-animated {
-  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
-}
-.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-animated,
-.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-animated {
-  transition: transform 0.5s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-container {
@@ -2891,6 +3114,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-width: 0 1px;
   border-color: transparent #dbdbdb;
   border-style: solid;
+  padding: 0 44px;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next {
@@ -2915,6 +3139,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   background-color: #fff;
   border-width: 0 1px;
+  padding: 0 44px;
   border-color: transparent #dbdbdb;
   border-style: solid;
 }
@@ -2990,6 +3215,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tab-top .kuma-tab-content-animated .kuma-tab-tabpane,
 .uxcore .kuma-tab-bottom .kuma-tab-content-animated .kuma-tab-tabpane {
+  transition: opacity 0.3s ease-out;
+  opacity: 1;
   width: 100%;
   display: block;
 }
@@ -3164,6 +3391,40 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   margin-left: 5px;
 }
+@keyframes tableMaskFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes tableMaskFadeOut {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.uxcore .tableMaskFade-enter,
+.uxcore .tableMaskFade-appear {
+  opacity: 0;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .tableMaskFade-enter-active,
+.uxcore .tableMaskFade-appear-active {
+  animation-name: tableMaskFadeIn;
+}
+.uxcore .tableMaskFade-leave {
+  opacity: 0.3;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .tableMaskFade-leave-active {
+  animation-name: tableMaskFadeOut;
+}
 .uxcore .kuma-uxtable-actionbar {
   width: 100%;
   margin-bottom: 12px;
@@ -3267,6 +3528,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   color: #666;
   table-layout: fixed;
+}
+.uxcore .kuma-uxtable input::-ms-clear {
+  display: none;
 }
 .uxcore .kuma-uxtable .half-checked {
   display: inline-block;
@@ -3718,6 +3982,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-weight: normal;
   color: #666;
   white-space: nowrap;
+  transition: all 0.3s ease-out;
 }
 .uxcore .kuma-dropdown-menu > .uxcore .kuma-dropdown-menu-item > a {
   color: #333;
@@ -3773,101 +4038,89 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   box-shadow: none;
   border-radius: 0;
 }
-@keyframes slideUpIn {
+@keyframes dropdownSlideInDown {
   0% {
     opacity: 0;
-    transform-origin: 0 0;
-    transform: scaleY(0.8);
+    transform: translate(0, 10px);
   }
   100% {
     opacity: 1;
-    transform-origin: 0 0;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
-@keyframes slideUpOut {
+@keyframes dropdownSlideOutDown {
   0% {
     opacity: 1;
-    transform-origin: 0 0;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
   100% {
     opacity: 0;
-    transform-origin: 0 0;
-    transform: scaleY(0.8);
+    transform: translate(0, 10px);
   }
 }
-@keyframes slideDownIn {
+@keyframes dropdownSlideInUp {
   0% {
     opacity: 0;
-    transform-origin: 100% 100%;
-    transform: scaleY(0.8);
+    transform: translate(0, -10px);
   }
   100% {
     opacity: 1;
-    transform-origin: 100% 100%;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
 }
-@keyframes slideDownOut {
+@keyframes dropdownSlideOutUp {
   0% {
     opacity: 1;
-    transform-origin: 100% 100%;
-    transform: scaleY(1);
+    transform: translate(0, 0);
   }
   100% {
     opacity: 0;
-    transform-origin: 100% 100%;
-    transform: scaleY(0.8);
+    transform: translate(0, -10px);
   }
 }
-.uxcore .kuma-dropdown-placement-bottomLeft.slideUp-enter,
-.uxcore .kuma-dropdown-placement-bottomLeft.slideUp-appear {
+.uxcore .kuma-dropdown-placement-bottomLeft.dropdownSlideUp-enter,
+.uxcore .kuma-dropdown-placement-bottomLeft.dropdownSlideUp-appear {
   opacity: 0;
-  transform-origin: 0 0;
-  transform: scaleY(0.8);
-  animation-timing-function: ease;
+  transform: translate(0, 10px);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-dropdown-placement-bottomLeft.slideUp-enter-active,
-.uxcore .kuma-dropdown-placement-bottomLeft.slideUp-appear-active {
+.uxcore .kuma-dropdown-placement-bottomLeft.dropdownSlideUp-enter-active,
+.uxcore .kuma-dropdown-placement-bottomLeft.dropdownSlideUp-appear-active {
   visibility: visible;
-  animation-name: slideUpIn;
+  animation-name: dropdownSlideInDown;
 }
-.uxcore .kuma-dropdown-placement-bottomLeft.slideUp-leave {
+.uxcore .kuma-dropdown-placement-bottomLeft.dropdownSlideUp-leave {
   opacity: 1;
-  transform-origin: 0 0;
-  transform: scaleY(1);
-  animation-timing-function: ease;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-dropdown-placement-bottomLeft.slideUp-leave-active {
+.uxcore .kuma-dropdown-placement-bottomLeft.dropdownSlideUp-leave-active {
   visibility: visible;
-  animation-name: slideUpOut;
+  animation-name: dropdownSlideOutDown;
 }
-.uxcore .kuma-dropdown-placement-topLeft.slideUp-enter,
-.uxcore .kuma-dropdown-placement-topLeft.slideUp-appear {
+.uxcore .kuma-dropdown-placement-topLeft.dropdownSlideUp-enter,
+.uxcore .kuma-dropdown-placement-topLeft.dropdownSlideUp-appear {
   opacity: 0;
-  transform-origin: 100% 100%;
-  transform: scaleY(0.8);
-  animation-timing-function: ease;
+  transform: translate(0, -10px);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-dropdown-placement-topLeft.slideUp-enter-active,
-.uxcore .kuma-dropdown-placement-topLeft.slideUp-appear-active {
+.uxcore .kuma-dropdown-placement-topLeft.dropdownSlideUp-enter-active,
+.uxcore .kuma-dropdown-placement-topLeft.dropdownSlideUp-appear-active {
   visibility: visible;
-  animation-name: slideDownIn;
+  animation-name: dropdownSlideInUp;
 }
-.uxcore .kuma-dropdown-placement-topLeft.slideUp-leave {
+.uxcore .kuma-dropdown-placement-topLeft.dropdownSlideUp-leave {
   opacity: 1;
-  transform-origin: 100% 100%;
-  transform: scaleY(1);
-  animation-timing-function: ease;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
-.uxcore .kuma-dropdown-placement-topLeft.slideUp-leave-active {
+.uxcore .kuma-dropdown-placement-topLeft.dropdownSlideUp-leave-active {
   visibility: visible;
-  animation-name: slideDownOut;
+  animation-name: dropdownSlideOutUp;
 }
 .uxcore .kuma-tree {
   margin: 0;
@@ -4256,6 +4509,214 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-popover-placement-leftBottom .uxcore .kuma-popover-arrow {
   top: 85%;
+}
+@keyframes popoverSlideInLeft {
+  0% {
+    transform: translate(-10px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes popoverSlideOutLeft {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-10px, 0);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-popover-placement-right.popover-slide-enter,
+.uxcore .kuma-popover-placement-rightTop.popover-slide-enter,
+.uxcore .kuma-popover-placement-rightBottom.popover-slide-enter,
+.uxcore .kuma-popover-placement-right.popover-slide-appear,
+.uxcore .kuma-popover-placement-rightTop.popover-slide-appear,
+.uxcore .kuma-popover-placement-rightBottom.popover-slide-appear {
+  opacity: 0;
+  transform: translate(-10px, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-right.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-rightTop.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-rightBottom.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-right.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-rightTop.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-rightBottom.popover-slide-appear-active {
+  animation-name: popoverSlideInLeft;
+}
+.uxcore .kuma-popover-placement-right.popover-slide-leave,
+.uxcore .kuma-popover-placement-rightTop.popover-slide-leave,
+.uxcore .kuma-popover-placement-rightBottom.popover-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-right.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-rightTop.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-rightBottom.popover-slide-leave-active {
+  animation-name: popoverSlideOutLeft;
+}
+@keyframes popoverSlideInRight {
+  0% {
+    transform: translate(10px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes popoverSlideOutRight {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10px, 0);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-popover-placement-left.popover-slide-enter,
+.uxcore .kuma-popover-placement-leftTop.popover-slide-enter,
+.uxcore .kuma-popover-placement-leftBottom.popover-slide-enter,
+.uxcore .kuma-popover-placement-left.popover-slide-appear,
+.uxcore .kuma-popover-placement-leftTop.popover-slide-appear,
+.uxcore .kuma-popover-placement-leftBottom.popover-slide-appear {
+  opacity: 0;
+  transform: translate(10px, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-left.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-leftTop.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-leftBottom.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-left.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-leftTop.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-leftBottom.popover-slide-appear-active {
+  animation-name: popoverSlideInRight;
+}
+.uxcore .kuma-popover-placement-left.popover-slide-leave,
+.uxcore .kuma-popover-placement-leftTop.popover-slide-leave,
+.uxcore .kuma-popover-placement-leftBottom.popover-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-left.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-leftTop.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-leftBottom.popover-slide-leave-active {
+  animation-name: popoverSlideOutRight;
+}
+@keyframes popoverSlideInBottom {
+  0% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes popoverSlideOutBottom {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-popover-placement-top.popover-slide-enter,
+.uxcore .kuma-popover-placement-topLeft.popover-slide-enter,
+.uxcore .kuma-popover-placement-topRight.popover-slide-enter,
+.uxcore .kuma-popover-placement-top.popover-slide-appear,
+.uxcore .kuma-popover-placement-topLeft.popover-slide-appear,
+.uxcore .kuma-popover-placement-topRight.popover-slide-appear {
+  opacity: 0;
+  transform: translate(0, 10px);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-top.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-topLeft.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-topRight.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-top.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-topLeft.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-topRight.popover-slide-appear-active {
+  animation-name: popoverSlideInBottom;
+}
+.uxcore .kuma-popover-placement-top.popover-slide-leave,
+.uxcore .kuma-popover-placement-topLeft.popover-slide-leave,
+.uxcore .kuma-popover-placement-topRight.popover-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-top.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-topLeft.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-topRight.popover-slide-leave-active {
+  animation-name: popoverSlideOutBottom;
+}
+@keyframes popoverSlideInTop {
+  0% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes popoverSlideOutTop {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-popover-placement-bottom.popover-slide-enter,
+.uxcore .kuma-popover-placement-bottomLeft.popover-slide-enter,
+.uxcore .kuma-popover-placement-bottomRight.popover-slide-enter,
+.uxcore .kuma-popover-placement-bottom.popover-slide-appear,
+.uxcore .kuma-popover-placement-bottomLeft.popover-slide-appear,
+.uxcore .kuma-popover-placement-bottomRight.popover-slide-appear {
+  opacity: 0;
+  transform: translate(0, -10px);
+  animation-timing-function: ease-out;
+  animation-duration: .15s;
+}
+.uxcore .kuma-popover-placement-bottom.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-bottomLeft.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-bottomRight.popover-slide-enter-active,
+.uxcore .kuma-popover-placement-bottom.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-bottomLeft.popover-slide-appear-active,
+.uxcore .kuma-popover-placement-bottomRight.popover-slide-appear-active {
+  animation-name: popoverSlideInTop;
+}
+.uxcore .kuma-popover-placement-bottom.popover-slide-leave,
+.uxcore .kuma-popover-placement-bottomLeft.popover-slide-leave,
+.uxcore .kuma-popover-placement-bottomRight.popover-slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .kuma-popover-placement-bottom.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-bottomLeft.popover-slide-leave-active,
+.uxcore .kuma-popover-placement-bottomRight.popover-slide-leave-active {
+  animation-name: popoverSlideOutTop;
 }
 @font-face {
   font-family: 'fileicon';
@@ -5662,6 +6123,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: #333;
   background: #fff;
 }
+.uxcore .kuma-menu * {
+  transition: all 0.15s ease-out;
+}
 .uxcore .kuma-menu-item-group-list {
   margin: 0;
   padding: 0;
@@ -5735,11 +6199,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 0;
   background-color: #e5e5e5;
 }
+.uxcore .kuma-menu-hidden {
+  display: none;
+}
 .uxcore .kuma-menu-submenu {
   position: relative;
 }
 .uxcore .kuma-menu-submenu > .kuma-menu {
-  display: none;
   background-color: #fff;
 }
 .uxcore .kuma-menu-submenu-vertical > .kuma-menu-submenu-title:after {
@@ -5793,7 +6259,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   padding: 0 20px;
   line-height: 50px;
   position: relative;
-  top: 1px;
 }
 .uxcore .kuma-menu-horizontal > .kuma-menu-item > a,
 .uxcore .kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title > a {
@@ -5821,16 +6286,33 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-horizontal > .kuma-menu-submenu,
 .uxcore .kuma-menu-horizontal > .kuma-menu-item {
   float: left;
-  border-bottom: 2px solid transparent;
   margin-right: 24px;
+  transition: all 0.3s ease-out;
+}
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu:after,
+.uxcore .kuma-menu-horizontal > .kuma-menu-item:after {
+  content: '';
+  height: 3px;
+  background: #2599f2;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -1px;
+  left: 0;
+  width: 0;
+  transition: all 0.3s ease-out;
 }
 .uxcore .kuma-menu-horizontal > .kuma-menu-submenu-active,
 .uxcore .kuma-menu-horizontal > .kuma-menu-item-active,
 .uxcore .kuma-menu-horizontal > .kuma-menu-submenu-selected,
 .uxcore .kuma-menu-horizontal > .kuma-menu-item-selected {
-  border-bottom: 2px solid #2599f2;
   background-color: #FBFBFB;
   color: #2599f2;
+}
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu-active:after,
+.uxcore .kuma-menu-horizontal > .kuma-menu-item-active:after,
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu-selected:after,
+.uxcore .kuma-menu-horizontal > .kuma-menu-item-selected:after {
+  width: 100%;
 }
 .uxcore .kuma-menu-horizontal > .kuma-menu-submenu-active .kuma-icon,
 .uxcore .kuma-menu-horizontal > .kuma-menu-item-active .kuma-icon,
@@ -5861,21 +6343,22 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
   font-size: 14px;
 }
-.uxcore .kuma-menu-vertical.uxcore .kuma-menu-sub {
+.uxcore .kuma-menu-vertical.kuma-menu-sub {
   padding: 0;
+  transition: height 0.3s ease-out;
+}
+.uxcore .kuma-menu-vertical.kuma-menu-sub > .kuma-menu-item,
+.uxcore .kuma-menu-vertical.kuma-menu-sub > .kuma-menu-submenu {
   transform-origin: 0 0;
 }
-.uxcore .kuma-menu-vertical.uxcore .kuma-menu-sub > .kuma-menu-item,
-.uxcore .kuma-menu-vertical.uxcore .kuma-menu-sub > .kuma-menu-submenu {
-  transform-origin: 0 0;
-}
-.uxcore .kuma-menu-sub.uxcore .kuma-menu-inline {
+.uxcore .kuma-menu-sub.kuma-menu-inline {
   padding: 0;
+  transition: all 0.3s ease-out;
   border: none;
   overflow: hidden;
 }
-.uxcore .kuma-menu-sub.uxcore .kuma-menu-inline > .kuma-menu-item,
-.uxcore .kuma-menu-sub.uxcore .kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
+.uxcore .kuma-menu-sub.kuma-menu-inline > .kuma-menu-item,
+.uxcore .kuma-menu-sub.kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
   line-height: 34px;
   height: 34px;
   list-style-type: disc;
@@ -5931,6 +6414,88 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 14px;
   line-height: 45px;
   height: 45px;
+}
+@keyframes menuOpen {
+  0% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes menuClose {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-menu-horizontal .kuma-menu-open--enter,
+.uxcore .kuma-menu-horizontal .kuma-menu-open--appear {
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+  transform: translate(0, 20px);
+  opacity: 0;
+}
+.uxcore .kuma-menu-horizontal .kuma-menu-open--enter-active,
+.uxcore .kuma-menu-horizontal .kuma-menu-open--appear-active {
+  animation-name: menuOpen;
+}
+.uxcore .kuma-menu-horizontal .kuma-menu-open--leave {
+  transform: translate(0, 0);
+  opacity: 1;
+  display: block;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .kuma-menu-horizontal .kuma-menu-open--leave-active {
+  animation-name: menuClose;
+}
+@keyframes verticalMenuOpen {
+  0% {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes verticalMenuClose {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+}
+.uxcore .kuma-menu-vertical .kuma-menu-open--enter,
+.uxcore .kuma-menu-vertical .kuma-menu-open--appear {
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+  transform: translate(-20px, 0);
+  opacity: 0;
+}
+.uxcore .kuma-menu-vertical .kuma-menu-open--enter-active,
+.uxcore .kuma-menu-vertical .kuma-menu-open--appear-active {
+  animation-name: verticalMenuOpen;
+}
+.uxcore .kuma-menu-vertical .kuma-menu-open--leave {
+  transform: translate(0, 0);
+  opacity: 1;
+  display: block;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .kuma-menu-vertical .kuma-menu-open--leave-active {
+  animation-name: verticalMenuClose;
 }
 .uxcore .kuma-checkbox-group-item {
   display: inline-block;
@@ -6183,6 +6748,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-multi-select-footer p {
   color: #999;
+}
+.uxcore .kuma-multi-select-footer-hidden {
+  display: none;
 }
 .uxcore .kuma-multi-select-footer .kuma-multi-select-button {
   margin: 3px;
@@ -6713,13 +7281,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-carousel:hover .slick-prev,
 .uxcore .kuma-carousel:hover .slick-next {
   opacity: 1;
-  transition: opacity 0.2s;
 }
 .uxcore .kuma-carousel .slick-loading .slick-list {
   background: #fff url('https://gtms02.alicdn.com/tps/i2/TB1ZOqiLpXXXXcMXpXXBStGGXXX-32-32.gif') center center no-repeat;
 }
 .uxcore .kuma-carousel .slick-prev,
 .uxcore .kuma-carousel .slick-next {
+  transition: all 0.2s ease-out;
   position: absolute;
   display: block;
   opacity: 0;
@@ -6741,6 +7309,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-carousel .slick-prev:hover,
 .uxcore .kuma-carousel .slick-next:hover {
+  transition: all 0.2s ease-out;
   outline: none;
   background: rgba(0, 0, 0, 0.5);
   color: transparent;
@@ -6825,6 +7394,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-carousel .slick-dots li button:hover,
 .uxcore .kuma-carousel .slick-dots li button:focus {
   outline: none;
+  opacity: .7;
+  transition: opacity 0.3s ease-out;
 }
 .uxcore .kuma-carousel .slick-dots li button:hover:before,
 .uxcore .kuma-carousel .slick-dots li button:focus:before {
@@ -6958,11 +7529,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: 4px;
 }
 .uxcore .animate {
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 @keyframes DlgFadeIn {
@@ -6973,6 +7544,22 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes slideInRight {
@@ -6993,6 +7580,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+@keyframes slideOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20%);
   }
 }
 @keyframes newspaper {
@@ -7091,15 +7688,43 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     transform: perspective(1300px) translateZ(0px) translateX(0%) rotateY(0deg);
   }
 }
+.uxcore .fade-enter,
+.uxcore .fade-appear {
+  opacity: 0;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: .3s;
+  -mozanimation-timing-function: ease-out;
+  -mozanimation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .fade-enter-active,
+.uxcore .fade-appear-active {
+  visibility: visible;
+  animation-name: fadeIn;
+}
+.uxcore .fade-leave {
+  opacity: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: .3s;
+  -mozanimation-timing-function: ease-out;
+  -mozanimation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .fade-leave-active {
+  visibility: visible;
+  animation-name: fadeOut;
+}
 .uxcore .dlgFade-enter,
 .uxcore .dlgFade-appear {
   opacity: 0;
   transform: scale(0.7);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .dlgFade-enter-active,
@@ -7111,11 +7736,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .slideRight-appear {
   opacity: 0;
   transform: translateX(20%);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .slideRight-enter-active,
@@ -7127,11 +7752,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .slideDown-appear {
   opacity: 0;
   transform: translateY(20%);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .slideDown-enter-active,
@@ -7139,15 +7764,28 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   visibility: visible;
   animation-name: slideInDown;
 }
+.uxcore .slideDown-leave {
+  opacity: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: .3s;
+  -mozanimation-timing-function: ease-out;
+  -mozanimation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore .slideDown-leave-active {
+  visibility: visible;
+  animation-name: slideOutDown;
+}
 .uxcore .newspaper-enter,
 .uxcore .newspaper-appear {
   opacity: 0;
   transform: rotate(-360deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .newspaper-enter-active,
@@ -7159,11 +7797,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .fall-appear {
   opacity: 0;
   transform: perspective(1300px) translateZ(600px) rotateX(20deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .fall-enter-active,
@@ -7175,11 +7813,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .threeFallH-appear {
   opacity: 0;
   transform: perspective(1300px) rotateY(-90deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .threeFallH-enter-active,
@@ -7191,11 +7829,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .threeFallV-appear {
   opacity: 0;
   transform: perspective(1300px) rotateX(-90deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .threeFallV-enter-active,
@@ -7208,11 +7846,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   opacity: 0;
   transform: perspective(1300px) rotateX(-60deg);
   transform-origin: 50% 0;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .threeSign-enter-active,
@@ -7224,11 +7862,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .superScale-appear {
   opacity: 0;
   transform: scale(2);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .superScale-enter-active,
@@ -7239,11 +7877,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .threeSlit-enter,
 .uxcore .threeSlit-appear {
   transform: perspective(1300px) translateZ(-3000px) rotateY(90deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .threeSlit-enter-active,
@@ -7256,11 +7894,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   opacity: 0;
   transform: perspective(1300px) translateY(100%) rotateX(90deg);
   transform-origin: 0 100%;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .threeRotateBottom-enter-active,
@@ -7273,11 +7911,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   opacity: 0;
   transform: perspective(1300px) translateZ(100px) translateX(-30%) rotateY(90deg);
   transform-origin: 0 100%;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .threeRotateLeft-enter-active,
@@ -7370,11 +8008,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   opacity: 0;
   transform: perspective(1000px) rotate3d(1, 0, 0, 45deg);
   transform-origin: 50% calc(110%);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .flip-enter-active,
@@ -7385,11 +8023,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .flip-leave {
   opacity: 1;
   transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .flip-leave-active {
@@ -7400,11 +8038,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .crop-appear {
   opacity: 0;
   transform: translate3d(0, 10px, 0) rotate3d(1, 1, 0, 25deg);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .crop-enter-active,
@@ -7415,11 +8053,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .crop-leave {
   opacity: 1;
   transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .crop-leave-active {
@@ -7430,11 +8068,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .zoom-appear {
   opacity: 0;
   transform: scale3d(0.7, 0.3, 1);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .zoom-enter-active,
@@ -7445,11 +8083,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .zoom-leave {
   opacity: 1;
   transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .zoom-leave-active {
@@ -7533,11 +8171,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   transform-origin: 0 0;
   transform: translateY(-100%);
   opacity: 0;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .moveUp-enter-active,
@@ -7549,11 +8187,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   transform-origin: 0 0;
   transform: translateY(0);
   opacity: 1;
-  -webkit-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: .3s;
-  -mozanimation-timing-function: ease;
+  -mozanimation-timing-function: ease-out;
   -mozanimation-duration: .3s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   animation-duration: .3s;
 }
 .uxcore .moveUp-leave-active {
@@ -8599,11 +9237,16 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-uxcore-album .album-cover {
   position: relative;
+  overflow: hidden;
+  -webkit-writing-mode: initial;
+      -ms-writing-mode: initial;
+          writing-mode: initial;
 }
 .uxcore .kuma-uxcore-album .album-cover > .album-item {
   position: relative;
   width: 100%;
   height: 100%;
+  transition: transform ease-out 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-cover > .album-item > img {
   position: absolute;
@@ -8615,7 +9258,7 @@ a .uxcore-count:active {
   max-width: 100%;
   max-height: 100%;
 }
-.uxcore .kuma-uxcore-album .album-cover:hover:before {
+.uxcore .kuma-uxcore-album .album-cover:before {
   content: '\e63d';
   position: absolute;
   left: 50%;
@@ -8630,16 +9273,30 @@ a .uxcore-count:active {
   text-align: center;
   line-height: 32px;
   cursor: pointer;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform ease-out 0.3s, opacity ease-out 0.3s;
 }
-.uxcore .kuma-uxcore-album .album-cover:hover:after {
+.uxcore .kuma-uxcore-album .album-cover:after {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 1;
+  transition: background-color ease-out 0.3s;
+}
+.uxcore .kuma-uxcore-album .album-cover:hover > .album-item {
+  transform: scale(1.1);
+}
+.uxcore .kuma-uxcore-album .album-cover:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.uxcore .kuma-uxcore-album .album-cover:hover:after {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .uxcore .kuma-uxcore-album .album-overlay {
   position: fixed;
@@ -8649,6 +9306,9 @@ a .uxcore-count:active {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
+}
+.uxcore .kuma-uxcore-album .album-overlay-hide {
+  display: none;
 }
 .uxcore .kuma-uxcore-album .album-overlay > .album-control {
   position: absolute;
@@ -8662,12 +9322,15 @@ a .uxcore-count:active {
   color: #fff;
   line-height: 60px;
   text-align: center;
+  transition: background-color ease-out 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-overlay > .album-control:hover {
   background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
+  cursor: pointer;
 }
 .uxcore .kuma-uxcore-album .album-overlay > .album-control.disabled {
+  background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.2);
   cursor: default;
 }
@@ -8723,6 +9386,15 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album .album-overlay .album-close:after {
   content: '\e610';
 }
+.uxcore .kuma-uxcore-album .album-overlay .album-carousel-list .item-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 72px;
+  border: 2px solid #fff;
+  transition: transform ease-out 0.3s, left ease-out 0.3s;
+}
 .uxcore .kuma-uxcore-album .album-carousel {
   position: relative;
   margin: 0 20px;
@@ -8737,14 +9409,20 @@ a .uxcore-count:active {
   white-space: nowrap;
   transition: transform cubic-bezier(0.6, 0, 0.3, 1) 1s;
 }
-.uxcore .kuma-uxcore-album .album-carousel-list > li {
+.uxcore .kuma-uxcore-album .album-carousel-list > .item {
   position: relative;
   display: inline-block;
   margin: 0 6px;
   width: 120px;
   height: 72px;
 }
-.uxcore .kuma-uxcore-album .album-carousel-list > li .album-item {
+.uxcore .kuma-uxcore-album .album-carousel-list > .item:hover .album-item {
+  transform: scale(1.1);
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > .item-border {
+  display: none;
+}
+.uxcore .kuma-uxcore-album .album-carousel-list > .item .album-item {
   position: absolute;
   left: 0;
   top: 0;
@@ -8753,17 +9431,13 @@ a .uxcore-count:active {
   z-index: -1;
   text-align: center;
   opacity: .6;
+  transition: all ease-out 0.3s;
 }
-.uxcore .kuma-uxcore-album .album-carousel-list > li img {
+.uxcore .kuma-uxcore-album .album-carousel-list > .item img {
   max-width: 100%;
   max-height: 100%;
 }
-.uxcore .kuma-uxcore-album .album-carousel-list > li.active {
-  border: 2px solid #fff;
-}
-.uxcore .kuma-uxcore-album .album-carousel-list > li.active .album-item {
-  left: -2px;
-  top: -2px;
+.uxcore .kuma-uxcore-album .album-carousel-list > .item.active .album-item {
   opacity: 1;
 }
 .uxcore .kuma-uxcore-album .album-carousel-control {
@@ -8776,12 +9450,14 @@ a .uxcore-count:active {
   color: #fff;
   line-height: 72px;
   font-size: 26px;
+  transition: background-color ease-out 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-carousel-control:hover {
   background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
 }
 .uxcore .kuma-uxcore-album .album-carousel-control.disabled {
+  background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.2);
   cursor: default;
 }
@@ -8836,7 +9512,6 @@ a .uxcore-count:active {
   padding: 0;
 }
 .uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control {
-  color: #f00;
   background: #f5f5f5;
   color: #999;
   text-align: center;
@@ -8850,6 +9525,9 @@ a .uxcore-count:active {
   background: #f5f5f5;
   color: #ccc;
 }
+.uxcore .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-list .item-active {
+  display: none;
+}
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .album-cover,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .album-cover {
   display: inline-block;
@@ -8860,6 +9538,7 @@ a .uxcore-count:active {
   width: 120px;
   height: 20px;
   line-height: 20px;
+  font-size: 20px;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-control.control-up,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-control.control-up {
@@ -8889,20 +9568,20 @@ a .uxcore-count:active {
   width: 120px;
   white-space: normal;
 }
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > li,
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > li {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > .item,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > .item {
   margin: 6px 0;
   display: block;
+  width: 120px;
+  height: 72px;
   cursor: pointer;
-}
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > li.active,
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > li.active {
-  border-color: transparent;
-}
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item,
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item {
   background: #fff;
   border: 1px solid #ededed;
+  overflow: hidden;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-left .thumbs-preview .album-carousel-container .album-carousel-list .album-item,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-right .thumbs-preview .album-carousel-container .album-carousel-list .album-item {
+  z-index: 1;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .album-cover,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .album-cover {
@@ -8918,26 +9597,24 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list {
-  width: 120px;
   white-space: normal;
 }
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > li,
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > li {
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > .item,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > .item {
+  width: 120px;
+  height: 72px;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
   margin: 0 6px;
   display: block;
   cursor: pointer;
-}
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > li.active,
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > li.active {
-  border-color: transparent;
-}
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item,
-.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > li .album-item {
-  background: #fff;
   border: 1px solid #ededed;
+  background: #fff;
+}
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-container .album-carousel-list .album-item,
+.uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list .album-item {
+  z-index: 1;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control {
@@ -8947,6 +9624,7 @@ a .uxcore-count:active {
   width: 20px;
   height: 70px;
   line-height: 70px;
+  font-size: 20px;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-up,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-up {
@@ -8963,6 +9641,59 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control.control-down:before,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control.control-down:before {
   content: '\e643';
+}
+@keyframes albumZoomIn {
+  0% {
+    opacity: .5;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes albumZoomOut {
+  0% {
+    opacity: .8;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+}
+.uxcore .album-overlay-enter,
+.uxcore .album-overlay-appear {
+  animation-duration: 0.3s;
+}
+.uxcore .album-overlay-enter .album-stage,
+.uxcore .album-overlay-appear .album-stage {
+  transform: scale(0.2);
+  opacity: .5;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  animation-play-state: paused;
+}
+.uxcore .album-overlay-enter-active .album-stage,
+.uxcore .album-overlay-appear-active .album-stage {
+  animation-name: albumZoomIn;
+  animation-play-state: running;
+}
+.uxcore .album-overlay-leave {
+  animation-duration: 0.3s;
+}
+.uxcore .album-overlay-leave .album-stage {
+  transform: scale(1);
+  opacity: .8;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  animation-play-state: paused;
+}
+.uxcore .album-overlay-leave-active .album-stage {
+  animation-name: albumZoomOut;
+  animation-play-state: running;
 }
 .uxcore .kuma-empty-data {
   text-align: center;
@@ -8985,4 +9716,133 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-empty-data-content {
   color: #999;
+}
+.uxcore .uxcore-splitter {
+  position: relative;
+  border: 1px solid #dbdbdb;
+}
+.uxcore .uxcore-splitter-pane {
+  position: absolute;
+}
+.uxcore .uxcore-splitter-pane .toggle-pane {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  color: #999;
+  z-index: 3;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.uxcore .uxcore-splitter-pane .toggle-pane:hover {
+  color: #1A78B8;
+}
+.uxcore .uxcore-splitter-pane .toggle-pane:after {
+  font-family: 'kuma';
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.uxcore .uxcore-splitter-pane .toggle-pane.toggle-pane-collapsed {
+  z-index: 4;
+}
+.uxcore .uxcore-splitter-pane > .pane-content {
+  width: 100%;
+  height: 100%;
+}
+.uxcore .uxcore-splitter-pane > .pane-content > .uxcore-splitter {
+  border: 0 none;
+}
+.uxcore .uxcore-splitter-pane.pane-collapsed > .pane-content {
+  overflow: hidden;
+}
+.uxcore .uxcore-splitter-pane-vertical {
+  height: 100%;
+}
+.uxcore .uxcore-splitter-pane-vertical.align-left > .toggle-pane,
+.uxcore .uxcore-splitter-pane-vertical.align-none > .toggle-pane {
+  right: -41px;
+  top: -1px;
+  border-left: 0 none;
+}
+.uxcore .uxcore-splitter-pane-vertical.align-left > .toggle-pane:after,
+.uxcore .uxcore-splitter-pane-vertical.align-none > .toggle-pane:after {
+  content: '\e6c9';
+}
+.uxcore .uxcore-splitter-pane-vertical.align-left > .toggle-pane.toggle-pane-collapsed:after,
+.uxcore .uxcore-splitter-pane-vertical.align-none > .toggle-pane.toggle-pane-collapsed:after {
+  content: '\e6c8';
+}
+.uxcore .uxcore-splitter-pane-vertical.align-right > .toggle-pane {
+  left: -41px;
+  top: -1px;
+  border-right: 0 none;
+}
+.uxcore .uxcore-splitter-pane-vertical.align-right > .toggle-pane:after {
+  content: '\e6c8';
+}
+.uxcore .uxcore-splitter-pane-vertical.align-right > .toggle-pane.toggle-pane-collapsed:after {
+  content: '\e6c9';
+}
+.uxcore .uxcore-splitter-pane-horizontal {
+  width: 100%;
+}
+.uxcore .uxcore-splitter-pane-horizontal.align-left > .toggle-pane,
+.uxcore .uxcore-splitter-pane-horizontal.align-none > .toggle-pane {
+  bottom: -41px;
+  right: 0;
+  border-top: 0 none;
+}
+.uxcore .uxcore-splitter-pane-horizontal.align-left > .toggle-pane:after,
+.uxcore .uxcore-splitter-pane-horizontal.align-none > .toggle-pane:after {
+  content: '\e6cb';
+}
+.uxcore .uxcore-splitter-pane-horizontal.align-left > .toggle-pane.toggle-pane-collapsed:after,
+.uxcore .uxcore-splitter-pane-horizontal.align-none > .toggle-pane.toggle-pane-collapsed:after {
+  content: '\e6ca';
+}
+.uxcore .uxcore-splitter-pane-horizontal.align-right > .toggle-pane {
+  top: -41px;
+  right: 0;
+  border-bottom: 0 none;
+}
+.uxcore .uxcore-splitter-pane-horizontal.align-right > .toggle-pane:after {
+  content: '\e6ca';
+}
+.uxcore .uxcore-splitter-pane-horizontal.align-right > .toggle-pane.toggle-pane-collapsed:after {
+  content: '\e6cb';
+}
+.uxcore .uxcore-splitter-pane > .uxcore-splitter {
+  border: 0 none;
+}
+.uxcore .uxcore-splitter-pane .uxcore-splitter-vertical {
+  width: 100%;
+}
+.uxcore .uxcore-splitter-pane .uxcore-splitter-horizontal {
+  height: 100%;
+}
+.uxcore .uxcore-splitter-split-bar {
+  position: absolute;
+  background-color: #dbdbdb;
+  z-index: 1;
+}
+.uxcore .uxcore-splitter-split-bar .ghost-split-bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dbdbdb;
+  opacity: .5;
+  z-index: 2;
+}
+.uxcore .uxcore-splitter-split-bar.split-bar-hide {
+  display: none;
+}
+.uxcore .uxcore-splitter-split-bar.resize-bar.vertical {
+  cursor: col-resize;
+}
+.uxcore .uxcore-splitter-split-bar.resize-bar.horizontal {
+  cursor: row-resize;
 }

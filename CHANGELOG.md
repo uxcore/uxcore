@@ -1,3 +1,26 @@
+## 0.5.0
+
+`2017-01-16`
+
+- [Component] Animate: `NEW` add fadeOut/slideOutDown
+- [Component] Calendar: `NEW` new animation
+- [Component] Carousel:`CHANGED` add background transition
+- [Component] Album: `NEW` new animation
+- [Component] Dialog: `NEW` new animation
+- [Component] Dropdown: `NEW` new animation
+- [Component] Menu: `NEW` new animation
+- [Component] Popover: `NEW` new animation
+- [Component] Select: `NEW` new animation
+- [Component] Table: `NEW` new animation
+- [Component] Tabs: `NEW` new animation
+- [Component] Tooltip: `NEW` new animation
+- [Component] Rate: `FIXED` server render support
+- [Component] Rate: `FIXED` IE compatible bug
+- [Tools] Formatter: `CHANGED` use default delimeter only delimeter is undefined
+- [Component] MultiSelect: `CHANGED` hide footer if nothing need to be shown
+
+
+
 ## 0.4.7
 
 `2017-01-12`
