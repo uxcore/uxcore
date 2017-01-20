@@ -1,3 +1,11 @@
+## 0.5.1
+
+`2017-01-20`
+
+- [Component] Dialog: `NEW` add new Prop `getContainer`
+- [General] add new component `Splitter`
+
+
 ## 0.5.0
 
 `2017-01-16`
@@ -18,7 +26,6 @@
 - [Component] Rate: `FIXED` IE compatible bug
 - [Tools] Formatter: `CHANGED` use default delimeter only delimeter is undefined
 - [Component] MultiSelect: `CHANGED` hide footer if nothing need to be shown
-
 
 
 ## 0.4.7
