@@ -1,3 +1,9 @@
+## 0.5.2
+
+`2017-01-20`
+
+- [HotFix] add `uxcore.less` `core.less` in compatible style pack.
+
 ## 0.5.1
 
 `2017-01-20`
