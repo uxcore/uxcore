@@ -8,8 +8,6 @@ var expect = require('expect.js');
 
 var uxcore = require('../build/uxcore');
 
-console.log(uxcore);
-
 describe('bundle', function () {
   it('all uxcore devDependencies should be included', function (done) {
     var pass = true;
@@ -22,5 +20,4 @@ describe('bundle', function () {
     done();
   });
 });
-
 

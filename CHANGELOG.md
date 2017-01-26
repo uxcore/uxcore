@@ -1,3 +1,27 @@
+## 0.6.0
+
+`2017-01-26`
+
+- [Component] Dialog: `CHANGED` improved `getContainer`
+- [Component] Form: `FIXED` cascadeSelectFormField can not be reset## 1.14.3
+- [Component] Form: `CHANGED` use user-specified FormRow key
+- [Component] Table: `CHANGED` `moveRowUp` & `moveRowDown` support tree mode.
+- [Component] Table: `CHANGED` only show fixedTable when data exists
+- [Component] Table: `CHANGED` refactor fixed column render logic
+- [Component] Table: `NEW` support `column.rightFixed`
+- [Component] Table: `NEW` inline edit API support callback.
+- [Component] Totop: `NEW` add new prop `onTotopEnd`
+- [Component] Totop: `CHANGED` update `uxcore-popover` to `~0.4.0`
+- [Component] Totop: `CHANGED` use `unstable_renderSubtreeIntoContainer`
+
+
+
+### BEAKING CHANGES
+
+- [Component] Table: `CHANGED` `subComp` logic is removed, use `renderSubComp` instead.
+
+
+
 ## 0.5.2
 
 `2017-01-20`

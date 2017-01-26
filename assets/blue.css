@@ -3822,7 +3822,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   }
   100% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
 }
 @keyframes dialogFadeIn {
@@ -3844,8 +3844,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .dialogFade-enter,
 .dialogFade-appear {
   opacity: 0;
-  animation-timing-function: ease-out;
-  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
 }
 .dialogFade-enter-active,
 .dialogFade-appear-active {
@@ -3853,8 +3853,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .dialogFade-leave {
   opacity: 1;
-  animation-timing-function: ease-out;
-  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
 }
 .dialogFade-leave-active {
   animation-name: dialogFadeOut;
@@ -3862,9 +3862,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .dialogSlideDown-enter,
 .dialogSlideDown-appear {
   opacity: 0;
-  transform: translateY(30px);
-  animation-timing-function: ease-out;
-  animation-duration: .3s;
+  transform: translateY(50px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
 }
 .dialogSlideDown-enter-active,
 .dialogSlideDown-appear-active {
@@ -3872,8 +3872,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .dialogSlideDown-leave {
   opacity: 1;
-  animation-timing-function: ease-out;
-  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
 }
 .dialogSlideDown-leave-active {
   animation-name: dialogSlideOutDown;
@@ -5120,11 +5120,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab-bar .kuma-tab-tab-active {
   color: #333;
 }
+.kuma-tab-bar .kuma-tab-tab:hover {
+  color: #2599f2;
+}
 .kuma-tab-bar .kuma-tab-tab-disabled {
   color: #ccc;
 }
-.kuma-tab-bar .kuma-tab-tab:hover {
-  color: #2599f2;
+.kuma-tab-bar .kuma-tab-tab-disabled:hover {
+  color: #ccc;
 }
 .kuma-tab-content {
   zoom: 1;
@@ -5685,13 +5688,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-content {
   overflow-x: auto;
-  position: static;
+  position: relative;
 }
 .kuma-uxtable-content-scroller {
   display: inline-block;
 }
 .kuma-uxtable-header-wrapper {
   overflow: hidden;
+  position: relative;
 }
 .kuma-uxtable-body-wrapper {
   border-top: none;
@@ -5699,6 +5703,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   min-height: 40px;
   overflow-x: auto;
   overflow-y: hidden;
+}
+.kuma-uxtable-fixed-body-wrapper {
+  overflow-x: hidden;
 }
 .kuma-uxtable-header {
   background-color: #f5f5f5;
@@ -5726,8 +5733,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   border-bottom: none;
 }
-.kuma-uxtable-row .kuma-uxtable-row-cells:hover {
-  background-color: #f2f9ff;
+.kuma-uxtable-row .kuma-uxtable-row-cells {
+  transition: background-color 0.15s ease-out;
 }
 .kuma-uxtable-row:first-child {
   border-top: none;
@@ -5735,14 +5742,16 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-row.even .kuma-uxtable-row-cells {
   background-color: #fafafa;
 }
-.kuma-uxtable-row.even .kuma-uxtable-row-cells:hover {
+.kuma-uxtable-row-hover .kuma-uxtable-row-cells {
+  background-color: #f2f9ff;
+}
+.kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
   background-color: #f2f9ff;
 }
 .kuma-uxtable-cell {
   display: inline-block;
   text-align: left;
   overflow: hidden;
-  text-overflow: ellipsis;
   height: 100%;
   padding: 0 0 0 20px;
   vertical-align: top;
@@ -5796,6 +5805,16 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-row.multiline .kuma-uxtable-cell > div {
   height: auto;
   white-space: normal;
+}
+.kuma-uxtable-row.multiline-centered .kuma-uxtable-row-cells {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.kuma-uxtable-row.multiline-centered .kuma-uxtable-cell {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 .kuma-uxtable-cell-field.hasError .kuma-input,
 .kuma-uxtable-cell-field.hasError .kuma-select2-selection {
@@ -5964,11 +5983,36 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable span.indent.hasCheck {
   margin-right: 25px;
 }
+.kuma-uxtable-body-fixed,
+.kuma-uxtable-body-right-fixed {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .kuma-uxtable-body-fixed {
-  float: left;
+  padding-right: 20px;
+  margin-right: -20px;
+}
+.kuma-uxtable-left-fixed-table,
+.kuma-uxtable-right-fixed-table {
   overflow: hidden;
-  z-index: 1;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transition: box-shadow 0.3s ease-out;
+}
+.kuma-uxtable-left-fixed-table.has-scroll,
+.kuma-uxtable-right-fixed-table.has-scroll {
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+}
+.kuma-uxtable-left-fixed-table.end-of-scroll,
+.kuma-uxtable-right-fixed-table.end-of-scroll {
+  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.2);
+}
+.kuma-uxtable-left-fixed-table {
+  left: 0;
+}
+.kuma-uxtable-right-fixed-table {
+  right: 0;
 }
 .kuma-uxtable-body-no {
   height: 100%;
@@ -5976,13 +6020,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-body-scroll {
   position: relative;
-  overflow: auto;
-  z-index: 1;
-  height: 100%;
-}
-.kuma-uxtable-header-fixed {
-  float: left;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: scroll;
   z-index: 1;
   height: 100%;
 }
@@ -5991,7 +6030,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-header-scroll {
   position: static;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
   height: 100%;
 }
@@ -6025,7 +6064,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 .kuma-uxtable-row-tree-selector {
   margin-right: 12px;
@@ -6036,14 +6074,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-tree-mode .kuma-uxtable-row .kuma-uxtable-row-cells {
   border-bottom: 1px solid #e8e8e8;
 }
+.kuma-uxtable-tree-mode .kuma-uxtable-content .kuma-uxtable-row.kuma-uxtable-row-hover .kuma-uxtable-row-cells {
+  background-color: white;
+}
 .kuma-uxtable-border-line .kuma-uxtable-content {
   border: 1px solid #e8e8e8;
 }
 .kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells {
   background: white;
-}
-.kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells:hover {
-  background: #f2f9ff;
 }
 .kuma-uxtable-border-line .kuma-uxtable-row .kuma-uxtable-row-cells {
   border-bottom: 1px solid #e8e8e8;
@@ -6060,6 +6098,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-border-line .kuma-uxtable-header-group-name {
   border-right: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
+}
+.kuma-uxtable-border-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
+  background-color: #f2f9ff;
+}
+.kuma-uxtable-border-line .kuma-uxtable-left-fixed-table {
+  border-right: 1px solid #e8e8e8;
 }
 .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
   padding: 4px 12px;
@@ -9023,29 +9067,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 42px;
   bottom: 20px;
   right: 140px;
-  /*.btn {
-        line-height: 20px;
-        display: block;
-        clear: both;
-        float: left;
-        overflow: hidden;
-        width: 42px;
-        height: 42px;
-        margin-bottom: 2px;
-        cursor: pointer;
-        text-align: center;
-        text-indent: -9999px;
-        background: #e0e0e0 url(https://gtms02.alicdn.com/tps/i2/TB1tsuQGXXXXXbmXXXXnHduKXXX-250-86.png) no-repeat;
-        background-position: left top;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }*/
-  /* 普通尺寸，默认矩形风格 end */
-  /* 普通尺寸，圆形风格 */
-  /* 普通尺寸，圆形风格 end */
-  /* large 圆形风格 */
-  /* 圆形风格 end */
 }
 .kuma-totop .kuma-totop-other {
   width: 42px;
@@ -9089,67 +9110,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-totop .gotop-box {
   display: none;
-  /*background-position: left top;
-        &:hover {
-            background-position: -52px 0;
-            background-color: #b2b2b2;
-        }*/
 }
 .kuma-totop .gotop-box.show {
   display: block;
-}
-.kuma-totop .feedback {
-  /*background-position: 0 -44px;
-        &:hover {
-            background-position: -104px -44px;
-            background-color: #b2b2b2;
-        }*/
-}
-.kuma-totop.mcircle .btn {
-  border-radius: 42px;
-  background: url(https://gtms04.alicdn.com/tps/i4/TB1WZGQGXXXXXbIXXXXnHduKXXX-250-86.png) no-repeat;
-  background-color: #444;
-  background-position: left top;
-}
-.kuma-totop.mcircle .gotop {
-  background-position: 0 0;
-}
-.kuma-totop.mcircle .gotop:hover {
-  background-color: #333;
-  background-position: -52px 0;
-}
-.kuma-totop.mcircle .feedback {
-  background-position: 0 -44px;
-}
-.kuma-totop.mcircle .feedback:hover {
-  background-color: #333;
-  background-position: -104px -44px;
-}
-.kuma-totop.lcircle .btn {
-  width: 52px;
-  height: 52px;
-  border-radius: 52px;
-  background: url(https://gtms04.alicdn.com/tps/i4/TB1WZGQGXXXXXbIXXXXnHduKXXX-250-86.png) no-repeat;
-  background-color: #444;
-  background-position: left top;
-}
-.kuma-totop.lcircle .gotop {
-  background-position: 5px 5px;
-}
-.kuma-totop.lcircle .gotop:hover {
-  background-color: #333;
-  background-position: -47px 5px;
-}
-.kuma-totop.lcircle .feedback {
-  background-position: 5px -39px;
-}
-.kuma-totop.lcircle .feedback:hover {
-  background-color: #333;
-  background-position: -99px -39px;
-}
-.kuma-totop.lcircle .kuma-totop-other {
-  width: 52px;
-  float: left;
 }
 @media screen and (min-width: 992px) {
   #kuma-totop {
@@ -9159,26 +9122,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-totop.en .gotop:hover {
   background-position: -156px 0;
   background-color: #b2b2b2;
-}
-.kuma-totop.en .feedback:hover {
-  background-position: -208px -44px;
-  background-color: #b2b2b2;
-}
-.kuma-totop.en.mcircle .gotop:hover {
-  background-position: -156px 0;
-  background-color: #333;
-}
-.kuma-totop.en.mcircle .feedback:hover {
-  background-position: -208px -44px;
-  background-color: #333;
-}
-.kuma-totop.en.lcircle .gotop:hover {
-  background-position: -151px 5px;
-  background-color: #333;
-}
-.kuma-totop.en.lcircle .feedback:hover {
-  background-position: -204px -39px;
-  background-color: #333;
 }
 /* totop 组件样式 end */
 /**

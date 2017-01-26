@@ -4,6 +4,10 @@ module.exports = {
   'plugins': [
     'react',
   ],
+  env: {
+    browser: true,
+    mocha: true
+  },
   'rules': {
     'no-var': 'off',
     'object-shorthand': 'off',

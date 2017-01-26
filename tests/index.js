@@ -1,1 +1,2 @@
-require('./bundle.spec.js');
+ const req = require.context('.', false, /\.spec\.js(x)?$/);
+ req.keys().forEach(req);
