@@ -1,3 +1,10 @@
+## 0.6.1
+
+`2017-02-10`
+
+- [Component] CascadeSelect: `NEW` add new prop `getPopupContainer`
+- [Component] Pagination: `NEW` add new Prop `getSelectPopupContainer`
+
 ## 0.6.0
 
 `2017-01-26`

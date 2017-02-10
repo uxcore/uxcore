@@ -4,7 +4,7 @@
 
 UXCore is a set of [React](http://facebook.github.io/react/) Components that is designed for enterprise-class pc backend application.
 
-* **Rich library:** more than 35 React Components available with high quality design.
+* **Rich library:** more than 40 React Components available with high quality design.
 
 * **Focus on backend App:** Powerful but easy-to-use Form and Table.
 
