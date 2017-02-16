@@ -1,3 +1,19 @@
+## 0.7.0
+
+`2017-02-16`
+
+- [Component] Calendar: `NEW` new style & timePicker
+- [Component] Dialog: `CHANGED` use global transition ease
+- [Component] Form: `CHANGED` update `uxcore-date-form-field` to ~0.7.0
+- [Component] Message: `CHANGED` new animation
+- [Component] Popover: `CHANGED` animation direction change
+- [Component] Popover: `CHANGED` use global transition ease
+- [Component] Table: `CHANGED` update `uxcore-date-cell-field` to ^0.3.0
+- [Component] Tooltip: `CHANGED` use global transition ease
+- [Component] Tooltip: `CHANGED` change animation directions
+- [Component] TreeSelect: `CHANGED` add new prop `resultsPanelAllClearBtn` , `resultsPanelTitle`, `resultsPanelTitleStyle` & `filterResultsPanel` 
+- [General] add new component `CascadeMultiSelect`
+
 ## 0.6.1
 
 `2017-02-10`

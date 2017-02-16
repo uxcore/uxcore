@@ -426,6 +426,13 @@
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * CascadeMultiSelect Component Style for uxcore
+ * @author guyunxiang
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore html {
   font-family: sans-serif;
@@ -737,7 +744,7 @@
   font-size: 14px;
   line-height: 30px;
   box-sizing: border-box;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-button-primary {
   background-color: #f37327;
@@ -2595,10 +2602,10 @@
   fill: #24bee8;
 }
 .uxcore .kuma-transition {
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-transition-all * {
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-input {
   padding: 5px 10px;
@@ -2626,9 +2633,6 @@
 .uxcore .kuma-calendar a {
   text-decoration: none;
 }
-.uxcore .kuma-calendar * {
-  transition: all 0.15s ease-out;
-}
 .uxcore .kuma-calendar-input-wrap {
   position: relative;
   padding: 5px 10px;
@@ -2642,11 +2646,10 @@
   overflow: hidden;
 }
 .uxcore .kuma-calendar-time-picker {
-  position: absolute;
-  width: 100%;
-  top: 40px;
+  float: left;
+  border-left: 1px solid #dbdbdb;
+  height: 340px;
   background-color: white;
-  height: 217px;
 }
 .uxcore .kuma-calendar-time-picker-panel {
   width: 100%;
@@ -2660,7 +2663,8 @@
   box-shadow: none;
 }
 .uxcore .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
-  width: 101px;
+  width: 60px;
+  height: 300px;
 }
 .uxcore .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select ul {
   max-height: 217px;
@@ -2688,6 +2692,7 @@
 .uxcore .kuma-calendar-input {
   border: 1px solid transparent;
   width: 100%;
+  font-size: 12px;
   color: #666;
   cursor: text;
   line-height: 1.5;
@@ -2724,12 +2729,6 @@
 }
 .uxcore .kuma-calendar-year-calendar-container .kuma-calendar-year-panel {
   position: relative;
-}
-.uxcore .kuma-calendar-two-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
-  width: 152px;
-}
-.uxcore .kuma-calendar-one-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
-  width: 304px;
 }
 @keyframes calendarSlideInDown {
   0% {
@@ -3037,20 +3036,21 @@
 .uxcore .kuma-calendar {
   position: relative;
   outline: none;
-  width: 305px;
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0 1px 5px #ccc;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   background-clip: padding-box;
   border: 1px solid #ccc;
   line-height: 1.5;
 }
 .uxcore .kuma-calendar-date-panel {
+  width: 302px;
   position: relative;
   outline: none;
+  float: left;
 }
 .uxcore .kuma-calendar-week-number {
   width: 286px;
@@ -3067,8 +3067,8 @@
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
-  background-color: #f37327;
-  color: white;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
 }
 .uxcore .kuma-calendar-header > a {
   font-weight: bold;
@@ -3080,11 +3080,11 @@
 }
 .uxcore .kuma-calendar-header > a:hover {
   cursor: pointer;
-  color: white;
 }
 .uxcore .kuma-calendar-header .kuma-calendar-prev-month-btn {
   position: absolute;
   left: 25px;
+  display: none;
 }
 .uxcore .kuma-calendar-header .kuma-calendar-prev-month-btn:after {
   content: '\e644';
@@ -3093,6 +3093,7 @@
 .uxcore .kuma-calendar-header .kuma-calendar-next-month-btn {
   position: absolute;
   right: 25px;
+  display: none;
 }
 .uxcore .kuma-calendar-header .kuma-calendar-next-month-btn:after {
   content: '\e643';
@@ -3102,24 +3103,84 @@
 .uxcore .kuma-calendar-my-select {
   line-height: 40px;
   display: inline-block;
+  padding-left: 16px;
 }
 .uxcore .kuma-calendar-year-select,
 .uxcore .kuma-calendar-month-select,
 .uxcore .kuma-calendar-day-select {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  color: white;
   line-height: 24px;
   padding: 0 8px;
   border-radius: 3px;
+  color: #333;
 }
 .uxcore .kuma-calendar-year-select:hover,
 .uxcore .kuma-calendar-month-select:hover,
 .uxcore .kuma-calendar-day-select:hover {
   cursor: pointer;
-  color: white;
-  background: #f58d51;
+  color: #f37327;
+}
+.uxcore .kuma-calendar-year-select:hover .kuma-select2-arrow b,
+.uxcore .kuma-calendar-month-select:hover .kuma-select2-arrow b,
+.uxcore .kuma-calendar-day-select:hover .kuma-select2-arrow b {
+  border-color: #f37327 transparent transparent transparent;
+}
+.uxcore .kuma-calendar-year-select,
+.uxcore .kuma-calendar-month-select {
+  padding: 0;
+  margin-right: 6px;
+  margin-top: -1px;
+}
+.uxcore .kuma-calendar-year-select .kuma-select2-selection,
+.uxcore .kuma-calendar-month-select .kuma-select2-selection {
+  border: none;
+  height: 28px;
+}
+.uxcore .kuma-calendar-year-select .kuma-select2-selection__rendered,
+.uxcore .kuma-calendar-month-select .kuma-select2-selection__rendered {
+  padding: 0;
+  margin: 0;
+  line-height: 28px;
+}
+.uxcore .kuma-calendar-year-select .kuma-select2-selection-selected-value,
+.uxcore .kuma-calendar-month-select .kuma-select2-selection-selected-value {
+  transition: color 0.15s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.uxcore .kuma-calendar-year-select.kuma-select2-open,
+.uxcore .kuma-calendar-month-select.kuma-select2-open {
+  border: 1px solid #dbdbdb;
+}
+.uxcore .kuma-calendar-year-select .kuma-select2-arrow,
+.uxcore .kuma-calendar-month-select .kuma-select2-arrow {
+  height: 28px;
+}
+.uxcore .kuma-calendar-year-select {
+  width: 55px;
+}
+.uxcore .kuma-calendar-year-select.kuma-calendar-cn-select {
+  width: 75px;
+}
+.uxcore .kuma-calendar-year-select .kuma-select2-selection-selected-value {
+  left: 7px;
+}
+.uxcore .kuma-calendar-month-select {
+  width: 60px;
+}
+.uxcore .kuma-calendar-month-select.kuma-calendar-cn-select {
+  width: 55px;
+}
+.uxcore .kuma-calendar-month-select .kuma-select2-selection-selected-value {
+  left: 12px;
+}
+.uxcore .kuma-calendar-year-select-dropdown.kuma-select2-dropdown,
+.uxcore .kuma-calendar-month-select-dropdown.kuma-select2-dropdown {
+  box-shadow: none;
+}
+.uxcore .kuma-calendar-year-select-dropdown.kuma-select2-dropdown .kuma-select2-dropdown-menu-item,
+.uxcore .kuma-calendar-month-select-dropdown.kuma-select2-dropdown .kuma-select2-dropdown-menu-item {
+  padding: 0 10px;
 }
 .uxcore .kuma-calendar-prev-month-btn,
 .uxcore .kuma-calendar-next-month-btn,
@@ -3128,20 +3189,13 @@
   position: absolute;
   top: 9px;
   cursor: pointer;
-  color: white;
+  color: #f37327;
   width: 24px;
   height: 24px;
   border-radius: 3px;
   font-size: 16px;
   line-height: 24px;
   text-indent: -999em;
-}
-.uxcore .kuma-calendar-prev-month-btn:hover,
-.uxcore .kuma-calendar-next-month-btn:hover,
-.uxcore .kuma-calendar-prev-year-btn:hover,
-.uxcore .kuma-calendar-next-year-btn:hover {
-  background: #f58d51;
-  color: white;
 }
 .uxcore .kuma-calendar-prev-month-btn:after,
 .uxcore .kuma-calendar-next-month-btn:after,
@@ -3159,22 +3213,23 @@
   right: 0;
 }
 .uxcore .kuma-calendar-next-year-btn:after {
-  content: '\e615';
+  content: '\e643';
 }
 .uxcore .kuma-calendar-prev-year-btn {
   left: 0;
 }
 .uxcore .kuma-calendar-prev-year-btn:after {
-  content: '\e616';
+  content: '\e644';
 }
 .uxcore .kuma-calendar-calendar-body {
   padding: 9px 10px 10px;
 }
 .uxcore .kuma-calendar table {
   border-collapse: collapse;
-  max-width: 100%;
+  max-width: 282px;
+  margin: 10px;
   background-color: transparent;
-  width: 100%;
+  width: 282px;
 }
 .uxcore .kuma-calendar table,
 .uxcore .kuma-calendar td,
@@ -3188,14 +3243,14 @@
 }
 .uxcore .kuma-calendar-column-header {
   line-height: 18px;
-  padding: 6px 0;
+  padding: 11px 0;
   width: 33px;
   text-align: center;
 }
 .uxcore .kuma-calendar-column-header .kuma-calendar-column-header-inner {
   display: block;
   font-weight: normal;
-  color: #f37327;
+  color: #666;
 }
 .uxcore .kuma-calendar-column-header .kuma-calendar-column-header-inner.weekend {
   color: #f0b695;
@@ -3204,20 +3259,21 @@
   display: none;
 }
 .uxcore .kuma-calendar-cell {
-  padding: 1px 0;
+  padding: 4px 0;
 }
 .uxcore .kuma-calendar-date {
   display: block;
   margin: 0 auto;
-  color: #333;
+  color: #666;
   border-radius: 0px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 32px;
+  height: 32px;
   padding: 0;
   background: transparent;
   line-height: 30px;
   text-align: center;
+  border-radius: 2px;
 }
 .uxcore .kuma-calendar-date:hover {
   background: #fff9f5;
@@ -3225,6 +3281,10 @@
 }
 .uxcore .kuma-calendar-date.weekend {
   color: #f0b695;
+}
+.uxcore .kuma-calendar-today .uxcore .kuma-calendar-date {
+  border: 1px solid #f37327;
+  color: #f37327;
 }
 .uxcore .kuma-calendar-selected-day .uxcore .kuma-calendar-date {
   background: #f37327;
@@ -3254,7 +3314,7 @@
 }
 .uxcore .kuma-calendar-footer {
   border-top: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 8px 0;
   text-align: center;
   position: relative;
 }
@@ -3815,6 +3875,14 @@
 .uxcore .kuma-time-picker-panel * {
   box-sizing: border-box;
 }
+.uxcore .kuma-time-picker-panel-selected-value {
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #dbdbdb;
+}
 .uxcore .kuma-time-picker-panel-inner {
   display: inline-block;
   position: relative;
@@ -3897,7 +3965,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 101px;
+  width: 60px;
   max-height: 144px;
 }
 .uxcore .kuma-time-picker-panel-select li {
@@ -3906,8 +3974,8 @@
   margin: 0;
   padding: 0 0 0 16px;
   width: 100%;
-  height: 24px;
-  line-height: 24px;
+  height: 32px;
+  line-height: 32px;
   text-align: left;
   cursor: pointer;
   -webkit-user-select: none;
@@ -3929,11 +3997,19 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background: transparent;
   cursor: not-allowed;
 }
-.uxcore .kuma-calendar-two-time-panel .kuma-time-picker-panel-select ul {
-  width: 152px;
+.uxcore .kuma-time-picker-pmam-item {
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.uxcore .kuma-calendar-one-time-panel .kuma-time-picker-panel-select ul {
-  width: 303px;
+.uxcore .kuma-time-picker-pmam-item:hover {
+  background: #fff9f5;
+}
+.uxcore .kuma-time-picker-pmam-item-active {
+  color: #f37327;
 }
 .uxcore .kuma-calendar-date-content-box {
   text-align: center;
@@ -4352,7 +4428,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInLeft {
   0% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
   100% {
@@ -4366,7 +4442,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
 }
@@ -4377,8 +4453,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-rightTop.tip-slide-appear,
 .uxcore .kuma-tooltip-placement-rightBottom.tip-slide-appear {
   opacity: 0;
-  transform: translate(-10px, 0);
-  animation-timing-function: ease-out;
+  transform: translate(10px, 0);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-right.tip-slide-enter-active,
@@ -4394,7 +4470,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-rightBottom.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-right.tip-slide-leave-active,
@@ -4404,7 +4480,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInRight {
   0% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
   100% {
@@ -4418,7 +4494,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
 }
@@ -4429,8 +4505,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-leftTop.tip-slide-appear,
 .uxcore .kuma-tooltip-placement-leftBottom.tip-slide-appear {
   opacity: 0;
-  transform: translate(10px, 0);
-  animation-timing-function: ease-out;
+  transform: translate(-10px, 0);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-left.tip-slide-enter-active,
@@ -4446,7 +4522,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-leftBottom.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-left.tip-slide-leave-active,
@@ -4456,7 +4532,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInBottom {
   0% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
   100% {
@@ -4470,7 +4546,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
 }
@@ -4481,8 +4557,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-topLeft.tip-slide-appear,
 .uxcore .kuma-tooltip-placement-topRight.tip-slide-appear {
   opacity: 0;
-  transform: translate(0, 10px);
-  animation-timing-function: ease-out;
+  transform: translate(0, -10px);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-top.tip-slide-enter-active,
@@ -4498,7 +4574,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-topRight.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-top.tip-slide-leave-active,
@@ -4508,7 +4584,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInTop {
   0% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
   100% {
@@ -4522,7 +4598,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
 }
@@ -4533,8 +4609,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-bottomLeft.tip-slide-appear,
 .uxcore .kuma-tooltip-placement-bottomRight.tip-slide-appear {
   opacity: 0;
-  transform: translate(0, -10px);
-  animation-timing-function: ease-out;
+  transform: translate(0, 10px);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-bottom.tip-slide-enter-active,
@@ -4550,7 +4626,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tooltip-placement-bottomRight.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .uxcore .kuma-tooltip-placement-bottom.tip-slide-leave-active,
@@ -4592,7 +4668,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   list-style: none;
   float: left;
   background-color: #fff;
-  transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 .uxcore .kuma-page-item a {
   text-decoration: none;
@@ -4844,7 +4920,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-color: #999 transparent transparent transparent;
   border-style: solid;
   border-width: 4px 4px 0 4px;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-select2-selection {
   outline: none;
@@ -5138,7 +5214,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: 1px solid #dedede;
 }
 .uxcore .kuma-select2-dropdown-menu li.kuma-select2-dropdown-menu-item {
-  transition: all 0.15s ease-out;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
   margin: 0;
   position: relative;
   display: block;
@@ -5377,7 +5453,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: 3px;
   background-color: #f37327;
   z-index: 1;
-  transition: all ease-out 0.3s;
+  transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
   transform-origin: 0 0;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container,
@@ -5767,7 +5843,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .tableMaskFade-enter,
 .uxcore .tableMaskFade-appear {
   opacity: 0;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .3s;
 }
 .uxcore .tableMaskFade-enter-active,
@@ -5776,7 +5852,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .tableMaskFade-leave {
   opacity: 0.3;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .3s;
 }
 .uxcore .tableMaskFade-leave-active {
@@ -5946,7 +6022,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: none;
 }
 .uxcore .kuma-uxtable-row .kuma-uxtable-row-cells {
-  transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-uxtable-row:first-child {
   border-top: none;
@@ -6210,7 +6286,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   top: 0;
   z-index: 2;
-  transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-uxtable-left-fixed-table.has-scroll,
 .uxcore .kuma-uxtable-right-fixed-table.has-scroll {
@@ -6380,7 +6456,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-weight: normal;
   color: #666;
   white-space: nowrap;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-dropdown-menu > .uxcore .kuma-dropdown-menu-item > a {
   color: #333;
@@ -6910,7 +6986,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInLeft {
   0% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
   100% {
@@ -6924,7 +7000,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
 }
@@ -6935,9 +7011,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-rightTop.popover-slide-appear,
 .uxcore .kuma-popover-placement-rightBottom.popover-slide-appear {
   opacity: 0;
-  transform: translate(-10px, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(10px, 0);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-right.popover-slide-enter-active,
 .uxcore .kuma-popover-placement-rightTop.popover-slide-enter-active,
@@ -6952,8 +7028,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-rightBottom.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-right.popover-slide-leave-active,
 .uxcore .kuma-popover-placement-rightTop.popover-slide-leave-active,
@@ -6962,7 +7038,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInRight {
   0% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
   100% {
@@ -6976,7 +7052,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
 }
@@ -6987,9 +7063,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-leftTop.popover-slide-appear,
 .uxcore .kuma-popover-placement-leftBottom.popover-slide-appear {
   opacity: 0;
-  transform: translate(10px, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(-10px, 0);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-left.popover-slide-enter-active,
 .uxcore .kuma-popover-placement-leftTop.popover-slide-enter-active,
@@ -7004,8 +7080,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-leftBottom.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-left.popover-slide-leave-active,
 .uxcore .kuma-popover-placement-leftTop.popover-slide-leave-active,
@@ -7014,7 +7090,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInBottom {
   0% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
   100% {
@@ -7028,7 +7104,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
 }
@@ -7039,9 +7115,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-topLeft.popover-slide-appear,
 .uxcore .kuma-popover-placement-topRight.popover-slide-appear {
   opacity: 0;
-  transform: translate(0, 10px);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(0, -10px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-top.popover-slide-enter-active,
 .uxcore .kuma-popover-placement-topLeft.popover-slide-enter-active,
@@ -7056,8 +7132,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-topRight.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-top.popover-slide-leave-active,
 .uxcore .kuma-popover-placement-topLeft.popover-slide-leave-active,
@@ -7066,7 +7142,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInTop {
   0% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
   100% {
@@ -7080,7 +7156,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
 }
@@ -7091,9 +7167,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-bottomLeft.popover-slide-appear,
 .uxcore .kuma-popover-placement-bottomRight.popover-slide-appear {
   opacity: 0;
-  transform: translate(0, -10px);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(0, 10px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-bottom.popover-slide-enter-active,
 .uxcore .kuma-popover-placement-bottomLeft.popover-slide-enter-active,
@@ -7108,7 +7184,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-popover-placement-bottomRight.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .3s;
 }
 .uxcore .kuma-popover-placement-bottom.popover-slide-leave-active,
@@ -8522,7 +8598,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background: #fff;
 }
 .uxcore .kuma-menu * {
-  transition: all 0.15s ease-out;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-menu-item-group-list {
   margin: 0;
@@ -9490,6 +9566,52 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-left: 46px;
   line-height: 36px;
 }
+@keyframes msgMoveUpIn {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes msgMoveUpOut {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.uxcore .message-moveUp-enter,
+.uxcore .message-moveUp-appear {
+  transform-origin: 0 0;
+  transform: translateY(100%);
+  opacity: 0;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
+}
+.uxcore .message-moveUp-enter-active,
+.uxcore .message-moveUp-appear-active {
+  animation-name: msgMoveUpIn;
+}
+.uxcore .message-moveUp-leave {
+  transform-origin: 0 0;
+  transform: translateY(0);
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
+}
+.uxcore .message-moveUp-leave-active {
+  animation-name: msgMoveUpOut;
+}
 .uxcore .kuma-pickable-item {
   display: inline-block;
   height: 28px;
@@ -9584,7 +9706,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-carousel .slick-prev,
 .uxcore .kuma-carousel .slick-next {
-  transition: all 0.2s ease-out;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   position: absolute;
   display: block;
   opacity: 0;
@@ -9606,7 +9728,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-carousel .slick-prev:hover,
 .uxcore .kuma-carousel .slick-next:hover {
-  transition: all 0.2s ease-out;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   outline: none;
   background: rgba(0, 0, 0, 0.5);
   color: transparent;
@@ -9692,7 +9814,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-carousel .slick-dots li button:focus {
   outline: none;
   opacity: .7;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-carousel .slick-dots li button:hover:before,
 .uxcore .kuma-carousel .slick-dots li button:focus:before {
@@ -10662,11 +10784,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-badge-zoom-appear,
 .uxcore .kuma-badge-zoom-enter {
-  animation: antZoomBadgeIn 0.3s ease-out;
+  animation: antZoomBadgeIn 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   animation-fill-mode: both;
 }
 .uxcore .kuma-badge-zoom-leave {
-  animation: antZoomBadgeOut 0.3s ease-out;
+  animation: antZoomBadgeOut 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   animation-fill-mode: both;
 }
 .uxcore .kuma-badge-not-a-wrapper .uxcore .kuma-badge-count {
@@ -10686,7 +10808,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-scroll-number-only {
   display: inline-block;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .uxcore .kuma-scroll-number.not-support-css-animation .uxcore .kuma-scroll-number-only > p {
   display: none;
@@ -11543,7 +11665,7 @@ a .uxcore-count:active {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform ease-out 0.3s;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-cover > .album-item > img {
   position: absolute;
@@ -11572,7 +11694,7 @@ a .uxcore-count:active {
   cursor: pointer;
   opacity: 0;
   transform: scale(1.2);
-  transition: transform ease-out 0.3s, opacity ease-out 0.3s;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s, opacity cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-cover:after {
   content: '';
@@ -11583,7 +11705,7 @@ a .uxcore-count:active {
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
   z-index: 1;
-  transition: background-color ease-out 0.3s;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-cover:hover > .album-item {
   transform: scale(1.1);
@@ -11619,7 +11741,7 @@ a .uxcore-count:active {
   color: #fff;
   line-height: 60px;
   text-align: center;
-  transition: background-color ease-out 0.3s;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-overlay > .album-control:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -11690,7 +11812,7 @@ a .uxcore-count:active {
   width: 120px;
   height: 72px;
   border: 2px solid #fff;
-  transition: transform ease-out 0.3s, left ease-out 0.3s;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s, left cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-carousel {
   position: relative;
@@ -11728,7 +11850,7 @@ a .uxcore-count:active {
   z-index: -1;
   text-align: center;
   opacity: .6;
-  transition: all ease-out 0.3s;
+  transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-carousel-list > .item img {
   max-width: 100%;
@@ -11747,7 +11869,7 @@ a .uxcore-count:active {
   color: #fff;
   line-height: 72px;
   font-size: 26px;
-  transition: background-color ease-out 0.3s;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .uxcore .kuma-uxcore-album .album-carousel-control:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -11969,7 +12091,7 @@ a .uxcore-count:active {
   opacity: .5;
   animation-duration: 0.3s;
   animation-fill-mode: both;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-play-state: paused;
 }
 .uxcore .album-overlay-enter-active .album-stage,
@@ -11985,7 +12107,7 @@ a .uxcore-count:active {
   opacity: .8;
   animation-duration: 0.3s;
   animation-fill-mode: both;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-play-state: paused;
 }
 .uxcore .album-overlay-leave-active .album-stage {
@@ -12142,4 +12264,143 @@ a .uxcore-count:active {
 }
 .uxcore .uxcore-splitter-split-bar.resize-bar.horizontal {
   cursor: row-resize;
+}
+.uxcore .kuma-cascade-multi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid #dbdbdb;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content {
+  float: left;
+  overflow-y: auto;
+  width: 150px;
+  height: 310px;
+  padding: 14px 0;
+  border-left: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content:first-child {
+  border-left: 0;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item {
+  overflow: hidden;
+  height: 28px;
+  padding: 0 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  line-height: 28px;
+  -o-text-overflow: ellipsis;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item:hover {
+  background-color: #f5f5f5;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item s {
+  margin-right: 5px;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-label span {
+  vertical-align: middle;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item-active {
+  background-color: #f5f5f5;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-noData {
+  display: block;
+  margin-top: 7px;
+  margin-left: 21px;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result {
+  float: left;
+  width: 220px;
+  height: 310px;
+  padding: 20px 15px;
+  border-left: 1px solid #dbdbdb;
+  background-color: #f5f5f5;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title {
+  padding-bottom: 10px;
+  color: #999;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title .kuma-cascade-multi-result-clean {
+  float: right;
+  margin-right: 6px;
+  cursor: pointer;
+  color: #f37327;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 250px;
+  margin: 0 -15px;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul {
+  margin-left: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li {
+  white-space: nowrap;
+  line-height: 25px;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-down,
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-right {
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #999;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover {
+  color: #f37327;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover .tree-node-ul-li-del {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span-label {
+  display: inline-block;
+  overflow-x: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-all {
+  margin-left: 10px;
+  vertical-align: middle;
+  color: #999;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-del {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  transition: opacity .3s, transform .3s;
+  transform: scale(0);
+  color: #f37327;
+}
+.uxcore .kuma-cascade-multi-text-result {
+  overflow-x: hidden;
+  margin-right: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.uxcore .kuma-cascade-multi-text-result-input {
+  padding-right: 10px;
+  width: 100%;
+  border: 0;
+}
+.uxcore .kuma-cascade-multi-text-result-input-disabled {
+  background-color: #f7f7f7;
 }

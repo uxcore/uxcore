@@ -5,6 +5,7 @@ var Badge = require('./lib/Badge');
 var Button = require('./lib/Button');
 var Calendar = require('./lib/Calendar');
 var Carousel = require('./lib/Carousel');
+var CascadeMultiSelect = require('./lib/CascadeMultiSelect');
 var CascadeSelect = require('./lib/CascadeSelect');
 var CheckboxGroup = require('./lib/CheckboxGroup');
 var Collapse = require('./lib/Collapse');
@@ -49,6 +50,7 @@ module.exports = {
   Button: Button,
   Calendar: Calendar,
   Carousel: Carousel,
+  CascadeMultiSelect: CascadeMultiSelect,
   CascadeSelect: CascadeSelect,
   CheckboxGroup: CheckboxGroup,
   Collapse: Collapse,

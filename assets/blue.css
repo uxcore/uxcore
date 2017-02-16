@@ -479,7 +479,7 @@ a.kuma-button {
   font-size: 14px;
   line-height: 30px;
   box-sizing: border-box;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-button-primary {
   background-color: #2599f2;
@@ -2341,10 +2341,10 @@ a.weaker-link {
   fill: #24bee8;
 }
 .kuma-transition {
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-transition-all * {
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-input {
   padding: 5px 10px;
@@ -2379,9 +2379,6 @@ a.weaker-link {
 .kuma-calendar a {
   text-decoration: none;
 }
-.kuma-calendar * {
-  transition: all 0.15s ease-out;
-}
 .kuma-calendar-input-wrap {
   position: relative;
   padding: 5px 10px;
@@ -2395,11 +2392,10 @@ a.weaker-link {
   overflow: hidden;
 }
 .kuma-calendar-time-picker {
-  position: absolute;
-  width: 100%;
-  top: 40px;
+  float: left;
+  border-left: 1px solid #dbdbdb;
+  height: 340px;
   background-color: white;
-  height: 217px;
 }
 .kuma-calendar-time-picker-panel {
   width: 100%;
@@ -2413,7 +2409,8 @@ a.weaker-link {
   box-shadow: none;
 }
 .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
-  width: 101px;
+  width: 60px;
+  height: 300px;
 }
 .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select ul {
   max-height: 217px;
@@ -2441,6 +2438,7 @@ a.weaker-link {
 .kuma-calendar-input {
   border: 1px solid transparent;
   width: 100%;
+  font-size: 12px;
   color: #666;
   cursor: text;
   line-height: 1.5;
@@ -2477,12 +2475,6 @@ a.weaker-link {
 }
 .kuma-calendar-year-calendar-container .kuma-calendar-year-panel {
   position: relative;
-}
-.kuma-calendar-two-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
-  width: 152px;
-}
-.kuma-calendar-one-time-panel .kuma-calendar-time-picker .kuma-time-picker-panel-select {
-  width: 304px;
 }
 @keyframes calendarSlideInDown {
   0% {
@@ -2790,20 +2782,21 @@ a.weaker-link {
 .kuma-calendar {
   position: relative;
   outline: none;
-  width: 305px;
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0 1px 5px #ccc;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   background-clip: padding-box;
   border: 1px solid #ccc;
   line-height: 1.5;
 }
 .kuma-calendar-date-panel {
+  width: 302px;
   position: relative;
   outline: none;
+  float: left;
 }
 .kuma-calendar-week-number {
   width: 286px;
@@ -2820,8 +2813,8 @@ a.weaker-link {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
-  background-color: #2599f2;
-  color: white;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
 }
 .kuma-calendar-header > a {
   font-weight: bold;
@@ -2833,11 +2826,11 @@ a.weaker-link {
 }
 .kuma-calendar-header > a:hover {
   cursor: pointer;
-  color: white;
 }
 .kuma-calendar-header .kuma-calendar-prev-month-btn {
   position: absolute;
   left: 25px;
+  display: none;
 }
 .kuma-calendar-header .kuma-calendar-prev-month-btn:after {
   content: '\e644';
@@ -2846,6 +2839,7 @@ a.weaker-link {
 .kuma-calendar-header .kuma-calendar-next-month-btn {
   position: absolute;
   right: 25px;
+  display: none;
 }
 .kuma-calendar-header .kuma-calendar-next-month-btn:after {
   content: '\e643';
@@ -2855,24 +2849,84 @@ a.weaker-link {
 .kuma-calendar-my-select {
   line-height: 40px;
   display: inline-block;
+  padding-left: 16px;
 }
 .kuma-calendar-year-select,
 .kuma-calendar-month-select,
 .kuma-calendar-day-select {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  color: white;
   line-height: 24px;
   padding: 0 8px;
   border-radius: 3px;
+  color: #333;
 }
 .kuma-calendar-year-select:hover,
 .kuma-calendar-month-select:hover,
 .kuma-calendar-day-select:hover {
   cursor: pointer;
-  color: white;
-  background: #4eadf5;
+  color: #2599f2;
+}
+.kuma-calendar-year-select:hover .kuma-select2-arrow b,
+.kuma-calendar-month-select:hover .kuma-select2-arrow b,
+.kuma-calendar-day-select:hover .kuma-select2-arrow b {
+  border-color: #2599f2 transparent transparent transparent;
+}
+.kuma-calendar-year-select,
+.kuma-calendar-month-select {
+  padding: 0;
+  margin-right: 6px;
+  margin-top: -1px;
+}
+.kuma-calendar-year-select .kuma-select2-selection,
+.kuma-calendar-month-select .kuma-select2-selection {
+  border: none;
+  height: 28px;
+}
+.kuma-calendar-year-select .kuma-select2-selection__rendered,
+.kuma-calendar-month-select .kuma-select2-selection__rendered {
+  padding: 0;
+  margin: 0;
+  line-height: 28px;
+}
+.kuma-calendar-year-select .kuma-select2-selection-selected-value,
+.kuma-calendar-month-select .kuma-select2-selection-selected-value {
+  transition: color 0.15s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.kuma-calendar-year-select.kuma-select2-open,
+.kuma-calendar-month-select.kuma-select2-open {
+  border: 1px solid #dbdbdb;
+}
+.kuma-calendar-year-select .kuma-select2-arrow,
+.kuma-calendar-month-select .kuma-select2-arrow {
+  height: 28px;
+}
+.kuma-calendar-year-select {
+  width: 55px;
+}
+.kuma-calendar-year-select.kuma-calendar-cn-select {
+  width: 75px;
+}
+.kuma-calendar-year-select .kuma-select2-selection-selected-value {
+  left: 7px;
+}
+.kuma-calendar-month-select {
+  width: 60px;
+}
+.kuma-calendar-month-select.kuma-calendar-cn-select {
+  width: 55px;
+}
+.kuma-calendar-month-select .kuma-select2-selection-selected-value {
+  left: 12px;
+}
+.kuma-calendar-year-select-dropdown.kuma-select2-dropdown,
+.kuma-calendar-month-select-dropdown.kuma-select2-dropdown {
+  box-shadow: none;
+}
+.kuma-calendar-year-select-dropdown.kuma-select2-dropdown .kuma-select2-dropdown-menu-item,
+.kuma-calendar-month-select-dropdown.kuma-select2-dropdown .kuma-select2-dropdown-menu-item {
+  padding: 0 10px;
 }
 .kuma-calendar-prev-month-btn,
 .kuma-calendar-next-month-btn,
@@ -2881,20 +2935,13 @@ a.weaker-link {
   position: absolute;
   top: 9px;
   cursor: pointer;
-  color: white;
+  color: #2599f2;
   width: 24px;
   height: 24px;
   border-radius: 3px;
   font-size: 16px;
   line-height: 24px;
   text-indent: -999em;
-}
-.kuma-calendar-prev-month-btn:hover,
-.kuma-calendar-next-month-btn:hover,
-.kuma-calendar-prev-year-btn:hover,
-.kuma-calendar-next-year-btn:hover {
-  background: #4eadf5;
-  color: white;
 }
 .kuma-calendar-prev-month-btn:after,
 .kuma-calendar-next-month-btn:after,
@@ -2912,22 +2959,23 @@ a.weaker-link {
   right: 0;
 }
 .kuma-calendar-next-year-btn:after {
-  content: '\e615';
+  content: '\e643';
 }
 .kuma-calendar-prev-year-btn {
   left: 0;
 }
 .kuma-calendar-prev-year-btn:after {
-  content: '\e616';
+  content: '\e644';
 }
 .kuma-calendar-calendar-body {
   padding: 9px 10px 10px;
 }
 .kuma-calendar table {
   border-collapse: collapse;
-  max-width: 100%;
+  max-width: 282px;
+  margin: 10px;
   background-color: transparent;
-  width: 100%;
+  width: 282px;
 }
 .kuma-calendar table,
 .kuma-calendar td,
@@ -2941,14 +2989,14 @@ a.weaker-link {
 }
 .kuma-calendar-column-header {
   line-height: 18px;
-  padding: 6px 0;
+  padding: 11px 0;
   width: 33px;
   text-align: center;
 }
 .kuma-calendar-column-header .kuma-calendar-column-header-inner {
   display: block;
   font-weight: normal;
-  color: #2599f2;
+  color: #666;
 }
 .kuma-calendar-column-header .kuma-calendar-column-header-inner.weekend {
   color: #92c7f0;
@@ -2957,20 +3005,21 @@ a.weaker-link {
   display: none;
 }
 .kuma-calendar-cell {
-  padding: 1px 0;
+  padding: 4px 0;
 }
 .kuma-calendar-date {
   display: block;
   margin: 0 auto;
-  color: #333;
+  color: #666;
   border-radius: 0px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 32px;
+  height: 32px;
   padding: 0;
   background: transparent;
   line-height: 30px;
   text-align: center;
+  border-radius: 2px;
 }
 .kuma-calendar-date:hover {
   background: #f2f9ff;
@@ -2978,6 +3027,10 @@ a.weaker-link {
 }
 .kuma-calendar-date.weekend {
   color: #92c7f0;
+}
+.kuma-calendar-today .kuma-calendar-date {
+  border: 1px solid #2599f2;
+  color: #2599f2;
 }
 .kuma-calendar-selected-day .kuma-calendar-date {
   background: #2599f2;
@@ -3007,7 +3060,7 @@ a.weaker-link {
 }
 .kuma-calendar-footer {
   border-top: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 8px 0;
   text-align: center;
   position: relative;
 }
@@ -3568,6 +3621,14 @@ a.weaker-link {
 .kuma-time-picker-panel * {
   box-sizing: border-box;
 }
+.kuma-time-picker-panel-selected-value {
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #dbdbdb;
+}
 .kuma-time-picker-panel-inner {
   display: inline-block;
   position: relative;
@@ -3650,7 +3711,7 @@ a.weaker-link {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 101px;
+  width: 60px;
   max-height: 144px;
 }
 .kuma-time-picker-panel-select li {
@@ -3659,8 +3720,8 @@ a.weaker-link {
   margin: 0;
   padding: 0 0 0 16px;
   width: 100%;
-  height: 24px;
-  line-height: 24px;
+  height: 32px;
+  line-height: 32px;
   text-align: left;
   cursor: pointer;
   -webkit-user-select: none;
@@ -3682,11 +3743,19 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background: transparent;
   cursor: not-allowed;
 }
-.kuma-calendar-two-time-panel .kuma-time-picker-panel-select ul {
-  width: 152px;
+.kuma-time-picker-pmam-item {
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.kuma-calendar-one-time-panel .kuma-time-picker-panel-select ul {
-  width: 303px;
+.kuma-time-picker-pmam-item:hover {
+  background: #f2f9ff;
+}
+.kuma-time-picker-pmam-item-active {
+  color: #2599f2;
 }
 .kuma-calendar-date-content-box {
   text-align: center;
@@ -4119,7 +4188,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInLeft {
   0% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
   100% {
@@ -4133,7 +4202,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
 }
@@ -4144,8 +4213,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-rightTop.tip-slide-appear,
 .kuma-tooltip-placement-rightBottom.tip-slide-appear {
   opacity: 0;
-  transform: translate(-10px, 0);
-  animation-timing-function: ease-out;
+  transform: translate(10px, 0);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-right.tip-slide-enter-active,
@@ -4161,7 +4230,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-rightBottom.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-right.tip-slide-leave-active,
@@ -4171,7 +4240,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInRight {
   0% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
   100% {
@@ -4185,7 +4254,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
 }
@@ -4196,8 +4265,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-leftTop.tip-slide-appear,
 .kuma-tooltip-placement-leftBottom.tip-slide-appear {
   opacity: 0;
-  transform: translate(10px, 0);
-  animation-timing-function: ease-out;
+  transform: translate(-10px, 0);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-left.tip-slide-enter-active,
@@ -4213,7 +4282,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-leftBottom.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-left.tip-slide-leave-active,
@@ -4223,7 +4292,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInBottom {
   0% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
   100% {
@@ -4237,7 +4306,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
 }
@@ -4248,8 +4317,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-topLeft.tip-slide-appear,
 .kuma-tooltip-placement-topRight.tip-slide-appear {
   opacity: 0;
-  transform: translate(0, 10px);
-  animation-timing-function: ease-out;
+  transform: translate(0, -10px);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-top.tip-slide-enter-active,
@@ -4265,7 +4334,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-topRight.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-top.tip-slide-leave-active,
@@ -4275,7 +4344,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes tipSlideInTop {
   0% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
   100% {
@@ -4289,7 +4358,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
 }
@@ -4300,8 +4369,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-bottomLeft.tip-slide-appear,
 .kuma-tooltip-placement-bottomRight.tip-slide-appear {
   opacity: 0;
-  transform: translate(0, -10px);
-  animation-timing-function: ease-out;
+  transform: translate(0, 10px);
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-bottom.tip-slide-enter-active,
@@ -4317,7 +4386,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-bottomRight.tip-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: 0.3s;
   animation-duration: .15s;
 }
 .kuma-tooltip-placement-bottom.tip-slide-leave-active,
@@ -4366,7 +4435,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   list-style: none;
   float: left;
   background-color: #fff;
-  transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 .kuma-page-item a {
   text-decoration: none;
@@ -4618,7 +4687,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-color: #999 transparent transparent transparent;
   border-style: solid;
   border-width: 4px 4px 0 4px;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-select2-selection {
   outline: none;
@@ -4912,7 +4981,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: 1px solid #dedede;
 }
 .kuma-select2-dropdown-menu li.kuma-select2-dropdown-menu-item {
-  transition: all 0.15s ease-out;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
   margin: 0;
   position: relative;
   display: block;
@@ -5158,7 +5227,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 3px;
   background-color: #2599f2;
   z-index: 1;
-  transition: all ease-out 0.3s;
+  transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
   transform-origin: 0 0;
 }
 .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container,
@@ -5555,7 +5624,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .tableMaskFade-enter,
 .tableMaskFade-appear {
   opacity: 0;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .3s;
 }
 .tableMaskFade-enter-active,
@@ -5564,7 +5633,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .tableMaskFade-leave {
   opacity: 0.3;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .3s;
 }
 .tableMaskFade-leave-active {
@@ -5734,7 +5803,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: none;
 }
 .kuma-uxtable-row .kuma-uxtable-row-cells {
-  transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-uxtable-row:first-child {
   border-top: none;
@@ -5998,7 +6067,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   top: 0;
   z-index: 2;
-  transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-uxtable-left-fixed-table.has-scroll,
 .kuma-uxtable-right-fixed-table.has-scroll {
@@ -6175,7 +6244,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-weight: normal;
   color: #666;
   white-space: nowrap;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-dropdown-menu > .kuma-dropdown-menu-item > a {
   color: #333;
@@ -6726,7 +6795,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInLeft {
   0% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
   100% {
@@ -6740,7 +6809,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
 }
@@ -6751,9 +6820,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-rightTop.popover-slide-appear,
 .kuma-popover-placement-rightBottom.popover-slide-appear {
   opacity: 0;
-  transform: translate(-10px, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(10px, 0);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-right.popover-slide-enter-active,
 .kuma-popover-placement-rightTop.popover-slide-enter-active,
@@ -6768,8 +6837,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-rightBottom.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-right.popover-slide-leave-active,
 .kuma-popover-placement-rightTop.popover-slide-leave-active,
@@ -6778,7 +6847,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInRight {
   0% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
   100% {
@@ -6792,7 +6861,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
 }
@@ -6803,9 +6872,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-leftTop.popover-slide-appear,
 .kuma-popover-placement-leftBottom.popover-slide-appear {
   opacity: 0;
-  transform: translate(10px, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(-10px, 0);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-left.popover-slide-enter-active,
 .kuma-popover-placement-leftTop.popover-slide-enter-active,
@@ -6820,8 +6889,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-leftBottom.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-left.popover-slide-leave-active,
 .kuma-popover-placement-leftTop.popover-slide-leave-active,
@@ -6830,7 +6899,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInBottom {
   0% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
   100% {
@@ -6844,7 +6913,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
 }
@@ -6855,9 +6924,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-topLeft.popover-slide-appear,
 .kuma-popover-placement-topRight.popover-slide-appear {
   opacity: 0;
-  transform: translate(0, 10px);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(0, -10px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-top.popover-slide-enter-active,
 .kuma-popover-placement-topLeft.popover-slide-enter-active,
@@ -6872,8 +6941,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-topRight.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-top.popover-slide-leave-active,
 .kuma-popover-placement-topLeft.popover-slide-leave-active,
@@ -6882,7 +6951,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 @keyframes popoverSlideInTop {
   0% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
   100% {
@@ -6896,7 +6965,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
     opacity: 1;
   }
   100% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
 }
@@ -6907,9 +6976,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-bottomLeft.popover-slide-appear,
 .kuma-popover-placement-bottomRight.popover-slide-appear {
   opacity: 0;
-  transform: translate(0, -10px);
-  animation-timing-function: ease-out;
-  animation-duration: .15s;
+  transform: translate(0, 10px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
 }
 .kuma-popover-placement-bottom.popover-slide-enter-active,
 .kuma-popover-placement-bottomLeft.popover-slide-enter-active,
@@ -6924,7 +6993,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-bottomRight.popover-slide-leave {
   opacity: 1;
   transform: translate(0, 0);
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .3s;
 }
 .kuma-popover-placement-bottom.popover-slide-leave-active,
@@ -8367,7 +8436,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background: #fff;
 }
 .kuma-menu * {
-  transition: all 0.15s ease-out;
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-menu-item-group-list {
   margin: 0;
@@ -9402,6 +9471,52 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   margin-left: 46px;
   line-height: 36px;
 }
+@keyframes msgMoveUpIn {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes msgMoveUpOut {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.message-moveUp-enter,
+.message-moveUp-appear {
+  transform-origin: 0 0;
+  transform: translateY(100%);
+  opacity: 0;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
+}
+.message-moveUp-enter-active,
+.message-moveUp-appear-active {
+  animation-name: msgMoveUpIn;
+}
+.message-moveUp-leave {
+  transform-origin: 0 0;
+  transform: translateY(0);
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .3s;
+}
+.message-moveUp-leave-active {
+  animation-name: msgMoveUpOut;
+}
 /**
  * Pickable Component Style for uxcore
  * @author onbing
@@ -9510,7 +9625,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-carousel .slick-prev,
 .kuma-carousel .slick-next {
-  transition: all 0.2s ease-out;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   position: absolute;
   display: block;
   opacity: 0;
@@ -9532,7 +9647,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-carousel .slick-prev:hover,
 .kuma-carousel .slick-next:hover {
-  transition: all 0.2s ease-out;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   outline: none;
   background: rgba(0, 0, 0, 0.5);
   color: transparent;
@@ -9618,7 +9733,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-carousel .slick-dots li button:focus {
   outline: none;
   opacity: .7;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-carousel .slick-dots li button:hover:before,
 .kuma-carousel .slick-dots li button:focus:before {
@@ -10620,11 +10735,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-badge-zoom-appear,
 .kuma-badge-zoom-enter {
-  animation: antZoomBadgeIn 0.3s ease-out;
+  animation: antZoomBadgeIn 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   animation-fill-mode: both;
 }
 .kuma-badge-zoom-leave {
-  animation: antZoomBadgeOut 0.3s ease-out;
+  animation: antZoomBadgeOut 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   animation-fill-mode: both;
 }
 .kuma-badge-not-a-wrapper .kuma-badge-count {
@@ -10644,7 +10759,7 @@ a -count:active {
 }
 .kuma-scroll-number-only {
   display: inline-block;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-scroll-number.not-support-css-animation .kuma-scroll-number-only > p {
   display: none;
@@ -11527,7 +11642,7 @@ a -count:active {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform ease-out 0.3s;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-cover > .album-item > img {
   position: absolute;
@@ -11556,7 +11671,7 @@ a -count:active {
   cursor: pointer;
   opacity: 0;
   transform: scale(1.2);
-  transition: transform ease-out 0.3s, opacity ease-out 0.3s;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s, opacity cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-cover:after {
   content: '';
@@ -11567,7 +11682,7 @@ a -count:active {
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
   z-index: 1;
-  transition: background-color ease-out 0.3s;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-cover:hover > .album-item {
   transform: scale(1.1);
@@ -11603,7 +11718,7 @@ a -count:active {
   color: #fff;
   line-height: 60px;
   text-align: center;
-  transition: background-color ease-out 0.3s;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-overlay > .album-control:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -11674,7 +11789,7 @@ a -count:active {
   width: 120px;
   height: 72px;
   border: 2px solid #fff;
-  transition: transform ease-out 0.3s, left ease-out 0.3s;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s, left cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-carousel {
   position: relative;
@@ -11712,7 +11827,7 @@ a -count:active {
   z-index: -1;
   text-align: center;
   opacity: .6;
-  transition: all ease-out 0.3s;
+  transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-carousel-list > .item img {
   max-width: 100%;
@@ -11731,7 +11846,7 @@ a -count:active {
   color: #fff;
   line-height: 72px;
   font-size: 26px;
-  transition: background-color ease-out 0.3s;
+  transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-carousel-control:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -11953,7 +12068,7 @@ a -count:active {
   opacity: .5;
   animation-duration: 0.3s;
   animation-fill-mode: both;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-play-state: paused;
 }
 .album-overlay-enter-active .album-stage,
@@ -11969,7 +12084,7 @@ a -count:active {
   opacity: .8;
   animation-duration: 0.3s;
   animation-fill-mode: both;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-play-state: paused;
 }
 .album-overlay-leave-active .album-stage {
@@ -12140,4 +12255,150 @@ a -count:active {
 }
 .uxcore-splitter-split-bar.resize-bar.horizontal {
   cursor: row-resize;
+}
+/**
+ * CascadeMultiSelect Component Style for uxcore
+ * @author guyunxiang
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-cascade-multi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid #dbdbdb;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content {
+  float: left;
+  overflow-y: auto;
+  width: 150px;
+  height: 310px;
+  padding: 14px 0;
+  border-left: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content:first-child {
+  border-left: 0;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item {
+  overflow: hidden;
+  height: 28px;
+  padding: 0 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  line-height: 28px;
+  -o-text-overflow: ellipsis;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item:hover {
+  background-color: #f5f5f5;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item s {
+  margin-right: 5px;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-label span {
+  vertical-align: middle;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item-active {
+  background-color: #f5f5f5;
+}
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-noData {
+  display: block;
+  margin-top: 7px;
+  margin-left: 21px;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result {
+  float: left;
+  width: 220px;
+  height: 310px;
+  padding: 20px 15px;
+  border-left: 1px solid #dbdbdb;
+  background-color: #f5f5f5;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title {
+  padding-bottom: 10px;
+  color: #999;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title .kuma-cascade-multi-result-clean {
+  float: right;
+  margin-right: 6px;
+  cursor: pointer;
+  color: #2599f2;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 250px;
+  margin: 0 -15px;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul {
+  margin-left: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li {
+  white-space: nowrap;
+  line-height: 25px;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-down,
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-right {
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #999;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover {
+  color: #2599f2;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover .tree-node-ul-li-del {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span-label {
+  display: inline-block;
+  overflow-x: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-all {
+  margin-left: 10px;
+  vertical-align: middle;
+  color: #999;
+}
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-del {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  transition: opacity .3s, transform .3s;
+  transform: scale(0);
+  color: #2599f2;
+}
+.kuma-cascade-multi-text-result {
+  overflow-x: hidden;
+  margin-right: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.kuma-cascade-multi-text-result-input {
+  padding-right: 10px;
+  width: 100%;
+  border: 0;
+}
+.kuma-cascade-multi-text-result-input-disabled {
+  background-color: #f7f7f7;
 }
