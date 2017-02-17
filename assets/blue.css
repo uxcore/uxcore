@@ -2381,6 +2381,7 @@ a.weaker-link {
 }
 .kuma-calendar-input-wrap {
   position: relative;
+  height: 35px;
   padding: 5px 10px;
   border-bottom: 1px solid #e9e9e9;
 }
@@ -2884,14 +2885,14 @@ a.weaker-link {
   border: none;
   height: 28px;
 }
-.kuma-calendar-year-select .kuma-select2-selection__rendered,
-.kuma-calendar-month-select .kuma-select2-selection__rendered {
+.kuma-calendar-year-select .kuma-select2-selection .kuma-select2-selection__rendered,
+.kuma-calendar-month-select .kuma-select2-selection .kuma-select2-selection__rendered {
   padding: 0;
   margin: 0;
   line-height: 28px;
 }
-.kuma-calendar-year-select .kuma-select2-selection-selected-value,
-.kuma-calendar-month-select .kuma-select2-selection-selected-value {
+.kuma-calendar-year-select .kuma-select2-selection .kuma-select2-selection-selected-value,
+.kuma-calendar-month-select .kuma-select2-selection .kuma-select2-selection-selected-value {
   transition: color 0.15s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-calendar-year-select.kuma-select2-open,
@@ -2915,7 +2916,7 @@ a.weaker-link {
   width: 60px;
 }
 .kuma-calendar-month-select.kuma-calendar-cn-select {
-  width: 55px;
+  width: 60px;
 }
 .kuma-calendar-month-select .kuma-select2-selection-selected-value {
   left: 12px;
@@ -11065,34 +11066,52 @@ a -count:active {
   color: #333;
 }
 .uxcore-tree-select-dropdown {
-  background-color: white;
-  border: 1px solid #d9d9d9;
-  box-shadow: 0 0px 4px #d9d9d9;
-  border-radius: 0px;
-  box-sizing: border-box;
   z-index: 1070;
+  box-shadow: 0 0px 4px #d9d9d9;
   left: -9999px;
   top: -9999px;
   position: absolute;
   outline: none;
-  max-height: 250px;
-  overflow-y: auto;
+  max-height: 312px;
+  overflow: hidden;
 }
 .uxcore-tree-select-dropdown-hidden {
   display: none;
 }
+.uxcore-tree-select-dropdown span.uxcore-tree-select-tree-title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.uxcore-tree-select-dropdown .uxcore-tree-select-not-found {
+  display: inline-block;
+  margin: 10px 0 0 20px;
+}
+.uxcore-tree-select-setHight {
+  height: 312px;
+}
 .uxcore-tree-select-dropdown-search {
   display: block;
-  padding: 4px;
+  padding: 18px 18px 0px;
+  position: relative;
 }
 .uxcore-tree-select-dropdown-search .uxcore-tree-select-search__field__wrap {
   width: 100%;
 }
+.uxcore-tree-select-dropdown-search .uxcore-tree-select-search_icon {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+}
 .uxcore-tree-select-dropdown-search .uxcore-tree-select-search__field__placeholder {
-  top: 4px;
+  top: 2px;
+  padding-left: 6px;
 }
 .uxcore-tree-select-dropdown-search .uxcore-tree-select-search__field {
-  padding: 4px;
+  padding: 4px 4px 4px 7px;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #d9d9d9;
@@ -11232,11 +11251,117 @@ a -count:active {
   visibility: visible;
   animation-name: slideDownOut;
 }
+.uxcore-tree-select-dropdown-left,
+.uxcore-tree-select-dropdown-right {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  overflow-y: auto;
+  height: 100%;
+}
+.uxcore-tree-select-dropdown-right {
+  border-left-color: transparent;
+  overflow-y: hidden;
+  padding-bottom: 3px;
+  background: #F5F5F5;
+  position: relative;
+}
+.uxcore-tree-select-dropdown-right-fontS {
+  color: #999;
+}
+.uxcore-tree-select-dropdown-right-allClear {
+  float: right;
+  cursor: pointer;
+  color: #2599f2;
+}
+.uxcore-tree-select-dropdown-right-noContent {
+  color: #999;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  line-height: 48px;
+  background: #FAFAFA;
+  border: 1px dashed #CCCCCC;
+  height: 48px;
+  width: 75%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.uxcore-tree-select-dropdown-right-title {
+  text-align: center;
+  font-size: 14px;
+}
+.uxcore-tree-select-rightTreeNode {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #333333;
+  height: 250px;
+  overflow: auto;
+}
+.uxcore-tree-select-rightTreeNode-clear {
+  position: absolute;
+  right: 15px;
+  top: 1px;
+  cursor: pointer;
+  color: #2599f2;
+  transition: opacity .3s, transform .3s;
+  transform: scale(0);
+  -ms-transform: scale(0);
+}
+.uxcore-tree-select-rightTreeNode-hoverNode {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.uxcore-tree-select-rightTreeNode-hoverNode:hover {
+  background: #EBEBEB;
+  color: #2599f2;
+}
+.uxcore-tree-select-rightTreeNode-hoverNode:hover .uxcore-tree-select-rightTreeNode-clear {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+}
+.uxcore-tree-select-rightTreeNode-hoverNode span {
+  vertical-align: middle;
+}
+.uxcore-tree-select-rightTreeNode-allSelect {
+  font-family: PingFangSC-Regular;
+  color: #999999;
+  margin-left: 12px;
+}
+.uxcore-tree-select-rightTreeNode-arrow-switch {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none;
+  cursor: pointer;
+}
+.uxcore-tree-select-rightTreeNode .uxcore-tree-select-rightTreeNode-arrow-close {
+  background: url('https://img.alicdn.com/tps/TB17BHzJVXXXXXEXXXXXXXXXXXX-10-14.svg') 50% 50% no-repeat;
+  background-size: auto 50%;
+}
+.uxcore-tree-select-rightTreeNode .uxcore-tree-select-rightTreeNode-arrow-open {
+  background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
+  background-size: 50% auto;
+}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* IE10/11-specific styles go here */
   .uxcore-tree-select-selection--multiple .uxcore-tree-select-search--inline .uxcore-tree-select-search__field {
     width: 50px!important;
   }
+}
+.uxcore-tree-select-dropdown-isSelect .uxcore-tree-select-tree li a.uxcore-tree-select-tree-node-selected {
+  color: #2599f2;
 }
 .uxcore-tree-select-tree {
   margin: 0;
@@ -11268,9 +11393,6 @@ a -count:active {
 }
 .uxcore-tree-select-tree li a:hover {
   background-color: #edf7ff;
-}
-.uxcore-tree-select-tree li a.uxcore-tree-select-tree-node-selected {
-  color: #2599f2;
 }
 .uxcore-tree-select-tree li span.uxcore-tree-select-tree-switcher-noop,
 .uxcore-tree-select-tree li span.uxcore-tree-select-tree-switcher,

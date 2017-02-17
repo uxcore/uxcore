@@ -1,3 +1,10 @@
+## 0.7.1
+
+`2017-02-17`
+
+- [HotFix] Calendar: style bug
+- [Component] TreeSelect: `CHANGED` add new prop `resultsPanelAllClearBtn` , `resultsPanelTitle`, `resultsPanelTitleStyle` & `filterResultsPanel` 
+
 ## 0.7.0
 
 `2017-02-16`
@@ -11,7 +18,6 @@
 - [Component] Table: `CHANGED` update `uxcore-date-cell-field` to ^0.3.0
 - [Component] Tooltip: `CHANGED` use global transition ease
 - [Component] Tooltip: `CHANGED` change animation directions
-- [Component] TreeSelect: `CHANGED` add new prop `resultsPanelAllClearBtn` , `resultsPanelTitle`, `resultsPanelTitleStyle` & `filterResultsPanel` 
 - [General] add new component `CascadeMultiSelect`
 
 ## 0.6.1
