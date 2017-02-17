@@ -433,6 +433,13 @@
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * CascadeSelect Component Style for uxcore
+ * @author changming
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore html {
   font-family: sans-serif;
@@ -12525,4 +12532,171 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-cascade-multi-text-result-input-disabled {
   background-color: #f7f7f7;
+}
+.uxcore .kuma-cascader-wrapper {
+  min-height: 36px;
+  width: 100%;
+  position: relative;
+  color: #333;
+  border: 1px solid #dbdbdb;
+  transition: all .3s;
+}
+.uxcore .kuma-cascader-wrapper:hover {
+  border-color: #c2c2c2;
+}
+.uxcore .kuma-cascader-clearable:hover .kuma-cascader-close-wrap {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.uxcore .kuma-cascader-close-wrap {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.6);
+  position: absolute;
+  right: 24px;
+  top: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+.uxcore .kuma-cascader-close-wrap .kuma-icon {
+  color: #999;
+  font-size: 14px;
+}
+.uxcore .kuma-cascader-close-wrap .kuma-icon:hover {
+  color: #808080;
+}
+.uxcore .kuma-cascader-disabled {
+  background: #f7f7f7;
+  border: 1px solid #dbdbdb;
+  color: #ccc;
+  cursor: default;
+}
+.uxcore .kuma-cascader-trigger {
+  cursor: pointer;
+}
+.uxcore .kuma-cascader-text {
+  line-height: 34px;
+  padding: 0 10px;
+}
+.uxcore .kuma-cascader-placeholder {
+  color: #999;
+}
+.uxcore .kuma-cascader-arrow {
+  color: #999;
+  position: absolute;
+  right: 2px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  transition: all .3s;
+}
+.uxcore .kuma-cascader-arrow-reverse {
+  transform: rotate(180deg);
+}
+.uxcore .kuma-dropdown-menu-submenu {
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  margin-top: -8px;
+}
+.uxcore .kuma-dropdown-menu-submenu-border {
+  margin: 0;
+  border-top: 1px solid #e8e8e8;
+}
+.uxcore .kuma-dropdown-menu-submenu-wrap {
+  height: 120px;
+  overflow: hidden;
+}
+.uxcore .kuma-dropdown-menu-submenu-wrap > ul {
+  line-height: 30px;
+  width: 33.3%;
+  height: 100%;
+  overflow: auto;
+  float: left;
+  border-right: 1px solid #e8e8e8;
+}
+.uxcore .kuma-dropdown-menu-submenu-wrap > ul:last-child {
+  border-right: none;
+}
+.uxcore .kuma-dropdown-menu-submenu-wrap li {
+  padding: 0 20px 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all .3s;
+}
+.uxcore .kuma-dropdown-menu-submenu-wrap li:hover,
+.uxcore .kuma-dropdown-menu-submenu-wrap li.active {
+  background-color: #f7f7f7;
+}
+.uxcore .kuma-dropdown-menu-submenu-wrap li:active {
+  background-color: #efefef;
+}
+.uxcore ul.kuma-dropdown-menu-hoverable li {
+  position: relative;
+}
+.uxcore ul.kuma-dropdown-menu-hoverable li:after {
+  font-family: kuma!important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  content: "\e643";
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  color: #666;
+}
+@keyframes SlideUpIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1);
+  }
+}
+@keyframes SlideUpOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(0.8);
+  }
+}
+@keyframes SlideDownIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0% 100%;
+    transform: scaleY(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0% 100%;
+    transform: scaleY(1);
+  }
+}
+@keyframes SlideDownOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0% 100%;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0% 100%;
+    transform: scaleY(0.8);
+  }
 }
