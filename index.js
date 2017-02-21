@@ -13,11 +13,13 @@ var Crumb = require('./lib/Crumb');
 var Dialog = require('./lib/Dialog');
 var Dropdown = require('./lib/Dropdown');
 var EmptyData = require('./lib/EmptyData');
+var FloatNav = require('./lib/FloatNav');
 var Form = require('./lib/Form');
 var Formatter = require('./lib/Formatter');
 var Grid = require('./lib/Grid');
 var Layout = require('./lib/Layout');
 var LoadMore = require('./lib/LoadMore');
+var Matrix = require('./lib/Matrix');
 var Mention = require('./lib/Mention');
 var Menu = require('./lib/Menu');
 var MultiSelect = require('./lib/MultiSelect');
@@ -34,6 +36,7 @@ var Switch = require('./lib/Switch');
 var Table = require('./lib/Table');
 var Tabs = require('./lib/Tabs');
 var Tag = require('./lib/Tag');
+var Timeline = require('./lib/Timeline');
 var Tooltip = require('./lib/Tooltip');
 var Tree = require('./lib/Tree');
 var TreeSelect = require('./lib/TreeSelect');
@@ -58,11 +61,13 @@ module.exports = {
   Dialog: Dialog,
   Dropdown: Dropdown,
   EmptyData: EmptyData,
+  FloatNav: FloatNav,
   Form: Form,
   Formatter: Formatter,
   Grid: Grid,
   Layout: Layout,
   LoadMore: LoadMore,
+  Matrix: Matrix,
   Mention: Mention,
   Menu: Menu,
   MultiSelect: MultiSelect,
@@ -79,6 +84,7 @@ module.exports = {
   Table: Table,
   Tabs: Tabs,
   Tag: Tag,
+  Timeline: Timeline,
   Tooltip: Tooltip,
   Tree: Tree,
   TreeSelect: TreeSelect,
