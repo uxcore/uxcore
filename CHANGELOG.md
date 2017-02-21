@@ -1,3 +1,9 @@
+## 0.7.3
+
+`2017-02-21`
+
+- [General] add new component `FloatNav` `Matrix` & `Timeline`
+
 ## 0.7.1
 
 `2017-02-17`

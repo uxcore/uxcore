@@ -12698,3 +12698,246 @@ ul.kuma-dropdown-menu-hoverable li:after {
     transform: scaleY(0.8);
   }
 }
+/**
+ * Matrix Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-matrix {
+  display: block;
+  border: 1px solid #dbdbdb;
+  overflow: auto;
+}
+.kuma-matrix-wrap {
+  position: relative;
+}
+.kuma-matrix-cell {
+  position: absolute;
+  text-align: center;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+/**
+ * FloatNav Component Style for uxcore
+ * @author vincent.bian
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.uxcore-float-nav {
+  position: fixed;
+}
+.uxcore-float-nav-scroll-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+.uxcore-float-nav-scroll-bar .line-circle {
+  position: absolute;
+}
+.uxcore-float-nav-scroll-bar .line-circle-top {
+  top: -15px;
+  left: 6px;
+}
+.uxcore-float-nav-scroll-bar .line-circle-bottom {
+  bottom: -15px;
+  left: 6px;
+}
+.uxcore-float-nav-scroll-bar .line-circle circle {
+  stroke-width: 2px;
+  stroke: #dbdbdb;
+  fill: #fff;
+}
+.uxcore-float-nav-scroll-line {
+  margin-left: 15px;
+  width: 2px;
+  height: 100%;
+  background-color: #dbdbdb;
+}
+.uxcore-float-nav-container {
+  margin-right: 40px;
+  height: 100%;
+  overflow: hidden;
+}
+.uxcore-float-nav-content {
+  margin-left: 30px;
+  padding: 5px 0;
+  font-size: 14px;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item {
+  position: relative;
+  line-height: 1.5;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item svg {
+  position: absolute;
+  left: -24px;
+  top: 4px;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item .item-circle-icon {
+  fill: #dbdbdb;
+  stroke: #fff;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item .item-arrow-icon {
+  fill: #f37327;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item-title {
+  display: block;
+  padding: 3px 0;
+  text-indent: .5em;
+  color: #666;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item-title:hover {
+  background-color: #fff9f5;
+  text-decoration: none;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-item-active {
+  color: #f37327;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-subs .uxcore-float-nav-item {
+  padding-left: 1em;
+}
+.uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-subs .uxcore-float-nav-item-title {
+  text-indent: 1em;
+}
+.uxcore-float-nav-control {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+  width: 20px;
+  height: 49px;
+}
+.uxcore-float-nav-control > a {
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  display: block;
+  border: 1px solid #dbdbdb;
+  font-family: kuma!important;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #666;
+}
+.uxcore-float-nav-control > a:hover {
+  text-decoration: none;
+  color: #f37327;
+}
+.uxcore-float-nav-control-prev {
+  left: 0;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+}
+.uxcore-float-nav-control-prev:before {
+  content: '\e613';
+}
+.uxcore-float-nav-control-next {
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 8px 8px;
+}
+.uxcore-float-nav-control-next:before {
+  content: '\e614';
+}
+/**
+ * Timeline Component Style for uxcore
+ * @author muwen.lb
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.kuma-timeline-item {
+  position: relative;
+  padding: 0 0 12px 0;
+  list-style: none;
+  margin: 0;
+}
+.kuma-timeline-item-tail {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  border-left: 2px solid #F60;
+}
+.kuma-timeline-item-pending .kuma-timeline-item-tail {
+  display: none;
+}
+.kuma-timeline-item-head {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #FFF;
+}
+.kuma-timeline-item-head-icon {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.kuma-timeline-item-head-custom {
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  left: -14px;
+  line-height: 1;
+  margin-top: 6px;
+  border: 0;
+  height: auto;
+  border-radius: 0;
+  padding: 3px 0;
+  font-size: 12px;
+  transform: translateY(-50%);
+}
+.kuma-timeline-item-content {
+  padding: 5px 0 10px 30px;
+  position: relative;
+  top: -3px;
+}
+.kuma-timeline-item-last .kuma-timeline-item-tail {
+  display: none;
+}
+.kuma-timeline-item-last .kuma-timeline-item-content {
+  min-height: 48px;
+}
+.kuma-timeline-item-orange .kuma-timeline-item-head .kuma-timeline-item-head-icon {
+  background-color: #F60;
+}
+.kuma-timeline-item-gray .kuma-timeline-item-head .kuma-timeline-item-head-icon {
+  background-color: #dbdbdb;
+}
+.kuma-timeline-item-blue .kuma-timeline-item-head .kuma-timeline-item-head-icon {
+  background-color: #2db7f5;
+}
+.kuma-timeline-item-green .kuma-timeline-item-head .kuma-timeline-item-head-icon {
+  background-color: #87d068;
+}
+.kuma-timeline-item-orange .kuma-timeline-item-tail {
+  border-color: #F60;
+}
+.kuma-timeline-item-gray .kuma-timeline-item-tail {
+  border-color: #dbdbdb;
+}
+.kuma-timeline-item-blue .kuma-timeline-item-tail {
+  border-color: #2db7f5;
+}
+.kuma-timeline-item-green .kuma-timeline-item-tail {
+  border-color: #87d068;
+}
+.kuma-timeline-pending .kuma-timeline-item-last .kuma-timeline-item-tail {
+  display: block;
+}
+.kuma-timeline-item-dotted .kuma-timeline-item-tail {
+  border-left-style: dotted;
+}

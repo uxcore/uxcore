@@ -440,6 +440,27 @@
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * Matrix Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+  /**
+ * FloatNav Component Style for uxcore
+ * @author vincent.bian
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+  /**
+ * Timeline Component Style for uxcore
+ * @author muwen.lb
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore html {
   font-family: sans-serif;
@@ -12699,4 +12720,226 @@ a .uxcore-count:active {
     transform-origin: 0% 100%;
     transform: scaleY(0.8);
   }
+}
+.uxcore .kuma-matrix {
+  display: block;
+  border: 1px solid #dbdbdb;
+  overflow: auto;
+}
+.uxcore .kuma-matrix-wrap {
+  position: relative;
+}
+.uxcore .kuma-matrix-cell {
+  position: absolute;
+  text-align: center;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.uxcore .uxcore-float-nav {
+  position: fixed;
+}
+.uxcore .uxcore-float-nav-scroll-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+.uxcore .uxcore-float-nav-scroll-bar .line-circle {
+  position: absolute;
+}
+.uxcore .uxcore-float-nav-scroll-bar .line-circle-top {
+  top: -15px;
+  left: 6px;
+}
+.uxcore .uxcore-float-nav-scroll-bar .line-circle-bottom {
+  bottom: -15px;
+  left: 6px;
+}
+.uxcore .uxcore-float-nav-scroll-bar .line-circle circle {
+  stroke-width: 2px;
+  stroke: #dbdbdb;
+  fill: #fff;
+}
+.uxcore .uxcore-float-nav-scroll-line {
+  margin-left: 15px;
+  width: 2px;
+  height: 100%;
+  background-color: #dbdbdb;
+}
+.uxcore .uxcore-float-nav-container {
+  margin-right: 40px;
+  height: 100%;
+  overflow: hidden;
+}
+.uxcore .uxcore-float-nav-content {
+  margin-left: 30px;
+  padding: 5px 0;
+  font-size: 14px;
+  transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item {
+  position: relative;
+  line-height: 1.5;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item svg {
+  position: absolute;
+  left: -24px;
+  top: 4px;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .item-circle-icon {
+  fill: #dbdbdb;
+  stroke: #fff;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .item-arrow-icon {
+  fill: #2599f2;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item-title {
+  display: block;
+  padding: 3px 0;
+  text-indent: .5em;
+  color: #666;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item-title:hover {
+  background-color: #f2f9ff;
+  text-decoration: none;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-item-active {
+  color: #2599f2;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-subs .uxcore-float-nav-item {
+  padding-left: 1em;
+}
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-subs .uxcore-float-nav-item-title {
+  text-indent: 1em;
+}
+.uxcore .uxcore-float-nav-control {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+  width: 20px;
+  height: 49px;
+}
+.uxcore .uxcore-float-nav-control > a {
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  display: block;
+  border: 1px solid #dbdbdb;
+  font-family: kuma!important;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #666;
+}
+.uxcore .uxcore-float-nav-control > a:hover {
+  text-decoration: none;
+  color: #2599f2;
+}
+.uxcore .uxcore-float-nav-control-prev {
+  left: 0;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+}
+.uxcore .uxcore-float-nav-control-prev:before {
+  content: '\e613';
+}
+.uxcore .uxcore-float-nav-control-next {
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 8px 8px;
+}
+.uxcore .uxcore-float-nav-control-next:before {
+  content: '\e614';
+}
+.uxcore .kuma-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.uxcore .kuma-timeline-item {
+  position: relative;
+  padding: 0 0 12px 0;
+  list-style: none;
+  margin: 0;
+}
+.uxcore .kuma-timeline-item-tail {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  border-left: 2px solid #F60;
+}
+.uxcore .kuma-timeline-item-pending .uxcore .kuma-timeline-item-tail {
+  display: none;
+}
+.uxcore .kuma-timeline-item-head {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #FFF;
+}
+.uxcore .kuma-timeline-item-head-icon {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.uxcore .kuma-timeline-item-head-custom {
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  left: -14px;
+  line-height: 1;
+  margin-top: 6px;
+  border: 0;
+  height: auto;
+  border-radius: 0;
+  padding: 3px 0;
+  font-size: 12px;
+  transform: translateY(-50%);
+}
+.uxcore .kuma-timeline-item-content {
+  padding: 5px 0 10px 30px;
+  position: relative;
+  top: -3px;
+}
+.uxcore .kuma-timeline-item-last .kuma-timeline-item-tail {
+  display: none;
+}
+.uxcore .kuma-timeline-item-last .kuma-timeline-item-content {
+  min-height: 48px;
+}
+.uxcore .kuma-timeline-item-orange .uxcore .kuma-timeline-item-head .uxcore .kuma-timeline-item-head-icon {
+  background-color: #F60;
+}
+.uxcore .kuma-timeline-item-gray .uxcore .kuma-timeline-item-head .uxcore .kuma-timeline-item-head-icon {
+  background-color: #dbdbdb;
+}
+.uxcore .kuma-timeline-item-blue .uxcore .kuma-timeline-item-head .uxcore .kuma-timeline-item-head-icon {
+  background-color: #2db7f5;
+}
+.uxcore .kuma-timeline-item-green .uxcore .kuma-timeline-item-head .uxcore .kuma-timeline-item-head-icon {
+  background-color: #87d068;
+}
+.uxcore .kuma-timeline-item-orange .uxcore .kuma-timeline-item-tail {
+  border-color: #F60;
+}
+.uxcore .kuma-timeline-item-gray .uxcore .kuma-timeline-item-tail {
+  border-color: #dbdbdb;
+}
+.uxcore .kuma-timeline-item-blue .uxcore .kuma-timeline-item-tail {
+  border-color: #2db7f5;
+}
+.uxcore .kuma-timeline-item-green .uxcore .kuma-timeline-item-tail {
+  border-color: #87d068;
+}
+.uxcore .kuma-timeline-pending .uxcore .kuma-timeline-item-last .uxcore .kuma-timeline-item-tail {
+  display: block;
+}
+.uxcore .kuma-timeline-item-dotted .uxcore .kuma-timeline-item-tail {
+  border-left-style: dotted;
 }
