@@ -1,3 +1,14 @@
+## 0.7.5
+
+`2017-02-23`
+
+- [Component] Button: `CHANGED` use normal component declaration instead of `stateless function`
+- [Component] Table: `CHANGED` show emptyData if fetch errors
+- [Component] Table: `CHANGED` action hoverMenu will be hiden if a menu item is clicked.
+- [Component] FloatNav: `CHANGED` adjust scroll position when clicked items.
+- [Component] Form: `CHANGED` `CheckboxFormField` show key if label is not found in view mode
+- [Component] Form: `CHANGED` `RadioFormField` show key if label is not found in view mode
+
 ## 0.7.4
 
 `2017-02-21`
