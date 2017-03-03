@@ -2681,6 +2681,107 @@ a.weaker-link {
   border-top-color: #3FC7FA;
   color: #3FC7FA;
 }
+.kuma-calendar-range {
+  overflow: hidden;
+}
+.kuma-calendar-range-part {
+  position: relative;
+  float: left;
+}
+.kuma-calendar-range-part .kuma-calendar-time-picker {
+  top: 69px;
+}
+.kuma-calendar-range-part .kuma-calendar-time-picker-panel-select {
+  width: 77px;
+}
+.kuma-calendar-range .kuma-calendar-date-panel {
+  width: auto;
+}
+.kuma-calendar-range-middle {
+  position: absolute;
+  margin-left: -10px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+.kuma-calendar-range .kuma-calendar-date-panel::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.kuma-calendar-range .kuma-calendar-input-wrap {
+  height: 35px;
+}
+.kuma-calendar-range .kuma-calendar-input,
+.kuma-calendar-range .kuma-time-picker-input {
+  padding: 1px 7px;
+  height: 22px;
+}
+.kuma-calendar-range .kuma-calendar-body,
+.kuma-calendar-range .kuma-calendar-decade-panel-body,
+.kuma-calendar-range .kuma-calendar-year-panel-body,
+.kuma-calendar-range .kuma-calendar-month-panel-body {
+  border-bottom: 1px solid #e9e9e9;
+}
+.kuma-calendar-range.kuma-calendar-week-number {
+  width: 574px;
+}
+.kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-part {
+  width: 286px;
+}
+.kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-part .kuma-calendar-time-picker {
+  top: 69px;
+}
+.kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-part .kuma-calendar-time-picker-panel-select {
+  width: 89px;
+}
+.kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-right .kuma-calendar-time-picker-panel {
+  left: 36px;
+}
+.kuma-calendar-range .kuma-calendar-year-panel,
+.kuma-calendar-range .kuma-calendar-month-panel {
+  top: 35px;
+}
+.kuma-calendar-range .kuma-calendar-month-panel .kuma-calendar-year-panel {
+  top: 0;
+}
+.kuma-calendar-range .kuma-calendar-decade-panel-table,
+.kuma-calendar-range .kuma-calendar-year-panel-table,
+.kuma-calendar-range .kuma-calendar-month-panel-table {
+  height: 198px;
+}
+.kuma-calendar-range .kuma-calendar-in-range-cell {
+  position: relative;
+}
+.kuma-calendar-range .kuma-calendar-in-range-cell:before {
+  content: "";
+  display: block;
+  background: #ecf6fd;
+  border-radius: 0;
+  border: 0;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  background: #f2f9ff;
+}
+.kuma-calendar-range .kuma-calendar-in-range-cell .kuma-calendar-date {
+  position: relative;
+  z-index: 1;
+}
+.kuma-calendar-range-bottom {
+  text-align: right;
+}
+.kuma-calendar-range .kuma-calendar-footer {
+  border-top: none;
+  padding: 0;
+}
+.kuma-calendar-range .kuma-calendar-footer-btn {
+  padding: 10px 12px 10px 0;
+}
 .kuma-calendar-picker-slide-up-enter {
   animation-duration: .3s;
   animation-fill-mode: both;
@@ -8820,6 +8921,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-checkbox-group-item {
   display: inline-block;
   line-height: 16px;
+  margin-bottom: 12px;
 }
 .kuma-checkbox-group-item s {
   vertical-align: top;
@@ -8828,7 +8930,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-checkbox-group-item-content {
   vertical-align: top;
   display: inline-block;
-  padding: 0px 20px 0px 10px;
+  padding: 0px 24px 0px 12px;
 }
 /**
  * Radiogroup Component Style for uxcore
@@ -8840,12 +8942,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-radio-group-item {
   display: inline-block;
   line-height: 16px;
+  margin-bottom: 12px;
 }
 .kuma-radio-group-item s {
   vertical-align: top;
 }
 .kuma-radio-group-item .kuma-radio-group-item-content {
-  padding: 0px 20px 0px 10px;
+  padding: 0px 24px 0px 12px;
   display: inline-block;
   vertical-align: top;
 }
@@ -12385,131 +12488,6 @@ a -count:active {
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
-.kuma-cascade-multi {
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  border: 1px solid #dbdbdb;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content {
-  float: left;
-  overflow-y: auto;
-  width: 150px;
-  height: 310px;
-  padding: 14px 0;
-  border-left: 1px solid #dbdbdb;
-  background-color: #fff;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content:first-child {
-  border-left: 0;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item {
-  overflow: hidden;
-  height: 28px;
-  padding: 0 15px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-  line-height: 28px;
-  -o-text-overflow: ellipsis;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item:hover {
-  background-color: #f5f5f5;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item s {
-  margin-right: 5px;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-label span {
-  vertical-align: middle;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item-active {
-  background-color: #f5f5f5;
-}
-.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-noData {
-  display: block;
-  margin-top: 7px;
-  margin-left: 21px;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result {
-  float: left;
-  width: 220px;
-  height: 310px;
-  padding: 20px 15px;
-  border-left: 1px solid #dbdbdb;
-  background-color: #f5f5f5;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title {
-  padding-bottom: 10px;
-  color: #999;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title .kuma-cascade-multi-result-clean {
-  float: right;
-  margin-right: 6px;
-  cursor: pointer;
-  color: #2599f2;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree {
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 250px;
-  margin: 0 -15px;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul {
-  margin-left: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li {
-  white-space: nowrap;
-  line-height: 25px;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-down,
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-right {
-  margin-right: 5px;
-  vertical-align: middle;
-  color: #999;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover {
-  color: #2599f2;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover .tree-node-ul-li-del {
-  opacity: 1;
-  transform: scale(1);
-  -ms-transform: scale(1);
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span-label {
-  display: inline-block;
-  overflow-x: hidden;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-all {
-  margin-left: 10px;
-  vertical-align: middle;
-  color: #999;
-}
-.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-del {
-  position: absolute;
-  right: 25px;
-  cursor: pointer;
-  transition: opacity .3s, transform .3s;
-  transform: scale(0);
-  color: #2599f2;
-}
 .kuma-cascade-multi-text-result {
   overflow-x: hidden;
   margin-right: 30px;
@@ -12517,12 +12495,21 @@ a -count:active {
   text-overflow: ellipsis;
 }
 .kuma-cascade-multi-text-result-input {
-  padding-right: 10px;
   width: 100%;
+  padding-right: 10px;
   border: 0;
 }
 .kuma-cascade-multi-text-result-input-disabled {
   background-color: #f7f7f7;
+}
+.kuma-cascade-multi-select-footer {
+  height: 52px;
+  text-align: center;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  background-color: #ffffff;
+  line-height: 52px;
 }
 /**
  * CascadeSelect Component Style for uxcore
@@ -12611,7 +12598,6 @@ a -count:active {
 }
 .kuma-dropdown-menu-submenu-wrap > ul {
   line-height: 30px;
-  width: 33.3%;
   height: 100%;
   overflow: auto;
   float: left;

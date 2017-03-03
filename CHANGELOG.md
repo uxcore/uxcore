@@ -1,3 +1,23 @@
+## 0.7.6
+
+`2017-03-03`
+
+- [Component] Calendar: `NEW` add new sub Component `RangeCalendar`
+- [Component] Calendar: `CHANGED` default `yearSelectOffset` & `yearSelectTotal` change
+- [Component] CascadeMultiSelect: `NEW` modal view
+- [Component] CascadeMultiSelect: `FIXED` props.value rerender error
+- [Component] CascadeSelect: `NEW` Pass `[key]` as the value will be treated as the choosed leaf **key**.
+- [Component] CascadeSelect: `FIXED` `e.stopPropagation()` when click the clear button.
+- [Component] CheckboxGroup: `CHANGED` margin is adjusted
+- [Component] RadioGroup: `CHANGED` margin is adjusted
+- [Component] FloatNav: `FIXED` expection when content is empty.
+- [Component] FloatNav: `FIXED` update height when props.height changed
+- [Component] Form: `NEW` `CascadeSelectFormField` support `getPopupContainer`
+- [Component] Message: `NEW` add new props `getContainer`
+- [Component] Message: `NEW` add new props `multipleInstance`
+- [Component] Message: `NEW` add new API `clear()`
+- [Component] Table: `FIXED` remove useless code in `Cell` componentDidMount 
+
 ## 0.7.5
 
 `2017-02-23`

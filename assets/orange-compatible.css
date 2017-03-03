@@ -892,10 +892,10 @@
 }
 .uxcore .kuma-checkbox[type="radio"] + s:hover,
 .uxcore .kuma-checkbox.radio-primary[type="radio"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .uxcore .kuma-checkbox[type="radio"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%232599f2%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox[type="radio"]:disabled + s {
@@ -911,7 +911,7 @@
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.radio-primary[type="radio"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%232599f2%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.radio-primary[type="radio"]:disabled + s {
@@ -931,10 +931,10 @@
 }
 .uxcore .kuma-checkbox[type="checkbox"] + s:hover,
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .uxcore .kuma-checkbox[type="checkbox"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox[type="checkbox"]:disabled + s {
@@ -950,7 +950,7 @@
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"]:disabled + s {
@@ -2962,6 +2962,107 @@
 .uxcore .kuma-calendar-fullscreen .kuma-calendar-month-panel-selected-cell .kuma-calendar-month-panel-month {
   border-top-color: #3FC7FA;
   color: #3FC7FA;
+}
+.uxcore .kuma-calendar-range {
+  overflow: hidden;
+}
+.uxcore .kuma-calendar-range-part {
+  position: relative;
+  float: left;
+}
+.uxcore .kuma-calendar-range-part .kuma-calendar-time-picker {
+  top: 69px;
+}
+.uxcore .kuma-calendar-range-part .kuma-calendar-time-picker-panel-select {
+  width: 77px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-date-panel {
+  width: auto;
+}
+.uxcore .kuma-calendar-range-middle {
+  position: absolute;
+  margin-left: -10px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-date-panel::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-input-wrap {
+  height: 35px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-input,
+.uxcore .kuma-calendar-range .kuma-time-picker-input {
+  padding: 1px 7px;
+  height: 22px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-body,
+.uxcore .kuma-calendar-range .kuma-calendar-decade-panel-body,
+.uxcore .kuma-calendar-range .kuma-calendar-year-panel-body,
+.uxcore .kuma-calendar-range .kuma-calendar-month-panel-body {
+  border-bottom: 1px solid #e9e9e9;
+}
+.uxcore .kuma-calendar-range.kuma-calendar-week-number {
+  width: 574px;
+}
+.uxcore .kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-part {
+  width: 286px;
+}
+.uxcore .kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-part .kuma-calendar-time-picker {
+  top: 69px;
+}
+.uxcore .kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-part .kuma-calendar-time-picker-panel-select {
+  width: 89px;
+}
+.uxcore .kuma-calendar-range.kuma-calendar-week-number .kuma-calendar-range-right .kuma-calendar-time-picker-panel {
+  left: 36px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-year-panel,
+.uxcore .kuma-calendar-range .kuma-calendar-month-panel {
+  top: 35px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-month-panel .kuma-calendar-year-panel {
+  top: 0;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-decade-panel-table,
+.uxcore .kuma-calendar-range .kuma-calendar-year-panel-table,
+.uxcore .kuma-calendar-range .kuma-calendar-month-panel-table {
+  height: 198px;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-in-range-cell {
+  position: relative;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-in-range-cell:before {
+  content: "";
+  display: block;
+  background: #ecf6fd;
+  border-radius: 0;
+  border: 0;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  background: #fff9f5;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-in-range-cell .kuma-calendar-date {
+  position: relative;
+  z-index: 1;
+}
+.uxcore .kuma-calendar-range-bottom {
+  text-align: right;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-footer {
+  border-top: none;
+  padding: 0;
+}
+.uxcore .kuma-calendar-range .kuma-calendar-footer-btn {
+  padding: 10px 12px 10px 0;
 }
 .uxcore .kuma-calendar-picker-slide-up-enter {
   animation-duration: .3s;
@@ -5998,7 +6099,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%232599f2%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
   vertical-align: text-bottom;
   margin-right: 12px;
   color: #f37327;
@@ -6740,13 +6841,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked.kuma-tree-checkbox-disabled {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%232599f2%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox-checkbox-disabled {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
@@ -9003,6 +9104,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-checkbox-group-item {
   display: inline-block;
   line-height: 16px;
+  margin-bottom: 12px;
 }
 .uxcore .kuma-checkbox-group-item s {
   vertical-align: top;
@@ -9011,17 +9113,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-checkbox-group-item-content {
   vertical-align: top;
   display: inline-block;
-  padding: 0px 20px 0px 10px;
+  padding: 0px 24px 0px 12px;
 }
 .uxcore .kuma-radio-group-item {
   display: inline-block;
   line-height: 16px;
+  margin-bottom: 12px;
 }
 .uxcore .kuma-radio-group-item s {
   vertical-align: top;
 }
 .uxcore .kuma-radio-group-item .kuma-radio-group-item-content {
-  padding: 0px 20px 0px 10px;
+  padding: 0px 24px 0px 12px;
   display: inline-block;
   vertical-align: top;
 }
@@ -11547,13 +11650,13 @@ a .uxcore-count:active {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .uxcore-tree-select-tree-checkbox.uxcore-tree-select-tree-checkbox-checked {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .uxcore .use-svg .uxcore-tree-select-tree-checkbox.uxcore-tree-select-tree-checkbox-checked.uxcore-tree-select-tree-checkbox-disabled {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .uxcore .use-svg .uxcore-tree-select-tree-checkbox.uxcore-tree-select-tree-checkbox-indeterminate {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%232599f2%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .uxcore-tree-select-tree-checkbox-checkbox-disabled {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
@@ -12415,131 +12518,6 @@ a .uxcore-count:active {
 .uxcore .uxcore-splitter-split-bar.resize-bar.horizontal {
   cursor: row-resize;
 }
-.uxcore .kuma-cascade-multi {
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  border: 1px solid #dbdbdb;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content {
-  float: left;
-  overflow-y: auto;
-  width: 150px;
-  height: 310px;
-  padding: 14px 0;
-  border-left: 1px solid #dbdbdb;
-  background-color: #fff;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content:first-child {
-  border-left: 0;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item {
-  overflow: hidden;
-  height: 28px;
-  padding: 0 15px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-  line-height: 28px;
-  -o-text-overflow: ellipsis;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item:hover {
-  background-color: #f5f5f5;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item s {
-  margin-right: 5px;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-label span {
-  vertical-align: middle;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item-active {
-  background-color: #f5f5f5;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-noData {
-  display: block;
-  margin-top: 7px;
-  margin-left: 21px;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result {
-  float: left;
-  width: 220px;
-  height: 310px;
-  padding: 20px 15px;
-  border-left: 1px solid #dbdbdb;
-  background-color: #f5f5f5;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title {
-  padding-bottom: 10px;
-  color: #999;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title .kuma-cascade-multi-result-clean {
-  float: right;
-  margin-right: 6px;
-  cursor: pointer;
-  color: #f37327;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree {
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 250px;
-  margin: 0 -15px;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul {
-  margin-left: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li {
-  white-space: nowrap;
-  line-height: 25px;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-down,
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .kuma-icon-triangle-right {
-  margin-right: 5px;
-  vertical-align: middle;
-  color: #999;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover {
-  color: #f37327;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span:hover .tree-node-ul-li-del {
-  opacity: 1;
-  transform: scale(1);
-  -ms-transform: scale(1);
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span-label {
-  display: inline-block;
-  overflow-x: hidden;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-all {
-  margin-left: 10px;
-  vertical-align: middle;
-  color: #999;
-}
-.uxcore .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-span .tree-node-ul-li-del {
-  position: absolute;
-  right: 25px;
-  cursor: pointer;
-  transition: opacity .3s, transform .3s;
-  transform: scale(0);
-  color: #f37327;
-}
 .uxcore .kuma-cascade-multi-text-result {
   overflow-x: hidden;
   margin-right: 30px;
@@ -12547,12 +12525,21 @@ a .uxcore-count:active {
   text-overflow: ellipsis;
 }
 .uxcore .kuma-cascade-multi-text-result-input {
-  padding-right: 10px;
   width: 100%;
+  padding-right: 10px;
   border: 0;
 }
 .uxcore .kuma-cascade-multi-text-result-input-disabled {
   background-color: #f7f7f7;
+}
+.uxcore .kuma-cascade-multi-select-footer {
+  height: 52px;
+  text-align: center;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  background-color: #ffffff;
+  line-height: 52px;
 }
 .uxcore .kuma-cascader-wrapper {
   min-height: 36px;
@@ -12634,7 +12621,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-dropdown-menu-submenu-wrap > ul {
   line-height: 30px;
-  width: 33.3%;
   height: 100%;
   overflow: auto;
   float: left;
