@@ -1,3 +1,19 @@
+## 0.8.0
+
+`2017-03-06`
+
+- [General] base style element defination change, including input/textarea/button/color.
+- [Component] Button: `NEW` support 'loading' prop
+- [Component] Dialog: `CHANGED` new style
+- [Component] Form: `CHANGED` change color if count overflow;
+- [Component] Form: `CHANGED` tips style optimaztion
+- [Component] Form: `CHANGED` change textarea count style
+- [Component] Select2: `CHANGED` box-shadow & border-radius change
+- [Component] Tabs: `NEW` apply new style
+- [Component] CascadeMultiSelect: `NEW` add ok button
+- [Component] CascadeMultiSelect: `FIXED` missing style
+- [Component] CascadeMultiSelect: `CHANGED` onSelect will pass leafList
+
 ## 0.7.6
 
 `2017-03-03`
@@ -6,7 +22,7 @@
 - [Component] Calendar: `CHANGED` default `yearSelectOffset` & `yearSelectTotal` change
 - [Component] CascadeMultiSelect: `NEW` modal view
 - [Component] CascadeMultiSelect: `FIXED` props.value rerender error
-- [Component] CascadeSelect: `NEW` Pass `[key]` as the value will be treated as the choosed leaf **key**.
+- [Component] CascadeSelect: `NEW` Pass `[key]` as the value will be treated as the choosed leaf - [Component] Dialog:*key**.
 - [Component] CascadeSelect: `FIXED` `e.stopPropagation()` when click the clear button.
 - [Component] CheckboxGroup: `CHANGED` margin is adjusted
 - [Component] RadioGroup: `CHANGED` margin is adjusted
