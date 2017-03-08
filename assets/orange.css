@@ -12622,6 +12622,7 @@ a -count:active {
   -moz-user-select: none;
   -ms-user-select: none;
   border: 1px solid #dbdbdb;
+  background-color: #ffffff;
 }
 .kuma-cascade-multi .kuma-cascade-multi-content {
   float: left;
@@ -12663,7 +12664,7 @@ a -count:active {
   margin-left: 21px;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result {
-  float: left;
+  float: right;
   width: 220px;
   height: 310px;
   padding: 20px 15px;
@@ -12747,6 +12748,9 @@ a -count:active {
  * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
+.kuma-cascade-multi-input {
+  background-color: #fff;
+}
 .kuma-cascade-multi-text-result {
   overflow-x: hidden;
   margin-right: 30px;
@@ -12757,9 +12761,7 @@ a -count:active {
   width: 100%;
   padding-right: 10px;
   border: 0;
-}
-.kuma-cascade-multi-text-result-input-disabled {
-  background-color: #f7f7f7;
+  background-color: transparent;
 }
 .kuma-cascade-multi-select-footer {
   height: 52px;

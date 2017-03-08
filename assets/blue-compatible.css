@@ -12666,6 +12666,7 @@ a .uxcore-count:active {
   -moz-user-select: none;
   -ms-user-select: none;
   border: 1px solid #dbdbdb;
+  background-color: #ffffff;
 }
 .uxcore .kuma-cascade-multi .kuma-cascade-multi-content {
   float: left;
@@ -12707,7 +12708,7 @@ a .uxcore-count:active {
   margin-left: 21px;
 }
 .uxcore .kuma-cascade-multi .kuma-cascade-multi-result {
-  float: left;
+  float: right;
   width: 220px;
   height: 310px;
   padding: 20px 15px;
@@ -12784,6 +12785,9 @@ a .uxcore-count:active {
   transform: scale(0);
   color: #2599f2;
 }
+.uxcore .kuma-cascade-multi-input {
+  background-color: #fff;
+}
 .uxcore .kuma-cascade-multi-text-result {
   overflow-x: hidden;
   margin-right: 30px;
@@ -12794,9 +12798,7 @@ a .uxcore-count:active {
   width: 100%;
   padding-right: 10px;
   border: 0;
-}
-.uxcore .kuma-cascade-multi-text-result-input-disabled {
-  background-color: #f7f7f7;
+  background-color: transparent;
 }
 .uxcore .kuma-cascade-multi-select-footer {
   height: 52px;

@@ -1,3 +1,10 @@
+## 0.8.1
+
+`2017-03-08`
+
+- [Component] Form: `FIXED` fix checkbox/radio view bug if there is only one child
+- [Component] CascadeMultiSelect: `FIXED` Button style bug
+
 ## 0.8.0
 
 `2017-03-06`
