@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.8.1",
+ "version": "0.8.2",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -66,7 +66,6 @@
   "react": "^0.14.8",
   "react-dom": "^0.14.8",
   "rimraf": "~2.5.2",
-  "uxcore-kuma": "^2.2.2",
   "webpack": "~1.13.1"
  },
  "dependencies": {
@@ -91,7 +90,7 @@
   "uxcore-grid": "1.2.2",
   "uxcore-layout": "1.0.5",
   "uxcore-load-more": "0.1.2",
-  "uxcore-matrix": "0.1.4",
+  "uxcore-matrix": "0.2.0",
   "uxcore-mention": "0.3.10",
   "uxcore-menu": "1.4.3",
   "uxcore-message": "0.3.1",
