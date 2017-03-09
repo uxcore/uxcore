@@ -786,7 +786,7 @@
   font-size: 14px;
   line-height: 34px;
   box-sizing: border-box;
-  transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.3s ease;
 }
 .uxcore .kuma-button-primary {
   background-color: #f37327;
@@ -2277,6 +2277,7 @@
 .uxcore .kuma-textarea[disabled] {
   border: 1px solid rgba(31, 56, 88, 0.2);
   background: rgba(31, 56, 88, 0.04);
+  color: rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-input:hover,
 .uxcore .kuma-textarea:hover {
@@ -2882,6 +2883,14 @@
 }
 .uxcore .kuma-calendar-picker-input .kuma-input[readonly] {
   background-color: white;
+  border-color: rgba(31, 56, 88, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+}
+.uxcore .kuma-calendar-picker-input .kuma-input[readonly]:hover {
+  border-color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-calendar-picker-input .kuma-input[readonly]:focus {
+  border-color: rgba(31, 56, 88, 0.6);
 }
 .uxcore .kuma-calendar-picker-input .kuma-input[disabled] {
   background-color: rgba(31, 56, 88, 0.04);
@@ -5097,6 +5106,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background-color: #fff;
   border-radius: 0px;
   border: 1px solid rgba(31, 56, 88, 0.3);
+  border-radius: 3px;
 }
 .uxcore .kuma-select2-selection:hover {
   border-color: rgba(31, 56, 88, 0.4);
@@ -8305,14 +8315,17 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: 1px solid rgba(31, 56, 88, 0.3);
   border-right: none;
   text-align: center;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
   vertical-align: top;
   padding-top: 5px;
 }
 .uxcore .kuma-uxform-left-icon-focus {
-  border-color: rgba(31, 56, 88, 0.3);
+  border-color: rgba(31, 56, 88, 0.6);
   outline: none;
+}
+.uxcore .kuma-uxform-left-icon-hover {
+  border-color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-uxform-right-icon {
   display: table-cell;
@@ -8320,17 +8333,19 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: 1px solid rgba(31, 56, 88, 0.3);
   border-left: none;
   text-align: center;
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
   vertical-align: top;
   padding-top: 5px;
 }
 .uxcore .kuma-input:focus + .kuma-uxform-right-icon,
 .uxcore .kuma-input:focus + .kuma-uxform-count {
-  border: 1px rgba(31, 56, 88, 0.3) solid;
-  border-left: none;
-  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(31, 56, 88, 0.6);
   outline: none;
+}
+.uxcore .kuma-input:hover + .kuma-uxform-right-icon,
+.uxcore .kuma-input:hover + .kuma-uxform-count {
+  border-color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-uxform-field-core {
   display: table;
@@ -8404,6 +8419,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-switch-uxform-field .kuma-uxform-field-content.view-mode {
   padding-top: 9px;
+}
+.uxcore .kuma-editor-uxform-field .mce-tinymce {
+  border-radius: 3px;
+  border-color: rgba(31, 56, 88, 0.3);
+}
+.uxcore .kuma-editor-uxform-field .mce-tinymce:hover {
+  border-color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-editor-uxform-field .mce-tinymce:focus {
+  border-color: rgba(31, 56, 88, 0.6);
 }
 .uxcore .kuma-pickable-uxform-field .kuma-uxform-field-content {
   padding-top: 4px;
@@ -12784,6 +12809,9 @@ a .uxcore-count:active {
   transition: opacity .3s, transform .3s;
   transform: scale(0);
   color: #f37327;
+}
+.uxcore .kuma-cascade-multi-select-panel-content {
+  position: absolute;
 }
 .uxcore .kuma-cascade-multi-input {
   background-color: #fff;

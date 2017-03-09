@@ -1,3 +1,13 @@
+## 0.8.3
+
+`2017-03-09`
+
+- [Component] CascadeMultiSelect: `FIXED` footer's button click, dropdown not hidden
+- [Component] CascadeMultiSelect: `FIXED` demo async options error
+- [Component] CascadeMultiSelect: `FIXED` demo input value sync update error
+- [Component] Form: `CHANGED` apply special border style for EditorFormField
+- [Component] Form: `FIXED` input border color difference.
+
 ## 0.8.1
 
 `2017-03-08`
