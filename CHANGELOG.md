@@ -1,3 +1,17 @@
+## 0.8.4
+
+`2017-03=17`
+
+- [Component] Album: `FIXED` empty children will cause error.
+- [Component] Calendar: `CHANGED` base style change
+- [Component] CascadeSelect: `FIXED`: display selection text immediately when the `changeOnSelect=true`
+- [Component] CascadeSelect: `FIXED`: `dropDownWidth` prop type check.
+- [Component] CascadeSelect: `NEW`: new prop, `dropDownWidth`(number): define the dropdown width.
+- [Component] CascadeSelect: `NEW`: new display mode, `miniMode=false` will display the rich style with button and selection.
+- [Component] Form: `FIXED` fix border-radius bug in searchFormField
+- [Component] Table: `FIXED` scrolling to right end will cause unaligned header & body
+
+
 ## 0.8.3
 
 `2017-03-09`

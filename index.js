@@ -16,6 +16,7 @@ var EmptyData = require('./lib/EmptyData');
 var FloatNav = require('./lib/FloatNav');
 var Form = require('./lib/Form');
 var Formatter = require('./lib/Formatter');
+var Icon = require('./lib/Icon');
 var Grid = require('./lib/Grid');
 var Layout = require('./lib/Layout');
 var LoadMore = require('./lib/LoadMore');
@@ -65,6 +66,7 @@ module.exports = {
   Form: Form,
   Formatter: Formatter,
   Grid: Grid,
+  Icon: Icon,
   Layout: Layout,
   LoadMore: LoadMore,
   Matrix: Matrix,
