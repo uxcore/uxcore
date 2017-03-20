@@ -9986,17 +9986,20 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   padding: 0 20px;
   line-height: 26px;
   border: 1px solid rgba(31, 56, 88, 0.3);
-  margin-right: 10px;
+  margin-right: 4px;
+  margin-bottom: 8px;
   border-radius: 3px;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(31, 56, 88, 0.6);
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 .uxcore .kuma-pickable-item:hover {
-  border-color: #34a4fa;
-  background: #f2f9ff;
+  border-color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.8);
 }
+.uxcore .kuma-pickable-item:focus,
 .uxcore .kuma-pickable-item.active {
-  border-color: #34a4fa;
+  border-color: #2599f2;
   background: #2599f2;
   color: white;
 }
@@ -10006,28 +10009,33 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-color: rgba(31, 56, 88, 0.04);
   cursor: not-allowed;
 }
+.uxcore .kuma-pickable-item .kuma-pickable-item-icon-clear {
+  font-weight: 700;
+  padding-left: 9px;
+}
 .uxcore .kuma-pickable-item-simple {
-  border: none;
+  border: 1px solid transparent;
   background: white;
-  margin-right: 20px;
-  padding: 0;
+  margin-right: 4px;
+  color: rgba(31, 56, 88, 0.8);
 }
 .uxcore .kuma-pickable-item-simple:hover {
   background: white;
-  color: rgba(0, 0, 0, 0.6);
+  border-color: transparent;
 }
 .uxcore .kuma-pickable-item-simple.active {
-  color: #2599f2;
-  background: white;
+  border-color: #2599f2;
+  background: #2599f2;
+  color: white;
 }
 .uxcore .kuma-pickable-item-simple.active .kuma-pickable-item-num {
-  color: #2599f2;
-  background: #f2f9ff;
+  background: transparent;
+  color: white;
 }
 .uxcore .kuma-pickable-item-simple.disabled {
   background: white;
   color: rgba(31, 56, 88, 0.3);
-  border-color: rgba(31, 56, 88, 0.04);
+  border-color: transparent;
   cursor: not-allowed;
 }
 .uxcore .kuma-pickable-item-simple .kuma-pickable-item-num {
@@ -10039,6 +10047,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: 16px;
   line-height: 16px;
   margin-left: 9px;
+}
+.uxcore .kuma-pickable-item-hook.multiple-active {
+  padding: 0 20px;
 }
 .uxcore .kuma-pickable-item-hook.active {
   border-color: #34a4fa;
