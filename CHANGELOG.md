@@ -1,3 +1,19 @@
+## 0.8.5
+
+`2017-03-20`
+
+- [Component] Album: `CHANGED` thumbnail style
+- [Component] Calendar: `FIXED` fix year select menu will overflow if locale is en-us
+- [Component] CascadeMultiSelect: `FIXED` ie9+ result panel width style error
+- [Component] Crumb: `CHANGED` new style
+- [Component] Pagination: `CHANGED` new style
+- [Component] Pagination: `NEW` add new style for unknown total
+- [Component] Pickable: `FIXED` value will change even if other instance change
+- [Component] Pickable: `CHANGED` style change
+- [Component] Rate: `CHANGED` style change
+- [General] add new component `Icon`
+
+
 ## 0.8.4
 
 `2017-03=17`

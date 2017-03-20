@@ -4543,6 +4543,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-page:after {
   content: " ";
@@ -4554,36 +4555,50 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-page-total {
   font-size: 10px;
-  min-width: 34px;
-  height: 34px;
-  line-height: 34px;
+  min-width: 28px;
+  height: 28px;
+  line-height: 26px;
   float: left;
   margin-left: 20px;
   -webkit-user-select: auto;
 }
 .kuma-page-item {
   cursor: pointer;
-  min-width: 34px;
-  height: 34px;
-  line-height: 34px;
+  min-width: 28px;
+  height: 28px;
+  border: 1px solid rgba(31, 56, 88, 0.3);
+  border-radius: 3px;
+  margin-right: 8px;
+  line-height: 26px;
   text-align: center;
   list-style: none;
   float: left;
   background-color: #fff;
-  transition: background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 .kuma-page-item a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-page-item:hover {
-  background-color: #f2f9ff;
+  border-color: #2599f2;
+}
+.kuma-page-item:hover a {
+  color: #2599f2;
+}
+.kuma-page-item-active {
+  background: #2599f2;
+  border-color: #2599f2;
 }
 .kuma-page-item-active a {
-  color: #2599f2;
+  color: white;
 }
-.kuma-page-item-active:hover {
-  color: #2599f2;
+.kuma-page-item-active:hover a {
+  color: white;
+}
+.kuma-page-jump-prev,
+.kuma-page-jump-next {
+  margin-right: 8px;
 }
 .kuma-page-jump-prev:after,
 .kuma-page-jump-next:after {
@@ -4608,15 +4623,19 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-page-next,
 .kuma-page-jump-prev,
 .kuma-page-jump-next {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.4);
   font-size: 10px;
   list-style: none;
-  min-width: 34px;
-  height: 34px;
-  line-height: 32px;
+  min-width: 28px;
+  height: 28px;
+  line-height: 26px;
   float: left;
   text-align: center;
+}
+.kuma-page-prev {
+  margin-right: 8px;
 }
 .kuma-page-prev a {
   text-decoration: none;
@@ -4627,7 +4646,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-page-prev,
 .kuma-page-next {
   border: 1px solid rgba(31, 56, 88, 0.3);
-  background: #f5f5f5;
+  border-radius: 3px;
   font-size: 18px;
 }
 .kuma-page-prev a,
@@ -4641,18 +4660,26 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-page-prev:hover,
 .kuma-page-next:hover {
-  background: #fff;
-  border-color: #ccc;
+  border-color: #2599f2;
+}
+.kuma-page-prev:hover a,
+.kuma-page-next:hover a {
+  color: #2599f2;
 }
 .kuma-page-disabled {
   cursor: not-allowed;
-  background-color: rgba(31, 56, 88, 0.04);
+  background-color: rgba(31, 56, 88, 0.06);
+  border-color: rgba(31, 56, 88, 0.06);
 }
 .kuma-page-disabled a {
-  color: rgba(31, 56, 88, 0.3);
+  color: rgba(31, 56, 88, 0.2);
 }
 .kuma-page-disabled:hover {
-  background-color: rgba(31, 56, 88, 0.04);
+  background-color: rgba(31, 56, 88, 0.06);
+  border-color: rgba(31, 56, 88, 0.06);
+}
+.kuma-page-disabled:hover a {
+  color: rgba(31, 56, 88, 0.2);
 }
 .kuma-page-options {
   float: left;
@@ -4663,29 +4690,34 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 80px;
 }
 .kuma-page-options-size-changer .kuma-select2-selection {
-  background: #f5f5f5;
+  height: 28px;
 }
 .kuma-page-options-size-changer .kuma-select2-selection-selected-value {
   padding-right: 0px;
 }
+.kuma-page-options-size-changer .kuma-select2-selection__rendered {
+  line-height: 26px;
+}
+.kuma-page-options-size-changer .kuma-select2-arrow {
+  height: 26px;
+}
 .kuma-page-options-quick-jumper {
   margin-left: 0px;
-  height: 34px;
-  line-height: 34px;
+  height: 28px;
+  line-height: 28px;
   float: left;
 }
 .kuma-page-options-quick-jumper input {
   display: inline-block;
   margin: 0 8px;
-  background-color: #fff;
+  border-radius: 3px;
   border: 1px solid rgba(31, 56, 88, 0.3);
   outline: none;
   width: 50px;
-  height: 34px;
-  line-height: 34px;
+  height: 28px;
+  line-height: 26px;
   text-align: center;
   vertical-align: top;
-  background-color: #f5f5f5;
 }
 .kuma-page-options-quick-jumper input:hover {
   border-color: rgba(31, 56, 88, 0.4);
@@ -4704,13 +4736,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   margin-right: 4px;
 }
 .kuma-page-simple .kuma-page-current {
-  color: #2599f2;
+  color: rgba(31, 56, 88, 0.8);
+  margin-right: 1px;
 }
 .kuma-page-simple .kuma-page-simple-pager {
   float: left;
   margin-right: 8px;
+  margin-left: 4px;
   line-height: 18px;
-  font-weight: bold;
 }
 .kuma-page-simple .kuma-page-simple-pager input {
   margin: 0 8px;
@@ -4733,7 +4766,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 18px;
   line-height: 16px;
 }
-.kuma-page.mini .kuma-page-prev {
+.kuma-page.mini .kuma-page-prev,
+.kuma-page.mini .kuma-page-jump-next {
   margin-right: 6px;
 }
 .kuma-page.mini .kuma-page-item {
@@ -4756,7 +4790,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 36px;
   height: 18px;
   line-height: 18px;
-  background-color: #f5f5f5;
 }
 .kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input:hover {
   border-color: rgba(31, 56, 88, 0.4);
@@ -4785,6 +4818,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-page-options-size-changer-dropdown .kuma-select2-dropdown-menu-item {
   padding: 7px 16px 7px 11px;
+}
+.kuma-page-unknown-total {
+  float: left;
+  line-height: 28px;
+  padding: 0 16px 0 8px;
 }
 .kuma-select2 {
   box-sizing: border-box;
@@ -9372,21 +9410,33 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  * Crumb Component Style for uxcore
  * @author peijie.dpj
  *
- * Copyright 2014-2015, Uxcore Team, Alinw.
+ * Copyright 2014-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
-.kuma-uxcrumbs a {
+.kuma-uxcrumbs a,
+.kuma-uxcrumbs span {
   color: rgba(0, 0, 0, 0.6);
-  margin-right: 10px;
+  margin-right: 8px;
+  display: inline-block;
 }
-.kuma-uxcrumbs a:hover {
+.kuma-uxcrumbs a:hover,
+.kuma-uxcrumbs span:hover {
   text-decoration: none;
 }
-.kuma-uxcrumbs a:after {
-  padding-left: 10px;
+.kuma-uxcrumbs a:before,
+.kuma-uxcrumbs span:before {
   content: '\e6a6';
   font-family: 'kuma';
+  margin-right: 8px;
   color: rgba(0, 0, 0, 0.4);
+}
+.kuma-uxcrumbs a:first-child:before,
+.kuma-uxcrumbs span:first-child:before {
+  content: '';
+}
+.kuma-uxcrumbs a:last-child,
+.kuma-uxcrumbs span:last-child {
+  margin-right: 0;
 }
 .kuma-uxcrumbs span {
   color: rgba(0, 0, 0, 0.4);
@@ -12102,16 +12152,16 @@ a -count:active {
   top: 50%;
   margin-top: -70px;
   width: 60px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.1);
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 50px;
   color: #fff;
-  line-height: 60px;
+  line-height: 80px;
   text-align: center;
   transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-overlay > .album-control:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   cursor: pointer;
 }
@@ -12155,7 +12205,6 @@ a -count:active {
   margin: auto;
   max-width: 100%;
   max-height: 100%;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
 .kuma-uxcore-album .album-overlay .album-close {
   position: absolute;
@@ -12189,9 +12238,11 @@ a -count:active {
 }
 .kuma-uxcore-album .album-carousel-container {
   overflow: hidden;
+  text-align: center;
 }
 .kuma-uxcore-album .album-carousel-list {
   position: relative;
+  display: inline-block;
   white-space: nowrap;
   transition: transform cubic-bezier(0.6, 0, 0.3, 1) 1s;
 }
@@ -12232,14 +12283,14 @@ a -count:active {
   cursor: pointer;
   width: 24px;
   height: 72px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   line-height: 72px;
   font-size: 26px;
   transition: background-color cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
 }
 .kuma-uxcore-album .album-carousel-control:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
 .kuma-uxcore-album .album-carousel-control.disabled {
@@ -12298,17 +12349,17 @@ a -count:active {
   padding: 0;
 }
 .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control {
-  background: #f5f5f5;
-  color: rgba(0, 0, 0, 0.4);
+  background: rgba(31, 56, 88, 0.06);
+  color: rgba(31, 56, 88, 0.4);
   text-align: center;
 }
 .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control:hover {
   cursor: pointer;
-  background: #f2f9ff;
-  color: rgba(0, 0, 0, 0.4);
+  background: rgba(31, 56, 88, 0.1);
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-control.disabled {
-  background: #f5f5f5;
+  background: rgba(31, 56, 88, 0.04);
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-uxcore-album.has-thumb .thumbs-preview .album-carousel-list .item-active {
@@ -12655,6 +12706,7 @@ a -count:active {
  */
 .kuma-cascade-multi {
   position: relative;
+  display: inline-block;
   overflow: hidden;
   cursor: auto;
   -webkit-user-select: none;
@@ -12703,15 +12755,16 @@ a -count:active {
   margin-left: 21px;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result {
-  float: right;
+  float: left;
   width: 220px;
   height: 310px;
-  padding: 20px 15px;
+  padding: 0;
   border-left: 1px solid rgba(31, 56, 88, 0.3);
   background-color: #fff;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title {
-  padding-bottom: 10px;
+  margin: 20px 15px 10px 15px;
+  padding: 0;
   color: #999;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title .kuma-cascade-multi-result-clean {
@@ -12724,7 +12777,7 @@ a -count:active {
   overflow-x: hidden;
   overflow-y: auto;
   height: 250px;
-  margin: 0 -15px;
+  margin: 0;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul {
   -webkit-user-select: none;
@@ -12845,7 +12898,7 @@ a -count:active {
 }
 .kuma-cascade-multi-model-result-ul-list-content {
   transition: margin 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: scale(0);
+  transform: scale(1);
 }
 .kuma-cascade-multi-model-result-ul-list-remove {
   position: absolute;
@@ -13324,7 +13377,7 @@ ul.kuma-dropdown-menu-hoverable li:after {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_58utdtk8004zehfr.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_wgtb62g0i93haor.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -13350,9 +13403,6 @@ ul.kuma-dropdown-menu-hoverable li:after {
 }
 .uxicon-fujian:before {
   content: "\e608";
-}
-.uxicon-pingxing:before {
-  content: "\e609";
 }
 .uxicon-ren:before {
   content: "\e60a";
@@ -13546,18 +13596,6 @@ ul.kuma-dropdown-menu-hoverable li:after {
 .uxicon-pinglun:before {
   content: "\e653";
 }
-.uxicon-renyuansousuo1:before {
-  content: "\e654";
-}
-.uxicon-ren1:before {
-  content: "\e655";
-}
-.uxicon-tuandui1:before {
-  content: "\e656";
-}
-.uxicon-renyuanzengjia1:before {
-  content: "\e657";
-}
 .uxicon-renyuanmingpian:before {
   content: "\e658";
 }
@@ -13581,4 +13619,25 @@ ul.kuma-dropdown-menu-hoverable li:after {
 }
 .uxicon-right_double:before {
   content: "\e65f";
+}
+.uxicon-xiaolian-line:before {
+  content: "\e6a2";
+}
+.uxicon-kulian-full:before {
+  content: "\e6a3";
+}
+.uxicon-caozuo-xingji-line:before {
+  content: "\e6a4";
+}
+.uxicon-caozuo-xingji-full:before {
+  content: "\e6a5";
+}
+.uxicon-kulian-line:before {
+  content: "\e6a6";
+}
+.uxicon-xiaolian-full:before {
+  content: "\e6a7";
+}
+.uxicon-xianshi:before {
+  content: "\e6a8";
 }
