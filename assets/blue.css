@@ -508,32 +508,31 @@ a.kuma-button {
   color: #2599f2;
 }
 .kuma-button-outline:hover {
-  background-color: rgba(36, 153, 242, 0.2);
-  border-color: #2599f2;
-  color: #2599f2;
+  background-color: rgba(36, 153, 242, 0.06);
+  border-color: #3da4f2;
+  color: #3da4f2;
 }
 .kuma-button-outline:active {
   background-color: rgba(36, 153, 242, 0.1);
-  border-color: #1a93f0;
-  color: #2599f2;
+  border-color: #218cde;
+  color: #218cde;
 }
 .kuma-button-secondary {
-  background-color: white;
+  background-color: #ffffff;
   border-color: rgba(31, 56, 88, 0.3);
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(31, 56, 88, 0.8);
 }
 .kuma-button-secondary:visited {
   color: #666;
 }
 .kuma-button-secondary:hover {
-  border-color: rgba(31, 56, 88, 0.4);
-  background-color: rgba(31, 56, 88, 0.04);
-  color: rgba(31, 56, 88, 0.8);
-}
-.kuma-button-secondary:active {
   border-color: rgba(31, 56, 88, 0.6);
   background-color: rgba(31, 56, 88, 0.06);
-  color: rgba(31, 56, 88, 0.8);
+}
+.kuma-button-secondary:active {
+  border-color: #1f3858;
+  background-color: rgba(31, 56, 88, 0.1);
+  color: #1f3858;
 }
 .kuma-button-disabled {
   background-color: rgba(31, 56, 88, 0.04);
@@ -543,14 +542,12 @@ a.kuma-button {
 }
 .kuma-button-disabled:visited {
   background-color: rgba(31, 56, 88, 0.04);
-  border-color: #dbdbdb;
-  color: #ccc;
+  border-color: rgba(31, 56, 88, 0.2);
 }
 .kuma-button-disabled:hover,
 .kuma-button-disabled:active {
   background-color: rgba(31, 56, 88, 0.04);
-  border-color: #dbdbdb;
-  color: #ccc;
+  border-color: rgba(31, 56, 88, 0.2);
 }
 .kuma-button-lg {
   padding: 0 24px;
@@ -1984,7 +1981,7 @@ a.kuma-button {
 }
 .kuma-input:focus,
 .kuma-textarea:focus {
-  border: 1px rgba(31, 56, 88, 0.4) solid;
+  border: 1px rgba(31, 56, 88, 0.6) solid;
   color: rgba(0, 0, 0, 0.6);
   outline: none;
 }
@@ -2001,9 +1998,21 @@ a.kuma-button {
 }
 .kuma-input.kuma-input-focus,
 .kuma-textarea.kuma-input-focus {
-  border: 1px rgba(31, 56, 88, 0.4) solid;
+  border: 1px rgba(31, 56, 88, 0.6) solid;
   color: rgba(0, 0, 0, 0.6);
   outline: none;
+}
+.kuma-input::-webkit-input-placeholder,
+.kuma-textarea::-webkit-input-placeholder {
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-input:-ms-input-placeholder,
+.kuma-textarea:-ms-input-placeholder {
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-input::placeholder,
+.kuma-textarea::placeholder {
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-input {
   padding: 5px 10px;
@@ -2020,7 +2029,6 @@ a.kuma-button {
 .kuma-input.kuma-input-error {
   background-color: rgba(240, 70, 48, 0.06);
   border: 1px #F04631 solid;
-  color: #F04631;
 }
 .kuma-label {
   float: none;
@@ -5552,7 +5560,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 34px;
   line-height: 32px;
   border-color: rgba(31, 56, 88, 0.3);
-  border-width: 1px 1px 1px 0;
+  border-width: 1px 0px 1px 1px;
   border-style: solid;
   font-size: 14px;
   padding: 0 30px;
@@ -5560,17 +5568,21 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-active {
   background-color: #2599f2;
   color: #fff;
+  border-color: #2599f2;
+}
+.kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-active + .kuma-tab-tab {
+  border-left-color: #2599f2;
 }
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-prev,
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-next {
   display: none;
 }
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab:nth-of-type(2) {
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px 0px 1px 1px;
   border-radius: 3px 0 0 3px;
 }
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab:last-of-type {
-  border-width: 1px 1px 1px 0;
+  border-width: 1px 1px 1px 1px;
   border-radius: 0 3px 3px 0;
 }
 .kuma-tab.kuma-tab-filter.kuma-tab-top .kuma-tab-bar,
@@ -9251,6 +9263,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  border-radius: 3px;
   background-color: white;
   border: 1px solid rgba(31, 56, 88, 0.3);
 }
@@ -10893,15 +10906,22 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-rate-item .kuma-icon {
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
 }
 .kuma-rate-item.active {
   color: #2599f2;
 }
 .kuma-rate-always-tip-container {
-  width: 130px;
+  width: 140px;
   color: #999;
   text-align: center;
+}
+.kuma-rate-large .kuma-rate-item .kuma-icon {
+  font-size: 26px;
+}
+.kuma-rate-large .kuma-rate-always-tip-container {
+  margin-top: 10px;
+  width: 180px;
 }
 /**
  * Switch Component Style for uxcore
@@ -10917,26 +10937,25 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   overflow: hidden;
   width: 64px;
   height: 24px;
-  line-height: 22px;
+  line-height: 24px;
   vertical-align: middle;
   border-radius: 12px;
-  border: 1px solid #ccc;
-  background-color: #ccc;
+  background-color: rgba(31, 56, 88, 0.2);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .kuma-switch-inner {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   position: absolute;
-  left: 26px;
+  right: 12px;
 }
 .kuma-switch:after {
   position: absolute;
   width: 18px;
   height: 18px;
-  left: 2px;
-  top: 2px;
+  left: 3px;
+  top: 3px;
   border-radius: 50% 50%;
   background-color: #ffffff;
   content: " ";
@@ -10956,7 +10975,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   outline: none;
 }
 .kuma-switch-checked {
-  border: 1px solid #2599f2;
   background-color: #2599f2;
 }
 .kuma-switch-checked .kuma-switch-inner {
@@ -10968,13 +10986,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-switch-disabled {
   cursor: no-drop;
   background: rgba(31, 56, 88, 0.04);
-  border-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-switch-disabled .kuma-switch-inner {
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-switch-disabled:after {
-  background: #fff;
+  background: rgba(31, 56, 88, 0.1);
   animation-name: none;
   cursor: no-drop;
 }
@@ -10994,6 +11011,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+}
+.kuma-switch-no-text {
+  width: 40px;
+}
+.kuma-switch-no-text.kuma-switch-checked:after {
+  left: 18px;
 }
 @keyframes rcSwitchOn {
   0% {
@@ -12717,7 +12740,7 @@ a -count:active {
  */
 .kuma-cascade-multi {
   position: relative;
-  display: inline-block;
+  display: block;
   overflow: hidden;
   cursor: auto;
   -webkit-user-select: none;
@@ -12937,7 +12960,7 @@ a -count:active {
  * CascadeSelect Component Style for uxcore
  * @author changming
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
 .kuma-cascader-wrapper {
@@ -13388,7 +13411,7 @@ ul.kuma-dropdown-menu-hoverable li:after {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_wgtb62g0i93haor.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_ahnpbholoxublnmi.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -13651,4 +13674,22 @@ ul.kuma-dropdown-menu-hoverable li:after {
 }
 .uxicon-xianshi:before {
   content: "\e6a8";
+}
+.uxicon-chuangjiansiyoumoban:before {
+  content: "\e6a9";
+}
+.uxicon-jinggao:before {
+  content: "\e6ac";
+}
+.uxicon-biaodanlei-tongyongqingchu:before {
+  content: "\e6ab";
+}
+.uxicon-suo:before {
+  content: "\e6ae";
+}
+.uxicon-biaoqian-qingchu:before {
+  content: "\e6b0";
+}
+.uxicon-biaoqianxuanze-duoxuan-gou:before {
+  content: "\e6af";
 }

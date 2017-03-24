@@ -1,3 +1,15 @@
+## 0.8.8
+
+`2017-03-24`
+
+- [Component] CascadeMultiSelect: `FIXED` remove transparent split.
+- [Component] CascadeSelect: `CHANGED` trigger onChange when on click `the ok button`
+- [Component] Icon: `NEW` add 8 new icons
+- [Component] MultiSelect: `NEW` add locale support 
+- [Component] Rate: `CHANGED` style change
+- [Component] Tabs: `CHANGED` brick style adjustment
+- [Component] Tabs: `FIXED` type propTypes validation
+
 ## 0.8.6
 
 `2017-03-20`
