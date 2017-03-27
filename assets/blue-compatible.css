@@ -11228,6 +11228,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
   font-size: 18px;
 }
+.uxcore .kuma-rate-item .uxcore-icon.kuma-rate-icon-active {
+  color: #FABD0E;
+}
 .uxcore .kuma-rate-always-tip-container {
   width: 140px;
   color: #999;

@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.9.0",
+ "version": "0.9.1",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -101,7 +101,7 @@
   "uxcore-popover": "0.4.3",
   "uxcore-progress": "1.1.2",
   "uxcore-radiogroup": "1.2.2",
-  "uxcore-rate": "0.3.0",
+  "uxcore-rate": "0.3.1",
   "uxcore-select2": "0.4.7",
   "uxcore-splitter": "0.1.4",
   "uxcore-steps": "1.1.7",

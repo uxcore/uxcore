@@ -11116,6 +11116,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
   font-size: 18px;
 }
+.kuma-rate-item .uxcore-icon.kuma-rate-icon-active {
+  color: #FABD0E;
+}
 .kuma-rate-always-tip-container {
   width: 140px;
   color: #999;
