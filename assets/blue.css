@@ -13619,7 +13619,7 @@ ul.kuma-dropdown-menu-hoverable li:after {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_fhspommtx27yzaor.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_neszei6mow3o9a4i.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -13912,4 +13912,16 @@ ul.kuma-dropdown-menu-hoverable li:after {
 }
 .uxicon-tishi-full:before {
   content: "\e6b4";
+}
+.uxicon-wangwang:before {
+  content: "\e69a";
+}
+.uxicon-dianhua:before {
+  content: "\e69b";
+}
+.uxicon-dingding:before {
+  content: "\e69c";
+}
+.uxicon-youxiang-full:before {
+  content: "\e6b5";
 }

@@ -13621,7 +13621,7 @@ a .uxcore-count:active {
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_fhspommtx27yzaor.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_neszei6mow3o9a4i.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -13914,4 +13914,16 @@ a .uxcore-count:active {
 }
 .uxcore .uxicon-tishi-full:before {
   content: "\e6b4";
+}
+.uxcore .uxicon-wangwang:before {
+  content: "\e69a";
+}
+.uxcore .uxicon-dianhua:before {
+  content: "\e69b";
+}
+.uxcore .uxicon-dingding:before {
+  content: "\e69c";
+}
+.uxcore .uxicon-youxiang-full:before {
+  content: "\e6b5";
 }
