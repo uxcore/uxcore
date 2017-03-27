@@ -1,3 +1,16 @@
+## 0.9.0
+
+`2017-03-27`
+
+- [Component] Dialog: `CHANGED` change button size
+- [Component] MultiSelect: `CHANGED` change style
+- [Component] Pagination: `CHANGED` change style
+- [Component] Rate: `CHANGED` new icon
+- [Component] Select: `CHANGED` style adjustment
+- [Component] Uploader: `CHANGED` new style
+- [Component] Icon: `NEW` add 4 new icons
+
+
 ## 0.8.8
 
 `2017-03-24`
