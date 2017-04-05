@@ -1,3 +1,22 @@
+## 0.9.5
+
+`2017-04-05`
+
+- [Component] Calendar: `CHANGED` month & year panel style change
+- [Component] Calendar: `CHANGED` use new icon
+- [Component] Calendar: `CHANGED` style details adjustment
+- [Component] Dialog: `CHANGED` use new icon
+- [Component] Dialog: `NEW` add new props `icon`
+- [Component] Icon: `CHANGED` add 8 new icons
+- [Component] Pagination: `CHANGED` adjust quick jumper position
+- [Component] Pickable: `CHANGED` hook icon change
+- [Component] Tag: `CHANGED` new icon
+- [Component] Tag: `CHANGED` style change
+- [Component] Tag: `NEW` new prop `type`
+
+
+
+
 ## 0.9.0
 
 `2017-03-27`
