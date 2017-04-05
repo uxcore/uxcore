@@ -1,3 +1,15 @@
+## 0.10.0
+
+`2017-04-05`
+
+- [Component] Popover: `CHANGED` new style
+- [Component] Steps: `CHANGED` new style
+- [Component] Timeline: `NEW` add new props `dotted`, `active` & `title`
+- [Component] Timeline: `CHANGED` new style
+- [Component] Tooltip: `CHANGED` new style
+- [Component] Tree: `CHANGED` new style
+
+
 ## 0.9.6
 
 `2017-04-05`
