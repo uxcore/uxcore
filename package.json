@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.9.5",
+ "version": "0.9.6",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -108,7 +108,7 @@
   "uxcore-switch": "0.1.5",
   "uxcore-table": "5.0.0",
   "uxcore-tabs": "0.6.2",
-  "uxcore-tag": "1.1.0",
+  "uxcore-tag": "2.0.1",
   "uxcore-timeline": "0.1.3",
   "uxcore-tooltip": "0.4.3",
   "uxcore-totop": "0.3.0",
