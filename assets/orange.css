@@ -553,6 +553,7 @@ a.kuma-button {
   padding: 0 24px;
   height: 44px;
   line-height: 42px;
+  font-size: 18px;
 }
 .kuma-button-sm {
   padding: 0 16px;
@@ -8098,33 +8099,41 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 /* alinw.transfer style module */
 .kuma-uxtransfer-container {
   font-size: 12px;
-  width: 380px;
+  border-collapse: separate;
 }
 .kuma-uxtransfer-container th {
-  line-height: 28px;
   font-weight: 400;
+  padding: 16px 16px 6px 16px;
 }
 .kuma-uxtransfer-container th > .title {
   float: left;
-  padding: 0 10px;
-  background-color: #f5f5f5;
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-uxtransfer-container th .check-all {
   float: right;
 }
+.kuma-uxtransfer-container th.left-head,
+.kuma-uxtransfer-container th.right-head {
+  background-color: #fff;
+  border: 1px solid rgba(31, 56, 88, 0.2);
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
 .kuma-uxtransfer-container .searchBar {
   position: relative;
+  margin: 0 16px 10px 16px;
 }
 .kuma-uxtransfer-container .searchBar .kuma-icon {
   position: absolute;
   right: 4px;
   top: 2px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.4);
   cursor: pointer;
+  font-size: 14px;
 }
 .kuma-uxtransfer-container .searchBar .kuma-input {
-  height: 28px;
+  height: 24px;
   border-color: rgba(31, 56, 88, 0.3);
 }
 .kuma-uxtransfer-container td {
@@ -8133,10 +8142,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtransfer-container td.left-block,
 .kuma-uxtransfer-container td.right-block {
-  padding: 4px;
-  width: 170px;
+  width: 218px;
   background-color: #fff;
-  border: 1px solid rgba(31, 56, 88, 0.3);
+  border: 1px solid rgba(31, 56, 88, 0.2);
+  border-top: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block {
   overflow-x: hidden;
@@ -8144,9 +8155,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a {
   display: block;
-  height: 24px;
-  padding: 0 15px 0 10px;
-  line-height: 24px;
+  height: 32px;
+  padding: 0 16px;
+  line-height: 32px;
   color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
 }
@@ -8158,10 +8169,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected {
   position: relative;
-  color: #f37327;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #f7f7f7;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected:before {
   content: "\e611";
+  color: #f37327;
   display: block;
   position: absolute;
   right: 5px;
@@ -8185,14 +8198,15 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a {
   position: relative;
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  line-height: 22px;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
   border: 1px solid rgba(31, 56, 88, 0.3);
-  background-color: #e8e8e8;
-  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #FFF;
+  margin-bottom: 12px;
   text-align: center;
-  color: #ccc;
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:hover,
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:focus {
@@ -8204,23 +8218,21 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   color: #fff;
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:before {
-  content: '\e615';
+  content: '\e6a6';
   font-family: kuma!important;
-  font-size: 16px;
+  font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: .2px;
   -moz-osx-font-smoothing: grayscale;
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:first-child:before {
-  content: '\e616';
+  content: '\e6a4';
 }
 .uxTransfer.disabled .kuma-uxtransfer-buttons > a {
-  background: rgba(31, 56, 88, 0.04);
-  border-color: rgba(31, 56, 88, 0.2);
-  color: #fff;
+  background-color: #f7f7f7;
 }
 .uxTransfer.disabled .kuma-uxtransfer-block a.selected {
-  background: rgba(31, 56, 88, 0.04);
+  background-color: #f7f7f7;
 }
 /**
 * Collapse Component Style for UXCore
@@ -8230,26 +8242,31 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 * All rights reserved.
 */
 .kuma-collapse {
-  background-color: #f7f7f7;
-  border: 1px solid rgba(31, 56, 88, 0.3);
+  background-color: #fff;
+  border: 1px solid rgba(31, 56, 88, 0.2);
+  border-radius: 3px;
 }
 .kuma-collapse > .kuma-collapse-item {
-  border-top: 1px solid rgba(31, 56, 88, 0.3);
+  border-top: 1px solid rgba(31, 56, 88, 0.1);
 }
 .kuma-collapse > .kuma-collapse-item:first-child {
   border-top: none;
 }
 .kuma-collapse > .kuma-collapse-item > .kuma-collapse-header {
-  height: 38px;
-  line-height: 38px;
+  height: 35px;
+  line-height: 35px;
   padding-left: 32px;
   padding-right: 16px;
-  font-size: 14px;
-  color: rgba(31, 56, 88, 0.6);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   position: relative;
 }
-.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow {
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow,
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow-active {
   position: absolute;
   top: 0;
   left: 0;
@@ -8260,21 +8277,28 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 32px;
   text-align: center;
 }
-.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow:before {
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow:before,
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow-active:before {
   font-family: 'kuma' !important;
   content: "\e615";
   font-size: 14px;
 }
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow-active:before {
+  content: "\e614" !important;
+}
 .kuma-collapse-content {
   display: none;
   overflow: hidden;
-  color: rgba(31, 56, 88, 0.6);
-  padding: 0 16px;
-  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0 14px;
+  background-color: rgba(31, 56, 88, 0.04);
+  font-size: 12px;
+  line-height: 18px;
 }
 .kuma-collapse-content > .kuma-collapse-content-box {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
 }
 .kuma-collapse-content-active {
   display: block;

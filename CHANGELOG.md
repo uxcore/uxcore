@@ -1,3 +1,13 @@
+## 0.10.1
+
+`2017-04-06`
+
+- [Component] Button: `CHANGED` change loading icon
+- [Component] Button: `CHANGED` add icon button adaption
+- [Component] Collapse: `CHANGED` new style
+- [Component] Table: `FIXED` default width of rowSelector is not equal in every case.
+- [Component] Transfer: `CHANGED` style change
+
 ## 0.10.0
 
 `2017-04-05`
