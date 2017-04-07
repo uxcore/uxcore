@@ -6427,10 +6427,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: rgba(31, 56, 88, 0.06);
 }
 .kuma-uxtable-row-hover .kuma-uxtable-row-cells {
-  background-color: #fff9f5;
+  background-color: rgba(242, 113, 39, 0.06);
 }
 .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
-  background-color: #fff9f5;
+  background-color: rgba(242, 113, 39, 0.06);
 }
 .kuma-uxtable-cell {
   display: inline-block;
@@ -6797,7 +6797,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
 .kuma-uxtable-border-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
-  background-color: #fff9f5;
+  background-color: rgba(242, 113, 39, 0.06);
 }
 .kuma-uxtable-border-line .kuma-uxtable-left-fixed-table {
   border-right: 1px solid #e8e8e8;
@@ -9357,6 +9357,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-description {
   bottom: 46px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-description-arrow {
+  bottom: 39px;
+  left: -2px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-tail {
   padding: 0 0 0 10px;
