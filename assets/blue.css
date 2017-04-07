@@ -594,7 +594,7 @@ a.kuma-button {
 }
 .kuma-checkbox[type="radio"] + s:hover,
 .kuma-checkbox.radio-primary[type="radio"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.40)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .kuma-checkbox[type="radio"]:checked + s {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%226%22%20fill%3D%22white%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%224%22%2F%3E%0A%3C%2Fsvg%3E");
@@ -633,7 +633,7 @@ a.kuma-button {
 }
 .kuma-checkbox[type="checkbox"] + s:hover,
 .kuma-checkbox.checkbox-primary[type="checkbox"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.40)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .kuma-checkbox[type="checkbox"]:checked + s {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%232599f2%22%20stroke%3D%22%232599f2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
@@ -4117,12 +4117,13 @@ a.weaker-link {
   box-sizing: border-box;
 }
 .kuma-time-picker-panel-selected-value {
-  height: 40px;
+  height: 36px;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 35px;
   text-align: center;
   font-weight: bold;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+  background: rgba(31, 56, 88, 0.04);
 }
 .kuma-time-picker-panel-inner {
   display: inline-block;
@@ -5606,7 +5607,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-select2-inline .kuma-select2-selection__rendered {
   display: inline-block;
   padding: 0 10px;
-  height: 36px;
 }
 .kuma-select2-inline .kuma-select2-selection__placeholder {
   position: static;
@@ -5614,10 +5614,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-select2-inline .kuma-select2-selection-selected-value {
   padding-right: 0;
   position: static;
-}
-.kuma-select2-inline.kuma-select2-open .kuma-select2-selection {
-  background: white;
-  border: 1px solid rgba(31, 56, 88, 0.3);
 }
 @keyframes selectSlideInDown {
   0% {
@@ -9138,6 +9134,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   left: 0;
   top: 19px;
+  padding: 0 0 0 24px;
   width: 100%;
 }
 .kuma-step .kuma-step-tail > i {
@@ -9301,6 +9298,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-step.kuma-step-vertical .kuma-step-tail {
   left: 11px;
   top: 0;
+  padding: 24px 0 0 0;
   width: 0;
   height: 100%;
 }
@@ -9361,21 +9359,21 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   bottom: 46px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-tail {
-  padding: 0px;
+  padding: 0 0 0 10px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-status-wait .kuma-step-icon {
   background-color: rgba(31, 56, 88, 0.04);
   border-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head {
-  top: -6px;
+  top: -5px;
   left: 8px;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-main .kuma-step-title {
   margin-top: -5px;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-tail {
-  padding: 0px 0 0 1px;
+  padding: 10px 0 0 1px;
 }
 .kuma-step .kuma-step-detail > .kuma-step-detail-con {
   display: none;
