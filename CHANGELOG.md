@@ -1,3 +1,17 @@
+## 0.10.6
+
+- [Component] CascadeSelect: ``FIXED` hover and focus color.
+- [Component] Crumb: ``FIXED` hover and focus color.
+- [Component] Dialog: `CHANGED` update rc-dialog to ~6.5.0
+- [Component] Dialog: `CHNAGED` add footer top border line (style)
+- [Component] Dialog: `CHANGED` Dialog.confirm support `okText` & `cancelText`
+- [Component] Form: `CHANGED` method setValues will handle non-existent key. (#135)
+- [Component] Pickable: `CHANGED` prop `type` support `simpleHook`
+- [Component] Popover: `CHANGED` add new prop `getTooltipContainer`
+- [Component] TreeSelect: `FIXED` i18n
+
+
+
 ## 0.10.1
 
 `2017-04-06`

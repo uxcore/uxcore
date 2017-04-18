@@ -4655,6 +4655,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-dlg-footer {
   padding: 16px 16px 16px 24px;
   text-align: right;
+  border-top: 1px solid rgba(31, 56, 88, 0.1);
 }
 .uxcore .kuma-dlg-footer button + button {
   margin-left: 8px;
@@ -10258,31 +10259,46 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxcrumbs a,
 .uxcore .kuma-uxcrumbs span {
-  color: rgba(0, 0, 0, 0.6);
   margin-right: 8px;
   display: inline-block;
 }
-.uxcore .kuma-uxcrumbs a:hover,
-.uxcore .kuma-uxcrumbs span:hover {
-  text-decoration: none;
-}
 .uxcore .kuma-uxcrumbs a:before,
 .uxcore .kuma-uxcrumbs span:before {
-  content: '\e6a6';
-  font-family: 'kuma';
+  content: "\e65b";
+  font-size: 10px;
+  font-family: uxcore!important;
   margin-right: 8px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-uxcrumbs a:after,
+.uxcore .kuma-uxcrumbs span:after {
+  content: none;
 }
 .uxcore .kuma-uxcrumbs a:first-child:before,
 .uxcore .kuma-uxcrumbs span:first-child:before {
-  content: '';
+  content: none;
 }
 .uxcore .kuma-uxcrumbs a:last-child,
 .uxcore .kuma-uxcrumbs span:last-child {
   margin-right: 0;
 }
+.uxcore .kuma-uxcrumbs a {
+  color: rgba(31, 56, 88, 0.8);
+}
+.uxcore .kuma-uxcrumbs a:hover {
+  text-decoration: none;
+  color: #3da4f2;
+}
+.uxcore .kuma-uxcrumbs a:focus {
+  color: #218cde;
+}
 .uxcore .kuma-uxcrumbs span {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-uxcrumbs a[disabled],
+.uxcore .kuma-uxcrumbs span[disabled] {
+  color: rgba(31, 56, 88, 0.3);
+  cursor: not-allowed;
 }
 .uxcore .kuma-totop {
   position: fixed;
@@ -10715,17 +10731,20 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 16px;
   margin-left: 9px;
 }
-.uxcore .kuma-pickable-item-hook.multiple-active {
+.uxcore .kuma-pickable-item-hook.multiple-active,
+.uxcore .kuma-pickable-item-hook-simple.multiple-active {
   padding: 0 20px;
 }
-.uxcore .kuma-pickable-item-hook.active {
+.uxcore .kuma-pickable-item-hook.active,
+.uxcore .kuma-pickable-item-hook-simple.active {
   border-color: #34a4fa;
   background: white;
   background: linear-gradient(-45deg, transparent 11px, white 0), linear-gradient(45deg, transparent 15px, #2599f2 0);
   position: relative;
   color: rgba(0, 0, 0, 0.6);
 }
-.uxcore .kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook {
+.uxcore .kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook,
+.uxcore .kuma-pickable-item-hook-simple.active i.kuma-pickable-item-icon-hook {
   position: absolute;
   height: 10px;
   line-height: 10px;
@@ -10735,9 +10754,23 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   bottom: -1px;
   transform: scale(0.7);
 }
-.uxcore .kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook:before {
+.uxcore .kuma-pickable-item-hook.active i.kuma-pickable-item-icon-hook:before,
+.uxcore .kuma-pickable-item-hook-simple.active i.kuma-pickable-item-icon-hook:before {
   content: "\e6af";
   font-family: uxcore !important;
+}
+.uxcore .kuma-pickable-item-hook-simple {
+  border-color: transparent;
+}
+.uxcore .kuma-pickable-item-hook-simple:hover {
+  border-color: transparent;
+}
+.uxcore .kuma-pickable-item-hook-simple.active {
+  border-color: #34a4fa;
+}
+.uxcore .kuma-pickable-item-hook-simple.disabled {
+  background: transparent;
+  border-color: transparent;
 }
 .uxcore .kuma-carousel {
   /* Slider */
@@ -13717,7 +13750,10 @@ a .uxcore-count:active {
   transition: all .3s;
 }
 .uxcore .kuma-cascader-wrapper:hover {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-cascader-wrapper:hover .kuma-icon {
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-cascader-clearable:hover .kuma-cascader-close-wrap {
   visibility: visible;
@@ -13748,11 +13784,26 @@ a .uxcore-count:active {
   color: rgba(31, 56, 88, 0.3);
   cursor: not-allowed;
 }
+.uxcore .kuma-cascader-disabled .kuma-icon {
+  color: rgba(31, 56, 88, 0.2);
+}
 .uxcore .kuma-cascader-disabled:hover {
   border-color: rgba(31, 56, 88, 0.2);
 }
-.uxcore .kuma-cascader-disabled * {
-  cursor: not-allowed;
+.uxcore .kuma-cascader-disabled:hover .kuma-icon {
+  color: rgba(31, 56, 88, 0.2);
+}
+.uxcore .kuma-cascader-focus {
+  border-color: rgba(31, 56, 88, 0.6);
+}
+.uxcore .kuma-cascader-focus .kuma-icon {
+  color: rgba(31, 56, 88, 0.6);
+}
+.uxcore .kuma-cascader-focus:hover {
+  border-color: rgba(31, 56, 88, 0.6);
+}
+.uxcore .kuma-cascader-focus:hover .kuma-icon {
+  color: rgba(31, 56, 88, 0.6);
 }
 .uxcore .kuma-cascader-trigger {
   cursor: pointer;
@@ -13765,7 +13816,7 @@ a .uxcore-count:active {
   color: rgba(0, 0, 0, 0.4);
 }
 .uxcore .kuma-cascader-arrow {
-  color: #76889A;
+  color: rgba(31, 56, 88, 0.3);
   position: absolute;
   right: 2px;
   top: 8px;
