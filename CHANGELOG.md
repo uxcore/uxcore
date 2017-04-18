@@ -10,8 +10,6 @@
 - [Component] Popover: `CHANGED` add new prop `getTooltipContainer`
 - [Component] TreeSelect: `FIXED` i18n
 
-
-
 ## 0.10.1
 
 `2017-04-06`
