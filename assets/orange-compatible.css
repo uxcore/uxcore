@@ -867,6 +867,7 @@
   padding: 0 24px;
   height: 44px;
   line-height: 42px;
+  font-size: 18px;
 }
 .uxcore .kuma-button-sm {
   padding: 0 16px;
@@ -902,12 +903,12 @@
 .uxcore .kuma-checkbox.radio-primary[type="radio"] + s {
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.20)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.30)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox[type="radio"] + s:hover,
 .uxcore .kuma-checkbox.radio-primary[type="radio"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.40)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .uxcore .kuma-checkbox[type="radio"]:checked + s {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%226%22%20fill%3D%22white%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%224%22%2F%3E%0A%3C%2Fsvg%3E");
@@ -922,7 +923,7 @@
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.radio-primary[type="radio"] + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.20)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.30)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.radio-primary[type="radio"]:checked + s {
@@ -941,12 +942,12 @@
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"] + s {
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.30)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox[type="checkbox"] + s:hover,
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.40)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .uxcore .kuma-checkbox[type="checkbox"]:checked + s {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23f37327%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
@@ -961,7 +962,7 @@
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"] + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.30)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
 .uxcore .kuma-checkbox.checkbox-primary[type="checkbox"]:checked + s {
@@ -2296,7 +2297,6 @@
 .uxcore .kuma-input:focus,
 .uxcore .kuma-textarea:focus {
   border: 1px rgba(31, 56, 88, 0.6) solid;
-  color: rgba(0, 0, 0, 0.6);
   outline: none;
 }
 .uxcore .kuma-input:focus[readonly],
@@ -2313,7 +2313,6 @@
 .uxcore .kuma-input.kuma-input-focus,
 .uxcore .kuma-textarea.kuma-input-focus {
   border: 1px rgba(31, 56, 88, 0.6) solid;
-  color: rgba(0, 0, 0, 0.6);
   outline: none;
 }
 .uxcore .kuma-input::-webkit-input-placeholder,
@@ -7042,7 +7041,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
   cursor: pointer;
   outline: none;
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.30)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23f37327%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
@@ -8332,12 +8331,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: table;
   float: left;
   width: 100%;
-  padding: 0 5px 12px 0px;
+  padding: 0 5px 16px 0px;
   *zoom: 1;
 }
 .uxcore .kuma-uxform-field .kuma-label {
+  width: 88px;
   padding-top: 9px;
-  padding-right: 10px;
+  padding-right: 16px;
   vertical-align: top;
 }
 .uxcore .kuma-uxform-field .kuma-label.vertical-align {
@@ -8372,6 +8372,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-left: none;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+}
+.uxcore .kuma-uxform-field__view {
+  padding-bottom: 7px;
 }
 .uxcore .kuma-uxform-count {
   display: table-cell;
@@ -8448,7 +8451,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxform-field-content {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   width: 100%;
 }
 .uxcore .kuma-uxform-field-content .kuma-radio-group > span {
@@ -11926,7 +11929,7 @@ a .uxcore-count:active {
   vertical-align: middle;
   cursor: pointer;
   outline: none;
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.30)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .uxcore-tree-select-tree-checkbox.uxcore-tree-select-tree-checkbox-checked {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23f37327%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
