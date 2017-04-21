@@ -8451,7 +8451,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxform-field-content {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.9);
   width: 100%;
 }
 .uxcore .kuma-uxform-field-content .kuma-radio-group > span {
