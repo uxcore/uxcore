@@ -1983,7 +1983,6 @@ a.kuma-button {
 .kuma-input:focus,
 .kuma-textarea:focus {
   border: 1px rgba(31, 56, 88, 0.6) solid;
-  color: rgba(0, 0, 0, 0.6);
   outline: none;
 }
 .kuma-input:focus[readonly],
@@ -2000,7 +1999,6 @@ a.kuma-button {
 .kuma-input.kuma-input-focus,
 .kuma-textarea.kuma-input-focus {
   border: 1px rgba(31, 56, 88, 0.6) solid;
-  color: rgba(0, 0, 0, 0.6);
   outline: none;
 }
 .kuma-input::-webkit-input-placeholder,
@@ -2404,7 +2402,7 @@ a.weaker-link {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_zpa3e28g2sh8h0k9.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_5wcc96k7ovoq1tt9.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -2743,6 +2741,63 @@ a.weaker-link {
 .uxicon-fanyi-full:before {
   content: "\e6bd";
 }
+.uxicon-option-yixuan-gou:before {
+  content: "\e6bf";
+}
+.uxicon-shouqi:before {
+  content: "\e601";
+}
+.uxicon-renwufull:before {
+  content: "\e609";
+}
+.uxicon-zhankai:before {
+  content: "\e611";
+}
+.uxicon-qiehuanyingwen:before {
+  content: "\e61a";
+}
+.uxicon-xiaoxitixingfull:before {
+  content: "\e635";
+}
+.uxicon-qiehuanzhongwen:before {
+  content: "\e647";
+}
+.uxicon-wailian:before {
+  content: "\e604";
+}
+.uxicon-jinggaocopy:before {
+  content: "\e6c0";
+}
+.uxicon-xinxitishicopy:before {
+  content: "\e6c1";
+}
+.uxicon-chenggongtishicopy:before {
+  content: "\e6c2";
+}
+.uxicon-cuowu-fullcopy:before {
+  content: "\e6c3";
+}
+.uxicon-yiwencopy:before {
+  content: "\e6c4";
+}
+.uxicon-fanhuidingbu:before {
+  content: "\e6c5";
+}
+.uxicon-pingjia:before {
+  content: "\e6c6";
+}
+.uxicon-guanyu:before {
+  content: "\e6c7";
+}
+.uxicon-qiuzhu:before {
+  content: "\e6c8";
+}
+.uxicon-shouce:before {
+  content: "\e6c9";
+}
+.uxicon-xiazai1:before {
+  content: "\e6ca";
+}
 /**
  * Calendar Component Style for uxcore
  * @author
@@ -2777,7 +2832,6 @@ a.weaker-link {
 }
 .kuma-calendar-time-picker {
   float: left;
-  border-left: 1px solid rgba(31, 56, 88, 0.1);
   height: 340px;
   background-color: white;
 }
@@ -2791,6 +2845,7 @@ a.weaker-link {
 .kuma-calendar-time-picker-panel .kuma-time-picker-panel-inner {
   border: none;
   box-shadow: none;
+  border-left: 1px solid rgba(31, 56, 88, 0.1);
 }
 .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
   width: 60px;
@@ -3350,18 +3405,18 @@ a.weaker-link {
   line-height: 24px;
   padding: 0 8px;
   border-radius: 3px;
-  color: #333;
+  color: rgba(0, 0, 0, 0.6);
 }
 .kuma-calendar-year-select:hover,
 .kuma-calendar-month-select:hover,
 .kuma-calendar-day-select:hover {
   cursor: pointer;
-  color: #2599f2;
+  color: rgba(0, 0, 0, 0.8);
 }
 .kuma-calendar-year-select:hover .kuma-select2-arrow b,
 .kuma-calendar-month-select:hover .kuma-select2-arrow b,
 .kuma-calendar-day-select:hover .kuma-select2-arrow b {
-  border-color: #2599f2 transparent transparent transparent;
+  border-color: rgba(31, 56, 88, 0.6) transparent transparent transparent;
 }
 .kuma-calendar-year-select,
 .kuma-calendar-month-select {
@@ -3390,7 +3445,7 @@ a.weaker-link {
   height: 28px;
 }
 .kuma-calendar-year-select {
-  width: 55px;
+  width: 60px;
 }
 .kuma-calendar-year-select.kuma-calendar-cn-select {
   width: 75px;
@@ -3437,6 +3492,12 @@ a.weaker-link {
   font-family: 'uxcore';
   font-size: 16px;
   text-indent: 0;
+}
+.kuma-calendar-prev-month-btn:hover,
+.kuma-calendar-next-month-btn:hover,
+.kuma-calendar-prev-year-btn:hover,
+.kuma-calendar-next-year-btn:hover {
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-calendar-next-year-btn {
   right: 0;
@@ -3493,7 +3554,7 @@ a.weaker-link {
 .kuma-calendar-date {
   display: block;
   margin: 0 auto;
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
   transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
   width: 32px;
@@ -3776,7 +3837,7 @@ a.weaker-link {
 }
 .kuma-calendar-month-panel-cell .kuma-calendar-month-panel-month {
   display: block;
-  width: 48px;
+  width: 60px;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
@@ -3912,7 +3973,7 @@ a.weaker-link {
 }
 .kuma-calendar-year-panel-year {
   display: block;
-  width: 48px;
+  width: 60px;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
@@ -4226,10 +4287,13 @@ a.weaker-link {
           user-select: none;
 }
 .kuma-time-picker-panel-select li:hover {
-  background: #f2f9ff;
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-time-picker-panel-select li:active {
+  background: rgba(31, 56, 88, 0.06);
 }
 li.kuma-time-picker-panel-select-option-selected {
-  background: #f2f9ff;
+  background: rgba(31, 56, 88, 0.04);
   color: rgba(0, 0, 0, 0.6);
 }
 li.kuma-time-picker-panel-select-option-disabled {
@@ -4907,7 +4971,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 10px;
   min-width: 28px;
   height: 28px;
-  line-height: 26px;
+  line-height: 28px;
   float: left;
   margin-right: 12px;
   -webkit-user-select: auto;
@@ -4955,19 +5019,17 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   content: "•••";
   display: block;
   letter-spacing: 2px;
-  color: #ccc;
+  color: rgba(31, 56, 88, 0.4);
   font-size: 12px;
   margin-top: 1px;
 }
-.kuma-page-jump-prev:hover:after,
-.kuma-page-jump-next:hover:after {
-  background-color: #f2f9ff;
-}
 .kuma-page-jump-prev:hover:after {
-  content: "«";
+  font-family: "uxcore";
+  content: "\e65e";
 }
 .kuma-page-jump-next:hover:after {
-  content: "»";
+  font-family: "uxcore";
+  content: "\e65f";
 }
 .kuma-page-prev,
 .kuma-page-next,
@@ -4975,7 +5037,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-page-jump-next {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.4);
   font-size: 10px;
   list-style: none;
   min-width: 28px;
@@ -5001,7 +5063,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-page-prev a,
 .kuma-page-next a {
-  color: #ccc;
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-page-prev a:after,
 .kuma-page-next a:after {
@@ -5185,7 +5247,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(0, 0, 0, 0.8);
 }
 .kuma-select2 ul,
 .kuma-select2 li {
@@ -5255,6 +5317,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   left: 10px;
   top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  padding-right: 30px;
 }
 .kuma-select2-selection--single {
   height: 36px;
@@ -5264,7 +5331,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-select2-selection--single .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #aaa;
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-select2-selection--single .kuma-select2-selection__rendered {
   display: block;
@@ -5291,32 +5358,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-select2-selection--single .kuma-select2-selection__clear:hover {
   color: rgba(31, 56, 88, 0.4);
-}
-.kuma-select2-disabled {
-  color: rgba(31, 56, 88, 0.3);
-  cursor: not-allowed;
-}
-.kuma-select2-disabled .kuma-select2-selection {
-  border-color: rgba(31, 56, 88, 0.2);
-  background-color: rgba(31, 56, 88, 0.04);
-}
-.kuma-select2-disabled .kuma-select2-selection:hover,
-.kuma-select2-disabled .kuma-select2-selection:active {
-  border-color: rgba(31, 56, 88, 0.2);
-}
-.kuma-select2-disabled .kuma-select2-arrow b {
-  border-color: rgba(31, 56, 88, 0.2) transparent transparent transparent;
-}
-.kuma-select2-disabled .kuma-select2-selection--single,
-.kuma-select2-disabled .kuma-select2-selection__choice__remove {
-  cursor: not-allowed;
-  color: rgba(31, 56, 88, 0.3);
-}
-.kuma-select2-disabled .kuma-select2-selection--single:hover,
-.kuma-select2-disabled .kuma-select2-selection__choice__remove:hover,
-.kuma-select2-disabled .kuma-select2-selection--single:active,
-.kuma-select2-disabled .kuma-select2-selection__choice__remove:active {
-  border-color: rgba(31, 56, 88, 0.2);
 }
 .kuma-select2-search__field__wrap {
   display: inline-block;
@@ -5397,16 +5438,15 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-select2-enabled .kuma-select2-selection__choice {
   cursor: default;
 }
-.kuma-select2-enabled .kuma-select2-selection__choice:hover .kuma-select2-selection__choice__remove {
+.kuma-select2-enabled .kuma-select2-selection__choice .kuma-select2-selection__choice__remove {
   opacity: 1;
   transform: scale(0.8);
 }
-.kuma-select2-enabled .kuma-select2-selection__choice:hover .kuma-select2-selection__choice__content {
+.kuma-select2-enabled .kuma-select2-selection__choice .kuma-select2-selection__choice__content {
   margin-left: -8px;
   margin-right: 8px;
 }
 .kuma-select2 .kuma-select2-selection__choice {
-  color: rgba(0, 0, 0, 0.8);
   background-color: rgba(31, 56, 88, 0.1);
   border-radius: 4px;
   float: left;
@@ -5480,6 +5520,35 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-select2 .kuma-select2-selection__choice__remove:hover {
   color: #333;
+}
+.kuma-select2-disabled {
+  color: rgba(31, 56, 88, 0.3);
+  cursor: not-allowed;
+}
+.kuma-select2-disabled .kuma-select2-selection {
+  border-color: rgba(31, 56, 88, 0.2);
+  background-color: rgba(31, 56, 88, 0.04);
+}
+.kuma-select2-disabled .kuma-select2-selection:hover,
+.kuma-select2-disabled .kuma-select2-selection:active {
+  border-color: rgba(31, 56, 88, 0.2);
+}
+.kuma-select2-disabled .kuma-select2-selection__choice {
+  background-color: rgba(31, 56, 88, 0.06);
+}
+.kuma-select2-disabled .kuma-select2-arrow b {
+  border-color: rgba(31, 56, 88, 0.2) transparent transparent transparent;
+}
+.kuma-select2-disabled .kuma-select2-selection--single,
+.kuma-select2-disabled .kuma-select2-selection__choice__remove {
+  cursor: not-allowed;
+  color: rgba(31, 56, 88, 0.3);
+}
+.kuma-select2-disabled .kuma-select2-selection--single:hover,
+.kuma-select2-disabled .kuma-select2-selection__choice__remove:hover,
+.kuma-select2-disabled .kuma-select2-selection--single:active,
+.kuma-select2-disabled .kuma-select2-selection__choice__remove:active {
+  border-color: rgba(31, 56, 88, 0.2);
 }
 .kuma-select2-dropdown {
   background-color: white;
@@ -5861,16 +5930,16 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-tab.kuma-tab-sm > .kuma-tab-bar {
   background-color: #f5f5f5;
-  height: 39px;
+  height: 40px;
 }
 .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-container {
-  height: 39px;
+  height: 40px;
   border-bottom: 0;
 }
 .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
   margin-left: -1px;
-  height: 39px;
-  line-height: 39px;
+  height: 40px;
+  line-height: 40px;
   font-size: 14px;
 }
 .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active {
@@ -5881,7 +5950,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev,
 .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
   background-color: #f7f7f7;
-  line-height: 39px;
+  line-height: 40px;
+}
+.kuma-tab.kuma-tab-filter {
+  background: transparent;
 }
 .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-nav-container {
   padding: 20px 30px;
@@ -5904,12 +5976,15 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab:last-of-type {
   border-right: 0 none;
 }
+.kuma-tab.kuma-tab-brick {
+  background: transparent;
+}
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-nav-container {
   padding: 20px 30px;
 }
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab {
-  height: 34px;
-  line-height: 32px;
+  height: 28px;
+  line-height: 26px;
   border-color: rgba(31, 56, 88, 0.3);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
@@ -5917,8 +5992,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   padding: 0 30px;
 }
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-active {
-  background-color: #2599f2;
-  color: #fff;
+  background-color: rgba(36, 153, 242, 0.06);
+  color: #2599f2;
   border-color: #2599f2;
 }
 .kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-active + .kuma-tab-tab {
@@ -6040,6 +6115,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab-top,
 .kuma-tab-bottom {
   overflow-x: hidden;
+  background: white;
 }
 .kuma-tab-top .kuma-tab-nav-container-scrolling,
 .kuma-tab-bottom .kuma-tab-nav-container-scrolling {
@@ -6075,6 +6151,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab-right {
   overflow-y: hidden;
   height: 100%;
+  background: white;
 }
 .kuma-tab-left .kuma-tab-bar,
 .kuma-tab-right .kuma-tab-bar {
@@ -8445,10 +8522,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtransfer-container {
   font-size: 12px;
   border-collapse: separate;
+  display: inline-block;
 }
 .kuma-uxtransfer-container th {
   font-weight: 400;
+  width: 44px;
   padding: 16px 16px 6px 16px;
+  display: inline-block;
 }
 .kuma-uxtransfer-container th > .title {
   float: left;
@@ -8459,6 +8539,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtransfer-container th.left-head,
 .kuma-uxtransfer-container th.right-head {
+  width: 218px;
   background-color: #fff;
   border: 1px solid rgba(31, 56, 88, 0.2);
   border-bottom: 0;
@@ -8484,6 +8565,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtransfer-container td {
   padding: 0;
   vertical-align: top;
+  display: inline-block;
+  vertical-align: middle;
 }
 .kuma-uxtransfer-container td.left-block,
 .kuma-uxtransfer-container td.right-block {
@@ -8505,6 +8588,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 32px;
   color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a:hover,
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a:focus {
@@ -8535,10 +8620,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: #f7f7f7;
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons {
-  width: 40px;
+  width: 44px;
   text-align: center;
   vertical-align: middle;
   line-height: 0;
+  margin-top: -20px;
 }
 .kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a {
   position: relative;
@@ -9199,6 +9285,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
   display: -webkit-box;
+  border: 1px solid rgba(31, 56, 88, 0.2);
+  border-radius: 3px;
 }
 .kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description-arrow {
   position: absolute;
@@ -9213,7 +9301,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 0;
   display: block;
 }
-.kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description-arrow:before {
+.kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description-arrow:before,
+.kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description-arrow:after {
   border-color: transparent;
   border-style: solid;
   border-width: 5px;
@@ -9223,8 +9312,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 0;
   display: block;
   position: absolute;
-  bottom: 3px;
+  bottom: 4px;
   left: -5px;
+}
+.kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description-arrow:before {
+  bottom: 3px;
+  border-top-color: rgba(31, 56, 88, 0.2);
 }
 .kuma-step.kuma-step-type-title-on-top .kuma-step-item {
   margin-top: 28px;
@@ -9281,6 +9374,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: rgba(31, 56, 88, 0.04);
   border-color: rgba(31, 56, 88, 0.2);
   color: rgba(31, 56, 88, 0.2);
+}
+.kuma-step .kuma-step-status-wait .kuma-step-title {
+  color: rgba(31, 56, 88, 0.3);
 }
 .kuma-step .kuma-step-status-process .kuma-step-title {
   color: rgba(0, 0, 0, 0.6);
@@ -9345,9 +9441,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   left: 0px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon:after {
   content: '';
@@ -9364,7 +9460,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   left: -2px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-tail {
-  padding: 0 0 0 10px;
+  padding: 0 0 0 12px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-status-wait .kuma-step-icon {
   background-color: rgba(31, 56, 88, 0.04);
@@ -9372,7 +9468,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head {
   top: -5px;
-  left: 8px;
+  left: 7px;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-main .kuma-step-title {
   margin-top: -5px;
@@ -10147,15 +10243,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-totop .box {
   width: 42px;
   height: 42px;
+  border-radius: 3px;
   box-sizing: border-box;
   margin-top: 4px;
   background-color: #fff;
-  border: 1px solid #e8e8e8;
   font-size: 14px;
-}
-.kuma-totop .box:hover {
-  background-color: #999;
-  border-color: #999;
 }
 .kuma-totop .box:hover .box-text {
   display: inline-block;
@@ -10163,7 +10255,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-totop .box:hover .box-icon {
   display: none;
 }
+.kuma-totop .box:hover .box-window {
+  background-color: rgba(31, 56, 88, 0.4);
+}
 .kuma-totop .box-window {
+  border-radius: 3px;
   display: block;
   text-align: center;
 }
@@ -10176,8 +10272,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-totop .box-icon {
   font-size: 20px;
-  color: #999;
-  line-height: 42px;
+  color: rgba(31, 56, 88, 0.4);
+  line-height: 40px;
 }
 .kuma-totop .gotop-box {
   display: none;
@@ -10209,13 +10305,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  * Copyright 2014-2015, Uxcore Team, Alinw.
  * All rights reserved.
  */
-/* tiptext 样式模块 */
 .kuma-alert {
   position: relative;
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(31, 56, 88, 0.8);
 }
 .kuma-alert-follow {
-  padding-left: 26px;
+  padding-left: 32px;
 }
 .kuma-alert .kuma-button {
   font-size: 1.2em;
@@ -10227,83 +10322,50 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
 }
 .kuma-alert-icon + span {
-  margin-left: 10px;
+  margin-left: 7px;
   vertical-align: middle;
 }
 .kuma-alert-container {
-  padding: 8px 12px 8px 12px;
+  padding: 6px 16px;
   position: relative;
 }
+.kuma-alert-container .kuma-alert-icon + span {
+  margin-left: 12px;
+}
 .kuma-alert-message .kuma-alert-icon {
-  color: #45a8e6;
+  color: #3C99D8;
 }
 .kuma-alert-container-message {
-  border: 1px solid #cee4f2;
-  background: #f2faff;
-}
-.kuma-alert-container-message .kuma-alert-arrow em {
-  color: #cee4f2;
-}
-.kuma-alert-container-message .kuma-alert-arrow span {
-  color: #f2faff;
+  background: rgba(61, 154, 217, 0.1);
 }
 .kuma-alert-success .kuma-alert-icon {
   color: #66bc5c;
 }
 .kuma-alert-container-success {
-  border: 1px solid #bbd9b8;
-  background: #f4fff2;
-}
-.kuma-alert-container-success .kuma-alert-arrow em {
-  color: #bbd9b8;
-}
-.kuma-alert-container-success .kuma-alert-arrow span {
-  color: #f4fff2;
+  background: rgba(102, 189, 92, 0.1);
 }
 .kuma-alert-error .kuma-alert-icon {
   color: #F04631;
 }
 .kuma-alert-container-error {
-  border: 1px solid #f2d2ce;
-  background: #fff4f2;
-}
-.kuma-alert-container-error .kuma-alert-arrow em {
-  color: #f2d2ce;
-}
-.kuma-alert-container-error .kuma-alert-arrow span {
-  color: #fff4f2;
+  background: rgba(240, 70, 48, 0.1);
 }
 .kuma-alert-warning .kuma-alert-icon {
   color: #FABD0E;
 }
 .kuma-alert-container-warning {
-  border: 1px solid #f7e6b7;
-  background: #fffcf2;
-}
-.kuma-alert-container-warning .kuma-alert-arrow em {
-  color: #f7e6b7;
-}
-.kuma-alert-container-warning .kuma-alert-arrow span {
-  color: #fffcf2;
+  background: rgba(250, 187, 15, 0.1);
 }
 .kuma-alert-question .kuma-alert-icon {
-  color: #24bee8;
+  color: #3C99D8;
 }
 .kuma-alert-container-question {
-  border: 1px solid #ceeaf2;
-  background: #f2fcff;
-}
-.kuma-alert-container-question .kuma-alert-arrow em {
-  color: #ceeaf2;
-}
-.kuma-alert-container-question .kuma-alert-arrow span {
-  color: #f2fcff;
+  background: rgba(61, 154, 217, 0.1);
 }
 .kuma-alert-stop .kuma-alert-icon {
   color: #F04631;
 }
 .kuma-alert-container-stop {
-  border: 1px solid #f2d2ce;
   background: #fff4f2;
 }
 .kuma-alert-container-stop .kuma-alert-arrow em {
@@ -10316,7 +10378,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   color: #45a8e6;
 }
 .kuma-alert-container-wait {
-  border: 1px solid #cee4f2;
   background: #f2faff;
 }
 .kuma-alert-container-wait .kuma-alert-arrow em {
@@ -10379,7 +10440,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   right: 10px;
   top: 10px;
-  color: #ccc;
+  color: rgba(31, 56, 88, 0.4);
+  line-height: 1;
   cursor: pointer;
 }
 .kuma-alert-size-large {
@@ -10390,7 +10452,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 22px;
 }
 .kuma-alert-size-large .kuma-alert-follow {
-  padding-left: 32px;
+  padding-left: 38px;
 }
 /**
  * Message Component Style for uxcore
@@ -10407,18 +10469,17 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   max-width: 300px;
 }
 .kuma-message-content {
-  margin-left: 34px;
+  margin-left: 30px;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(31, 56, 88, 0.8);
   line-height: 24px;
 }
 .kuma-message-notice {
   position: relative;
   margin: 10px 0;
-  padding: 20px 30px;
+  padding: 23px 38px;
   border-radius: 3px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(31, 56, 88, 0.3);
+  box-shadow: 0 4px 15px 0 rgba(31, 56, 88, 0.15);
   background: #fff;
   line-height: 1.5;
 }
@@ -10448,30 +10509,62 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   filter: alpha(opacity=100);
   text-decoration: none;
 }
-.kuma-message .kuma-icon {
+.kuma-message .kuma-icon,
+.kuma-message .uxcore-icon {
   float: left;
-  margin-right: 10px;
   font-size: 24px;
   line-height: 1;
 }
-.kuma-message .kuma-icon.kuma-icon-caution {
+.kuma-message .kuma-icon.kuma-icon-caution,
+.kuma-message .uxcore-icon.kuma-icon-caution {
   color: #FABD0E;
 }
-.kuma-message .kuma-icon.kuma-icon-information {
-  color: #2599f2;
+.kuma-message .kuma-icon.kuma-icon-information,
+.kuma-message .uxcore-icon.kuma-icon-information,
+.kuma-message .kuma-icon.uxicon-tishi-full,
+.kuma-message .uxcore-icon.uxicon-tishi-full {
+  color: #45a8e6;
 }
-.kuma-message .kuma-icon.kuma-icon-success {
+.kuma-message .kuma-icon.kuma-icon-success,
+.kuma-message .uxcore-icon.kuma-icon-success,
+.kuma-message .kuma-icon.uxicon-chenggong-full,
+.kuma-message .uxcore-icon.uxicon-chenggong-full {
   color: #66bc5c;
 }
-.kuma-message .kuma-icon.kuma-icon-error {
+.kuma-message .kuma-icon.kuma-icon-error,
+.kuma-message .uxcore-icon.kuma-icon-error,
+.kuma-message .kuma-icon.uxicon-biaodanlei-tongyongqingchu,
+.kuma-message .uxcore-icon.uxicon-biaodanlei-tongyongqingchu {
   color: #F04631;
 }
+.kuma-message .kuma-icon.uxicon-loading-icon-round,
+.kuma-message .uxcore-icon.uxicon-loading-icon-round {
+  color: #2599f2;
+  animation: msgIconRotate 1s infinite linear;
+}
 .kuma-message .kuma-loading {
+  width: 24px;
+  height: 24px;
   float: left;
 }
-.kuma-message .kuma-loading + .kuma-message-content {
-  margin-left: 46px;
-  line-height: 36px;
+.kuma-message-small {
+  padding: 12px 24px;
+}
+.kuma-message-small .kuma-message-content {
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 24px;
+}
+.kuma-message-small .uxcore-icon {
+  font-size: 16px;
+}
+@keyframes msgIconRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes msgMoveUpIn {
   0% {
@@ -11588,7 +11681,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-rate-item {
   display: inline-block;
   cursor: pointer;
-  color: #e8e8e8;
+  color: rgba(31, 56, 88, 0.4);
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -11742,21 +11835,21 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   transform: translateX(-50%);
   top: -10px;
-  height: 20px;
-  border-radius: 10px;
-  min-width: 20px;
+  height: 16px;
+  border-radius: 16px;
+  min-width: 16px;
   background: #F04631;
   border: 1px solid transparent;
   color: #fff;
-  line-height: 18px;
+  line-height: 14px;
   text-align: center;
-  padding: 0 6px;
+  padding: 0 2px;
   font-size: 12px;
   white-space: nowrap;
   transform-origin: -10% center;
   z-index: 10;
   font-family: tahoma;
-  box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 2px #fff;
 }
 .kuma-badge-count a,
 .kuma-badge-count a:hover {
@@ -11772,7 +11865,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-radius: 100%;
   background: #F04631;
   z-index: 10;
-  box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 2px #fff;
 }
 .kuma-badge-zoom-appear,
 .kuma-badge-zoom-enter {
@@ -12628,7 +12721,6 @@ a -count:active {
   margin: 2px;
   height: 28px;
   line-height: 26px;
-  cursor: pointer;
   position: relative;
 }
 .uxcore-tag-item.create-by-owner {
@@ -12654,6 +12746,7 @@ a -count:active {
 .uxcore-tag-item-show {
   border: none;
   background: rgba(31, 56, 88, 0.06);
+  cursor: auto;
   height: 24px;
   line-height: 24px;
 }
@@ -12683,6 +12776,7 @@ a -count:active {
   position: static;
   font-size: 12px;
   color: rgba(31, 56, 88, 0.4);
+  cursor: pointer;
   display: inline-block;
   transform: scale(0.8);
   margin-right: 2px;
@@ -12748,6 +12842,9 @@ a -count:active {
   display: inline-block;
   animation-name: tagHide;
   transform-origin: center bottom;
+}
+.uxcore-tag-item-option {
+  cursor: pointer;
 }
 .uxcore-tag-item-option.can-add-count:hover .uxcore-tag-item-count {
   display: none;
@@ -13468,8 +13565,7 @@ a -count:active {
  * All rights reserved.
  */
 .kuma-cascade-multi {
-  position: relative;
-  display: block;
+  float: left;
   overflow: hidden;
   cursor: auto;
   -webkit-user-select: none;
@@ -13501,7 +13597,7 @@ a -count:active {
   -o-text-overflow: ellipsis;
 }
 .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item:hover {
-  background-color: #f5f5f5;
+  background-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item s {
   margin-right: 5px;
@@ -13510,7 +13606,7 @@ a -count:active {
   vertical-align: middle;
 }
 .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item-active {
-  background-color: #f5f5f5;
+  background-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-noData {
   display: block;
@@ -13542,6 +13638,9 @@ a -count:active {
   height: 250px;
   margin: 0;
 }
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree > ul {
+  width: 220px;
+}
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -13558,17 +13657,18 @@ a -count:active {
   color: #999;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-div:hover {
-  background-color: #f5f5f5;
+  background-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-div .tree-node-ul-li-span {
   position: relative;
   display: inline-block;
   width: 100%;
   vertical-align: middle;
+  background-color: transparent;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-div .tree-node-ul-li-span:hover {
   color: rgba(0, 0, 0, 0.6);
-  background-color: #f5f5f5;
+  background-color: transparent;
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-div .tree-node-ul-li-span:hover .tree-node-ul-li-del {
   transform: scale(1);
@@ -13590,9 +13690,9 @@ a -count:active {
 }
 .kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-div .tree-node-ul-li-span .tree-node-ul-li-del {
   position: absolute;
-  right: 25px;
+  right: 42px;
   cursor: pointer;
-  transition: opacity .3s, transform .3s;
+  transition: none;
   transform: scale(0);
   color: #3C99D8;
 }
@@ -13615,9 +13715,17 @@ a -count:active {
 .kuma-cascade-multi-select-panel-content .kuma-cascade-multi-select-footer {
   border-radius: 0 0 6px 6px;
   overflow: hidden;
+  clear: both;
+}
+.kuma-cascade-multi-select-panel-content .kuma-cascade-multi-select-panel-wrap {
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
 }
 .kuma-cascade-multi-input {
   background-color: #fff;
+}
+.kuma-cascade-multi-input::-ms-clear {
+  display: none;
 }
 .kuma-cascade-multi-text-result {
   overflow-x: hidden;
@@ -13631,7 +13739,11 @@ a -count:active {
   border: 0;
   background-color: transparent;
 }
+.kuma-cascade-multi-text-result-input::-ms-clear {
+  display: none;
+}
 .kuma-cascade-multi-select-footer {
+  float: left;
   height: 52px;
   text-align: center;
   border-width: 0 1px 1px 1px;
@@ -13644,7 +13756,7 @@ a -count:active {
   border-radius: 6px;
 }
 /**
- * CascadeMultiSelect Component Style for uxcore
+ * CascadeMultiModal Component Style for uxcore
  * @author guyunxiang
  *
  * Copyright 2015-2017, Uxcore Team, Alinw.
@@ -13669,30 +13781,27 @@ a -count:active {
   border-radius: 2px;
   background-color: #f0f0f0;
 }
-.kuma-cascade-multi-model-result-ul-list:hover .kuma-cascade-multi-model-result-ul-list-remove {
-  transform: scale(1);
-}
-.kuma-cascade-multi-model-result-ul-list:hover .kuma-cascade-multi-model-result-ul-list-content {
-  margin-right: 10px;
-  margin-left: -10px;
-}
 .kuma-cascade-multi-model-result-ul-list-content {
   transition: margin 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: scale(1);
+  margin-right: 10px;
+  margin-left: -10px;
 }
 .kuma-cascade-multi-model-result-ul-list-remove {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 5px;
   cursor: pointer;
-  transition: opacity .3s,transform .3s;
-  transform: scale(0);
+  transform: scale(1);
   vertical-align: middle;
-  opacity: .4;
-  color: #000;
+  opacity: 1;
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-cascade-multi-model-result-ul-list-remove:before {
-  content: 'x';
+  content: '\e610';
+}
+.kuma-cascade-multi-model-result-ul-list-remove:hover {
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-cascade-multi-model-expand {
   cursor: pointer;

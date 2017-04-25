@@ -1,3 +1,28 @@
+## 0.10.7
+
+- [Component] Alert: `CHANGED` new icon
+- [Component] Alert: `CHANGED` new style
+- [Component] Badge:  `CHANGED` style improvement
+- [Component] Calendar: `FIXED` incorrect style
+- [Component] CascadeMultiSelect: `FIXED` incorrect style
+- [Component] Carousel: `CHANGED` lock react-slick version
+- [Component] Collapse: `FIXED` support prop `className`
+- [Component] Icon: `CHANGED` add 20 new icons
+- [Component] Message: `CHANGED` new icon 
+- [Component] Message: `CHANGED` support small size
+- [Component] Message: `CHANGED` a new way to pass instance options
+- [Component] Pagination: `CHANGED` add i18n for unknown total
+- [Component] Pagination: `FIXED` incorrect style
+- [Component] Pickable: `FIXED` fix propType check.
+- [Component] Rate: `FIXED` wrong alwaysTip container width when total is not 5.
+- [Component] Rate: `NEW` add new props `icons`, `actveIcons` & `activeAll`
+- [Component] Select: `FIXED` incorrect style
+- [Component] Steps: `FIXED` incorrect style
+- [Component] Table: `FIXED` method `getCheckStatus` & `selectAll` bug when `rowSelection.isDisabled` is used
+- [Component] Tabs: `CHANGED` brick style adjustment
+- [Component] ToTop: `CHANGED` style adjustment
+- [Component] Transfer: `CHANGED` style adjustment
+
 ## 0.10.6
 
 - [Component] CascadeSelect: ``FIXED` hover and focus color.
