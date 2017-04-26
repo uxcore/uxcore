@@ -2334,12 +2334,12 @@
   color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-input {
-  padding: 5px 10px;
+  padding: 5px 12px;
   height: 36px;
   line-height: 26px;
 }
 .uxcore .kuma-textarea {
-  padding: 9px 10px;
+  padding: 8px 12px;
   line-height: 18px;
   overflow: hidden;
   resize: vertical;
@@ -6056,6 +6056,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab .kuma-tab {
   border: none;
 }
+.uxcore .kuma-tab-bar {
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
 .uxcore .kuma-tab-bar .kuma-tab-tab {
   transition: background-color 0.3s ease-out, color 0.3s ease-out;
   display: inline-block;
@@ -6065,6 +6068,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tab-bar .kuma-tab-tab-active {
   color: #2599f2;
+  border: 1px solid rgba(31, 56, 88, 0.1);
+  border-bottom: none;
 }
 .uxcore .kuma-tab-bar .kuma-tab-tab:hover {
   color: #2599f2;
@@ -6101,7 +6106,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
   position: absolute;
   top: 0px;
-  height: 3px;
+  height: 2px;
   background-color: #2599f2;
   z-index: 1;
   transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
@@ -6119,7 +6124,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
-  padding: 0 45px;
+  padding: 0 24px;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev,
@@ -6195,7 +6200,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-active {
   position: relative;
   background-color: #fff;
-  padding: 0 44px;
+  line-height: 47px;
+  padding: 0 23px;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next {
@@ -6214,12 +6220,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-left: -1px;
   height: 40px;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active {
   position: relative;
-  padding: 0 44px;
+  padding: 0 23px;
   background-color: #fff;
+  line-height: 39px;
 }
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
@@ -6242,6 +6249,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-active {
   color: #2599f2;
+  border: none;
+  border-right: 1px solid rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore .kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-next {
@@ -6310,6 +6319,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   background-color: #fff;
   padding: 0 44px;
+  border: none;
 }
 .uxcore.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
@@ -10759,7 +10769,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-pickable-item {
   display: inline-block;
   height: 28px;
-  padding: 0 20px;
+  padding: 0 12px;
+  min-width: 68px;
+  text-align: center;
   line-height: 26px;
   border: 1px solid rgba(31, 56, 88, 0.3);
   margin-right: 4px;
@@ -10826,7 +10838,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-pickable-item-hook.multiple-active,
 .uxcore .kuma-pickable-item-hook-simple.multiple-active {
-  padding: 0 20px;
+  padding: 0 12px;
 }
 .uxcore .kuma-pickable-item-hook.active,
 .uxcore .kuma-pickable-item-hook-simple.active {
