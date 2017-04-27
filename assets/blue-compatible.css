@@ -5576,6 +5576,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-select2-selection:hover {
   border-color: rgba(31, 56, 88, 0.4);
 }
+.uxcore .kuma-select2-selection:hover .kuma-select2-arrow b {
+  border-color: rgba(31, 56, 88, 0.6) transparent transparent transparent;
+}
 .uxcore .kuma-select2-selection:active {
   border-color: rgba(31, 56, 88, 0.4);
 }
@@ -5621,7 +5624,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   height: 100%;
   text-overflow: ellipsis;
-  padding-left: 10px;
+  padding-left: 12px;
   margin-right: 20px;
   line-height: 34px;
 }
@@ -5903,6 +5906,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-select2-dropdown-menu li.kuma-select2-dropdown-menu-item-selected {
   color: #000000;
   background: rgba(31, 56, 88, 0.04);
+  font-weight: bold;
 }
 .uxcore .kuma-select2-dropdown-search {
   display: block;
@@ -5934,13 +5938,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   padding-right: 20px;
 }
 .uxcore .kuma-select2-selected-has-icon li.kuma-select2-dropdown-menu-item-selected:before {
-  content: "\e611";
+  content: "\e6bf";
   display: block;
   position: absolute;
   color: #2599f2;
   right: 10px;
   top: 0px;
-  font-family: kuma!important;
+  font-family: uxcore!important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -5957,7 +5961,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-select2-inline .kuma-select2-selection__rendered {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 4px;
 }
 .uxcore .kuma-select2-inline .kuma-select2-selection__placeholder {
   position: static;
@@ -10227,7 +10231,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   top: 0;
   left: 3px;
-  color: rgba(31, 56, 88, 0.3);
+  color: rgba(31, 56, 88, 0.4);
   font-size: 12px;
 }
 .uxcore .kuma-multi-select-selection--multiple {
@@ -10238,7 +10242,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 20px;
   line-height: 34px;
 }
@@ -10274,7 +10278,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: none;
 }
 .uxcore .kuma-multi-select-selection--multiple .kuma-multi-select-selection__placeholder {
-  color: rgba(31, 56, 88, 0.3);
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-multi-select-disabled {
   cursor: not-allowed;
@@ -13006,7 +13010,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-uxcore-album.no-rgba .album-overlay .album-control,
 .uxcore .kuma-uxcore-album.no-rgba .album-overlay .album-carousel-control {
-  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .uxcore .kuma-uxcore-album .album-icon {
   font-family: kuma!important;
@@ -13110,8 +13114,8 @@ a .uxcore-count:active {
   cursor: pointer;
 }
 .uxcore .kuma-uxcore-album .album-overlay > .album-control.disabled {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(31, 56, 88, 0.04);
+  color: rgba(31, 56, 88, 0.3);
   cursor: default;
 }
 .uxcore .kuma-uxcore-album .album-overlay > .album-control.album-prev {
@@ -13134,6 +13138,7 @@ a .uxcore-count:active {
   padding-bottom: 100px;
   padding: 20px 20px 120px;
   height: 100%;
+  position: relative;
 }
 .uxcore .kuma-uxcore-album .album-overlay .album-stage > .album-item {
   position: relative;
@@ -13149,6 +13154,45 @@ a .uxcore-count:active {
   margin: auto;
   max-width: 100%;
   max-height: 100%;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 150px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 80px;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item {
+  display: inline-block;
+  width: 40px;
+  height: 26px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item:before {
+  content: '';
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: -1px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item.album-func-button-item__first:before {
+  display: none;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item > .uxcore-icon {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item.disabled > .uxcore-icon {
+  color: rgba(255, 255, 255, 0.2);
 }
 .uxcore .kuma-uxcore-album .album-overlay .album-close {
   position: absolute;
@@ -13193,6 +13237,7 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album .album-carousel-list > .item {
   position: relative;
   display: inline-block;
+  overflow: hidden;
   margin: 0 6px;
   width: 120px;
   height: 72px;
@@ -13227,7 +13272,7 @@ a .uxcore-count:active {
   cursor: pointer;
   width: 24px;
   height: 72px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   line-height: 72px;
   font-size: 26px;
