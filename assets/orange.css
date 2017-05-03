@@ -7925,16 +7925,17 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-upload-picker-visual .kuma-upload-button {
   display: inline-block;
-  background: rgba(31, 58, 88, 0.04);
+  background-color: #fff;
   outline: none;
-  border: 1px dashed rgba(31, 56, 88, 0.2);
+  border: 1px dashed rgba(31, 56, 88, 0.3);
   border-radius: 3px;
   padding-top: 43px;
   font-size: 12px;
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(31, 56, 88, 0.8);
   height: 100%;
   width: 100%;
-  transition: border-color 0.1s, color 0.1s;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
 }
 .kuma-upload-picker-visual .uxicon-zengjia {
   position: absolute;
@@ -7947,6 +7948,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   line-height: normal;
 }
+.kuma-upload-picker:hover .kuma-button {
+  border-color: rgba(31, 56, 88, 0.6);
+  background-color: rgba(31, 56, 88, 0.06);
+}
+.kuma-upload-picker:active .kuma-button {
+  border-color: #1f3858;
+  background-color: rgba(31, 56, 88, 0.1);
+  color: #1f3858;
+}
+.kuma-upload-picker:visited .kuma-button {
+  color: #666;
+}
 .kuma-upload-picker .kuma-upload-button {
   display: inline-block;
   background: #fff;
@@ -7955,11 +7968,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-radius: 3px;
   padding: 0 8px;
   font-size: 12px;
-  color: rgba(31, 56, 88, 0.6);
+  color: rgba(31, 56, 88, 0.8);
   box-sizing: border-box;
   line-height: 26px;
   height: 28px;
-  transition: border-color 0.1s, color 0.1s;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
 }
 .kuma-upload-picker .kuma-upload-button .kuma-icon-uploading {
   margin-right: 3px;
@@ -7967,11 +7981,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-upload-picker .kuma-upload-button > * {
   vertical-align: middle;
-}
-.kuma-upload-picker:hover .kuma-upload-button,
-.kuma-upload-picker.over .kuma-upload-button {
-  border-color: #f60;
-  color: #f60;
 }
 .kuma-upload-tip {
   font-size: 12px;
@@ -8010,6 +8019,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   opacity: 0.6;
   transition: opacity 0.2s;
 }
+.kuma-upload-dropzoom .kuma-upload-picker:hover .kuma-button {
+  border-color: rgba(31, 56, 88, 0.6);
+  background-color: rgba(31, 56, 88, 0.06);
+}
+.kuma-upload-dropzoom .kuma-upload-picker:active .kuma-button {
+  border-color: #1f3858;
+  background-color: rgba(31, 56, 88, 0.1);
+  color: #1f3858;
+}
+.kuma-upload-dropzoom .kuma-upload-picker:visited .kuma-button {
+  color: #666;
+}
 .kuma-upload-dropzoom .kuma-upload-picker .kuma-icon-add {
   position: absolute;
   display: inline-block;
@@ -8040,6 +8061,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 80px;
   height: 80px;
   background: #ebeff2;
+}
+.kuma-upload-dropzoom .kuma-upload-filelist .kuma-upload-picker:hover .kuma-button {
+  border-color: rgba(31, 56, 88, 0.6);
+  background-color: rgba(31, 56, 88, 0.06);
+}
+.kuma-upload-dropzoom .kuma-upload-filelist .kuma-upload-picker:active .kuma-button {
+  border-color: #1f3858;
+  background-color: rgba(31, 56, 88, 0.1);
+  color: #1f3858;
+}
+.kuma-upload-dropzoom .kuma-upload-filelist .kuma-upload-picker:visited .kuma-button {
+  color: #666;
 }
 .kuma-upload-dropzoom .kuma-upload-filelist .kuma-upload-picker .kuma-icon-add {
   margin-top: -20px;
@@ -10288,6 +10321,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 20px;
   color: rgba(31, 56, 88, 0.4);
   line-height: 40px;
+}
+.kuma-totop .box-icon.uxcore-icon {
+  font-size: 22px;
 }
 .kuma-totop .gotop-box {
   display: none;

@@ -1,3 +1,11 @@
+## 0.10.10
+
+- [Component] Button: `NEW` support new prop `ghost`
+- [Component] Button: `CHANGED` prop `type` support new value `white`
+- [Component] ToTop: `CHANGED` new icon
+- [Component] Uploader: `CHANGED` use `uxcore-button` for default trigger
+
+
 ## 0.10.7
 
 - [Component] Alert: `CHANGED` new icon
