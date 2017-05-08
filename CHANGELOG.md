@@ -1,3 +1,7 @@
+## 0.10.11
+
+- [General] add new theme `green`
+
 ## 0.10.10
 
 - [Component] Button: `NEW` support new prop `ghost`
