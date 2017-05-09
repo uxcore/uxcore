@@ -9086,12 +9086,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: table;
   float: left;
   width: 100%;
-  padding: 0 5px 12px 0px;
+  padding: 0 5px 16px 0px;
   *zoom: 1;
 }
 .uxcore .kuma-uxform-field .kuma-label {
+  width: 88px;
   padding-top: 9px;
-  padding-right: 10px;
+  padding-right: 16px;
   vertical-align: top;
 }
 .uxcore .kuma-uxform-field .kuma-label.vertical-align {
@@ -9126,6 +9127,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-left: none;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+}
+.uxcore .kuma-uxform-field__view {
+  padding-bottom: 7px;
 }
 .uxcore .kuma-uxform-count {
   display: table-cell;
@@ -9205,7 +9209,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxform-field-content {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   width: 100%;
 }
 .uxcore .kuma-uxform-field-content .kuma-radio-group > span {
