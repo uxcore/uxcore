@@ -470,14 +470,19 @@ a.kuma-button {
   display: inline-block;
   text-decoration: none;
 }
+a.kuma-button.kuma-button-disabled:hover,
+a.kuma-button.kuma-button-disabled:visited {
+  color: rgba(31, 56, 88, 0.3);
+}
 .kuma-button {
-  padding: 0 24px;
-  height: 36px;
+  padding: 0 16px;
+  margin: 0 4px;
+  height: 32px;
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
   font-size: 14px;
-  line-height: 34px;
+  line-height: 30px;
   box-sizing: border-box;
   transition: all 0.3s ease;
 }
@@ -520,10 +525,10 @@ a.kuma-button {
 .kuma-button-secondary {
   background-color: #ffffff;
   border-color: rgba(31, 56, 88, 0.3);
-  color: rgba(31, 56, 88, 0.8);
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-button-secondary:visited {
-  color: #666;
+  color: rgba(31, 56, 88, 0.6);
 }
 .kuma-button-secondary:hover {
   border-color: rgba(31, 56, 88, 0.6);
@@ -549,14 +554,42 @@ a.kuma-button {
   background-color: rgba(31, 56, 88, 0.04);
   border-color: rgba(31, 56, 88, 0.2);
 }
+.kuma-button-ghost {
+  background-color: transparent;
+}
+.kuma-button-ghost.kuma-button-disabled {
+  background-color: rgba(31, 56, 88, 0.04);
+}
+.kuma-button-white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.kuma-button-white:visited {
+  color: #ffffff;
+}
+.kuma-button-white:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+}
+.kuma-button-white:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.kuma-button-white.kuma-button-disabled {
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
 .kuma-button-lg {
-  padding: 0 24px;
-  height: 44px;
-  line-height: 42px;
+  padding: 0 20px;
+  margin: 0 8px;
+  height: 36px;
+  line-height: 34px;
   font-size: 18px;
 }
 .kuma-button-sm {
-  padding: 0 16px;
+  padding: 0 12px;
+  margin: 0 4px;
   height: 28px;
   line-height: 26px;
   font-size: 12px;
@@ -565,6 +598,7 @@ a.kuma-button {
   display: inline-block;
 }
 .kuma-button-group .kuma-button {
+  margin: 0;
   float: left;
 }
 .kuma-button-group .kuma-button + .kuma-button {

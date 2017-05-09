@@ -1,3 +1,7 @@
+## 0.11.0
+
+- [Component] Button: size change
+
 ## 0.10.11
 
 - [General] add new theme `green`
