@@ -1,3 +1,7 @@
+## 0.11.1
+
+- [Component] Form: label width change
+
 ## 0.11.0
 
 - [Component] Button: size change

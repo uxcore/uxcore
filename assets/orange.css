@@ -8950,7 +8950,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   table-layout: fixed;
 }
 .kuma-uxform-tips {
-  padding-top: 8px;
+  padding-top: 4px;
   color: #999;
 }
 .kuma-uxform-tips .kuma-icon {
@@ -8962,7 +8962,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
 }
 .kuma-uxform-errormsg {
-  padding-top: 8px;
+  padding-top: 4px;
   color: #ea5652;
 }
 .kuma-uxform-errormsg .kuma-icon {
