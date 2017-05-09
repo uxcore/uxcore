@@ -3741,6 +3741,7 @@
 .uxcore .kuma-calendar-year-select .kuma-select2-selection .kuma-select2-selection-selected-value,
 .uxcore .kuma-calendar-month-select .kuma-select2-selection .kuma-select2-selection-selected-value {
   transition: color 0.15s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  padding-right: 25px;
 }
 .uxcore .kuma-calendar-year-select .kuma-select2-arrow,
 .uxcore .kuma-calendar-month-select .kuma-select2-arrow {
@@ -10283,7 +10284,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 168px;
+  width: 166px;
   vertical-align: inherit;
 }
 .uxcore .kuma-multi-select-selection--multiple .kuma-multi-select-selection__rendered {

@@ -3439,6 +3439,7 @@ a.weaker-link {
 .kuma-calendar-year-select .kuma-select2-selection .kuma-select2-selection-selected-value,
 .kuma-calendar-month-select .kuma-select2-selection .kuma-select2-selection-selected-value {
   transition: color 0.15s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  padding-right: 25px;
 }
 .kuma-calendar-year-select .kuma-select2-arrow,
 .kuma-calendar-month-select .kuma-select2-arrow {
@@ -10101,7 +10102,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 168px;
+  width: 166px;
   vertical-align: inherit;
 }
 .kuma-multi-select-selection--multiple .kuma-multi-select-selection__rendered {
