@@ -1,3 +1,10 @@
+## 0.11.4
+
+- [Component] CascadeMultiSelect: `Fixed` fix issue [#13](https://github.com/uxcore/uxcore-cascade-multi-select/issues/13).
+- [Component] Icon: `CHANGED` add 3 new icons
+- [Component] Menu: `CHANGED` add new theme `none-border-dark`
+- [Component] Menu: `CHANGED` none-border theme style change
+
 ## 0.11.1
 
 - [Component] Form: label width change

@@ -2436,7 +2436,7 @@ a.weaker-link {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_5wcc96k7ovoq1tt9.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_5e8txqw758r7wrk9.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -2831,6 +2831,15 @@ a.weaker-link {
 }
 .uxicon-xiazai1:before {
   content: "\e6ca";
+}
+.uxicon-shu1:before {
+  content: "\e648";
+}
+.uxicon-huibiao:before {
+  content: "\e6cb";
+}
+.uxicon-guanbi:before {
+  content: "\e6cc";
 }
 /**
  * Calendar Component Style for uxcore
@@ -9581,6 +9590,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  * All rights reserved.
  */
 .kuma-menu {
+  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
   outline: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -9589,9 +9599,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border: 1px solid rgba(31, 56, 88, 0.3);
   color: rgba(0, 0, 0, 0.6);
   background: #fff;
-}
-.kuma-menu * {
-  transition: all 0.15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-menu-item-group-list {
   margin: 0;
@@ -9620,10 +9627,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-item-active,
 .kuma-menu-submenu-active,
 .kuma-menu-submenu-inline.kuma-menu-submenu-active > .kuma-menu-submenu-title:hover {
-  background-color: #fef1e9;
+  background-color: rgba(242, 113, 39, 0.06);
 }
 .kuma-menu-item-selected {
-  background-color: #fef1e9;
+  background-color: rgba(242, 113, 39, 0.06);
   color: #f37327;
 }
 .kuma-menu > li.kuma-menu-submenu {
@@ -9651,6 +9658,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   display: block;
   white-space: nowrap;
+  transition: all 0.3s ease;
 }
 .kuma-menu-item.kuma-menu-item-disabled,
 .kuma-menu-submenu-title.kuma-menu-item-disabled,
@@ -9841,8 +9849,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border: none;
 }
 .kuma-menu-none-border .kuma-menu-item-selected {
-  background-color: #fafafa;
-  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(242, 113, 39, 0.06);
+  color: #f37327;
   font-weight: bold;
 }
 .kuma-menu-none-border .kuma-menu-item-selected .kuma-icon {
@@ -9853,26 +9861,24 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 100%;
   border-left: 3px solid #f37327;
   position: absolute;
-  left: 0;
+  right: 0;
 }
 .kuma-menu-none-border .kuma-menu-item-active:hover,
+.kuma-menu-none-border .kuma-menu-submenu-active,
 .kuma-menu-none-border .kuma-menu-item-active,
 .kuma-menu-none-border .kuma-menu-submenu-title:hover {
-  background-color: #fafafa;
-  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  color: #f37327;
 }
-.kuma-menu-none-border .kuma-menu-item-active:hover:before,
-.kuma-menu-none-border .kuma-menu-item-active:before,
-.kuma-menu-none-border .kuma-menu-submenu-title:hover:before {
-  content: "";
-  height: 100%;
-  border-left: 3px solid #f37327;
-  position: absolute;
-  left: 0;
+.kuma-menu-none-border .kuma-menu-item-active:hover.kuma-menu-item-selected,
+.kuma-menu-none-border .kuma-menu-submenu-active.kuma-menu-item-selected,
+.kuma-menu-none-border .kuma-menu-item-active.kuma-menu-item-selected,
+.kuma-menu-none-border .kuma-menu-submenu-title:hover.kuma-menu-item-selected {
+  background-color: rgba(242, 113, 39, 0.06);
 }
 .kuma-menu-none-border .kuma-menu-submenu-inline.kuma-menu-submenu-active > .kuma-menu-submenu-title:hover {
-  background-color: #fafafa;
-  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  color: #f37327;
 }
 .kuma-menu-none-border.kuma-menu-vertical .kuma-menu-item,
 .kuma-menu-none-border.kuma-menu-inline .kuma-menu-item,
@@ -9881,6 +9887,91 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 14px;
   line-height: 45px;
   height: 45px;
+}
+.kuma-menu-none-border.kuma-menu-inline .kuma-menu-sub .kuma-menu-submenu-title {
+  background: rgba(31, 56, 88, 0.04);
+  border-bottom: 1px solid white;
+}
+.kuma-menu-none-border.kuma-menu-inline .kuma-menu-sub .kuma-menu-submenu-title:hover {
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-menu-none-border.kuma-menu-inline .kuma-menu-sub .kuma-menu-item {
+  background-color: rgba(31, 56, 88, 0.04);
+  border-bottom: 1px solid white;
+}
+.kuma-menu-none-border.kuma-menu-inline .kuma-menu-sub .kuma-menu-item-selected {
+  background: rgba(242, 113, 39, 0.06);
+}
+.kuma-menu-none-border.kuma-menu-inline .kuma-menu-sub .kuma-menu-item:last-child {
+  border: none;
+}
+.kuma-menu-none-border.kuma-menu-vertical .kuma-menu-sub {
+  border: none;
+  box-shadow: 0 2px 10px 0 rgba(31, 56, 88, 0.15);
+}
+.kuma-menu-none-border.kuma-menu-vertical .kuma-menu-item-selected {
+  background-color: white;
+}
+.kuma-menu-none-border.kuma-menu-vertical .kuma-menu-item-selected:hover {
+  background-color: white;
+}
+.kuma-menu-none-border.kuma-menu-vertical .kuma-menu-item-selected:before {
+  display: none;
+}
+.kuma-menu-none-border-dark {
+  border: none;
+  background: #2C2F33;
+  color: rgba(255, 255, 255, 0.8);
+}
+.kuma-menu-none-border-dark .kuma-menu-item-selected {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+}
+.kuma-menu-none-border-dark .kuma-menu-item-selected .kuma-icon {
+  font-weight: normal;
+}
+.kuma-menu-none-border-dark .kuma-menu-item-selected:before {
+  content: "";
+  height: 100%;
+  border-left: 3px solid #f37327;
+  position: absolute;
+  right: 0;
+}
+.kuma-menu-none-border-dark .kuma-menu-item-active:hover,
+.kuma-menu-none-border-dark .kuma-menu-submenu-active,
+.kuma-menu-none-border-dark .kuma-menu-item-active,
+.kuma-menu-none-border-dark .kuma-menu-submenu-title:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.kuma-menu-none-border-dark .kuma-menu-submenu-inline.kuma-menu-submenu-active > .kuma-menu-submenu-title:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-item,
+.kuma-menu-none-border-dark.kuma-menu-inline .kuma-menu-item,
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-submenu > .kuma-menu-submenu-title,
+.kuma-menu-none-border-dark.kuma-menu-inline .kuma-menu-submenu > .kuma-menu-submenu-title {
+  font-size: 14px;
+  line-height: 45px;
+  height: 45px;
+}
+.kuma-menu-none-border-dark.kuma-menu-inline .kuma-menu-submenu > .kuma-menu {
+  background: #2C2F33;
+  color: rgba(255, 255, 255, 0.8);
+}
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-sub {
+  border: none;
+  box-shadow: 0 2px 10px 0 rgba(31, 56, 88, 0.15);
+}
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-sub .kuma-menu-item-active:hover,
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-sub .kuma-menu-submenu-active,
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-sub .kuma-menu-item-active,
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-sub .kuma-menu-submenu-title:hover,
+.kuma-menu-none-border-dark.kuma-menu-vertical .kuma-menu-sub .kuma-menu-item-selected {
+  background-color: rgba(31, 56, 88, 0.04);
+  color: rgba(0, 0, 0, 0.6);
 }
 @keyframes menuOpen {
   0% {
