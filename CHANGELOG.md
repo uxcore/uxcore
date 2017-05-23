@@ -1,3 +1,8 @@
+## 0.11.5
+
+- [Component] Table: `FIXED` copyData can be changed by `addValuesInData` method
+- [Component] Uploader: `FIXED` `reset` method fails to work
+
 ## 0.11.4
 
 - [Component] CascadeMultiSelect: `Fixed` fix issue [#13](https://github.com/uxcore/uxcore-cascade-multi-select/issues/13).
