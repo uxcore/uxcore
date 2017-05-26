@@ -3174,6 +3174,7 @@ a.weaker-link {
 }
 .kuma-calendar-range {
   overflow: hidden;
+  width: 602px;
 }
 .kuma-calendar-range-part {
   position: relative;
@@ -3257,7 +3258,7 @@ a.weaker-link {
   bottom: 4px;
   left: 0;
   right: 0;
-  background: #debfd1;
+  background: rgba(64, 179, 112, 0.1);
 }
 .kuma-calendar-range .kuma-calendar-in-range-cell .kuma-calendar-date {
   position: relative;

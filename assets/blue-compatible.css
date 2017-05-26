@@ -3476,6 +3476,7 @@
 }
 .uxcore .kuma-calendar-range {
   overflow: hidden;
+  width: 602px;
 }
 .uxcore .kuma-calendar-range-part {
   position: relative;
@@ -3559,7 +3560,7 @@
   bottom: 4px;
   left: 0;
   right: 0;
-  background: #f2f9ff;
+  background: rgba(36, 153, 242, 0.1);
 }
 .uxcore .kuma-calendar-range .kuma-calendar-in-range-cell .kuma-calendar-date {
   position: relative;
