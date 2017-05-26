@@ -10338,21 +10338,36 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: #fff;
 }
 .kuma-multi-select-footer {
-  text-align: center;
-  padding: 12px;
+  padding: 16px 12px 0;
   border-top: 1px solid rgba(31, 56, 88, 0.1);
-}
-.kuma-multi-select-footer > p {
-  margin-bottom: 4px;
+  position: relative;
+  height: 50px;
 }
 .kuma-multi-select-footer-hidden {
   display: none;
 }
-.kuma-multi-select-footer .kuma-multi-select-button {
-  margin-right: 12px;
+.kuma-multi-select-footer .kuma-multi-select-button-group {
+  position: absolute;
+  right: 12px;
+  top: 11px;
 }
 .kuma-multi-select-footer .kuma-multi-select-button-hidden {
   display: none;
+}
+.kuma-multi-select-footer .kuma-multi-select-select-all {
+  cursor: pointer;
+}
+.kuma-multi-select-footer .kuma-multi-select-select-all-checkbox .kuma-checkbox + s,
+.kuma-multi-select-footer .kuma-multi-select-select-all-checkbox .half-checked {
+  margin-right: 8px;
+}
+.kuma-multi-select-footer .kuma-multi-select-select-all-checkbox .half-checked {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%2340b370%22%20stroke%3D%22%2340b370%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  vertical-align: text-bottom;
+  color: #40b370;
 }
 /**
  * Crumb Component Style for uxcore
