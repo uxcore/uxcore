@@ -1,3 +1,13 @@
+## 0.12.0
+
+- [Component] Form: `CHANGED` filter invalid letter in `NumberInput`
+- [Component] MultiSelect: `CHANGED` footer redesign
+- [Component] Pagination: `CHANGED` add quick jumper button 
+- [Component] Pagination: `CHANGED` quick jumper input value follow the current page
+- [Component] Pickable: `CHANGED` add new prop `enableFold`
+- [Component] Pickable: `NEW` add new prop `defaultFoldItems`， `locale`, `maxLines`
+
+
 ## 0.11.5
 
 - [Component] Table: `FIXED` copyData can be changed by `addValuesInData` method

@@ -5181,6 +5181,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-page-options-quick-jumper input:focus {
   background-color: #fff;
 }
+.kuma-page-options-quick-jumper-button {
+  margin-left: 8px;
+}
 .kuma-page-simple .kuma-page-prev,
 .kuma-page-simple .kuma-page-next {
   font-size: 10px;
@@ -5257,6 +5260,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input:focus {
   background-color: #fff;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper-button {
+  height: 18px;
+  line-height: 18px;
 }
 .kuma-page.mini .kuma-page-options .kuma-page-options-size-changer .kuma-select2-selection {
   height: 18px;
@@ -10799,6 +10806,41 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  * Copyright 2014-2015, Uxcore Team, Alinw.
  * All rights reserved.
  */
+.kuma-pickable {
+  display: table;
+}
+.kuma-pickable-toggle-more {
+  display: table-cell;
+}
+.kuma-pickable-toggle-more {
+  width: 56px;
+  padding-left: 16px;
+  color: #3C99D8;
+  cursor: pointer;
+}
+.kuma-pickable-en .kuma-pickable-toggle-more {
+  width: 66px;
+}
+.kuma-pickable-toggle-more-icon {
+  font-size: 12px;
+  margin-left: 4px;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  transform-origin: center center;
+  position: relative;
+  transform: rotate(180deg);
+  top: -2px;
+}
+.kuma-pickable-toggle-more__fold .kuma-pickable-toggle-more-icon {
+  transform: rotate(0deg);
+  top: 0px;
+}
+.kuma-pickable-items__fold {
+  height: 36px;
+  overflow: hidden;
+}
 .kuma-pickable-item {
   display: inline-block;
   height: 28px;

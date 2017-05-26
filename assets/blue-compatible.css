@@ -5462,6 +5462,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-page-options-quick-jumper input:focus {
   background-color: #fff;
 }
+.uxcore .kuma-page-options-quick-jumper-button {
+  margin-left: 8px;
+}
 .uxcore .kuma-page-simple .kuma-page-prev,
 .uxcore .kuma-page-simple .kuma-page-next {
   font-size: 10px;
@@ -5538,6 +5541,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input:focus {
   background-color: #fff;
+}
+.uxcore .kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper-button {
+  height: 18px;
+  line-height: 18px;
 }
 .uxcore .kuma-page.mini .kuma-page-options .kuma-page-options-size-changer .kuma-select2-selection {
   height: 18px;
@@ -10935,6 +10942,41 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .message-moveUp-leave-active {
   animation-name: msgMoveUpOut;
+}
+.uxcore .kuma-pickable {
+  display: table;
+}
+.uxcore .kuma-pickable-toggle-more {
+  display: table-cell;
+}
+.uxcore .kuma-pickable-toggle-more {
+  width: 56px;
+  padding-left: 16px;
+  color: #3C99D8;
+  cursor: pointer;
+}
+.kuma-pickable-en .uxcore .kuma-pickable-toggle-more {
+  width: 66px;
+}
+.uxcore .kuma-pickable-toggle-more-icon {
+  font-size: 12px;
+  margin-left: 4px;
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  transform-origin: center center;
+  position: relative;
+  transform: rotate(180deg);
+  top: -2px;
+}
+.uxcore .kuma-pickable-toggle-more__fold .kuma-pickable-toggle-more-icon {
+  transform: rotate(0deg);
+  top: 0px;
+}
+.uxcore .kuma-pickable-items__fold {
+  height: 36px;
+  overflow: hidden;
 }
 .uxcore .kuma-pickable-item {
   display: inline-block;
