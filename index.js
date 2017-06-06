@@ -27,6 +27,7 @@ var MultiSelect = require('./lib/MultiSelect');
 var Message = require('./lib/Message');
 var Pagination = require('./lib/Pagination');
 var Pickable = require('./lib/Pickable');
+var PickableFormField = require('./lib/PickableFormField');
 var Popover = require('./lib/Popover');
 var Progress = require('./lib/Progress');
 var RadioGroup = require('./lib/RadioGroup');
@@ -38,6 +39,7 @@ var Table = require('./lib/Table');
 var Tabs = require('./lib/Tabs');
 var Tag = require('./lib/Tag');
 var Timeline = require('./lib/Timeline');
+var Title = require('./lib/Title');
 var Tooltip = require('./lib/Tooltip');
 var Tree = require('./lib/Tree');
 var TreeSelect = require('./lib/TreeSelect');
@@ -76,6 +78,7 @@ module.exports = {
   Message: Message,
   Pagination: Pagination,
   Pickable: Pickable,
+  PickableFormField: PickableFormField,
   Popover: Popover,
   Progress: Progress,
   RadioGroup: RadioGroup,
@@ -87,6 +90,7 @@ module.exports = {
   Tabs: Tabs,
   Tag: Tag,
   Timeline: Timeline,
+  Title: Title,
   Tooltip: Tooltip,
   Tree: Tree,
   TreeSelect: TreeSelect,

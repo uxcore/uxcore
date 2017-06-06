@@ -1,3 +1,12 @@
+## 0.13.0
+
+- [Component] Dialog: `FIXED` close icon encoding bug
+- [Component] Transfer: `FIXED` text overflow style bug
+- [Component] Uploader: `FIXED` filename overflow style bug
+- [Component] Uploader: `FIXED` missing `action-remove` in some remove button
+- [General] add new component `PickableFormField`, `Title` 
+
+
 ## 0.12.0
 
 - [Component] Form: `CHANGED` filter invalid letter in `NumberInput`

@@ -236,6 +236,13 @@
  * All rights reserved.
  */
   /**
+ * Title Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+  /**
  * Mention Component Style for uxcore
  * @author
  *
@@ -349,6 +356,13 @@
  * @author onbing
  *
  * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+  /**
+ * PickableFormField Component Style for uxcore
+ * @author FE-Girl
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -4740,15 +4754,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-decoration: none;
 }
 .uxcore .kuma-dlg-close-x {
-  font-family: kuma!important;
+  font-family: uxcore!important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: .2px;
   -moz-osx-font-smoothing: grayscale;
   color: rgba(31, 56, 88, 0.4);
+  font-size: 12px;
 }
 .uxcore .kuma-dlg-close-x:after {
-  content: '';
+  content: "\e6b0";
 }
 .uxcore .kuma-dlg.kuma-dlg-noheader .kuma-dlg-close {
   right: 16px;
@@ -7579,6 +7594,33 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .no-svg .kuma-tree-checkbox-disabled {
   background-position: 0 -28px !important;
 }
+.uxcore .kuma-title-primary {
+  font-size: 20px;
+  margin: 24px 0 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.uxcore .kuma-title-secondary {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 30px 0 20px;
+  position: relative;
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+  line-height: 32px;
+}
+.uxcore .kuma-title-secondary:before {
+  content: '';
+  border-left: 3px solid #f37327;
+  height: 14px;
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+}
+.uxcore .kuma-title-thirdary {
+  color: rgba(31, 56, 88, 0.6);
+  font-size: 14px;
+  margin: 20px 0 12px;
+}
 .uxcore .kuma-mention {
   position: relative;
 }
@@ -8598,6 +8640,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-info {
   display: inline-block;
   margin-left: 18px;
+  width: calc(100% - 138px);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-info .kuma-loading {
   display: inline-block;
@@ -8611,6 +8656,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 12px;
   vertical-align: middle;
   white-space: nowrap;
+  width: 79px;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-status {
   margin-left: 0;
@@ -8860,6 +8906,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 12px;
   border-collapse: separate;
   display: inline-block;
+  width: 480px;
 }
 .uxcore .kuma-uxtransfer-container th {
   font-weight: 400;
@@ -8921,7 +8968,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtransfer-container td .kuma-uxtransfer-block a {
   display: block;
   height: 32px;
-  padding: 0 16px;
+  padding: 0 20px 0 16px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
