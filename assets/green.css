@@ -14214,6 +14214,10 @@ a -count:active {
 }
 .kuma-cascader-trigger {
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 30px;
 }
 .kuma-cascader-text {
   line-height: 34px;

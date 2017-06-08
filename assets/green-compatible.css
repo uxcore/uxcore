@@ -14244,6 +14244,10 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-cascader-trigger {
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 30px;
 }
 .uxcore .kuma-cascader-text {
   line-height: 34px;

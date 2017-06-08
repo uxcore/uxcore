@@ -1,3 +1,9 @@
+## 0.13.1
+
+- [Component] CascadeSelect: `NEW`: columnWidth prop, remove dropDownWidth prop
+- [Component] Pickable: `FIXED` iteration bug when rootWidth is 0
+- [Component] Uploader: `FIXED` render an empty container if tips is empty
+
 ## 0.13.0
 
 - [Component] Dialog: `FIXED` close icon encoding bug
