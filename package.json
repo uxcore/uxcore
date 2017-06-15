@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.13.1",
+ "version": "0.13.2",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -93,7 +93,7 @@
   "uxcore-load-more": "0.1.2",
   "uxcore-matrix": "0.2.0",
   "uxcore-mention": "0.3.10",
-  "uxcore-menu": "1.6.0",
+  "uxcore-menu": "1.6.1",
   "uxcore-message": "0.4.0",
   "uxcore-multi-select": "0.4.0",
   "uxcore-pagination": "0.6.0",
@@ -107,9 +107,9 @@
   "uxcore-splitter": "0.1.4",
   "uxcore-steps": "2.0.3",
   "uxcore-switch": "0.1.5",
-  "uxcore-table": "6.0.0",
+  "uxcore-table": "6.1.0",
   "uxcore-tabs": "0.6.4",
-  "uxcore-tag": "2.0.2",
+  "uxcore-tag": "2.1.0",
   "uxcore-timeline": "0.2.0",
   "uxcore-title": "0.1.1",
   "uxcore-tooltip": "0.4.5",

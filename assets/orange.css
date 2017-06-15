@@ -6660,7 +6660,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 36px;
 }
 .kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-calender,
-.kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-close {
+.kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-close,
+.kuma-date-cell-field .kuma-calendar-picker-input .kuma-calendar-trigger-icon {
   line-height: 24px;
 }
 .kuma-uxtable-header .kuma-uxtable-cell > div {
@@ -9703,6 +9704,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-item,
 .kuma-menu-submenu-title {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
   position: relative;
   display: block;
   white-space: nowrap;

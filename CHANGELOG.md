@@ -1,3 +1,11 @@
+## 0.13.2
+
+- [Component] Menu: `FIXED` text overflow style
+- [Component] Table: `NEW` add new method `viewAllRow`, `resetAllRow` and `resetAndViewAllRow`.
+- [Component] Table: `FIXED` DateCellField icon style
+- [Component] Table: `FIXED` undefined bug if column is fixed in `Header`
+- [Component] Tag: `CHANGED` prop `onAdd` support callback to prevent input reset
+
 ## 0.13.1
 
 - [Component] CascadeSelect: `NEW`: columnWidth prop, remove dropDownWidth prop
