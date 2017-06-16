@@ -1,3 +1,7 @@
+## 0.13.3
+
+- [General] `FIXED` server render support
+
 ## 0.13.2
 
 - [Component] Menu: `FIXED` text overflow style
