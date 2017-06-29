@@ -2759,7 +2759,7 @@
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_5e8txqw758r7wrk9.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_f47r2ve81a21q0k9.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -3163,6 +3163,33 @@
 }
 .uxcore .uxicon-guanbi:before {
   content: "\e6cc";
+}
+.uxcore .uxicon-yincang:before {
+  content: "\e6d5";
+}
+.uxcore .uxicon-yuyuechenggong:before {
+  content: "\e600";
+}
+.uxcore .uxicon-yuyue:before {
+  content: "\e649";
+}
+.uxcore .uxicon-dianzan:before {
+  content: "\e64a";
+}
+.uxcore .uxicon-baocun:before {
+  content: "\e6d9";
+}
+.uxcore .uxicon-ceshi:before {
+  content: "\e6da";
+}
+.uxcore .uxicon-shanjian-full:before {
+  content: "\e6de";
+}
+.uxcore .uxicon-zengjia-full:before {
+  content: "\e6df";
+}
+.uxcore .uxicon-moren:before {
+  content: "\e64c";
 }
 .uxcore .kuma-calendar {
   box-sizing: border-box;
@@ -14095,6 +14122,7 @@ a .uxcore-count:active {
 .uxcore .kuma-cascade-multi-select-panel-content .kuma-cascade-multi-select-panel-wrap {
   border-radius: 6px;
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
+  zoom: 1;
 }
 .uxcore .kuma-cascade-multi-input {
   background-color: #fff;

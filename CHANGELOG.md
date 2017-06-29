@@ -1,3 +1,10 @@
+## 0.14.0
+
+- [Component] Badge: `CHANGED` add displayName
+- [Component] CascadeMultiSelect: `FIXED`: dom-align fail to work
+- [Component] Icon: `CHANGED` add 9 new icons
+- [Component] Table: `NEW` support new prop `shouldResetExpandedKeys`
+
 ## 0.13.3
 
 - [General] `FIXED` server render support
