@@ -1998,39 +1998,39 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-textarea[readonly],
 .kuma-input[disabled],
 .kuma-textarea[disabled] {
-  border: 1px solid rgba(31, 56, 88, 0.2);
+  border: 1px solid #D1D7DE;
   background: rgba(31, 56, 88, 0.04);
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-input:hover,
 .kuma-textarea:hover {
-  border: 1px rgba(31, 56, 88, 0.4) solid;
+  border: 1px #A3AEBD solid;
 }
 .kuma-input:hover[readonly],
 .kuma-textarea:hover[readonly],
 .kuma-input:hover[disabled],
 .kuma-textarea:hover[disabled] {
-  border: 1px solid rgba(31, 56, 88, 0.2);
+  border: 1px solid #D1D7DE;
 }
 .kuma-input:focus,
 .kuma-textarea:focus {
-  border: 1px rgba(31, 56, 88, 0.6) solid;
+  border: 1px #77879C solid;
   outline: none;
 }
 .kuma-input:focus[readonly],
 .kuma-textarea:focus[readonly],
 .kuma-input:focus[disabled],
 .kuma-textarea:focus[disabled] {
-  border: 1px solid rgba(31, 56, 88, 0.2);
+  border: 1px solid #D1D7DE;
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-input.kuma-input-hover,
 .kuma-textarea.kuma-input-hover {
-  border: 1px rgba(31, 56, 88, 0.4) solid;
+  border: 1px #A3AEBD solid;
 }
 .kuma-input.kuma-input-focus,
 .kuma-textarea.kuma-input-focus {
-  border: 1px rgba(31, 56, 88, 0.6) solid;
+  border: 1px #77879C solid;
   outline: none;
 }
 .kuma-input::-webkit-input-placeholder,
@@ -2325,13 +2325,13 @@ a.weaker-link {
   border-color: #BAC3CC;
 }
 .border-hover-color {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .border-focus-color {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
 }
 .border-disabled-color {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .border-danger-color {
   border-color: #F04631;
@@ -3078,10 +3078,10 @@ a.weaker-link {
   color: rgba(0, 0, 0, 0.8);
 }
 .kuma-calendar-picker-input .kuma-input[readonly]:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-calendar-picker-input .kuma-input[readonly]:focus {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
 }
 .kuma-calendar-picker-input .kuma-input[disabled] {
   cursor: not-allowed;
@@ -5203,7 +5203,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: top;
 }
 .kuma-page-options-quick-jumper input:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-page-options-quick-jumper input:focus {
   background-color: #fff;
@@ -5244,7 +5244,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   text-align: center;
 }
 .kuma-page-simple .kuma-page-simple-pager input:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-page.mini .kuma-page-prev,
 .kuma-page.mini .kuma-page-next,
@@ -5283,7 +5283,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 18px;
 }
 .kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input:focus {
   background-color: #fff;
@@ -5371,13 +5371,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-radius: 3px;
 }
 .kuma-select2-selection:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-select2-selection:hover .kuma-select2-arrow b {
   border-color: rgba(31, 56, 88, 0.6) transparent transparent transparent;
 }
 .kuma-select2-selection:active {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-select2-selection__placeholder {
   position: absolute;
@@ -5386,13 +5386,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 34px;
 }
 .kuma-select2-focused .kuma-select2-selection {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-select2-enabled .kuma-select2-selection:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-select2-enabled .kuma-select2-selection:active {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-select2-selection-selected-value {
   position: absolute;
@@ -5607,12 +5607,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   cursor: not-allowed;
 }
 .kuma-select2-disabled .kuma-select2-selection {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
   background-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-select2-disabled .kuma-select2-selection:hover,
 .kuma-select2-disabled .kuma-select2-selection:active {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .kuma-select2-disabled .kuma-select2-selection__choice {
   background-color: rgba(31, 56, 88, 0.06);
@@ -5629,7 +5629,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-select2-disabled .kuma-select2-selection__choice__remove:hover,
 .kuma-select2-disabled .kuma-select2-selection--single:active,
 .kuma-select2-disabled .kuma-select2-selection__choice__remove:active {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .kuma-select2-dropdown {
   background-color: white;
@@ -7405,7 +7405,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   overflow: auto;
 }
 .kuma-mention-editor:focus {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
   outline: 0 none;
 }
 .kuma-mention-node {
@@ -9005,10 +9005,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   padding-top: 5px;
 }
 .kuma-uxform-left-icon-hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-uxform-left-icon-focus {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
   outline: none;
 }
 .kuma-uxform-right-icon {
@@ -9024,12 +9024,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-input:focus + .kuma-uxform-right-icon,
 .kuma-input:focus + .kuma-uxform-count {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
   outline: none;
 }
 .kuma-input:hover + .kuma-uxform-right-icon,
 .kuma-input:hover + .kuma-uxform-count {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-uxform-field-core {
   display: table;
@@ -9109,10 +9109,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-color: #BAC3CC;
 }
 .kuma-editor-uxform-field .mce-tinymce:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-editor-uxform-field .mce-tinymce:focus {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
 }
 .kuma-pickable-uxform-field .kuma-uxform-field-content {
   padding-top: 4px;
@@ -9134,11 +9134,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 100%;
 }
 .kuma-search-uxform-field:hover .kuma-search-uxform-field-icon {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
   color: rgba(31, 56, 88, 0.6);
 }
 .kuma-search-uxform-field:hover .kuma-select2-selection {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-search-uxform-field .kuma-select2 {
   width: 200px;
@@ -10275,7 +10275,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border: 1px solid #BAC3CC;
 }
 .kuma-multi-select-selection:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-multi-select-selection:hover .kuma-multi-select-arrow {
   color: rgba(31, 56, 88, 0.6);
@@ -10344,11 +10344,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-multi-select-disabled .kuma-multi-select-selection {
   background: rgba(31, 56, 88, 0.04);
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .kuma-multi-select-disabled .kuma-multi-select-selection:hover,
 .kuma-multi-select-disabled .kuma-multi-select-selection:active {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .kuma-multi-select-disabled .kuma-multi-select-arrow {
   color: rgba(31, 56, 88, 0.2);
@@ -10357,7 +10357,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   content: '\e613';
 }
 .kuma-multi-select-open .kuma-multi-select-selection {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-multi-select-mask {
   position: fixed;
@@ -10941,7 +10941,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 .kuma-pickable-item:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
   color: rgba(31, 56, 88, 0.8);
 }
 .kuma-pickable-item:focus,
@@ -12267,22 +12267,22 @@ a -count:active {
   border: 1px solid #BAC3CC;
 }
 .uxcore-tree-select-selection:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .uxcore-tree-select-selection:active {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .uxcore-tree-select-selection__placeholder i {
   font-style: normal;
 }
 .uxcore-tree-select-focused .uxcore-tree-select-selection {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .uxcore-tree-select-enabled .uxcore-tree-select-selection:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .uxcore-tree-select-enabled .uxcore-tree-select-selection:active {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .uxcore-tree-select-selection-selected-value {
   overflow: hidden;
@@ -12347,7 +12347,7 @@ a -count:active {
 }
 .uxcore-tree-select-disabled .uxcore-tree-select-selection:hover,
 .uxcore-tree-select-disabled .uxcore-tree-select-selection:active {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .uxcore-tree-select-disabled .uxcore-tree-select-selection--single,
 .uxcore-tree-select-disabled .uxcore-tree-select-selection__choice__remove {
@@ -12358,7 +12358,7 @@ a -count:active {
 .uxcore-tree-select-disabled .uxcore-tree-select-selection__choice__remove:hover,
 .uxcore-tree-select-disabled .uxcore-tree-select-selection--single:active,
 .uxcore-tree-select-disabled .uxcore-tree-select-selection__choice__remove:active {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .uxcore-tree-select-search__field__wrap {
   display: inline-block;
@@ -14186,10 +14186,10 @@ a -count:active {
   transition: all .3s;
 }
 .kuma-cascader-wrapper:hover {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .kuma-cascader-wrapper:hover .kuma-icon {
-  color: rgba(31, 56, 88, 0.4);
+  color: #A3AEBD;
 }
 .kuma-cascader-clearable:hover .kuma-cascader-close-wrap {
   visibility: visible;
@@ -14216,30 +14216,30 @@ a -count:active {
 }
 .kuma-cascader-disabled {
   background: rgba(31, 56, 88, 0.04);
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
   color: rgba(31, 56, 88, 0.3);
   cursor: not-allowed;
 }
 .kuma-cascader-disabled .kuma-icon {
-  color: rgba(31, 56, 88, 0.2);
+  color: #D1D7DE;
 }
 .kuma-cascader-disabled:hover {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .kuma-cascader-disabled:hover .kuma-icon {
-  color: rgba(31, 56, 88, 0.2);
+  color: #D1D7DE;
 }
 .kuma-cascader-focus {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
 }
 .kuma-cascader-focus .kuma-icon {
-  color: rgba(31, 56, 88, 0.6);
+  color: #77879C;
 }
 .kuma-cascader-focus:hover {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
 }
 .kuma-cascader-focus:hover .kuma-icon {
-  color: rgba(31, 56, 88, 0.6);
+  color: #77879C;
 }
 .kuma-cascader-trigger {
   cursor: pointer;
