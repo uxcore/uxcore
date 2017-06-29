@@ -23,8 +23,8 @@ Before posting an issue, please read the [CHANGELOG](https://github.com/uxcore/u
 The fastest way to get started is to serve JavaScript from the CDN
 
 ```html
-<link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.1.1/orange.min.css">
-<script src="//g.alicdn.com/uxcore/uxcore/0.1.28/uxcore.min.js">
+<link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/orange.min.css">
+<script src="//g.alicdn.com/uxcore/uxcore/0.1.29/uxcore.min.js">
 ```
 
 if you'd like to use [npm](npmjs.com)
