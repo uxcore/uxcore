@@ -9742,6 +9742,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   width: 10px;
 }
+.kuma-menu-inline .kuma-menu-item > div,
+.kuma-menu-inline .kuma-menu-submenu-title > div {
+  display: inline-block;
+}
 .kuma-menu-item.kuma-menu-item-disabled,
 .kuma-menu-submenu-title.kuma-menu-item-disabled,
 .kuma-menu-item.kuma-menu-submenu-disabled,
@@ -10008,7 +10012,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
 }
-.kuma-menu-none-border-dark .kuma-menu-item-selected:before {
+.kuma-menu-none-border-dark .kuma-menu-item-selected:after {
   content: "";
   height: 100%;
   border-left: 3px solid #2599f2;
