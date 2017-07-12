@@ -9910,14 +9910,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-decoration: none;
 }
 .uxcore .kuma-menu-inline > .uxcore .kuma-menu-item-active,
-.uxcore .kuma-menu-submenu-inline.uxcore .kuma-menu-submenu-active,
-.uxcore .kuma-menu-submenu-inline.uxcore .kuma-menu-submenu-active > .uxcore .kuma-menu-submenu-title:hover {
+.uxcore .kuma-menu-submenu-inline.kuma-menu-submenu-active,
+.uxcore .kuma-menu-submenu-inline.kuma-menu-submenu-active > .uxcore .kuma-menu-submenu-title:hover {
   background-color: #fff;
 }
 .uxcore .kuma-menu-inline > .uxcore .kuma-menu-item-active:hover,
 .uxcore .kuma-menu-item-active,
 .uxcore .kuma-menu-submenu-active,
-.uxcore .kuma-menu-submenu-inline.uxcore .kuma-menu-submenu-active > .uxcore .kuma-menu-submenu-title:hover {
+.uxcore .kuma-menu-submenu-inline.kuma-menu-submenu-active > .uxcore .kuma-menu-submenu-title:hover {
   background-color: rgba(242, 113, 39, 0.06);
 }
 .uxcore .kuma-menu-item-selected {
@@ -9952,6 +9952,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
   white-space: nowrap;
   transition: all 0.3s ease;
+}
+.kuma-menu-inline .uxcore .kuma-menu-item:before,
+.kuma-menu-inline .uxcore .kuma-menu-submenu-title:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
 }
 .uxcore .kuma-menu-item.kuma-menu-item-disabled,
 .uxcore .kuma-menu-submenu-title.kuma-menu-item-disabled,
@@ -10144,12 +10150,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-none-border .kuma-menu-item-selected {
   background-color: rgba(242, 113, 39, 0.06);
   color: #f37327;
-  font-weight: bold;
 }
 .uxcore .kuma-menu-none-border .kuma-menu-item-selected .kuma-icon {
   font-weight: normal;
 }
-.uxcore .kuma-menu-none-border .kuma-menu-item-selected:before {
+.uxcore .kuma-menu-none-border .kuma-menu-item-selected:after {
   content: "";
   height: 100%;
   border-left: 3px solid #f37327;
@@ -10219,10 +10224,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-none-border-dark .kuma-menu-item-selected {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  font-weight: bold;
-}
-.uxcore .kuma-menu-none-border-dark .kuma-menu-item-selected .kuma-icon {
-  font-weight: normal;
 }
 .uxcore .kuma-menu-none-border-dark .kuma-menu-item-selected:before {
   content: "";

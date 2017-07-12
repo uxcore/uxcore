@@ -9736,6 +9736,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   transition: all 0.3s ease;
 }
+.kuma-menu-inline .kuma-menu-item:before,
+.kuma-menu-inline .kuma-menu-submenu-title:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+}
 .kuma-menu-item.kuma-menu-item-disabled,
 .kuma-menu-submenu-title.kuma-menu-item-disabled,
 .kuma-menu-item.kuma-menu-submenu-disabled,
@@ -9927,12 +9933,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-none-border .kuma-menu-item-selected {
   background-color: rgba(36, 153, 242, 0.06);
   color: #2599f2;
-  font-weight: bold;
 }
 .kuma-menu-none-border .kuma-menu-item-selected .kuma-icon {
   font-weight: normal;
 }
-.kuma-menu-none-border .kuma-menu-item-selected:before {
+.kuma-menu-none-border .kuma-menu-item-selected:after {
   content: "";
   height: 100%;
   border-left: 3px solid #2599f2;
@@ -10002,10 +10007,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-none-border-dark .kuma-menu-item-selected {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  font-weight: bold;
-}
-.kuma-menu-none-border-dark .kuma-menu-item-selected .kuma-icon {
-  font-weight: normal;
 }
 .kuma-menu-none-border-dark .kuma-menu-item-selected:before {
   content: "";

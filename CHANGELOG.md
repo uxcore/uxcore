@@ -1,3 +1,9 @@
+## 0.14.2
+
+- [Component] Select: `CHNAGED` update `rc-select` to ~6.8.0
+
+
+
 ## 0.14.1
 
 - [Style] `CHANGED` use non-alpha color for border-color to fix latest chrome render bug [#8](https://github.com/uxcore/kuma-base/issues/8)
