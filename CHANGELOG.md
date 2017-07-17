@@ -1,3 +1,10 @@
+## 0.14.5
+
+- [Component] Table: `FIXED` `checkBodyHScroll` may throw error if `rightFixedTable` is not defined
+- [Component] Table: `FIXED` rightFixedTable position bug if table width is too large to scroll.
+- [Component] Table: `FIXED` `action.isDisable` fail to work.
+- [Component] Table: `CHANGED` pass rowData to `action.isDisable`
+
 ## 0.14.2
 
 - [Component] Select: `CHNAGED` update `rc-select` to ~6.8.0
