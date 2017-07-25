@@ -1,3 +1,7 @@
+## 0.14.6
+
+- [Style] `FIXED` button font-size & padding
+
 ## 0.14.5
 
 - [Component] Table: `FIXED` `checkBodyHScroll` may throw error if `rightFixedTable` is not defined

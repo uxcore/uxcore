@@ -480,7 +480,7 @@ a.kuma-button.kuma-button-disabled:visited {
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 30px;
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -581,13 +581,13 @@ a.kuma-button.kuma-button-disabled:visited {
   color: rgba(255, 255, 255, 0.3);
 }
 .kuma-button-lg {
-  padding: 0 20px;
+  padding: 0 16px;
   height: 36px;
   line-height: 34px;
-  font-size: 18px;
+  font-size: 14px;
 }
 .kuma-button-sm {
-  padding: 0 12px;
+  padding: 0 8px;
   height: 28px;
   line-height: 26px;
   font-size: 12px;
