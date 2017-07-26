@@ -1,3 +1,11 @@
+## 0.14.7
+
+- [Component] MultiSelect: `FIXED` button style bug
+- [Component] PickableFormField: `CHANGED` update formfield version
+- [Component] Steps: `FIXED` style fix for long step title
+- [Component] Table: `CHANGED` `resetRow` & `resetAllRow` will do validate
+- [Component] Table: `FIXED` fixed Row height not equal to main table if multiline row mode is on
+
 ## 0.14.6
 
 - [Style] `FIXED` button font-size & padding
