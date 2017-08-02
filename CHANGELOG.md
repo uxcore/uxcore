@@ -1,3 +1,14 @@
+## 0.14.8
+
+- [Component] Calendar: `CHANGED` support new props `yearSelectOffset` & `yearSelectTotal` 
+- [Component] Mention: `CHANGED` support multiple mention
+- [Component] Popover: `CHANGED` support new prop `align`
+- [Component] Select: `CHANGED` hide combobox arrow
+- [Component] Table:  `CHANGED` hide vertical scrollBar if body can not scroll vertically.
+- [Component] Table:  `NEW` support a new type `split-line`.
+- [Component] Uploader:  `FIXED` Fix image uploader filename overflow styles
+- [Component] Uploader:  `FIXED` Add filename title attribute
+
 ## 0.14.7
 
 - [Component] MultiSelect: `FIXED` button style bug

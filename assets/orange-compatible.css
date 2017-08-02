@@ -5653,6 +5653,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-width: 4px 4px 0 4px;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
+.uxcore .kuma-select2-combobox .kuma-select2-arrow {
+  display: none;
+}
 .uxcore .kuma-select2-selection {
   outline: none;
   -moz-user-select: none;
@@ -7158,9 +7161,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-left-fixed-table {
   left: 0;
+  border-right: 1px solid rgba(31, 56, 88, 0.1);
 }
 .uxcore .kuma-uxtable-right-fixed-table {
   right: 0;
+  border-left: 1px solid rgba(31, 56, 88, 0.1);
 }
 .uxcore .kuma-uxtable-body-no {
   height: 100%;
@@ -7184,6 +7189,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-header-scroll .kuma-uxtable-header {
   background-color: rgba(31, 56, 88, 0.06);
+}
+.uxcore .kuma-uxtable-header-scroll.kuma-uxtable-no-v-scroll,
+.uxcore .kuma-uxtable-body-scroll.kuma-uxtable-no-v-scroll {
+  overflow-y: auto;
 }
 .uxcore .kuma-uxtable-header-column-group {
   display: inline-block;
@@ -7226,33 +7235,37 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-tree-mode .kuma-uxtable-content .kuma-uxtable-row.kuma-uxtable-row-hover .kuma-uxtable-row-cells {
   background-color: white;
 }
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-content {
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-content,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-content {
   border: 1px solid rgba(31, 56, 88, 0.1);
 }
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells {
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-row.even .kuma-uxtable-row-cells {
   background: white;
 }
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-row .kuma-uxtable-row-cells {
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-row .kuma-uxtable-row-cells,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-row .kuma-uxtable-row-cells {
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-row.last .kuma-uxtable-row-cells {
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-row.last .kuma-uxtable-row-cells,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-row.last .kuma-uxtable-row-cells {
   border-bottom: none;
+}
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-cell.last,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-cell.last {
+  border-right: none;
+}
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-header-group-name,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-header-group-name {
+  border-right: 1px solid rgba(31, 56, 88, 0.1);
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
+.uxcore .kuma-uxtable-border-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells,
+.uxcore .kuma-uxtable-split-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
+  background-color: rgba(242, 113, 39, 0.06);
 }
 .uxcore .kuma-uxtable-border-line .kuma-uxtable-cell {
   border-right: 1px solid rgba(31, 56, 88, 0.1);
-}
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-cell.last {
-  border-right: none;
-}
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-header-group-name {
-  border-right: 1px solid rgba(31, 56, 88, 0.1);
-  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
-}
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
-  background-color: rgba(242, 113, 39, 0.06);
-}
-.uxcore .kuma-uxtable-border-line .kuma-uxtable-left-fixed-table {
-  border-right: 1px solid #e8e8e8;
 }
 .uxcore .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
   padding: 5px 16px;
@@ -8740,6 +8753,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-image-name {
   float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 110px);
   height: 50px;
   line-height: 50px;
   margin-left: 12px;
@@ -9663,6 +9680,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-left: -50%;
   margin-top: 40px;
   text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .uxcore .kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description {
   position: absolute;
@@ -10190,6 +10211,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 45px;
   height: 45px;
 }
+.uxcore .kuma-menu-none-border.kuma-menu-vertical .kuma-menu-item:after,
+.uxcore .kuma-menu-none-border.kuma-menu-inline .kuma-menu-item:after,
+.uxcore .kuma-menu-none-border.kuma-menu-vertical .kuma-menu-submenu > .kuma-menu-submenu-title:after,
+.uxcore .kuma-menu-none-border.kuma-menu-inline .kuma-menu-submenu > .kuma-menu-submenu-title:after {
+  color: rgba(31, 56, 88, 0.4);
+}
 .uxcore .kuma-menu-none-border.kuma-menu-inline .kuma-menu-sub .kuma-menu-submenu-title {
   background: rgba(31, 56, 88, 0.04);
   border-bottom: 1px solid white;
@@ -10616,6 +10643,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-multi-select-footer .kuma-multi-select-button-hidden {
   display: none;
+}
+.uxcore .kuma-multi-select-footer .kuma-multi-select-button-clear {
+  margin-right: 8px;
 }
 .uxcore .kuma-multi-select-footer .kuma-multi-select-select-all {
   cursor: pointer;
