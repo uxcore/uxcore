@@ -7293,7 +7293,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
 }
 .kuma-tree-collapse {
-  transition: height 0.3s ease-out;
+  overflow: hidden;
+  transition: height 0.3s ease-out, opacity 0.3s ease-out;
 }
 .use-svg .kuma-tree-switcher.kuma-tree-noline_open {
   background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;

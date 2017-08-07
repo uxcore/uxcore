@@ -7560,7 +7560,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: block;
 }
 .uxcore .kuma-tree-collapse {
-  transition: height 0.3s ease-out;
+  overflow: hidden;
+  transition: height 0.3s ease-out, opacity 0.3s ease-out;
 }
 .uxcore .use-svg .kuma-tree-switcher.kuma-tree-noline_open {
   background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
