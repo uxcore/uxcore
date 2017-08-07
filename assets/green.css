@@ -6109,39 +6109,39 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab.kuma-tab-brick.kuma-tab-top .kuma-tab-bar {
   border-bottom: none;
 }
-.kuma-tab-open {
+.kuma-tab.kuma-tab-open {
   background-color: #fff;
 }
-.kuma-tab-open > .kuma-tab-bar {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar {
   height: 49px;
   border-bottom: 1px solid #BAC3CC;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav-container {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav-container {
   height: 49px;
   border-bottom: 0;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab {
   margin-left: -1px;
   height: 49px;
   line-height: 49px;
   font-size: 16px;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-active {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-active {
   position: relative;
   background-color: #fff;
   padding: 0 44px;
   border: none;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev,
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev,
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
   line-height: 49px;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav {
   position: relative;
   display: inline-block;
   transform-origin: 0 0;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
   position: absolute;
   bottom: 0px;
   height: 3px;
@@ -6150,19 +6150,19 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
   transform-origin: 0 0;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav-container {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav-container {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav-wrap {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-nav-wrap {
   overflow: hidden;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab {
   padding: 0 24px;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev,
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev,
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6179,31 +6179,31 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   text-align: center;
   color: #666;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon,
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon,
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon {
   display: inline-block;
   font-smoothing: antialiased;
   text-stroke-width: 0;
   font-family: kuma;
   font-size: 16px;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon:before,
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon:before {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon:before,
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon:before {
   display: block;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon:before {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon:before {
   content: "\e643";
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon:before {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon:before {
   content: "\e644";
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
   right: 2px;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev {
   left: 0;
 }
-.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-btn-disabled {
+.kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-btn-disabled {
   color: rgba(31, 56, 88, 0.3);
   cursor: not-allowed;
 }
@@ -6357,25 +6357,94 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab-content-no-animated .kuma-tab-tabpane-inactive {
   display: none !important;
 }
-/**
- * Grid Component Style for uxcore
- * @author zhouquan.yezq
- *
- * Copyright 2014-2015, Uxcore Team, Alinw.
- * All rights reserved.
- */
+.kuma-uxtable-actionbar {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 6px 0px 4px;
+}
+.kuma-uxtable-actionbar-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.kuma-uxtable-column-picker {
+  float: right;
+  position: relative;
+}
+.kuma-uxtable-column-picker-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-uxtable-column-picker-title {
+  vertical-align: middle;
+  color: #3C99D8;
+}
+.kuma-uxtable-column-picker-trigger {
+  padding: 4px 10px;
+  z-index: 12;
+  position: relative;
+  background: white;
+  cursor: pointer;
+}
+.kuma-uxtable-column-picker-popover .kuma-popover-inner {
+  min-width: 152px;
+  max-width: 232px;
+  max-height: 400px;
+  overflow: auto;
+}
+.kuma-uxtable-column-picker-popover .kuma-tree {
+  padding: 0;
+}
+.kuma-uxtable-searchbar {
+  float: right;
+  position: relative;
+  width: 355px;
+}
+.kuma-uxtable-searchbar .kuma-input {
+  height: 32px;
+}
+.kuma-uxtable-searchbar .kuma-icon-search {
+  position: absolute;
+  line-height: 16px;
+  color: rgba(31, 56, 88, 0.4);
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+.kuma-uxtable-searchbar .kuma-icon-search:hover {
+  color: rgba(31, 56, 88, 0.6);
+}
+.kuma-uxtable-linkbar {
+  float: right;
+  line-height: 30px;
+  margin-right: 10px;
+}
+.kuma-uxtable-linkbar a {
+  vertical-align: middle;
+}
+.kuma-uxtable-linkbar-cutoff {
+  border-right: 2px solid rgba(31, 56, 88, 0.1);
+  height: 14px;
+  display: inline-block;
+  margin: 0 12px;
+  vertical-align: middle;
+}
+.kuma-uxtable-linkbar-item {
+  cursor: pointer;
+  display: inline-block;
+}
 .kuma-uxmask {
   position: absolute;
   width: 100%;
   height: 100%;
   min-height: 40px;
   line-height: 40px;
-  background-color: #000;
+  background-color: white;
   z-index: 10;
   left: 0px;
   top: 0px;
-  opacity: .3;
-  filter: "alpha(opacity=30)";
+  opacity: .8;
+  filter: "alpha(opacity=80)";
   display: block;
 }
 .kuma-uxmask-hide {
@@ -6438,97 +6507,17 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .tableMaskFade-leave-active {
   animation-name: tableMaskFadeOut;
 }
-.kuma-uxtable-actionbar {
-  width: 100%;
-  margin-bottom: 12px;
-  padding: 6px 0px 4px;
-}
-.kuma-uxtable-actionbar-item {
-  display: inline-block;
-  margin-right: 10px;
-}
-.kuma-uxtable-column-picker {
-  float: right;
-  position: relative;
-}
-.kuma-uxtable-column-picker .kuma-icon-list {
-  vertical-align: middle;
-  margin-right: 5px;
-  color: rgba(0, 0, 0, 0.4);
-}
-.kuma-uxtable-column-picker-title {
-  vertical-align: middle;
-  color: #3C99D8;
-}
-.kuma-uxtable-column-picker-trigger {
-  padding: 4px 10px;
-  z-index: 12;
-  position: relative;
-  background: white;
-}
-.kuma-uxtable-column-picker-dropdown {
-  position: absolute;
-  right: 0;
-  top: 34px;
-  z-index: 11;
-  background: white;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 1px;
-  padding: 10px 20px;
-  min-height: 200px;
-  min-width: 200px;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-tree {
-  float: right;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-tree.no-group {
-  float: left;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-tree li span.kuma-tree-switcher {
-  display: none;
-}
-.kuma-uxtable-searchbar {
-  float: right;
-  position: relative;
-  width: 355px;
-}
-.kuma-uxtable-searchbar .kuma-input {
-  height: 32px;
-}
-.kuma-uxtable-searchbar .kuma-icon-search {
-  position: absolute;
-  line-height: 16px;
-  color: rgba(31, 56, 88, 0.4);
-  right: 8px;
-  top: 8px;
-  cursor: pointer;
-}
-.kuma-uxtable-searchbar .kuma-icon-search:hover {
-  color: rgba(31, 56, 88, 0.6);
-}
-.kuma-uxtable-linkbar {
-  float: right;
-  line-height: 30px;
-  margin-right: 10px;
-}
-.kuma-uxtable-linkbar a {
-  vertical-align: middle;
-}
-.kuma-uxtable-linkbar-cutoff {
-  border-right: 2px solid rgba(31, 56, 88, 0.1);
-  height: 14px;
-  display: inline-block;
-  margin: 0 12px;
-  vertical-align: middle;
-}
-.kuma-uxtable-linkbar-item {
-  cursor: pointer;
-  display: inline-block;
-}
+/**
+ * Grid Component Style for uxcore
+ * @author zhouquan.yezq
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 .kuma-uxtable {
   border-collapse: collapse;
   position: relative;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   table-layout: fixed;
 }
 .kuma-uxtable input::-ms-clear {
@@ -6543,9 +6532,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   margin-right: 12px;
   color: #40b370;
 }
+.kuma-uxtable .kuma-date-cell-field .kuma-calendar-picker-input {
+  line-height: 36px;
+}
+.kuma-uxtable .kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-calender,
+.kuma-uxtable .kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-close,
+.kuma-uxtable .kuma-date-cell-field .kuma-calendar-picker-input .kuma-calendar-trigger-icon {
+  line-height: 24px;
+}
 .kuma-uxtable-content {
   overflow-x: auto;
   position: relative;
+  border-radius: 3px;
 }
 .kuma-uxtable-content-scroller {
   display: inline-block;
@@ -6566,11 +6564,15 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-header {
   background-color: rgba(31, 56, 88, 0.06);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   min-width: 100%;
   white-space: nowrap;
   display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+}
+.kuma-uxtable-header-item-required {
+  color: #F04631;
 }
 .kuma-uxtable-body {
   position: relative;
@@ -6596,13 +6598,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-row:first-child {
   border-top: none;
 }
-.kuma-uxtable-row.even .kuma-uxtable-row-cells {
+.kuma-uxtable-row.even > .kuma-uxtable-row-cells {
   background-color: rgba(31, 56, 88, 0.06);
 }
-.kuma-uxtable-row-hover .kuma-uxtable-row-cells {
+.kuma-uxtable-row-hover > .kuma-uxtable-row-cells {
   background-color: rgba(64, 179, 112, 0.06);
 }
-.kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
+.kuma-uxtable-row-hover.even > .kuma-uxtable-row-cells {
   background-color: rgba(64, 179, 112, 0.06);
 }
 .kuma-uxtable-cell {
@@ -6617,12 +6619,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 50px;
   line-height: 50px;
 }
-.kuma-uxtable-cell .kuma-icon-information,
-.kuma-uxtable-cell .uxicon-tishi-full {
+.kuma-uxtable-cell .kuma-uxtable-header-msg-icon {
   color: #45a8e6;
   -webkit-text-stroke-width: 0;
   font-size: 16px;
   margin-left: 4px;
+  vertical-align: -1px;
 }
 .kuma-uxtable-cell > div {
   display: inline-block;
@@ -6649,6 +6651,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: top;
   margin-top: 7px;
 }
+.kuma-uxtable-small-size .kuma-uxtable-cell {
+  height: 40px;
+  line-height: 40px;
+}
+.kuma-uxtable-small-size .kuma-uxtable-cell > div {
+  height: 40px;
+}
 .kuma-uxtable-row.multiline .kuma-uxtable-cell {
   height: auto;
   min-height: 50px;
@@ -6673,6 +6682,19 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   padding-top: 18px;
   padding-bottom: 18px;
 }
+@keyframes tableSubIn {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+.kuma-uxtable-subrow {
+  transition: all 0.3s ease-out;
+}
 .kuma-uxtable-cell-field.hasError .kuma-input,
 .kuma-uxtable-cell-field.hasError .kuma-select2-selection {
   background: rgba(240, 70, 48, 0.06);
@@ -6684,48 +6706,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-select-cell-field .kuma-select2 {
   display: block;
 }
-.kuma-date-cell-field .kuma-calendar-picker-input {
-  line-height: 36px;
-}
-.kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-calender,
-.kuma-date-cell-field .kuma-calendar-picker-input .kuma-icon-close,
-.kuma-date-cell-field .kuma-calendar-picker-input .kuma-calendar-trigger-icon {
-  line-height: 24px;
-}
 .kuma-uxtable-header .kuma-uxtable-cell > div {
   overflow: visible;
-}
-.kuma-uxtable-columnpicker {
-  max-width: 400px;
-  max-height: 300px;
-  overflow-y: auto;
-  position: absolute;
-  background-color: #f5f5f5;
-  z-index: 2;
-  right: 0;
-  top: 32px;
-  padding: 5px 20px 10px 10px;
-  display: none;
-}
-.kuma-uxtable-columnpicker .kuma-tree {
-  padding: 0px;
-}
-.kuma-uxtable-columnpicker .kuma-tree li a {
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.kuma-column-picker-container {
-  position: absolute;
-  right: 0;
-  display: inline-block;
-  cursor: pointer;
-  padding-right: 20px;
-  font-weight: normal;
-  background: rgba(31, 56, 88, 0.06);
-}
-.kuma-column-picker-container.hasGroup .kuma-uxtable-colmnpicker {
-  top: 50px;
 }
 .kuma-uxtable-tree-icon {
   cursor: pointer;
@@ -6769,7 +6751,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 20px;
   width: 14px;
   display: inline-block;
-  color: #999;
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-uxtable-h-sort .kuma-icon {
   font-size: 13px;
@@ -6805,45 +6787,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
   font-size: 14px;
 }
-.action-container .action.kuma-button {
-  padding: 0 16px;
-}
 .action-container .action.kuma-button i {
-  color: #40b370;
+  color: rgba(31, 56, 88, 0.6);
 }
 .action-container .action.more-action {
   line-height: 49px;
 }
 .action-container .action + .kuma-button {
   margin-left: 12px;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-dropdown-menu {
-  min-width: 200px;
-  box-shadow: 0 1px 8px #ced1d2;
-  max-height: 300px;
-  border-radius: 3px;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-dropdown-menu .kuma-dropdown-menu-item-active,
-.kuma-uxtable-column-picker-dropdown .kuma-dropdown-menu .kuma-dropdown-menu-item:hover {
-  background-color: #debfd1;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-dropdown-menu .kuma-dropdown-menu-item-selected {
-  background-color: white;
-  color: #40b370;
-}
-.kuma-uxtable-column-picker-dropdown .kuma-dropdown-menu .kuma-dropdown-menu-item-selected:before {
-  content: "\e611";
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 0px;
-  font-family: kuma!important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: .2px;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 32px;
 }
 .kuma-uxtable span.indent {
   display: inline-block;
@@ -6872,11 +6823,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-left-fixed-table.has-scroll,
 .kuma-uxtable-right-fixed-table.has-scroll {
-  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0 4px rgba(31, 56, 88, 0.15);
 }
 .kuma-uxtable-left-fixed-table.end-of-scroll,
 .kuma-uxtable-right-fixed-table.end-of-scroll {
-  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 0 4px rgba(31, 56, 88, 0.15);
 }
 .kuma-uxtable-left-fixed-table {
   left: 0;
@@ -6911,7 +6862,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-header-scroll.kuma-uxtable-no-v-scroll,
 .kuma-uxtable-body-scroll.kuma-uxtable-no-v-scroll {
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .kuma-uxtable-header-column-group {
   display: inline-block;
@@ -6945,21 +6896,21 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-row-tree-selector {
   margin-right: 12px;
 }
-.kuma-uxtable-tree-mode .kuma-uxtable-row.even .kuma-uxtable-row-cells {
+.kuma-uxtable-tree-mode .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
   background: white;
 }
 .kuma-uxtable-tree-mode .kuma-uxtable-row .kuma-uxtable-row-cells {
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
-.kuma-uxtable-tree-mode .kuma-uxtable-content .kuma-uxtable-row.kuma-uxtable-row-hover .kuma-uxtable-row-cells {
+.kuma-uxtable-tree-mode .kuma-uxtable-content .kuma-uxtable-row.kuma-uxtable-row-hover > .kuma-uxtable-row-cells {
   background-color: white;
 }
 .kuma-uxtable-border-line .kuma-uxtable-content,
 .kuma-uxtable-split-line .kuma-uxtable-content {
   border: 1px solid rgba(31, 56, 88, 0.1);
 }
-.kuma-uxtable-border-line .kuma-uxtable-row.even .kuma-uxtable-row-cells,
-.kuma-uxtable-split-line .kuma-uxtable-row.even .kuma-uxtable-row-cells {
+.kuma-uxtable-border-line .kuma-uxtable-row.even > .kuma-uxtable-row-cells,
+.kuma-uxtable-split-line .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
   background: white;
 }
 .kuma-uxtable-border-line .kuma-uxtable-row .kuma-uxtable-row-cells,
@@ -6970,21 +6921,52 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-split-line .kuma-uxtable-row.last .kuma-uxtable-row-cells {
   border-bottom: none;
 }
-.kuma-uxtable-border-line .kuma-uxtable-cell.last,
-.kuma-uxtable-split-line .kuma-uxtable-cell.last {
-  border-right: none;
-}
-.kuma-uxtable-border-line .kuma-uxtable-header-group-name,
-.kuma-uxtable-split-line .kuma-uxtable-header-group-name {
-  border-right: 1px solid rgba(31, 56, 88, 0.1);
-  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
-}
-.kuma-uxtable-border-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells,
-.kuma-uxtable-split-line .kuma-uxtable-row-hover.even .kuma-uxtable-row-cells {
+.kuma-uxtable-border-line .kuma-uxtable-row-hover.even > .kuma-uxtable-row-cells,
+.kuma-uxtable-split-line .kuma-uxtable-row-hover.even > .kuma-uxtable-row-cells {
   background-color: rgba(64, 179, 112, 0.06);
 }
 .kuma-uxtable-border-line .kuma-uxtable-cell {
   border-right: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-uxtable-border-line .kuma-uxtable-left-fixed-table {
+  border-right: none;
+}
+.kuma-uxtable-border-line .kuma-uxtable-right-fixed-table {
+  border-left: none;
+}
+.kuma-uxtable-border-line .kuma-uxtable-cell.last {
+  border-right: none;
+}
+.kuma-uxtable-border-line .kuma-uxtable-header-group-name {
+  border-right: 1px solid rgba(31, 56, 88, 0.1);
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-uxtable-border-line .kuma-uxtable-header-group-name.last {
+  border-right: none;
+}
+.kuma-uxtable-border-line .kuma-uxtable-left-fixed-table .kuma-uxtable-cell.last {
+  border-right: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-uxtable-border-line .kuma-uxtable-left-fixed-table .kuma-uxtable-header-group-name.last {
+  border-right: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-uxtable-ghost .kuma-uxtable-body {
+  background: transparent;
+}
+.kuma-uxtable-ghost .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
+  background: transparent;
+}
+.kuma-uxtable-ghost .kuma-uxtable-header-scroll .kuma-uxtable-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-uxtable-ghost .kuma-uxtable-row-hover > .kuma-uxtable-row-cells {
+  background-color: transparent;
+}
+.kuma-uxtable-split-line .kuma-uxtable-content {
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 .kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
   padding: 5px 16px;
@@ -7310,13 +7292,20 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tree-child-tree-open {
   display: block;
 }
+.kuma-tree-collapse {
+  transition: height 0.3s ease-out;
+}
 .use-svg .kuma-tree-switcher.kuma-tree-noline_open {
   background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
   background-size: 50% auto;
+  transform: rotate(0deg);
+  transition: all .3s;
 }
 .use-svg .kuma-tree-switcher.kuma-tree-noline_close {
-  background: url('https://img.alicdn.com/tps/TB17BHzJVXXXXXEXXXXXXXXXXXX-10-14.svg') 50% no-repeat;
-  background-size: auto 50%;
+  background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
+  background-size: 50% auto ;
+  transform: rotate(-90deg);
+  transition: transform .3s;
 }
 .use-svg .kuma-tree-checkbox {
   display: inline-block;
@@ -8933,18 +8922,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   content: " ";
   clear: both;
   height: 0;
-}
-.kuma-uxform-row-title {
-  padding: 15px 0 20px;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: bold;
-  clear: both;
-}
-.kuma-uxform-row-title > span {
-  border-left: 4px solid #ff9300;
-  display: inline-block;
-  padding-left: 12px;
 }
 .kuma-uxform-row {
   min-width: 100%;

@@ -1,0 +1,1588 @@
+uxcore@0.14.9 /Users/ens/pwd/uxcore/uxcore
+├── accepts@1.3.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_accepts@1.3.3@accepts extraneous
+├── accord@0.23.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_accord@0.23.0@accord extraneous
+├── acorn@3.3.0 extraneous
+├── acorn-jsx@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_acorn-jsx@3.0.1@acorn-jsx extraneous
+├── add-dom-event-listener@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_add-dom-event-listener@1.0.2@add-dom-event-listener extraneous
+├── after@0.8.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_after@0.8.2@after extraneous
+├── ajv@4.11.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ajv@4.11.8@ajv extraneous
+├── ajv-keywords@1.5.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ajv-keywords@1.5.1@ajv-keywords extraneous
+├── align-text@0.1.4 extraneous
+├── amdefine@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_amdefine@1.0.1@amdefine extraneous
+├── ansi-escapes@1.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ansi-escapes@1.4.0@ansi-escapes extraneous
+├── ansi-regex@2.1.1 extraneous
+├── ansi-styles@1.0.0 extraneous
+├── anymatch@1.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_anymatch@1.3.2@anymatch extraneous
+├── archy@1.0.0 extraneous
+├── argparse@1.0.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_argparse@1.0.9@argparse extraneous
+├── arr-diff@2.0.0 extraneous
+├── arr-flatten@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_arr-flatten@1.1.0@arr-flatten extraneous
+├── array-differ@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_array-differ@1.0.0@array-differ extraneous
+├── array-each@1.0.1 extraneous
+├── array-find-index@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_array-find-index@1.0.2@array-find-index extraneous
+├── array-flatten@1.1.1 extraneous
+├── array-slice@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_array-slice@1.0.0@array-slice extraneous
+├── array-union@1.0.2 extraneous
+├── array-uniq@1.0.3 extraneous
+├── array-unique@0.2.1 extraneous
+├── arraybuffer.slice@0.0.6 extraneous
+├── arrify@1.0.1 extraneous
+├── asap@2.0.6 extraneous
+├── asn1@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_asn1@0.2.3@asn1 extraneous
+├── assert@1.4.1 extraneous
+├── assert-plus@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_assert-plus@1.0.0@assert-plus extraneous
+├── ast-types@0.9.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ast-types@0.9.6@ast-types extraneous
+├── async@0.9.2 extraneous
+├── async-each@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_async-each@1.0.1@async-each extraneous
+├── asynckit@0.4.0 extraneous
+├── autoprefixer@6.7.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_autoprefixer@6.7.7@autoprefixer extraneous
+├── autosize@3.0.21 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_autosize@3.0.21@autosize extraneous
+├── aws-sign2@0.6.0 extraneous
+├── aws4@1.6.0 extraneous
+├── babel-runtime@6.25.0 extraneous
+├── backo2@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_backo2@1.0.2@backo2 extraneous
+├── balanced-match@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_balanced-match@1.0.0@balanced-match extraneous
+├── base62@1.2.0 extraneous
+├── Base64@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_Base64@0.2.1@Base64 extraneous
+├── base64-arraybuffer@0.1.5 extraneous
+├── base64-js@1.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_base64-js@1.2.1@base64-js extraneous
+├── base64id@1.0.0 extraneous
+├── bcrypt-pbkdf@1.0.1 extraneous
+├── beeper@1.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_beeper@1.1.1@beeper extraneous
+├── better-assert@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_better-assert@1.0.2@better-assert extraneous
+├── big.js@3.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_big.js@3.1.3@big.js extraneous
+├── binary-extensions@1.9.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_binary-extensions@1.9.0@binary-extensions extraneous
+├── blob@0.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_blob@0.0.4@blob extraneous
+├── bluebird@3.5.0 extraneous
+├── body-parser@1.17.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_body-parser@1.17.2@body-parser extraneous
+├── boolbase@1.0.0 extraneous
+├── boom@2.10.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_boom@2.10.1@boom extraneous
+├── brace-expansion@1.1.8 extraneous
+├── braces@0.1.5 extraneous
+├── browserify-zlib@0.1.4 extraneous
+├── browserslist@1.7.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_browserslist@1.7.7@browserslist extraneous
+├── buffer@4.9.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_buffer@4.9.1@buffer extraneous
+├── bufferstreams@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_bufferstreams@1.0.1@bufferstreams extraneous
+├── builtin-modules@1.1.1 extraneous
+├── bytes@2.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_bytes@2.4.0@bytes extraneous
+├── caller-path@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_caller-path@0.1.0@caller-path extraneous
+├── callsite@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_callsite@1.0.0@callsite extraneous
+├── callsites@0.2.0 extraneous
+├── camelcase@2.1.1 extraneous
+├── camelcase-keys@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_camelcase-keys@2.1.0@camelcase-keys extraneous
+├── can-use-dom@0.1.0 extraneous
+├── caniuse-db@1.0.30000710 extraneous
+├── caseless@0.12.0 extraneous
+├── center-align@0.1.3 extraneous
+├── chalk@1.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_chalk@1.1.3@chalk extraneous
+├── cheerio@0.22.0 extraneous
+├── chokidar@1.7.0 extraneous
+├── circular-json@0.3.3 extraneous
+├── classnames@2.2.5 extraneous
+├── clean-css@2.2.23 extraneous
+├── cli-cursor@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cli-cursor@1.0.2@cli-cursor extraneous
+├── cli-width@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cli-width@2.1.0@cli-width extraneous
+├── cliui@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cliui@2.1.0@cliui extraneous
+├── clone@1.0.2 extraneous
+├── clone-buffer@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_clone-buffer@1.0.0@clone-buffer extraneous
+├── clone-stats@0.0.1 extraneous
+├── cloneable-readable@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cloneable-readable@1.0.0@cloneable-readable extraneous
+├── co@4.6.0 extraneous
+├── code-point-at@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_code-point-at@1.1.0@code-point-at extraneous
+├── collect-stream@1.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_collect-stream@1.2.1@collect-stream extraneous
+├── colors@1.1.2 extraneous
+├── combine-lists@1.0.1 extraneous
+├── combined-stream@1.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_combined-stream@1.0.5@combined-stream extraneous
+├── commander@2.11.0 extraneous
+├── commoner@0.10.8 extraneous
+├── component-bind@1.0.0 extraneous
+├── component-classes@1.2.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_component-classes@1.2.6@component-classes extraneous
+├── component-emitter@1.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_component-emitter@1.2.1@component-emitter extraneous
+├── component-indexof@0.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_component-indexof@0.0.3@component-indexof extraneous
+├── component-inherit@0.0.3 extraneous
+├── concat-map@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_concat-map@0.0.1@concat-map extraneous
+├── concat-stream@1.5.0 extraneous
+├── concat-with-sourcemaps@1.0.4 extraneous
+├── connect@3.6.3 extraneous
+├── console-browserify@1.1.0 extraneous
+├── console-polyfill@0.2.3 extraneous
+├── constants-browserify@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_constants-browserify@0.0.1@constants-browserify extraneous
+├── contains-path@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_contains-path@0.1.0@contains-path extraneous
+├── content-disposition@0.5.2 extraneous
+├── content-type@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_content-type@1.0.2@content-type extraneous
+├── convert-source-map@1.5.0 extraneous
+├── cookie@0.3.1 extraneous
+├── cookie-signature@1.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cookie-signature@1.0.6@cookie-signature extraneous
+├── core-js@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_core-js@2.4.1@core-js extraneous
+├── core-util-is@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_core-util-is@1.0.2@core-util-is extraneous
+├── create-react-class@15.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_create-react-class@15.6.0@create-react-class extraneous
+├── cross-spawn@4.0.2 extraneous
+├── cryptiles@2.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cryptiles@2.0.5@cryptiles extraneous
+├── crypto-browserify@3.2.8 extraneous
+├── css-animation@1.2.6 extraneous
+├── css-select@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_css-select@1.2.0@css-select extraneous
+├── css-what@1.0.0 extraneous
+├── currently-unhandled@0.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_currently-unhandled@0.4.1@currently-unhandled extraneous
+├── custom-event@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_custom-event@1.0.1@custom-event extraneous
+├── d@1.0.0 extraneous
+├── damerau-levenshtein@1.0.4 extraneous
+├── dashdash@1.14.1 extraneous
+├── date-now@0.1.4 extraneous
+├── dateformat@2.0.0 extraneous
+├── deap@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_deap@1.0.0@deap extraneous
+├── debug@2.6.8 extraneous
+├── decamelize@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_decamelize@1.2.0@decamelize extraneous
+├── deep-equal@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_deep-equal@1.0.1@deep-equal extraneous
+├── deep-extend@0.4.2 extraneous
+├── deep-is@0.1.3 extraneous
+├── deepcopy@0.5.0 extraneous
+├── defaults@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_defaults@1.0.3@defaults extraneous
+├── define-properties@1.1.2 extraneous
+├── defined@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_defined@1.0.0@defined extraneous
+├── del@2.2.2 extraneous
+├── delayed-stream@1.0.0 extraneous
+├── depd@1.1.0 extraneous
+├── deprecated@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_deprecated@0.0.1@deprecated extraneous
+├── destroy@1.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_destroy@1.0.4@destroy extraneous
+├── detect-file@0.1.0 extraneous
+├── detect-newline@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_detect-newline@1.0.3@detect-newline extraneous
+├── detective@4.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_detective@4.5.0@detective extraneous
+├── di@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_di@0.0.1@di extraneous
+├── diff@1.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_diff@1.4.0@diff extraneous
+├── doctrine@1.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_doctrine@1.5.0@doctrine extraneous
+├── dom-align@1.6.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_dom-align@1.6.3@dom-align extraneous
+├── dom-scroll-into-view@1.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_dom-scroll-into-view@1.2.1@dom-scroll-into-view extraneous
+├── dom-serialize@2.2.1 extraneous
+├── dom-serializer@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_dom-serializer@0.1.0@dom-serializer extraneous
+├── domain-browser@1.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_domain-browser@1.1.7@domain-browser extraneous
+├── domelementtype@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_domelementtype@1.3.0@domelementtype extraneous
+├── domhandler@2.4.1 extraneous
+├── domutils@1.5.1 extraneous
+├── duplexer@0.1.1 extraneous
+├── duplexer2@0.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_duplexer2@0.0.2@duplexer2 extraneous
+├── duplicate-package-checker-webpack-plugin@1.2.5 extraneous
+├── ecc-jsbn@0.1.1 extraneous
+├── ee-first@1.1.1 extraneous
+├── ejs@2.5.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ejs@2.5.7@ejs extraneous
+├── electron-to-chromium@1.3.17 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_electron-to-chromium@1.3.17@electron-to-chromium extraneous
+├── emojis-list@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_emojis-list@2.1.0@emojis-list extraneous
+├── encodeurl@1.0.1 extraneous
+├── encoding@0.1.12 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_encoding@0.1.12@encoding extraneous
+├── end-of-stream@0.1.5 extraneous
+├── engine.io@1.8.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_engine.io@1.8.3@engine.io extraneous
+├── engine.io-client@1.8.3 extraneous
+├── engine.io-parser@1.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_engine.io-parser@1.3.2@engine.io-parser extraneous
+├── enhanced-resolve@0.9.1 extraneous
+├── enquire.js@2.1.6 extraneous
+├── ent@2.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ent@2.2.0@ent extraneous
+├── entities@1.0.0 extraneous
+├── envify@3.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_envify@3.4.1@envify extraneous
+├── enzyme@2.9.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_enzyme@2.9.1@enzyme extraneous
+├── errno@0.1.4 extraneous
+├── error-ex@1.3.1 extraneous
+├── es-abstract@1.8.0 extraneous
+├── es-to-primitive@1.1.1 extraneous
+├── es5-ext@0.10.26 extraneous
+├── es5-shim@4.5.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es5-shim@4.5.9@es5-shim extraneous
+├── es6-iterator@2.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-iterator@2.0.1@es6-iterator extraneous
+├── es6-map@0.1.5 extraneous
+├── es6-promise@4.0.5 extraneous
+├── es6-set@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-set@0.1.5@es6-set extraneous
+├── es6-symbol@3.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-symbol@3.1.1@es6-symbol extraneous
+├── es6-weak-map@2.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-weak-map@2.0.2@es6-weak-map extraneous
+├── escape-html@1.0.3 extraneous
+├── escape-string-regexp@1.0.2 extraneous
+├── escope@3.6.0 extraneous
+├── eslint@2.13.1 extraneous
+├── eslint-config-airbnb@9.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-config-airbnb@9.0.1@eslint-config-airbnb extraneous
+├── eslint-config-airbnb-base@3.0.1 extraneous
+├── eslint-import-resolver-node@0.2.3 extraneous
+├── eslint-plugin-import@1.16.0 extraneous
+├── eslint-plugin-jsx-a11y@1.5.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-plugin-jsx-a11y@1.5.5@eslint-plugin-jsx-a11y extraneous
+├── eslint-plugin-react@5.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-plugin-react@5.2.2@eslint-plugin-react extraneous
+├── espree@3.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_espree@3.4.3@espree extraneous
+├── esprima@4.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_esprima@4.0.0@esprima extraneous
+├── esprima-fb@15001.1.0-dev-harmony-fb extraneous
+├── esrecurse@4.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_esrecurse@4.2.0@esrecurse extraneous
+├── estraverse@4.2.0 extraneous
+├── esutils@2.0.2 extraneous
+├── etag@1.8.0 extraneous
+├── event-emitter@0.3.5 extraneous
+├── eventemitter3@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eventemitter3@1.2.0@eventemitter3 extraneous
+├── events@1.1.1 extraneous
+├── exit-hook@1.1.1 extraneous
+├── expand-braces@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expand-braces@0.1.2@expand-braces extraneous
+├── expand-brackets@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expand-brackets@0.1.5@expand-brackets extraneous
+├── expand-range@1.8.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expand-range@1.8.2@expand-range extraneous
+├── expand-tilde@2.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expand-tilde@2.0.2@expand-tilde extraneous
+├── expect.js@0.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expect.js@0.3.1@expect.js extraneous
+├── express@4.15.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_express@4.15.3@express extraneous
+├── extend@3.0.1 extraneous
+├── extglob@0.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_extglob@0.3.2@extglob extraneous
+├── extract-zip@1.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_extract-zip@1.5.0@extract-zip extraneous
+├── extsprintf@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_extsprintf@1.3.0@extsprintf extraneous
+├── fancy-log@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fancy-log@1.3.0@fancy-log extraneous
+├── fast-levenshtein@2.0.6 extraneous
+├── fbjs@0.8.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fbjs@0.8.14@fbjs extraneous
+├── fd-slicer@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fd-slicer@1.0.1@fd-slicer extraneous
+├── figures@1.7.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_figures@1.7.0@figures extraneous
+├── file-entry-cache@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_file-entry-cache@1.3.1@file-entry-cache extraneous
+├── filename-regex@2.0.1 extraneous
+├── filesize@3.5.10 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_filesize@3.5.10@filesize extraneous
+├── fill-range@2.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fill-range@2.2.3@fill-range extraneous
+├── finalhandler@1.0.4 extraneous
+├── find-index@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_find-index@0.1.1@find-index extraneous
+├── find-root@1.1.0 extraneous
+├── find-up@1.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_find-up@1.1.2@find-up extraneous
+├── findup-sync@0.4.3 extraneous
+├── fined@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fined@1.1.0@fined extraneous
+├── first-chunk-stream@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_first-chunk-stream@1.0.0@first-chunk-stream extraneous
+├── flagged-respawn@0.3.2 extraneous
+├── flat-cache@1.2.2 extraneous
+├── fobject@0.0.4 extraneous
+├── for-in@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_for-in@1.0.2@for-in extraneous
+├── for-own@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_for-own@1.0.0@for-own extraneous
+├── foreach@2.0.5 extraneous
+├── forever-agent@0.6.1 extraneous
+├── form-data@2.1.4 extraneous
+├── forwarded@0.1.0 extraneous
+├── fresh@0.5.0 extraneous
+├── fs-access@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fs-access@1.0.1@fs-access extraneous
+├── fs-exists-sync@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fs-exists-sync@0.1.0@fs-exists-sync extraneous
+├── fs-extra@1.0.0 extraneous
+├── fs.realpath@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fs.realpath@1.0.0@fs.realpath extraneous
+├── fsevents@1.1.2 extraneous
+├── function-bind@1.1.0 extraneous
+├── function.prototype.name@1.0.3 extraneous
+├── gaze@0.5.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gaze@0.5.2@gaze extraneous
+├── generate-function@2.0.0 extraneous
+├── generate-object-property@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_generate-object-property@1.2.0@generate-object-property extraneous
+├── get-stdin@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_get-stdin@4.0.1@get-stdin extraneous
+├── getpass@0.1.7 extraneous
+├── git-rev@0.2.1 extraneous
+├── glob@7.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_glob@7.1.2@glob extraneous
+├── glob-base@0.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_glob-base@0.3.0@glob-base extraneous
+├── glob-parent@2.0.0 extraneous
+├── glob-stream@3.1.18 extraneous
+├── glob-watcher@0.0.6 extraneous
+├── glob2base@0.0.12 extraneous
+├── global-modules@0.2.3 extraneous
+├── global-prefix@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_global-prefix@0.1.5@global-prefix extraneous
+├── globals@9.18.0 extraneous
+├── globby@5.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_globby@5.0.0@globby extraneous
+├── globule@0.1.0 extraneous
+├── glogg@1.0.0 extraneous
+├── graceful-fs@4.1.11 extraneous
+├── graceful-readlink@1.0.1 extraneous
+├── growl@1.9.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_growl@1.9.2@growl extraneous
+├── gulp@3.9.1 extraneous
+├── gulp-clean@0.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-clean@0.3.2@gulp-clean extraneous
+├── gulp-clean-css@2.0.13 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-clean-css@2.0.13@gulp-clean-css extraneous
+├── gulp-cleancss@0.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-cleancss@0.2.2@gulp-cleancss extraneous
+├── gulp-concat@2.6.1 extraneous
+├── gulp-cssimport@5.0.0 extraneous
+├── gulp-less@3.1.0 extraneous
+├── gulp-rename@1.2.2 extraneous
+├── gulp-uglify@1.5.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-uglify@1.5.4@gulp-uglify extraneous
+├── gulp-util@2.2.20 extraneous
+├── gulplog@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulplog@1.0.0@gulplog extraneous
+├── gzip-size@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gzip-size@3.0.0@gzip-size extraneous
+├── hammerjs@2.0.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_hammerjs@2.0.8@hammerjs extraneous
+├── har-schema@1.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_har-schema@1.0.5@har-schema extraneous
+├── har-validator@2.0.6 extraneous
+├── has@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has@1.0.1@has extraneous
+├── has-ansi@2.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-ansi@2.0.0@has-ansi extraneous
+├── has-binary@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-binary@0.1.7@has-binary extraneous
+├── has-color@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-color@0.1.7@has-color extraneous
+├── has-cors@1.1.0 extraneous
+├── has-flag@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-flag@1.0.0@has-flag extraneous
+├── has-gulplog@0.1.0 extraneous
+├── hasha@2.2.0 extraneous
+├── hawk@3.1.3 extraneous
+├── hoek@2.16.3 extraneous
+├── homedir-polyfill@1.0.1 extraneous
+├── hosted-git-info@2.5.0 extraneous
+├── html-wiring@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_html-wiring@1.2.0@html-wiring extraneous
+├── htmlparser2@3.9.2 extraneous
+├── http-browserify@1.7.0 extraneous
+├── http-errors@1.6.1 extraneous
+├── http-https@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_http-https@1.0.0@http-https extraneous
+├── http-proxy@1.16.2 extraneous
+├── http-signature@1.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_http-signature@1.1.1@http-signature extraneous
+├── https-browserify@0.0.0 extraneous
+├── iconv-lite@0.4.18 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_iconv-lite@0.4.18@iconv-lite extraneous
+├── ieee754@1.1.8 extraneous
+├── ignore@3.3.3 extraneous
+├── image-size@0.5.5 extraneous
+├── immediate@3.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_immediate@3.0.6@immediate extraneous
+├── imurmurhash@0.1.4 extraneous
+├── indent-string@2.1.0 extraneous
+├── indexof@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_indexof@0.0.1@indexof extraneous
+├── indx@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_indx@0.2.3@indx extraneous
+├── inflight@1.0.6 extraneous
+├── inherits@2.0.1 extraneous
+├── ini@1.3.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ini@1.3.4@ini extraneous
+├── inquirer@0.12.0 extraneous
+├── interpret@0.6.6 extraneous
+├── ipaddr.js@1.4.0 extraneous
+├── is-absolute@0.2.6 extraneous
+├── is-arrayish@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-arrayish@0.2.1@is-arrayish extraneous
+├── is-binary-path@1.0.1 extraneous
+├── is-buffer@1.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-buffer@1.1.5@is-buffer extraneous
+├── is-builtin-module@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-builtin-module@1.0.0@is-builtin-module extraneous
+├── is-callable@1.1.3 extraneous
+├── is-date-object@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-date-object@1.0.1@is-date-object extraneous
+├── is-dotfile@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-dotfile@1.0.3@is-dotfile extraneous
+├── is-equal-shallow@0.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-equal-shallow@0.1.3@is-equal-shallow extraneous
+├── is-extendable@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-extendable@0.1.1@is-extendable extraneous
+├── is-extglob@1.0.0 extraneous
+├── is-finite@1.0.2 extraneous
+├── is-fullwidth-code-point@2.0.0 extraneous
+├── is-glob@2.0.1 extraneous
+├── is-my-json-valid@2.16.0 extraneous
+├── is-number@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-number@3.0.0@is-number extraneous
+├── is-path-cwd@1.0.0 extraneous
+├── is-path-in-cwd@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-path-in-cwd@1.0.0@is-path-in-cwd extraneous
+├── is-path-inside@1.0.0 extraneous
+├── is-plain-object@2.0.4 extraneous
+├── is-posix-bracket@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-posix-bracket@0.1.1@is-posix-bracket extraneous
+├── is-primitive@2.0.0 extraneous
+├── is-promise@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-promise@2.1.0@is-promise extraneous
+├── is-property@1.0.2 extraneous
+├── is-regex@1.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-regex@1.0.4@is-regex extraneous
+├── is-relative@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-relative@0.2.1@is-relative extraneous
+├── is-resolvable@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-resolvable@1.0.0@is-resolvable extraneous
+├── is-stream@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-stream@1.1.0@is-stream extraneous
+├── is-subset@0.1.1 extraneous
+├── is-symbol@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-symbol@1.0.1@is-symbol extraneous
+├── is-typedarray@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-typedarray@1.0.0@is-typedarray extraneous
+├── is-unc-path@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-unc-path@0.1.2@is-unc-path extraneous
+├── is-utf8@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-utf8@0.2.1@is-utf8 extraneous
+├── is-windows@0.2.0 extraneous
+├── isarray@0.0.1 extraneous
+├── isbinaryfile@3.0.2 extraneous
+├── isexe@2.0.0 extraneous
+├── isobject@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_isobject@3.0.1@isobject extraneous
+├── isomorphic-fetch@2.2.1 extraneous
+├── isstream@0.1.2 extraneous
+├── jade@0.26.3 extraneous
+├── jquery@3.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jquery@3.2.1@jquery extraneous
+├── js-base64@2.1.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_js-base64@2.1.9@js-base64 extraneous
+├── js-tokens@3.0.2 extraneous
+├── js-yaml@3.9.1 extraneous
+├── jsbn@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsbn@0.1.1@jsbn extraneous
+├── json-schema@0.2.3 extraneous
+├── json-stable-stringify@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json-stable-stringify@1.0.1@json-stable-stringify extraneous
+├── json-stringify-safe@5.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json-stringify-safe@5.0.1@json-stringify-safe extraneous
+├── json2mq@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json2mq@0.2.0@json2mq extraneous
+├── json3@3.3.2 extraneous
+├── json5@0.5.1 extraneous
+├── jsonfile@2.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsonfile@2.4.0@jsonfile extraneous
+├── jsonify@0.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsonify@0.0.0@jsonify extraneous
+├── jsonpointer@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsonpointer@4.0.1@jsonpointer extraneous
+├── jsprim@1.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsprim@1.4.1@jsprim extraneous
+├── jstransform@11.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jstransform@11.0.3@jstransform extraneous
+├── jsx-ast-utils@1.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsx-ast-utils@1.4.1@jsx-ast-utils extraneous
+├── karma@1.7.0 extraneous
+├── karma-chrome-launcher@1.0.1 extraneous
+├── karma-mocha@1.3.0 extraneous
+├── karma-mocha-reporter@2.2.3 extraneous
+├── karma-phantomjs-launcher@1.0.4 extraneous
+├── kew@0.7.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_kew@0.7.0@kew extraneous
+├── kind-of@4.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_kind-of@4.0.0@kind-of extraneous
+├── klaw@1.3.1 extraneous
+├── kuma-base@1.5.5 extraneous
+├── lazy-cache@1.0.4 extraneous
+├── less@2.7.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_less@2.7.2@less extraneous
+├── less-plugin-autoprefix@1.5.1 extraneous
+├── less-plugin-inline-urls@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_less-plugin-inline-urls@1.1.0@less-plugin-inline-urls extraneous
+├── levn@0.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_levn@0.3.0@levn extraneous
+├── lie@3.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lie@3.1.1@lie extraneous
+├── liftoff@2.3.0 extraneous
+├── load-json-file@1.1.0 extraneous
+├── loader-utils@0.2.17 extraneous
+├── lodash@1.0.2 extraneous
+├── lodash._basecopy@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._basecopy@3.0.1@lodash._basecopy extraneous
+├── lodash._basetostring@3.0.1 extraneous
+├── lodash._basevalues@3.0.0 extraneous
+├── lodash._escapehtmlchar@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._escapehtmlchar@2.4.1@lodash._escapehtmlchar extraneous
+├── lodash._escapestringchar@2.4.1 extraneous
+├── lodash._getnative@3.9.1 extraneous
+├── lodash._htmlescapes@2.4.1 extraneous
+├── lodash._isiterateecall@3.0.9 extraneous
+├── lodash._isnative@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._isnative@2.4.1@lodash._isnative extraneous
+├── lodash._objecttypes@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._objecttypes@2.4.1@lodash._objecttypes extraneous
+├── lodash._reescape@3.0.0 extraneous
+├── lodash._reevaluate@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._reevaluate@3.0.0@lodash._reevaluate extraneous
+├── lodash._reinterpolate@2.4.1 extraneous
+├── lodash._reunescapedhtml@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._reunescapedhtml@2.4.1@lodash._reunescapedhtml extraneous
+├── lodash._root@3.0.1 extraneous
+├── lodash._shimkeys@2.4.1 extraneous
+├── lodash.assignin@4.2.0 extraneous
+├── lodash.bind@4.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.bind@4.2.1@lodash.bind extraneous
+├── lodash.cond@4.5.2 extraneous
+├── lodash.defaults@2.4.1 extraneous
+├── lodash.endswith@4.2.1 extraneous
+├── lodash.escape@3.2.0 extraneous
+├── lodash.filter@4.6.0 extraneous
+├── lodash.find@4.6.0 extraneous
+├── lodash.findindex@4.6.0 extraneous
+├── lodash.flatten@4.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.flatten@4.4.0@lodash.flatten extraneous
+├── lodash.foreach@4.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.foreach@4.5.0@lodash.foreach extraneous
+├── lodash.isarguments@3.1.0 extraneous
+├── lodash.isarray@3.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.isarray@3.0.4@lodash.isarray extraneous
+├── lodash.isobject@2.4.1 extraneous
+├── lodash.isplainobject@4.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.isplainobject@4.0.6@lodash.isplainobject extraneous
+├── lodash.isstring@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.isstring@4.0.1@lodash.isstring extraneous
+├── lodash.keys@2.4.1 extraneous
+├── lodash.map@4.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.map@4.6.0@lodash.map extraneous
+├── lodash.mapvalues@4.6.0 extraneous
+├── lodash.merge@4.6.0 extraneous
+├── lodash.pick@4.4.0 extraneous
+├── lodash.reduce@4.6.0 extraneous
+├── lodash.reject@4.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.reject@4.6.0@lodash.reject extraneous
+├── lodash.restparam@3.6.1 extraneous
+├── lodash.some@4.6.0 extraneous
+├── lodash.template@3.6.2 extraneous
+├── lodash.templatesettings@3.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.templatesettings@3.1.1@lodash.templatesettings extraneous
+├── lodash.trim@4.5.1 extraneous
+├── lodash.values@2.4.1 extraneous
+├── log4js@0.6.38 extraneous
+├── longest@1.0.1 extraneous
+├── lookup-path@0.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lookup-path@0.3.1@lookup-path extraneous
+├── loose-envify@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_loose-envify@1.3.1@loose-envify extraneous
+├── loud-rejection@1.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_loud-rejection@1.6.0@loud-rejection extraneous
+├── lru-cache@4.1.1 extraneous
+├── magic-string@0.15.2 extraneous
+├── map-cache@0.2.2 extraneous
+├── map-obj@1.0.1 extraneous
+├── media-typer@0.3.0 extraneous
+├── memory-fs@0.2.0 extraneous
+├── meow@3.7.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_meow@3.7.0@meow extraneous
+├── merge-descriptors@1.0.1 extraneous
+├── methods@1.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_methods@1.1.2@methods extraneous
+├── micromatch@2.3.11 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_micromatch@2.3.11@micromatch extraneous
+├── mime@1.3.6 extraneous
+├── mime-db@1.29.0 extraneous
+├── mime-types@2.1.16 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_mime-types@2.1.16@mime-types extraneous
+├── minimatch@0.2.14 extraneous
+├── minimist@0.2.0 extraneous
+├── mkdirp@0.5.1 extraneous
+├── mocha@2.5.3 extraneous
+├── moment@2.18.1 extraneous
+├── ms@0.7.1 extraneous
+├── multipipe@0.1.2 extraneous
+├── mute-stream@0.0.6 extraneous
+├── nan@2.6.2 extraneous
+├── natives@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_natives@1.1.0@natives extraneous
+├── natty-fetch@2.5.2 extraneous
+├── natty-storage@2.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_natty-storage@2.0.2@natty-storage extraneous
+├── negotiator@0.6.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_negotiator@0.6.1@negotiator extraneous
+├── node-fetch@1.7.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_node-fetch@1.7.1@node-fetch extraneous
+├── node-libs-browser@0.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_node-libs-browser@0.6.0@node-libs-browser extraneous
+├── normalize-package-data@2.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_normalize-package-data@2.4.0@normalize-package-data extraneous
+├── normalize-path@2.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_normalize-path@2.1.1@normalize-path extraneous
+├── normalize-range@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_normalize-range@0.1.2@normalize-range extraneous
+├── nth-check@1.0.1 extraneous
+├── null-check@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_null-check@1.0.0@null-check extraneous
+├── num2fraction@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_num2fraction@1.2.2@num2fraction extraneous
+├── number-is-nan@1.0.1 extraneous
+├── oauth-sign@0.8.2 extraneous
+├── object-assign@4.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object-assign@4.1.1@object-assign extraneous
+├── object-component@0.0.3 extraneous
+├── object-is@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object-is@1.0.1@object-is extraneous
+├── object-keys@1.0.11 extraneous
+├── object.assign@4.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object.assign@4.0.4@object.assign extraneous
+├── object.defaults@1.1.0 extraneous
+├── object.entries@1.0.4 extraneous
+├── object.omit@2.0.1 extraneous
+├── object.pick@1.2.0 extraneous
+├── object.values@1.0.4 extraneous
+├── on-finished@2.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_on-finished@2.3.0@on-finished extraneous
+├── once@1.4.0 extraneous
+├── onetime@1.1.0 extraneous
+├── opener@1.4.3 extraneous
+├── optimist@0.6.1 extraneous
+├── optionator@0.8.2 extraneous
+├── options@0.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_options@0.0.6@options extraneous
+├── orchestrator@0.3.8 extraneous
+├── ordered-read-streams@0.1.0 extraneous
+├── os-browserify@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_os-browserify@0.1.2@os-browserify extraneous
+├── os-homedir@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_os-homedir@1.0.2@os-homedir extraneous
+├── os-tmpdir@1.0.2 extraneous
+├── pako@0.2.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pako@0.2.9@pako extraneous
+├── parse-filepath@1.0.1 extraneous
+├── parse-glob@3.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parse-glob@3.0.4@parse-glob extraneous
+├── parse-json@2.2.0 extraneous
+├── parse-passwd@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parse-passwd@1.0.0@parse-passwd extraneous
+├── parsejson@0.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parsejson@0.0.3@parsejson extraneous
+├── parseqs@0.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parseqs@0.0.5@parseqs extraneous
+├── parseuri@0.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parseuri@0.0.5@parseuri extraneous
+├── parseurl@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parseurl@1.3.1@parseurl extraneous
+├── path-browserify@0.0.0 extraneous
+├── path-exists@2.1.0 extraneous
+├── path-is-absolute@1.0.1 extraneous
+├── path-is-inside@1.0.2 extraneous
+├── path-parse@1.0.5 extraneous
+├── path-root@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_path-root@0.1.1@path-root extraneous
+├── path-root-regex@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_path-root-regex@0.1.2@path-root-regex extraneous
+├── path-to-regexp@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_path-to-regexp@0.1.7@path-to-regexp extraneous
+├── path-type@1.1.0 extraneous
+├── pbkdf2-compat@2.0.1 extraneous
+├── pend@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pend@1.2.0@pend extraneous
+├── performance-now@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_performance-now@0.2.0@performance-now extraneous
+├── phantomjs-prebuilt@2.1.14 extraneous
+├── pify@2.3.0 extraneous
+├── pinkie@2.0.4 extraneous
+├── pinkie-promise@2.0.1 extraneous
+├── pkg-dir@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pkg-dir@1.0.0@pkg-dir extraneous
+├── pkg-up@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pkg-up@1.0.0@pkg-up extraneous
+├── pluralize@1.2.1 extraneous
+├── postcss@5.2.17 extraneous
+├── postcss-value-parser@3.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_postcss-value-parser@3.3.0@postcss-value-parser extraneous
+├── prelude-ls@1.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_prelude-ls@1.1.2@prelude-ls extraneous
+├── preserve@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_preserve@0.2.0@preserve extraneous
+├── pretty-hrtime@1.0.3 extraneous
+├── private@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_private@0.1.7@private extraneous
+├── process@0.11.10 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_process@0.11.10@process extraneous
+├── process-nextick-args@1.0.7 extraneous
+├── progress@1.1.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_progress@1.1.8@progress extraneous
+├── promise@7.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_promise@7.1.1@promise extraneous
+├── prop-types@15.5.10 extraneous
+├── proxy-addr@1.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_proxy-addr@1.1.5@proxy-addr extraneous
+├── prr@0.0.0 extraneous
+├── pseudomap@1.0.2 extraneous
+├── punycode@1.4.1 extraneous
+├── q@1.5.0 extraneous
+├── qjobs@1.1.5 extraneous
+├── qs@6.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_qs@6.4.0@qs extraneous
+├── querystring@0.2.0 extraneous
+├── querystring-es3@0.2.1 extraneous
+├── randomatic@1.1.7 extraneous
+├── range-parser@1.2.0 extraneous
+├── raw-body@2.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_raw-body@2.2.0@raw-body extraneous
+├── rc-align@2.3.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-align@2.3.4@rc-align extraneous
+├── rc-animate@2.0.4 extraneous
+├── rc-calendar@7.4.4 extraneous
+├── rc-dialog@6.5.10 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-dialog@6.5.10@rc-dialog extraneous
+├── rc-dropdown@1.4.12 extraneous
+├── rc-menu@5.0.10 extraneous
+├── rc-notification@1.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-notification@1.4.3@rc-notification extraneous
+├── rc-progress@1.0.4 extraneous
+├── rc-queue-anim@0.13.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-queue-anim@0.13.3@rc-queue-anim extraneous
+├── rc-select@6.8.8 extraneous
+├── rc-switch@1.4.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-switch@1.4.4@rc-switch extraneous
+├── rc-tabs@7.0.13 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-tabs@7.0.13@rc-tabs extraneous
+├── rc-time-picker@2.2.2 extraneous
+├── rc-tooltip@3.3.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-tooltip@3.3.5@rc-tooltip extraneous
+├── rc-tree@1.3.10 extraneous
+├── rc-tree-select@1.10.3 extraneous
+├── rc-trigger@1.11.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-trigger@1.11.3@rc-trigger extraneous
+├── rc-util@4.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-util@4.0.4@rc-util extraneous
+├── UNMET PEER DEPENDENCY react@0.14.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_react@0.14.9@react extraneous
+├── react-dom@0.14.9 extraneous
+├── react-hammerjs@0.5.0 extraneous
+├── react-mixin@2.0.2 extraneous
+├── react-prop-types@0.3.2 extraneous
+├── react-responsive-mixin@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_react-responsive-mixin@0.4.0@react-responsive-mixin extraneous
+├── react-slick@0.14.8 extraneous
+├── react-test-renderer@15.6.1 extraneous
+├── read-pkg@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_read-pkg@1.1.0@read-pkg extraneous
+├── read-pkg-up@1.0.1 extraneous
+├── readable-stream@2.3.3 extraneous
+├── readdirp@2.1.0 extraneous
+├── readline2@1.0.1 extraneous
+├── recast@0.11.23 extraneous
+├── rechoir@0.6.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rechoir@0.6.2@rechoir extraneous
+├── redent@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_redent@1.0.0@redent extraneous
+├── regenerator-runtime@0.10.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_regenerator-runtime@0.10.5@regenerator-runtime extraneous
+├── regex-cache@0.4.3 extraneous
+├── remove-trailing-separator@1.0.2 extraneous
+├── repeat-element@1.1.2 extraneous
+├── repeat-string@1.6.1 extraneous
+├── repeating@2.0.1 extraneous
+├── replace-ext@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_replace-ext@1.0.0@replace-ext extraneous
+├── request@2.79.0 extraneous
+├── request-progress@2.0.1 extraneous
+├── require-uncached@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_require-uncached@1.0.3@require-uncached extraneous
+├── requires-port@1.0.0 extraneous
+├── resolve@1.4.0 extraneous
+├── resolve-dir@0.1.1 extraneous
+├── resolve-from@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_resolve-from@1.0.1@resolve-from extraneous
+├── restore-cursor@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_restore-cursor@1.0.1@restore-cursor extraneous
+├── right-align@0.1.3 extraneous
+├── rimraf@2.6.1 extraneous
+├── ripemd160@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ripemd160@0.2.0@ripemd160 extraneous
+├── run-async@2.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_run-async@2.3.0@run-async extraneous
+├── rx@4.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rx@4.1.0@rx extraneous
+├── rx-lite@3.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rx-lite@3.1.2@rx-lite extraneous
+├── safe-buffer@5.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_safe-buffer@5.1.1@safe-buffer extraneous
+├── semver@4.3.6 extraneous
+├── send@0.15.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_send@0.15.3@send extraneous
+├── sequencify@0.0.7 extraneous
+├── serve-static@1.12.3 extraneous
+├── set-immediate-shim@1.0.1 extraneous
+├── setimmediate@1.0.5 extraneous
+├── setprototypeof@1.0.3 extraneous
+├── sha.js@2.2.6 extraneous
+├── shallowequal@0.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_shallowequal@0.2.2@shallowequal extraneous
+├── shelljs@0.6.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_shelljs@0.6.1@shelljs extraneous
+├── sigmund@1.0.1 extraneous
+├── signal-exit@3.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_signal-exit@3.0.2@signal-exit extraneous
+├── slice-ansi@0.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_slice-ansi@0.0.4@slice-ansi extraneous
+├── slick-carousel@1.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_slick-carousel@1.6.0@slick-carousel extraneous
+├── smart-mixin@1.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_smart-mixin@1.2.1@smart-mixin extraneous
+├── sntp@1.0.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sntp@1.0.9@sntp extraneous
+├── socket.io@1.7.3 extraneous
+├── socket.io-adapter@0.5.0 extraneous
+├── socket.io-client@1.7.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_socket.io-client@1.7.3@socket.io-client extraneous
+├── socket.io-parser@2.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_socket.io-parser@2.3.1@socket.io-parser extraneous
+├── source-list-map@0.1.8 extraneous
+├── source-map@0.5.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_source-map@0.5.6@source-map extraneous
+├── sparkles@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sparkles@1.0.0@sparkles extraneous
+├── spdx-correct@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_spdx-correct@1.0.2@spdx-correct extraneous
+├── spdx-expression-parse@1.0.4 extraneous
+├── spdx-license-ids@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_spdx-license-ids@1.2.2@spdx-license-ids extraneous
+├── sprintf-js@1.0.3 extraneous
+├── sshpk@1.13.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sshpk@1.13.1@sshpk extraneous
+├── statuses@1.3.1 extraneous
+├── stream-browserify@1.0.0 extraneous
+├── stream-consume@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_stream-consume@0.1.0@stream-consume extraneous
+├── string-convert@0.2.1 extraneous
+├── string-width@2.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_string-width@2.1.1@string-width extraneous
+├── string_decoder@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_string_decoder@1.0.3@string_decoder extraneous
+├── stringstream@0.0.5 extraneous
+├── strip-ansi@0.1.1 extraneous
+├── strip-bom@1.0.0 extraneous
+├── strip-indent@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_strip-indent@1.0.1@strip-indent extraneous
+├── strip-json-comments@1.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_strip-json-comments@1.0.4@strip-json-comments extraneous
+├── supports-color@3.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_supports-color@3.2.3@supports-color extraneous
+├── table@3.8.3 extraneous
+├── tapable@0.1.10 extraneous
+├── text-table@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_text-table@0.2.0@text-table extraneous
+├── throttleit@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_throttleit@1.0.0@throttleit extraneous
+├── through@2.3.8 extraneous
+├── through2@2.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_through2@2.0.3@through2 extraneous
+├── tildify@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_tildify@1.2.0@tildify extraneous
+├── time-stamp@1.1.0 extraneous
+├── timers-browserify@1.4.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_timers-browserify@1.4.2@timers-browserify extraneous
+├── tmp@0.0.31 extraneous
+├── to-array@0.1.4 extraneous
+├── to-iso-string@0.0.2 extraneous
+├── tough-cookie@2.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_tough-cookie@2.3.2@tough-cookie extraneous
+├── trim-newlines@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_trim-newlines@1.0.0@trim-newlines extraneous
+├── tryit@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_tryit@1.0.3@tryit extraneous
+├── tty-browserify@0.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_tty-browserify@0.0.0@tty-browserify extraneous
+├── tunnel-agent@0.4.3 extraneous
+├── tweetnacl@0.14.5 extraneous
+├── type-check@0.3.2 extraneous
+├── type-is@1.6.15 extraneous
+├── typedarray@0.0.6 extraneous
+├── ua-parser-js@0.7.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ua-parser-js@0.7.14@ua-parser-js extraneous
+├── uglify-js@2.8.29 extraneous
+├── uglify-save-license@0.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uglify-save-license@0.4.1@uglify-save-license extraneous
+├── uglify-to-browserify@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uglify-to-browserify@1.0.2@uglify-to-browserify extraneous
+├── ultron@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ultron@1.1.0@ultron extraneous
+├── unc-path-regex@0.1.2 extraneous
+├── unique-stream@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_unique-stream@1.0.0@unique-stream extraneous
+├── unpipe@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_unpipe@1.0.0@unpipe extraneous
+├── uploadcore@2.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uploadcore@2.3.1@uploadcore extraneous
+├── url@0.10.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_url@0.10.3@url extraneous
+├── user-home@2.0.0 extraneous
+├── useragent@2.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_useragent@2.2.1@useragent extraneous
+├── util@0.10.3 extraneous
+├── util-deprecate@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_util-deprecate@1.0.2@util-deprecate extraneous
+├── utils-merge@1.0.0 extraneous
+├── uuid@3.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uuid@3.1.0@uuid extraneous
+├── uxcore-album@0.3.11 extraneous
+├── uxcore-alert@0.3.1 extraneous
+├── uxcore-animate@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-animate@0.2.0@uxcore-animate extraneous
+├── uxcore-badge@0.2.1 extraneous
+├── uxcore-button@0.4.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-button@0.4.14@uxcore-button extraneous
+├── uxcore-calendar@0.9.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-calendar@0.9.7@uxcore-calendar extraneous
+├── uxcore-carousel@0.3.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-carousel@0.3.6@uxcore-carousel extraneous
+├── uxcore-cascade-multi-select@0.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-cascade-multi-select@0.5.0@uxcore-cascade-multi-select extraneous
+├── uxcore-cascade-select@0.3.4 extraneous
+├── uxcore-cell-field@0.1.4 extraneous
+├── uxcore-checkbox-cell-field@0.1.1 extraneous
+├── uxcore-checkbox-group@1.1.4 extraneous
+├── uxcore-collapse@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-collapse@1.3.1@uxcore-collapse extraneous
+├── uxcore-const@0.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-const@0.0.2@uxcore-const extraneous
+├── uxcore-crumb@0.2.3 extraneous
+├── uxcore-crumb-item@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-crumb-item@0.1.4@uxcore-crumb-item extraneous
+├── uxcore-date-cell-field@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-date-cell-field@0.4.0@uxcore-date-cell-field extraneous
+├── uxcore-date-form-field@0.8.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-date-form-field@0.8.4@uxcore-date-form-field extraneous
+├── uxcore-dialog@0.7.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-dialog@0.7.4@uxcore-dialog extraneous
+├── uxcore-dropdown@0.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-dropdown@0.4.1@uxcore-dropdown extraneous
+├── uxcore-empty-data@0.1.2 extraneous
+├── uxcore-float-nav@0.1.3 extraneous
+├── uxcore-form@4.0.0 extraneous
+├── uxcore-form-field@0.1.10 extraneous
+├── uxcore-form-row@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-form-row@0.1.4@uxcore-form-row extraneous
+├── uxcore-formatter@0.1.4 extraneous
+├── uxcore-grid@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-grid@1.2.2@uxcore-grid extraneous
+├── uxcore-icon@0.1.15 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-icon@0.1.15@uxcore-icon extraneous
+├── uxcore-input-form-field@0.1.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-input-form-field@0.1.9@uxcore-input-form-field extraneous
+├── uxcore-layout@1.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-layout@1.0.5@uxcore-layout extraneous
+├── uxcore-load-more@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-load-more@0.1.2@uxcore-load-more extraneous
+├── uxcore-matrix@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-matrix@0.2.0@uxcore-matrix extraneous
+├── uxcore-mention@0.3.15 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-mention@0.3.15@uxcore-mention extraneous
+├── uxcore-menu@1.6.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-menu@1.6.4@uxcore-menu extraneous
+├── uxcore-message@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-message@0.4.0@uxcore-message extraneous
+├── uxcore-multi-select@0.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-multi-select@0.4.1@uxcore-multi-select extraneous
+├── uxcore-other-form-field@0.1.4 extraneous
+├── uxcore-pagination@0.6.0 extraneous
+├── uxcore-pickable@3.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-pickable@3.1.1@uxcore-pickable extraneous
+├── uxcore-pickable-form-field@0.4.2 extraneous
+├── uxcore-popover@0.5.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-popover@0.5.2@uxcore-popover extraneous
+├── uxcore-progress@1.1.2 extraneous
+├── uxcore-radiogroup@1.2.2 extraneous
+├── uxcore-rate@0.3.3 extraneous
+├── uxcore-select-form-field@0.3.8 extraneous
+├── uxcore-select2@0.4.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-select2@0.4.14@uxcore-select2 extraneous
+├── uxcore-splitter@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-splitter@0.1.4@uxcore-splitter extraneous
+├── uxcore-steps@2.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-steps@2.0.4@uxcore-steps extraneous
+├── uxcore-switch@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-switch@0.1.5@uxcore-switch extraneous
+├── uxcore-switch-form-field@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-switch-form-field@0.1.2@uxcore-switch-form-field extraneous
+├── uxcore-table@6.5.0 extraneous
+├── uxcore-tabs@0.6.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tabs@0.6.5@uxcore-tabs extraneous
+├── uxcore-tag@2.1.0 extraneous
+├── uxcore-textarea-form-field@0.1.12 extraneous
+├── uxcore-timeline@0.2.0 extraneous
+├── uxcore-tinymce@0.2.8 extraneous
+├── uxcore-title@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-title@0.1.1@uxcore-title extraneous
+├── uxcore-tooltip@0.4.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tooltip@0.4.5@uxcore-tooltip extraneous
+├── uxcore-totop@0.4.0 extraneous
+├── uxcore-transfer@0.3.10 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-transfer@0.3.10@uxcore-transfer extraneous
+├── uxcore-tree@0.2.11 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tree@0.2.11@uxcore-tree extraneous
+├── uxcore-tree-select@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tree-select@0.2.3@uxcore-tree-select extraneous
+├── uxcore-uploader@2.1.5 extraneous
+├── uxcore-utils@0.1.1 extraneous
+├── uxcore-validator@0.1.4 extraneous
+├── v8flags@2.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_v8flags@2.1.1@v8flags extraneous
+├── validate-npm-package-license@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_validate-npm-package-license@3.0.1@validate-npm-package-license extraneous
+├── vary@1.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_vary@1.1.1@vary extraneous
+├── velocity-animate@1.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_velocity-animate@1.3.2@velocity-animate extraneous
+├── verror@1.10.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_verror@1.10.0@verror extraneous
+├── vinyl@0.2.3 extraneous
+├── vinyl-bufferstream@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_vinyl-bufferstream@1.0.1@vinyl-bufferstream extraneous
+├── vinyl-fs@0.3.14 extraneous
+├── vinyl-sourcemaps-apply@0.2.1 extraneous
+├── vlq@0.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_vlq@0.2.2@vlq extraneous
+├── vm-browserify@0.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_vm-browserify@0.0.4@vm-browserify extraneous
+├── void-elements@2.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_void-elements@2.0.1@void-elements extraneous
+├── warning@3.0.0 extraneous
+├── watchpack@0.2.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_watchpack@0.2.9@watchpack extraneous
+├── webpack@1.13.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_webpack@1.13.3@webpack extraneous
+├── webpack-bundle-analyzer@2.8.3 extraneous
+├── webpack-core@0.6.9 extraneous
+├── whatwg-fetch@2.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_whatwg-fetch@2.0.3@whatwg-fetch extraneous
+├── when@3.7.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_when@3.7.8@when extraneous
+├── which@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_which@1.3.0@which extraneous
+├── window-size@0.1.0 extraneous
+├── wordwrap@0.0.3 extraneous
+├── wrappy@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_wrappy@1.0.2@wrappy extraneous
+├── write@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_write@0.2.1@write extraneous
+├── ws@2.3.1 extraneous
+├── wtf-8@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_wtf-8@1.0.0@wtf-8 extraneous
+├── xmlhttprequest-ssl@1.5.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_xmlhttprequest-ssl@1.5.3@xmlhttprequest-ssl extraneous
+├── xtend@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_xtend@4.0.1@xtend extraneous
+├── yallist@2.1.2 extraneous
+├── yargs@3.10.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yargs@3.10.0@yargs extraneous
+├── yauzl@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yauzl@2.4.1@yauzl extraneous
+└── yeast@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yeast@0.1.2@yeast extraneous
+
+uxcore@0.14.9 /Users/ens/pwd/uxcore/uxcore
+├── accepts@1.3.3 extraneous
+├── accord@0.23.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_accord@0.23.0@accord extraneous
+├── acorn@5.1.1 extraneous
+├── acorn-jsx@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_acorn-jsx@3.0.1@acorn-jsx extraneous
+├── add-dom-event-listener@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_add-dom-event-listener@1.0.2@add-dom-event-listener extraneous
+├── after@0.8.2 extraneous
+├── ajv@4.11.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ajv@4.11.8@ajv extraneous
+├── ajv-keywords@1.5.1 extraneous
+├── align-text@0.1.4 extraneous
+├── amdefine@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_amdefine@1.0.1@amdefine extraneous
+├── ansi-escapes@1.4.0 extraneous
+├── ansi-regex@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ansi-regex@3.0.0@ansi-regex extraneous
+├── ansi-styles@2.2.1 extraneous
+├── anymatch@1.3.2 extraneous
+├── archy@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_archy@1.0.0@archy extraneous
+├── argparse@1.0.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_argparse@1.0.9@argparse extraneous
+├── arr-diff@2.0.0 extraneous
+├── arr-flatten@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_arr-flatten@1.1.0@arr-flatten extraneous
+├── array-differ@1.0.0 extraneous
+├── array-each@1.0.1 extraneous
+├── array-find-index@1.0.2 extraneous
+├── array-flatten@1.1.1 extraneous
+├── array-slice@1.0.0 extraneous
+├── array-union@1.0.2 extraneous
+├── array-uniq@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_array-uniq@1.0.3@array-uniq extraneous
+├── array-unique@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_array-unique@0.2.1@array-unique extraneous
+├── arraybuffer.slice@0.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_arraybuffer.slice@0.0.6@arraybuffer.slice extraneous
+├── arrify@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_arrify@1.0.1@arrify extraneous
+├── asap@2.0.6 extraneous
+├── asn1@0.2.3 extraneous
+├── assert@1.4.1 extraneous
+├── assert-plus@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_assert-plus@1.0.0@assert-plus extraneous
+├── ast-types@0.9.6 extraneous
+├── async@0.2.10 extraneous
+├── async-each@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_async-each@1.0.1@async-each extraneous
+├── asynckit@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_asynckit@0.4.0@asynckit extraneous
+├── autoprefixer@6.7.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_autoprefixer@6.7.7@autoprefixer extraneous
+├── autosize@3.0.21 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_autosize@3.0.21@autosize extraneous
+├── aws-sign2@0.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_aws-sign2@0.6.0@aws-sign2 extraneous
+├── aws4@1.6.0 extraneous
+├── babel-runtime@6.25.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_babel-runtime@6.25.0@babel-runtime extraneous
+├── backo2@1.0.2 extraneous
+├── balanced-match@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_balanced-match@1.0.0@balanced-match extraneous
+├── base62@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_base62@1.2.0@base62 extraneous
+├── Base64@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_Base64@0.2.1@Base64 extraneous
+├── base64-arraybuffer@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_base64-arraybuffer@0.1.5@base64-arraybuffer extraneous
+├── base64-js@1.2.1 extraneous
+├── base64id@1.0.0 extraneous
+├── bcrypt-pbkdf@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_bcrypt-pbkdf@1.0.1@bcrypt-pbkdf extraneous
+├── beeper@1.1.1 extraneous
+├── better-assert@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_better-assert@1.0.2@better-assert extraneous
+├── big.js@3.1.3 extraneous
+├── binary-extensions@1.9.0 extraneous
+├── blob@0.0.4 extraneous
+├── bluebird@3.5.0 extraneous
+├── body-parser@1.17.2 extraneous
+├── boolbase@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_boolbase@1.0.0@boolbase extraneous
+├── boom@2.10.1 extraneous
+├── brace-expansion@1.1.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_brace-expansion@1.1.8@brace-expansion extraneous
+├── braces@0.1.5 extraneous
+├── browserify-zlib@0.1.4 extraneous
+├── browserslist@1.7.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_browserslist@1.7.7@browserslist extraneous
+├── buffer@4.9.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_buffer@4.9.1@buffer extraneous
+├── bufferstreams@1.0.1 extraneous
+├── builtin-modules@1.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_builtin-modules@1.1.1@builtin-modules extraneous
+├── bytes@2.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_bytes@2.4.0@bytes extraneous
+├── caller-path@0.1.0 extraneous
+├── callsite@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_callsite@1.0.0@callsite extraneous
+├── callsites@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_callsites@0.2.0@callsites extraneous
+├── camelcase@2.1.1 extraneous
+├── camelcase-keys@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_camelcase-keys@2.1.0@camelcase-keys extraneous
+├── can-use-dom@0.1.0 extraneous
+├── caniuse-db@1.0.30000710 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_caniuse-db@1.0.30000710@caniuse-db extraneous
+├── caseless@0.12.0 extraneous
+├── center-align@0.1.3 extraneous
+├── chalk@1.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_chalk@1.1.3@chalk extraneous
+├── cheerio@0.22.0 extraneous
+├── chokidar@1.7.0 extraneous
+├── circular-json@0.3.3 extraneous
+├── classnames@2.2.5 extraneous
+├── clean-css@2.2.23 extraneous
+├── cli-cursor@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cli-cursor@1.0.2@cli-cursor extraneous
+├── cli-width@2.1.0 extraneous
+├── cliui@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_cliui@2.1.0@cliui extraneous
+├── clone@2.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_clone@2.1.1@clone extraneous
+├── clone-buffer@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_clone-buffer@1.0.0@clone-buffer extraneous
+├── clone-stats@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_clone-stats@1.0.0@clone-stats extraneous
+├── cloneable-readable@1.0.0 extraneous
+├── co@4.6.0 extraneous
+├── code-point-at@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_code-point-at@1.1.0@code-point-at extraneous
+├── collect-stream@1.2.1 extraneous
+├── colors@1.1.2 extraneous
+├── combine-lists@1.0.1 extraneous
+├── combined-stream@1.0.5 extraneous
+├── commander@0.6.1 extraneous
+├── commoner@0.10.8 extraneous
+├── component-bind@1.0.0 extraneous
+├── component-classes@1.2.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_component-classes@1.2.6@component-classes extraneous
+├── component-emitter@1.2.1 extraneous
+├── component-indexof@0.0.3 extraneous
+├── component-inherit@0.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_component-inherit@0.0.3@component-inherit extraneous
+├── concat-map@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_concat-map@0.0.1@concat-map extraneous
+├── concat-stream@1.6.0 extraneous
+├── concat-with-sourcemaps@1.0.4 extraneous
+├── connect@3.6.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_connect@3.6.3@connect extraneous
+├── console-browserify@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_console-browserify@1.1.0@console-browserify extraneous
+├── console-polyfill@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_console-polyfill@0.2.3@console-polyfill extraneous
+├── constants-browserify@0.0.1 extraneous
+├── contains-path@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_contains-path@0.1.0@contains-path extraneous
+├── content-disposition@0.5.2 extraneous
+├── content-type@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_content-type@1.0.2@content-type extraneous
+├── convert-source-map@1.5.0 extraneous
+├── cookie@0.3.1 extraneous
+├── cookie-signature@1.0.6 extraneous
+├── core-js@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_core-js@2.4.1@core-js extraneous
+├── core-util-is@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_core-util-is@1.0.2@core-util-is extraneous
+├── create-react-class@15.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_create-react-class@15.6.0@create-react-class extraneous
+├── cross-spawn@4.0.2 extraneous
+├── cryptiles@2.0.5 extraneous
+├── crypto-browserify@3.2.8 extraneous
+├── css-animation@1.3.2 extraneous
+├── css-select@1.2.0 extraneous
+├── css-what@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_css-what@2.1.0@css-what extraneous
+├── currently-unhandled@0.4.1 extraneous
+├── custom-event@1.0.1 extraneous
+├── d@1.0.0 extraneous
+├── damerau-levenshtein@1.0.4 extraneous
+├── dashdash@1.14.1 extraneous
+├── date-now@0.1.4 extraneous
+├── dateformat@1.0.12 extraneous
+├── deap@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_deap@1.0.0@deap extraneous
+├── debug@2.6.8 extraneous
+├── decamelize@1.2.0 extraneous
+├── deep-equal@1.0.1 extraneous
+├── deep-extend@0.4.2 extraneous
+├── deep-is@0.1.3 extraneous
+├── deepcopy@0.5.0 extraneous
+├── defaults@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_defaults@1.0.3@defaults extraneous
+├── define-properties@1.1.2 extraneous
+├── defined@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_defined@1.0.0@defined extraneous
+├── del@2.2.2 extraneous
+├── delayed-stream@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_delayed-stream@1.0.0@delayed-stream extraneous
+├── depd@1.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_depd@1.1.1@depd extraneous
+├── deprecated@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_deprecated@0.0.1@deprecated extraneous
+├── destroy@1.0.4 extraneous
+├── detect-file@0.1.0 extraneous
+├── detect-newline@1.0.3 extraneous
+├── detective@4.5.0 extraneous
+├── di@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_di@0.0.1@di extraneous
+├── diff@1.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_diff@1.4.0@diff extraneous
+├── doctrine@1.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_doctrine@1.5.0@doctrine extraneous
+├── dom-align@1.6.3 extraneous
+├── dom-scroll-into-view@1.2.1 extraneous
+├── dom-serialize@2.2.1 extraneous
+├── dom-serializer@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_dom-serializer@0.1.0@dom-serializer extraneous
+├── domain-browser@1.1.7 extraneous
+├── domelementtype@1.3.0 extraneous
+├── domhandler@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_domhandler@2.4.1@domhandler extraneous
+├── domutils@1.6.2 extraneous
+├── duplexer@0.1.1 extraneous
+├── duplexer2@0.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_duplexer2@0.0.2@duplexer2 extraneous
+├── duplicate-package-checker-webpack-plugin@1.2.5 extraneous
+├── ecc-jsbn@0.1.1 extraneous
+├── ee-first@1.1.1 extraneous
+├── ejs@2.5.7 extraneous
+├── electron-to-chromium@1.3.17 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_electron-to-chromium@1.3.17@electron-to-chromium extraneous
+├── emojis-list@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_emojis-list@2.1.0@emojis-list extraneous
+├── encodeurl@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_encodeurl@1.0.1@encodeurl extraneous
+├── encoding@0.1.12 extraneous
+├── end-of-stream@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_end-of-stream@0.1.5@end-of-stream extraneous
+├── engine.io@1.8.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_engine.io@1.8.3@engine.io extraneous
+├── engine.io-client@1.8.3 extraneous
+├── engine.io-parser@1.3.2 extraneous
+├── enhanced-resolve@0.9.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_enhanced-resolve@0.9.1@enhanced-resolve extraneous
+├── enquire.js@2.1.6 extraneous
+├── ent@2.2.0 extraneous
+├── entities@1.1.1 extraneous
+├── envify@3.4.1 extraneous
+├── enzyme@2.9.1 extraneous
+├── errno@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_errno@0.1.4@errno extraneous
+├── error-ex@1.3.1 extraneous
+├── es-abstract@1.8.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es-abstract@1.8.0@es-abstract extraneous
+├── es-to-primitive@1.1.1 extraneous
+├── es5-ext@0.10.26 extraneous
+├── es5-shim@4.5.9 extraneous
+├── es6-iterator@2.0.1 extraneous
+├── es6-map@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-map@0.1.5@es6-map extraneous
+├── es6-promise@4.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-promise@4.0.5@es6-promise extraneous
+├── es6-set@0.1.5 extraneous
+├── es6-symbol@3.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_es6-symbol@3.1.1@es6-symbol extraneous
+├── es6-weak-map@2.0.2 extraneous
+├── escape-html@1.0.3 extraneous
+├── escape-string-regexp@1.0.2 extraneous
+├── escope@3.6.0 extraneous
+├── eslint@2.13.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint@2.13.1@eslint extraneous
+├── eslint-config-airbnb@9.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-config-airbnb@9.0.1@eslint-config-airbnb extraneous
+├── eslint-config-airbnb-base@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-config-airbnb-base@3.0.1@eslint-config-airbnb-base extraneous
+├── eslint-import-resolver-node@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-import-resolver-node@0.2.3@eslint-import-resolver-node extraneous
+├── eslint-plugin-import@1.16.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-plugin-import@1.16.0@eslint-plugin-import extraneous
+├── eslint-plugin-jsx-a11y@1.5.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eslint-plugin-jsx-a11y@1.5.5@eslint-plugin-jsx-a11y extraneous
+├── eslint-plugin-react@5.2.2 extraneous
+├── espree@3.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_espree@3.4.3@espree extraneous
+├── esprima@4.0.0 extraneous
+├── esprima-fb@15001.1.0-dev-harmony-fb -> /Users/ens/pwd/uxcore/uxcore/node_modules/_esprima-fb@15001.1.0-dev-harmony-fb@esprima-fb extraneous
+├── esrecurse@4.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_esrecurse@4.2.0@esrecurse extraneous
+├── estraverse@4.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_estraverse@4.2.0@estraverse extraneous
+├── esutils@2.0.2 extraneous
+├── etag@1.8.0 extraneous
+├── event-emitter@0.3.5 extraneous
+├── eventemitter3@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_eventemitter3@1.2.0@eventemitter3 extraneous
+├── events@1.1.1 extraneous
+├── exit-hook@1.1.1 extraneous
+├── expand-braces@0.1.2 extraneous
+├── expand-brackets@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expand-brackets@0.1.5@expand-brackets extraneous
+├── expand-range@1.8.2 extraneous
+├── expand-tilde@2.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_expand-tilde@2.0.2@expand-tilde extraneous
+├── expect.js@0.3.1 extraneous
+├── express@4.15.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_express@4.15.3@express extraneous
+├── extend@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_extend@3.0.1@extend extraneous
+├── extglob@0.3.2 extraneous
+├── extract-zip@1.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_extract-zip@1.5.0@extract-zip extraneous
+├── extsprintf@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_extsprintf@1.3.0@extsprintf extraneous
+├── fancy-log@1.3.0 extraneous
+├── fast-levenshtein@2.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fast-levenshtein@2.0.6@fast-levenshtein extraneous
+├── fbjs@0.6.1 extraneous
+├── fd-slicer@1.0.1 extraneous
+├── figures@1.7.0 extraneous
+├── file-entry-cache@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_file-entry-cache@1.3.1@file-entry-cache extraneous
+├── filename-regex@2.0.1 extraneous
+├── filesize@3.5.10 extraneous
+├── fill-range@2.2.3 extraneous
+├── finalhandler@1.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_finalhandler@1.0.4@finalhandler extraneous
+├── find-index@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_find-index@0.1.1@find-index extraneous
+├── find-root@1.1.0 extraneous
+├── find-up@1.1.2 extraneous
+├── findup-sync@0.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_findup-sync@0.4.3@findup-sync extraneous
+├── fined@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fined@1.1.0@fined extraneous
+├── first-chunk-stream@1.0.0 extraneous
+├── flagged-respawn@0.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_flagged-respawn@0.3.2@flagged-respawn extraneous
+├── flat-cache@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_flat-cache@1.2.2@flat-cache extraneous
+├── fobject@0.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_fobject@0.0.4@fobject extraneous
+├── for-in@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_for-in@1.0.2@for-in extraneous
+├── for-own@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_for-own@1.0.0@for-own extraneous
+├── foreach@2.0.5 extraneous
+├── forever-agent@0.6.1 extraneous
+├── form-data@2.1.4 extraneous
+├── forwarded@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_forwarded@0.1.0@forwarded extraneous
+├── fresh@0.5.0 extraneous
+├── fs-access@1.0.1 extraneous
+├── fs-exists-sync@0.1.0 extraneous
+├── fs-extra@1.0.0 extraneous
+├── fs.realpath@1.0.0 extraneous
+├── fsevents@1.1.2 extraneous
+├── function-bind@1.1.0 extraneous
+├── function.prototype.name@1.0.3 extraneous
+├── gaze@0.5.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gaze@0.5.2@gaze extraneous
+├── generate-function@2.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_generate-function@2.0.0@generate-function extraneous
+├── generate-object-property@1.2.0 extraneous
+├── get-stdin@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_get-stdin@4.0.1@get-stdin extraneous
+├── getpass@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_getpass@0.1.7@getpass extraneous
+├── git-rev@0.2.1 extraneous
+├── glob@7.1.2 extraneous
+├── glob-base@0.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_glob-base@0.3.0@glob-base extraneous
+├── glob-parent@2.0.0 extraneous
+├── glob-stream@3.1.18 extraneous
+├── glob-watcher@0.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_glob-watcher@0.0.6@glob-watcher extraneous
+├── glob2base@0.0.12 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_glob2base@0.0.12@glob2base extraneous
+├── global-modules@0.2.3 extraneous
+├── global-prefix@0.1.5 extraneous
+├── globals@9.18.0 extraneous
+├── globby@5.0.0 extraneous
+├── globule@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_globule@0.1.0@globule extraneous
+├── glogg@1.0.0 extraneous
+├── graceful-fs@4.1.11 extraneous
+├── graceful-readlink@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_graceful-readlink@1.0.1@graceful-readlink extraneous
+├── growl@1.9.2 extraneous
+├── gulp@3.9.1 extraneous
+├── gulp-clean@0.3.2 extraneous
+├── gulp-clean-css@2.0.13 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-clean-css@2.0.13@gulp-clean-css extraneous
+├── gulp-cleancss@0.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-cleancss@0.2.2@gulp-cleancss extraneous
+├── gulp-concat@2.6.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-concat@2.6.1@gulp-concat extraneous
+├── gulp-cssimport@5.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-cssimport@5.0.0@gulp-cssimport extraneous
+├── gulp-less@3.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-less@3.1.0@gulp-less extraneous
+├── gulp-rename@1.2.2 extraneous
+├── gulp-uglify@1.5.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-uglify@1.5.4@gulp-uglify extraneous
+├── gulp-util@3.0.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulp-util@3.0.8@gulp-util extraneous
+├── gulplog@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gulplog@1.0.0@gulplog extraneous
+├── gzip-size@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_gzip-size@3.0.0@gzip-size extraneous
+├── hammerjs@2.0.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_hammerjs@2.0.8@hammerjs extraneous
+├── har-schema@1.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_har-schema@1.0.5@har-schema extraneous
+├── har-validator@2.0.6 extraneous
+├── has@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has@1.0.1@has extraneous
+├── has-ansi@0.1.0 extraneous
+├── has-binary@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-binary@0.1.7@has-binary extraneous
+├── has-color@0.1.7 extraneous
+├── has-cors@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-cors@1.1.0@has-cors extraneous
+├── has-flag@1.0.0 extraneous
+├── has-gulplog@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_has-gulplog@0.1.0@has-gulplog extraneous
+├── hasha@2.2.0 extraneous
+├── hawk@3.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_hawk@3.1.3@hawk extraneous
+├── hoek@2.16.3 extraneous
+├── homedir-polyfill@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_homedir-polyfill@1.0.1@homedir-polyfill extraneous
+├── hosted-git-info@2.5.0 extraneous
+├── html-wiring@1.2.0 extraneous
+├── htmlparser2@3.8.3 extraneous
+├── http-browserify@1.7.0 extraneous
+├── http-errors@1.6.1 extraneous
+├── http-https@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_http-https@1.0.0@http-https extraneous
+├── http-proxy@1.16.2 extraneous
+├── http-signature@1.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_http-signature@1.1.1@http-signature extraneous
+├── https-browserify@0.0.0 extraneous
+├── iconv-lite@0.4.18 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_iconv-lite@0.4.18@iconv-lite extraneous
+├── ieee754@1.1.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ieee754@1.1.8@ieee754 extraneous
+├── ignore@3.3.3 extraneous
+├── image-size@0.5.5 extraneous
+├── immediate@3.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_immediate@3.0.6@immediate extraneous
+├── imurmurhash@0.1.4 extraneous
+├── indent-string@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_indent-string@2.1.0@indent-string extraneous
+├── indexof@0.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_indexof@0.0.1@indexof extraneous
+├── indx@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_indx@0.2.3@indx extraneous
+├── inflight@1.0.6 extraneous
+├── inherits@2.0.1 extraneous
+├── ini@1.3.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ini@1.3.4@ini extraneous
+├── inquirer@1.0.3 extraneous
+├── interpret@0.6.6 extraneous
+├── ipaddr.js@1.4.0 extraneous
+├── is-absolute@0.2.6 extraneous
+├── is-arrayish@0.2.1 extraneous
+├── is-binary-path@1.0.1 extraneous
+├── is-buffer@1.1.5 extraneous
+├── is-builtin-module@1.0.0 extraneous
+├── is-callable@1.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-callable@1.1.3@is-callable extraneous
+├── is-date-object@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-date-object@1.0.1@is-date-object extraneous
+├── is-dotfile@1.0.3 extraneous
+├── is-equal-shallow@0.1.3 extraneous
+├── is-extendable@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-extendable@0.1.1@is-extendable extraneous
+├── is-extglob@1.0.0 extraneous
+├── is-finite@1.0.2 extraneous
+├── is-fullwidth-code-point@1.0.0 extraneous
+├── is-glob@2.0.1 extraneous
+├── is-my-json-valid@2.16.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-my-json-valid@2.16.0@is-my-json-valid extraneous
+├── is-number@3.0.0 extraneous
+├── is-path-cwd@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-path-cwd@1.0.0@is-path-cwd extraneous
+├── is-path-in-cwd@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-path-in-cwd@1.0.0@is-path-in-cwd extraneous
+├── is-path-inside@1.0.0 extraneous
+├── is-plain-object@2.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-plain-object@2.0.4@is-plain-object extraneous
+├── is-posix-bracket@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-posix-bracket@0.1.1@is-posix-bracket extraneous
+├── is-primitive@2.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-primitive@2.0.0@is-primitive extraneous
+├── is-promise@2.1.0 extraneous
+├── is-property@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-property@1.0.2@is-property extraneous
+├── is-regex@1.0.4 extraneous
+├── is-relative@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-relative@0.2.1@is-relative extraneous
+├── is-resolvable@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-resolvable@1.0.0@is-resolvable extraneous
+├── is-stream@1.1.0 extraneous
+├── is-subset@0.1.1 extraneous
+├── is-symbol@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-symbol@1.0.1@is-symbol extraneous
+├── is-typedarray@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-typedarray@1.0.0@is-typedarray extraneous
+├── is-unc-path@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_is-unc-path@0.1.2@is-unc-path extraneous
+├── is-utf8@0.2.1 extraneous
+├── is-windows@0.2.0 extraneous
+├── isarray@1.0.0 extraneous
+├── isbinaryfile@3.0.2 extraneous
+├── isexe@2.0.0 extraneous
+├── isobject@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_isobject@3.0.1@isobject extraneous
+├── isomorphic-fetch@2.2.1 extraneous
+├── isstream@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_isstream@0.1.2@isstream extraneous
+├── jade@0.26.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jade@0.26.3@jade extraneous
+├── jquery@3.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jquery@3.2.1@jquery extraneous
+├── js-base64@2.1.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_js-base64@2.1.9@js-base64 extraneous
+├── js-tokens@3.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_js-tokens@3.0.2@js-tokens extraneous
+├── js-yaml@3.9.1 extraneous
+├── jsbn@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsbn@0.1.1@jsbn extraneous
+├── json-schema@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json-schema@0.2.3@json-schema extraneous
+├── json-stable-stringify@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json-stable-stringify@1.0.1@json-stable-stringify extraneous
+├── json-stringify-safe@5.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json-stringify-safe@5.0.1@json-stringify-safe extraneous
+├── json2mq@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json2mq@0.2.0@json2mq extraneous
+├── json3@3.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json3@3.3.2@json3 extraneous
+├── json5@0.5.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_json5@0.5.1@json5 extraneous
+├── jsonfile@2.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsonfile@2.4.0@jsonfile extraneous
+├── jsonify@0.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsonify@0.0.0@jsonify extraneous
+├── jsonpointer@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsonpointer@4.0.1@jsonpointer extraneous
+├── jsprim@1.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_jsprim@1.4.1@jsprim extraneous
+├── jstransform@11.0.3 extraneous
+├── jsx-ast-utils@1.4.1 extraneous
+├── karma@1.7.0 extraneous
+├── karma-chrome-launcher@1.0.1 extraneous
+├── karma-mocha@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_karma-mocha@1.3.0@karma-mocha extraneous
+├── karma-mocha-reporter@2.2.3 extraneous
+├── karma-phantomjs-launcher@1.0.4 extraneous
+├── kew@0.7.0 extraneous
+├── kind-of@4.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_kind-of@4.0.0@kind-of extraneous
+├── klaw@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_klaw@1.3.1@klaw extraneous
+├── kuma-base@1.5.5 extraneous
+├── lazy-cache@1.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lazy-cache@1.0.4@lazy-cache extraneous
+├── less@2.7.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_less@2.7.2@less extraneous
+├── less-plugin-autoprefix@1.5.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_less-plugin-autoprefix@1.5.1@less-plugin-autoprefix extraneous
+├── less-plugin-inline-urls@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_less-plugin-inline-urls@1.1.0@less-plugin-inline-urls extraneous
+├── levn@0.3.0 extraneous
+├── lie@3.1.1 extraneous
+├── liftoff@2.3.0 extraneous
+├── load-json-file@1.1.0 extraneous
+├── loader-utils@0.2.17 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_loader-utils@0.2.17@loader-utils extraneous
+├── lodash@1.0.2 extraneous
+├── lodash._basecopy@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._basecopy@3.0.1@lodash._basecopy extraneous
+├── lodash._basetostring@3.0.1 extraneous
+├── lodash._basevalues@3.0.0 extraneous
+├── lodash._escapehtmlchar@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._escapehtmlchar@2.4.1@lodash._escapehtmlchar extraneous
+├── lodash._escapestringchar@2.4.1 extraneous
+├── lodash._getnative@3.9.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._getnative@3.9.1@lodash._getnative extraneous
+├── lodash._htmlescapes@2.4.1 extraneous
+├── lodash._isiterateecall@3.0.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._isiterateecall@3.0.9@lodash._isiterateecall extraneous
+├── lodash._isnative@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._isnative@2.4.1@lodash._isnative extraneous
+├── lodash._objecttypes@2.4.1 extraneous
+├── lodash._reescape@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._reescape@3.0.0@lodash._reescape extraneous
+├── lodash._reevaluate@3.0.0 extraneous
+├── lodash._reinterpolate@3.0.0 extraneous
+├── lodash._reunescapedhtml@2.4.1 extraneous
+├── lodash._root@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash._root@3.0.1@lodash._root extraneous
+├── lodash._shimkeys@2.4.1 extraneous
+├── lodash.assignin@4.2.0 extraneous
+├── lodash.bind@4.2.1 extraneous
+├── lodash.cond@4.5.2 extraneous
+├── lodash.defaults@4.2.0 extraneous
+├── lodash.endswith@4.2.1 extraneous
+├── lodash.escape@2.4.1 extraneous
+├── lodash.filter@4.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.filter@4.6.0@lodash.filter extraneous
+├── lodash.find@4.6.0 extraneous
+├── lodash.findindex@4.6.0 extraneous
+├── lodash.flatten@4.4.0 extraneous
+├── lodash.foreach@4.5.0 extraneous
+├── lodash.isarguments@3.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.isarguments@3.1.0@lodash.isarguments extraneous
+├── lodash.isarray@3.0.4 extraneous
+├── lodash.isobject@2.4.1 extraneous
+├── lodash.isplainobject@4.0.6 extraneous
+├── lodash.isstring@4.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.isstring@4.0.1@lodash.isstring extraneous
+├── lodash.keys@3.1.2 extraneous
+├── lodash.map@4.6.0 extraneous
+├── lodash.mapvalues@4.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.mapvalues@4.6.0@lodash.mapvalues extraneous
+├── lodash.merge@4.6.0 extraneous
+├── lodash.pick@4.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.pick@4.4.0@lodash.pick extraneous
+├── lodash.reduce@4.6.0 extraneous
+├── lodash.reject@4.6.0 extraneous
+├── lodash.restparam@3.6.1 extraneous
+├── lodash.some@4.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_lodash.some@4.6.0@lodash.some extraneous
+├── lodash.template@3.6.2 extraneous
+├── lodash.templatesettings@2.4.1 extraneous
+├── lodash.trim@4.5.1 extraneous
+├── lodash.values@2.4.1 extraneous
+├── log4js@0.6.38 extraneous
+├── longest@1.0.1 extraneous
+├── lookup-path@0.3.1 extraneous
+├── loose-envify@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_loose-envify@1.3.1@loose-envify extraneous
+├── loud-rejection@1.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_loud-rejection@1.6.0@loud-rejection extraneous
+├── lru-cache@4.1.1 extraneous
+├── magic-string@0.15.2 extraneous
+├── map-cache@0.2.2 extraneous
+├── map-obj@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_map-obj@1.0.1@map-obj extraneous
+├── media-typer@0.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_media-typer@0.3.0@media-typer extraneous
+├── memory-fs@0.2.0 extraneous
+├── meow@3.7.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_meow@3.7.0@meow extraneous
+├── merge-descriptors@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_merge-descriptors@1.0.1@merge-descriptors extraneous
+├── methods@1.1.2 extraneous
+├── micromatch@2.3.11 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_micromatch@2.3.11@micromatch extraneous
+├── mime@1.3.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_mime@1.3.6@mime extraneous
+├── mime-db@1.29.0 extraneous
+├── mime-types@2.1.16 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_mime-types@2.1.16@mime-types extraneous
+├── minimatch@0.3.0 extraneous
+├── minimist@0.2.0 extraneous
+├── mkdirp@0.5.1 extraneous
+├── mocha@2.5.3 extraneous
+├── moment@2.18.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_moment@2.18.1@moment extraneous
+├── ms@0.7.1 extraneous
+├── multipipe@0.1.2 extraneous
+├── mute-stream@0.0.6 extraneous
+├── nan@2.6.2 extraneous
+├── natives@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_natives@1.1.0@natives extraneous
+├── natty-fetch@2.5.2 extraneous
+├── natty-storage@2.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_natty-storage@2.0.2@natty-storage extraneous
+├── negotiator@0.6.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_negotiator@0.6.1@negotiator extraneous
+├── node-fetch@1.7.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_node-fetch@1.7.1@node-fetch extraneous
+├── node-libs-browser@0.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_node-libs-browser@0.6.0@node-libs-browser extraneous
+├── normalize-package-data@2.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_normalize-package-data@2.4.0@normalize-package-data extraneous
+├── normalize-path@2.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_normalize-path@2.1.1@normalize-path extraneous
+├── normalize-range@0.1.2 extraneous
+├── nth-check@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_nth-check@1.0.1@nth-check extraneous
+├── null-check@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_null-check@1.0.0@null-check extraneous
+├── num2fraction@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_num2fraction@1.2.2@num2fraction extraneous
+├── number-is-nan@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_number-is-nan@1.0.1@number-is-nan extraneous
+├── oauth-sign@0.8.2 extraneous
+├── object-assign@4.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object-assign@4.1.1@object-assign extraneous
+├── object-component@0.0.3 extraneous
+├── object-is@1.0.1 extraneous
+├── object-keys@1.0.11 extraneous
+├── object.assign@4.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object.assign@4.0.4@object.assign extraneous
+├── object.defaults@1.1.0 extraneous
+├── object.entries@1.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object.entries@1.0.4@object.entries extraneous
+├── object.omit@2.0.1 extraneous
+├── object.pick@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_object.pick@1.2.0@object.pick extraneous
+├── object.values@1.0.4 extraneous
+├── on-finished@2.3.0 extraneous
+├── once@1.4.0 extraneous
+├── onetime@1.1.0 extraneous
+├── opener@1.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_opener@1.4.3@opener extraneous
+├── optimist@0.6.1 extraneous
+├── optionator@0.8.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_optionator@0.8.2@optionator extraneous
+├── options@0.0.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_options@0.0.6@options extraneous
+├── orchestrator@0.3.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_orchestrator@0.3.8@orchestrator extraneous
+├── ordered-read-streams@0.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ordered-read-streams@0.1.0@ordered-read-streams extraneous
+├── os-browserify@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_os-browserify@0.1.2@os-browserify extraneous
+├── os-homedir@1.0.2 extraneous
+├── os-tmpdir@1.0.2 extraneous
+├── pako@0.2.9 extraneous
+├── parse-filepath@1.0.1 extraneous
+├── parse-glob@3.0.4 extraneous
+├── parse-json@2.2.0 extraneous
+├── parse-passwd@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parse-passwd@1.0.0@parse-passwd extraneous
+├── parsejson@0.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parsejson@0.0.3@parsejson extraneous
+├── parseqs@0.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parseqs@0.0.5@parseqs extraneous
+├── parseuri@0.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_parseuri@0.0.5@parseuri extraneous
+├── parseurl@1.3.1 extraneous
+├── path-browserify@0.0.0 extraneous
+├── path-exists@2.1.0 extraneous
+├── path-is-absolute@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_path-is-absolute@1.0.1@path-is-absolute extraneous
+├── path-is-inside@1.0.2 extraneous
+├── path-parse@1.0.5 extraneous
+├── path-root@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_path-root@0.1.1@path-root extraneous
+├── path-root-regex@0.1.2 extraneous
+├── path-to-regexp@0.1.7 extraneous
+├── path-type@1.1.0 extraneous
+├── pbkdf2-compat@2.0.1 extraneous
+├── pend@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pend@1.2.0@pend extraneous
+├── performance-now@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_performance-now@0.2.0@performance-now extraneous
+├── phantomjs-prebuilt@2.1.14 extraneous
+├── pify@2.3.0 extraneous
+├── pinkie@2.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pinkie@2.0.4@pinkie extraneous
+├── pinkie-promise@2.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pinkie-promise@2.0.1@pinkie-promise extraneous
+├── pkg-dir@1.0.0 extraneous
+├── pkg-up@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pkg-up@1.0.0@pkg-up extraneous
+├── pluralize@1.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_pluralize@1.2.1@pluralize extraneous
+├── postcss@5.2.17 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_postcss@5.2.17@postcss extraneous
+├── postcss-value-parser@3.3.0 extraneous
+├── prelude-ls@1.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_prelude-ls@1.1.2@prelude-ls extraneous
+├── preserve@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_preserve@0.2.0@preserve extraneous
+├── pretty-hrtime@1.0.3 extraneous
+├── private@0.1.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_private@0.1.7@private extraneous
+├── process@0.11.10 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_process@0.11.10@process extraneous
+├── process-nextick-args@1.0.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_process-nextick-args@1.0.7@process-nextick-args extraneous
+├── progress@1.1.8 extraneous
+├── promise@7.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_promise@7.1.1@promise extraneous
+├── prop-types@15.5.10 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_prop-types@15.5.10@prop-types extraneous
+├── proxy-addr@1.1.5 extraneous
+├── prr@0.0.0 extraneous
+├── pseudomap@1.0.2 extraneous
+├── punycode@1.3.2 extraneous
+├── q@1.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_q@1.5.0@q extraneous
+├── qjobs@1.1.5 extraneous
+├── qs@6.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_qs@6.4.0@qs extraneous
+├── querystring@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_querystring@0.2.0@querystring extraneous
+├── querystring-es3@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_querystring-es3@0.2.1@querystring-es3 extraneous
+├── randomatic@1.1.7 extraneous
+├── range-parser@1.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_range-parser@1.2.0@range-parser extraneous
+├── raw-body@2.2.0 extraneous
+├── rc-align@2.3.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-align@2.3.4@rc-align extraneous
+├── rc-animate@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-animate@2.4.1@rc-animate extraneous
+├── rc-calendar@7.4.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-calendar@7.4.4@rc-calendar extraneous
+├── rc-dialog@6.5.10 extraneous
+├── rc-dropdown@1.4.12 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-dropdown@1.4.12@rc-dropdown extraneous
+├── rc-menu@4.13.0 extraneous
+├── rc-notification@1.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-notification@1.4.3@rc-notification extraneous
+├── rc-progress@1.0.4 extraneous
+├── rc-queue-anim@0.13.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-queue-anim@0.13.3@rc-queue-anim extraneous
+├── rc-select@6.8.8 extraneous
+├── rc-switch@1.4.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-switch@1.4.4@rc-switch extraneous
+├── rc-tabs@7.0.13 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-tabs@7.0.13@rc-tabs extraneous
+├── rc-time-picker@2.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-time-picker@2.2.2@rc-time-picker extraneous
+├── rc-tooltip@3.3.5 extraneous
+├── rc-tree@1.7.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-tree@1.7.1@rc-tree extraneous
+├── rc-tree-select@1.10.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-tree-select@1.10.3@rc-tree-select extraneous
+├── rc-trigger@1.11.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-trigger@1.11.3@rc-trigger extraneous
+├── rc-util@4.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_rc-util@4.0.4@rc-util extraneous
+├── UNMET PEER DEPENDENCY react@0.14.9 extraneous
+├── react-dom@0.14.9 extraneous
+├── react-hammerjs@0.5.0 extraneous
+├── react-mixin@2.0.2 extraneous
+├── react-prop-types@0.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_react-prop-types@0.3.2@react-prop-types extraneous
+├── react-responsive-mixin@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_react-responsive-mixin@0.4.0@react-responsive-mixin extraneous
+├── react-slick@0.14.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_react-slick@0.14.8@react-slick extraneous
+├── react-test-renderer@15.6.1 extraneous
+├── read-pkg@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_read-pkg@1.1.0@read-pkg extraneous
+├── read-pkg-up@1.0.1 extraneous
+├── readable-stream@1.0.34 extraneous
+├── readdirp@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_readdirp@2.1.0@readdirp extraneous
+├── readline2@1.0.1 extraneous
+├── recast@0.11.23 extraneous
+├── rechoir@0.6.2 extraneous
+├── redent@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_redent@1.0.0@redent extraneous
+├── regenerator-runtime@0.10.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_regenerator-runtime@0.10.5@regenerator-runtime extraneous
+├── regex-cache@0.4.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_regex-cache@0.4.3@regex-cache extraneous
+├── remove-trailing-separator@1.0.2 extraneous
+├── repeat-element@1.1.2 extraneous
+├── repeat-string@0.2.2 extraneous
+├── repeating@2.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_repeating@2.0.1@repeating extraneous
+├── replace-ext@0.0.1 extraneous
+├── request@2.81.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_request@2.81.0@request extraneous
+├── request-progress@2.0.1 extraneous
+├── require-uncached@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_require-uncached@1.0.3@require-uncached extraneous
+├── requires-port@1.0.0 extraneous
+├── resolve@1.4.0 extraneous
+├── resolve-dir@0.1.1 extraneous
+├── resolve-from@1.0.1 extraneous
+├── restore-cursor@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_restore-cursor@1.0.1@restore-cursor extraneous
+├── right-align@0.1.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_right-align@0.1.3@right-align extraneous
+├── rimraf@2.6.1 extraneous
+├── ripemd160@0.2.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ripemd160@0.2.0@ripemd160 extraneous
+├── run-async@2.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_run-async@2.3.0@run-async extraneous
+├── rx@4.1.0 extraneous
+├── rx-lite@3.1.2 extraneous
+├── safe-buffer@5.0.1 extraneous
+├── semver@5.4.1 extraneous
+├── send@0.15.3 extraneous
+├── sequencify@0.0.7 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sequencify@0.0.7@sequencify extraneous
+├── serve-static@1.12.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_serve-static@1.12.3@serve-static extraneous
+├── set-immediate-shim@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_set-immediate-shim@1.0.1@set-immediate-shim extraneous
+├── setimmediate@1.0.5 extraneous
+├── setprototypeof@1.0.3 extraneous
+├── sha.js@2.2.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sha.js@2.2.6@sha.js extraneous
+├── shallowequal@0.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_shallowequal@0.2.2@shallowequal extraneous
+├── shelljs@0.6.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_shelljs@0.6.1@shelljs extraneous
+├── sigmund@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sigmund@1.0.1@sigmund extraneous
+├── signal-exit@3.0.2 extraneous
+├── slice-ansi@0.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_slice-ansi@0.0.4@slice-ansi extraneous
+├── slick-carousel@1.6.0 extraneous
+├── smart-mixin@1.2.1 extraneous
+├── sntp@1.0.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sntp@1.0.9@sntp extraneous
+├── socket.io@1.7.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_socket.io@1.7.3@socket.io extraneous
+├── socket.io-adapter@0.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_socket.io-adapter@0.5.0@socket.io-adapter extraneous
+├── socket.io-client@1.7.3 extraneous
+├── socket.io-parser@2.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_socket.io-parser@2.3.1@socket.io-parser extraneous
+├── source-list-map@0.1.8 extraneous
+├── source-map@0.5.6 extraneous
+├── sparkles@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sparkles@1.0.0@sparkles extraneous
+├── spdx-correct@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_spdx-correct@1.0.2@spdx-correct extraneous
+├── spdx-expression-parse@1.0.4 extraneous
+├── spdx-license-ids@1.2.2 extraneous
+├── sprintf-js@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_sprintf-js@1.0.3@sprintf-js extraneous
+├── sshpk@1.13.1 extraneous
+├── statuses@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_statuses@1.3.1@statuses extraneous
+├── stream-browserify@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_stream-browserify@1.0.0@stream-browserify extraneous
+├── stream-consume@0.1.0 extraneous
+├── string-convert@0.2.1 extraneous
+├── string-width@2.1.1 extraneous
+├── string_decoder@1.0.3 extraneous
+├── stringstream@0.0.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_stringstream@0.0.5@stringstream extraneous
+├── strip-ansi@0.1.1 extraneous
+├── strip-bom@2.0.0 extraneous
+├── strip-indent@1.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_strip-indent@1.0.1@strip-indent extraneous
+├── strip-json-comments@1.0.4 extraneous
+├── supports-color@1.2.0 extraneous
+├── table@3.8.3 extraneous
+├── tapable@0.1.10 extraneous
+├── text-table@0.2.0 extraneous
+├── throttleit@1.0.0 extraneous
+├── through@2.3.8 extraneous
+├── through2@2.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_through2@2.0.3@through2 extraneous
+├── tildify@1.2.0 extraneous
+├── time-stamp@1.1.0 extraneous
+├── timers-browserify@1.4.2 extraneous
+├── tmp@0.0.31 extraneous
+├── to-array@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_to-array@0.1.4@to-array extraneous
+├── to-iso-string@0.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_to-iso-string@0.0.2@to-iso-string extraneous
+├── tough-cookie@2.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_tough-cookie@2.3.2@tough-cookie extraneous
+├── trim-newlines@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_trim-newlines@1.0.0@trim-newlines extraneous
+├── tryit@1.0.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_tryit@1.0.3@tryit extraneous
+├── tty-browserify@0.0.0 extraneous
+├── tunnel-agent@0.4.3 extraneous
+├── tweetnacl@0.14.5 extraneous
+├── type-check@0.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_type-check@0.3.2@type-check extraneous
+├── type-is@1.6.15 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_type-is@1.6.15@type-is extraneous
+├── typedarray@0.0.6 extraneous
+├── ua-parser-js@0.7.14 extraneous
+├── uglify-js@2.7.5 extraneous
+├── uglify-save-license@0.4.1 extraneous
+├── uglify-to-browserify@1.0.2 extraneous
+├── ultron@1.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ultron@1.1.0@ultron extraneous
+├── unc-path-regex@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_unc-path-regex@0.1.2@unc-path-regex extraneous
+├── unique-stream@1.0.0 extraneous
+├── unpipe@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_unpipe@1.0.0@unpipe extraneous
+├── uploadcore@2.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uploadcore@2.3.1@uploadcore extraneous
+├── url@0.10.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_url@0.10.3@url extraneous
+├── user-home@2.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_user-home@2.0.0@user-home extraneous
+├── useragent@2.2.1 extraneous
+├── util@0.10.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_util@0.10.3@util extraneous
+├── util-deprecate@1.0.2 extraneous
+├── utils-merge@1.0.0 extraneous
+├── uuid@3.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uuid@3.1.0@uuid extraneous
+├── uxcore-album@0.3.11 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-album@0.3.11@uxcore-album extraneous
+├── uxcore-alert@0.3.1 extraneous
+├── uxcore-animate@0.2.0 extraneous
+├── uxcore-badge@0.2.1 extraneous
+├── uxcore-button@0.3.12 extraneous
+├── uxcore-calendar@0.9.7 extraneous
+├── uxcore-carousel@0.3.6 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-carousel@0.3.6@uxcore-carousel extraneous
+├── uxcore-cascade-multi-select@0.5.0 extraneous
+├── uxcore-cascade-select@0.3.4 extraneous
+├── uxcore-cell-field@0.1.4 extraneous
+├── uxcore-checkbox-cell-field@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-checkbox-cell-field@0.1.1@uxcore-checkbox-cell-field extraneous
+├── uxcore-checkbox-group@1.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-checkbox-group@1.1.4@uxcore-checkbox-group extraneous
+├── uxcore-collapse@1.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-collapse@1.3.1@uxcore-collapse extraneous
+├── uxcore-const@0.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-const@0.0.2@uxcore-const extraneous
+├── uxcore-crumb@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-crumb@0.2.3@uxcore-crumb extraneous
+├── uxcore-crumb-item@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-crumb-item@0.1.4@uxcore-crumb-item extraneous
+├── uxcore-date-cell-field@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-date-cell-field@0.4.0@uxcore-date-cell-field extraneous
+├── uxcore-date-form-field@0.8.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-date-form-field@0.8.4@uxcore-date-form-field extraneous
+├── uxcore-dialog@0.7.4 extraneous
+├── uxcore-dropdown@0.4.1 extraneous
+├── uxcore-empty-data@0.1.2 extraneous
+├── uxcore-float-nav@0.1.3 extraneous
+├── uxcore-form@4.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-form@4.0.0@uxcore-form extraneous
+├── uxcore-form-field@0.2.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-form-field@0.2.14@uxcore-form-field extraneous
+├── uxcore-form-row@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-form-row@0.1.4@uxcore-form-row extraneous
+├── uxcore-formatter@0.1.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-formatter@0.1.4@uxcore-formatter extraneous
+├── uxcore-grid@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-grid@1.2.2@uxcore-grid extraneous
+├── uxcore-icon@0.1.15 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-icon@0.1.15@uxcore-icon extraneous
+├── uxcore-input-form-field@0.1.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-input-form-field@0.1.9@uxcore-input-form-field extraneous
+├── uxcore-layout@1.0.5 extraneous
+├── uxcore-load-more@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-load-more@0.1.2@uxcore-load-more extraneous
+├── uxcore-matrix@0.2.0 extraneous
+├── uxcore-mention@0.3.15 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-mention@0.3.15@uxcore-mention extraneous
+├── uxcore-menu@1.4.3 extraneous
+├── uxcore-message@0.4.0 extraneous
+├── uxcore-multi-select@0.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-multi-select@0.4.1@uxcore-multi-select extraneous
+├── uxcore-other-form-field@0.1.4 extraneous
+├── uxcore-pagination@0.6.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-pagination@0.6.0@uxcore-pagination extraneous
+├── uxcore-pickable@3.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-pickable@3.1.1@uxcore-pickable extraneous
+├── uxcore-pickable-form-field@0.4.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-pickable-form-field@0.4.2@uxcore-pickable-form-field extraneous
+├── uxcore-popover@0.5.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-popover@0.5.2@uxcore-popover extraneous
+├── uxcore-progress@1.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-progress@1.1.2@uxcore-progress extraneous
+├── uxcore-radiogroup@1.2.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-radiogroup@1.2.2@uxcore-radiogroup extraneous
+├── uxcore-rate@0.3.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-rate@0.3.3@uxcore-rate extraneous
+├── uxcore-select-form-field@0.3.8 extraneous
+├── uxcore-select2@0.4.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-select2@0.4.14@uxcore-select2 extraneous
+├── uxcore-splitter@0.1.4 extraneous
+├── uxcore-steps@2.0.4 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-steps@2.0.4@uxcore-steps extraneous
+├── uxcore-switch@0.1.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-switch@0.1.5@uxcore-switch extraneous
+├── uxcore-switch-form-field@0.1.2 extraneous
+├── uxcore-table@6.5.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-table@6.5.0@uxcore-table extraneous
+├── uxcore-tabs@0.6.5 extraneous
+├── uxcore-tag@2.1.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tag@2.1.0@uxcore-tag extraneous
+├── uxcore-textarea-form-field@0.1.12 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-textarea-form-field@0.1.12@uxcore-textarea-form-field extraneous
+├── uxcore-timeline@0.2.0 extraneous
+├── uxcore-tinymce@0.2.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tinymce@0.2.8@uxcore-tinymce extraneous
+├── uxcore-title@0.1.1 extraneous
+├── uxcore-tooltip@0.4.5 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tooltip@0.4.5@uxcore-tooltip extraneous
+├── uxcore-totop@0.4.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-totop@0.4.0@uxcore-totop extraneous
+├── uxcore-transfer@0.3.10 extraneous
+├── uxcore-tree@0.2.11 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tree@0.2.11@uxcore-tree extraneous
+├── uxcore-tree-select@0.2.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-tree-select@0.2.3@uxcore-tree-select extraneous
+├── uxcore-uploader@2.1.5 extraneous
+├── uxcore-utils@0.1.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_uxcore-utils@0.1.1@uxcore-utils extraneous
+├── uxcore-validator@0.2.0 extraneous
+├── v8flags@2.1.1 extraneous
+├── validate-npm-package-license@3.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_validate-npm-package-license@3.0.1@validate-npm-package-license extraneous
+├── vary@1.1.1 extraneous
+├── velocity-animate@1.3.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_velocity-animate@1.3.2@velocity-animate extraneous
+├── verror@1.10.0 extraneous
+├── vinyl@0.2.3 extraneous
+├── vinyl-bufferstream@1.0.1 extraneous
+├── vinyl-fs@0.3.14 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_vinyl-fs@0.3.14@vinyl-fs extraneous
+├── vinyl-sourcemaps-apply@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_vinyl-sourcemaps-apply@0.2.1@vinyl-sourcemaps-apply extraneous
+├── vlq@0.2.2 extraneous
+├── vm-browserify@0.0.4 extraneous
+├── void-elements@2.0.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_void-elements@2.0.1@void-elements extraneous
+├── warning@3.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_warning@3.0.0@warning extraneous
+├── watchpack@0.2.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_watchpack@0.2.9@watchpack extraneous
+├── webpack@1.13.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_webpack@1.13.3@webpack extraneous
+├── webpack-bundle-analyzer@2.8.3 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_webpack-bundle-analyzer@2.8.3@webpack-bundle-analyzer extraneous
+├── webpack-core@0.6.9 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_webpack-core@0.6.9@webpack-core extraneous
+├── whatwg-fetch@0.9.0 extraneous
+├── when@3.7.8 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_when@3.7.8@when extraneous
+├── which@1.3.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_which@1.3.0@which extraneous
+├── window-size@0.1.0 extraneous
+├── wordwrap@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_wordwrap@1.0.0@wordwrap extraneous
+├── wrappy@1.0.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_wrappy@1.0.2@wrappy extraneous
+├── write@0.2.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_write@0.2.1@write extraneous
+├── ws@2.3.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_ws@2.3.1@ws extraneous
+├── wtf-8@1.0.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_wtf-8@1.0.0@wtf-8 extraneous
+├── xmlhttprequest-ssl@1.5.3 extraneous
+├── xtend@2.1.2 extraneous
+├── yallist@2.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yallist@2.1.2@yallist extraneous
+├── yargs@3.10.0 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yargs@3.10.0@yargs extraneous
+├── yauzl@2.4.1 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yauzl@2.4.1@yauzl extraneous
+└── yeast@0.1.2 -> /Users/ens/pwd/uxcore/uxcore/node_modules/_yeast@0.1.2@yeast extraneous
+

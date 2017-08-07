@@ -1,5 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+var DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 
 module.exports = {
   cache: false,
@@ -31,5 +33,8 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.DedupePlugin(),
+    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh\-cn/),
+    new DuplicatePackageCheckerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
 };

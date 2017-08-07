@@ -1,3 +1,21 @@
+## 0.15.0
+
+- [Component] CascadeMultiSelect: `FIXED`: dynamic options fail to be re-rendered.
+- [Component] CascadeMultiSelect: `CHANGED`: the third param of prop `onItemClick` is the all-selected data.
+- [Component] Form: `CHANGED` use `uxcore-title` instead of old FormRowTitle
+- [Component] Table: `CHANGED` hide pager if totalCount is lower than pageSize and sizeChanger is hiden.
+- [Component] Table: `CHANGED` update CellField to `^0.2.0`, support `errMsg`
+- [Component] Table: `CHANGED` collapsed Button style adjustment
+- [Component] Table: `CHANGED` add a new theme type `ghost` for the nested table.
+- [Component] Table: `FIXED` group table column picker bug when toggle an item's visibility in common group.
+- [Component] Table: `FIXED` group fixed table border bug
+- [Component] Table: `FIXED` fixed table height React warning
+- [Component] Table: `CHANGED` use popover instead of column picker dropdown
+- [Component] Table: `CHANGED` new column picker trigger icon
+- [Component] Table: `CHANGED` style: mask color & fixed table box-shadow
+- [Component] Table: `CHANGED` add animation when toggling sub component 
+- [Component] Tree: `CHANGED` add animation
+
 ## 0.14.8
 
 - [Component] Calendar: `CHANGED` support new props `yearSelectOffset` & `yearSelectTotal` 
