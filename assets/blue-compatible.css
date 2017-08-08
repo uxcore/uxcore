@@ -8266,11 +8266,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-upload-filelist {
   width: 100%;
   max-height: 400px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: visible;
+  overflow-x: visible;
+}
+.uxcore .kuma-upload-filelist .visual-progress-box:hover .delete-progress {
+  display: inline;
 }
 .uxcore .kuma-upload-filelist > .inner {
-  overflow: hidden;
+  overflow: visible;
 }
 .uxcore .kuma-upload-filelist.filelist-visual.nwmode {
   float: left;
@@ -8289,7 +8292,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   background-color: #fff;
   outline: none;
-  border: 1px dashed rgba(31, 56, 88, 0.3);
   border-radius: 3px;
   padding-top: 43px;
   font-size: 12px;
@@ -8298,12 +8300,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   width: 100%;
   transition: all .3s ease;
   -webkit-transition: all .3s ease;
+  background: rgba(31, 56, 88, 0.04);
+  border: 1px dashed rgba(31, 56, 88, 0.2);
 }
-.uxcore .kuma-upload-picker-visual .uxicon-zengjia {
+.uxcore .kuma-upload-picker-visual .uxicon-zengjia1 {
   position: absolute;
   top: 26px;
   left: 36px;
   font-size: 28px;
+  color: #1F3858;
+  opacity: 0.4;
 }
 .uxcore .kuma-upload-picker {
   display: inline-block;
@@ -8707,6 +8713,21 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: #616162;
   cursor: pointer;
   margin: 0 5px;
+  display: none;
+  background: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .download-action,
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .remove-action,
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .terminal-action {
+  display: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap:hover .download-action,
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap:hover .remove-action,
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap:hover .terminal-action {
+  display: inline;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap:hover .kuma-upload-action {
+  display: inline;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .close-action {
   display: none;
@@ -8740,6 +8761,15 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: 1px solid rgba(31, 56, 88, 0.2);
   border-radius: 3px;
   padding: 8px;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img.read-style {
+  border: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img.read-style:hover {
+  background: rgba(31, 56, 88, 0.04);
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img.read-style:hover .pre-action {
+  display: inline;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-image-name {
   float: left;
@@ -8798,6 +8828,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-align: center;
   line-height: 16px;
   border-radius: 2px;
+  background: none;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-status .kuma-upload-action:hover {
   text-decoration: none;
@@ -8807,6 +8838,17 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-status .close-action {
   display: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-status .download-action,
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-status .remove-action {
+  display: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img .field-status .pre-action {
+  display: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img:hover .download-action,
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img:hover .remove-action {
+  display: inline;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img.status-error {
   border: 1px solid #F04631;
@@ -8825,9 +8867,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   width: 100px;
   height: 100px;
-  border: 1px dashed rgba(31, 56, 88, 0.2);
+  border: none;
   border-radius: 3px;
-  overflow: hidden;
+  overflow: visible;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual.status-progress {
+  border: 1px dashed rgba(31, 56, 88, 0.2);
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual .error-text {
   position: absolute;
@@ -8874,40 +8919,64 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: none;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual.status-error {
-  border: 1px dashed #F04631;
+  background: rgba(240, 70, 49, 0.06);
+  border: 1px solid #f04631;
+  border-radius: 3px;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual.status-error .visual-progress-box {
+  background: rgba(240, 70, 49, 0.06);
+  padding: 0 0 0 0;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual.status-error .visual-progress-box .re-upload {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #f04631;
+  letter-spacing: 0;
+  line-height: 12px;
+  cursor: pointer;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual.status-error .visual-progress-box .re-upload-icon {
+  display: block;
+  font-size: 28px;
+  color: #f04631;
+  margin-top: 16px;
+  cursor: pointer;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 36px 18px;
+  padding: 0;
   text-align: center;
   line-height: 100px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-}
-.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .kuma-upload-action {
-  display: block;
-  cursor: pointer;
-  width: 28px;
-  height: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  line-height: 28px;
-  border-radius: 3px;
-  float: left;
-}
-.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .kuma-upload-action:hover {
-  text-decoration: none;
-}
-.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .kuma-upload-action .uxcore-icon {
-  font-size: 14px;
-  color: #fff;
+  height: 100%;
+  width: 100%;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .preview-action {
   margin-right: 6px;
+  position: absolute;
+  top: 37px;
+  left: 37px;
+  background: none;
+  border: none;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .preview-action .uxicon-fangda {
+  font-size: 27px;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .remove-action {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  color: rgba(31, 56, 88, 0.2);
+  line-height: normal;
+  cursor: pointer;
+}
+.uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .remove-action .uxicon-biaodanlei-tongyongqingchu {
+  font-size: 17px;
 }
 .uxcore .progress-box {
   height: 100%;
@@ -8933,7 +9002,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .delete-progress {
   cursor: pointer;
-  color: #3C99D8;
+  position: absolute;
+  right: -9px;
+  top: -12px;
+  width: 17px;
+  height: 17px;
+  color: rgba(31, 56, 88, 0.4);
+  display: none;
+}
+.uxcore .delete-progress .uxicon-biaodanlei-tongyongqingchu {
+  font-size: 17px;
 }
 .uxcore .kuma-uxtransfer-container {
   font-size: 12px;

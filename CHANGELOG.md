@@ -1,3 +1,9 @@
+## 0.15.2
+
+- [Component] Uploader: `CHANGED` new style
+- [Component] Uploader: `FIXED` true percentage
+- [Component] Uploader: `NEW` add readOnly prop
+
 ## 0.15.0
 
 - [Component] CascadeMultiSelect: `FIXED`: dynamic options fail to be re-rendered.
@@ -15,6 +21,7 @@
 - [Component] Table: `CHANGED` style: mask color & fixed table box-shadow
 - [Component] Table: `CHANGED` add animation when toggling sub component 
 - [Component] Tree: `CHANGED` add animation
+
 
 ## 0.14.8
 
