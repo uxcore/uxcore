@@ -1,3 +1,9 @@
+## 0.15.3
+
+- [Component] Collapse: `CHANGED` add animation while toggling a panel component
+- [Component] Table: `CHANGED` more robust `checkBodyHScroll`
+- [Component] Table: `FIXED` more reliable check logic
+
 ## 0.15.2
 
 - [Component] Uploader: `CHANGED` new style
