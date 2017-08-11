@@ -80,7 +80,7 @@ And import style in your less file
 
 ## Browser Support
 
-Mainstream browsers and Internet Explorer 8+. For IE 8, see [react-ie8](https://github.com/xcatliu/react-ie8) to get support.  
+Mainstream browsers and Internet Explorer 9+.
 
 ## Customization
 
