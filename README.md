@@ -74,6 +74,7 @@ And import style in your less file
 ```less
 @import '~kuma-base/theme/blue.less'; // or orange.less global variables which components need
 @import '~kuma-base/core.less'; // base element style and reset
+@svg-path: '../../../node_modules/kuma-base/core/svg/blue'; // your installed kuma-base package path
 @import '~uxcore-button/src/Button.less'; // component style
 ```
 
