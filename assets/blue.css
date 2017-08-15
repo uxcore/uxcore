@@ -8400,6 +8400,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-upload-filelist.nwmode .kuma-upload-fileitem.read-style {
   border: none;
 }
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem.read-style .field-line {
+  display: none;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem.read-style .field-info-wrap .field-info {
+  margin-left: 6px;
+}
 .kuma-upload-filelist.nwmode .kuma-upload-fileitem.read-style:hover {
   background: rgba(31, 56, 88, 0.04);
 }

@@ -18,6 +18,7 @@ var colors = require('colors/safe');
 var rimraf = require('rimraf');
 var childProcess = require('child_process');
 var path = require('path');
+var semver = require('semver');
 
 var autoprefix = new LessPluginAutoPrefix({
   browsers: ['last 2 versions', 'not ie < 8'],
@@ -48,17 +49,7 @@ var webpackCfg = require('./webpack.conf.js');
 var pkg = JSON.parse(file.readFileAsString('package.json'));
 
 function versionCompare(a, b) {
-  var aArr = a.split('.');
-  var bArr = b.split('.');
-  var larger = false;
-  var i;
-  for (i = 0; i < 3; i++) {
-    if (parseInt(aArr[i], 10) !== parseInt(bArr[i], 10)) {
-      larger = parseInt(aArr[i], 10) > parseInt(bArr[i], 10);
-      break;
-    }
-  }
-  return larger;
+  return semver.gt(a, b);
 }
 
 function getQuestions() {
@@ -73,7 +64,7 @@ function getQuestions() {
           message: 'please enter the package version to publish (should be xx.xx.xx)',
           default: pkg.version,
           validate: function (input) {
-            if (/\d+\.\d+\.\d+/.test(input)) {
+            if (semver.valid(input)) {
               if (versionCompare(input, pkg.version)) {
                 return true;
               }

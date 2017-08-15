@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.15.5-beta.0",
+ "version": "0.15.5",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -67,6 +67,7 @@
   "react": "^0.14.8",
   "react-dom": "^0.14.8",
   "rimraf": "~2.5.2",
+  "semver": "^5.4.1",
   "webpack": "~1.13.1",
   "webpack-bundle-analyzer": "^2.8.3"
  },
@@ -119,7 +120,7 @@
   "uxcore-transfer": "0.3.10",
   "uxcore-tree": "0.2.13",
   "uxcore-tree-select": "0.2.4",
-  "uxcore-uploader": "3.0.4",
+  "uxcore-uploader": "3.0.5",
   "uxcore-validator": "0.2.0"
  }
 }
