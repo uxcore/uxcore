@@ -6573,6 +6573,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-header-item-required {
   color: #F04631;
+  margin-right: 4px;
 }
 .kuma-uxtable-body {
   position: relative;
@@ -6599,7 +6600,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-top: none;
 }
 .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
-  background-color: rgba(31, 56, 88, 0.06);
+  background-color: rgba(31, 56, 88, 0.04);
 }
 .kuma-uxtable-row-hover > .kuma-uxtable-row-cells {
   background-color: rgba(242, 113, 39, 0.06);
@@ -6612,7 +6613,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   text-align: left;
   overflow: hidden;
   height: 100%;
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
   vertical-align: top;
   position: relative;
   word-break: break-all;
@@ -6736,7 +6737,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-page {
   text-align: right;
-  padding: 10px 0px;
+  padding: 24px 0px 10px;
 }
 .kuma-uxtable-page .kuma-select2-selection__rendered {
   text-align: left;
@@ -6752,6 +6753,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   width: 14px;
   display: inline-block;
   color: rgba(31, 56, 88, 0.4);
+  margin-left: 4px;
 }
 .kuma-uxtable-h-sort .kuma-icon {
   font-size: 13px;
@@ -6783,11 +6785,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   padding-left: 0px;
 }
 .action-container .action i {
-  color: #3C99D8;
+  color: rgba(31, 56, 88, 0.4);
   vertical-align: middle;
   font-size: 14px;
 }
-.action-container .action.kuma-button i {
+.action-container .action .kuma-uxtable-cell-collapsed-icon-active {
   color: rgba(31, 56, 88, 0.6);
 }
 .action-container .action.more-action {
@@ -6893,8 +6895,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
 }
-.kuma-uxtable-row-tree-selector {
+.kuma-uxtable-row-tree-selector,
+.kuma-uxtable-header-tree-selector {
   margin-right: 12px;
+}
+.kuma-uxtable-header-tree-selector {
+  margin-left: 22px;
 }
 .kuma-uxtable-tree-mode .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
   background: white;
@@ -14494,7 +14500,7 @@ ul.kuma-dropdown-menu-hoverable li:after {
  */
 .kuma-matrix {
   display: block;
-  border: 1px solid #BAC3CC;
+  border: 1px solid rgba(31, 56, 88, 0.1);
   overflow: auto;
 }
 .kuma-matrix-wrap {
@@ -14503,8 +14509,8 @@ ul.kuma-dropdown-menu-hoverable li:after {
 .kuma-matrix-cell {
   position: absolute;
   text-align: center;
-  border-left: 1px solid #BAC3CC;
-  border-bottom: 1px solid #BAC3CC;
+  border-left: 1px solid rgba(31, 56, 88, 0.1);
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
 /**
  * FloatNav Component Style for uxcore

@@ -1,3 +1,11 @@
+## 0.15.6
+
+- [Component] CascadeMultiSelect: `FEAT`: add readOnly prop
+- [Component] CascadeMultiSelect: `FEAT`: add beforeRender prop
+- [Component] CascadeMultiSelect: `FEAT`: pass cascade selected data to `onSelect` & `onOk`
+- [Component] Matrix: `CHANGED` new style
+- [Component] Table: `CHANGED` style adjustment
+
 ## 0.15.3
 
 - [Component] Collapse: `CHANGED` add animation while toggling a panel component

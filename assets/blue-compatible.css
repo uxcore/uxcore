@@ -6854,6 +6854,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-header-item-required {
   color: #F04631;
+  margin-right: 4px;
 }
 .uxcore .kuma-uxtable-body {
   position: relative;
@@ -6880,7 +6881,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-top: none;
 }
 .uxcore .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
-  background-color: rgba(31, 56, 88, 0.06);
+  background-color: rgba(31, 56, 88, 0.04);
 }
 .uxcore .kuma-uxtable-row-hover > .kuma-uxtable-row-cells {
   background-color: rgba(36, 153, 242, 0.06);
@@ -6893,7 +6894,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-align: left;
   overflow: hidden;
   height: 100%;
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
   vertical-align: top;
   position: relative;
   word-break: break-all;
@@ -7017,7 +7018,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-page {
   text-align: right;
-  padding: 10px 0px;
+  padding: 24px 0px 10px;
 }
 .uxcore .kuma-uxtable-page .kuma-select2-selection__rendered {
   text-align: left;
@@ -7033,6 +7034,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   width: 14px;
   display: inline-block;
   color: rgba(31, 56, 88, 0.4);
+  margin-left: 4px;
 }
 .uxcore .kuma-uxtable-h-sort .kuma-icon {
   font-size: 13px;
@@ -7064,11 +7066,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   padding-left: 0px;
 }
 .uxcore .action-container .action i {
-  color: #3C99D8;
+  color: rgba(31, 56, 88, 0.4);
   vertical-align: middle;
   font-size: 14px;
 }
-.uxcore .action-container .action.kuma-button i {
+.uxcore .action-container .action .kuma-uxtable-cell-collapsed-icon-active {
   color: rgba(31, 56, 88, 0.6);
 }
 .uxcore .action-container .action.more-action {
@@ -7174,8 +7176,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
 }
-.uxcore .kuma-uxtable-row-tree-selector {
+.uxcore .kuma-uxtable-row-tree-selector,
+.uxcore .kuma-uxtable-header-tree-selector {
   margin-right: 12px;
+}
+.uxcore .kuma-uxtable-header-tree-selector {
+  margin-left: 22px;
 }
 .uxcore .kuma-uxtable-tree-mode .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
   background: white;
@@ -14517,7 +14523,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-matrix {
   display: block;
-  border: 1px solid #BAC3CC;
+  border: 1px solid rgba(31, 56, 88, 0.1);
   overflow: auto;
 }
 .uxcore .kuma-matrix-wrap {
@@ -14526,8 +14532,8 @@ a .uxcore-count:active {
 .uxcore .kuma-matrix-cell {
   position: absolute;
   text-align: center;
-  border-left: 1px solid #BAC3CC;
-  border-bottom: 1px solid #BAC3CC;
+  border-left: 1px solid rgba(31, 56, 88, 0.1);
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
 .uxcore .uxcore-float-nav {
   position: fixed;
