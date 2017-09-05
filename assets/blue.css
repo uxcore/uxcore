@@ -6515,7 +6515,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  * All rights reserved.
  */
 .kuma-uxtable {
-  border-collapse: collapse;
+  border-collapse: separate;
   position: relative;
   color: rgba(0, 0, 0, 0.6);
   table-layout: fixed;
@@ -6568,7 +6568,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-weight: 600;
   min-width: 100%;
   white-space: nowrap;
-  display: inline-block;
+  display: table-row;
   color: rgba(0, 0, 0, 0.8);
 }
 .kuma-uxtable-header-item-required {
@@ -6609,7 +6609,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: rgba(36, 153, 242, 0.06);
 }
 .kuma-uxtable-cell {
-  display: inline-block;
+  display: table-cell;
   text-align: left;
   overflow: hidden;
   height: 100%;

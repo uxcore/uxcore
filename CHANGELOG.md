@@ -1,3 +1,7 @@
+## 0.15.8
+
+- [Component] Table: `CHANGED` only select cell text when the cell is double clicked
+
 ## 0.15.7
 
 - [Style] `FIXED` set input placeholder color important to prevent being overrided in IE10/11
