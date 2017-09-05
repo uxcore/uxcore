@@ -1,3 +1,7 @@
+## 0.15.7
+
+- [Style] `FIXED` set input placeholder color important to prevent being overrided in IE10/11
+
 ## 0.15.6
 
 - [Component] CascadeMultiSelect: `FEAT`: add readOnly prop

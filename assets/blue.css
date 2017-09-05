@@ -2035,15 +2035,15 @@ a.kuma-button.kuma-button-disabled:visited {
 }
 .kuma-input::-webkit-input-placeholder,
 .kuma-textarea::-webkit-input-placeholder {
-  color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.4) !important;
 }
 .kuma-input:-ms-input-placeholder,
 .kuma-textarea:-ms-input-placeholder {
-  color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.4) !important;
 }
 .kuma-input::placeholder,
 .kuma-textarea::placeholder {
-  color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.4) !important;
 }
 .kuma-input {
   padding: 5px 12px;

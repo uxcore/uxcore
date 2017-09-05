@@ -2369,15 +2369,15 @@
 }
 .uxcore .kuma-input::-webkit-input-placeholder,
 .uxcore .kuma-textarea::-webkit-input-placeholder {
-  color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.4) !important;
 }
 .uxcore .kuma-input:-ms-input-placeholder,
 .uxcore .kuma-textarea:-ms-input-placeholder {
-  color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.4) !important;
 }
 .uxcore .kuma-input::placeholder,
 .uxcore .kuma-textarea::placeholder {
-  color: rgba(31, 56, 88, 0.4);
+  color: rgba(31, 56, 88, 0.4) !important;
 }
 .uxcore .kuma-input {
   padding: 5px 12px;
