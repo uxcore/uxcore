@@ -6796,7 +6796,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   animation-name: tableMaskFadeOut;
 }
 .uxcore .kuma-uxtable {
-  border-collapse: separate;
+  border-collapse: collapse;
   position: relative;
   color: rgba(0, 0, 0, 0.6);
   table-layout: fixed;
@@ -6849,7 +6849,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-weight: 600;
   min-width: 100%;
   white-space: nowrap;
-  display: table-row;
+  display: inline-block;
   color: rgba(0, 0, 0, 0.8);
 }
 .uxcore .kuma-uxtable-header-item-required {
@@ -6890,7 +6890,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background-color: rgba(242, 113, 39, 0.06);
 }
 .uxcore .kuma-uxtable-cell {
-  display: table-cell;
+  display: inline-block;
   text-align: left;
   overflow: hidden;
   height: 100%;
