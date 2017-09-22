@@ -2417,11 +2417,6 @@ a.weaker-link {
 .kuma-transition-all * {
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.kuma-input {
-  padding: 5px 10px;
-  height: 36px;
-  line-height: 26px;
-}
 .kuma-textarea {
   line-height: 18px;
   padding: 9px 10px;
@@ -5933,10 +5928,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-select2-middle .kuma-select2-selection--single {
   height: 32px;
-  line-height: 30px;
 }
 .kuma-select2-middle .kuma-select2-selection--single .kuma-select2-selection__rendered {
   line-height: 30px;
+}
+.kuma-select2-middle .kuma-select2-selection--single .kuma-select2-selection__clear {
+  top: 5px;
 }
 .kuma-select2-middle .kuma-select2-selection--multiple {
   min-height: 32px;
@@ -5954,10 +5951,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-select2-small .kuma-select2-selection--single {
   height: 28px;
-  line-height: 26px;
 }
 .kuma-select2-small .kuma-select2-selection--single .kuma-select2-selection__rendered {
   line-height: 26px;
+}
+.kuma-select2-small .kuma-select2-selection--single .kuma-select2-selection__clear {
+  top: 3px;
 }
 .kuma-select2-small .kuma-select2-selection--multiple {
   min-height: 28px;
