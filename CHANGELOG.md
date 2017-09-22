@@ -1,3 +1,23 @@
+## 0.15.13
+
+- [Component] Album: `NEW` add new prop `customButtons`
+- [Component] Album: `FIXED` rgbaDetect bug if no script label exists
+- [Component] Calendar: `CHANGED` support new prop `size`
+- [Component] CascadeSelect: `CHANGED` support new prop `size`
+- [Component] CheckboxGroup: `CHANGED` add new prop `addon`
+- [Component] Form: `CHANGED` support new prop `verticalAlign`
+- [Component] Form: `FIXED` title's height after a formfield is wrong.
+- [Component] Message: `CHANGED` a counter of instance. the container will be removed if this counter is equal to 0.
+- [Component] Pagination: `CHANGED` improve style when total count is large
+- [Component] Select: `NEW` add new prop `size`
+- [Component] Select: `FIXED` placeholder overflow
+- [Component] Uploader: `FIXED` shown photo index is always 0
+- [Component] Uploader: `FIXED` more robust getUrl
+- [Component] Uploader: `FIXED` compatible with access to the previewUrl and downloadUrl
+- [Component] Uploader: `FIXED` default image can't preview
+- [Component] Uploader: `CHANGED` add album show image if only image
+
+
 ## 0.15.8
 
 - [Component] Table: `CHANGED` only select cell text when the cell is double clicked
