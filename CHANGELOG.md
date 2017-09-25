@@ -1,3 +1,10 @@
+## 0.15.15
+
+- [Component] Calenadr: `CHANGED` style adjustment for small & middle size
+- [Component] CascadeMultiSelect: `FIXED` trigger the onSelect event when click the close icon.
+- [Component] MultiSelect: `NEW` add new prop `size`
+
+
 ## 0.15.13
 
 - [Component] Album: `NEW` add new prop `customButtons`
