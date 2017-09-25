@@ -9546,7 +9546,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxform-left-icon {
   display: table-cell;
-  min-width: 30px;
+  width: 30px;
   border: 1px solid #BAC3CC;
   border-right: none;
   text-align: center;
