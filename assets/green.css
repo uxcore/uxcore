@@ -9910,7 +9910,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-step.kuma-step-type-arrow-bar .kuma-step-item-arrowbar .kuma-step-title {
   height: 24px;
   line-height: 24px;
-  background-color: #F37327;
+  background-color: #40b370;
   padding-left: 12px;
   margin-right: 14px;
   text-align: center;
@@ -9930,7 +9930,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 0;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-  border-left: 12px solid #F37327;
+  border-left: 12px solid #40b370;
 }
 .kuma-step.kuma-step-type-arrow-bar .kuma-step-item-arrowbar .kuma-step-arrow-right-bg {
   position: absolute;
@@ -9976,10 +9976,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   cursor: pointer;
 }
 .kuma-step.kuma-step-type-arrow-bar .kuma-step-editable:hover .kuma-step-title {
-  background-color: #F3813F;
+  background-color: #45bf78;
 }
 .kuma-step.kuma-step-type-arrow-bar .kuma-step-editable:hover .kuma-step-arrow-right {
-  border-left: 12px solid #F3813F;
+  border-left: 12px solid #45bf78;
 }
 .kuma-step .kuma-step-status-wait .kuma-step-icon {
   background-color: rgba(31, 56, 88, 0.04);
