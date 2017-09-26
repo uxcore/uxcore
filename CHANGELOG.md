@@ -1,3 +1,11 @@
+## 0.15.17
+
+- [Component] CascadeMultiSelect: `FIXED`: Panel position can not be float:left when used independently
+- [Component] CheckboxGroup: `CHANGED` adjust space between text & checkbox
+- [Component] RadioGroup: `CHANGED` adjust space between radio & text
+- [Component] Steps: `CHANGED` update style, change icons to uxcore-icon  
+- [Component] Steps: `NEW` new types: `bottom-desc` `arrow-bar`
+
 ## 0.15.15
 
 - [Component] Calenadr: `CHANGED` style adjustment for small & middle size
