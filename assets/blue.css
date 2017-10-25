@@ -6457,6 +6457,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 100%;
   background: white;
 }
+.kuma-tab-left .kuma-tab-nav-scroll,
+.kuma-tab-right .kuma-tab-nav-scroll {
+  width: auto;
+}
 .kuma-tab-left .kuma-tab-bar,
 .kuma-tab-right .kuma-tab-bar {
   height: 100%;

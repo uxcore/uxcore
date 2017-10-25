@@ -6745,6 +6745,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   height: 100%;
   background: white;
 }
+.uxcore .kuma-tab-left .kuma-tab-nav-scroll,
+.uxcore .kuma-tab-right .kuma-tab-nav-scroll {
+  width: auto;
+}
 .uxcore .kuma-tab-left .kuma-tab-bar,
 .uxcore .kuma-tab-right .kuma-tab-bar {
   height: 100%;
