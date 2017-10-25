@@ -239,7 +239,7 @@
  * Title Component Style for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -422,7 +422,7 @@
  * Tag Component Style for uxcore
  * @author peijie.dpj
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -492,7 +492,7 @@
  * Timeline Component Style for uxcore
  * @author muwen.lb
  *
- * Copyright 2015-2016, Uxcore Team, Alinw.
+ * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -6481,10 +6481,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar {
   background-color: #f5f5f5;
-  height: 49px;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container {
-  height: 49px;
   border-bottom: 0;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab {
@@ -6504,12 +6502,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background-color: #f7f7f7;
   line-height: 49px;
 }
+.uxcore .kuma-tab.kuma-tab-lg.kuma-tab-top > .kuma-tab-bar,
+.uxcore .kuma-tab.kuma-tab-lg.kuma-tab-bottom > .kuma-tab-bar {
+  height: 49px;
+}
+.uxcore .kuma-tab.kuma-tab-lg.kuma-tab-top > .kuma-tab-bar .kuma-tab-nav-container,
+.uxcore .kuma-tab.kuma-tab-lg.kuma-tab-bottom > .kuma-tab-bar .kuma-tab-nav-container {
+  height: 49px;
+}
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar {
   background-color: #f5f5f5;
-  height: 40px;
 }
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-container {
-  height: 40px;
   border-bottom: 0;
 }
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
@@ -6528,6 +6532,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
   background-color: #f7f7f7;
   line-height: 40px;
+}
+.uxcore .kuma-tab.kuma-tab-sm.kuma-tab-top > .kuma-tab-bar,
+.uxcore .kuma-tab.kuma-tab-sm.kuma-tab-bottom > .kuma-tab-bar {
+  height: 40px;
+}
+.uxcore .kuma-tab.kuma-tab-sm.kuma-tab-top > .kuma-tab-bar .kuma-tab-nav-container,
+.uxcore .kuma-tab.kuma-tab-sm.kuma-tab-bottom > .kuma-tab-bar .kuma-tab-nav-container {
+  height: 40px;
 }
 .uxcore .kuma-tab.kuma-tab-filter {
   background: transparent;
@@ -10139,6 +10151,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-right: 14px;
   text-align: center;
   color: #fff;
+  font-weight: normal;
 }
 .uxcore .kuma-step.kuma-step-type-arrow-bar .kuma-step-item-arrowbar .kuma-step-title .step-info {
   font-size: 14px;
@@ -10219,6 +10232,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-step .kuma-step-status-process .kuma-step-title {
   color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
 }
 .uxcore .kuma-step .kuma-step-status-finish .kuma-step-tail i {
   background-color: #66bc5c !important;
@@ -10233,6 +10247,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-step .kuma-step-status-error .kuma-step-title {
   color: #F04631;
+  font-weight: 700;
 }
 .uxcore .kuma-step .kuma-step-status-error .kuma-step-icon {
   color: #F04631;
@@ -10271,6 +10286,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-step.kuma-step-vertical .kuma-step-main .kuma-step-description {
   margin-top: 4px;
   text-indent: 0;
+}
+.uxcore .kuma-step.kuma-step-vertical .kuma-step-status-wait .kuma-step-description {
+  color: rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-step .kuma-step-small {
   margin-left: 20px;
@@ -10334,8 +10352,15 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   top: -5px;
   left: 8px;
   padding-right: 0;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   background-color: #fff;
+}
+.uxcore .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head .kuma-step-head-inner {
+  height: 18px;
+  padding: 4px 0;
+}
+.uxcore .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head .kuma-step-head-inner .kuma-step-icon {
+  vertical-align: top;
 }
 .uxcore .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-main .kuma-step-title {
   margin-top: -5px;
@@ -14519,6 +14544,12 @@ a .uxcore-count:active {
 .uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-label span {
   vertical-align: middle;
 }
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-disabled {
+  cursor: not-allowed;
+}
+.uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item .kuma-cascade-multi-item-disabled * {
+  cursor: not-allowed;
+}
 .uxcore .kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item-active {
   background-color: rgba(31, 56, 88, 0.04);
 }
@@ -14976,7 +15007,7 @@ a .uxcore-count:active {
   margin-left: 15px;
   width: 2px;
   height: 100%;
-  background-color: #BAC3CC;
+  background-color: rgba(31, 56, 88, 0.1);
 }
 .uxcore .uxcore-float-nav-container {
   margin-right: 40px;
@@ -14984,7 +15015,7 @@ a .uxcore-count:active {
   overflow: hidden;
 }
 .uxcore .uxcore-float-nav-content {
-  margin-left: 30px;
+  margin-left: 15px;
   padding: 5px 0;
   font-size: 14px;
   transition: transform cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
@@ -14995,11 +15026,11 @@ a .uxcore-count:active {
 }
 .uxcore .uxcore-float-nav-content .uxcore-float-nav-item svg {
   position: absolute;
-  left: -24px;
+  left: -9px;
   top: 4px;
 }
 .uxcore .uxcore-float-nav-content .uxcore-float-nav-item .item-circle-icon {
-  fill: #BAC3CC;
+  fill: #A5AFBC;
   stroke: #fff;
 }
 .uxcore .uxcore-float-nav-content .uxcore-float-nav-item .item-arrow-icon {
@@ -15008,47 +15039,49 @@ a .uxcore-count:active {
 .uxcore .uxcore-float-nav-content .uxcore-float-nav-item-title {
   display: block;
   padding: 3px 0;
-  text-indent: .5em;
   color: rgba(31, 56, 88, 0.6);
+  transition: all 0.2s ease;
 }
 .uxcore .uxcore-float-nav-content .uxcore-float-nav-item-title:hover {
-  background-color: #f2f9ff;
+  color: #2599f2;
   text-decoration: none;
 }
-.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-item-active {
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-item-title-active {
   color: #2599f2;
+  background-color: rgba(36, 153, 242, 0.1);
+  position: relative;
 }
-.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-subs .uxcore-float-nav-item {
-  padding-left: 1em;
-}
-.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-subs .uxcore-float-nav-item-title {
-  text-indent: 1em;
+.uxcore .uxcore-float-nav-content .uxcore-float-nav-item .uxcore-float-nav-item-title-active:before {
+  content: ' ';
+  position: absolute;
+  border-left: 2px solid #2599f2;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 .uxcore .uxcore-float-nav-control {
   position: absolute;
   right: 0;
   top: 50%;
   margin-top: -25px;
-  width: 20px;
-  height: 49px;
+  width: 17px;
+  height: 31px;
 }
-.uxcore .uxcore-float-nav-control > a {
+.uxcore .uxcore-float-nav-control > a.kuma-button {
   position: absolute;
-  width: 20px;
-  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 17px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0;
   display: block;
-  border: 1px solid #BAC3CC;
   font-family: kuma!important;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: .2px;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #666;
-}
-.uxcore .uxcore-float-nav-control > a:hover {
-  text-decoration: none;
-  color: #2599f2;
 }
 .uxcore .uxcore-float-nav-control-prev {
   left: 0;
@@ -15057,6 +15090,9 @@ a .uxcore-count:active {
 }
 .uxcore .uxcore-float-nav-control-prev:before {
   content: '\e613';
+}
+.uxcore .uxcore-float-nav-control-prev:hover {
+  z-index: 1;
 }
 .uxcore .uxcore-float-nav-control-next {
   left: 0;
@@ -15159,6 +15195,7 @@ a .uxcore-count:active {
 .uxcore .kuma-button-loading-icon {
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   animation: rotation linear 2s;
   animation-iteration-count: infinite;
   vertical-align: middle;
@@ -15183,8 +15220,4 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-button-sm > icon {
   font-size: 14px;
-}
-.uxcore .kuma-button-has-icon > span {
-  margin-left: 8px;
-  vertical-align: middle;
 }
