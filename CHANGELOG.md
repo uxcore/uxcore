@@ -1,3 +1,15 @@
+## 0.16.0
+
+- [General] fit React@15.x
+- [Component] CascadeMultiSelect: `NEW`: keyCouldDuplicated prop
+- [Component] CascadeMultiSelect: `FIXED`: remove Clear Button when all items are disabled
+- [Component] CascadeMultiSelect: `NEW`: display all selection levels when use the independent Panel.
+- [Component] CascadeMultiSelect: `NEW`: add a new attribute "disabled" to item of options array to enable/disable checkbox.
+- [Component] FloatNav: `NEW` new style
+- [Component] FloatNav: `CHANGED` support more `navItem` nesting levels
+- [Component] Form: `CHANGD` Cascade pass all Select prop
+- [Component] Menu: `BREAKING CHANGED` onOpen & onClose is replaced with `onOpenChange`
+
 ## 0.15.17
 
 - [Component] CascadeMultiSelect: `FIXED`: Panel position can not be float:left when used independently
