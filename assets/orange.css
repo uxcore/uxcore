@@ -6456,6 +6456,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   overflow-y: hidden;
   height: 100%;
   background: white;
+  display: -ms-flexbox;
+  display: flex;
 }
 .kuma-tab-left .kuma-tab-nav-scroll,
 .kuma-tab-right .kuma-tab-nav-scroll {
@@ -6463,7 +6465,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-tab-left .kuma-tab-bar,
 .kuma-tab-right .kuma-tab-bar {
-  height: 100%;
+  width: auto;
 }
 .kuma-tab-left .kuma-tab-bar .kuma-tab-nav-container,
 .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container {
@@ -6516,6 +6518,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab-right .kuma-tab-bar .kuma-tab-nav-container-scrolling .kuma-tab-tab-next {
   bottom: 0;
   top: auto;
+}
+.kuma-tab-left .kuma-tab-content,
+.kuma-tab-right .kuma-tab-content {
+  -ms-flex: 1;
+      flex: 1;
 }
 .kuma-tab-left .kuma-tab-content-animated,
 .kuma-tab-right .kuma-tab-content-animated {
@@ -6864,6 +6871,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-cell .kuma-select2 {
   vertical-align: top;
   margin-top: 7px;
+}
+.kuma-uxtable-cell__action-collapsed {
+  padding-left: 30px;
 }
 .kuma-uxtable-small-size .kuma-uxtable-cell {
   height: 40px;

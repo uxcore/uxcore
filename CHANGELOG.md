@@ -1,3 +1,17 @@
+## 0.16.3
+
+- [General] fit React@15.x: Alert/Popover/Table
+- [General] add tests: Alert/Popover
+- [Component] Animate: `CHANGED` update `rc-animate` to `^2.0.0`
+- [Component] Dialog: `CHANGED` remove circular dependencies between Dialog & confirm 
+- [Component] Table: `FIXED` deepcopy beforeFetch params before passed
+- [Component] Table: `CHANGED` default empty data for locale
+- [Component] Table: `CHANGED` action column title padding adjustment
+- [Component] Table: `CHANGED` add new action config `buttonType`
+- [Component] Tabs: `FIXED` fix the heigth of tab-bar
+- [Component] Tooltip: `CHANGED` update `rc-tooltip` to `^3.0.0`
+- [Component] Transfer: `CHANGED` replace dependency `deepcopy` with `lodash/cloneDeep`
+
 ## 0.16.0
 
 - [General] fit React@15.x
