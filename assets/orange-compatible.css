@@ -3212,7 +3212,7 @@
   height: 100%;
 }
 .uxcore .kuma-calendar-time-picker {
-  float: left;
+  display: inline-block;
   height: 340px;
   background-color: white;
 }
@@ -3757,6 +3757,9 @@
   background-clip: padding-box;
   border: 1px solid #ccc;
   line-height: 1.5;
+}
+.uxcore .kuma-calendar-date-main {
+  white-space: nowrap;
 }
 .uxcore .kuma-calendar-date-panel {
   width: 300px;
@@ -8916,7 +8919,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-info {
   display: inline-block;
   margin-left: 18px;
-  width: calc(100% - 132px);
+  width: calc(100% - 138px);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -9509,7 +9512,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: table;
   float: left;
   width: 100%;
-  padding: 0 5px 16px 0px;
+  padding: 0 24px 16px 0px;
   *zoom: 1;
 }
 .uxcore .kuma-uxform-field .kuma-label {
@@ -9517,13 +9520,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   padding-top: 9px;
   padding-right: 16px;
   vertical-align: top;
-}
-.uxcore .kuma-uxform-field .kuma-label.vertical-align {
-  width: 100%;
-  display: block;
-  text-align: left;
-  padding-top: 0px;
-  padding-bottom: 8px;
 }
 .uxcore .kuma-uxform-field .kuma-label.label-match-input-height {
   padding-top: 0px;
@@ -9551,14 +9547,27 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-.uxcore .kuma-uxform-field__view {
-  padding-bottom: 7px;
+.uxcore .kuma-uxform-field-content {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
-.uxcore .kuma-uxform-field-small .kuma-label {
-  padding-top: 5px;
+.uxcore .kuma-uxform-field-content .kuma-radio-group > span {
+  padding: 0px 20px 0px 4px;
 }
-.uxcore .kuma-uxform-field-middle .kuma-label {
-  padding-top: 7px;
+.uxcore .kuma-uxform-field-content.has-error .kuma-input,
+.uxcore .kuma-uxform-field-content.has-error .kuma-uxform-left-icon,
+.uxcore .kuma-uxform-field-content.has-error .kuma-uxform-right-icon,
+.uxcore .kuma-uxform-field-content.has-error .kuma-uxform-count,
+.uxcore .kuma-uxform-field-content.has-error .kuma-textarea,
+.uxcore .kuma-uxform-field-content.has-error .kuma-select2-selection,
+.uxcore .kuma-uxform-field-content.has-error .mce-panel {
+  border-color: #F04631;
+  background-color: rgba(240, 70, 48, 0.06);
+}
+.uxcore .kuma-uxform-field-content .kuma-radio-group-item,
+.uxcore .kuma-uxform-field-content .kuma-checkbox-group-item {
+  margin-bottom: 8px;
 }
 .uxcore .kuma-uxform-count {
   display: table-cell;
@@ -9615,7 +9624,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxform-tips {
   padding-top: 4px;
-  color: #999;
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-uxform-tips .kuma-icon {
   vertical-align: middle;
@@ -9636,30 +9645,41 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxform-errormsg .kuma-uxform-message-content {
   vertical-align: middle;
 }
-.uxcore .kuma-uxform-field-content {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+.uxcore .kuma-uxform-field__layout-v .kuma-label.vertical-align {
   width: 100%;
+  display: block;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 4px;
 }
-.uxcore .kuma-uxform-field-content .kuma-radio-group > span {
-  padding: 0px 20px 0px 4px;
-}
-.uxcore .kuma-uxform-field-content.view-mode {
+.uxcore .kuma-uxform-field__layout-h .kuma-uxform-field-content.view-mode {
   padding-top: 9px;
 }
-.uxcore .kuma-uxform-field-content.has-error .kuma-input,
-.uxcore .kuma-uxform-field-content.has-error .kuma-uxform-left-icon,
-.uxcore .kuma-uxform-field-content.has-error .kuma-uxform-right-icon,
-.uxcore .kuma-uxform-field-content.has-error .kuma-uxform-count,
-.uxcore .kuma-uxform-field-content.has-error .kuma-textarea,
-.uxcore .kuma-uxform-field-content.has-error .kuma-select2-selection,
-.uxcore .kuma-uxform-field-content.has-error .mce-panel {
-  border-color: #F04631;
-  background-color: rgba(240, 70, 48, 0.06);
+.uxcore .kuma-uxform-field__layout-h.kuma-uxform-field__all-view.kuma-uxform-field .kuma-uxform-field-content.view-mode {
+  padding-top: 0px;
 }
-.uxcore .kuma-uxform-field-content .kuma-radio-group-item,
-.uxcore .kuma-uxform-field-content .kuma-checkbox-group-item {
-  margin-bottom: 8px;
+.uxcore .kuma-uxform-field__layout-h.kuma-uxform-field__all-view.kuma-uxform-field .kuma-label {
+  padding-top: 0px;
+}
+.uxcore .kuma-uxform-field-middle .kuma-label {
+  padding-top: 7px;
+}
+.uxcore .kuma-uxform-field-middle.kuma-uxform-field__layout-h .kuma-uxform-field-content.view-mode {
+  padding-top: 7px;
+}
+.uxcore .kuma-uxform-field-small .kuma-label {
+  padding-top: 5px;
+  padding-right: 12px;
+}
+.uxcore .kuma-uxform-field-small.kuma-uxform-field {
+  padding-bottom: 12px;
+}
+.uxcore .kuma-uxform-field-small.kuma-uxform-field__layout-h .kuma-uxform-field-content.view-mode {
+  padding-top: 5px;
+}
+.uxcore .kuma-input-uxform-field .kuma-uxform-input {
+  display: table;
+  width: 100%;
 }
 .uxcore .kuma-button-group-uxform-field {
   padding-left: 100px;
@@ -9667,27 +9687,41 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-button-group-uxform-field .kuma-button {
   margin-right: 20px;
 }
-.uxcore .kuma-checkbox-group-uxform-field .kuma-uxform-field-content,
-.uxcore .kuma-radio-group-uxform-field .kuma-uxform-field-content {
-  padding-top: 9px;
+.uxcore .kuma-checkbox-group-uxform-field .kuma-radio-group,
+.uxcore .kuma-radio-group-uxform-field .kuma-radio-group,
+.uxcore .kuma-checkbox-group-uxform-field .kuma-checkbox-group,
+.uxcore .kuma-radio-group-uxform-field .kuma-checkbox-group {
+  margin-top: 9px;
 }
-.uxcore .kuma-checkbox-group-uxform-field .kuma-uxform-field-content.view-mode,
-.uxcore .kuma-radio-group-uxform-field .kuma-uxform-field-content.view-mode {
-  padding-top: 9px;
+.uxcore .kuma-checkbox-group-uxform-field.kuma-uxform-field-middle .kuma-radio-group,
+.uxcore .kuma-radio-group-uxform-field.kuma-uxform-field-middle .kuma-radio-group,
+.uxcore .kuma-checkbox-group-uxform-field.kuma-uxform-field-middle .kuma-checkbox-group,
+.uxcore .kuma-radio-group-uxform-field.kuma-uxform-field-middle .kuma-checkbox-group {
+  margin-top: 7px;
 }
-.uxcore .kuma-checkbox-group-uxform-field.kuma-uxform-field-middle .kuma-uxform-field-content,
-.uxcore .kuma-radio-group-uxform-field.kuma-uxform-field-middle .kuma-uxform-field-content {
-  padding-top: 7px;
+.uxcore .kuma-checkbox-group-uxform-field.kuma-uxform-field-small .kuma-radio-group,
+.uxcore .kuma-radio-group-uxform-field.kuma-uxform-field-small .kuma-radio-group,
+.uxcore .kuma-checkbox-group-uxform-field.kuma-uxform-field-small .kuma-checkbox-group,
+.uxcore .kuma-radio-group-uxform-field.kuma-uxform-field-small .kuma-checkbox-group {
+  margin-top: 5px;
 }
-.uxcore .kuma-checkbox-group-uxform-field.kuma-uxform-field-small .kuma-uxform-field-content,
-.uxcore .kuma-radio-group-uxform-field.kuma-uxform-field-small .kuma-uxform-field-content {
-  padding-top: 5px;
+.uxcore .kuma-switch-uxform-field .kuma-switch {
+  margin-top: 6px;
 }
-.uxcore .kuma-switch-uxform-field .kuma-uxform-field-content {
-  padding-top: 6px;
+.uxcore .kuma-switch-uxform-field.kuma-uxform-field-middle .kuma-switch {
+  margin-top: 4px;
 }
-.uxcore .kuma-switch-uxform-field .kuma-uxform-field-content.view-mode {
-  padding-top: 9px;
+.uxcore .kuma-switch-uxform-field.kuma-uxform-field-small .kuma-switch {
+  margin-top: 2px;
+}
+.uxcore .kuma-pickable-uxform-field .kuma-pickable {
+  margin-top: 4px;
+}
+.uxcore .kuma-pickable-uxform-field.kuma-uxform-field-middle .kuma-pickable {
+  margin-top: 2px;
+}
+.uxcore .kuma-pickable-uxform-field.kuma-uxform-field-small .kuma-pickable {
+  margin-top: 0px;
 }
 .uxcore .kuma-editor-uxform-field .mce-tinymce {
   border-radius: 3px;
@@ -9698,12 +9732,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-editor-uxform-field .mce-tinymce:focus {
   border-color: #77879C;
-}
-.uxcore .kuma-pickable-uxform-field .kuma-uxform-field-content {
-  padding-top: 4px;
-}
-.uxcore .kuma-pickable-uxform-field .kuma-uxform-field-content.view-mode {
-  padding-top: 9px;
 }
 .uxcore .kuma-cascade-date-uxform-field .kuma-calendar-picker-input {
   width: 200px;
@@ -9819,6 +9847,20 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   bottom: 5px;
   right: 10px;
+}
+.uxcore .kuma-uxform-field__input-box-middle .kuma-uxform-input,
+.uxcore .kuma-uxform-field__input-box-middle .kuma-select2,
+.uxcore .kuma-uxform-field__input-box-middle .kuma-calendar-picker-input,
+.uxcore .kuma-uxform-field__input-box-middle .kuma-textarea,
+.uxcore .kuma-uxform-field__input-box-middle .mce-tinymce {
+  max-width: 360px;
+}
+.uxcore .kuma-uxform-field__input-box-large .kuma-uxform-input,
+.uxcore .kuma-uxform-field__input-box-large .kuma-select2,
+.uxcore .kuma-uxform-field__input-box-large .kuma-calendar-picker-input,
+.uxcore .kuma-uxform-field__input-box-large .kuma-textarea,
+.uxcore .kuma-uxform-field__input-box-large .mce-tinymce {
+  max-width: 564px;
 }
 .uxcore .kuma-progress-line-wrap {
   display: inline-block;
@@ -9995,6 +10037,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 20px;
   font-size: 12px;
   vertical-align: middle;
+}
+.uxcore .kuma-step .kuma-step-head .kuma-step-uxicon {
+  border-width: 1px;
+  line-height: 22px;
 }
 .uxcore .kuma-step .kuma-step-main {
   color: rgba(31, 56, 88, 0.6);

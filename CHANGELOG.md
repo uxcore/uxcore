@@ -1,3 +1,23 @@
+## 0.17.0
+
+- [General] fit React@15.x: Switch/Form
+- [Component] Calendar: `CHNAGED` update `rc-time-picker` to ~2.4.0
+- [Component] Calendar: `CHNAGED` update `rc-calendar` to ~8.4.0
+- [Component] Calendar: `CHANGED` support new prop `onOpenChange`
+- [Component] Calendar: `FIXED` timepicker style bug when calendar is shown around the border of the container.
+- [Component] CascadeSelect: `NEW`: new prop `isMustSelectLeaf` 
+- [Component] CheckboxGroup: `FIXED` Item props `disabled` should not work when it is `undefined`
+- [Component] Steps: `NEW` icon prop for Step support uxcore-icon
+- [Component] Uploader: `FIXED` style bug for `upload failed` text
+- [Component] Uploader: `CHANGED` allow downloadUrl & previewUrl to be an empty string to hidd the corresponding button.
+- [Component] Form: `NEW` auto adjust field's margin between view mode & edit mode
+- [Component] Form: `CHANGED` adjust safe distance between two fields in a row.
+- [Component] Form: `CHANGED` adjust field's margin for different size
+
+## BREAKING CHANGE
+
+- [Component] Form: `NEW` new field prop `inputBoxMaxWidth` to define a max width for field input box in a very wide page.  to support this feature, you must use both js and css in 0.17.0 version.
+
 ## 0.16.3
 
 - [General] fit React@15.x: Alert/Popover/Table
