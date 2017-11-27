@@ -1,3 +1,7 @@
+## 0.17.1
+
+- [Component] Rate: `FIXED` Rate is not exported.
+
 ## 0.17.0
 
 - [General] fit React@15.x: Switch/Form
