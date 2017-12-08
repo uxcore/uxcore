@@ -1,3 +1,24 @@
+## 0.18.0
+
+- [Style] `NEW` add danger button
+- [Style] `NEW` add new function color
+- [Style] `CHANHED` new color generation rule
+- [Button] `NEW` add new prop `danger`
+- [Button] `Deprecated` Button.ButtonGroup
+- [Album] `CHANHED` increase album-overlay z-index to 1000 which is equal to dialog's
+- [CascadeMultiSelect] `NEW`: isCleanDisabledLabel prop
+- [Dialog] `FIXED` iusse #28 #20  Dialog.xxx icon can be changed
+- [Dialog] `NEW` iusse #27 Dialog.xxx support `className`
+- [Dialog] `CHANGED` iusse #24 use padding instead of margin to position title
+- [Form] `NEW` add new API `doValidateAndScroll`
+- [Formatter] `FIXED` Formatter.date(null) will return 1970-01-01
+- [Step] `FIXED` set title attribute while the type is string, not jsx, see #17
+- [Tabs] `FIXED` wrong open type split-line color
+- [Tooltip] `NEW` dark background tooltip
+- [Transfer] `CHANGED` add disabled option to transfer item
+- [TreeSelect] `CHANGED` rc-tree-select@1.12.0, change extend-style to usage-style.
+
+
 ## 0.17.1
 
 - [Component] Rate: `FIXED` Rate is not exported.

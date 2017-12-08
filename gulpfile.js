@@ -8,6 +8,7 @@ var cssimport = require('gulp-cssimport');
 var concat = require('gulp-concat');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
+var LessPluginFunctions = require('less-plugin-functions');
 var webpack = require('webpack');
 var Promise = require('promise');
 var git = require('git-rev');
@@ -132,7 +133,7 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 gulp.task('theme', ['theme_clean', 'iconfont'], function (done) {
   gulp.src(['./style/theme/**/*.less'])
       .pipe(less({
-        plugins: [autoprefix, LessPluginInlineUrls],
+        plugins: [autoprefix, LessPluginInlineUrls, new LessPluginFunctions()],
       }))
       .pipe(gulp.dest('./assets'))
       .on('end', function () {
