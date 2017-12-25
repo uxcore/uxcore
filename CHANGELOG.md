@@ -1,3 +1,21 @@
+## 0.18.1
+
+- [Message] `FIXED`  content can be a  React.Element. 
+- [MultiSelect] `CHANGED` keep selection order.
+- [Popover] `CHANGED` arrow position imporvement
+- [Popover] `CHANGED` update `rc-tooltip` to `^3.0.0`
+- [Switch] `CHANGED` support new prop `loading`
+- [Table] `FIXED` hide content bottom border line when there is no data
+- [Table] `FIXED` missing `POST` fetch method
+- [Table] `FIXED` left fixed table can not match the height with the mainTable, when table is multiline.
+- [Table] `FIXED` when table is resized & mulitiline, fixed table's height can not match.
+- [Table] `FIXED` unexpected space between body and header 
+- [Table] `CHANGED` column.width support percentage
+- [Table] `CHANGED` add new prop `showUnknownTotalPager`
+- [Table] `CHANGED` adjust column picker style
+- [Table] `NEW` support new prop `onColumnPick`
+- [Transfer] `FIXED` fix color to comply with design rules.
+
 ## 0.18.0
 
 - [Style] `NEW` add danger button

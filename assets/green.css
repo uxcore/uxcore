@@ -6727,6 +6727,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   max-width: 232px;
   max-height: 400px;
   overflow: auto;
+  padding: '16px 12px';
 }
 .kuma-uxtable-column-picker-popover .kuma-tree {
   padding: 0;
@@ -6914,6 +6915,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-body {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   min-width: 100%;
   min-height: 40px;
   white-space: normal;
@@ -7253,6 +7255,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-border-line .kuma-uxtable-content,
 .kuma-uxtable-split-line .kuma-uxtable-content {
   border: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-uxtable-border-line.kuma-uxtable__no-data .kuma-uxtable-content,
+.kuma-uxtable-split-line.kuma-uxtable__no-data .kuma-uxtable-content {
+  border-bottom: none;
 }
 .kuma-uxtable-border-line .kuma-uxtable-row.even > .kuma-uxtable-row-cells,
 .kuma-uxtable-split-line .kuma-uxtable-row.even > .kuma-uxtable-row-cells {
@@ -7903,7 +7909,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-popover-placement-topLeft .kuma-popover-arrow,
 .kuma-popover-placement-topRight .kuma-popover-arrow {
   left: 50%;
-  margin-left: -8px;
   border-bottom-width: 0;
   border-top-color: #BAC3CC;
   bottom: 4px;
@@ -7918,17 +7923,20 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-top-color: #fff;
 }
 .kuma-popover-placement-topLeft .kuma-popover-arrow {
-  left: 15%;
+  left: 10px;
 }
 .kuma-popover-placement-topRight .kuma-popover-arrow {
-  left: 85%;
+  right: 10px;
+  left: auto;
+}
+.kuma-popover-placement-top .kuma-popover-arrow {
+  margin-left: -8px;
 }
 .kuma-popover-placement-right .kuma-popover-arrow,
 .kuma-popover-placement-rightTop .kuma-popover-arrow,
 .kuma-popover-placement-rightBottom .kuma-popover-arrow {
   top: 50%;
   left: 4px;
-  margin-top: -8px;
   border-left-width: 0;
   border-right-color: #BAC3CC;
 }
@@ -7942,16 +7950,19 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-right-color: #fff;
 }
 .kuma-popover-placement-rightTop .kuma-popover-arrow {
-  top: 15%;
+  top: 10px;
 }
 .kuma-popover-placement-rightBottom .kuma-popover-arrow {
-  top: 85%;
+  top: auto;
+  bottom: 10px;
+}
+.kuma-popover-placement-right .kuma-popover-arrow {
+  margin-top: -8px;
 }
 .kuma-popover-placement-bottom .kuma-popover-arrow,
 .kuma-popover-placement-bottomLeft .kuma-popover-arrow,
 .kuma-popover-placement-bottomRight .kuma-popover-arrow {
   left: 50%;
-  margin-left: -8px;
   border-top-width: 0;
   border-bottom-color: #BAC3CC;
   top: 4px;
@@ -7966,17 +7977,20 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom-color: #fff;
 }
 .kuma-popover-placement-bottomLeft .kuma-popover-arrow {
-  left: 15%;
+  left: 10px;
 }
 .kuma-popover-placement-bottomRight .kuma-popover-arrow {
-  left: 85%;
+  right: 10px;
+  left: auto;
+}
+.kuma-popover-placement-bottom .kuma-popover-arrow {
+  margin-left: -8px;
 }
 .kuma-popover-placement-left .kuma-popover-arrow,
 .kuma-popover-placement-leftTop .kuma-popover-arrow,
 .kuma-popover-placement-leftBottom .kuma-popover-arrow {
   top: 50%;
   right: 4px;
-  margin-top: -8px;
   border-right-width: 0;
   border-left-color: #BAC3CC;
 }
@@ -7990,10 +8004,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   bottom: -7px;
 }
 .kuma-popover-placement-leftTop .kuma-popover-arrow {
-  top: 15%;
+  top: 10px;
 }
 .kuma-popover-placement-leftBottom .kuma-popover-arrow {
-  top: 85%;
+  bottom: 10px;
+  top: auto;
+}
+.kuma-popover-placement-left .kuma-popover-arrow {
+  margin-top: -8px;
 }
 @keyframes popoverSlideInLeft {
   0% {
@@ -9241,7 +9259,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-color: #f7f7f7;
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.disabled {
-  opacity: 0.3;
+  color: rgba(31, 56, 88, 0.3);
 }
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.disabled:hover,
 .kuma-uxtransfer-container td .kuma-uxtransfer-block a.disabled:focus {
@@ -12799,6 +12817,15 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   transform: scale(1);
   animation-name: none;
 }
+.kuma-switch-disabled.kuma-switch-checked {
+  background: rgba(64, 179, 112, 0.4);
+}
+.kuma-switch-disabled.kuma-switch-checked .kuma-switch-inner {
+  color: white;
+}
+.kuma-switch-disabled.kuma-switch-checked:after {
+  background: white;
+}
 .kuma-switch-label {
   display: inline-block;
   line-height: 20px;
@@ -12812,11 +12839,31 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
       -ms-user-select: text;
           user-select: text;
 }
+.kuma-switch-loading:before {
+  content: "\e6b6";
+  font-family: uxcore!important;
+  font-size: 12px;
+  font-style: normal;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  z-index: 2;
+  color: rgba(31, 56, 88, 0.6);
+  transition: left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  animation: switchLoadingRotate 1s linear infinite;
+}
+.kuma-switch-loading.kuma-switch-checked:before {
+  color: #40b370;
+  left: 45px;
+}
 .kuma-switch-no-text {
   width: 40px;
 }
 .kuma-switch-no-text.kuma-switch-checked:after {
   left: 18px;
+}
+.kuma-switch-no-text.kuma-switch-checked:before {
+  left: 21px;
 }
 @keyframes rcSwitchOn {
   0% {
@@ -12835,6 +12882,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes switchLoadingRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /**
