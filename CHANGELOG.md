@@ -1,3 +1,9 @@
+## 0.18.2
+
+
+- [Form] `CHANGED` adjust textarea min-height
+- [Select] `CHANGED` optimize select-value paddingRight, use large one only when allowClear is true
+
 ## 0.18.1
 
 - [Message] `FIXED`  content can be a  React.Element. 

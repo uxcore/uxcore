@@ -5961,6 +5961,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
+  padding-right: 10px;
+}
+.uxcore .kuma-select2-allow-clear .kuma-select2-selection-selected-value {
   padding-right: 30px;
 }
 .uxcore .kuma-select2-selection--single {
@@ -9970,6 +9973,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-textarea-uxform-field textarea {
   display: block;
+  min-height: 124px;
 }
 .uxcore .kuma-textarea-uxform-field .has-count {
   position: relative;
