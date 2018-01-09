@@ -7115,33 +7115,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-h-sort .kuma-icon-triangle-down {
   bottom: 0;
 }
-.action-container .action {
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0 12px;
-}
-.action-container .action.disabled {
-  color: rgba(31, 56, 88, 0.3);
-  cursor: not-allowed;
-}
-.action-container .action.first-action {
-  padding-left: 0px;
-}
-.action-container .action i {
-  color: rgba(31, 56, 88, 0.4);
-  vertical-align: middle;
-  font-size: 14px;
-}
-.action-container .action .kuma-uxtable-cell-collapsed-icon-active {
-  color: rgba(31, 56, 88, 0.6);
-}
-.action-container .action.more-action {
-  line-height: 49px;
-}
-.action-container .action + .kuma-button {
-  margin-left: 12px;
-}
 .kuma-uxtable span.indent {
   display: inline-block;
   width: 27px;
@@ -7322,31 +7295,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-left: none;
   border-right: none;
 }
-.kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
-  padding: 5px 16px;
-}
-.kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item:hover {
-  background: rgba(31, 56, 88, 0.04);
-}
-.kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item a {
-  color: #3C99D8;
-  cursor: pointer;
-}
-.kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item.kuma-dropdown-menu-item-disabled {
-  background: rgba(31, 56, 88, 0.04);
-}
-.kuma-uxtable-cell-collapsed-button-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item.kuma-dropdown-menu-item-disabled a {
-  color: rgba(31, 56, 88, 0.3);
-  cursor: not-allowed;
-}
-.kuma-uxtable-cell-collapsed-button-more-dropdown.kuma-uxtable-cell-collapsed-button-more-link-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
-  padding: 5px 11px;
-}
-.kuma-uxtable-cell-collapsed-button-text {
-  vertical-align: middle;
-}
-.kuma-uxtable-cell-collapsed-button-split-line {
-  color: rgba(31, 56, 88, 0.1);
+.action-container .kuma-button-group-separated {
+  line-height: 1.5;
 }
 /**
  * Dropdown Component Style for uxcore
@@ -15661,4 +15611,78 @@ ul.kuma-dropdown-menu-hoverable li:after {
 }
 .kuma-button-sm > icon {
   font-size: 14px;
+}
+/**
+ * ButtonGroup Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-button-group-separated {
+  display: inline-block;
+}
+.kuma-button-group-separated-item.kuma-button {
+  margin-left: 12px;
+}
+.kuma-button-group-separated-item-first.kuma-button {
+  margin-left: 0px;
+}
+.kuma-button-group-separated-item-more.kuma-button i,
+.kuma-button-group-separated-item-more.kuma-button icon {
+  vertical-align: middle;
+  margin-top: -1px;
+}
+a.kuma-button-group-separated-item {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 12px;
+}
+a.kuma-button-group-separated-item.disabled {
+  color: rgba(31, 56, 88, 0.3);
+  cursor: not-allowed;
+}
+a.kuma-button-group-separated-item i {
+  color: rgba(31, 56, 88, 0.4);
+  font-size: 14px;
+}
+a.kuma-button-group-separated-item-first {
+  padding-left: 0;
+}
+.kuma-button-group-separated-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  padding: 6px 16px;
+}
+.kuma-button-group-separated-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item:hover {
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-button-group-separated-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item a {
+  color: #3C99D8;
+  cursor: pointer;
+}
+.kuma-button-group-separated-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item.kuma-dropdown-menu-item-disabled {
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-button-group-separated-more-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item.kuma-dropdown-menu-item-disabled a {
+  color: rgba(31, 56, 88, 0.3);
+  cursor: not-allowed;
+}
+.kuma-button-group-separated-more-dropdown.kuma-button-group-separated-more-link-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  padding: 5px 11px;
+}
+.kuma-button-group-separated-more-dropdown-small .kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  padding: 5px 16px;
+}
+.kuma-button-group-separated-more-dropdown-large .kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  padding: 7px 16px;
+  font-size: 14px;
+}
+.kuma-button-group-separated-more-text {
+  vertical-align: baseline;
+}
+.kuma-button .kuma-button-group-separated-more-text {
+  vertical-align: top;
+}
+.kuma-button-group-separated-split-line {
+  color: rgba(31, 56, 88, 0.1);
 }

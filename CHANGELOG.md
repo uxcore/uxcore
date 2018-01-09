@@ -1,9 +1,16 @@
+## 0.19.1
+
+- [General]: add `ButtonGroup`
+- [Table]: `CHANGED` replace inner `CollapsedButton` with `ButtonGroup`
+- [EmptyData]: `CHANGED` change default empty image
+
+
 ## 0.19.0
 
 - [CascadeSelect]: `NEW` prop `onSelect`
 - [Title]: `CHANGED` support new prop `noDecoration`
 - [Tree]: `CHNAGED` update tree css
-- [General]: add `CONST`, `FormField`
+- [General]: add `Const`, `FormField`
 
 - [Menu]: `BREAKING CHANGED` upgrade rc-menu to [`^6.0.0`](https://github.com/react-component/menu/blob/master/HISTORY.md#600--2017-10-30) , new menu will render its submenu into `document.body` which may affect some user-defined css. 
 

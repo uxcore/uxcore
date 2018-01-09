@@ -3,6 +3,7 @@ var Alert = require('./lib/Alert');
 var Animate = require('./lib/Animate');
 var Badge = require('./lib/Badge');
 var Button = require('./lib/Button');
+var ButtonGroup = require('./lib/ButtonGroup');
 var Calendar = require('./lib/Calendar');
 var Carousel = require('./lib/Carousel');
 var CascadeMultiSelect = require('./lib/CascadeMultiSelect');
@@ -57,6 +58,7 @@ module.exports = {
   Animate: Animate,
   Badge: Badge,
   Button: Button,
+  ButtonGroup: ButtonGroup,
   Calendar: Calendar,
   Carousel: Carousel,
   CascadeMultiSelect: CascadeMultiSelect,
