@@ -9,6 +9,7 @@ var CascadeMultiSelect = require('./lib/CascadeMultiSelect');
 var CascadeSelect = require('./lib/CascadeSelect');
 var CheckboxGroup = require('./lib/CheckboxGroup');
 var Collapse = require('./lib/Collapse');
+var Const = require('./lib/Const');
 var Crumb = require('./lib/Crumb');
 var Dialog = require('./lib/Dialog');
 var Dropdown = require('./lib/Dropdown');
@@ -16,6 +17,7 @@ var EmptyData = require('./lib/EmptyData');
 var FloatNav = require('./lib/FloatNav');
 var Form = require('./lib/Form');
 var Formatter = require('./lib/Formatter');
+var FormField = require('./lib/FormField');
 var Icon = require('./lib/Icon');
 var Grid = require('./lib/Grid');
 var Layout = require('./lib/Layout');
@@ -61,6 +63,7 @@ module.exports = {
   CascadeSelect: CascadeSelect,
   CheckboxGroup: CheckboxGroup,
   Collapse: Collapse,
+  Const: Const,
   Crumb: Crumb,
   Dialog: Dialog,
   Dropdown: Dropdown,
@@ -68,6 +71,7 @@ module.exports = {
   FloatNav: FloatNav,
   Form: Form,
   Formatter: Formatter,
+  FormField: FormField,
   Grid: Grid,
   Icon: Icon,
   Layout: Layout,
