@@ -1,3 +1,7 @@
+## 0.19.4
+
+- [EmptyData]: `FIXED` default logo url is http
+
 ## 0.19.3
 
 - [Icon]: `CHANGED` add 14 new icons
