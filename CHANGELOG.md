@@ -1,3 +1,8 @@
+## 0.19.3
+
+- [Icon]: `CHANGED` add 14 new icons
+- [Uploadr]: `CHANGED` replace preview icon
+
 ## 0.19.1
 
 - [General]: add `ButtonGroup`

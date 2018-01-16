@@ -2813,7 +2813,7 @@
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_f47r2ve81a21q0k9.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_q4c14mgk0otg9zfr.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -3146,6 +3146,9 @@
 .uxcore .uxicon-fangda:before {
   content: "\e6bb";
 }
+.uxcore .uxicon-fangwen:before {
+  content: "\e6be";
+}
 .uxcore .uxicon-fanyi:before {
   content: "\e6bc";
 }
@@ -3244,6 +3247,48 @@
 }
 .uxcore .uxicon-moren:before {
   content: "\e64c";
+}
+.uxcore .uxicon-bianji:before {
+  content: "\e6e0";
+}
+.uxcore .uxicon-guojihua:before {
+  content: "\e6e4";
+}
+.uxcore .uxicon-gengduo:before {
+  content: "\e64d";
+}
+.uxcore .uxicon-fuli:before {
+  content: "\e64e";
+}
+.uxcore .uxicon-nianjia:before {
+  content: "\e654";
+}
+.uxcore .uxicon-xinchouhesuan:before {
+  content: "\e655";
+}
+.uxcore .uxicon-gouwuche:before {
+  content: "\e6e6";
+}
+.uxcore .uxicon-saoma:before {
+  content: "\e656";
+}
+.uxcore .uxicon-shoudiantong:before {
+  content: "\e657";
+}
+.uxcore .uxicon-ARsaomiao:before {
+  content: "\e660";
+}
+.uxcore .uxicon-nav-bottom:before {
+  content: "\e760";
+}
+.uxcore .uxicon-nav-right:before {
+  content: "\e761";
+}
+.uxcore .uxicon-nav-top:before {
+  content: "\e762";
+}
+.uxcore .uxicon-nav-left:before {
+  content: "\e763";
 }
 .uxcore .kuma-calendar {
   box-sizing: border-box;
@@ -8608,6 +8653,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uploader {
   min-width: 200px;
+}
+.uxcore .kuma-uploader .uxicon-fangda:before {
+  content: '\e6a8';
 }
 .uxcore .kuma-upload-filelist {
   width: 100%;
