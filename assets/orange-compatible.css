@@ -10987,7 +10987,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   list-style-position: inside;
 }
 .uxcore .kuma-menu-sub.uxcore .kuma-menu-inline .kuma-menu-item-group-title {
-  padding-left: 28px;
+  padding-left: 32px;
 }
 .uxcore .kuma-menu-sub.uxcore .kuma-menu-inline-vertical .kuma-menu-item-group-title {
   padding-left: 28px;
@@ -11133,7 +11133,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-menu-none-border-dark,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-sub {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6);
   background: #2C2F33;
   border: none;
 }
@@ -11142,11 +11142,17 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   opacity: .45;
   transition: all .3s;
 }
+.uxcore .kuma-menu-none-border-dark .kuma-menu-submenu-open > .kuma-menu-submenu-title .kuma-menu-submenu-arrow,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-sub .kuma-menu-submenu-open > .kuma-menu-submenu-title .kuma-menu-submenu-arrow,
+.uxcore .kuma-menu-none-border-dark .kuma-menu-submenu-active > .kuma-menu-submenu-title .kuma-menu-submenu-arrow,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-sub .kuma-menu-submenu-active > .kuma-menu-submenu-title .kuma-menu-submenu-arrow {
+  opacity: 1;
+}
 .uxcore .kuma-menu-none-border-dark.uxcore .kuma-menu-submenu-popup {
   background: transparent;
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-inline.uxcore .kuma-menu-sub {
-  background: #2C2F33;
+  background: rgba(0, 0, 0, 0.3);
 }
 .uxcore .kuma-menu-none-border-dark.uxcore .kuma-menu-horizontal {
   border-bottom-color: #2C2F33;
@@ -11158,7 +11164,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item > a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6);
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-group-title {
   color: rgba(255, 255, 255, 0.4);
@@ -11190,7 +11196,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-selected,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-title:hover {
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item:hover > a,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-active > a,
@@ -11198,19 +11204,33 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-open > a,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-selected > a,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-title:hover > a {
-  color: #fff;
+  color: #ffffff;
+}
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item:hover .kuma-menu-submenu-arrow:after,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-active .kuma-menu-submenu-arrow:after,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-active .kuma-menu-submenu-arrow:after,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-open .kuma-menu-submenu-arrow:after,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-selected .kuma-menu-submenu-arrow:after,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-title:hover .kuma-menu-submenu-arrow:after,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item:hover .uxcore-icon,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-active .uxcore-icon,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-active .uxcore-icon,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-open .uxcore-icon,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-selected .uxcore-icon,
+.uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-title:hover .uxcore-icon {
+  color: #ffffff !important;
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-selected {
   background: #f37327 !important;
   border-right: 0;
-  color: #fff;
+  color: #ffffff;
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-selected:after {
   border-right: 0;
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-selected > a,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-selected > a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-item-disabled,
 .uxcore .kuma-menu-none-border-dark .uxcore .kuma-menu-submenu-disabled,
