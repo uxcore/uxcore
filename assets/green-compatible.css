@@ -448,7 +448,7 @@
  */
   /**
  * CascadeMulti Component Style for uxcore
- * @author guyunxiang
+ * @author changming<changming.zy@alibaba-inc.com>
  *
  * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
@@ -8694,13 +8694,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-radius: 3px;
   padding-top: 43px;
   font-size: 12px;
-  color: rgba(31, 56, 88, 0.8);
+  color: rgba(31, 56, 88, 0.6);
   height: 100%;
   width: 100%;
   transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  background: rgba(31, 56, 88, 0.04);
-  border: 1px dashed rgba(31, 56, 88, 0.2);
+  border: 1px dashed rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-upload-picker-visual .uxicon-zengjia1 {
   position: absolute;
@@ -8735,12 +8733,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-radius: 3px;
   padding: 0 8px;
   font-size: 12px;
-  color: rgba(31, 56, 88, 0.8);
+  color: rgba(31, 56, 88, 0.6);
   box-sizing: border-box;
   line-height: 26px;
   height: 28px;
   transition: all .3s ease;
-  -webkit-transition: all .3s ease;
 }
 .uxcore .kuma-upload-picker .kuma-upload-button .kuma-icon-uploading {
   margin-right: 3px;

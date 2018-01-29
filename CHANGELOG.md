@@ -1,3 +1,11 @@
+## 0.19.7
+
+- [Uploader]: `CHANGED` fix some wrong style
+- [Validator]: `FIXED` email and hex validators support using uppercase
+- [Table]: `FIXED` data change don't check right fixed.
+- [Table]: `CHANGED` imporve scroll performance using raf.
+- [Table]: `CHANGED`: props.config add showSearch property
+
 ## 0.19.4
 
 - [EmptyData]: `FIXED` default logo url is http
