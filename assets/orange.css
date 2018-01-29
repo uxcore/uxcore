@@ -5003,7 +5003,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-bottom .kuma-tooltip-arrow:before,
 .kuma-tooltip-placement-bottomLeft .kuma-tooltip-arrow:before,
 .kuma-tooltip-placement-bottomRight .kuma-tooltip-arrow:before {
-  top: 2px;
+  top: 1px;
   left: -6px;
   border-width: 0px 6px 6px;
   border-bottom-color: white;
@@ -5036,7 +5036,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tooltip-placement-rightTop .kuma-tooltip-arrow:before,
 .kuma-tooltip-placement-rightBottom .kuma-tooltip-arrow:before {
   top: -6px;
-  left: 2px;
+  left: 1px;
   border-width: 6px 6px 6px 0px;
   border-right-color: white;
 }
@@ -5056,6 +5056,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 0px;
   border-style: solid;
   border-color: transparent;
+  border-radius: 3px;
 }
 .kuma-tooltip-arrow:before {
   position: absolute;
@@ -5078,32 +5079,54 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   text-align: center;
   color: rgba(31, 56, 88, 0.8);
   text-decoration: none;
-  border-radius: 3px;
   background-color: #fff;
 }
+.kuma-tooltip-dark .kuma-tooltip-content {
+  border-color: #56595c;
+}
 .kuma-tooltip-dark .kuma-tooltip-inner {
-  background: rgba(44, 47, 51, 0.8);
+  background: #56595c;
   color: white;
+}
+.kuma-tooltip-dark.kuma-tooltip-placement-left .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-leftTop .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-leftBottom .kuma-tooltip-arrow {
+  border-left-color: #56595c;
 }
 .kuma-tooltip-dark.kuma-tooltip-placement-left .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-leftTop .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-leftBottom .kuma-tooltip-arrow:before {
-  border-left-color: rgba(44, 47, 51, 0.8);
+  border-left-color: #56595c;
+}
+.kuma-tooltip-dark.kuma-tooltip-placement-top .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-topLeft .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-topRight .kuma-tooltip-arrow {
+  border-top-color: #56595c;
 }
 .kuma-tooltip-dark.kuma-tooltip-placement-top .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-topLeft .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-topRight .kuma-tooltip-arrow:before {
-  border-top-color: rgba(44, 47, 51, 0.8);
+  border-top-color: #56595c;
+}
+.kuma-tooltip-dark.kuma-tooltip-placement-bottom .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-bottomLeft .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-bottomRight .kuma-tooltip-arrow {
+  border-bottom-color: #56595c;
 }
 .kuma-tooltip-dark.kuma-tooltip-placement-bottom .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-bottomLeft .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-bottomRight .kuma-tooltip-arrow:before {
-  border-bottom-color: rgba(44, 47, 51, 0.8);
+  border-bottom-color: #56595c;
+}
+.kuma-tooltip-dark.kuma-tooltip-placement-right .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-rightTop .kuma-tooltip-arrow,
+.kuma-tooltip-dark.kuma-tooltip-placement-rightBottom .kuma-tooltip-arrow {
+  border-right-color: #56595c;
 }
 .kuma-tooltip-dark.kuma-tooltip-placement-right .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-rightTop .kuma-tooltip-arrow:before,
 .kuma-tooltip-dark.kuma-tooltip-placement-rightBottom .kuma-tooltip-arrow:before {
-  border-right-color: rgba(44, 47, 51, 0.8);
+  border-right-color: #56595c;
 }
 @keyframes tipSlideInLeft {
   0% {
