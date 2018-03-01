@@ -1,3 +1,17 @@
+## 0.19.9
+
+- [Cascade]: `FIXED`: search input bug
+- [Cascade]: `NEW`: searchOption prop
+- [Cascade]: `NEW`: 'search' option of displayMode
+- [Cascade]: `FIXED`: value cannot be displayed if value is set before options.
+- [Collapse]: `CHANGED` onChange add new param `activeKey`
+- [Table]: `CHANGED` update `uxcore-checkbox-cell-field` to `^0.2.0`
+- [Table]: `CHANGED` support new prop `rowGroupKey`
+- [Table]: `FIXED` column picker style
+- [Tabs]: `NEW` support `tabBarStyle` & `tabContentStyle`
+- [Validator]: `FIXED` update china mobile regular expression
+- [Timeline]: `CHANGED` style improvement
+
 ## 0.19.7
 
 - [Uploader]: `CHANGED` fix some wrong style
