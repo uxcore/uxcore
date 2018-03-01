@@ -7244,6 +7244,24 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable .kuma-date-cell-field .kuma-calendar-picker-input .kuma-calendar-trigger-icon {
   line-height: 24px;
 }
+.uxcore .kuma-uxtable .kuma-uxtable-body-collapse {
+  border: none;
+}
+.uxcore .kuma-uxtable .kuma-uxtable-body-collapse > .kuma-collapse-item {
+  border-top: none;
+}
+.uxcore .kuma-uxtable .kuma-uxtable-body-collapse > .kuma-collapse-item > .kuma-collapse-header {
+  height: 50px;
+  line-height: 50px;
+  background: rgba(31, 56, 88, 0.04);
+}
+.uxcore .kuma-uxtable .kuma-uxtable-body-collapse .kuma-collapse-content {
+  padding: 0;
+  background-color: transparent;
+}
+.uxcore .kuma-uxtable .kuma-uxtable-body-collapse .kuma-collapse-content > .kuma-collapse-content-box {
+  padding: 0;
+}
 .uxcore .kuma-uxtable-content {
   overflow-x: auto;
   position: relative;
@@ -7658,24 +7676,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-}
-.uxcore .kuma-uxtable-body-collapse {
-  border: none;
-}
-.uxcore .kuma-uxtable-body-collapse > .kuma-collapse-item {
-  border-top: none;
-}
-.uxcore .kuma-uxtable-body-collapse > .kuma-collapse-item > .kuma-collapse-header {
-  height: 50px;
-  line-height: 50px;
-  background: rgba(31, 56, 88, 0.04);
-}
-.uxcore .kuma-uxtable-body-collapse .kuma-collapse-content {
-  padding: 0;
-  background-color: transparent;
-}
-.uxcore .kuma-uxtable-body-collapse .kuma-collapse-content > .kuma-collapse-content-box {
-  padding: 0;
 }
 .uxcore .action-container .kuma-button-group-separated {
   line-height: 1.5;
