@@ -5,25 +5,25 @@
 
 ## 0.19.9
 
-- [Cascade]: `FIXED`: search input bug
-- [Cascade]: `NEW`: searchOption prop
-- [Cascade]: `NEW`: 'search' option of displayMode
-- [Cascade]: `FIXED`: value cannot be displayed if value is set before options.
+- [CascadeSelect]: `FIXED`: search input bug
+- [CascadeSelect]: `NEW`: searchOption prop
+- [CascadeSelect]: `NEW`: 'search' option of displayMode
+- [CascadeSelect]: `FIXED`: value cannot be displayed if value is set before options.
+- [CascadeSelect]: `FIXED` the component's height has 2 px more in the small or middle size mode.
 - [Collapse]: `CHANGED` onChange add new param `activeKey`
 - [Table]: `CHANGED` update `uxcore-checkbox-cell-field` to `^0.2.0`
 - [Table]: `CHANGED` support new prop `rowGroupKey`
 - [Table]: `FIXED` column picker style
+- [Table]: `NEW` add new API `addEmptyRowFromTop` & `addRowFromTop(rowData)`
 - [Tabs]: `NEW` support `tabBarStyle` & `tabContentStyle`
 - [Validator]: `FIXED` update china mobile regular expression
 - [Timeline]: `CHANGED` style improvement
 - [Button]: `CHANGED` unify prop `size` enumerator naming (from `medium` to `middle`)
-- [CascadeSelect]: `FIXED` the component's height has 2 px more in the small or middle size mode.
 - [FormField]: `CHANGED` change grid percent to match the expected behaviour
 - [Dialog]: `FIXED` Dialog.success with timer do not error
 - [MultiSelect]: `FIXED` add missing onSubmit handler
 - [RadioGroup]: `CHANGED` remove useless defaultValue logic
 - [RadioGroup]: `CHANGED` fire `onChange` only when value is changed
-- [Table]: `NEW` add new API `addEmptyRowFromTop` & `addRowFromTop(rowData)`
 - [TreeSelect]: `FIXED` clear inputValue when nextProps.value is empty.
 - [Uploader]: `FIXED` fix button style (issue #66)
 - [Uploader]: `FIXED` fix mutable props (issue #71)
