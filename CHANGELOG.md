@@ -1,4 +1,8 @@
 
+## 0.19.10
+
+- [Table]: `CHANGED` remove Tbody repaint logic
+
 ## 0.19.9
 
 - [Cascade]: `FIXED`: search input bug
