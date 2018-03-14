@@ -6966,10 +6966,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   height: 50px;
   line-height: 50px;
   background: rgba(31, 56, 88, 0.04);
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
 .kuma-uxtable .kuma-uxtable-body-collapse .kuma-collapse-content {
   padding: 0;
   background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
 }
 .kuma-uxtable .kuma-uxtable-body-collapse .kuma-collapse-content > .kuma-collapse-content-box {
   padding: 0;
@@ -9498,7 +9500,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   top: 0;
   left: 0;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.4);
   vertical-align: middle;
   font-style: normal;
   width: 32px;

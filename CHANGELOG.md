@@ -1,4 +1,11 @@
 
+## 0.19.12
+
+- [Table]: `CHANGED` row group style adjustment.
+- [FormField]: `CHANGED` remove useless `jsxplaceholder` propType & defaultProps config
+- [Collapse]: `FIXED` arrow color
+
+
 ## 0.19.10
 
 - [Table]: `CHANGED` remove Tbody repaint logic
