@@ -7679,6 +7679,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-left: none;
   border-right: none;
 }
+.uxcore .kuma-uxtable-row-group-mode .kuma-uxtable-content {
+  border-bottom: none;
+}
 .uxcore .action-container .kuma-button-group-separated {
   line-height: 1.5;
 }

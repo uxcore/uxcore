@@ -7391,6 +7391,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-left: none;
   border-right: none;
 }
+.kuma-uxtable-row-group-mode .kuma-uxtable-content {
+  border-bottom: none;
+}
 .action-container .kuma-button-group-separated {
   line-height: 1.5;
 }
