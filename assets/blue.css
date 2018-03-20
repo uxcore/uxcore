@@ -2161,25 +2161,32 @@ a.weaker-link {
 .kuma-loading-s {
   width: 24px;
   height: 24px;
-  background: url('https://aliwork.alicdn.com/tps/TB1NR2TMXXXXXX9XVXXXXXXXXXX-24-12.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
+  background: url('https://g.alicdn.com/uxcore/pic/loading.svg') center no-repeat;
   background-size: contain;
 }
 /*middle*/
 .kuma-loading {
   width: 36px;
   height: 36px;
-  background: url('https://aliwork.alicdn.com/tps/TB1BjnZMXXXXXa7XFXXXXXXXXXX-36-18.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
+  background: url('https://g.alicdn.com/uxcore/pic/loading.svg') center no-repeat;
   background-size: contain;
 }
 /*large*/
 .kuma-loading-l {
   width: 48px;
   height: 48px;
-  background: url('https://aliwork.alicdn.com/tps/TB1LV66MXXXXXbQXpXXXXXXXXXX-48-24.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
+  background: url('https://g.alicdn.com/uxcore/pic/loading.svg') center no-repeat;
   background-size: contain;
+}
+/* IE9+ CSS HACK */
+@media screen and (min-width: 0\0) and (-webkit-min-device-pixel-ratio: 0.75), screen and (min-width: 0\0) and (min-resolution: 72dpi) {
+  .kuma-loading-s,
+  .kuma-loading {
+    background-image: url('https://g.alicdn.com/uxcore/pic/loading-s.gif');
+  }
+  .kuma-loading-l {
+    background-image: url('https://g.alicdn.com/uxcore/pic/loading.gif');
+  }
 }
 .kuma-table thead th {
   padding: 0 10px;

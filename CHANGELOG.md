@@ -1,4 +1,8 @@
 
+## 0.19.14
+
+- [Style]: `CHANGED` new loading icon 
+
 ## 0.19.12
 
 - [Table]: `CHANGED` row group style adjustment.
