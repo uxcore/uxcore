@@ -1,3 +1,7 @@
+## 0.18.4
+
+- [Form] `CHANGED` update to `uxcore-form@6.2.1`
+
 ## 0.18.3
 
 - [Title] `CHANGED` support new prop `className`
