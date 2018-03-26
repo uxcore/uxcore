@@ -1,4 +1,10 @@
 
+## 0.19.15
+
+- [Form]: `FIXED` wrong NumberInputFormField right addon style.
+- [Form]: `CHANEGD` NumberInputFormField add new prop `formatOnBlur`
+
+
 ## 0.19.14
 
 - [Style]: `CHANGED` new loading icon 

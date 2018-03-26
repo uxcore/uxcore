@@ -9984,7 +9984,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxform-field-small.kuma-uxform-field__layout-h .kuma-uxform-field-content.view-mode {
   padding-top: 5px;
 }
-.uxcore .kuma-input-uxform-field .kuma-uxform-input {
+.uxcore .kuma-input-uxform-field .kuma-uxform-input,
+.uxcore .kuma-number-input-uxform-field .kuma-uxform-input {
   display: table;
   width: 100%;
 }
