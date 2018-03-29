@@ -1,4 +1,13 @@
 
+## 0.19.16
+
+- [Form]: `FIXED` NumberInputFormField do not format empty string
+- [Formatter]: `CHANGED` use `big.js` instead of `parseFloat` to handle large number fixed
+- [Formatter]: `CHANGED` date method return '' if  param is undefined/null/empty string.
+- [Table]: `FIXED` body and header scroll will trigger each other additionally.
+- [Uploader]: `CHANGED` show image with album if click image
+- [Style]: `CHANGED` orange & blue brand primary color change
+
 ## 0.19.15
 
 - [Form]: `FIXED` wrong NumberInputFormField right addon style.
