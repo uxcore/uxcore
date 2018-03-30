@@ -3864,7 +3864,7 @@
   text-align: left;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
   background-clip: padding-box;
   border: 1px solid #ccc;
   line-height: 1.5;
@@ -7451,7 +7451,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-tree-icon > .kuma-icon {
   font-size: 16px;
-  color: #999999;
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-uxtable-tree-icon > .kuma-icon:before {
   transition: transform 0.3s ease;
@@ -7688,6 +7688,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-row-group-mode .kuma-uxtable-content {
   border-bottom: none;
+}
+.uxcore .kuma-uxtable-row-group-mode .kuma-uxtable-header-wrapper {
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
 .uxcore .action-container .kuma-button-group-separated {
   line-height: 1.5;
@@ -11379,6 +11382,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   line-height: 16px;
   margin-bottom: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .uxcore .kuma-checkbox-group-item s {
   vertical-align: top;
@@ -11389,10 +11393,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   padding: 0px 24px 0px 8px;
 }
+.uxcore .kuma-checkbox-group-item__disabled {
+  color: rgba(31, 56, 88, 0.3);
+}
 .uxcore .kuma-radio-group-item {
   display: inline-block;
   line-height: 16px;
   margin-bottom: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .uxcore .kuma-radio-group-item s {
   vertical-align: top;
@@ -11401,6 +11409,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   padding: 0px 24px 0px 8px;
   display: inline-block;
   vertical-align: top;
+}
+.uxcore .kuma-radio-group-item__disabled {
+  color: rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-layout-2c {
   margin: 0 auto;
