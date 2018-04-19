@@ -1,4 +1,16 @@
 
+
+## 0.19.20
+
+- [CascadeSelect]: `CHANGED`: optimized visual display
+- [FloatNav]: `CHANGED` separate wrapper and floatnav
+- [Icon]: `CHANGED` add 1 new icon
+- [Table]: `NEW` support `footer`, `showFooter`, `showRowGroupFooter`
+- [Table]: `FIXED` action column will be hidden if columns' visibility is changed
+- [Table]: `FIXED` error tooltip fail to move with body scrolling
+- [Table]: `FIXED` should not render ActionBar only when `props.actionBar` is an empty array
+- [Transfer]: `FIXED` fix some styles not compatible with last design
+
 ## 0.19.16
 
 - [Form]: `FIXED` NumberInputFormField do not format empty string

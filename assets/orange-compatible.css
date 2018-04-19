@@ -2820,7 +2820,7 @@
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_q4c14mgk0otg9zfr.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_krdepqjqd0r7ldi.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -3296,6 +3296,9 @@
 }
 .uxcore .uxicon-nav-left:before {
   content: "\e763";
+}
+.uxcore .uxicon-fuhao-shizhong-line:before {
+  content: "\e73e";
 }
 .uxcore .kuma-calendar {
   box-sizing: border-box;
@@ -7263,6 +7266,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background: rgba(31, 56, 88, 0.04);
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
+.uxcore .kuma-uxtable .kuma-uxtable-body-collapse > .kuma-collapse-item:last-child > .kuma-collapse-header[aria-expanded="false"] {
+  border-bottom: none;
+}
 .uxcore .kuma-uxtable .kuma-uxtable-body-collapse .kuma-collapse-content {
   padding: 0;
   background-color: transparent;
@@ -7290,6 +7296,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   overflow-x: auto;
   overflow-y: hidden;
 }
+.uxcore .kuma-uxtable-footer-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid rgba(31, 56, 88, 0.1);
+}
 .uxcore .kuma-uxtable-fixed-body-wrapper {
   overflow-x: hidden;
 }
@@ -7306,6 +7317,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: #F04631;
   margin-right: 4px;
 }
+.uxcore .kuma-uxtable-footer {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  white-space: nowrap;
+}
 .uxcore .kuma-uxtable-body {
   position: relative;
   display: inline-block;
@@ -7314,6 +7331,37 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   min-height: 40px;
   white-space: normal;
   background-color: #fff;
+}
+.uxcore .kuma-uxtable-body-no {
+  height: 100%;
+  overflow-y: auto;
+}
+.uxcore .kuma-uxtable-body-scroll {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: scroll;
+  z-index: 1;
+  height: 100%;
+}
+.uxcore .kuma-uxtable-header-no {
+  overflow: scroll;
+}
+.uxcore .kuma-uxtable-header-scroll {
+  position: static;
+  overflow: scroll;
+  z-index: 1;
+  height: 100%;
+}
+.uxcore .kuma-uxtable-header-scroll .kuma-uxtable-header {
+  background-color: rgba(31, 56, 88, 0.06);
+}
+.uxcore .kuma-uxtable-footer-scroll {
+  overflow-x: auto;
+}
+.uxcore .kuma-uxtable-header-scroll.kuma-uxtable-no-v-scroll,
+.uxcore .kuma-uxtable-body-scroll.kuma-uxtable-no-v-scroll,
+.uxcore .kuma-uxtable-footer-scroll.kuma-uxtable-no-v-scroll {
+  overflow-y: hidden;
 }
 .uxcore .kuma-uxtable-body-emptyword {
   text-align: center;
@@ -7393,6 +7441,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-small-size .kuma-uxtable-cell > div {
   height: 40px;
+}
+.uxcore .kuma-uxtable-small-size .kuma-uxtable-body-collapse > .kuma-collapse-item > .kuma-collapse-header {
+  height: 40px;
+  line-height: 40px;
 }
 .uxcore .kuma-uxtable-row.multiline .kuma-uxtable-cell {
   height: auto;
@@ -7546,33 +7598,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-right-fixed-table {
   right: 0;
   border-left: 1px solid rgba(31, 56, 88, 0.1);
-}
-.uxcore .kuma-uxtable-body-no {
-  height: 100%;
-  overflow-y: auto;
-}
-.uxcore .kuma-uxtable-body-scroll {
-  position: relative;
-  overflow-x: auto;
-  overflow-y: scroll;
-  z-index: 1;
-  height: 100%;
-}
-.uxcore .kuma-uxtable-header-no {
-  overflow: scroll;
-}
-.uxcore .kuma-uxtable-header-scroll {
-  position: static;
-  overflow: scroll;
-  z-index: 1;
-  height: 100%;
-}
-.uxcore .kuma-uxtable-header-scroll .kuma-uxtable-header {
-  background-color: rgba(31, 56, 88, 0.06);
-}
-.uxcore .kuma-uxtable-header-scroll.kuma-uxtable-no-v-scroll,
-.uxcore .kuma-uxtable-body-scroll.kuma-uxtable-no-v-scroll {
-  overflow-y: hidden;
 }
 .uxcore .kuma-uxtable-header-column-group {
   display: inline-block;
@@ -9602,18 +9627,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtransfer-container .searchBar {
   position: relative;
-  margin: 0 16px 10px 16px;
+  margin: 0 6px 8px 6px;
 }
 .uxcore .kuma-uxtransfer-container .searchBar .kuma-icon {
   position: absolute;
-  right: 4px;
-  top: 2px;
+  right: 12px;
+  top: 4px;
   color: rgba(31, 56, 88, 0.4);
   cursor: pointer;
   font-size: 14px;
 }
 .uxcore .kuma-uxtransfer-container .searchBar .kuma-input {
-  height: 24px;
+  height: 28px;
   border-color: rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-uxtransfer-container td {
@@ -9657,13 +9682,13 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background-color: #f7f7f7;
 }
 .uxcore .kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected:before {
-  content: "\e611";
+  content: "\e6af";
   color: #ff6f00;
   display: block;
   position: absolute;
   right: 5px;
   top: 1px;
-  font-family: kuma!important;
+  font-family: uxcore!important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -14484,9 +14509,8 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album .album-cover {
   position: relative;
   overflow: hidden;
-  -webkit-writing-mode: initial;
-      -ms-writing-mode: initial;
-          writing-mode: initial;
+  -ms-writing-mode: initial;
+      writing-mode: initial;
 }
 .uxcore .kuma-uxcore-album .album-cover > .album-item {
   position: relative;
@@ -14775,26 +14799,22 @@ a .uxcore-count:active {
   direction: ltr;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
   direction: rtl;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .album-overlay {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
   direction: ltr;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .album-overlay {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
 }
 .uxcore .kuma-uxcore-album.has-thumb .thumbs-preview {
   display: inline-block;
@@ -14893,9 +14913,8 @@ a .uxcore-count:active {
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-container .album-carousel-list > .item {
   width: 120px;
   height: 72px;
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
   margin: 0 6px;
   display: block;
   cursor: pointer;
@@ -14908,9 +14927,8 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-top .thumbs-preview .album-carousel-control,
 .uxcore .kuma-uxcore-album.has-thumb.thumb-placement-bottom .thumbs-preview .album-carousel-control {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
   width: 20px;
   height: 70px;
   line-height: 70px;
@@ -15483,7 +15501,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-dropdown-menu-submenu-all-selection {
   float: right;
-  border-left: 1px solid #d9d9d9;
   height: 100%;
   overflow: hidden;
   background-color: #fff;
