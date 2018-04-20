@@ -43,6 +43,7 @@ var Table = require('./lib/Table');
 var Tabs = require('./lib/Tabs');
 var Tag = require('./lib/Tag');
 var Timeline = require('./lib/Timeline');
+var TimePicker = require('./lib/TimePicker');
 var Title = require('./lib/Title');
 var Tooltip = require('./lib/Tooltip');
 var Tree = require('./lib/Tree');
@@ -98,6 +99,7 @@ module.exports = {
   Tabs: Tabs,
   Tag: Tag,
   Timeline: Timeline,
+  TimePicker: TimePicker,
   Title: Title,
   Tooltip: Tooltip,
   Tree: Tree,

@@ -15962,3 +15962,317 @@ a.kuma-button-group-separated-item-first {
 .kuma-button-group-separated-split-line {
   color: rgba(31, 56, 88, 0.1);
 }
+/**
+ * TimePicker Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.uxcore-time-picker {
+  display: inline-block;
+  width: 100%;
+}
+.uxcore-time-picker {
+  position: relative;
+}
+.uxcore-time-picker-input {
+  width: 100%;
+  border: 1px solid #bcc3cd;
+  border-radius: 3px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  padding: 5px 12px;
+  height: 36px;
+  line-height: 18px;
+}
+.uxcore-time-picker-input[readonly],
+.uxcore-time-picker-input[disabled] {
+  border: 1px solid #d2d7de;
+  background: rgba(31, 56, 88, 0.04);
+  color: rgba(31, 56, 88, 0.3);
+}
+.uxcore-time-picker-input:hover {
+  border: 1px #a5afbc solid;
+}
+.uxcore-time-picker-input:hover[readonly],
+.uxcore-time-picker-input:hover[disabled] {
+  border: 1px solid #d2d7de;
+}
+.uxcore-time-picker-input:focus {
+  border: 1px #79889b solid;
+  outline: none;
+}
+.uxcore-time-picker-input:focus[readonly],
+.uxcore-time-picker-input:focus[disabled] {
+  border: 1px solid #d2d7de;
+  color: rgba(31, 56, 88, 0.3);
+}
+.uxcore-time-picker-input:-ms-input-placeholder {
+  color: rgba(31, 56, 88, 0.4) !important;
+}
+.uxcore-time-picker-input::placeholder {
+  color: rgba(31, 56, 88, 0.4) !important;
+}
+.uxcore-time-picker-middle-size .uxcore-time-picker-input {
+  height: 32px;
+}
+.uxcore-time-picker-small-size .uxcore-time-picker-input {
+  height: 28px;
+}
+.uxcore-time-picker-icon {
+  font-family: uxcore !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  line-height: 1;
+  color: rgba(31, 56, 88, 0.4);
+  right: 8px;
+  top: 10px;
+}
+.uxcore-time-picker-icon:before {
+  content: "\e73e";
+}
+.uxcore-time-picker-middle-size .uxcore-time-picker-icon {
+  top: 8px;
+}
+.uxcore-time-picker-small-size .uxcore-time-picker-icon {
+  top: 6px;
+}
+.uxcore-time-picker-panel {
+  z-index: 1070;
+  position: absolute;
+  box-sizing: border-box;
+  line-height: 0;
+}
+.uxcore-time-picker-panel * {
+  box-sizing: border-box;
+}
+.uxcore-time-picker-panel-inner {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  width: 100%;
+  list-style: none;
+  font-size: 12px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
+  background-clip: padding-box;
+  line-height: 1.5;
+  border: 1px solid #d2d7de;
+}
+.uxcore-time-picker-panel-combobox {
+  line-height: 0;
+}
+.uxcore-time-picker-panel-input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  cursor: auto;
+  outline: 0;
+  border: none;
+  padding: 0 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.uxcore-time-picker-panel-input-wrap {
+  height: 35px;
+  line-height: 34px;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
+.uxcore-time-picker-panel-middle-size .uxcore-time-picker-panel-input-wrap {
+  height: 31px;
+  line-height: 30px;
+}
+.uxcore-time-picker-panel-small-size .uxcore-time-picker-panel-input-wrap {
+  height: 27px;
+  line-height: 26px;
+}
+.uxcore-time-picker-panel-input:-ms-input-placeholder {
+  color: rgba(31, 56, 88, 0.4) !important;
+}
+.uxcore-time-picker-panel-input::placeholder {
+  color: rgba(31, 56, 88, 0.4) !important;
+}
+.uxcore-time-picker-panel-input-invalid {
+  border-color: red;
+}
+.uxcore-time-picker-panel-clear-btn {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  top: 9px;
+  line-height: 0;
+  margin: 0;
+  font-family: uxcore !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.uxcore-time-picker-panel-middle-size .uxcore-time-picker-panel-clear-btn {
+  top: 7px;
+}
+.uxcore-time-picker-panel-small-size .uxcore-time-picker-panel-clear-btn {
+  top: 5px;
+}
+.uxcore-time-picker-panel-clear-btn:after {
+  content: "\e6ab";
+  color: rgba(31, 56, 88, 0.4);
+  display: inline-block;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+.uxcore-time-picker-panel-select {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  border: 1px solid #e9e9e9;
+  border-width: 0 1px;
+  margin-left: -1px;
+  box-sizing: border-box;
+  width: 66px;
+  max-height: calc(264px);
+  overflow-y: auto;
+  position: relative;
+}
+.uxcore-time-picker-panel-select-active {
+  overflow-y: auto;
+}
+.uxcore-time-picker-panel-select:first-child {
+  border-left: 0;
+  margin-left: 0;
+}
+.uxcore-time-picker-panel-select:last-child {
+  border-right: 0;
+}
+.uxcore-time-picker-panel-select ul {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.uxcore-time-picker-panel-select li {
+  list-style: none;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.uxcore-time-picker-panel-select li:hover {
+  background: rgba(31, 56, 88, 0.06);
+  color: rgba(0, 0, 0, 0.8);
+}
+li.uxcore-time-picker-panel-select-option-selected {
+  background: #f7f7f7;
+  font-weight: bold;
+}
+li.uxcore-time-picker-panel-select-option-disabled {
+  color: #ccc;
+}
+li.uxcore-time-picker-panel-select-option-disabled:hover {
+  background: transparent;
+  cursor: not-allowed;
+}
+.uxcore-time-picker-panel-column-2 .uxcore-time-picker-panel-select {
+  width: 100px;
+}
+.uxcore-time-picker-panel-column-4 .uxcore-time-picker-panel-select {
+  width: 60px;
+}
+@keyframes timePickerSlideInDown {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes timePickerSlideOutDown {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+}
+@keyframes timePickerSlideInUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, -10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes timePickerSlideOutUp {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -10px);
+  }
+}
+.uxcore-time-picker-panel-placement-bottomLeft.timePickerSlideUp-enter,
+.uxcore-time-picker-panel-placement-bottomLeft.timePickerSlideUp-appear {
+  opacity: 0;
+  transform: translate(0, 10px);
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore-time-picker-panel-placement-bottomLeft.timePickerSlideUp-enter-active,
+.uxcore-time-picker-panel-placement-bottomLeft.timePickerSlideUp-appear-active {
+  visibility: visible;
+  animation-name: timePickerSlideInDown;
+}
+.uxcore-time-picker-panel-placement-bottomLeft.timePickerSlideUp-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore-time-picker-panel-placement-bottomLeft.timePickerSlideUp-leave-active {
+  visibility: visible;
+  animation-name: timePickerSlideOutDown;
+}
+.uxcore-time-picker-panel-placement-topLeft.timePickerSlideUp-enter,
+.uxcore-time-picker-panel-placement-topLeft.timePickerSlideUp-appear {
+  opacity: 0;
+  transform: translate(0, -10px);
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore-time-picker-panel-placement-topLeft.timePickerSlideUp-enter-active,
+.uxcore-time-picker-panel-placement-topLeft.timePickerSlideUp-appear-active {
+  visibility: visible;
+  animation-name: timePickerSlideInUp;
+}
+.uxcore-time-picker-panel-placement-topLeft.timePickerSlideUp-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+.uxcore-time-picker-panel-placement-topLeft.timePickerSlideUp-leave-active {
+  visibility: visible;
+  animation-name: timePickerSlideOutUp;
+}
