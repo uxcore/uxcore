@@ -7654,7 +7654,8 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tree li ul.kuma-tree-line {
   background: url("https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif") 0 0 repeat-y;
 }
-.kuma-tree li a {
+.kuma-tree li a,
+.kuma-tree li .kuma-tree-node-content-wrapper-normal {
   display: inline-block;
   padding: 2px 4px;
   cursor: pointer;
@@ -7664,11 +7665,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   color: rgba(0, 0, 0, 0.6);
   border-radius: 3px;
 }
-.kuma-tree li a:hover {
+.kuma-tree li a:hover,
+.kuma-tree li .kuma-tree-node-content-wrapper-normal:hover {
   color: rgba(0, 0, 0, 0.8);
   background: rgba(31, 56, 88, 0.04);
 }
-.kuma-tree li a.kuma-tree-node-selected {
+.kuma-tree li a.kuma-tree-node-selected,
+.kuma-tree li .kuma-tree-node-content-wrapper-normal.kuma-tree-node-selected {
   color: rgba(0, 0, 0, 0.8);
   background: rgba(31, 56, 88, 0.06);
 }
@@ -7724,10 +7727,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tree li span.kuma-tree-switcher.kuma-tree-bottom_close {
   background-position: -94px -36px;
 }
-.kuma-tree li.kuma-tree-treenode-disabled a {
+.kuma-tree li.kuma-tree-treenode-disabled a,
+.kuma-tree li.kuma-tree-treenode-disabled .kuma-tree-node-content-wrapper-normal {
   color: rgba(31, 56, 88, 0.3);
 }
-.kuma-tree li.kuma-tree-treenode-disabled a:hover {
+.kuma-tree li.kuma-tree-treenode-disabled a:hover,
+.kuma-tree li.kuma-tree-treenode-disabled .kuma-tree-node-content-wrapper-normal:hover {
   background: transparent;
 }
 .kuma-tree-child-tree {
@@ -7752,6 +7757,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   transform: rotate(-90deg);
   transition: transform .3s;
 }
+.use-svg .kuma-tree-switcher.kuma-tree-switcher_open {
+  background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
+  background-size: 50% auto;
+  transform: rotate(0deg);
+  transition: all .3s;
+}
+.use-svg .kuma-tree-switcher.kuma-tree-switcher_close {
+  background: url('https://img.alicdn.com/tps/TB1IvveJVXXXXbcXFXXXXXXXXXX-14-10.svg') 50% 50% no-repeat;
+  background-size: 50% auto ;
+  transform: rotate(-90deg);
+  transition: transform .3s;
+}
 .use-svg .kuma-tree-checkbox {
   display: inline-block;
   width: 16px;
@@ -7765,11 +7782,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23ff6f00%22%20stroke%3D%22%23ff6f00%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
-.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked.kuma-tree-checkbox-disabled {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
-}
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23ff6f00%22%20stroke%3D%22%23ff6f00%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+}
+.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked.kuma-tree-checkbox-disabled {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23ff6f00%22%20stroke%3D%22%23ff6f00%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
@@ -7780,10 +7797,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .use-svg .kuma-tree-checkbox:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22%23ff6f00%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
-.no-svg .kuma-tree-switcher.kuma-tree-noline_open {
+.no-svg .kuma-tree-switcher.kuma-tree-switcher_open {
   background-position: -115px -72px;
 }
-.no-svg .kuma-tree-switcher.kuma-tree-noline_close {
+.no-svg .kuma-tree-switcher.kuma-tree-switcher_close {
   background-position: -97px -72px;
 }
 .no-svg .kuma-tree-checkbox {

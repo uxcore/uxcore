@@ -1,3 +1,12 @@
+
+## 0.19.24
+
+- [CascadeSelect]: `FIXED` could not clear display-value from outside.
+- [Dialog]: `NEW` `Dialog.confirm` can be closed from outside.
+- [Tree]: `CHANGED` update `rc-tree` to `~1.11.0`  
+- [TreeSelect]: `FIXED` make compatible for `rc-tree-select` deprecated methods
+
+
 ## 0.19.22
 
 - [General] add new component `TimePicker`

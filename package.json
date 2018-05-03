@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.19.23",
+ "version": "0.19.24",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -82,12 +82,12 @@
   "uxcore-calendar": "0.9.20",
   "uxcore-carousel": "0.3.7",
   "uxcore-cascade-multi-select": "0.7.1",
-  "uxcore-cascade-select": "0.5.5",
+  "uxcore-cascade-select": "0.5.6",
   "uxcore-checkbox-group": "1.2.4",
   "uxcore-collapse": "2.1.1",
   "uxcore-const": "0.0.3",
   "uxcore-crumb": "0.2.4",
-  "uxcore-dialog": "0.7.10",
+  "uxcore-dialog": "0.7.12",
   "uxcore-dropdown": "0.4.1",
   "uxcore-empty-data": "0.1.5",
   "uxcore-float-nav": "0.3.0",
@@ -123,8 +123,8 @@
   "uxcore-tooltip": "0.4.10",
   "uxcore-totop": "0.5.0",
   "uxcore-transfer": "0.3.15",
-  "uxcore-tree": "0.2.17",
-  "uxcore-tree-select": "0.4.1",
+  "uxcore-tree": "0.3.0",
+  "uxcore-tree-select": "0.4.3",
   "uxcore-uploader": "3.1.11",
   "uxcore-validator": "0.2.4"
  }
