@@ -7791,11 +7791,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230079F2%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
-.use-svg .kuma-tree-checkbox-checkbox-disabled {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
-}
 .use-svg .kuma-tree-checkbox:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+}
+.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-disabled {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .no-svg .kuma-tree-switcher.kuma-tree-switcher_open {
   background-position: -115px -72px;
