@@ -35,6 +35,7 @@ var Popover = require('./lib/Popover');
 var Progress = require('./lib/Progress');
 var RadioGroup = require('./lib/RadioGroup');
 var Rate = require('./lib/Rate');
+var Select = require('./lib/Select');
 var Select2 = require('./lib/Select2');
 var Splitter = require('./lib/Splitter');
 var Steps = require('./lib/Steps');
@@ -91,6 +92,7 @@ module.exports = {
   Progress: Progress,
   RadioGroup: RadioGroup,
   Rate: Rate,
+  Select: Select,
   Select2: Select2,
   Splitter: Splitter,
   Steps: Steps,
