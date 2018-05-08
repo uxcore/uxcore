@@ -45,6 +45,7 @@ var Tabs = require('./lib/Tabs');
 var Tag = require('./lib/Tag');
 var Timeline = require('./lib/Timeline');
 var TimePicker = require('./lib/TimePicker');
+var Tinymce = require('./lib/Tinymce');
 var Title = require('./lib/Title');
 var Tooltip = require('./lib/Tooltip');
 var Tree = require('./lib/Tree');
@@ -102,6 +103,7 @@ module.exports = {
   Tag: Tag,
   Timeline: Timeline,
   TimePicker: TimePicker,
+  Tinymce: Tinymce,
   Title: Title,
   Tooltip: Tooltip,
   Tree: Tree,
