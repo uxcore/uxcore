@@ -1,4 +1,4 @@
-English | [中文](./README_CN.md)
+中文 | [English](./README.md)
 
 # [UXCore](http://uxco.re/)
 
@@ -6,36 +6,36 @@ English | [中文](./README_CN.md)
 
 UXCore is a set of [React](http://facebook.github.io/react/) Components that is designed for enterprise-class pc backend application.
 
-* **Rich Library:** more than 50 high quality React Components available
+* **丰富的组件功能：** 超过 50 个高质量组件供使用
 
-* **Focus on Enterprise-class App:** Powerful but easy-to-use Form and Table.
+* **专注于企业级中后台应用场景：** 强大易用的表单表格
 
-* **Well Designed UI:**  designed for enterprise-class app to make work easy and happy.
-
-
-Check out our [documentation site](http://uxco.re/) for live examples. 
-
-Before posting an issue, please read the [CHANGELOG](https://github.com/uxcore/uxcore/releases) and the README and the documentation to check the recently updated.
+* **精心设计的视觉风格：**  深耕中后台场景，让工作变得简单幸福。
 
 
-## Installation
+点击 [文档站点](http://uxco.re/) 获取动态演示例子。 
+
+在提 issue 之前, 请阅读 [更新日志](https://github.com/uxcore/uxcore/releases) 获取最新的功能更新。
+
+
+## 安装
 
 ```sh
 npm install uxcore --save
 ```
 
-## Usage
+## 使用
 
-### import js
+### 引入 js
 
 ```jsx
 import { Button } from 'uxcore';
 ReactDOM.render(<Button />, mountNode);
 ```
 
-### import js as required
+### 按需引入 js
 
-* use [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) (recommanded)
+*  使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) (推荐)
 
   ```js
   // .babelrc or babel-loader option
@@ -47,13 +47,13 @@ ReactDOM.render(<Button />, mountNode);
   ```
 
 
-* or, import manually
+* 或者，手动引入
 
   ```js
   import Button from 'uxcore/lib/Button';
   ```
 
-### import style package
+### 引入样式包
 
 ```less
 @import '~uxcore/assets/iconfont.css';
@@ -61,17 +61,18 @@ ReactDOM.render(<Button />, mountNode);
 ```
 
 
-## Browser Support
+## 浏览器支持
 
-Mainstream browsers and Internet Explorer 9+.
+主流浏览器及 IE9+
 
-## Contribute
+## 项目共建
 
-Yes please! See the [CONTRIBUTING](https://github.com/uxcore/uxcore/blob/master/CONTRIBUTING.md) for details.
+我们非常欢迎您一起将 uxcore 做的更好! 查看 [CONTRIBUTING 文档](https://github.com/uxcore/uxcore/blob/master/CONTRIBUTING.md) 获取详细信息。
 
-## License
+## 许可
 
-This project is licensed under the terms of the [MIT license](https://github.com/uxcore/uxcore/blob/master/LICENSE)
+本项目基于 [MIT 协议](https://github.com/uxcore/uxcore/blob/master/LICENSE) 进行开发和发布
+
 
 
 
