@@ -1,4 +1,13 @@
 
+## 0.19.28
+
+- [CascadeSelect]: `FIXED` modified disabled style priority.
+- [CascadeSelect]: `FIXED` wrong dropdown style cover
+- [CheckboxGroup]: `CHANGED` item support className
+- [Dropdown]: `CHANGED` new style, support dropdown submenu
+- [Icon]: `CHANGED` add 2 new icons
+- [Table]: `CHANGED` support new prop `toggleSubCompOnRowClick`
+
 ## 0.19.24
 
 - [CascadeSelect]: `FIXED` could not clear display-value from outside.
