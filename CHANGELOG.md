@@ -1,4 +1,12 @@
 
+## 0.19.29
+
+- [CascadeSelect]: `FIXED` Could not occur onChange by clicking clear button when props.isMustSelectLeaf is true.
+- [CascadeSelect]: `FIXED` get selectedOptions error
+- [CascadeSelect]: `FIXED` fixed selectedOptions[0].hasOwnProperty error
+- [TreeSelect]: `FIXED` use variable for box-shadow
+- [TreeSelect]: `FIXED` remove the overflow-scroll bar of a dropdown wrapper
+
 ## 0.19.28
 
 - [CascadeSelect]: `FIXED` modified disabled style priority.

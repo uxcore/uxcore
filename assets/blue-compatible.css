@@ -13846,7 +13846,7 @@ a .uxcore-count:active {
 .uxcore .uxcore-tree-select-dropdown {
   font-family: PingFangSC-Regular;
   z-index: 1070;
-  box-shadow: 0 0px 4px #d9d9d9;
+  box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
   left: -9999px;
   top: -9999px;
   position: absolute;
@@ -13868,9 +13868,6 @@ a .uxcore-count:active {
 .uxcore .uxcore-tree-select-dropdown .uxcore-tree-select-not-found {
   display: inline-block;
   margin: 10px 0 0 20px;
-}
-.uxcore .uxcore-tree-select-setHight {
-  height: 312px;
 }
 .uxcore .uxcore-tree-select-dropdown-search {
   display: block;
@@ -14042,7 +14039,7 @@ a .uxcore-count:active {
 .uxcore .uxcore-tree-select-dropdown-right {
   background-color: white;
   border: 1px solid #dcdcdc;
-  border-radius: 3px;
+  border-radius: 3px 0 0 3px;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -14055,6 +14052,7 @@ a .uxcore-count:active {
   overflow-y: hidden;
   padding-bottom: 3px;
   position: relative;
+  border-radius: 0 3px 3px 0;
 }
 .uxcore .uxcore-tree-select-dropdown-right-selected-title {
   color: rgba(31, 56, 88, 0.6);
@@ -14088,7 +14086,6 @@ a .uxcore-count:active {
 .uxcore .uxcore-tree-select-rightTreeNode {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
-  height: 250px;
   overflow: auto;
 }
 .uxcore .uxcore-tree-select-rightTreeNode-clear {
