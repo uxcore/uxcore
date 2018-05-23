@@ -1,4 +1,13 @@
 
+
+## 0.19.30
+
+- [Table]: `CHANGED` update `uxcore-tree` to `^0.3.0`
+- [Table]: `CHANGED` new feature column.filters
+- [Tree]: `NEW` add DropDownTreeNode component
+- [Select]: `FIXED` multiple mode placeholder text overflow
+
+
 ## 0.19.29
 
 - [CascadeSelect]: `FIXED` Could not occur onChange by clicking clear button when props.isMustSelectLeaf is true.

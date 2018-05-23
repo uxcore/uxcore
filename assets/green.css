@@ -5730,6 +5730,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   max-width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .kuma-select2-focused .kuma-select2-selection {
   border-color: #a5afbc;
@@ -6090,7 +6091,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   color: #40b370;
   right: 10px;
   top: 0px;
-  font-family: uxcore!important;
+  font-family: uxcore !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -6785,6 +6786,13 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tab-content-no-animated .kuma-tab-tabpane-inactive {
   display: none !important;
 }
+/**
+ * Grid Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 .kuma-uxtable-actionbar {
   width: 100%;
   margin-bottom: 12px;
@@ -6936,13 +6944,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .tableMaskFade-leave-active {
   animation-name: tableMaskFadeOut;
 }
-/**
- * Grid Component Style for uxcore
- * @author zhouquan.yezq
- *
- * Copyright 2014-2015, Uxcore Team, Alinw.
- * All rights reserved.
- */
 .kuma-uxtable {
   border-collapse: collapse;
   position: relative;
@@ -7419,9 +7420,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   box-shadow: none;
   border: none;
   border-radius: 0;
+  min-width: 104px;
+  max-width: 232px;
+}
+.kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu-sub {
+  border: 1px solid #bcc3cd;
+  box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
+  border-radius: 3px;
 }
 .kuma-uxtable-header-item-filter-icon {
   color: rgba(31, 56, 88, 0.6);
+  vertical-align: -1px;
+  margin-left: 4px;
   cursor: pointer;
 }
 .kuma-uxtable-header-item-filter-icon:hover {
@@ -7437,6 +7447,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   height: 36px;
   border-top: 1px solid rgba(31, 56, 88, 0.1);
+  background: white;
 }
 .kuma-uxtable-header-item-filter-action-button {
   position: absolute;
@@ -7453,6 +7464,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-header-item-filter-checkbox {
   margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .kuma-uxtable-header-column-group {
   display: inline-block;

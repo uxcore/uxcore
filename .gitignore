@@ -25,3 +25,4 @@ spm_modules
 .cache
 dist
 build
+package-lock.json

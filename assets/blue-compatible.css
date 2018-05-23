@@ -217,9 +217,9 @@
  */
   /**
  * Grid Component Style for uxcore
- * @author zhouquan.yezq
+ * @author eternalsky
  *
- * Copyright 2014-2015, Uxcore Team, Alinw.
+ * Copyright 2017-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -6046,6 +6046,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   max-width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .uxcore .kuma-select2-focused .uxcore .kuma-select2-selection {
   border-color: #a5afbc;
@@ -6406,7 +6407,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: #0079F2;
   right: 10px;
   top: 0px;
-  font-family: uxcore!important;
+  font-family: uxcore !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -7721,9 +7722,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   box-shadow: none;
   border: none;
   border-radius: 0;
+  min-width: 104px;
+  max-width: 232px;
+}
+.uxcore .kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu-sub {
+  border: 1px solid #bcc3cd;
+  box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
+  border-radius: 3px;
 }
 .uxcore .kuma-uxtable-header-item-filter-icon {
   color: rgba(31, 56, 88, 0.6);
+  vertical-align: -1px;
+  margin-left: 4px;
   cursor: pointer;
 }
 .uxcore .kuma-uxtable-header-item-filter-icon:hover {
@@ -7739,6 +7749,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   height: 36px;
   border-top: 1px solid rgba(31, 56, 88, 0.1);
+  background: white;
 }
 .uxcore .kuma-uxtable-header-item-filter-action-button {
   position: absolute;
@@ -7755,6 +7766,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-header-item-filter-checkbox {
   margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .uxcore .kuma-uxtable-header-column-group {
   display: inline-block;
