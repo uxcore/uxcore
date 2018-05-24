@@ -10016,6 +10016,15 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxform-field-content .kuma-radio-group > span {
   padding: 0px 20px 0px 4px;
 }
+.uxcore .kuma-uxform-field-content .kuma-input:hover + .kuma-uxform-right-icon,
+.uxcore .kuma-uxform-field-content .kuma-input:hover + .kuma-uxform-count {
+  border-color: #a5afbc;
+}
+.uxcore .kuma-uxform-field-content .kuma-input:focus + .kuma-uxform-right-icon,
+.uxcore .kuma-uxform-field-content .kuma-input:focus + .kuma-uxform-count {
+  border-color: #79889b;
+  outline: none;
+}
 .uxcore .kuma-uxform-field-content.has-error .kuma-input,
 .uxcore .kuma-uxform-field-content.has-error .kuma-uxform-left-icon,
 .uxcore .kuma-uxform-field-content.has-error .kuma-uxform-right-icon,
@@ -10025,6 +10034,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxform-field-content.has-error .mce-panel {
   border-color: #F04631;
   background-color: rgba(240, 70, 49, 0.06);
+}
+.uxcore .kuma-uxform-field-content.has-error .kuma-input:hover + .kuma-uxform-right-icon,
+.uxcore .kuma-uxform-field-content.has-error .kuma-input:hover + .kuma-uxform-count {
+  border-color: #F04631;
+}
+.uxcore .kuma-uxform-field-content.has-error .kuma-input:focus + .kuma-uxform-right-icon,
+.uxcore .kuma-uxform-field-content.has-error .kuma-input:focus + .kuma-uxform-count {
+  border-color: #F04631;
 }
 .uxcore .kuma-uxform-field-content .kuma-radio-group-item,
 .uxcore .kuma-uxform-field-content .kuma-checkbox-group-item {
@@ -10068,15 +10085,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-top-right-radius: 3px;
   vertical-align: middle;
   padding-top: 0px;
-}
-.uxcore .kuma-input:focus + .kuma-uxform-right-icon,
-.uxcore .kuma-input:focus + .kuma-uxform-count {
-  border-color: #79889b;
-  outline: none;
-}
-.uxcore .kuma-input:hover + .kuma-uxform-right-icon,
-.uxcore .kuma-input:hover + .kuma-uxform-count {
-  border-color: #a5afbc;
 }
 .uxcore .kuma-uxform-field-core {
   display: table;
