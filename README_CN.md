@@ -46,6 +46,13 @@ ReactDOM.render(<Button />, mountNode);
   }
   ```
 
+  然后只需从 uxcore 引入模块即可。
+
+  ```jsx
+  // babel-plugin-import 会帮助你按需加载 JS
+  import { Button } from 'uxcore';
+  ```
+
 
 * 或者，手动引入
 
