@@ -1,5 +1,12 @@
 
 
+## 0.20.1
+
+- [CascadeSelect]: `FIXED` placeholder color follow Select2 placeholder color.
+- [Dialog]: `CHANGED` change the tile color and change the padding of dialog content.
+- [Table]: `CHANGED` support new prop `toggleTreeExpandOnRowClick`
+- [TreeSelect]: `FIXED` the dropdown should not shake, when dropdownMatchSelectWidth is false.
+
 ## 0.20.0
 
 - [Table]: `CHANGED` update `uxcore-tree` to `^0.3.0`

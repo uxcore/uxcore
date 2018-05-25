@@ -5025,7 +5025,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-dlg-title {
   padding: 20px 0px 10px;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   text-indent: 24px;
 }
 .uxcore .kuma-dlg-content {
@@ -5068,7 +5068,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: #ccc;
 }
 .uxcore .kuma-dlg-body {
-  padding: 16px 24px 40px;
+  padding: 16px 24px 32px;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -5220,7 +5220,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
   font-size: 16px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   max-width: 220px;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -15593,7 +15593,7 @@ a .uxcore-count:active {
   padding: 0 10px;
 }
 .uxcore .kuma-cascader-placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-cascader-arrow {
   color: #bcc3cd;
