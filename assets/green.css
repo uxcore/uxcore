@@ -8237,7 +8237,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  */
 .kuma-tree {
   margin: 0;
-  padding: 2px;
+  padding: 2px 20px;
 }
 .kuma-tree li {
   padding: 0;
@@ -8246,6 +8246,69 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   outline: 0;
   line-height: 26px;
+}
+.kuma-tree li .kuma-tree-dropdown-section {
+  width: calc(100% - 16px);
+  display: inline-block;
+  padding: 5px 4px;
+  border-radius: 3px;
+  line-height: 1;
+  cursor: pointer;
+}
+.kuma-tree li .kuma-tree-dropdown-section-icon {
+  font-size: 14px;
+  cursor: pointer;
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-tree li .kuma-tree-dropdown-section-icon:hover {
+  color: rgba(31, 56, 88, 0.8);
+}
+.kuma-tree li .kuma-tree-dropdown-section:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-tree li .kuma-tree-dropdown-section:hover .kuma-tree-dropdown-section-right-section {
+  visibility: visible;
+}
+.kuma-tree li .kuma-tree-dropdown-section-right-section {
+  display: inline-block;
+  float: right;
+  visibility: hidden;
+}
+.kuma-tree li .kuma-tree-dropdown-section .kuma-tree-dropdown-menu > ul {
+  min-width: 96px;
+  padding: 0;
+  margin: 2px 0 0 0;
+}
+.kuma-tree li .kuma-tree-dropdown-section .kuma-tree-dropdown-menu > ul li {
+  line-height: 36px;
+  padding: 0 12px;
+}
+.kuma-tree li .draggable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.kuma-tree li.drag-over > .draggable {
+  background-color: #40b370;
+  color: white;
+  border: 1px #40b370 solid;
+  opacity: 0.8;
+}
+.kuma-tree li.drag-over-gap-top > .draggable {
+  border-top: 1px #40b370 solid;
+  border-radius: 0;
+}
+.kuma-tree li.drag-over-gap-bottom > .draggable {
+  border-bottom: 1px #40b370 solid;
+  border-radius: 0;
+}
+.kuma-tree li.filter-node > .kuma-tree-node-content-wrapper {
+  font-weight: bold;
 }
 .kuma-tree li ul {
   margin: 0;
@@ -8299,7 +8362,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-image: none;
 }
 .kuma-tree li span.kuma-tree-switcher-disabled {
-  background: #fff;
+  background: #ffffff;
   position: relative;
 }
 .kuma-tree li span.kuma-tree-switcher-disabled:after {
