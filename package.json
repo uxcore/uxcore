@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.20.5-beta.1",
+ "version": "0.20.5-beta.2",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -124,7 +124,7 @@
   "uxcore-tooltip": "0.4.10",
   "uxcore-totop": "0.5.0",
   "uxcore-transfer": "0.3.15",
-  "uxcore-tree": "0.3.5-beta.1",
+  "uxcore-tree": "0.3.5-beta.3",
   "uxcore-tree-select": "0.4.5",
   "uxcore-uploader": "3.1.11",
   "uxcore-validator": "0.2.4"
