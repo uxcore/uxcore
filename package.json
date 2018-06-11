@@ -1,11 +1,12 @@
 {
  "name": "uxcore",
- "version": "0.20.5-beta.2",
+ "version": "0.20.5-beta.3",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
   "test": "gulp test",
   "pub": "gulp pub",
+  "pub-beta": "gulp pub-beta",
   "build": "gulp"
  },
  "repository": {
