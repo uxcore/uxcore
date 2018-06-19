@@ -4021,27 +4021,27 @@ a.kuma-button.kuma-button-disabled:visited {
   animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
   animation-play-state: paused;
 }
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomLeft,
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomRight,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomLeft,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomRight,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomRight {
   animation-name: rcDropdownSlideUpIn;
   animation-play-state: running;
 }
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topLeft,
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topRight,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topLeft,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topRight,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topRight {
   animation-name: rcDropdownSlideDownIn;
   animation-play-state: running;
 }
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomLeft,
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomRight {
   animation-name: rcDropdownSlideUpOut;
   animation-play-state: running;
 }
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topLeft,
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topRight {
   animation-name: rcDropdownSlideDownOut;
   animation-play-state: running;
 }
