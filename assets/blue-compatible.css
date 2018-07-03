@@ -254,7 +254,7 @@
  * Title Component Style for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2017, Uxcore Team, Alinw.
+ * Copyright 2015-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -349,7 +349,7 @@
  * Alert Component Style for uxcore
  * @author eternaslky
  *
- * Copyright 2014-2015, Uxcore Team, Alinw.
+ * Copyright 2014-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -500,7 +500,7 @@
  * Timeline Component Style for uxcore
  * @author yize.shc
  *
- * Copyright 2015-2017, Uxcore Team, Alinw.
+ * Copyright 2015-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -10360,7 +10360,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: relative;
   margin: 0 6px 8px 6px;
 }
-.uxcore .kuma-uxtransfer-container .searchBar .kuma-icon {
+.uxcore .kuma-uxtransfer-container .searchBar .uxcore-icon {
   position: absolute;
   right: 12px;
   top: 4px;
@@ -10689,7 +10689,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   vertical-align: middle;
-  padding-top: 0px;
+  padding: 0 4px;
 }
 .uxcore .kuma-uxform-field-core {
   display: table;
@@ -14015,7 +14015,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-style: normal;
   position: absolute;
   left: 6px;
-  top: 0px;
+  top: -1px;
   z-index: 2;
   color: rgba(31, 56, 88, 0.6);
   transition: left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
@@ -15073,6 +15073,11 @@ a .uxcore-count:active {
   display: inline-block;
   height: 28px;
   padding: 0 10px;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
 }
 .uxcore .uxcore-tag-item-count {
   width: 28px;
@@ -16018,6 +16023,17 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-cascade-multi-input::-ms-clear {
   display: none;
+}
+.uxcore .kuma-cascade-multi-large {
+  height: 38px;
+}
+.uxcore .kuma-cascade-multi-middle {
+  min-height: 32px;
+  line-height: 32px;
+}
+.uxcore .kuma-cascade-multi-small {
+  min-height: 28px;
+  line-height: 28px;
 }
 .uxcore .kuma-cascade-multi-text-result {
   overflow-x: hidden;

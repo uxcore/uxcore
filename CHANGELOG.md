@@ -1,4 +1,8 @@
 
+## 0.21.0
+
+- [General] fit React@16.x
+
 ## 0.20.4
 
 - [Style] `CHANGED` Button add focus state
