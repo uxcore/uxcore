@@ -60,10 +60,27 @@ ReactDOM.render(<Button />, mountNode);
 @import '~uxcore/assets/orange.css';
 ```
 
+## React Compatibility
+
+0.14.9 - 16.x
 
 ## Browser Support
 
 Mainstream browsers and Internet Explorer 9+.
+
+For some broswers (such as IE), you need babel-polyfill.
+
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Polyfills -->
+    <script src="https://g.alicdn.com/platform/c/babel-polyfill/6.26.0/dist/polyfill.min.js"></script>
+  </head>
+</html>
+```
 
 ## Contribute
 

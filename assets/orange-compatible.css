@@ -7199,11 +7199,20 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: none;
   position: absolute;
   margin-right: -2px;
-  width: 32px;
-  height: 100%;
+  width: 0;
+  height: 0;
   top: 0;
   text-align: center;
   color: #666;
+  overflow: hidden;
+}
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev.kuma-tab-tab-arrow-show,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev.kuma-tab-tab-arrow-show,
+.uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next.kuma-tab-tab-arrow-show,
+.uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next.kuma-tab-tab-arrow-show {
+  overflow: visible;
+  width: 32px;
+  height: 100%;
 }
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-prev-icon,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-prev-icon,
@@ -7433,11 +7442,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border: none;
   position: absolute;
   margin-right: -2px;
-  width: 32px;
-  height: 100%;
+  width: 0;
+  height: 0;
   top: 0;
   text-align: center;
   color: #666;
+  overflow: hidden;
+}
+.uxcore .kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev.kuma-tab-tab-arrow-show,
+.uxcore .kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next.kuma-tab-tab-arrow-show {
+  overflow: visible;
+  width: 32px;
+  height: 100%;
 }
 .uxcore .kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev-icon,
 .uxcore .kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next-icon {
