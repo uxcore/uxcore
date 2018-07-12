@@ -16290,6 +16290,12 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-cascader-submenu-warpper .kuma-dropdown-menu-size-small .kuma-dropdown-menu-submenu-wrap > ul {
   line-height: 28px;
 }
+.kuma-cascader-submenu-warpper .kuma-dropdown-menu-item-description-wrap {
+  height: 50px;
+  overflow: hidden;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+}
 .kuma-cascader-select-wrap {
   margin-right: -15px;
 }
