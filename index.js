@@ -28,6 +28,7 @@ var Mention = require('./lib/Mention');
 var Menu = require('./lib/Menu');
 var MultiSelect = require('./lib/MultiSelect');
 var Message = require('./lib/Message');
+var NoticeIcon = require('./lib/NoticeIcon');
 var Pagination = require('./lib/Pagination');
 var Pickable = require('./lib/Pickable');
 var PickableFormField = require('./lib/PickableFormField');
@@ -86,6 +87,7 @@ module.exports = {
   Menu: Menu,
   MultiSelect: MultiSelect,
   Message: Message,
+  NoticeIcon: NoticeIcon,
   Pagination: Pagination,
   Pickable: Pickable,
   PickableFormField: PickableFormField,

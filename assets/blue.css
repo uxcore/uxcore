@@ -17013,3 +17013,113 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   visibility: visible;
   animation-name: timePickerSlideOutUp;
 }
+/**
+ * NoticeIcon Component Style for uxcore
+ * @author Amanda111
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-notice-icon-popover .kuma-popover-content .kuma-popover-inner {
+  max-width: 320px;
+  padding: 0;
+}
+.kuma-notice-icon-container {
+  min-height: 320px;
+  max-height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.kuma-notice-icon-top {
+  box-sizing: border-box;
+  padding: 13px 16px;
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.kuma-notice-icon-top-info {
+  line-height: 18px;
+}
+.kuma-notice-icon-list {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  overflow: auto;
+  position: relative;
+}
+.kuma-notice-icon-list .kuma-notice-icon-empty {
+  color: rgba(31, 56, 88, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.kuma-notice-icon-list .kuma-notice-icon-empty-text {
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-notice-icon-cursor:hover {
+  cursor: pointer;
+}
+.kuma-notice-icon-bottom {
+  border-top: 1px solid rgba(31, 56, 88, 0.1);
+}
+.kuma-notice-icon-bottom-wrap {
+  display: -ms-flexbox;
+  display: flex;
+}
+.kuma-notice-icon-bottom-text {
+  background-color: rgba(31, 56, 88, 0.06);
+  text-align: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  line-height: 42px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.kuma-notice-icon-img {
+  font-size: 20px;
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-notice-icon-img:hover {
+  color: rgba(31, 56, 88, 0.6);
+}
+.kuma-notice-icon-img + .kuma-badge-dot {
+  width: 6px;
+  height: 6px;
+  top: -3px;
+  box-shadow: none;
+}
+.kuma-notice-icon-img-small {
+  color: rgba(31, 56, 88, 0.4);
+  font-size: 16px;
+}
+.kuma-notice-icon-title {
+  vertical-align: middle;
+  margin-left: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.kuma-notice-icon-dark .kuma-notice-icon-img {
+  color: rgba(255, 255, 255, 0.8);
+}
+.kuma-notice-icon-dark .kuma-notice-icon-img:hover {
+  color: #ffffff;
+}

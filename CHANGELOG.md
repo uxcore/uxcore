@@ -1,4 +1,8 @@
 
+## 0.21.4
+
+- [General] add new component `NoticeIcon`
+
 ## 0.21.3
 
 - [Badge]: `CHANGED` support new prop `themeType`
