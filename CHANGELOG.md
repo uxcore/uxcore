@@ -1,4 +1,18 @@
 
+## 0.21.2
+
+- [CascadeSelect]: `FIXED` The selected text could not be displayed in the input when showSearch is true.
+- [CascadeSelect]: `CHANGED` add 'dropdownClassName' prop
+- [CascadeSelect]: `CHANGED` add 'showSearch' and 'onSearch' prop
+- [CascadeSelect]: `CHANGED` add description display feature
+- [Calendar]: `CHANGED` value can be selected from end to start in cascade mode
+
+
+
+## 0.21.0
+
+- [General] fit React@16.x
+
 ## 0.20.4
 
 - [Style] `CHANGED` Button add focus state

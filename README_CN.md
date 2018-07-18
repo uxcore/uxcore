@@ -67,10 +67,26 @@ ReactDOM.render(<Button />, mountNode);
 @import '~uxcore/assets/orange.css';
 ```
 
+## React 兼容性
+
+0.14.9 - 16.x
 
 ## 浏览器支持
 
 主流浏览器及 IE9+
+
+对于一些浏览器（如 IE），需要 babel-polyfill 等 PolyFill 的支持
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Polyfills -->
+    <script src="https://g.alicdn.com/platform/c/babel-polyfill/6.26.0/dist/polyfill.min.js"></script>
+  </head>
+</html>
+```
 
 ## 项目共建
 

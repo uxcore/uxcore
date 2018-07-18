@@ -33,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.DedupePlugin(),
-    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh\-cn/),
+    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh|en/),
     new DuplicatePackageCheckerPlugin(),
     // new BundleAnalyzerPlugin(),
   ],
