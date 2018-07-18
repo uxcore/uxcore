@@ -1,4 +1,8 @@
 
+## 0.21.3
+
+- [Badge]: `CHANGED` support new prop `themeType`
+
 ## 0.21.2
 
 - [CascadeSelect]: `FIXED` The selected text could not be displayed in the input when showSearch is true.

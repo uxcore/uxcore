@@ -14041,6 +14041,11 @@ a -count:active {
 .kuma-scroll-number.not-support-css-animation .kuma-scroll-number-only > p.current {
   display: block;
 }
+.kuma-badge-dark .kuma-scroll-number {
+  background: white;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: none;
+}
 @keyframes antZoomBadgeIn {
   0% {
     opacity: 0;

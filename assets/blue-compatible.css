@@ -14153,6 +14153,11 @@ a .uxcore-count:active {
 .uxcore .kuma-scroll-number.not-support-css-animation .uxcore .kuma-scroll-number-only > p.current {
   display: block;
 }
+.uxcore .kuma-badge-dark .kuma-scroll-number {
+  background: white;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: none;
+}
 @keyframes antZoomBadgeIn {
   0% {
     opacity: 0;
