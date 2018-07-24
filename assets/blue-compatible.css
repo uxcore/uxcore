@@ -8179,6 +8179,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
 }
+.uxcore .kuma-uxtable-expand-icon .kuma-uxtable-row-tree-loading-icon {
+  display: inline-block;
+  animation: tableTreeIconLoading 1s linear infinite;
+}
+@keyframes tableTreeIconLoading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .uxcore .kuma-uxtable-row-tree-selector {
   margin-right: 12px;
 }
