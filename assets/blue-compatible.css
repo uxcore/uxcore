@@ -531,6 +531,13 @@
  * Copyright 2017-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
+  /**
+ * Card Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 }
 .uxcore html {
   font-family: sans-serif;
@@ -17136,4 +17143,86 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-notice-icon-dark .kuma-notice-icon-img:hover {
   color: #ffffff;
+}
+.uxcore .uxcore-card {
+  background: white;
+  overflow: hidden;
+}
+.uxcore .uxcore-card * {
+  box-sizing: border-box;
+}
+.uxcore .uxcore-card-header {
+  height: 41px;
+  line-height: 40px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+  padding: 0px 24px;
+}
+.uxcore .uxcore-card-title {
+  height: 100%;
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden;
+}
+.uxcore .uxcore-card-title + .uxcore-card-extra {
+  padding-left: 24px;
+}
+.uxcore .uxcore-card-title-icon,
+.uxcore .uxcore-card-title-text,
+.uxcore .uxcore-card-title-tip {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.uxcore .uxcore-card-title-icon:last-child,
+.uxcore .uxcore-card-title-text:last-child,
+.uxcore .uxcore-card-title-tip:last-child {
+  margin-right: 0;
+}
+.uxcore .uxcore-card-title-icon i,
+.uxcore .uxcore-card-title-icon icon {
+  font-size: 20px;
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .uxcore-card-title-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: bold;
+  max-width: calc(52%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.uxcore .uxcore-card-title-tip-icon {
+  color: #45a8e6;
+  font-size: 14px;
+}
+.uxcore .uxcore-card-collapse-icon {
+  font-size: 16px;
+  color: rgba(31, 56, 88, 0.4);
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.uxcore .uxcore-card-collapse-icon__collapsed {
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
+.uxcore .uxcore-card-extra {
+  text-align: right;
+  overflow: hidden;
+  height: 40px;
+}
+.uxcore .uxcore-card-content {
+  padding: 24px;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+.uxcore .uxcore-card-content-none-padding {
+  padding: 0;
 }

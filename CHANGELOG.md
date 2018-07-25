@@ -1,4 +1,9 @@
 
+
+## 0.21.6
+
+- [General] add new component `Card`
+
 ## 0.21.4
 
 - [General] add new component `NoticeIcon`
