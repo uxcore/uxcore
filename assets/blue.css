@@ -3972,27 +3972,27 @@ a.kuma-button.kuma-button-disabled:visited {
   animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
   animation-play-state: paused;
 }
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomLeft,
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomRight,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomLeft,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomRight,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomRight {
   animation-name: rcDropdownSlideUpIn;
   animation-play-state: running;
 }
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topLeft,
-.kuma-calendar-picker-slide-up-enter.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topRight,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topLeft,
-.kuma-calendar-picker-slide-up-appear.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topRight,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topRight {
   animation-name: rcDropdownSlideDownIn;
   animation-play-state: running;
 }
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomLeft,
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomRight {
   animation-name: rcDropdownSlideUpOut;
   animation-play-state: running;
 }
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topLeft,
-.kuma-calendar-picker-slide-up-leave.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topRight {
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topLeft,
+.kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topRight {
   animation-name: rcDropdownSlideDownOut;
   animation-play-state: running;
 }
@@ -7819,6 +7819,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
 }
+.kuma-uxtable-row-tree-loading-icon {
+  display: inline-block;
+  animation: treeIconLoading 1s linear infinite;
+}
+@keyframes treeIconLoading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .kuma-uxtable-row-tree-selector {
   margin-right: 12px;
 }
@@ -8237,7 +8249,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  */
 .kuma-tree {
   margin: 0;
-  padding: 2px;
+  padding: 2px 20px;
 }
 .kuma-tree li {
   padding: 0;
@@ -8246,6 +8258,69 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   outline: 0;
   line-height: 26px;
+}
+.kuma-tree li .kuma-tree-dropdown-section {
+  width: calc(100% - 16px);
+  display: inline-block;
+  padding: 5px 4px;
+  border-radius: 3px;
+  line-height: 1;
+  cursor: pointer;
+}
+.kuma-tree li .kuma-tree-dropdown-section-icon {
+  font-size: 14px;
+  cursor: pointer;
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-tree li .kuma-tree-dropdown-section-icon:hover {
+  color: rgba(31, 56, 88, 0.8);
+}
+.kuma-tree li .kuma-tree-dropdown-section:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-tree li .kuma-tree-dropdown-section:hover .kuma-tree-dropdown-section-right-section {
+  visibility: visible;
+}
+.kuma-tree li .kuma-tree-dropdown-section-right-section {
+  display: inline-block;
+  float: right;
+  visibility: hidden;
+}
+.kuma-tree li .kuma-tree-dropdown-section .kuma-tree-dropdown-menu > ul {
+  min-width: 96px;
+  padding: 0;
+  margin: 2px 0 0 0;
+}
+.kuma-tree li .kuma-tree-dropdown-section .kuma-tree-dropdown-menu > ul li {
+  line-height: 36px;
+  padding: 0 12px;
+}
+.kuma-tree li .draggable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.kuma-tree li.drag-over > .draggable {
+  background-color: #0079F2;
+  color: white;
+  border: 1px #0079F2 solid;
+  opacity: 0.8;
+}
+.kuma-tree li.drag-over-gap-top > .draggable {
+  border-top: 1px #0079F2 solid;
+  border-radius: 0;
+}
+.kuma-tree li.drag-over-gap-bottom > .draggable {
+  border-bottom: 1px #0079F2 solid;
+  border-radius: 0;
+}
+.kuma-tree li.filter-node > .kuma-tree-node-content-wrapper {
+  font-weight: bold;
 }
 .kuma-tree li ul {
   margin: 0;
@@ -8257,7 +8332,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-tree li a,
 .kuma-tree li .kuma-tree-node-content-wrapper-normal {
   display: inline-block;
-  padding: 2px 4px;
   cursor: pointer;
   text-decoration: none;
   line-height: 18px;
@@ -8299,7 +8373,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   background-image: none;
 }
 .kuma-tree li span.kuma-tree-switcher-disabled {
-  background: #fff;
+  background: #ffffff;
   position: relative;
 }
 .kuma-tree li span.kuma-tree-switcher-disabled:after {
@@ -8391,6 +8465,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230079F2%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
+.use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate:hover {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230079F2%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+}
 .use-svg .kuma-tree-checkbox:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22white%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
@@ -8427,7 +8504,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
  * Title Component Style for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2017, Uxcore Team, Alinw.
+ * Copyright 2015-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
 .kuma-title {
@@ -13831,7 +13908,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-style: normal;
   position: absolute;
   left: 6px;
-  top: 0px;
+  top: -1px;
   z-index: 2;
   color: rgba(31, 56, 88, 0.6);
   transition: left 0.3s cubic-bezier(0.35, 0, 0.25, 1);

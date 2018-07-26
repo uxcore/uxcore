@@ -240,7 +240,7 @@
  * Title Component Style for uxcore
  * @author eternalsky
  *
- * Copyright 2015-2017, Uxcore Team, Alinw.
+ * Copyright 2015-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -4309,27 +4309,27 @@
   animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
   animation-play-state: paused;
 }
-.uxcore .kuma-calendar-picker-slide-up-enter.uxcore .kuma-calendar-picker-slide-up-enter-active.uxcore .kuma-calendar-picker-placement-bottomLeft,
-.uxcore .kuma-calendar-picker-slide-up-enter.uxcore .kuma-calendar-picker-slide-up-enter-active.uxcore .kuma-calendar-picker-placement-bottomRight,
-.uxcore .kuma-calendar-picker-slide-up-appear.uxcore .kuma-calendar-picker-slide-up-appear-active.uxcore .kuma-calendar-picker-placement-bottomLeft,
-.uxcore .kuma-calendar-picker-slide-up-appear.uxcore .kuma-calendar-picker-slide-up-appear-active.uxcore .kuma-calendar-picker-placement-bottomRight {
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomLeft,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomLeft,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-bottomRight,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-bottomRight {
   animation-name: rcDropdownSlideUpIn;
   animation-play-state: running;
 }
-.uxcore .kuma-calendar-picker-slide-up-enter.uxcore .kuma-calendar-picker-slide-up-enter-active.uxcore .kuma-calendar-picker-placement-topLeft,
-.uxcore .kuma-calendar-picker-slide-up-enter.uxcore .kuma-calendar-picker-slide-up-enter-active.uxcore .kuma-calendar-picker-placement-topRight,
-.uxcore .kuma-calendar-picker-slide-up-appear.uxcore .kuma-calendar-picker-slide-up-appear-active.uxcore .kuma-calendar-picker-placement-topLeft,
-.uxcore .kuma-calendar-picker-slide-up-appear.uxcore .kuma-calendar-picker-slide-up-appear-active.uxcore .kuma-calendar-picker-placement-topRight {
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topLeft,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topLeft,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-enter-active.kuma-calendar-picker-placement-topRight,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-appear-active.kuma-calendar-picker-placement-topRight {
   animation-name: rcDropdownSlideDownIn;
   animation-play-state: running;
 }
-.uxcore .kuma-calendar-picker-slide-up-leave.uxcore .kuma-calendar-picker-slide-up-leave-active.uxcore .kuma-calendar-picker-placement-bottomLeft,
-.uxcore .kuma-calendar-picker-slide-up-leave.uxcore .kuma-calendar-picker-slide-up-leave-active.uxcore .kuma-calendar-picker-placement-bottomRight {
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomLeft,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-bottomRight {
   animation-name: rcDropdownSlideUpOut;
   animation-play-state: running;
 }
-.uxcore .kuma-calendar-picker-slide-up-leave.uxcore .kuma-calendar-picker-slide-up-leave-active.uxcore .kuma-calendar-picker-placement-topLeft,
-.uxcore .kuma-calendar-picker-slide-up-leave.uxcore .kuma-calendar-picker-slide-up-leave-active.uxcore .kuma-calendar-picker-placement-topRight {
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topLeft,
+.uxcore .kuma-calendar-picker-slide-up.kuma-calendar-picker-slide-up-leave-active.kuma-calendar-picker-placement-topRight {
   animation-name: rcDropdownSlideDownOut;
   animation-play-state: running;
 }
@@ -4628,34 +4628,34 @@
 .uxcore .kuma-calendar-date.weekend {
   color: #ff6f00;
 }
-.uxcore .kuma-calendar-today .uxcore .kuma-calendar-date {
+.uxcore .kuma-calendar-today .kuma-calendar-date {
   border: 1px solid #ff6f00;
   color: #ff6f00;
 }
-.uxcore .kuma-calendar-selected-day .uxcore .kuma-calendar-date {
+.uxcore .kuma-calendar-selected-day .kuma-calendar-date {
   background: #ff6f00;
   color: #fff;
 }
-.uxcore .kuma-calendar-disabled-cell .uxcore .kuma-calendar-date {
+.uxcore .kuma-calendar-disabled-cell .kuma-calendar-date {
   cursor: not-allowed;
   color: #bcbcbc;
   background: #f3f3f3;
   border-radius: 0;
   width: auto;
 }
-.uxcore .kuma-calendar-disabled-cell .uxcore .kuma-calendar-date:hover {
+.uxcore .kuma-calendar-disabled-cell .kuma-calendar-date:hover {
   background: #f3f3f3;
 }
-.uxcore .kuma-calendar-disabled-cell-first-of-row .uxcore .kuma-calendar-date {
+.uxcore .kuma-calendar-disabled-cell-first-of-row .kuma-calendar-date {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.uxcore .kuma-calendar-disabled-cell-last-of-row .uxcore .kuma-calendar-date {
+.uxcore .kuma-calendar-disabled-cell-last-of-row .kuma-calendar-date {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-.uxcore .kuma-calendar-last-month-cell .uxcore .kuma-calendar-date,
-.uxcore .kuma-calendar-next-month-btn-day .uxcore .kuma-calendar-date {
+.uxcore .kuma-calendar-last-month-cell .kuma-calendar-date,
+.uxcore .kuma-calendar-next-month-btn-day .kuma-calendar-date {
   color: rgba(31, 56, 88, 0.3);
 }
 .uxcore .kuma-calendar-footer {
@@ -8121,6 +8121,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-expand-icon .kuma-icon-triangle-right.expanded:before {
   transform: rotate(90deg);
 }
+.uxcore .kuma-uxtable-row-tree-loading-icon {
+  display: inline-block;
+  animation: treeIconLoading 1s linear infinite;
+}
+@keyframes treeIconLoading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .uxcore .kuma-uxtable-row-tree-selector {
   margin-right: 12px;
 }
@@ -8525,7 +8537,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tree {
   margin: 0;
-  padding: 2px;
+  padding: 2px 20px;
 }
 .uxcore .kuma-tree li {
   padding: 0;
@@ -8534,6 +8546,69 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   outline: 0;
   line-height: 26px;
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section {
+  width: calc(100% - 16px);
+  display: inline-block;
+  padding: 5px 4px;
+  border-radius: 3px;
+  line-height: 1;
+  cursor: pointer;
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section-icon {
+  font-size: 14px;
+  cursor: pointer;
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section-icon:hover {
+  color: rgba(31, 56, 88, 0.8);
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(31, 56, 88, 0.04);
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section:hover .kuma-tree-dropdown-section-right-section {
+  visibility: visible;
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section-right-section {
+  display: inline-block;
+  float: right;
+  visibility: hidden;
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section .kuma-tree-dropdown-menu > ul {
+  min-width: 96px;
+  padding: 0;
+  margin: 2px 0 0 0;
+}
+.uxcore .kuma-tree li .kuma-tree-dropdown-section .kuma-tree-dropdown-menu > ul li {
+  line-height: 36px;
+  padding: 0 12px;
+}
+.uxcore .kuma-tree li .draggable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.uxcore .kuma-tree li.drag-over > .draggable {
+  background-color: #ff6f00;
+  color: white;
+  border: 1px #ff6f00 solid;
+  opacity: 0.8;
+}
+.uxcore .kuma-tree li.drag-over-gap-top > .draggable {
+  border-top: 1px #ff6f00 solid;
+  border-radius: 0;
+}
+.uxcore .kuma-tree li.drag-over-gap-bottom > .draggable {
+  border-bottom: 1px #ff6f00 solid;
+  border-radius: 0;
+}
+.uxcore .kuma-tree li.filter-node > .kuma-tree-node-content-wrapper {
+  font-weight: bold;
 }
 .uxcore .kuma-tree li ul {
   margin: 0;
@@ -8545,7 +8620,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tree li a,
 .uxcore .kuma-tree li .kuma-tree-node-content-wrapper-normal {
   display: inline-block;
-  padding: 2px 4px;
   cursor: pointer;
   text-decoration: none;
   line-height: 18px;
@@ -8587,7 +8661,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background-image: none;
 }
 .uxcore .kuma-tree li span.kuma-tree-switcher-disabled {
-  background: #fff;
+  background: #ffffff;
   position: relative;
 }
 .uxcore .kuma-tree li span.kuma-tree-switcher-disabled:after {
@@ -8677,6 +8751,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23ff6f00%22%20stroke%3D%22%23ff6f00%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+}
+.uxcore .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23ff6f00%22%20stroke%3D%22%23ff6f00%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
 }
 .uxcore .use-svg .kuma-tree-checkbox:hover {
@@ -13950,7 +14027,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-style: normal;
   position: absolute;
   left: 6px;
-  top: 0px;
+  top: -1px;
   z-index: 2;
   color: rgba(31, 56, 88, 0.6);
   transition: left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
