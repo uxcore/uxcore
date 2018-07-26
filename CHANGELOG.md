@@ -1,5 +1,9 @@
 
 
+## 0.21.10
+
+- [CascadeMultiSelect] `FIXED`: getDerivedStateFromProps will occur a re-display problem when props.value not change.
+
 ## 0.21.6
 
 - [General] add new component `Card`
