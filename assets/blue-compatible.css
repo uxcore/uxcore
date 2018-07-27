@@ -12374,6 +12374,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-multi-select-dropdown {
   background: white;
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
+  padding-top: 0;
 }
 .uxcore .kuma-multi-select-dropdown-border {
   border: 1px solid rgba(31, 56, 88, 0.2);
@@ -17041,6 +17042,12 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
   visibility: visible;
   animation-name: timePickerSlideOutUp;
 }
+.uxcore .kuma-notice-icon-popover.kuma-popover-placement-bottomLeft .kuma-popover-arrow {
+  left: 2px;
+}
+.uxcore .kuma-notice-icon-popover.kuma-popover-placement-bottomRight .kuma-popover-arrow {
+  right: 2px;
+}
 .uxcore .kuma-notice-icon-popover .kuma-popover-content .kuma-popover-inner {
   max-width: 320px;
   padding: 0;
@@ -17125,9 +17132,10 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
   top: -3px;
   box-shadow: none;
 }
-.uxcore .kuma-notice-icon-img-small {
+.uxcore .kuma-notice-icon-small {
   color: rgba(31, 56, 88, 0.4);
   font-size: 16px;
+  vertical-align: middle;
 }
 .uxcore .kuma-notice-icon-title {
   vertical-align: middle;
