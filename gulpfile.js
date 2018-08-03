@@ -143,7 +143,7 @@ gulp.task('theme', ['theme_clean', 'iconfont'], function (done) {
 
 
 gulp.task('theme_transport', ['theme'], function () {
-  var themes = ['blue', 'orange', 'green'];
+  var themes = ['blue', 'orange', 'green', 'alipay'];
   themes.forEach(function (theme) {
     gulp.src(['./assets/' + theme + '/kuma.css'])
         .pipe(concat(theme + '.css'))

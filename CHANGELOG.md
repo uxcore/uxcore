@@ -1,5 +1,9 @@
 
 
+## 0.21.13
+
+- [Theme] `NEW` add alipay theme 
+
 ## 0.21.10
 
 - [CascadeMultiSelect] `FIXED`: getDerivedStateFromProps will occur a re-display problem when props.value not change.
