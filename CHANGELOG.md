@@ -1,5 +1,10 @@
 
 
+## 0.21.14
+
+- [Uploader]: `CHANGED` add new prop 'hideUploadIcon'
+- [Uploader]: `CHANGED` hidepicker when isVisual and over queueCapcity
+
 ## 0.21.13
 
 - [Theme] `NEW` add alipay theme 
