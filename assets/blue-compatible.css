@@ -3353,7 +3353,7 @@
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_kl1liw3b0ccy2e29.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_fpniv85epiv.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -3811,6 +3811,9 @@
 }
 .uxcore .uxicon-gouwuche:before {
   content: "\e6e6";
+}
+.uxcore .uxicon-fuhao-tongzhi:before {
+  content: "\e71c";
 }
 .uxcore .uxicon-fuhao-shizhong-line:before {
   content: "\e73e";
