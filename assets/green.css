@@ -2995,7 +2995,7 @@ a.kuma-button.kuma-button-disabled:visited {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_kl1liw3b0ccy2e29.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_fpniv85epiv.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -3453,6 +3453,9 @@ a.kuma-button.kuma-button-disabled:visited {
 }
 .uxicon-gouwuche:before {
   content: "\e6e6";
+}
+.uxicon-fuhao-tongzhi:before {
+  content: "\e71c";
 }
 .uxicon-fuhao-shizhong-line:before {
   content: "\e73e";
