@@ -12721,11 +12721,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 1;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
-  opacity: .2;
+  opacity: 0.2;
   text-decoration: none;
 }
 .uxcore .kuma-message-notice-close-x:after {
-  content: '×';
+  content: "×";
 }
 .uxcore .kuma-message-notice-close:hover {
   opacity: 1;
@@ -12819,7 +12819,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   transform: translateY(100%);
   opacity: 0;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .3s;
+  animation-duration: 0.3s;
 }
 .uxcore .message-moveUp-enter-active,
 .uxcore .message-moveUp-appear-active {
@@ -12830,7 +12830,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   transform: translateY(0);
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .3s;
+  animation-duration: 0.3s;
 }
 .uxcore .message-moveUp-leave-active {
   animation-name: msgMoveUpOut;
