@@ -1,5 +1,20 @@
 
 
+## 0.21.18
+
+- [CascadeSelet]: `FIXED` onOk click should not occurred when isMustLeaf is true
+- [Mention]: `NEW` add `getMentions` API to editors for getting all current mentions.
+- [Mention]: `FIXED` fix issue #22 trigger change event with outdated value.
+- [Message]: `FIXED` to Message.clear function error
+- [Message]: `NEW` new API Message.mask_loading
+- [TreeSelect]: `CHANGED` change default value of treeNodeFilterProp to "title"
+- [TreeSelect]: `FIXED` add padding-left:15px to rightPanelNode when treeCheckStrictly is true
+- [TreeSelect]: `FIXED` fix rightPanelNode when treeCheckStrictly is true
+- [TreeSelect]: `CHANGED` optimized disabled style.
+- [Uploader]: `CHANGED` modify picker position when isVisual
+- [Uploader]: `CHANGED` show download icon when readonly
+
+
 ## 0.21.14
 
 - [Uploader]: `CHANGED` add new prop 'hideUploadIcon'

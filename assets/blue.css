@@ -9274,15 +9274,18 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-upload-filelist > .inner {
   overflow: visible;
 }
+.kuma-upload-filelist > .inner .kuma-upload-picker-visual {
+  margin-top: 0;
+}
 .kuma-upload-filelist.filelist-visual.nwmode {
-  float: left;
+  float: none;
   margin-top: 5px;
   width: auto;
 }
 .kuma-upload-picker-visual {
   width: 100px;
   height: 100px;
-  margin-top: 6px;
+  margin-top: 5px;
   display: inline-block;
   position: relative;
   line-height: normal;
@@ -12573,11 +12576,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 1;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
-  opacity: .2;
+  opacity: 0.2;
   text-decoration: none;
 }
 .kuma-message-notice-close-x:after {
-  content: '×';
+  content: "×";
 }
 .kuma-message-notice-close:hover {
   opacity: 1;
@@ -12671,7 +12674,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   transform: translateY(100%);
   opacity: 0;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .3s;
+  animation-duration: 0.3s;
 }
 .message-moveUp-enter-active,
 .message-moveUp-appear-active {
@@ -12682,7 +12685,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   transform: translateY(0);
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .3s;
+  animation-duration: 0.3s;
 }
 .message-moveUp-leave-active {
   animation-name: msgMoveUpOut;
@@ -14388,6 +14391,7 @@ a -count:active {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: default;
 }
 .uxcore-tree-select-dropdown .uxcore-tree-select-not-found {
   display: inline-block;
@@ -14781,10 +14785,12 @@ a -count:active {
 .uxcore-tree-select-tree-child-tree-open {
   display: block;
 }
+.uxcore-tree-select-tree-treenode-disabled > span.uxcore-tree-select-tree-title {
+  cursor: not-allowed !important;
+}
 .uxcore-tree-select-tree-treenode-disabled > span,
 .uxcore-tree-select-tree-treenode-disabled > a {
-  color: gray;
-  font-weight: bold;
+  color: #ccc;
 }
 .use-svg .uxcore-tree-select-tree-switcher.uxcore-tree-select-tree-switcher_open {
   background: none;
