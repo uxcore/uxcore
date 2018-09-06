@@ -1,5 +1,9 @@
 
 
+## 0.21.19
+
+- [General] add new Component `UserGuide`
+
 ## 0.21.18
 
 - [CascadeSelet]: `FIXED` onOk click should not occurred when isMustLeaf is true

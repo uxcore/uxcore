@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.21.18",
+ "version": "0.21.19",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -81,7 +81,7 @@
   "uxcore-button": "0.4.19",
   "uxcore-button-group": "0.2.3",
   "uxcore-calendar": "0.10.1",
-  "uxcore-card": "0.1.4",
+  "uxcore-card": "0.1.5",
   "uxcore-carousel": "0.3.7",
   "uxcore-cascade-multi-select": "0.8.3",
   "uxcore-cascade-select": "0.7.8",
@@ -102,13 +102,13 @@
   "uxcore-load-more": "0.1.3",
   "uxcore-matrix": "0.4.0",
   "uxcore-mention": "0.4.3",
-  "uxcore-menu": "4.0.1",
+  "uxcore-menu": "4.0.2",
   "uxcore-message": "0.5.10",
   "uxcore-multi-select": "0.5.1",
   "uxcore-notice-icon": "0.1.19",
   "uxcore-pagination": "0.7.0",
-  "uxcore-pickable": "4.0.0",
-  "uxcore-pickable-form-field": "0.5.2",
+  "uxcore-pickable": "4.1.0",
+  "uxcore-pickable-form-field": "0.5.3",
   "uxcore-popover": "0.6.1",
   "uxcore-progress": "1.2.0",
   "uxcore-radiogroup": "1.3.1",
@@ -127,9 +127,10 @@
   "uxcore-tooltip": "0.4.11",
   "uxcore-totop": "0.6.0",
   "uxcore-transfer": "0.4.0",
-  "uxcore-tree": "0.4.1",
+  "uxcore-tree": "0.4.2",
   "uxcore-tree-select": "0.4.10",
   "uxcore-uploader": "3.3.2",
+  "uxcore-user-guide": "0.1.1",
   "uxcore-validator": "0.2.4"
  }
 }
