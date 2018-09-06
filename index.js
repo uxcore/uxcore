@@ -55,7 +55,7 @@ var TreeSelect = require('./lib/TreeSelect');
 var Transfer = require('./lib/Transfer');
 var Totop = require('./lib/Totop');
 var Uploader = require('./lib/Uploader');
-var UserGuide = require('./lib/UserGuide');
+// var UserGuide = require('./lib/UserGuide');
 var Validator = require('./lib/Validator');
 
 module.exports = {
@@ -116,6 +116,6 @@ module.exports = {
   Transfer: Transfer,
   Totop: Totop,
   Uploader: Uploader,
-  UserGuide: UserGuide,
+  // UserGuide: UserGuide,
   Validator: Validator,
 };
