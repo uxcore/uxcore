@@ -7402,8 +7402,29 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   overflow: auto;
   padding: 16px 12px;
 }
+.kuma-uxtable-column-picker-popover .kuma-uxtable-row-selector {
+  margin-right: 8px;
+}
+.kuma-uxtable-column-picker-popover .half-checked {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230079F2%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  vertical-align: text-bottom;
+  color: #0079F2;
+}
 .kuma-uxtable-column-picker-popover .kuma-tree {
   padding: 0;
+}
+.kuma-uxtable-column-picker-popover .kuma-tree-checkbox {
+  margin-right: 8px;
+}
+.kuma-uxtable-column-picker-check-all {
+  color: rgba(0, 0, 0, 0.6);
+}
+.kuma-uxtable-column-picker-check-all-split-line {
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+  margin: 4px 0;
 }
 .kuma-uxtable-searchbar {
   float: right;
@@ -17254,4 +17275,101 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore-card-content-none-padding {
   padding: 0;
+}
+/**
+ * UserGuide Component Style for uxcore
+ * @author buzhou
+ *
+ * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+@keyframes kumaUserGuideBreathing {
+  0%,
+  100% {
+    animation-timing-function: spring(1 90 11 -0.2);
+  }
+  50% {
+    transform: scale(2);
+    animation-timing-function: linear;
+  }
+}
+.kuma-user-guide-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background: rgba(31, 56, 88, 0.04);
+}
+.kuma-user-guide-breathing-point {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+.kuma-user-guide-hidden {
+  display: none;
+}
+.kuma-user-guide-big {
+  height: 10px;
+  width: 10px;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 121, 242, 0.2);
+  animation: kumaUserGuideBreathing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.kuma-user-guide-small {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #0079F2;
+  border-radius: 50%;
+}
+.kuma-user-guide-stage-step-hint {
+  width: 300px;
+}
+.kuma-user-guide-stage-step-hint .kuma-tooltip-inner {
+  text-align: left;
+  padding: 20px 24px;
+}
+.kuma-user-guide-stage-step-hint.kuma-tooltip-placement-bottomRight .kuma-tooltip-arrow,
+.kuma-user-guide-stage-step-hint.kuma-tooltip-placement-topRight .kuma-tooltip-arrow {
+  right: 5px;
+  left: auto;
+}
+.kuma-user-guide-step-hint-title {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 12px;
+}
+.kuma-user-guide-step-hint-desc {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.kuma-user-guide-step-hint-desc img,
+.kuma-user-guide-step-hint-desc video {
+  width: 250px;
+}
+.kuma-user-guide-hint-bottom {
+  margin-top: 20px;
+  overflow: auto;
+  line-height: 28px;
+  vertical-align: middle;
+}
+.kuma-user-guide-hint-bottom button {
+  float: right;
+}
+.kuma-user-guide-hint-bottom .kuma-button-secondary {
+  margin-right: 8px;
+}
+.kuma-user-guide-skip-text {
+  font-size: 12px;
+  color: rgba(31, 56, 88, 0.4);
+  cursor: pointer;
 }

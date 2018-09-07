@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.21.21",
+ "version": "0.21.22",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -89,8 +89,8 @@
   "uxcore-collapse": "2.1.2",
   "uxcore-const": "^1.0.0",
   "uxcore-crumb": "0.2.5",
-  "uxcore-dialog": "0.8.0",
-  "uxcore-dropdown": "0.5.1",
+  "uxcore-dialog": "0.8.1",
+  "uxcore-dropdown": "0.5.2",
   "uxcore-empty-data": "0.1.6",
   "uxcore-float-nav": "0.3.1",
   "uxcore-form": "7.0.3",
@@ -109,7 +109,7 @@
   "uxcore-pagination": "0.7.0",
   "uxcore-pickable": "4.1.0",
   "uxcore-pickable-form-field": "0.5.3",
-  "uxcore-popover": "0.6.1",
+  "uxcore-popover": "0.6.2",
   "uxcore-progress": "1.2.0",
   "uxcore-radiogroup": "1.3.1",
   "uxcore-rate": "0.4.0",
@@ -117,7 +117,7 @@
   "uxcore-splitter": "0.1.5",
   "uxcore-steps": "2.1.8",
   "uxcore-switch": "0.1.11",
-  "uxcore-table": "10.2.2",
+  "uxcore-table": "10.3.0",
   "uxcore-tabs": "0.7.1",
   "uxcore-tag": "2.2.0",
   "uxcore-time-picker": "0.1.1",
@@ -130,7 +130,7 @@
   "uxcore-tree": "0.4.2",
   "uxcore-tree-select": "0.4.10",
   "uxcore-uploader": "3.3.2",
-  "uxcore-user-guide": "0.1.1",
+  "uxcore-user-guide": "0.1.2",
   "uxcore-validator": "0.2.4"
  }
 }
