@@ -10748,6 +10748,17 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   max-width: 564px;
 }
 /**
+ * FormField Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-uxform-field-tip-icon {
+  color: #3C99D8;
+  line-height: 1;
+}
+/**
  * Progress Component Style for uxcore
  * @author vicent.bian
  *
@@ -16132,6 +16143,17 @@ a -count:active {
  * Copyright 2015-2017, Uxcore Team, Alinw.
  * All rights reserved.
  */
+input::-webkit-input-placeholder,
+input::placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {
+  color: rgba(31, 56, 88, 0.4);
+}
+.kuma-cascader-menu .kuma-dropdown-menu-item .brand-danger {
+  color: #f04631;
+}
 .kuma-cascader-wrapper {
   min-height: 36px;
   width: 100%;
@@ -16311,7 +16333,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   position: relative;
 }
 .kuma-cascader-submenu-warpper ul.kuma-dropdown-menu-hoverable li:after {
-  font-family: kuma!important;
+  font-family: kuma !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -16360,7 +16382,8 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #fff url(data:image/gif;base64,R0lGODlhEAAQAKIGAMLY8YSx5HOm4Mjc88/g9Ofw+v///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAGACwAAAAAEAAQAAADMGi6RbUwGjKIXCAA016PgRBElAVlG/RdLOO0X9nK61W39qvqiwz5Ls/rRqrggsdkAgAh+QQFCgAGACwCAAAABwAFAAADD2hqELAmiFBIYY4MAutdCQAh+QQFCgAGACwGAAAABwAFAAADD1hU1kaDOKMYCGAGEeYFCQAh+QQFCgAGACwKAAIABQAHAAADEFhUZjSkKdZqBQG0IELDQAIAIfkEBQoABgAsCgAGAAUABwAAAxBoVlRKgyjmlAIBqCDCzUoCACH5BAUKAAYALAYACgAHAAUAAAMPaGpFtYYMAgJgLogA610JACH5BAUKAAYALAIACgAHAAUAAAMPCAHWFiI4o1ghZZJB5i0JACH5BAUKAAYALAAABgAFAAcAAAMQCAFmIaEp1motpDQySMNFAgA7) no-repeat;
+  background: #fff url(data:image/gif;
+        base64, R0lGODlhEAAQAKIGAMLY8YSx5HOm4Mjc88/g9Ofw+v ///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAGACwAAAAAEAAQAAADMGi6RbUwGjKIXCAA016PgRBElAVlG/RdLOO0X9nK61W39qvqiwz5Ls/rRqrggsdkAgAh+QQFCgAGACwCAAAABwAFAAADD2hqELAmiFBIYY4MAutdCQAh+QQFCgAGACwGAAAABwAFAAADD1hU1kaDOKMYCGAGEeYFCQAh+QQFCgAGACwKAAIABQAHAAADEFhUZjSkKdZqBQG0IELDQAIAIfkEBQoABgAsCgAGAAUABwAAAxBoVlRKgyjmlAIBqCDCzUoCACH5BAUKAAYALAYACgAHAAUAAAMPaGpFtYYMAgJgLogA610JACH5BAUKAAYALAIACgAHAAUAAAMPCAHWFiI4o1ghZZJB5i0JACH5BAUKAAYALAAABgAFAAcAAAMQCAFmIaEp1motpDQySMNFAgA7) no-repeat;
 }
 .kuma-cascader-internal-select-item-wrap {
   position: relative;
