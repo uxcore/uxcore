@@ -7424,7 +7424,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-uxtable-column-picker-check-all-split-line {
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
-  margin: 4px 0;
+  margin: 8px 0;
 }
 .kuma-uxtable-searchbar {
   float: right;
