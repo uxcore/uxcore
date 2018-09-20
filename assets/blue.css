@@ -4555,6 +4555,10 @@ a.kuma-button.kuma-button-disabled:visited {
   background: #3fc7fa;
   color: #fff;
 }
+.kuma-calendar-month-header-wrap {
+  width: 300px;
+  height: 300px;
+}
 .kuma-calendar-month-panel {
   left: 0;
   top: 0;

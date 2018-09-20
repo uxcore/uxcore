@@ -4906,6 +4906,10 @@
   background: #3fc7fa;
   color: #fff;
 }
+.uxcore .kuma-calendar-month-header-wrap {
+  width: 300px;
+  height: 300px;
+}
 .uxcore .kuma-calendar-month-panel {
   left: 0;
   top: 0;
