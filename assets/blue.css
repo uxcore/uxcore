@@ -11399,6 +11399,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 1.5;
   padding: 8px 24px;
   transition: all .3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .kuma-menu-submenu,
 .kuma-menu-submenu-inline {
@@ -11412,17 +11415,35 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   cursor: initial;
   transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
-.kuma-menu-item > a {
+.kuma-menu-submenu-title-text {
+  display: block;
+  margin-right: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kuma-menu-submenu-title-text .kuma-icon {
+  float: left;
+}
+.kuma-menu-submenu-title-text .kuma-icon + span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kuma-menu-item > a,
+.kuma-menu-item > span > a {
   display: block;
   color: rgba(0, 0, 0, 0.65);
 }
-.kuma-menu-item > a:hover {
+.kuma-menu-item > a:hover,
+.kuma-menu-item > span > a:hover {
   color: #0079F2;
 }
-.kuma-menu-item > a:focus {
+.kuma-menu-item > a:focus,
+.kuma-menu-item > span > a:focus {
   text-decoration: none;
 }
-.kuma-menu-item > a:before {
+.kuma-menu-item > a:before,
+.kuma-menu-item > span > a:before {
   position: absolute;
   background-color: transparent;
   width: 100%;
@@ -11432,6 +11453,14 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   bottom: 0;
   right: 0;
   content: '';
+}
+.kuma-menu-clamp-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
 }
 .kuma-menu-item-divider {
   height: 1px;
@@ -11459,7 +11488,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   color: #0079F2;
 }
 .kuma-menu-item-selected > a,
-.kuma-menu-item-selected > a:hover {
+.kuma-menu-item-selected > a:hover,
+.kuma-menu-item-selected > span > a,
+.kuma-menu-item-selected > span > a:hover {
   color: #0079F2;
 }
 .kuma-menu-inline,
@@ -11574,7 +11605,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 }
 .kuma-menu-vertical .kuma-menu-submenu-selected > a,
 .kuma-menu-vertical-left .kuma-menu-submenu-selected > a,
-.kuma-menu-vertical-right .kuma-menu-submenu-selected > a {
+.kuma-menu-vertical-right .kuma-menu-submenu-selected > a,
+.kuma-menu-vertical .kuma-menu-submenu-selected > span > a,
+.kuma-menu-vertical-left .kuma-menu-submenu-selected > span > a,
+.kuma-menu-vertical-right .kuma-menu-submenu-selected > span > a {
   color: #0079F2;
 }
 .kuma-menu-horizontal {
@@ -11601,12 +11635,16 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: 2px solid #0079F2;
 }
 .kuma-menu-horizontal > .kuma-menu-item > a,
-.kuma-menu-horizontal > .kuma-menu-submenu > a {
+.kuma-menu-horizontal > .kuma-menu-submenu > a,
+.kuma-menu-horizontal > .kuma-menu-item > span > a,
+.kuma-menu-horizontal > .kuma-menu-submenu > span > a {
   display: block;
   color: rgba(0, 0, 0, 0.65);
 }
 .kuma-menu-horizontal > .kuma-menu-item > a:hover,
-.kuma-menu-horizontal > .kuma-menu-submenu > a:hover {
+.kuma-menu-horizontal > .kuma-menu-submenu > a:hover,
+.kuma-menu-horizontal > .kuma-menu-item > span > a:hover,
+.kuma-menu-horizontal > .kuma-menu-submenu > span > a:hover {
   color: #0079F2;
 }
 .kuma-menu-horizontal:after {
@@ -11620,6 +11658,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-vertical-right .kuma-menu-item,
 .kuma-menu-inline .kuma-menu-item {
   position: relative;
+  padding: 0 16px;
 }
 .kuma-menu-vertical .kuma-menu-item,
 .kuma-menu-vertical-left .kuma-menu-item,
@@ -11629,7 +11668,6 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-vertical-left .kuma-menu-submenu-title,
 .kuma-menu-vertical-right .kuma-menu-submenu-title,
 .kuma-menu-inline .kuma-menu-submenu-title {
-  padding: 0 16px;
   font-size: 14px;
   line-height: 40px;
   height: 40px;
@@ -11637,6 +11675,12 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   margin-bottom: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.kuma-menu-vertical .kuma-menu-submenu-title,
+.kuma-menu-vertical-left .kuma-menu-submenu-title,
+.kuma-menu-vertical-right .kuma-menu-submenu-title,
+.kuma-menu-inline .kuma-menu-submenu-title {
+  padding: 0 12px 0 16px;
 }
 .kuma-menu-vertical .kuma-menu-submenu,
 .kuma-menu-vertical-left .kuma-menu-submenu,
@@ -11660,6 +11704,24 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
   line-height: 40px;
   height: 40px;
+}
+.kuma-menu-vertical .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.kuma-menu-vertical-left .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.kuma-menu-vertical-right .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.kuma-menu-inline .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.kuma-menu-vertical > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.kuma-menu-vertical-left > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.kuma-menu-vertical-right > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.kuma-menu-inline > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.kuma-menu-vertical .kuma-menu-item-clamp,
+.kuma-menu-vertical-left .kuma-menu-item-clamp,
+.kuma-menu-vertical-right .kuma-menu-item-clamp,
+.kuma-menu-inline .kuma-menu-item-clamp,
+.kuma-menu-vertical > .kuma-menu-item-clamp,
+.kuma-menu-vertical-left > .kuma-menu-item-clamp,
+.kuma-menu-vertical-right > .kuma-menu-item-clamp,
+.kuma-menu-inline > .kuma-menu-item-clamp {
+  height: auto;
 }
 .kuma-menu-inline {
   width: 100%;
@@ -11713,9 +11775,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   margin: 0;
   padding: 0;
 }
-.kuma-menu-item-group-list .kuma-menu-item,
-.kuma-menu-item-group-list .kuma-menu-submenu-title {
+.kuma-menu-item-group-list .kuma-menu-item {
   padding: 0 16px 0 24px;
+}
+.kuma-menu-item-group-list .kuma-menu-submenu-title {
+  padding: 0 12px 0 24px;
 }
 .kuma-menu-root.kuma-menu-vertical,
 .kuma-menu-root.kuma-menu-vertical-left,
@@ -11738,6 +11802,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   list-style-type: disc;
   list-style-position: inside;
 }
+.kuma-menu-sub.kuma-menu-inline > .kuma-menu-item-clamp,
+.kuma-menu-sub.kuma-menu-inline > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title {
+  height: auto;
+}
 .kuma-menu-sub.kuma-menu-inline .kuma-menu-item-group-title {
   padding-left: 32px;
 }
@@ -11752,7 +11820,9 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   border-color: transparent !important;
 }
 .kuma-menu-item-disabled > a,
-.kuma-menu-submenu-disabled > a {
+.kuma-menu-submenu-disabled > a,
+.kuma-menu-item-disabled > span > a,
+.kuma-menu-submenu-disabled > span > a {
   color: rgba(0, 0, 0, 0.25) !important;
   pointer-events: none;
 }

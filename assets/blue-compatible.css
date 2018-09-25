@@ -11637,6 +11637,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 1.5;
   padding: 8px 24px;
   transition: all .3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .uxcore .kuma-menu-submenu,
 .uxcore .kuma-menu-submenu-inline {
@@ -11650,17 +11653,35 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   cursor: initial;
   transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
-.uxcore .kuma-menu-item > a {
+.uxcore .kuma-menu-submenu-title-text {
+  display: block;
+  margin-right: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.uxcore .kuma-menu-submenu-title-text .kuma-icon {
+  float: left;
+}
+.uxcore .kuma-menu-submenu-title-text .kuma-icon + span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.uxcore .kuma-menu-item > a,
+.uxcore .kuma-menu-item > span > a {
   display: block;
   color: rgba(0, 0, 0, 0.65);
 }
-.uxcore .kuma-menu-item > a:hover {
+.uxcore .kuma-menu-item > a:hover,
+.uxcore .kuma-menu-item > span > a:hover {
   color: #0079F2;
 }
-.uxcore .kuma-menu-item > a:focus {
+.uxcore .kuma-menu-item > a:focus,
+.uxcore .kuma-menu-item > span > a:focus {
   text-decoration: none;
 }
-.uxcore .kuma-menu-item > a:before {
+.uxcore .kuma-menu-item > a:before,
+.uxcore .kuma-menu-item > span > a:before {
   position: absolute;
   background-color: transparent;
   width: 100%;
@@ -11670,6 +11691,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   bottom: 0;
   right: 0;
   content: '';
+}
+.uxcore .kuma-menu-clamp-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
 }
 .uxcore .kuma-menu-item-divider {
   height: 1px;
@@ -11697,7 +11726,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: #0079F2;
 }
 .uxcore .kuma-menu-item-selected > a,
-.uxcore .kuma-menu-item-selected > a:hover {
+.uxcore .kuma-menu-item-selected > a:hover,
+.uxcore .kuma-menu-item-selected > span > a,
+.uxcore .kuma-menu-item-selected > span > a:hover {
   color: #0079F2;
 }
 .uxcore .kuma-menu-inline,
@@ -11812,7 +11843,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-menu-vertical .uxcore .kuma-menu-submenu-selected > a,
 .uxcore .kuma-menu-vertical-left .uxcore .kuma-menu-submenu-selected > a,
-.uxcore .kuma-menu-vertical-right .uxcore .kuma-menu-submenu-selected > a {
+.uxcore .kuma-menu-vertical-right .uxcore .kuma-menu-submenu-selected > a,
+.uxcore .kuma-menu-vertical .uxcore .kuma-menu-submenu-selected > span > a,
+.uxcore .kuma-menu-vertical-left .uxcore .kuma-menu-submenu-selected > span > a,
+.uxcore .kuma-menu-vertical-right .uxcore .kuma-menu-submenu-selected > span > a {
   color: #0079F2;
 }
 .uxcore .kuma-menu-horizontal {
@@ -11839,12 +11873,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom: 2px solid #0079F2;
 }
 .uxcore .kuma-menu-horizontal > .kuma-menu-item > a,
-.uxcore .kuma-menu-horizontal > .kuma-menu-submenu > a {
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu > a,
+.uxcore .kuma-menu-horizontal > .kuma-menu-item > span > a,
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu > span > a {
   display: block;
   color: rgba(0, 0, 0, 0.65);
 }
 .uxcore .kuma-menu-horizontal > .kuma-menu-item > a:hover,
-.uxcore .kuma-menu-horizontal > .kuma-menu-submenu > a:hover {
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu > a:hover,
+.uxcore .kuma-menu-horizontal > .kuma-menu-item > span > a:hover,
+.uxcore .kuma-menu-horizontal > .kuma-menu-submenu > span > a:hover {
   color: #0079F2;
 }
 .uxcore .kuma-menu-horizontal:after {
@@ -11858,6 +11896,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-vertical-right .kuma-menu-item,
 .uxcore .kuma-menu-inline .kuma-menu-item {
   position: relative;
+  padding: 0 16px;
 }
 .uxcore .kuma-menu-vertical .kuma-menu-item,
 .uxcore .kuma-menu-vertical-left .kuma-menu-item,
@@ -11867,7 +11906,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-vertical-left .kuma-menu-submenu-title,
 .uxcore .kuma-menu-vertical-right .kuma-menu-submenu-title,
 .uxcore .kuma-menu-inline .kuma-menu-submenu-title {
-  padding: 0 16px;
   font-size: 14px;
   line-height: 40px;
   height: 40px;
@@ -11875,6 +11913,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-bottom: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.uxcore .kuma-menu-vertical .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical-left .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical-right .kuma-menu-submenu-title,
+.uxcore .kuma-menu-inline .kuma-menu-submenu-title {
+  padding: 0 12px 0 16px;
 }
 .uxcore .kuma-menu-vertical .kuma-menu-submenu,
 .uxcore .kuma-menu-vertical-left .kuma-menu-submenu,
@@ -11898,6 +11942,24 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
   line-height: 40px;
   height: 40px;
+}
+.uxcore .kuma-menu-vertical .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical-left .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical-right .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.uxcore .kuma-menu-inline .kuma-menu-submenu-clamp .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical-left > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical-right > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.uxcore .kuma-menu-inline > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title,
+.uxcore .kuma-menu-vertical .kuma-menu-item-clamp,
+.uxcore .kuma-menu-vertical-left .kuma-menu-item-clamp,
+.uxcore .kuma-menu-vertical-right .kuma-menu-item-clamp,
+.uxcore .kuma-menu-inline .kuma-menu-item-clamp,
+.uxcore .kuma-menu-vertical > .kuma-menu-item-clamp,
+.uxcore .kuma-menu-vertical-left > .kuma-menu-item-clamp,
+.uxcore .kuma-menu-vertical-right > .kuma-menu-item-clamp,
+.uxcore .kuma-menu-inline > .kuma-menu-item-clamp {
+  height: auto;
 }
 .uxcore .kuma-menu-inline {
   width: 100%;
@@ -11951,9 +12013,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin: 0;
   padding: 0;
 }
-.uxcore .kuma-menu-item-group-list .kuma-menu-item,
-.uxcore .kuma-menu-item-group-list .kuma-menu-submenu-title {
+.uxcore .kuma-menu-item-group-list .kuma-menu-item {
   padding: 0 16px 0 24px;
+}
+.uxcore .kuma-menu-item-group-list .kuma-menu-submenu-title {
+  padding: 0 12px 0 24px;
 }
 .uxcore .kuma-menu-root.uxcore .kuma-menu-vertical,
 .uxcore .kuma-menu-root.uxcore .kuma-menu-vertical-left,
@@ -11976,6 +12040,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   list-style-type: disc;
   list-style-position: inside;
 }
+.uxcore .kuma-menu-sub.uxcore .kuma-menu-inline > .kuma-menu-item-clamp,
+.uxcore .kuma-menu-sub.uxcore .kuma-menu-inline > .kuma-menu-submenu-clamp > .kuma-menu-submenu-title {
+  height: auto;
+}
 .uxcore .kuma-menu-sub.uxcore .kuma-menu-inline .kuma-menu-item-group-title {
   padding-left: 32px;
 }
@@ -11990,7 +12058,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-color: transparent !important;
 }
 .uxcore .kuma-menu-item-disabled > a,
-.uxcore .kuma-menu-submenu-disabled > a {
+.uxcore .kuma-menu-submenu-disabled > a,
+.uxcore .kuma-menu-item-disabled > span > a,
+.uxcore .kuma-menu-submenu-disabled > span > a {
   color: rgba(0, 0, 0, 0.25) !important;
   pointer-events: none;
 }
