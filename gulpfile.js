@@ -210,25 +210,10 @@ gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
       spawn.sync('git', ['add', '.'], { stdio: 'inherit' });
       spawn.sync('git', ['commit', '-m', 'ver. ' + pkg.version], { stdio: 'inherit' });
       spawn.sync('git', ['push', 'origin', answers.branch], { stdio: 'inherit' });
-      const isBeta = /^\d+.\d+.\d+$/.test(pkg.version);
-      const npmArgs = isBeta ? ['publish'] : ['publish', '--tag', 'beta'];
+      const isBeta = !/^\d+.\d+.\d+$/.test(pkg.version);
+      const npmArgs = isBeta ? ['publish', '--tag', 'beta'] : ['publish'];
       console.log(colors.info(`#### Npm${isBeta ? '(Beta Mode)' : ''} Info ####`));
       spawn.sync(answers.npm, npmArgs, { stdio: 'inherit' });
-    }).catch(function (err) { console.log(err); });
-  }).catch(function (err) { console.log(err); });
-});
-
-gulp.task('pub-beta', ['js_uglify', 'theme_transport'], function () {
-  getQuestions().then(function (questions) {
-    inquirer.prompt(questions).then(function (answers) {
-      pkg.version = answers.version;
-      file.writeFileFromString(JSON.stringify(pkg, null, ' '), 'package.json');
-      console.log(colors.info('#### Git Info ####'));
-      spawn.sync('git', ['add', '.'], { stdio: 'inherit' });
-      spawn.sync('git', ['commit', '-m', 'ver. ' + pkg.version], { stdio: 'inherit' });
-      spawn.sync('git', ['push', 'origin', answers.branch], { stdio: 'inherit' });
-      console.log(colors.info('#### Npm Info ####'));
-      spawn.sync(answers.npm, ['publish', '--tag', 'beta'], { stdio: 'inherit' });
     }).catch(function (err) { console.log(err); });
   }).catch(function (err) { console.log(err); });
 });

@@ -6,7 +6,6 @@
  "scripts": {
   "test": "gulp test",
   "pub": "gulp pub",
-  "pub-beta": "gulp pub-beta",
   "build": "gulp",
   "makefiles": "gulp makefiles"
  },
