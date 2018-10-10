@@ -6,6 +6,8 @@ var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
 var cssimport = require('gulp-cssimport');
 var concat = require('gulp-concat');
+var ejs = require('gulp-ejs');
+var babel = require('gulp-babel');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
 var LessPluginFunctions = require('less-plugin-functions');
@@ -20,6 +22,9 @@ var rimraf = require('rimraf');
 var childProcess = require('child_process');
 var path = require('path');
 var semver = require('semver');
+var to = require('to-case');
+// var fs = require('fs-extra');
+
 
 var autoprefix = new LessPluginAutoPrefix({
   browsers: ['last 2 versions', 'not ie < 8'],
@@ -231,6 +236,63 @@ gulp.task('test', function (done) {
   var karmaConfig = path.join(__dirname, './karma.phantomjs.conf.js');
   var args = [karmaBin, 'start', karmaConfig];
   runCmd('node', args, done);
+});
+
+gulp.task('makefiles', function () {
+  rimraf('./ib', {}, () => {
+    const components = Object.keys(pkg.dependencies).map((comp) => {
+      const compname = comp.split('-').slice(1).join('-');
+      return {
+        compname,
+        CompName: to.pascal(compname),
+      };
+    });
+    const babelConfig = {
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              browsers: 'ie 10',
+            },
+          },
+        ],
+      ],
+      plugins: [
+        '@babel/plugin-transform-runtime',
+        '@babel/plugin-proposal-export-default-from',
+        'babel-plugin-add-module-exports',
+      ],
+    };
+    components.concat([
+      {
+        compname: 'select',
+        CompName: 'Select',
+      },
+    ]).forEach((comp) => {
+      gulp.src('./templates/index.js')
+        .pipe(ejs({
+          compname: comp.compname === 'select' ? 'select2' : comp.compname,
+        }))
+        .pipe(babel(babelConfig))
+        .on('error', console.log)
+        .pipe(gulp.dest(`./lib/${comp.CompName}`));
+    });
+    components.concat([
+      {
+        compname: 'select',
+        CompName: 'Select',
+      },
+    ]).forEach((comp) => {
+      gulp.src('./templates/style.js')
+        .pipe(ejs({
+          compname: comp.compname === 'select' ? 'select2' : comp.compname,
+        }))
+        .pipe(babel(babelConfig))
+        .on('error', console.log)
+        .pipe(gulp.dest(`./lib/${comp.CompName}`));
+    });
+  });
 });
 
 gulp.task('default', ['js_uglify', 'theme_transport']);

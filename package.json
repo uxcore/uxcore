@@ -1,13 +1,14 @@
 {
  "name": "uxcore",
- "version": "0.21.30",
+ "version": "0.21.31-beta.0",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
   "test": "gulp test",
   "pub": "gulp pub",
   "pub-beta": "gulp pub-beta",
-  "build": "gulp"
+  "build": "gulp",
+  "makefiles": "gulp makefiles"
  },
  "repository": {
   "type": "git",
@@ -30,6 +31,12 @@
  },
  "homepage": "https://github.com/uxcore/uxcore#readme",
  "devDependencies": {
+  "@babel/core": "^7.1.0",
+  "@babel/plugin-proposal-export-default-from": "^7.0.0",
+  "@babel/plugin-transform-runtime": "^7.1.0",
+  "@babel/preset-env": "^7.1.0",
+  "@babel/preset-stage-1": "^7.0.0",
+  "babel-plugin-add-module-exports": "^1.0.0",
   "colors": "~1.1.2",
   "console-polyfill": "^0.2.2",
   "cross-spawn": "~4.0.0",
@@ -41,13 +48,16 @@
   "eslint-plugin-jsx-a11y": "^1.5.3",
   "eslint-plugin-react": "^5.2.2",
   "expect.js": "^0.3.1",
+  "fs-extra": "^7.0.0",
   "git-rev": "~0.2.1",
   "gulp": "^3.9.1",
+  "gulp-babel": "^8.0.0",
   "gulp-clean": "~0.3.2",
   "gulp-clean-css": "~2.0.9",
   "gulp-cleancss": "~0.2.2",
   "gulp-concat": "~2.6.0",
   "gulp-cssimport": "^5.0.0",
+  "gulp-ejs": "^3.2.0",
   "gulp-less": "~3.1.0",
   "gulp-rename": "~1.2.2",
   "gulp-uglify": "~1.5.3",
@@ -68,12 +78,14 @@
   "promise": "~7.1.1",
   "react": "^0.14.8",
   "react-dom": "^0.14.8",
-  "rimraf": "~2.5.2",
+  "rimraf": "^2.5.4",
   "semver": "^5.4.1",
+  "to-case": "^2.0.0",
   "webpack": "~1.13.1",
   "webpack-bundle-analyzer": "^2.8.3"
  },
  "dependencies": {
+  "@babel/runtime": "^7.0.0",
   "uxcore-album": "0.3.20",
   "uxcore-alert": "0.3.6",
   "uxcore-animate": "0.2.3",
