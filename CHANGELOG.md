@@ -1,5 +1,12 @@
 
 
+## 0.21.30
+
+- [Form]: `CHANGED` style improvement for more clear view mode
+- [Form]: `CHANGED` support js style export
+- [Form]: `CHANGED` change prop `jsxprefixCls` to `prefixCls`
+
+
 ## 0.21.23
 
 - [FormField]: `CHNAGED` fix eslint errors
