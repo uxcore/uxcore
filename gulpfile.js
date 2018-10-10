@@ -226,7 +226,7 @@ gulp.task('test', function (done) {
 });
 
 gulp.task('makefiles', function () {
-  rimraf('./ib', {}, () => {
+  rimraf('./lib', {}, () => {
     const components = Object.keys(pkg.dependencies).map((comp) => {
       const compname = comp.split('-').slice(1).join('-');
       return {
