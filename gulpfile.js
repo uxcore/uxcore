@@ -7,6 +7,7 @@ var cleancss = require('gulp-cleancss');
 var cssimport = require('gulp-cssimport');
 var concat = require('gulp-concat');
 var ejs = require('gulp-ejs');
+var babel = require('gulp-babel');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
 var LessPluginFunctions = require('less-plugin-functions');
@@ -223,7 +224,7 @@ gulp.task('test', function (done) {
 });
 
 gulp.task('makefiles', function () {
-  rimraf('./lib', {}, () => {
+  rimraf('./ib', {}, () => {
     const components = Object.keys(pkg.dependencies).map((comp) => {
       const compname = comp.split('-').slice(1).join('-');
       return {
@@ -231,12 +232,50 @@ gulp.task('makefiles', function () {
         CompName: to.pascal(compname),
       };
     });
-    components.forEach((comp) => {
+    const babelConfig = {
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              browsers: 'ie 10',
+            },
+          },
+        ],
+      ],
+      plugins: [
+        '@babel/plugin-transform-runtime',
+        '@babel/plugin-proposal-export-default-from',
+        'babel-plugin-add-module-exports',
+      ],
+    };
+    components.concat([
+      {
+        compname: 'select',
+        CompName: 'Select',
+      },
+    ]).forEach((comp) => {
       gulp.src('./templates/index.js')
         .pipe(ejs({
-          compname: comp.compname,
+          compname: comp.compname === 'select' ? 'select2' : comp.compname,
         }))
-        .pipe(gulp.dest(`./ib/${comp.CompName}`));
+        .pipe(babel(babelConfig))
+        .on('error', console.log)
+        .pipe(gulp.dest(`./lib/${comp.CompName}`));
+    });
+    components.concat([
+      {
+        compname: 'select',
+        CompName: 'Select',
+      },
+    ]).forEach((comp) => {
+      gulp.src('./templates/style.js')
+        .pipe(ejs({
+          compname: comp.compname === 'select' ? 'select2' : comp.compname,
+        }))
+        .pipe(babel(babelConfig))
+        .on('error', console.log)
+        .pipe(gulp.dest(`./lib/${comp.CompName}`));
     });
   });
 });
