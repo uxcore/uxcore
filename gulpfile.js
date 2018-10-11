@@ -236,6 +236,13 @@ gulp.task('makefiles', function () {
           CompName: to.pascal(compname),
         };
       });
+
+    gulp.src('./templates/component.less')
+      .pipe(ejs({
+        component_names: components.map(comp => comp.compname),
+        ComponentNames: components.map(comp => comp.CompName),
+      }))
+      .pipe(gulp.dest('./style'));
     const babelConfig = {
       presets: [
         [
