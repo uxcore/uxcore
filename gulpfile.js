@@ -227,13 +227,15 @@ gulp.task('test', function (done) {
 
 gulp.task('makefiles', function () {
   rimraf('./lib', {}, () => {
-    const components = Object.keys(pkg.dependencies).map((comp) => {
-      const compname = comp.split('-').slice(1).join('-');
-      return {
-        compname,
-        CompName: to.pascal(compname),
-      };
-    });
+    const components = Object.keys(pkg.dependencies)
+      .filter((comp) => /^uxcore-/.test(comp))
+      .map((comp) => {
+        const compname = comp.split('-').slice(1).join('-');
+        return {
+          compname,
+          CompName: to.pascal(compname),
+        };
+      });
     const babelConfig = {
       presets: [
         [
