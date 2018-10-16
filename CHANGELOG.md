@@ -1,5 +1,9 @@
 
 
+## 0.21.31
+
+- [General] generate `component.less` from package.json
+
 ## 0.21.30
 
 - [Form]: `CHANGED` style improvement for more clear view mode

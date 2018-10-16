@@ -237,10 +237,12 @@ gulp.task('makefiles', function () {
         };
       });
 
+    const lessCompFilter = (comp) =>
+      ['const', 'formatter', 'validator'].indexOf(comp.compname) === -1;
     gulp.src('./templates/component.less')
       .pipe(ejs({
-        component_names: components.map(comp => comp.compname),
-        ComponentNames: components.map(comp => comp.CompName),
+        component_names: components.filter(lessCompFilter).map(comp => comp.compname),
+        ComponentNames: components.filter(lessCompFilter).map(comp => comp.CompName),
       }))
       .pipe(gulp.dest('./style'));
     const babelConfig = {
