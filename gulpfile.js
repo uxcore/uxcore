@@ -274,7 +274,8 @@ gulp.task('makefiles', function () {
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
-        .pipe(gulp.dest(`./lib/${comp.CompName}`));
+        .pipe(rename(`${comp.CompName}.js`))
+        .pipe(gulp.dest('./lib'));
     });
     components.concat([
       {

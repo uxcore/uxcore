@@ -5167,6 +5167,148 @@ a .uxcore-count:active {
 .uxcore .kuma-calendar-picker-hidden {
   display: none;
 }
+.uxcore .kuma-calendar-full {
+  position: relative;
+  outline: none;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+  font-size: 12px;
+  text-align: left;
+  background-color: #fff;
+}
+.uxcore .kuma-calendar-full * {
+  box-sizing: border-box;
+}
+.uxcore .kuma-calendar-full .cell-container {
+  position: absolute;
+}
+.uxcore .kuma-calendar-full .events-wrapper {
+  position: absolute;
+  top: 32px;
+  left: 61px;
+  width: calc(100% - 61px);
+  height: calc(100% - 32px);
+}
+.uxcore .kuma-calendar-full .events-month-wrapper {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 32px);
+}
+.uxcore .kuma-calendar-full .events-month-wrapper .cell-container {
+  position: absolute;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+.uxcore .kuma-calendar-full .events-month-wrapper .cell-container .kuma-calendar-content-box {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  top: 0 !important;
+  width: 86px;
+  height: 18px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 8px 0px 10px;
+}
+.uxcore .kuma-calendar-full .events-month-wrapper .cell-container .kuma-calendar-content-box::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 5px;
+  left: 0px;
+  border-radius: 6px;
+  background: #0079F2;
+}
+.uxcore .kuma-calendar-full .events-month-wrapper .colspan-cell {
+  z-index: 99;
+}
+.uxcore .kuma-calendar-full .events-month-wrapper .colspan-cell .kuma-calendar-content-box {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  padding: 0;
+  border: 1px solid #0079F2;
+  background: #fff;
+}
+.uxcore .kuma-calendar-full .events-month-wrapper .colspan-cell .kuma-calendar-content-box::before {
+  display: none;
+}
+.uxcore .kuma-calendar-full-calendar-body {
+  position: relative;
+}
+.uxcore .kuma-calendar-full .kuma-calendar-content-box {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #0079F2;
+  border-radius: 5px;
+}
+.uxcore .kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper {
+  background: rgba(0, 121, 242, 0.1);
+  width: 100%;
+  height: 100%;
+}
+.uxcore .kuma-calendar-full .kuma-calendar-content-box div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.uxcore .kuma-calendar-full-date-select {
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+.uxcore .kuma-calendar-full-show-input[readonly] {
+  position: absolute;
+  background: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+.uxcore .kuma-calendar-full .kuma-calendar-picker-input {
+  opacity: 0;
+}
+.uxcore .kuma-calendar-full-prev-btn,
+.uxcore .kuma-calendar-full-next-btn {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  color: rgba(31, 56, 88, 0.4);
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  top: 5px;
+  z-index: 99;
+}
+.uxcore .kuma-calendar-full-prev-btn:after,
+.uxcore .kuma-calendar-full-next-btn:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  font-family: "uxcore";
+  font-size: 16px;
+  text-indent: 0;
+}
+.uxcore .kuma-calendar-full-prev-btn {
+  left: 0;
+}
+.uxcore .kuma-calendar-full-prev-btn:after {
+  content: "\e65c";
+}
+.uxcore .kuma-calendar-full-next-btn {
+  right: 0;
+}
+.uxcore .kuma-calendar-full-next-btn:after {
+  content: "\e65b";
+}
 .uxcore .kuma-calendar-full-header {
   padding: 5px 10px;
   text-align: center;
@@ -5177,24 +5319,28 @@ a .uxcore-count:active {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
 }
+.uxcore .kuma-calendar-full-header .kuma-button {
+  float: left;
+}
 .uxcore .kuma-calendar-full-header-month-select,
 .uxcore .kuma-calendar-full-header-year-select {
   float: right;
   margin-right: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  color: #666;
+  line-height: 28px;
+  width: 70px;
 }
 .uxcore .kuma-calendar-full-header-switcher {
   float: right;
   display: inline-block;
 }
 .uxcore .kuma-calendar-full-header-switcher-normal:hover {
-  border-color: #23c0fa;
-  box-shadow: 0 0 2px rgba(45, 183, 245, 0.8);
+  background-color: rgba(0, 121, 242, 0.1);
   cursor: pointer;
-}
-.uxcore .kuma-calendar-full-header-switcher-focus {
-  border-color: #3fc7fa;
-  background-color: #3fc7fa;
-  color: #fff;
 }
 .uxcore .kuma-calendar-full-header-switcher > span {
   float: left;
@@ -5214,40 +5360,103 @@ a .uxcore-count:active {
   border-bottom-right-radius: 4px;
   border-left: none;
 }
-.uxcore .kuma-calendar-fullscreen {
-  width: auto;
+.uxcore .kuma-calendar-full-header .kuma-calendar-full-header-switcher-focus {
+  position: relative;
+  background-color: rgba(0, 121, 242, 0.1);
+  color: #0079F2;
+  border: 1px solid #0079F2;
 }
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-full-header {
-  border-bottom: none;
+.uxcore .kuma-calendar-full-header .kuma-calendar-full-header-switcher-focus.kuma-calendar-full-header-switcher-time {
+  right: -1px;
+  border-right: 1px solid #0079F2;
 }
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-column-header {
-  text-align: right;
-  padding-right: 12px;
+.uxcore .kuma-calendar-full-header .kuma-calendar-full-header-switcher-focus.kuma-calendar-full-header-switcher-date {
+  border-left: 1px solid #0079F2;
+  left: -1px;
 }
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-cell {
-  padding: 0;
+.uxcore .kuma-calendar-full table {
+  border-collapse: collapse;
+  max-width: 100%;
+  width: 100%;
+  background-color: transparent;
+  table-layout: fixed;
 }
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-cell .kuma-calendar-date,
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-month-panel-cell .kuma-calendar-month-panel-month {
+.uxcore .kuma-calendar-full-cell {
+  padding: 8px;
+  height: 97px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0;
+  vertical-align: top;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full-cell:hover {
+  background-color: rgba(0, 121, 242, 0.1);
+  color: #0079F2;
+}
+.uxcore .kuma-calendar-full-cell.kuma-calendar-full-last-month-cell,
+.uxcore .kuma-calendar-full-cell.kuma-calendar-full-next-month-btn-day {
+  color: rgba(31, 56, 88, 0.3);
+}
+.uxcore .kuma-calendar-full-cell.kuma-calendar-full-selected-day {
+  background-color: rgba(0, 121, 242, 0.1);
+  color: #0079F2;
+}
+.uxcore .kuma-calendar-full-cell.kuma-calendar-full-disabled-cell {
+  cursor: not-allowed;
+  color: rgba(31, 56, 88, 0.3);
+  background-color: rgba(31, 56, 88, 0.04);
+}
+.uxcore .kuma-calendar-full-cell.kuma-calendar-full-disabled-cell:hover {
+  background-color: rgba(31, 56, 88, 0.04);
+  color: rgba(31, 56, 88, 0.3);
+}
+.uxcore .kuma-calendar-full-today .kuma-calendar-full-date {
+  display: inline-block;
+  padding: 3px 4px;
+  background: #0079F2;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+.uxcore .kuma-calendar-full-month-panel-table {
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  border-collapse: separate;
+}
+.uxcore .kuma-calendar-full-month-panel-cell {
+  text-align: center;
+}
+.uxcore .kuma-calendar-full-month-panel-cell-month-panel-month {
   display: block;
-  height: 116px;
-  width: auto;
-  border-radius: 0;
-  margin: 0 4px;
-  border: none;
-  border-top: 2px solid #eee;
-  text-align: right;
-  padding-right: 8px;
-}
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-selected-day .kuma-calendar-date,
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-month-panel-selected-cell .kuma-calendar-month-panel-month {
-  background-color: #ebfaff;
+  width: 46px;
+  margin: 0 auto;
   color: #666;
+  border-radius: 4px 4px;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  line-height: 36px;
+  text-align: center;
 }
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-today .kuma-calendar-date,
-.uxcore .kuma-calendar-fullscreen .kuma-calendar-month-panel-selected-cell .kuma-calendar-month-panel-month {
-  border-top-color: #3FC7FA;
-  color: #3FC7FA;
+.uxcore .kuma-calendar-full-column-header {
+  height: 32px;
+  padding: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 18px;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full .kuma-input {
+  cursor: pointer;
+  border: none !important;
 }
 .uxcore .kuma-calendar-range {
   overflow: hidden;
@@ -5916,6 +6125,71 @@ a .uxcore-count:active {
   background: #3fc7fa;
   color: #fff;
 }
+.uxcore .kuma-calendar-full-time-panel-column-header {
+  height: 32px;
+  padding: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 18px;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full-time-panel-column-header:first-child {
+  width: 61px;
+}
+.uxcore .kuma-calendar-full-time-panel-column-header .header-date {
+  padding-right: 5px;
+}
+.uxcore .kuma-calendar-full-time-panel-column-header.kuma-calendar-full-time-panel-today {
+  color: #0079F2;
+}
+.uxcore .kuma-calendar-full-time-panel-timeline {
+  float: left;
+  margin-top: 34px;
+  width: 60px;
+  vertical-align: bottom;
+  font-size: 12px;
+  border-top: 1px solid #e8ebee;
+  color: rgba(0, 0, 0, 0.6);
+}
+.uxcore .kuma-calendar-full-time-panel-timeline .kuma-calendar-full-time-panel-timeline-cell {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+}
+.uxcore .kuma-calendar-full-time-panel-timeline-now {
+  color: #0079F2;
+}
+.uxcore .kuma-calendar-full-time-panel-tr {
+  height: 48px;
+}
+.uxcore .kuma-calendar-full-time-panel-time-cell {
+  padding: 8px;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full-time-panel-time-cell:hover {
+  background-color: rgba(0, 121, 242, 0.1);
+}
+.uxcore .kuma-calendar-full-time-panel-time-disabled-cell {
+  cursor: not-allowed;
+  color: rgba(31, 56, 88, 0.3);
+  background-color: rgba(31, 56, 88, 0.04);
+}
+.uxcore .kuma-calendar-full-time-panel-time-disabled-cell:hover {
+  background-color: rgba(31, 56, 88, 0.04);
+  color: rgba(31, 56, 88, 0.3);
+}
+.uxcore .kuma-calendar-full-time-panel-time-panel {
+  width: 61px;
+  border-right: 1px solid #e8ebee;
+  vertical-align: bottom;
+  line-height: 0;
+}
+.uxcore .kuma-calendar-full-time-panel-table {
+  border-left: 1px solid #e8ebee;
+  border-bottom: 1px solid #e8ebee;
+}
 .uxcore .kuma-calendar-month-header-wrap {
   width: 300px;
   height: 300px;
@@ -6376,6 +6650,71 @@ a .uxcore-count:active {
 .uxcore .kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade:before {
   content: '\e645';
   font-family: 'kuma' !important;
+}
+.uxcore .kuma-calendar-full-week-panel-column-header {
+  height: 32px;
+  padding: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 18px;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full-week-panel-column-header:first-child {
+  width: 61px;
+}
+.uxcore .kuma-calendar-full-week-panel-column-header .header-date {
+  padding-right: 5px;
+}
+.uxcore .kuma-calendar-full-week-panel-column-header.kuma-calendar-full-week-panel-today {
+  color: #0079F2;
+}
+.uxcore .kuma-calendar-full-week-panel-timeline {
+  float: left;
+  margin-top: 34px;
+  width: 60px;
+  vertical-align: bottom;
+  font-size: 12px;
+  border-top: 1px solid #e8ebee;
+  color: rgba(0, 0, 0, 0.6);
+}
+.uxcore .kuma-calendar-full-week-panel-timeline .kuma-calendar-full-week-panel-timeline-cell {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+}
+.uxcore .kuma-calendar-full-week-panel-timeline-now {
+  color: #0079F2;
+}
+.uxcore .kuma-calendar-full-week-panel-date-tr {
+  height: 48px;
+}
+.uxcore .kuma-calendar-full-week-panel-date-cell {
+  padding: 8px;
+  border-bottom: 1px solid #e8ebee;
+  border-right: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full-week-panel-date-cell:hover {
+  background-color: rgba(0, 121, 242, 0.1);
+}
+.uxcore .kuma-calendar-full-week-panel-table {
+  border-left: 1px solid #e8ebee;
+  border-bottom: 1px solid #e8ebee;
+}
+.uxcore .kuma-calendar-full-week-panel-date-disable-date {
+  cursor: not-allowed;
+  color: rgba(31, 56, 88, 0.3);
+  background-color: rgba(31, 56, 88, 0.04);
+}
+.uxcore .kuma-calendar-full-week-panel-date-disable-date:hover {
+  background-color: rgba(31, 56, 88, 0.04);
+  color: rgba(31, 56, 88, 0.3);
+}
+.uxcore .kuma-calendar-full-week-panel-time-panel {
+  width: 60px;
+  border-right: 1px solid #e8ebee;
+  vertical-align: bottom;
+  line-height: 0;
 }
 .uxcore .kuma-time-picker {
   display: inline-block;
