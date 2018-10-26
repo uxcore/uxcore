@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.21.34",
+ "version": "0.21.35",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {

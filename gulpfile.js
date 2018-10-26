@@ -267,10 +267,6 @@ gulp.task('makefiles', function () {
         compname: 'select2',
         CompName: 'Select',
       },
-      {
-        compname: 'radiogroup',
-        CompName: 'RadioGroup',
-      },
     ]).forEach((comp) => {
       gulp.src('./templates/index.js')
         .pipe(ejs({
@@ -278,17 +274,13 @@ gulp.task('makefiles', function () {
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
-        .pipe(rename(`${comp.CompName}.js`))
+        .pipe(rename(`${comp.CompName === 'Radiogroup' ? 'RadioGroup' : comp.CompName}.js`))
         .pipe(gulp.dest('./lib'));
     });
     components.concat([
       {
         compname: 'select2',
         CompName: 'Select',
-      },
-      {
-        compname: 'radiogroup',
-        CompName: 'RadioGroup',
       },
     ]).forEach((comp) => {
       gulp.src('./templates/style.js')
@@ -297,7 +289,7 @@ gulp.task('makefiles', function () {
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
-        .pipe(gulp.dest(`./lib/${comp.CompName}`));
+        .pipe(gulp.dest(`./lib/${comp.CompName === 'Radiogroup' ? 'RadioGroup' : comp.CompName}`));
     });
   });
 });
