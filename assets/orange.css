@@ -6680,10 +6680,11 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 16px;
   color: rgba(31, 56, 88, 0.4);
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: -1px;
   padding: 0px 4px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  line-height: 1;
 }
 .uxcore-card-collapse-icon__collapsed {
   transform: rotate(180deg);
@@ -6697,7 +6698,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore-card-content {
   padding: 24px;
   overflow: hidden;
-  transition: height 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .uxcore-card-content-none-padding {
   padding: 0;
