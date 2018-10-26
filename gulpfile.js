@@ -264,13 +264,17 @@ gulp.task('makefiles', function () {
     };
     components.concat([
       {
-        compname: 'select',
+        compname: 'select2',
         CompName: 'Select',
+      },
+      {
+        compname: 'radiogroup',
+        CompName: 'RadioGroup',
       },
     ]).forEach((comp) => {
       gulp.src('./templates/index.js')
         .pipe(ejs({
-          compname: comp.compname === 'select' ? 'select2' : comp.compname,
+          compname: comp.compname,
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
@@ -279,13 +283,17 @@ gulp.task('makefiles', function () {
     });
     components.concat([
       {
-        compname: 'select',
+        compname: 'select2',
         CompName: 'Select',
+      },
+      {
+        compname: 'radiogroup',
+        CompName: 'RadioGroup',
       },
     ]).forEach((comp) => {
       gulp.src('./templates/style.js')
         .pipe(ejs({
-          compname: comp.compname === 'select' ? 'select2' : comp.compname,
+          compname: comp.compname,
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
