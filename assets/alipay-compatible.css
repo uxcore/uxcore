@@ -5242,6 +5242,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-full-calendar-body {
   position: relative;
+  border-top: 1px solid #e8ebee;
 }
 .uxcore .kuma-calendar-full .kuma-calendar-content-box {
   position: absolute;
@@ -5316,7 +5317,6 @@ a .uxcore-count:active {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
-  border-bottom: 1px solid #ccc;
   overflow: hidden;
 }
 .uxcore .kuma-calendar-full-header .kuma-button {

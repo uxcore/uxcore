@@ -4923,6 +4923,7 @@ a.kuma-button-group-separated-item-first {
 }
 .kuma-calendar-full-calendar-body {
   position: relative;
+  border-top: 1px solid #e8ebee;
 }
 .kuma-calendar-full .kuma-calendar-content-box {
   position: absolute;
@@ -4997,7 +4998,6 @@ a.kuma-button-group-separated-item-first {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
-  border-bottom: 1px solid #ccc;
   overflow: hidden;
 }
 .kuma-calendar-full-header .kuma-button {
