@@ -35,7 +35,7 @@ var Pickable = require('./lib/Pickable');
 var PickableFormField = require('./lib/PickableFormField');
 var Popover = require('./lib/Popover');
 var Progress = require('./lib/Progress');
-var Radiogroup = require('./lib/Radiogroup');
+var RadioGroup = require('./lib/RadioGroup');
 var Rate = require('./lib/Rate');
 var Select = require('./lib/Select');
 var Select2 = require('./lib/Select2');
@@ -96,7 +96,7 @@ module.exports = {
   PickableFormField: PickableFormField,
   Popover: Popover,
   Progress: Progress,
-  Radiogroup: Radiogroup,
+  RadioGroup: RadioGroup,
   Rate: Rate,
   Select: Select,
   Select2: Select2,
