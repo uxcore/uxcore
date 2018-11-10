@@ -295,8 +295,7 @@ gulp.task('makefiles', function () {
     });
     gulp.src('./templates/main.js')
       .pipe(ejs({
-        ComponentNames: components.filter(lessCompFilter)
-          .map(comp => comp.CompName).concat(['Select']),
+        ComponentNames: components.map(comp => comp.CompName).concat(['Select']),
       }))
       .pipe(babel(babelConfig))
       .on('error', console.log)

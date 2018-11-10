@@ -26,6 +26,8 @@ var CheckboxGroup = require('./lib/CheckboxGroup');
 
 var Collapse = require('./lib/Collapse');
 
+var Const = require('./lib/Const');
+
 var Crumb = require('./lib/Crumb');
 
 var Dialog = require('./lib/Dialog');
@@ -39,6 +41,8 @@ var FloatNav = require('./lib/FloatNav');
 var Form = require('./lib/Form');
 
 var FormField = require('./lib/FormField');
+
+var Formatter = require('./lib/Formatter');
 
 var Grid = require('./lib/Grid');
 
@@ -110,6 +114,8 @@ var Uploader = require('./lib/Uploader');
 
 var UserGuide = require('./lib/UserGuide');
 
+var Validator = require('./lib/Validator');
+
 var Select = require('./lib/Select');
 
 exports.Album = Album;
@@ -125,6 +131,7 @@ exports.CascadeMultiSelect = CascadeMultiSelect;
 exports.CascadeSelect = CascadeSelect;
 exports.CheckboxGroup = CheckboxGroup;
 exports.Collapse = Collapse;
+exports.Const = Const;
 exports.Crumb = Crumb;
 exports.Dialog = Dialog;
 exports.Dropdown = Dropdown;
@@ -132,6 +139,7 @@ exports.EmptyData = EmptyData;
 exports.FloatNav = FloatNav;
 exports.Form = Form;
 exports.FormField = FormField;
+exports.Formatter = Formatter;
 exports.Grid = Grid;
 exports.Icon = Icon;
 exports.Layout = Layout;
@@ -167,6 +175,7 @@ exports.Tree = Tree;
 exports.TreeSelect = TreeSelect;
 exports.Uploader = Uploader;
 exports.UserGuide = UserGuide;
+exports.Validator = Validator;
 exports.Select = Select;
 module.exports = {
   Album: Album,
@@ -182,6 +191,7 @@ module.exports = {
   CascadeSelect: CascadeSelect,
   CheckboxGroup: CheckboxGroup,
   Collapse: Collapse,
+  Const: Const,
   Crumb: Crumb,
   Dialog: Dialog,
   Dropdown: Dropdown,
@@ -189,6 +199,7 @@ module.exports = {
   FloatNav: FloatNav,
   Form: Form,
   FormField: FormField,
+  Formatter: Formatter,
   Grid: Grid,
   Icon: Icon,
   Layout: Layout,
@@ -224,5 +235,6 @@ module.exports = {
   TreeSelect: TreeSelect,
   Uploader: Uploader,
   UserGuide: UserGuide,
+  Validator: Validator,
   Select: Select
 };
