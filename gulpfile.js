@@ -233,7 +233,7 @@ gulp.task('makefiles', function () {
         const compname = comp.split('-').slice(1).join('-');
         return {
           compname,
-          CompName: to.pascal(compname),
+          CompName: to.pascal(compname) === 'Radiogroup' ? 'RadioGroup' : to.pascal(compname),
         };
       });
 
@@ -242,7 +242,9 @@ gulp.task('makefiles', function () {
     gulp.src('./templates/component.less')
       .pipe(ejs({
         component_names: components.filter(lessCompFilter).map(comp => comp.compname),
-        ComponentNames: components.filter(lessCompFilter).map(comp => comp.CompName),
+        ComponentNames: components.filter(lessCompFilter).map(
+          comp => (comp.CompName === 'RadioGroup' ? 'Radiogroup' : comp.CompName)
+        ),
       }))
       .pipe(gulp.dest('./style'));
     const babelConfig = {
@@ -274,7 +276,7 @@ gulp.task('makefiles', function () {
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
-        .pipe(rename(`${comp.CompName === 'Radiogroup' ? 'RadioGroup' : comp.CompName}.js`))
+        .pipe(rename(`${comp.CompName}.js`))
         .pipe(gulp.dest('./lib'));
     });
     components.concat([
@@ -289,8 +291,17 @@ gulp.task('makefiles', function () {
         }))
         .pipe(babel(babelConfig))
         .on('error', console.log)
-        .pipe(gulp.dest(`./lib/${comp.CompName === 'Radiogroup' ? 'RadioGroup' : comp.CompName}`));
+        .pipe(gulp.dest(`./lib/${comp.CompName}`));
     });
+    gulp.src('./templates/main.js')
+      .pipe(ejs({
+        ComponentNames: components.filter(lessCompFilter)
+          .map(comp => comp.CompName).concat(['Select']),
+      }))
+      .pipe(babel(babelConfig))
+      .on('error', console.log)
+      .pipe(rename('index.js'))
+      .pipe(gulp.dest('./'));
   });
 });
 
