@@ -32,6 +32,8 @@ var Crumb = require('./lib/Crumb');
 
 var Dialog = require('./lib/Dialog');
 
+var Drawer = require('./lib/Drawer');
+
 var Dropdown = require('./lib/Dropdown');
 
 var EmptyData = require('./lib/EmptyData');
@@ -47,6 +49,8 @@ var Formatter = require('./lib/Formatter');
 var Grid = require('./lib/Grid');
 
 var Icon = require('./lib/Icon');
+
+var Image = require('./lib/Image');
 
 var Layout = require('./lib/Layout');
 
@@ -134,6 +138,7 @@ exports.Collapse = Collapse;
 exports.Const = Const;
 exports.Crumb = Crumb;
 exports.Dialog = Dialog;
+exports.Drawer = Drawer;
 exports.Dropdown = Dropdown;
 exports.EmptyData = EmptyData;
 exports.FloatNav = FloatNav;
@@ -142,6 +147,7 @@ exports.FormField = FormField;
 exports.Formatter = Formatter;
 exports.Grid = Grid;
 exports.Icon = Icon;
+exports.Image = Image;
 exports.Layout = Layout;
 exports.LoadMore = LoadMore;
 exports.Matrix = Matrix;
@@ -194,6 +200,7 @@ module.exports = {
   Const: Const,
   Crumb: Crumb,
   Dialog: Dialog,
+  Drawer: Drawer,
   Dropdown: Dropdown,
   EmptyData: EmptyData,
   FloatNav: FloatNav,
@@ -202,6 +209,7 @@ module.exports = {
   Formatter: Formatter,
   Grid: Grid,
   Icon: Icon,
+  Image: Image,
   Layout: Layout,
   LoadMore: LoadMore,
   Matrix: Matrix,

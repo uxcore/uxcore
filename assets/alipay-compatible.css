@@ -290,6 +290,13 @@
  * All rights reserved.
  */
   /**
+ * Drawer Component Style for uxcore
+ * @author kewenlei
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+  /**
  * Dropdown Component Style for uxcore
  * @author
  *
@@ -329,6 +336,13 @@
  * @author eternalsky
  *
  * Copyright 2015-2016, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+  /**
+ * Image Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
   /**
@@ -8179,6 +8193,164 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   margin-left: 8px;
   margin-bottom: 0;
 }
+.uxcore .kuma-drawer {
+  position: fixed;
+  height: 100%;
+  min-width: 263px;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1000;
+}
+.uxcore .kuma-drawer.kuma-dlg {
+  position: fixed;
+}
+.uxcore .kuma-drawer .kuma-dlg-content {
+  position: initial;
+  overflow: auto;
+  height: 100%;
+  box-shadow: none;
+}
+.uxcore .kuma-drawer-right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.uxcore .kuma-drawer-left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.uxcore .kuma-drawer .kuma-dlg-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.uxcore .kuma-drawer .kuma-dlg-header {
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
+@keyframes dialogSlideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes dialogSlideOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+  }
+}
+@keyframes dialogSlideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes dialogSlideOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+  }
+}
+@keyframes dialogSlideOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+@keyframes dialogFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dialogFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.uxcore .dialogFade-enter,
+.uxcore .dialogFade-appear {
+  opacity: 0;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
+}
+.uxcore .dialogFade-enter-active,
+.uxcore .dialogFade-appear-active {
+  animation-name: dialogFadeIn;
+}
+.uxcore .dialogFade-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
+}
+.uxcore .dialogFade-leave-active {
+  animation-name: dialogFadeOut;
+}
+.uxcore .dialogSlideRight-enter,
+.uxcore .dialogSlideRight-appear {
+  opacity: 0;
+  transform: translateX(50px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.uxcore .dialogSlideRight-enter-active,
+.uxcore .dialogSlideRight-appear-active {
+  animation-name: dialogSlideInRight;
+}
+.uxcore .dialogSlideRight-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.uxcore .dialogSlideRight-leave-active {
+  animation-name: dialogSlideOutRight;
+}
+.uxcore .dialogSlideLeft-enter,
+.uxcore .dialogSlideLeft-appear {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.uxcore .dialogSlideLeft-enter-active,
+.uxcore .dialogSlideLeft-appear-active {
+  animation-name: dialogSlideInLeft;
+}
+.uxcore .dialogSlideLeft-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.uxcore .dialogSlideLeft-leave-active {
+  animation-name: dialogSlideOutLeft;
+}
 .uxcore .kuma-dropdown {
   position: absolute;
   left: -9999px;
@@ -13304,10 +13476,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   animation-name: tableMaskFadeOut;
 }
 .uxcore .kuma-uxtable {
+  box-sizing: border-box;
   border-collapse: collapse;
   position: relative;
   color: rgba(0, 0, 0, 0.6);
   table-layout: fixed;
+}
+.uxcore .kuma-uxtable * {
+  box-sizing: inherit;
 }
 .uxcore .kuma-uxtable input::-ms-clear {
   display: none;
@@ -13405,7 +13581,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   min-width: 100%;
   min-height: 40px;
   white-space: normal;
-  background-color: #fff;
+  background-color: white;
 }
 .uxcore .kuma-uxtable-body-no {
   height: 100%;

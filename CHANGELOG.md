@@ -1,3 +1,25 @@
+## 0.21.38
+- [General] add new Component `Drawer`
+- [General] add new Component `Image`
+
+- [NoticeIcon]: `CHANGED` use `__popoverPrefixCls` in less
+
+- [Table]: `CHANGED` refactor beforeFetch logic using natty-fetch's willFetch callback
+- [Table]: `CHANGED` rowGroupHeader support column.render
+- [Table]: `CHANGED` change columns comparing logic in gDSFP
+- [Table]: `CHANGED` all dom class is generated from `props.prefixCls`
+- [Table]: `CHANGED` support js style export
+- [Table]: `FIXED` cellField error message will cover the input if the sum of rows is small
+- [Table]: `CHANGED` check right fixed when fetch params change
+
+- [ButtonGroup] `CHANGED` add danger and ghost
+- [ButtonGroup] `CHANGED` filter null
+
+- [CascadeSelect] `UPDATE` optionFilter ignore camel-case.
+- [CascadeSelect] `FIXED` modified option[].children empty logic.
+- [CascadeSelect] `FIXED` Can not get the right value when there is not any children and isMustSelectLeaf=true.
+- [CascadeSelect] `ADD` Separate the CascadeSubmenu Component.
+- [CascadeSelect] `ADD` props.cascaderHeight
 
 
 ## 0.21.31
