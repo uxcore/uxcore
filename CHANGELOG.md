@@ -1,3 +1,6 @@
+## 0.21.39
+- [Table]: `FIXED` updateTreeId in method addRow, delRow, moveRowUp and moveRowDown
+
 ## 0.21.38
 - [General] add new Component `Drawer`
 - [General] add new Component `Image`
