@@ -1,3 +1,6 @@
+## 0.21.40
+- [ButtonGroup] `FIXED` button group only contain one button
+
 ## 0.21.39
 - [Table]: `FIXED` updateTreeId in method addRow, delRow, moveRowUp and moveRowDown
 
