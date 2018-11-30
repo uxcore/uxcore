@@ -1,3 +1,13 @@
+## 0.21.41
+- [Calendar] `FIXED` year can not changed when defaultValue is not set in monthCalendar
+- [Calendar] `NEW` add new prop allowedMonthRange for MonthCalendar
+
+- [TreeSelect] `FIX` if props treeCheckable is true, the value not existed in props.treeData could be set from outside.
+
+- [Uploader] `FIXED` fix classnames dependency
+- [Uploader] `FIXED` fix uploadcore import (issue #81)
+
+
 ## 0.21.40
 - [ButtonGroup] `FIXED` button group only contain one button
 

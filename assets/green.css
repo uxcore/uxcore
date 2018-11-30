@@ -3542,55 +3542,43 @@ a.kuma-button.kuma-button-disabled:visited {
   color: #3C99D8;
 }
 .kuma-alert-container-message {
-  background: rgba(60, 153, 216, 0.1);
+  background: #ecf5fb;
 }
 .kuma-alert-success .kuma-alert-icon {
   color: #66bc5c;
 }
 .kuma-alert-container-success {
-  background: rgba(102, 188, 92, 0.1);
+  background: #f0f8ef;
 }
 .kuma-alert-error .kuma-alert-icon {
   color: #F04631;
 }
 .kuma-alert-container-error {
-  background: rgba(240, 70, 49, 0.1);
+  background: #feedea;
 }
 .kuma-alert-warning .kuma-alert-icon {
   color: #FABD0E;
 }
 .kuma-alert-container-warning {
-  background: rgba(250, 189, 14, 0.1);
+  background: #fff8e7;
 }
 .kuma-alert-question .kuma-alert-icon {
   color: #3C99D8;
 }
 .kuma-alert-container-question {
-  background: rgba(60, 153, 216, 0.1);
+  background: #ecf5fb;
 }
 .kuma-alert-stop .kuma-alert-icon {
   color: #F04631;
 }
 .kuma-alert-container-stop {
-  background: #fff4f2;
-}
-.kuma-alert-container-stop .kuma-alert-arrow em {
-  color: #f2d2ce;
-}
-.kuma-alert-container-stop .kuma-alert-arrow span {
-  color: #fff4f2;
+  background: #feedea;
 }
 .kuma-alert-wait .kuma-alert-icon {
-  color: #45a8e6;
+  color: #3C99D8;
 }
 .kuma-alert-container-wait {
-  background: #f2faff;
-}
-.kuma-alert-container-wait .kuma-alert-arrow em {
-  color: #cee4f2;
-}
-.kuma-alert-container-wait .kuma-alert-arrow span {
-  color: #f2faff;
+  background: #ecf5fb;
 }
 .kuma-alert-arrowup,
 .kuma-alert-arrowleft,
@@ -7943,9 +7931,19 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-drawer .kuma-dlg-content {
   position: initial;
-  overflow: auto;
   height: 100%;
   box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.kuma-drawer .kuma-dlg-body {
+  overflow: auto;
+  -ms-flex: 1;
+      flex: 1;
+  padding: 16px 24px 0px;
 }
 .kuma-drawer-right {
   right: 0;
@@ -7957,16 +7955,72 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   top: 0;
   bottom: 0;
 }
-.kuma-drawer .kuma-dlg-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
 .kuma-drawer .kuma-dlg-header {
+  -ms-flex: 0;
+      flex: 0;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
-@keyframes dialogSlideInRight {
+.kuma-drawer .kuma-dlg-footer {
+  -ms-flex: 0;
+      flex: 0;
+}
+.kuma-drawer.dialogFade-enter,
+.kuma-drawer.dialogFade-appear {
+  opacity: 0;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
+}
+.kuma-drawer.dialogFade-enter-active,
+.kuma-drawer.dialogFade-appear-active {
+  animation-name: drawerFadeIn;
+}
+.kuma-drawer.dialogFade-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .4s;
+}
+.kuma-drawer.dialogFade-leave-active {
+  animation-name: drawerFadeOut;
+}
+.kuma-drawer.dialogSlideRight-enter,
+.kuma-drawer.dialogSlideRight-appear {
+  opacity: 0;
+  transform: translateX(50px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.kuma-drawer.dialogSlideRight-enter-active,
+.kuma-drawer.dialogSlideRight-appear-active {
+  animation-name: drawerSlideInRight;
+}
+.kuma-drawer.dialogSlideRight-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.kuma-drawer.dialogSlideRight-leave-active {
+  animation-name: drawerSlideOutRight;
+}
+.kuma-drawer.dialogSlideLeft-enter,
+.kuma-drawer.dialogSlideLeft-appear {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.kuma-drawer.dialogSlideLeft-enter-active,
+.kuma-drawer.dialogSlideLeft-appear-active {
+  animation-name: drawerSlideInLeft;
+}
+.kuma-drawer.dialogSlideLeft-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.kuma-drawer.dialogSlideLeft-leave-active {
+  animation-name: drawerSlideOutLeft;
+}
+@keyframes drawerSlideInRight {
   0% {
     opacity: 0;
     transform: translateX(30px);
@@ -7976,7 +8030,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     transform: translateX(0%);
   }
 }
-@keyframes dialogSlideOutRight {
+@keyframes drawerSlideOutRight {
   0% {
     opacity: 1;
     -webkit-transform: translateX(0%);
@@ -7986,7 +8040,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     -webkit-transform: translateX(30px);
   }
 }
-@keyframes dialogSlideInLeft {
+@keyframes drawerSlideInLeft {
   0% {
     opacity: 0;
     transform: translateX(-30px);
@@ -7996,7 +8050,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     transform: translateX(0%);
   }
 }
-@keyframes dialogSlideOutLeft {
+@keyframes drawerSlideOutLeft {
   0% {
     opacity: 1;
     -webkit-transform: translateX(0%);
@@ -8006,7 +8060,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     -webkit-transform: translateX(-30px);
   }
 }
-@keyframes dialogSlideOutRight {
+@keyframes drawerSlideOutRight {
   0% {
     opacity: 1;
     transform: translateX(0%);
@@ -8016,7 +8070,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     transform: translateX(50px);
   }
 }
-@keyframes dialogFadeIn {
+@keyframes drawerFadeIn {
   0% {
     opacity: 0;
   }
@@ -8024,69 +8078,13 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     opacity: 1;
   }
 }
-@keyframes dialogFadeOut {
+@keyframes drawerFadeOut {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
-.dialogFade-enter,
-.dialogFade-appear {
-  opacity: 0;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .4s;
-}
-.dialogFade-enter-active,
-.dialogFade-appear-active {
-  animation-name: dialogFadeIn;
-}
-.dialogFade-leave {
-  opacity: 1;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .4s;
-}
-.dialogFade-leave-active {
-  animation-name: dialogFadeOut;
-}
-.dialogSlideRight-enter,
-.dialogSlideRight-appear {
-  opacity: 0;
-  transform: translateX(50px);
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .5s;
-}
-.dialogSlideRight-enter-active,
-.dialogSlideRight-appear-active {
-  animation-name: dialogSlideInRight;
-}
-.dialogSlideRight-leave {
-  opacity: 1;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .5s;
-}
-.dialogSlideRight-leave-active {
-  animation-name: dialogSlideOutRight;
-}
-.dialogSlideLeft-enter,
-.dialogSlideLeft-appear {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .5s;
-}
-.dialogSlideLeft-enter-active,
-.dialogSlideLeft-appear-active {
-  animation-name: dialogSlideInLeft;
-}
-.dialogSlideLeft-leave {
-  opacity: 1;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .5s;
-}
-.dialogSlideLeft-leave-active {
-  animation-name: dialogSlideOutLeft;
 }
 /**
  * Dropdown Component Style for uxcore
