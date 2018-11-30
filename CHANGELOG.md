@@ -1,4 +1,4 @@
-## 0.21.41
+## 0.21.42
 - [Calendar] `FIXED` year can not changed when defaultValue is not set in monthCalendar
 - [Calendar] `NEW` add new prop allowedMonthRange for MonthCalendar
 
