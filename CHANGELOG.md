@@ -1,3 +1,10 @@
+## 0.21.43
+- [Progress] `FIXED` lost variable in less
+- [Card] `CHANGED` icon and box style
+- [Card] `FIXED` arrow direction is wrong
+- [Upload] `FIXED` fix locale problem(issue #65)
+- [Album] `FIXED` some bug
+
 ## 0.21.42
 - [Calendar] `FIXED` year can not changed when defaultValue is not set in monthCalendar
 - [Calendar] `NEW` add new prop allowedMonthRange for MonthCalendar

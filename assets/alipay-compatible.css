@@ -6923,6 +6923,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .uxcore-card {
   background: white;
   overflow: hidden;
+  border-radius: 3px;
 }
 .uxcore .uxcore-card * {
   box-sizing: border-box;
@@ -6936,6 +6937,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
   padding: 0px 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .uxcore .uxcore-card-title {
   height: 100%;
@@ -6987,7 +6990,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   max-width: calc(100% - 50px);
 }
 .uxcore .uxcore-card-title-tip-icon {
-  color: #45a8e6;
+  color: #999;
   font-size: 14px;
 }
 .uxcore .uxcore-card-collapse-icon {
@@ -11855,7 +11858,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: .2px;
-  font-family: 'kuma';
+  font-family: kuma;
 }
 .uxcore .kuma-progress-line-wrap.status-active .kuma-progress-line-bg:before {
   content: "";
