@@ -1,3 +1,6 @@
+## 0.21.44
+- [Table] `FIXED` throw an err when col title is jsx
+
 ## 0.21.43
 - [Progress] `FIXED` lost variable in less
 - [Card] `CHANGED` icon and box style
