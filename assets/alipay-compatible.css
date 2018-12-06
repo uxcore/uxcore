@@ -6920,6 +6920,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-calendar-selected-day .kuma-calendar-date .kuma-calendar-date-content {
   color: white;
 }
+.uxcore .date-quick-range-selector {
+  width: 400px;
+}
+.uxcore .date-quick-range-selector .kuma-tooltip-content .kuma-tooltip-inner {
+  text-align: left;
+  line-height: 3;
+}
+.uxcore .date-quick-range-selector .kuma-tooltip-content .kuma-tooltip-inner button {
+  margin-right: 10px;
+}
 .uxcore .uxcore-card {
   background: white;
   overflow: hidden;

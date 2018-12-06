@@ -1,3 +1,8 @@
+## 0.21.45
+- [Table] `FIXED` the change of columnPicker will cause the action column from hidden to show
+- [Table] `FIXED` when obj is null in util.dropFunc
+- [Calendar] `CHANGED` add new prop quickSelectRanges for RangeCalendar
+
 ## 0.21.44
 - [Table] `FIXED` throw an err when col title is jsx
 
