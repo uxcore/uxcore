@@ -1,3 +1,10 @@
+## 0.21.46
+- [Card] `FIXED` change defaultCollapsed to false
+- [Icon] `CHANGED` add 4 icons
+- [CascadeSelect] `FIXED` fix autocomplete dropdown max height
+- [Steps] `CHANGED` change description layout from absolute to relative mode
+- [Transfer] `FIXED` [#23](https://github.com/uxcore/uxcore-transfer/issues/23)
+
 ## 0.21.45
 - [Table] `FIXED` the change of columnPicker will cause the action column from hidden to show
 - [Table] `FIXED` when obj is null in util.dropFunc

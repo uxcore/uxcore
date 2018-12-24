@@ -7247,6 +7247,10 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .kuma-cascader *:before {
   box-sizing: inherit;
 }
+.kuma-cascader-menu {
+  max-height: 300px;
+  overflow: auto;
+}
 .kuma-cascader-menu .kuma-dropdown-menu-item .brand-danger {
   color: #F04631;
 }
@@ -8918,7 +8922,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_fpniv85epiv.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_syvmalj8jr.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9403,6 +9407,18 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .uxicon-nav-left:before {
   content: "\e763";
+}
+.uxicon-dianzifapiao:before {
+  content: "\e661";
+}
+.uxicon-caozuo-bianji:before {
+  content: "\e700";
+}
+.uxicon-zhixiang-houtui:before {
+  content: "\e730";
+}
+.uxicon-zhixiang-qianjin:before {
+  content: "\e731";
 }
 /**
  * Image Component Style for uxcore
@@ -12602,14 +12618,11 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  * Copyright 2014-2015, Uxcore Team, Alinw.
  * All rights reserved.
  */
-.kuma-step {
-  margin-left: 30px;
-}
 .kuma-step .kuma-step-item {
   position: relative;
   display: inline-block;
   min-height: 60px;
-  margin-top: 74px;
+  margin-top: 25px;
   margin-bottom: 25px;
   vertical-align: top;
 }
@@ -12620,13 +12633,53 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-step .kuma-step-item.kuma-step-editable .kuma-step-icon:hover {
   transform: scale(1.1);
 }
+.kuma-step .kuma-step-item .kuma-step-tail {
+  position: absolute;
+  top: 11px;
+  padding: 0 4px 0 28px;
+  width: 100%;
+  margin-left: 38px;
+}
+.kuma-step .kuma-step-item .kuma-step-tail > i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(31, 56, 88, 0.1);
+}
+.kuma-step .kuma-step-item .kuma-step-head {
+  margin-left: 38px;
+}
+.kuma-step .kuma-step-item .kuma-step-head .kuma-step-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid #66bc5c;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.kuma-step .kuma-step-item .kuma-step-head .kuma-step-uxicon {
+  border-width: 1px;
+  line-height: 22px;
+}
+.kuma-step .kuma-step-item .kuma-step-main {
+  color: rgba(31, 56, 88, 0.6);
+}
+.kuma-step .kuma-step-item .kuma-step-main .kuma-step-title {
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.8);
+}
+.kuma-step .kuma-step-item .kuma-step-main .kuma-step-description {
+  color: rgba(0, 0, 0, 0.6);
+}
 .kuma-step .kuma-step-item .kuma-step-main .kuma-step-detail-arrow {
   position: absolute;
-  top: 45px;
+  top: 40px;
   font-family: kuma;
   font-size: 34px;
-  margin-left: -50%;
-  left: 13px;
+  left: 34px;
 }
 .kuma-step .kuma-step-item .kuma-step-main .kuma-step-detail-arrow::before {
   content: "\e613";
@@ -12639,79 +12692,45 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   top: 2px;
   left: 0;
 }
-.kuma-step .kuma-step-item-last .kuma-step-title {
-  padding-right: 0;
-}
-.kuma-step .kuma-step-tail {
+.kuma-step .kuma-step-item .kuma-step-main .popup-desc .kuma-step-description {
   position: absolute;
-  left: 0;
-  top: 19px;
-  padding: 0 4px 0 28px;
-  width: 100%;
+  left: 20px;
+  bottom: 65px;
 }
-.kuma-step .kuma-step-tail > i {
+.kuma-step .kuma-step-item .kuma-step-main .popup-desc .kuma-step-description-arrow {
+  position: absolute;
+  bottom: 57px;
+  left: 43px;
+}
+.kuma-step .kuma-step-item .kuma-step-detail.kuma-step-detail-current > .kuma-step-detail-con {
   display: block;
-  width: 100%;
-  height: 2px;
-  background-color: rgba(31, 56, 88, 0.1);
 }
-.kuma-step .kuma-step-head {
-  position: absolute;
-  left: 0;
-  top: 8px;
-  padding-right: 4px;
-  z-index: 1;
-}
-.kuma-step .kuma-step-head .kuma-step-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  border: 2px solid #66bc5c;
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  vertical-align: middle;
-}
-.kuma-step .kuma-step-head .kuma-step-uxicon {
-  border-width: 1px;
-  line-height: 22px;
-}
-.kuma-step .kuma-step-main {
-  color: rgba(31, 56, 88, 0.6);
-}
-.kuma-step .kuma-step-main .kuma-step-title {
-  white-space: nowrap;
-  color: rgba(0, 0, 0, 0.8);
-}
-.kuma-step .kuma-step-main .kuma-step-description {
-  color: rgba(0, 0, 0, 0.6);
+.kuma-step .kuma-step-item .kuma-step-detail > .kuma-step-detail-con {
+  display: none;
+  margin-top: 17px;
+  width: 800px;
+  background-color: rgba(31, 56, 88, 0.04);
+  padding: 10px;
+  border: 1px solid rgba(31, 56, 88, 0.1);
+  border-radius: 3px;
 }
 .kuma-step.kuma-step-type-default .kuma-step-item.kuma-step-no-desc {
   margin-top: 0;
 }
-.kuma-step.kuma-step-type-default .kuma-step-main {
-  position: absolute;
-}
 .kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-title {
+  width: 100px;
   position: relative;
-  left: 12px;
-  display: inline-block;
-  margin-left: -50%;
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
-  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description {
-  left: 12px;
-  display: inline-block;
-  width: 100px;
   position: absolute;
-  left: -1em;
-  bottom: 60px;
+  left: 20px;
+  bottom: 68px;
+  width: 100px;
   padding: 5px 15px;
   width: 146px;
   height: 60px;
@@ -12756,28 +12775,19 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   bottom: 3px;
   border-top-color: rgba(31, 56, 88, 0.2);
 }
-.kuma-step.kuma-step-type-title-on-top .kuma-step-item {
-  margin-top: 28px;
-}
-.kuma-step.kuma-step-type-title-on-top .kuma-step-main {
-  position: absolute;
-}
 .kuma-step.kuma-step-type-title-on-top .kuma-step-main .kuma-step-title {
+  width: 100px;
   position: relative;
-  left: 12px;
-  top: -18px;
-  display: inline-block;
-  margin-left: -50%;
+  top: -50px;
   text-align: center;
+  margin-top: 0 !important;
 }
 .kuma-step.kuma-step-type-title-on-top .kuma-step-main .kuma-step-description {
-  position: absolute;
-  left: 12px;
-  display: inline-block;
-  margin-left: -50px;
-  margin-top: 40px;
   width: 100px;
   text-align: center;
+}
+.kuma-step.kuma-step-type-title-on-top.kuma-step-noicon {
+  top: -40px;
 }
 .kuma-step.kuma-step-type-long-desc .kuma-step-item {
   margin-top: 8px;
@@ -12786,6 +12796,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   padding: 10px 24px 0;
 }
 .kuma-step.kuma-step-type-long-desc .kuma-step-title {
+  width: 100px;
   position: relative;
   padding: 0 8px;
   display: inline-block;
@@ -12798,32 +12809,20 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-step.kuma-step-type-bottom-desc .kuma-step-item {
   margin-top: 0;
 }
-.kuma-step.kuma-step-type-bottom-desc .kuma-step-main {
-  position: absolute;
-}
 .kuma-step.kuma-step-type-bottom-desc .kuma-step-main .kuma-step-title {
+  width: 100px;
   position: relative;
-  left: 12px;
-  display: inline-block;
-  margin-left: -50%;
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
-  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .kuma-step.kuma-step-type-bottom-desc .kuma-step-main .kuma-step-description {
-  position: absolute;
-  left: 12px;
   display: inline-block;
-  margin-left: -50px;
-  margin-top: 60px;
+  margin-top: 5px;
   width: 100px;
   text-align: center;
-}
-.kuma-step.kuma-step-type-bottom-desc .kuma-step-status-wait .kuma-step-description {
-  color: rgba(31, 56, 88, 0.3);
 }
 .kuma-step.kuma-step-type-arrow-bar {
   display: -ms-flexbox;
@@ -12915,15 +12914,18 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-step .kuma-step-status-wait .kuma-step-icon {
   background-color: rgba(31, 56, 88, 0.04);
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: rgba(31, 56, 88, 0.2) !important;
   color: rgba(31, 56, 88, 0.2);
 }
 .kuma-step .kuma-step-status-wait .kuma-step-title {
-  color: rgba(31, 56, 88, 0.3);
+  color: rgba(31, 56, 88, 0.3) !important;
+}
+.kuma-step .kuma-step-status-wait .kuma-step-description {
+  color: rgba(31, 56, 88, 0.3) !important;
 }
 .kuma-step .kuma-step-status-process .kuma-step-icon {
   background-color: #66bc5c;
-  color: #fff;
+  color: #fff !important;
 }
 .kuma-step .kuma-step-status-process .kuma-step-title {
   color: rgba(0, 0, 0, 0.8);
@@ -12934,25 +12936,27 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-step .kuma-step-status-finish .kuma-step-icon {
   background-color: #fff;
-  color: #66bc5c;
+  color: #66bc5c !important;
 }
 .kuma-step .kuma-step-status-finish .kuma-step-icon.icon-check:after {
   font-family: 'kuma' !important;
   content: '\e611';
 }
 .kuma-step .kuma-step-status-error .kuma-step-title {
-  color: #F04631;
+  color: #F04631 !important;
   font-weight: 700;
 }
 .kuma-step .kuma-step-status-error .kuma-step-icon {
-  color: #F04631;
-  border-color: #F04631;
+  color: #F04631 !important;
+  border-color: #F04631 !important;
 }
 .kuma-step.kuma-step-vertical .kuma-step-head {
+  position: absolute;
   top: 0;
   padding-right: 0;
   padding-bottom: 4px;
   background-color: #fff;
+  margin-left: 0;
 }
 .kuma-step.kuma-step-vertical .kuma-step-item {
   display: block;
@@ -12961,11 +12965,13 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   min-height: 110px;
 }
 .kuma-step.kuma-step-vertical .kuma-step-tail {
+  position: absolute;
   left: 11px;
   top: 0;
   padding: 24px 0 4px 0;
   width: 0;
   height: 100%;
+  margin-left: 0;
 }
 .kuma-step.kuma-step-vertical .kuma-step-tail i {
   width: 2px;
@@ -12973,7 +12979,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   background-color: #dbdbdb;
 }
 .kuma-step.kuma-step-vertical .kuma-step-main {
-  padding: 2px 0 0 30px;
+  padding: 4px 0 0 30px;
 }
 .kuma-step.kuma-step-vertical .kuma-step-main .kuma-step-title {
   margin-left: 0;
@@ -12981,9 +12987,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-step.kuma-step-vertical .kuma-step-main .kuma-step-description {
   margin-top: 4px;
   text-indent: 0;
-}
-.kuma-step.kuma-step-vertical .kuma-step-status-wait .kuma-step-description {
-  color: rgba(31, 56, 88, 0.3);
 }
 .kuma-step .kuma-step-small {
   margin-left: 20px;
@@ -13004,12 +13007,8 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   border-radius: 5px;
   line-height: 6px;
 }
-.kuma-step.kuma-step-noicon {
-  margin-left: 37px;
-}
 .kuma-step.kuma-step-noicon .kuma-step-head {
-  top: 10px;
-  left: 0px;
+  margin-left: 45px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon {
   width: 10px;
@@ -13020,19 +13019,17 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon:after {
   content: '';
 }
-.kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-title {
-  margin-top: 32px;
-  left: 5px;
-}
-.kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-description {
-  bottom: 46px;
-}
-.kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-description-arrow {
-  bottom: 39px;
-  left: -2px;
-}
 .kuma-step.kuma-step-noicon .kuma-step-tail {
   padding: 0 4px 0 14px;
+  top: 9px;
+  margin-left: 45px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-title {
+  margin-top: 10px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-main .kuma-step-description-arrow {
+  bottom: 60px;
+  left: 43px;
 }
 .kuma-step.kuma-step-noicon .kuma-step-status-wait .kuma-step-icon {
   background-color: rgba(31, 56, 88, 0.04);
@@ -13044,11 +13041,13 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   border-color: #F04631;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head {
+  position: absolute;
   top: -5px;
   left: 8px;
   padding-right: 0;
   padding-bottom: 0;
   background-color: #fff;
+  margin-left: 0;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head .kuma-step-head-inner {
   height: 18px;
@@ -13058,22 +13057,11 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   vertical-align: top;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-main .kuma-step-title {
-  margin-top: -5px;
+  margin-top: -8px;
 }
 .kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-tail {
-  padding: 10px 0 0 1px;
-}
-.kuma-step .kuma-step-detail > .kuma-step-detail-con {
-  display: none;
-  margin-top: 74px;
-  width: 800px;
-  background-color: rgba(31, 56, 88, 0.04);
-  padding: 10px;
-  border: 1px solid rgba(31, 56, 88, 0.1);
-  border-radius: 3px;
-}
-.kuma-step .kuma-step-detail.kuma-step-detail-current > .kuma-step-detail-con {
-  display: block;
+  padding: 5px 0 0 1px;
+  margin-left: 0;
 }
 /**
  * Switch Component Style for uxcore
