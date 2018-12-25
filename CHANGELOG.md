@@ -1,3 +1,6 @@
+## 0.21.47
+- [Icon] `CHANGED` add 1 icon
+
 ## 0.21.46
 - [Card] `FIXED` change defaultCollapsed to false
 - [Icon] `CHANGED` add 4 icons
