@@ -1,3 +1,6 @@
+## 0.21.49
+- [Calendar] update uxcore-calendar to 0.10.16, lock rc-calendar version
+
 ## 0.21.48
 - [Icon] `CHANGED` change uxcore-icon auto update
 - [Button] `CHANGED` do not excute onClick while loading
