@@ -6926,9 +6926,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .date-quick-range-selector .kuma-tooltip-content .kuma-tooltip-inner {
   text-align: left;
   line-height: 3;
+  padding-bottom: 0;
 }
-.uxcore .date-quick-range-selector .kuma-tooltip-content .kuma-tooltip-inner button {
-  margin-right: 10px;
+.uxcore .date-quick-range-selector .kuma-tooltip-content .kuma-tooltip-inner .uxcore-tag-item {
+  margin-right: 6px;
+  cursor: pointer;
 }
 .uxcore .uxcore-card {
   background: white;
@@ -8206,6 +8208,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   overflow: hidden;
   z-index: 1000;
 }
+.uxcore .kuma-drawer .kuma-dlg-close {
+  z-index: 999;
+}
+.uxcore .kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
+  font-size: 14px;
+}
 .uxcore .kuma-drawer.kuma-dlg {
   position: fixed;
 }
@@ -8215,15 +8223,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   box-shadow: none;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-box;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 .uxcore .kuma-drawer .kuma-dlg-body {
-  overflow: auto;
+  width: 100%;
   -ms-flex: 1;
       flex: 1;
   padding: 16px 24px 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .uxcore .kuma-drawer-right {
   right: 0;
@@ -9074,6 +9083,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-search-uxform-field .kuma-uxform-class-search .kuma-select2-selection__placeholder {
   color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+.uxcore .kuma-search-uxform-field .kuma-uxform-class-search .kuma-select2-selection-selected-value {
+  font-size: 12px;
 }
 .uxcore .kuma-search-uxform-field .kuma-uxform-advanced-search.kuma-select2-open .kuma-select2-selection,
 .uxcore .kuma-search-uxform-field .kuma-uxform-class-search.kuma-select2-open .kuma-select2-selection {
@@ -9094,6 +9107,22 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: top;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+.uxcore .kuma-search-uxform-field.kuma-uxform-field-middle .kuma-search-uxform-field-icon {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+.uxcore .kuma-search-uxform-field.kuma-uxform-field-middle .kuma-search-uxform-field-icon .uxcore-icon {
+  font-size: 14px;
+}
+.uxcore .kuma-search-uxform-field.kuma-uxform-field-small .kuma-search-uxform-field-icon {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+}
+.uxcore .kuma-search-uxform-field.kuma-uxform-field-small .kuma-search-uxform-field-icon .uxcore-icon {
+  font-size: 14px;
 }
 .uxcore .kuma-uxform-class-dropdown {
   background: #fafafa;

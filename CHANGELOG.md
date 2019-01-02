@@ -1,3 +1,11 @@
+## 0.21.48
+- [Icon] `CHANGED` change uxcore-icon auto update
+- [Button] `CHANGED` do not excute onClick while loading
+- [Button] `NEW` add count down feature
+- [Calendar] `CHANGE` when select a quickSelectRanges, close the tooltip
+- [Dialog] `CHANGED` supporting drag dialog feature
+- [Form] `CHANGED` SearchFormField add new props size
+
 ## 0.21.47
 - [Icon] `CHANGED` add 1 icon
 
