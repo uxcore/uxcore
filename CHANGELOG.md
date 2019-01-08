@@ -1,4 +1,4 @@
-## 0.21.51
+## 0.21.52
 - [Calendar] `CHANGE` auto hidden value text when width is too small; give a min-width to input-span: 80px which can at least show full year like 2019;fix a wrong prop type of YearCalendar.transitionName
 - [Form] `CHANGED` change option splitter to ", " under view mode, the same to SelectFormField
 - [Select2] `NEW` add prop rcRef to get the ref of RcSelect, sometimes we need to call it's public methods
