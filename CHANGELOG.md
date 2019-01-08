@@ -1,5 +1,12 @@
+## 0.21.50
+- [Calendar] `CHANGE` auto hidden value text when width is too small; give a min-width to input-span: 80px which can at least show full year like 2019;fix a wrong prop type of YearCalendar.transitionName
+- [Form] `CHANGED` change option splitter to ", " under view mode, the same to SelectFormField
+- [Select2] `NEW` add prop rcRef to get the ref of RcSelect, sometimes we need to call it's public methods
+- [Table] `FIXED` util.dropFunc will cause stack overflow
+- [Table] `CHANGED` optimize the action-bar to list-action-bar
+
 ## 0.21.49
-- [Calendar] update uxcore-calendar to 0.10.16, lock rc-calendar version
+- [Calendar] `CHANGED` update uxcore-calendar to 0.10.16, lock rc-calendar version
 
 ## 0.21.48
 - [Icon] `CHANGED` change uxcore-icon auto update
@@ -117,7 +124,7 @@
 
 ## 0.21.13
 
-- [Theme] `NEW` add alipay theme 
+- [Theme] `NEW` add alipay theme
 
 ## 0.21.10
 
@@ -184,7 +191,7 @@
 
 - [CascadeSelect]: `FIXED` could not clear display-value from outside.
 - [Dialog]: `NEW` `Dialog.confirm` can be closed from outside.
-- [Tree]: `CHANGED` update `rc-tree` to `~1.11.0`  
+- [Tree]: `CHANGED` update `rc-tree` to `~1.11.0`
 - [TreeSelect]: `FIXED` make compatible for `rc-tree-select` deprecated methods
 
 
@@ -220,7 +227,7 @@
 
 ## 0.19.14
 
-- [Style]: `CHANGED` new loading icon 
+- [Style]: `CHANGED` new loading icon
 
 ## 0.19.12
 
@@ -289,7 +296,7 @@
 - [Tree]: `CHNAGED` update tree css
 - [General]: add `Const`, `FormField`
 
-- [Menu]: `BREAKING CHANGED` upgrade rc-menu to [`^6.0.0`](https://github.com/react-component/menu/blob/master/HISTORY.md#600--2017-10-30) , new menu will render its submenu into `document.body` which may affect some user-defined css. 
+- [Menu]: `BREAKING CHANGED` upgrade rc-menu to [`^6.0.0`](https://github.com/react-component/menu/blob/master/HISTORY.md#600--2017-10-30) , new menu will render its submenu into `document.body` which may affect some user-defined css.
 
 
 ## 0.18.3
@@ -304,7 +311,7 @@
 
 ## 0.18.1
 
-- [Message] `FIXED`  content can be a  React.Element. 
+- [Message] `FIXED`  content can be a  React.Element.
 - [MultiSelect] `CHANGED` keep selection order.
 - [Popover] `CHANGED` arrow position imporvement
 - [Popover] `CHANGED` update `rc-tooltip` to `^3.0.0`
@@ -313,7 +320,7 @@
 - [Table] `FIXED` missing `POST` fetch method
 - [Table] `FIXED` left fixed table can not match the height with the mainTable, when table is multiline.
 - [Table] `FIXED` when table is resized & mulitiline, fixed table's height can not match.
-- [Table] `FIXED` unexpected space between body and header 
+- [Table] `FIXED` unexpected space between body and header
 - [Table] `CHANGED` column.width support percentage
 - [Table] `CHANGED` add new prop `showUnknownTotalPager`
 - [Table] `CHANGED` adjust column picker style
@@ -352,7 +359,7 @@
 - [Component] Calendar: `CHNAGED` update `rc-calendar` to ~8.4.0
 - [Component] Calendar: `CHANGED` support new prop `onOpenChange`
 - [Component] Calendar: `FIXED` timepicker style bug when calendar is shown around the border of the container.
-- [Component] CascadeSelect: `NEW`: new prop `isMustSelectLeaf` 
+- [Component] CascadeSelect: `NEW`: new prop `isMustSelectLeaf`
 - [Component] CheckboxGroup: `FIXED` Item props `disabled` should not work when it is `undefined`
 - [Component] Steps: `NEW` icon prop for Step support uxcore-icon
 - [Component] Uploader: `FIXED` style bug for `upload failed` text
@@ -370,7 +377,7 @@
 - [General] fit React@15.x: Alert/Popover/Table
 - [General] add tests: Alert/Popover
 - [Component] Animate: `CHANGED` update `rc-animate` to `^2.0.0`
-- [Component] Dialog: `CHANGED` remove circular dependencies between Dialog & confirm 
+- [Component] Dialog: `CHANGED` remove circular dependencies between Dialog & confirm
 - [Component] Table: `FIXED` deepcopy beforeFetch params before passed
 - [Component] Table: `CHANGED` default empty data for locale
 - [Component] Table: `CHANGED` action column title padding adjustment
@@ -396,7 +403,7 @@
 - [Component] CascadeMultiSelect: `FIXED`: Panel position can not be float:left when used independently
 - [Component] CheckboxGroup: `CHANGED` adjust space between text & checkbox
 - [Component] RadioGroup: `CHANGED` adjust space between radio & text
-- [Component] Steps: `CHANGED` update style, change icons to uxcore-icon  
+- [Component] Steps: `CHANGED` update style, change icons to uxcore-icon
 - [Component] Steps: `NEW` new types: `bottom-desc` `arrow-bar`
 
 ## 0.15.15
@@ -469,13 +476,13 @@
 - [Component] Table: `CHANGED` use popover instead of column picker dropdown
 - [Component] Table: `CHANGED` new column picker trigger icon
 - [Component] Table: `CHANGED` style: mask color & fixed table box-shadow
-- [Component] Table: `CHANGED` add animation when toggling sub component 
+- [Component] Table: `CHANGED` add animation when toggling sub component
 - [Component] Tree: `CHANGED` add animation
 
 
 ## 0.14.8
 
-- [Component] Calendar: `CHANGED` support new props `yearSelectOffset` & `yearSelectTotal` 
+- [Component] Calendar: `CHANGED` support new props `yearSelectOffset` & `yearSelectTotal`
 - [Component] Mention: `CHANGED` support multiple mention
 - [Component] Popover: `CHANGED` support new prop `align`
 - [Component] Select: `CHANGED` hide combobox arrow
@@ -545,14 +552,14 @@
 - [Component] Transfer: `FIXED` text overflow style bug
 - [Component] Uploader: `FIXED` filename overflow style bug
 - [Component] Uploader: `FIXED` missing `action-remove` in some remove button
-- [General] add new component `PickableFormField`, `Title` 
+- [General] add new component `PickableFormField`, `Title`
 
 
 ## 0.12.0
 
 - [Component] Form: `CHANGED` filter invalid letter in `NumberInput`
 - [Component] MultiSelect: `CHANGED` footer redesign
-- [Component] Pagination: `CHANGED` add quick jumper button 
+- [Component] Pagination: `CHANGED` add quick jumper button
 - [Component] Pagination: `CHANGED` quick jumper input value follow the current page
 - [Component] Pickable: `CHANGED` add new prop `enableFold`
 - [Component] Pickable: `NEW` add new prop `defaultFoldItems`， `locale`, `maxLines`
@@ -600,7 +607,7 @@
 - [Component] Carousel: `CHANGED` lock react-slick version
 - [Component] Collapse: `FIXED` support prop `className`
 - [Component] Icon: `CHANGED` add 20 new icons
-- [Component] Message: `CHANGED` new icon 
+- [Component] Message: `CHANGED` new icon
 - [Component] Message: `CHANGED` support small size
 - [Component] Message: `CHANGED` a new way to pass instance options
 - [Component] Pagination: `CHANGED` add i18n for unknown total
@@ -688,7 +695,7 @@
 - [Component] CascadeMultiSelect: `FIXED` remove transparent split.
 - [Component] CascadeSelect: `CHANGED` trigger onChange when on click `the ok button`
 - [Component] Icon: `NEW` add 8 new icons
-- [Component] MultiSelect: `NEW` add locale support 
+- [Component] MultiSelect: `NEW` add locale support
 - [Component] Rate: `CHANGED` style change
 - [Component] Tabs: `CHANGED` brick style adjustment
 - [Component] Tabs: `FIXED` type propTypes validation
@@ -774,7 +781,7 @@
 - [Component] Message: `NEW` add new props `getContainer`
 - [Component] Message: `NEW` add new props `multipleInstance`
 - [Component] Message: `NEW` add new API `clear()`
-- [Component] Table: `FIXED` remove useless code in `Cell` componentDidMount 
+- [Component] Table: `FIXED` remove useless code in `Cell` componentDidMount
 
 ## 0.7.5
 
@@ -798,7 +805,7 @@
 `2017-02-17`
 
 - [HotFix] Calendar: style bug
-- [Component] TreeSelect: `CHANGED` add new prop `resultsPanelAllClearBtn` , `resultsPanelTitle`, `resultsPanelTitleStyle` & `filterResultsPanel` 
+- [Component] TreeSelect: `CHANGED` add new prop `resultsPanelAllClearBtn` , `resultsPanelTitle`, `resultsPanelTitleStyle` & `filterResultsPanel`
 
 ## 0.7.0
 
@@ -913,16 +920,16 @@
 - [Component] Album: `NEW` API support img list & thumbnails
 - [Component] Calendar: `NEW` add new method `getTriggerNode`
 - [Component] CheckboxGroup: `CHANGED` type of value can be `number` or `string`
-- [Component] Dialog: `CHANGED` default texts of buttons change 
+- [Component] Dialog: `CHANGED` default texts of buttons change
 - [Component] Dialog: `FIXED` position bug in IE browser
 - [Component] Form: `CHANGED` add new API `createFormField`
-- [Component] Form: `CHANGED` update `uxcore-date-form-field` to ~0.5.0 
+- [Component] Form: `CHANGED` update `uxcore-date-form-field` to ~0.5.0
 - [Component] Form: `FIXED` textarea height bug [#121](https://github.com/uxcore/uxcore-form/issues/121)
 - [Component] Form: `CHANGED` EditorFormField add new API `setContent`
 - [Component] Mention: `CHANGED` editor's width propType.
 - [Component] Mention: `CHANGED` add value props.
 - [Component] Menu: `NEW` add new style `kuma-menu-none-border`
-- [Component] Progress: `FIXED` vertical align of the text with the line. 
+- [Component] Progress: `FIXED` vertical align of the text with the line.
 - [Component] Table: `NEW` add type `check` to support inline checkbox editing
 - [Component] Table: `NEW` add new API `moveRowUp` & `moveRowDown`
 - [Component] Table: `NEW` new API `createCellField`
@@ -945,29 +952,29 @@
 
 `2016-12-01`
 
-- [Component] Album: `CHANGED` `thumbPlacement` support `bottom/top` 
+- [Component] Album: `CHANGED` `thumbPlacement` support `bottom/top`
 - [Component] Album: `NEW` add direct method to Album which can make the component be using easily more widely.
 - [Component] Calendar: `FIXED` can not reset input value if value is null in React@15.x
 - [Component] Carousel: `CHANGED` support new props `largeArrowsAndDots` & `centerDots`
 - [Component] Carousel: `CHANGED` update react-slick to ~0.14.0
 - [Component] CascadeSelect: `CHANGED` another efficient way to fix issue #7
 - [Component] CascadeSelect: `CHANGED` subMenu won't be hide before selected options's length is larger than cascadeSize when cascadeSize is not equal to options level. [#7](https://github.com/uxcore/uxcore-cascade-select/issues/7)
-- [Component] CascadeSelect: `FIXED` add support for browsers that does not implement array.prototype.find. 
+- [Component] CascadeSelect: `FIXED` add support for browsers that does not implement array.prototype.find.
 - [Component] CascadeSelect: `CHANGED` beforeRender default value optimazition
 - [Component] CascadeSelect: `FIXED` input height bug
-- [Component] Dialog: `CHANGED` remove loading props on button  
+- [Component] Dialog: `CHANGED` remove loading props on button
 - [Component] Dialog: `NEW` props `htmlClassName`
 - [Component] Dialog: `FIXED` if html overflow is scroll, dialog can be scrolled as well.
 - [Component] Form: `CHANGED` add subComp TextAreaCount for TextAreaFormField
 - [Component] Form: `CHANGED` RadioFormField support `jsxdisabled`
 - [Component] Form: `CHANGED` EditorFormField jsxcontent is deprecated. use jsxvalues directly.
-- [Component] Form: `CHANGED` getValues method will return a promise if asyncValidate is true 
+- [Component] Form: `CHANGED` getValues method will return a promise if asyncValidate is true
 - [Component] Form: `FIXED` searchFormField lineHeight bug
 - [Component] Form: `NEW` add new prop `asyncValidate`
-- [Component] Mention: `FIXED` click on the contentEditable's placeholder, the editor can't focus. 
+- [Component] Mention: `FIXED` click on the contentEditable's placeholder, the editor can't focus.
 - [Component] Menu: `CHANGED` to rc-menu@4.13.0
 - [Component] Message: `CHANGED` change `z-index` to 1070
-- [Component] Pickable: `CHANGED` small style change in hook mode 
+- [Component] Pickable: `CHANGED` small style change in hook mode
 - [Component] Popover: `FIXED` prop `delay` fail to work
 - [Component] Popover: `CHANGED` new scaffold
 - [Component] Popover: `CHANGED` airbnb javascript style lint
@@ -977,7 +984,7 @@
 - [Component] Table: `FIXED` rowData passed in method `addRowClassName` may be undefined
 - [Component] Table: `FIXED` SelectCellField: bug when value is undefined
 - [Component] Table: `FIXED` multiline reset is not thorough
-- [Component] Table: `CHANGED` set default labelInValue in SelectCellField 
+- [Component] Table: `CHANGED` set default labelInValue in SelectCellField
 - [Component] Table: `CHANGED` new empty data
 - [Component] Table: `CHANGED` action will not render if render function return false [#158](https://github.com/uxcore/uxcore-table/issues/158)
 - [Component] Table: `FIXED` props `levels` fail to work [#157](https://github.com/uxcore/uxcore-table/issues/157)
@@ -1015,10 +1022,10 @@
 - [Component] Mention: `FIXED` inputEditor & textareaEditor trigger change event when mention addded.
 - [Component] Mention: `FIXED` issue when mention's 'matchRange' props start from 0.
 - [Component] Mention: `CHANGED` change panel's position with inputEditor & textareaEditor.
-- [Component] Mention: `FIXED` fixed 'onChange' not trigger in inputEditor & textareaEditor.  
+- [Component] Mention: `FIXED` fixed 'onChange' not trigger in inputEditor & textareaEditor.
 - [Component] Steps: `FIXED` missing react import
 - [Component] Tabs: `NEW` support switch when the number of items is too large
-- [Component] Tree: `FIXED` fix arraysEqual missing 
+- [Component] Tree: `FIXED` fix arraysEqual missing
 - [Component] Tree: `CHANGED` rewrite rc-tree render logic, move supportSvg judge to `render`
 - [Component] Uploader: `FIXED` fix file.response.getJson bug when upload fails.
 
@@ -1031,7 +1038,7 @@
 - [Component] Form: `CHANGED` CascadeSelectFormField support `allowClear`
 - [Component] Form: `CHANGED` update `uxcore-date-form-field` to ~0.4.0
 - [Component] Calendar: `NEW` new props `showSecond` `showHour`
-- [Component] Calendar: `FIXED` missing method `getTimeConfig` 
+- [Component] Calendar: `FIXED` missing method `getTimeConfig`
 - [Component] Calendar: `CHANGED` add prop `timezone` to fix calendar timezone
 - [Component] Calendar: `CHANGED` all panel support clear icon
 
@@ -1039,7 +1046,7 @@
 
 `2016-09-20`
 
-- [General] `NEW` add new component `Album` 
+- [General] `NEW` add new component `Album`
 
 ## 0.4.0
 
@@ -1053,8 +1060,8 @@
 - [Component] Dropdown: `CHANGED` add animation
 - [Component] Form: `CHANGED` support Child is null
 - [Component] Form: `CHANGED` doValidate support param `always` which make doValidate always set the field error state to true/false.
-- [Component] Form: `FIXED` fix server render bug 
-- [Component] Formatter: `CHANGED` date method can handle undefined/null properly  
+- [Component] Form: `FIXED` fix server render bug
+- [Component] Formatter: `CHANGED` date method can handle undefined/null properly
 - [Component] Menu: `CHANGED` style change
 - [Component] Pagination: `CHANGED` update dependency `uxcore-select` to ~0.3.0
 - [Component] Pagination: `FIXED` fix pagination size changer style bug
@@ -1070,13 +1077,13 @@
 - [Component] Steps: `FIXED` export bug
 - [Component] Steps: `FIXED` add props `className`.
 - [Component] Steps: `FIXED` style issue under IE8.
-- [Component] Table: `CHANGED` change default fitResponse 
+- [Component] Table: `CHANGED` change default fitResponse
 - [Component] Table: `CHANGED` support column.collapseNum
 - [Component] Table: `CHANGED` table will listen props.fetchParams change.
 - [Component] Table: `FIXED` fetchData caused by fetchParams change will pass the out-dated params.
 - [Component] Table: `FIXED` saveRow bug [#155](https://github.com/uxcore/uxcore-table/issues/155)
 - [Component] Table: `FIXED` missing deepcopy protect when passing parma in column.action. [#154](https://github.com/uxcore/uxcore-table/issues/154)
-- [Component] Tabs: `NEW` support prop className 
+- [Component] Tabs: `NEW` support prop className
 - [Component] Totop: `CHANGED` new style
 - [Component] Transfer: `FIXED` fix bug in locateItem and _removeJustMoved
 - [Component] Transfer: `CHANGED` apply new style
@@ -1087,13 +1094,13 @@
 `2016-08-11`
 
 - [Component] Dialog: `NEW` upgrade to rc-dialog@0.6.2
-- [Component] Dialog: `NEW` support center vertically 
-- [Component] Dialog: `FIXED` when confirmbox's title or content is english words, the line would not break.  
+- [Component] Dialog: `NEW` support center vertically
+- [Component] Dialog: `FIXED` when confirmbox's title or content is english words, the line would not break.
 - [Component] Table: `NEW` new tree select mode (support checked/unchecked/halfchecked)
 - [Component] Table: `NEW` add new prop `onSearch` `onOrder` `onPagerChange`
 - [Component] Table: `NEW` add new prop `isMiniPager` & `showPagerSizeChanger`
 - [Component] Table: `NEW` support column group
-- [Component] Table: `NEW` support column tilte custom render 
+- [Component] Table: `NEW` support column tilte custom render
 - [Component] Table: `CHANGED` tree mode style improve
 - [Component] Table: `CHANGED` remove props.passedData support
 - [Component] Table: `CHANGED` little change in tree mode style

@@ -5099,6 +5099,12 @@ a .uxcore-count:active {
   position: relative;
   display: inline-block;
   width: 100%;
+  min-width: 80px;
+}
+.uxcore .kuma-calendar-picker-input .kuma-input {
+  padding-right: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .uxcore .kuma-calendar-picker-input .kuma-input[readonly] {
   background-color: white;
@@ -13336,12 +13342,22 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-actionbar {
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   padding: 6px 0px 4px;
 }
 .uxcore .kuma-uxtable-actionbar-item {
   display: inline-block;
   margin-right: 10px;
+}
+.uxcore .kuma-uxtable-select-all {
+  display: inline-block;
+  margin-right: 24px;
+  cursor: pointer;
+  height: 28px;
+  line-height: 28px;
+}
+.uxcore .kuma-uxtable-select-all i.half-checked {
+  margin-right: 0;
 }
 .uxcore .kuma-uxtable-column-picker {
   float: right;
@@ -13431,6 +13447,172 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-linkbar-item {
   cursor: pointer;
   display: inline-block;
+}
+.uxcore .kuma-uxtable-list-action-bar .left {
+  display: inline-block;
+  padding-left: 24px;
+}
+.uxcore .kuma-uxtable-list-action-bar .right {
+  display: inline-block;
+  width: 420px;
+  float: right;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.uxcore .kuma-uxtable-list-action-bar .right > div {
+  float: right;
+  margin-right: 20px;
+  position: relative;
+}
+.uxcore .kuma-uxtable-list-action-bar .right .order-title i,
+.uxcore .kuma-uxtable-list-action-bar .right .column-order-title i,
+.uxcore .kuma-uxtable-list-action-bar .right .picker-title i {
+  position: absolute;
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-uxtable-list-action-bar .right .order-title span,
+.uxcore .kuma-uxtable-list-action-bar .right .column-order-title span,
+.uxcore .kuma-uxtable-list-action-bar .right .picker-title span {
+  padding-left: 20px;
+}
+.uxcore .kuma-uxtable-list-action-bar .right .order-title.disabled,
+.uxcore .kuma-uxtable-list-action-bar .right .column-order-title.disabled,
+.uxcore .kuma-uxtable-list-action-bar .right .picker-title.disabled {
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-uxtable-list-action-bar .right i.active {
+  color: #0079F2;
+}
+.uxcore .list-action-bar-order-menu .icon-wrapper {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  float: right;
+}
+.uxcore .list-action-bar-order-menu .icon-wrapper i {
+  color: #0079F2;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-uxtable-column-picker-check-all,
+.uxcore .list-action-bar-order-overlay .kuma-uxtable-column-picker-check-all,
+.uxcore .list-action-bar-column-order-overlay .kuma-uxtable-column-picker-check-all {
+  position: absolute;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-arrow,
+.uxcore .list-action-bar-order-overlay .kuma-popover-arrow,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-arrow {
+  display: none;
+}
+.uxcore .list-action-bar-picker-overlay .half-checked,
+.uxcore .list-action-bar-order-overlay .half-checked,
+.uxcore .list-action-bar-column-order-overlay .half-checked {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230079F2%22%20stroke%3D%22%230079F2%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
+  vertical-align: text-bottom;
+  color: #0079F2;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner {
+  min-width: 200px;
+  padding: 0;
+  border-color: rgba(31, 56, 88, 0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item {
+  margin: 0;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item:not(:last-child),
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item:not(:last-child),
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item:not(:last-child) {
+  margin: 0;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item:hover,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item:hover,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-menu .kuma-menu-item:hover {
+  background: rgba(31, 56, 88, 0.04);
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-popover-button-group,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-popover-button-group,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-popover-button-group {
+  padding: 10px;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item {
+  position: relative;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  padding-right: 40px;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item.can-drag,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item.can-drag,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item.can-drag {
+  cursor: move;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item:hover,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item:hover,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item:hover {
+  background: rgba(31, 56, 88, 0.04);
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item.is-dragging,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item.is-dragging,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item.is-dragging {
+  color: #3C99D8;
+}
+.uxcore .list-action-bar-picker-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item i,
+.uxcore .list-action-bar-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item i,
+.uxcore .list-action-bar-column-order-overlay .kuma-popover-inner .kuma-draggable-list-wrapper > .kuma-draggable-list-item i {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.uxcore .kuma-uxtable-column-picker-groups {
+  width: 420px;
+  background: #fff;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+.uxcore .kuma-uxtable-column-picker-check-all {
+  left: 15px;
+  bottom: -34px;
+}
+.uxcore .kuma-uxtable-column-picker-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.uxcore .kuma-uxtable-column-picker-group label {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.uxcore .kuma-uxtable-column-picker-group label span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.uxcore .kuma-uxtable-column-picker-header {
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+  padding: 10px;
+  font-size: 14px;
+  color: rgba(31, 56, 88, 0.4);
+}
+.uxcore .kuma-uxtable-column-picker-content {
+  padding: 10px;
+  border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
 .uxcore .kuma-uxmask {
   position: absolute;

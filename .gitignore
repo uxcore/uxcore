@@ -26,3 +26,4 @@ spm_modules
 dist
 build
 package-lock.json
+count
