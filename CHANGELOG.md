@@ -1,3 +1,12 @@
+## 0.21.54
+- [Card] `NEW` add prop contentHeight
+- [CascadeSelect] `FIX` state not change when component destroy
+- [Table] `FIXED` fix a bug in messageIcon when break lines
+- [Tooltip] `CHANGED` style change: move background-color from inner to content
+- [Tree] `CHANGED` for ActionTreeNode, prevent click event to propagation on action item so it won't trigger selectable event on tree node
+- [Uploader] `CHANGED` change the struct requirements of prop.fileList, see README for details
+- [Uploader] `CHANGED` add id,url to value pass to upper level by onChange(value) event
+
 ## 0.21.53
 - [Table] `CHANGED` optimize the action-bar to list-action-bar
 
