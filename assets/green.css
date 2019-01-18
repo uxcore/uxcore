@@ -8960,7 +8960,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_f28wml5tozk.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_8afmavfl3d8.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9460,6 +9460,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .uxicon-zhongyaoshijian:before {
   content: "\e794";
+}
+.uxicon-more-dot:before {
+  content: "\e6a0";
 }
 /**
  * Image Component Style for uxcore
@@ -16370,6 +16373,10 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
 }
 .no-svg .kuma-tree-checkbox-disabled {
   background-position: 0 -28px !important;
+}
+.kuma-tree-icon-valign {
+  vertical-align: -2px;
+  margin-right: 3px;
 }
 /**
  * TreeSelect Component Style for uxcore

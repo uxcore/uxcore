@@ -1,3 +1,8 @@
+## 0.21.55
+- [Table] `NEW` add new prop defaultEditable
+- [Tree] `FIXED` for ActionTreeNode, fix the event stop propagation problem under react@15 and smaller
+- [Tree] `CHANGED` default actions ICON changed to more-dot
+
 ## 0.21.54
 - [Card] `NEW` add prop contentHeight
 - [CascadeSelect] `FIX` state not change when component destroy

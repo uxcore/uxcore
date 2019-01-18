@@ -9181,7 +9181,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_f28wml5tozk.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_8afmavfl3d8.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9681,6 +9681,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .uxicon-zhongyaoshijian:before {
   content: "\e794";
+}
+.uxcore .uxicon-more-dot:before {
+  content: "\e6a0";
 }
 .uxcore .kuma-layout-2c {
   margin: 0 auto;
@@ -16384,6 +16387,10 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .no-svg .kuma-tree-checkbox-disabled {
   background-position: 0 -28px !important;
+}
+.uxcore .kuma-tree-icon-valign {
+  vertical-align: -2px;
+  margin-right: 3px;
 }
 .uxcore .uxcore-tree-select {
   font-family: PingFangSC-Regular;
