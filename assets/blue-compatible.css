@@ -2431,7 +2431,7 @@
   border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #333333;
   box-sizing: border-box;
 }
 .uxcore .kuma-input[readonly],
@@ -2475,11 +2475,11 @@
 }
 .uxcore .kuma-input:-ms-input-placeholder,
 .uxcore .kuma-textarea:-ms-input-placeholder {
-  color: rgba(31, 56, 88, 0.4) !important;
+  color: #a5afbc !important;
 }
 .uxcore .kuma-input::placeholder,
 .uxcore .kuma-textarea::placeholder {
-  color: rgba(31, 56, 88, 0.4) !important;
+  color: #a5afbc !important;
 }
 .uxcore .kuma-input {
   padding: 5px 12px;
@@ -2510,7 +2510,7 @@
   padding-top: 5px;
   padding-right: 0px;
   text-align: right;
-  color: rgba(0, 0, 0, 0.6);
+  color: #666666;
   display: table-cell;
   vertical-align: baseline;
   vertical-align: -webkit-baseline-middle;
