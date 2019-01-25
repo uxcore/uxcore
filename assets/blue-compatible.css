@@ -4819,6 +4819,15 @@ a .uxcore-count:active {
 .uxcore .kuma-button-secondary .kuma-button-loading-icon {
   fill: rgba(31, 56, 88, 0.8);
 }
+.uxcore .kuma-button-text {
+  color: #000;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.uxcore .kuma-button-text:hover {
+  color: #0079F2;
+}
 .uxcore .kuma-button-lg .kuma-button-loading-icon {
   width: 20px;
   height: 20px;
@@ -8215,9 +8224,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   min-width: 263px;
   background: #fff;
   overflow: hidden;
+  box-shadow: 0px 2px 12px 0px rgba(31, 56, 88, 0.15);
   z-index: 1000;
 }
 .uxcore .kuma-drawer .kuma-dlg-close {
+  top: 12px;
   z-index: 999;
 }
 .uxcore .kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
@@ -8234,6 +8245,11 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+}
+.uxcore .kuma-drawer .kuma-dlg-title {
+  padding: 14px 20px;
+  text-indent: 0;
+  box-sizing: border-box;
 }
 .uxcore .kuma-drawer .kuma-dlg-body {
   width: 100%;
@@ -8266,7 +8282,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-drawer.dialogFade-appear {
   opacity: 0;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .4s;
+  animation-duration: .5s;
 }
 .uxcore .kuma-drawer.dialogFade-enter-active,
 .uxcore .kuma-drawer.dialogFade-appear-active {
@@ -8275,7 +8291,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-drawer.dialogFade-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .4s;
+  animation-duration: .5s;
 }
 .uxcore .kuma-drawer.dialogFade-leave-active {
   animation-name: drawerFadeOut;
@@ -8283,7 +8299,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-drawer.dialogSlideRight-enter,
 .uxcore .kuma-drawer.dialogSlideRight-appear {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
@@ -8298,11 +8314,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-drawer.dialogSlideRight-leave-active {
   animation-name: drawerSlideOutRight;
+  animation-duration: .5s;
 }
 .uxcore .kuma-drawer.dialogSlideLeft-enter,
 .uxcore .kuma-drawer.dialogSlideLeft-appear {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
@@ -8317,11 +8334,12 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-drawer.dialogSlideLeft-leave-active {
   animation-name: drawerSlideOutLeft;
+  animation-duration: .5s;
 }
 @keyframes drawerSlideInRight {
   0% {
-    opacity: 0;
-    transform: translateX(30px);
+    opacity: 1;
+    transform: translateX(100px);
   }
   100% {
     opacity: 1;
@@ -8334,14 +8352,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     -webkit-transform: translateX(0%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateX(30px);
+    opacity: 1;
+    -webkit-transform: translateX(100%);
   }
 }
 @keyframes drawerSlideInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
@@ -8354,18 +8372,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
     -webkit-transform: translateX(0%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateX(-30px);
-  }
-}
-@keyframes drawerSlideOutRight {
-  0% {
     opacity: 1;
-    transform: translateX(0%);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(-100%);
   }
 }
 @keyframes drawerFadeIn {
@@ -9181,7 +9189,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_8afmavfl3d8.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_8eaexql2ap.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9682,8 +9690,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .uxicon-zhongyaoshijian:before {
   content: "\e794";
 }
+.uxcore .uxicon-drag:before {
+  content: "\e6ad";
+}
 .uxcore .uxicon-more-dot:before {
   content: "\e6a0";
+}
+.uxcore .uxicon-menu:before {
+  content: "\e6cd";
 }
 .uxcore .kuma-layout-2c {
   margin: 0 auto;

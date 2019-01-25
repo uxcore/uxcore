@@ -4472,6 +4472,15 @@ a -count:active {
 .kuma-button-secondary .kuma-button-loading-icon {
   fill: rgba(31, 56, 88, 0.8);
 }
+.kuma-button-text {
+  color: #000;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.kuma-button-text:hover {
+  color: #40b370;
+}
 .kuma-button-lg .kuma-button-loading-icon {
   width: 20px;
   height: 20px;
@@ -7952,9 +7961,11 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   min-width: 263px;
   background: #fff;
   overflow: hidden;
+  box-shadow: 0px 2px 12px 0px rgba(31, 56, 88, 0.15);
   z-index: 1000;
 }
 .kuma-drawer .kuma-dlg-close {
+  top: 12px;
   z-index: 999;
 }
 .kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
@@ -7971,6 +7982,11 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+}
+.kuma-drawer .kuma-dlg-title {
+  padding: 14px 20px;
+  text-indent: 0;
+  box-sizing: border-box;
 }
 .kuma-drawer .kuma-dlg-body {
   width: 100%;
@@ -8003,7 +8019,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-drawer.dialogFade-appear {
   opacity: 0;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .4s;
+  animation-duration: .5s;
 }
 .kuma-drawer.dialogFade-enter-active,
 .kuma-drawer.dialogFade-appear-active {
@@ -8012,7 +8028,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-drawer.dialogFade-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: .4s;
+  animation-duration: .5s;
 }
 .kuma-drawer.dialogFade-leave-active {
   animation-name: drawerFadeOut;
@@ -8020,7 +8036,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-drawer.dialogSlideRight-enter,
 .kuma-drawer.dialogSlideRight-appear {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
@@ -8035,11 +8051,12 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-drawer.dialogSlideRight-leave-active {
   animation-name: drawerSlideOutRight;
+  animation-duration: .5s;
 }
 .kuma-drawer.dialogSlideLeft-enter,
 .kuma-drawer.dialogSlideLeft-appear {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
@@ -8054,11 +8071,12 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-drawer.dialogSlideLeft-leave-active {
   animation-name: drawerSlideOutLeft;
+  animation-duration: .5s;
 }
 @keyframes drawerSlideInRight {
   0% {
-    opacity: 0;
-    transform: translateX(30px);
+    opacity: 1;
+    transform: translateX(100px);
   }
   100% {
     opacity: 1;
@@ -8071,14 +8089,14 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     -webkit-transform: translateX(0%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateX(30px);
+    opacity: 1;
+    -webkit-transform: translateX(100%);
   }
 }
 @keyframes drawerSlideInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
@@ -8091,18 +8109,8 @@ div.kuma-cascader-disabled:hover .kuma-icon {
     -webkit-transform: translateX(0%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateX(-30px);
-  }
-}
-@keyframes drawerSlideOutRight {
-  0% {
     opacity: 1;
-    transform: translateX(0%);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(-100%);
   }
 }
 @keyframes drawerFadeIn {
@@ -8960,7 +8968,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_8afmavfl3d8.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_8eaexql2ap.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9461,8 +9469,14 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .uxicon-zhongyaoshijian:before {
   content: "\e794";
 }
+.uxicon-drag:before {
+  content: "\e6ad";
+}
 .uxicon-more-dot:before {
   content: "\e6a0";
+}
+.uxicon-menu:before {
+  content: "\e6cd";
 }
 /**
  * Image Component Style for uxcore

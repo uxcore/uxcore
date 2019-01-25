@@ -1,3 +1,7 @@
+## 0.21.56
+- [Button] `NEW` prop `type` support new value `text`
+- [Drawer] `FIXED` fix css
+
 ## 0.21.55
 - [Table] `NEW` add new prop defaultEditable
 - [Tree] `FIXED` for ActionTreeNode, fix the event stop propagation problem under react@15 and smaller
