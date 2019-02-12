@@ -1,3 +1,8 @@
+## 0.21.57
+- [TreeSelect] tree SelectNode remove style overflow
+- [Calendar] add MiniWeek
+- [Menu] fix submenu selected logic
+
 ## 0.21.56
 - [Button] `NEW` prop `type` support new value `text`
 - [Drawer] `FIXED` fix css
