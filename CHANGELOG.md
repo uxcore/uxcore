@@ -1,7 +1,13 @@
+## 0.21.58
+- [Calendar] `FIX` fix disabledDate & disabledTime is not working when init
+- [Calendar] `NEW` placeholder support i18n
+- [CascadeSelect] `FIX` fix line-height styles
+- [TreeSelect] `NEW` rc-tree update to support customize treeNode icon && add size props
+
 ## 0.21.57
-- [TreeSelect] tree SelectNode remove style overflow
-- [Calendar] add MiniWeek
-- [Menu] fix submenu selected logic
+- [TreeSelect] `CHANGED` tree SelectNode remove style overflow
+- [Calendar] `NEW` add MiniWeek
+- [Menu] `FIX` fix submenu selected logic
 
 ## 0.21.56
 - [Button] `NEW` prop `type` support new value `text`
