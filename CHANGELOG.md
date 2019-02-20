@@ -1,3 +1,9 @@
+## 0.21.59
+- [Calendar] `NEW` Compatible with different locale formats
+- [Table] `NEW` update ListActionBar for compatibility with older versions
+- [Table] `FIX` columnOrder & columnPicker can respond to columns change
+- [FloatNav] `NEW` support spot bar
+
 ## 0.21.58
 - [Calendar] `FIX` fix disabledDate & disabledTime is not working when init
 - [Calendar] `NEW` placeholder support i18n

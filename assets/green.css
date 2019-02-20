@@ -8725,6 +8725,66 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .uxcore-float-nav-control-next:before {
   content: '\e614';
 }
+.uxcore-float-nav.hoverable {
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid rgba(31, 56, 88, 0.1);
+  box-shadow: 0 4px 15px 0 rgba(31, 56, 88, 0.15);
+  transform: translate3d(200px, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: ease .3s;
+}
+.uxcore-float-nav-spot-circle {
+  height: 4px;
+  width: 4px;
+  margin: 8px auto;
+  border-radius: 2px;
+  background-color: rgba(31, 56, 88, 0.3);
+}
+.uxcore-float-nav-spot-circle-active {
+  background-color: #40b370;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  margin: 6px auto;
+}
+.uxcore-float-nav-spot-wrap {
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid rgba(31, 56, 88, 0.2);
+  box-shadow: 0 2px 10px 0 rgba(31, 56, 88, 0.15);
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  top: 200px;
+  transition: ease .3s;
+}
+.uxcore-float-nav-spot-wrap .uxcore-float-nav-control {
+  position: static;
+}
+.uxcore-float-nav-spot-wrap .uxcore-float-nav-control-prev {
+  width: 16px !important;
+  left: -1px;
+  top: -16px;
+  border-color: rgba(31, 56, 88, 0.2);
+}
+.uxcore-float-nav-spot-wrap .uxcore-float-nav-control-next {
+  width: 16px !important;
+  left: -1px;
+  bottom: -16px;
+  border-color: rgba(31, 56, 88, 0.2);
+}
+.uxcore-float-nav-spot-active .uxcore-float-nav.hoverable {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+.uxcore-float-nav-spot-active .uxcore-float-nav-spot-wrap {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(30px, 0, 0);
+}
 .kuma-uxform {
   zoom: 1;
 }
@@ -13559,7 +13619,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-uxtable-searchbar {
   float: right;
   position: relative;
-  width: 355px;
+  width: 200px;
 }
 .kuma-uxtable-searchbar .kuma-input {
   height: 32px;
@@ -13600,7 +13660,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-uxtable-list-action-bar .right {
   display: inline-block;
-  width: 420px;
   float: right;
   height: 28px;
   line-height: 28px;
