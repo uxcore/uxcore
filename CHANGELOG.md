@@ -1,3 +1,6 @@
+## 0.21.60
+- [Table] fix some styles
+
 ## 0.21.59
 - [Calendar] `NEW` Compatible with different locale formats
 - [Table] `NEW` update ListActionBar for compatibility with older versions

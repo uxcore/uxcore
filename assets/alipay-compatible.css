@@ -13629,8 +13629,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-actionbar {
   width: 100%;
-  margin-bottom: 10px;
-  padding: 6px 0px 4px;
+  padding: 5px 0px;
+  margin: 5px;
 }
 .uxcore .kuma-uxtable-actionbar-item {
   display: inline-block;
@@ -13738,16 +13738,23 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-uxtable-list-action-bar .left {
   display: inline-block;
   padding-left: 24px;
+  height: 32px;
+  line-height: 32px;
+}
+.uxcore .kuma-uxtable-list-action-bar .custom {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
 }
 .uxcore .kuma-uxtable-list-action-bar .right {
   display: inline-block;
   float: right;
-  height: 28px;
-  line-height: 28px;
   cursor: pointer;
 }
 .uxcore .kuma-uxtable-list-action-bar .right > div {
   float: right;
+  height: 32px;
+  line-height: 32px;
   margin-right: 20px;
   position: relative;
 }
