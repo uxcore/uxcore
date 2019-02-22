@@ -1,3 +1,6 @@
+## 0.21.62
+- [Menu] 'CHANGED' submenu selected logic
+
 ## 0.21.61
 - [Table] fix some styles
 

@@ -10360,6 +10360,29 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-submenu-open.kuma-menu-submenu-inline > .kuma-menu-submenu-title .kuma-menu-submenu-arrow:after {
   transform: rotate(180deg);
 }
+.uxcore .kuma-menu-lte-react16-vertical,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical {
+  position: relative;
+}
+.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:before,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:before,
+.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:after,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 5px;
+}
+.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:before,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:before {
+  left: -5px;
+}
+.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:after,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:after {
+  right: -5px;
+}
 .uxcore .kuma-menu-vertical .uxcore .kuma-menu-submenu-selected,
 .uxcore .kuma-menu-vertical-left .uxcore .kuma-menu-submenu-selected,
 .uxcore .kuma-menu-vertical-right .uxcore .kuma-menu-submenu-selected {
