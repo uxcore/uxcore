@@ -1,3 +1,8 @@
+## 0.21.63
+- [FloatNav] `FIXED` scroll event can not occurred when nav items is async
+- [Menu] `FIX` submenu selected logic
+- [Pagination] `FIXED` fix the ellipsis became messy code
+
 ## 0.21.62
 - [Menu] 'CHANGED' submenu selected logic
 
@@ -7,19 +12,19 @@
 ## 0.21.59
 - [Calendar] `NEW` Compatible with different locale formats
 - [Table] `NEW` update ListActionBar for compatibility with older versions
-- [Table] `FIX` columnOrder & columnPicker can respond to columns change
+- [Table] `FIXED` columnOrder & columnPicker can respond to columns change
 - [FloatNav] `NEW` support spot bar
 
 ## 0.21.58
-- [Calendar] `FIX` fix disabledDate & disabledTime is not working when init
+- [Calendar] `FIXED` fix disabledDate & disabledTime is not working when init
 - [Calendar] `NEW` placeholder support i18n
-- [CascadeSelect] `FIX` fix line-height styles
+- [CascadeSelect] `FIXED` fix line-height styles
 - [TreeSelect] `NEW` rc-tree update to support customize treeNode icon && add size props
 
 ## 0.21.57
 - [TreeSelect] `CHANGED` tree SelectNode remove style overflow
 - [Calendar] `NEW` add MiniWeek
-- [Menu] `FIX` fix submenu selected logic
+- [Menu] `FIXED` fix submenu selected logic
 
 ## 0.21.56
 - [Button] `NEW` prop `type` support new value `text`
@@ -32,7 +37,7 @@
 
 ## 0.21.54
 - [Card] `NEW` add prop contentHeight
-- [CascadeSelect] `FIX` state not change when component destroy
+- [CascadeSelect] `FIXED` state not change when component destroy
 - [Table] `FIXED` fix a bug in messageIcon when break lines
 - [Tooltip] `CHANGED` style change: move background-color from inner to content
 - [Tree] `CHANGED` for ActionTreeNode, prevent click event to propagation on action item so it won't trigger selectable event on tree node
@@ -89,7 +94,7 @@
 - [Calendar] `FIXED` year can not changed when defaultValue is not set in monthCalendar
 - [Calendar] `NEW` add new prop allowedMonthRange for MonthCalendar
 
-- [TreeSelect] `FIX` if props treeCheckable is true, the value not existed in props.treeData could be set from outside.
+- [TreeSelect] `FIXED` if props treeCheckable is true, the value not existed in props.treeData could be set from outside.
 
 - [Uploader] `FIXED` fix classnames dependency
 - [Uploader] `FIXED` fix uploadcore import (issue #81)
@@ -1227,10 +1232,10 @@
 
 `2016-06-29`
 
-- [Component] TextAreaFormField: `FIX` fix server render bug
+- [Component] TextAreaFormField: `FIXED` fix server render bug
 - [Component] Form: `CHANGED` update tinymce dependency to ~0.2.0
 - [Component] Form: `CHANGED` add warning in ButtonGroupFormField
-- [Component] Form: `FIX` fix server render bug
+- [Component] Form: `FIXED` fix server render bug
 
 ## 0.2.2
 

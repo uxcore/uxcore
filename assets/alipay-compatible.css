@@ -8999,7 +8999,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: fixed;
   right: 20px;
   z-index: 1;
-  top: 200px;
+  top: 50%;
   transition: ease .3s;
 }
 .uxcore .uxcore-float-nav-spot-wrap .uxcore-float-nav-control {
@@ -10360,27 +10360,23 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-menu-submenu-open.kuma-menu-submenu-inline > .kuma-menu-submenu-title .kuma-menu-submenu-arrow:after {
   transform: rotate(180deg);
 }
-.uxcore .kuma-menu-lte-react16-vertical,
-.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical {
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical {
   position: relative;
 }
-.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:before,
-.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:before,
-.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:after,
-.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:after {
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:before,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:after {
   content: '';
   display: block;
   position: absolute;
   top: 0;
   height: 100%;
   width: 5px;
+  visibility: visible;
 }
-.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:before,
-.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:before {
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:before {
   left: -5px;
 }
-.uxcore .kuma-menu-lte-react16-vertical.kuma-menu-submenu-active:after,
-.uxcore .kuma-menu-lte-react16 .kuma-menu-submenu-vertical.kuma-menu-submenu-active:after {
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:after {
   right: -5px;
 }
 .uxcore .kuma-menu-vertical .uxcore .kuma-menu-submenu-selected,
@@ -11393,27 +11389,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-page-item-active:hover a {
   color: white;
 }
-.uxcore .kuma-page-jump-prev,
-.uxcore .kuma-page-jump-next {
-  margin-right: 8px;
-}
-.uxcore .kuma-page-jump-prev:after,
-.uxcore .kuma-page-jump-next:after {
-  content: "•••";
-  display: block;
-  letter-spacing: 2px;
-  color: rgba(31, 56, 88, 0.4);
-  font-size: 12px;
-  margin-top: 1px;
-}
-.uxcore .kuma-page-jump-prev:hover:after {
-  font-family: "uxcore";
-  content: "\e65e";
-}
-.uxcore .kuma-page-jump-next:hover:after {
-  font-family: "uxcore";
-  content: "\e65f";
-}
 .uxcore .kuma-page-prev,
 .uxcore .kuma-page-next,
 .uxcore .kuma-page-jump-prev,
@@ -11423,7 +11398,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   color: rgba(31, 56, 88, 0.4);
   font-size: 10px;
   list-style: none;
-  min-width: 28px;
   height: 28px;
   line-height: 26px;
   float: left;
@@ -11440,6 +11414,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-page-prev,
 .uxcore .kuma-page-next {
+  min-width: 28px;
   border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 18px;
@@ -11460,6 +11435,35 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-page-prev:hover a,
 .uxcore .kuma-page-next:hover a {
   color: #00a0e8;
+}
+.uxcore .kuma-page-jump-prev,
+.uxcore .kuma-page-jump-next {
+  width: 16px;
+  margin-right: 8px;
+}
+.uxcore .kuma-page-jump-prev .uxicon-more-dot,
+.uxcore .kuma-page-jump-next .uxicon-more-dot {
+  display: block;
+}
+.uxcore .kuma-page-jump-prev .uxicon-left_double,
+.uxcore .kuma-page-jump-next .uxicon-left_double {
+  display: none;
+}
+.uxcore .kuma-page-jump-prev .uxicon-right_double,
+.uxcore .kuma-page-jump-next .uxicon-right_double {
+  display: none;
+}
+.uxcore .kuma-page-jump-prev:hover .uxicon-more-dot {
+  display: none;
+}
+.uxcore .kuma-page-jump-prev:hover .uxicon-left_double {
+  display: block;
+}
+.uxcore .kuma-page-jump-next:hover .uxicon-more-dot {
+  display: none;
+}
+.uxcore .kuma-page-jump-next:hover .uxicon-right_double {
+  display: block;
 }
 .uxcore .kuma-page-disabled {
   cursor: not-allowed;
@@ -11523,6 +11527,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-page-options-quick-jumper-button {
   margin-left: 8px;
 }
+.uxcore .kuma-page-simple .uxcore-icon {
+  font-size: 12px;
+  line-height: 18px;
+}
 .uxcore .kuma-page-simple .kuma-page-prev,
 .uxcore .kuma-page-simple .kuma-page-next {
   font-size: 10px;
@@ -11557,6 +11565,10 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-page-simple .kuma-page-simple-pager input:hover {
   border-color: #a5afbc;
+}
+.uxcore .kuma-page.mini .uxcore-icon {
+  font-size: 12px;
+  line-height: 18px;
 }
 .uxcore .kuma-page.mini .kuma-page-prev,
 .uxcore .kuma-page.mini .kuma-page-next,
