@@ -1,3 +1,6 @@
+## 0.21.64
+- [Pagination] revert
+
 ## 0.21.63
 - [FloatNav] `FIXED` scroll event can not occurred when nav items is async
 - [Menu] `FIX` submenu selected logic

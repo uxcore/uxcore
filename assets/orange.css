@@ -11238,6 +11238,27 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-item-active:hover a {
   color: white;
 }
+.kuma-page-jump-prev,
+.kuma-page-jump-next {
+  margin-right: 8px;
+}
+.kuma-page-jump-prev:after,
+.kuma-page-jump-next:after {
+  content: "•••";
+  display: block;
+  letter-spacing: 2px;
+  color: rgba(31, 56, 88, 0.4);
+  font-size: 12px;
+  margin-top: 1px;
+}
+.kuma-page-jump-prev:hover:after {
+  font-family: "uxcore";
+  content: "\e65e";
+}
+.kuma-page-jump-next:hover:after {
+  font-family: "uxcore";
+  content: "\e65f";
+}
 .kuma-page-prev,
 .kuma-page-next,
 .kuma-page-jump-prev,
@@ -11247,6 +11268,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   color: rgba(31, 56, 88, 0.4);
   font-size: 10px;
   list-style: none;
+  min-width: 28px;
   height: 28px;
   line-height: 26px;
   float: left;
@@ -11263,7 +11285,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-page-prev,
 .kuma-page-next {
-  min-width: 28px;
   border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 18px;
@@ -11284,35 +11305,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-prev:hover a,
 .kuma-page-next:hover a {
   color: #ff6f00;
-}
-.kuma-page-jump-prev,
-.kuma-page-jump-next {
-  width: 16px;
-  margin-right: 8px;
-}
-.kuma-page-jump-prev .uxicon-more-dot,
-.kuma-page-jump-next .uxicon-more-dot {
-  display: block;
-}
-.kuma-page-jump-prev .uxicon-left_double,
-.kuma-page-jump-next .uxicon-left_double {
-  display: none;
-}
-.kuma-page-jump-prev .uxicon-right_double,
-.kuma-page-jump-next .uxicon-right_double {
-  display: none;
-}
-.kuma-page-jump-prev:hover .uxicon-more-dot {
-  display: none;
-}
-.kuma-page-jump-prev:hover .uxicon-left_double {
-  display: block;
-}
-.kuma-page-jump-next:hover .uxicon-more-dot {
-  display: none;
-}
-.kuma-page-jump-next:hover .uxicon-right_double {
-  display: block;
 }
 .kuma-page-disabled {
   cursor: not-allowed;
@@ -11376,10 +11368,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-options-quick-jumper-button {
   margin-left: 8px;
 }
-.kuma-page-simple .uxcore-icon {
-  font-size: 12px;
-  line-height: 18px;
-}
 .kuma-page-simple .kuma-page-prev,
 .kuma-page-simple .kuma-page-next {
   font-size: 10px;
@@ -11414,10 +11402,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-page-simple .kuma-page-simple-pager input:hover {
   border-color: #a5afbc;
-}
-.kuma-page.mini .uxcore-icon {
-  font-size: 12px;
-  line-height: 18px;
 }
 .kuma-page.mini .kuma-page-prev,
 .kuma-page.mini .kuma-page-next,
