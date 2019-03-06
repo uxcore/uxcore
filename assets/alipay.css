@@ -13567,8 +13567,8 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 .kuma-uxtable-actionbar {
   width: 100%;
-  padding: 5px 0px;
-  margin: 5px;
+  margin-bottom: 12px;
+  padding: 6px 0px 4px;
 }
 .kuma-uxtable-actionbar-item {
   display: inline-block;
@@ -13676,6 +13676,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-uxtable-list-action-bar .left {
   display: inline-block;
   height: 32px;
+  margin-right: 20px;
   line-height: 32px;
 }
 .kuma-uxtable-list-action-bar .custom {

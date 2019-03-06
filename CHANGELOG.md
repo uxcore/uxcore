@@ -1,3 +1,7 @@
+## 0.21.65
+- [Table] `FIXED` Fix a bug when multiple table instances exist on a page in rowOrder & DraggableList
+- [Calendar] `FIXED` prop disabledDate of MonthCalendar didn't support method getTime
+
 ## 0.21.64
 - [Pagination] revert
 
