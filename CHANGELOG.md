@@ -1,3 +1,11 @@
+## 0.21.66
+- [Table] `NEW` column resizeable;
+- [Table] `NEW` add two methods addSubRow & addSubRowFromTop for tree table
+- [Table] `FIXED` hidden column will not appear in ColumnOrder; if jsxcolumns change to empty, ColumnPicker & ColumnOrder will be disabled
+- [Table] `FIXED` a bug when rightFixed is true in tree mode(expandButton, header cell border)
+- [Table] `CHANGED` head cell text-overflow change to ellipsis
+- [Form] fix text overflow in input-field
+
 ## 0.21.65
 - [Table] `FIXED` Fix a bug when multiple table instances exist on a page in rowOrder & DraggableList
 - [Calendar] `FIXED` prop disabledDate of MonthCalendar didn't support method getTime

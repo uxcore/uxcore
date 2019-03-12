@@ -9015,6 +9015,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-number-input-uxform-field .kuma-uxform-input {
   display: table;
   width: 100%;
+  word-break: break-all;
 }
 .kuma-button-group-uxform-field {
   padding-left: 100px;
@@ -13696,6 +13697,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   margin-right: 20px;
   position: relative;
 }
+.kuma-uxtable-list-action-bar .right > div:first-child {
+  margin-right: 2px;
+}
 .kuma-uxtable-list-action-bar .right .order-title i,
 .kuma-uxtable-list-action-bar .right .column-order-title i,
 .kuma-uxtable-list-action-bar .right .picker-title i {
@@ -14074,6 +14078,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   display: inline-block;
   text-align: left;
   overflow: hidden;
+  text-overflow: ellipsis;
   height: 100%;
   padding: 0 20px 0 20px;
   vertical-align: top;
@@ -14400,6 +14405,14 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   font-size: 16px;
   margin-left: 4px;
   vertical-align: -1px;
+}
+.kuma-uxtable-cell-resize-icon {
+  display: inline-block;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  cursor: ew-resize;
+  position: absolute;
+  z-index: 99;
 }
 .kuma-uxtable-header-item-filter-dropdown {
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
