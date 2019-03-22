@@ -1,3 +1,15 @@
+## 0.21.67
+- [Dialog] `NEW` cancel callback expose param `e`
+- [Drawer] `NEW` add new event cancel
+- [Message] `FIXED` fix some bug
+- [Select2] `CHANGED` change placeholder color to same as design
+- [Table] `FIXED` fix some bugs in tree table
+- [Table] `CHANGED` keep jsxid steady when load tree data
+- [Table] `NEW` add new method `updateRow` in tree mode
+- [Table] `FIXED` change columnPicker options from dataKey to title
+- [Table] `FIXED` add text-overflow style in headerCell for compatibility in legao
+- [Table] `FIXED` delete activeColumn when jsxcolumns didn't contain that column
+
 ## 0.21.66
 - [Table] `NEW` column resizeable;
 - [Table] `NEW` add two methods addSubRow & addSubRowFromTop for tree table

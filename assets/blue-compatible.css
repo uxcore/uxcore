@@ -12401,7 +12401,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #a5afbc;
+  color: rgba(31, 56, 88, 0.4);
   line-height: 34px;
   max-width: 90%;
   overflow: hidden;
@@ -12438,7 +12438,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-select2-selection--single .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #a5afbc;
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-select2-selection--single .kuma-select2-selection__rendered {
   display: block;
