@@ -1,7 +1,11 @@
+## 0.22.1~2
+
+- [Pagination] `CHANGED` 0.8.0 -> 0.8.1, fix uxcore-icon dependency
+- [Table] `CHANGED` bump to 11.0.0, update pagination version
+
 ## 0.22.0
 
 - [Carousel] `CHANGED` 0.3.8 -> 0.4.0, changed react-slick to 0.22.0
-- [Pagination] `CHANGED` 0.7.8 -> 0.8.0, all icons changed to uxcore-icon
 - [UserGuide] `CHANGED` 0.1.2 -> 0.2.0, implement new design, possbile incompatible changes, verify needed
 - [TreeSelect] `FEATURE` do not show rightDropdown when prop multiple is false
 - [Drawer] `FIXED` fix prefixCls
