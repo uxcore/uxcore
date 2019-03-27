@@ -1,3 +1,13 @@
+## 0.22.0
+
+- [Carousel] `CHANGED` 0.3.8 -> 0.4.0, changed react-slick to 0.22.0
+- [Pagination] `CHANGED` 0.7.8 -> 0.8.0, all icons changed to uxcore-icon
+- [UserGuide] `CHANGED` 0.1.2 -> 0.2.0, implement new design, possbile incompatible changes, verify needed
+- [TreeSelect] `FEATURE` do not show rightDropdown when prop multiple is false
+- [Drawer] `FIXED` fix prefixCls
+- [Popover] `FIXED` fix prefixCls
+- [NoticeIcon] `FIXED` fix prefixCls
+
 ## 0.21.67
 - [Dialog] `NEW` cancel callback expose param `e`
 - [Drawer] `NEW` add new event cancel

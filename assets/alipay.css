@@ -11239,27 +11239,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-item-active:hover a {
   color: white;
 }
-.kuma-page-jump-prev,
-.kuma-page-jump-next {
-  margin-right: 8px;
-}
-.kuma-page-jump-prev:after,
-.kuma-page-jump-next:after {
-  content: "•••";
-  display: block;
-  letter-spacing: 2px;
-  color: rgba(31, 56, 88, 0.4);
-  font-size: 12px;
-  margin-top: 1px;
-}
-.kuma-page-jump-prev:hover:after {
-  font-family: "uxcore";
-  content: "\e65e";
-}
-.kuma-page-jump-next:hover:after {
-  font-family: "uxcore";
-  content: "\e65f";
-}
 .kuma-page-prev,
 .kuma-page-next,
 .kuma-page-jump-prev,
@@ -11269,7 +11248,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   color: rgba(31, 56, 88, 0.4);
   font-size: 10px;
   list-style: none;
-  min-width: 28px;
   height: 28px;
   line-height: 26px;
   float: left;
@@ -11286,6 +11264,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-page-prev,
 .kuma-page-next {
+  min-width: 28px;
   border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 18px;
@@ -11306,6 +11285,35 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-prev:hover a,
 .kuma-page-next:hover a {
   color: #00a0e8;
+}
+.kuma-page-jump-prev,
+.kuma-page-jump-next {
+  width: 16px;
+  margin-right: 8px;
+}
+.kuma-page-jump-prev .uxicon-more-dot,
+.kuma-page-jump-next .uxicon-more-dot {
+  display: block;
+}
+.kuma-page-jump-prev .uxicon-left_double,
+.kuma-page-jump-next .uxicon-left_double {
+  display: none;
+}
+.kuma-page-jump-prev .uxicon-right_double,
+.kuma-page-jump-next .uxicon-right_double {
+  display: none;
+}
+.kuma-page-jump-prev:hover .uxicon-more-dot {
+  display: none;
+}
+.kuma-page-jump-prev:hover .uxicon-left_double {
+  display: block;
+}
+.kuma-page-jump-next:hover .uxicon-more-dot {
+  display: none;
+}
+.kuma-page-jump-next:hover .uxicon-right_double {
+  display: block;
 }
 .kuma-page-disabled {
   cursor: not-allowed;
@@ -11369,6 +11377,10 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-options-quick-jumper-button {
   margin-left: 8px;
 }
+.kuma-page-simple .uxcore-icon {
+  font-size: 12px;
+  line-height: 18px;
+}
 .kuma-page-simple .kuma-page-prev,
 .kuma-page-simple .kuma-page-next {
   font-size: 10px;
@@ -11403,6 +11415,10 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-page-simple .kuma-page-simple-pager input:hover {
   border-color: #a5afbc;
+}
+.kuma-page.mini .uxcore-icon {
+  font-size: 12px;
+  line-height: 18px;
 }
 .kuma-page.mini .kuma-page-prev,
 .kuma-page.mini .kuma-page-next,
@@ -14427,6 +14443,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   min-width: 104px;
   max-width: 232px;
 }
+.kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu .kuma-checkbox-group-item {
+  margin-bottom: 0;
+}
 .kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu-sub {
   border: 1px solid #bcc3cd;
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
@@ -17232,6 +17251,17 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   overflow-y: auto;
   height: 100%;
 }
+.uxcore-tree-select-dropdown-all {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px 0 0 3px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+}
 .uxcore-tree-select-dropdown-right {
   border-left-color: transparent;
   overflow-y: hidden;
@@ -18580,10 +18610,14 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 100;
+  height: 0;
+  width: 0;
+}
+.kuma-user-guide-stage.isBlocking {
   height: 100%;
   width: 100%;
-  z-index: 100;
-  background: rgba(31, 56, 88, 0.04);
+  background: rgba(0, 0, 0, 0.4);
 }
 .kuma-user-guide-breathing-point {
   position: absolute;
@@ -18626,6 +18660,10 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   right: 5px;
   left: auto;
 }
+.kuma-user-guide-step-hint-wrp {
+  display: -ms-flexbox;
+  display: flex;
+}
 .kuma-user-guide-step-hint-title {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
@@ -18655,4 +18693,28 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   font-size: 12px;
   color: rgba(31, 56, 88, 0.4);
   cursor: pointer;
+}
+.kuma-user-guide-skip-checkbox {
+  font-size: 12px;
+  color: rgba(31, 56, 88, 0.4);
+  display: inline-block;
+}
+.kuma-user-guide-skip-checkbox .kuma-checkbox-group-item {
+  margin-bottom: 0;
+}
+.kuma-user-guide--step-hint-wrp {
+  display: -ms-flexbox;
+  display: flex;
+}
+.kuma-user-guide-step-hint-icon {
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid;
+  line-height: 38px;
+  text-align: center;
+  margin-right: 24px;
+  font-size: 20px;
+  display: block;
+  -ms-flex: 38px 0 0px;
+      flex: 38px 0 0;
 }
