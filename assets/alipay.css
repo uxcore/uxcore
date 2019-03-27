@@ -8162,7 +8162,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  * Copyright 2017-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
-.kuma-drawer {
+.kuma-dlg-wrap .kuma-drawer {
   position: fixed;
   height: 100%;
   min-width: 263px;
@@ -8171,17 +8171,17 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   box-shadow: 0px 2px 12px 0px rgba(31, 56, 88, 0.15);
   z-index: 1000;
 }
-.kuma-drawer .kuma-dlg-close {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-close {
   top: 12px;
   z-index: 999;
 }
-.kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
+.kuma-dlg-wrap .kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
   font-size: 14px;
 }
-.kuma-drawer.kuma-dlg {
+.kuma-dlg-wrap .kuma-drawer.kuma-dlg {
   position: fixed;
 }
-.kuma-drawer .kuma-dlg-content {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-content {
   position: initial;
   height: 100%;
   box-shadow: none;
@@ -8190,12 +8190,12 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.kuma-drawer .kuma-dlg-title {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-title {
   padding: 14px 20px;
   text-indent: 0;
   box-sizing: border-box;
 }
-.kuma-drawer .kuma-dlg-body {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-body {
   width: 100%;
   -ms-flex: 1;
       flex: 1;
@@ -8203,80 +8203,80 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.kuma-drawer-right {
+.kuma-dlg-wrap .kuma-drawer-right {
   right: 0;
   top: 0;
   bottom: 0;
 }
-.kuma-drawer-left {
+.kuma-dlg-wrap .kuma-drawer-left {
   left: 0;
   top: 0;
   bottom: 0;
 }
-.kuma-drawer .kuma-dlg-header {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-header {
   -ms-flex: 0;
       flex: 0;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
-.kuma-drawer .kuma-dlg-footer {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-footer {
   -ms-flex: 0;
       flex: 0;
 }
-.kuma-drawer.dialogFade-enter,
-.kuma-drawer.dialogFade-appear {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-enter,
+.kuma-dlg-wrap .kuma-drawer.dialogFade-appear {
   opacity: 0;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogFade-enter-active,
-.kuma-drawer.dialogFade-appear-active {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-enter-active,
+.kuma-dlg-wrap .kuma-drawer.dialogFade-appear-active {
   animation-name: drawerFadeIn;
 }
-.kuma-drawer.dialogFade-leave {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogFade-leave-active {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-leave-active {
   animation-name: drawerFadeOut;
 }
-.kuma-drawer.dialogSlideRight-enter,
-.kuma-drawer.dialogSlideRight-appear {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-enter,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-appear {
   opacity: 0;
   transform: translateX(100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideRight-enter-active,
-.kuma-drawer.dialogSlideRight-appear-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-enter-active,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-appear-active {
   animation-name: drawerSlideInRight;
 }
-.kuma-drawer.dialogSlideRight-leave {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideRight-leave-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-leave-active {
   animation-name: drawerSlideOutRight;
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideLeft-enter,
-.kuma-drawer.dialogSlideLeft-appear {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-enter,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-appear {
   opacity: 0;
   transform: translateX(-100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideLeft-enter-active,
-.kuma-drawer.dialogSlideLeft-appear-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-enter-active,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-appear-active {
   animation-name: drawerSlideInLeft;
 }
-.kuma-drawer.dialogSlideLeft-leave {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideLeft-leave-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-leave-active {
   animation-name: drawerSlideOutLeft;
   animation-duration: .5s;
 }
