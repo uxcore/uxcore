@@ -1,3 +1,9 @@
+## 0.22.3
+- [Table] `NEW` add new prop needCheckRightFixed & onRowGroupOpenChange & defaultRowGroupActiveKeys
+- [CascadeMutilSelect] `FIXED` value will change after every checked.
+- [CascadeSelect] `NEW` async load will be occurred after clicking a item of search result.
+- [Uploader] `NEW` 'onShowFile' hook for all file
+
 ## 0.22.1~2
 
 - [Pagination] `CHANGED` 0.8.0 -> 0.8.1, fix uxcore-icon dependency

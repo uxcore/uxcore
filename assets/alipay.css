@@ -9236,7 +9236,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_8eaexql2ap.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_taqqzxp2f7.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9745,6 +9745,15 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .uxicon-menu:before {
   content: "\e6cd";
+}
+.uxicon-chouti:before {
+  content: "\e662";
+}
+.uxicon-youxuanzhuan:before {
+  content: "\e6ce";
+}
+.uxicon-zuoxuanzhuan:before {
+  content: "\e6cf";
 }
 /**
  * Image Component Style for uxcore
