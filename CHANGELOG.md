@@ -1,3 +1,8 @@
+## 0.21.68
+- [CascadeMutilSelect] `FIXED` value will change after every checked.
+- [CascadeSelect] `NEW` async load will be occurred after clicking a item of search result.
+- [Uploader] `NEW` 'onShowFile' hook for all file
+
 ## 0.21.67
 - [Dialog] `NEW` cancel callback expose param `e`
 - [Drawer] `NEW` add new event cancel
