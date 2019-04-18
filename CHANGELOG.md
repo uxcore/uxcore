@@ -1,3 +1,20 @@
+## 0.22.4
+- [Album] `NEW` add rotate button when in view mode
+- [Calendar] `FIXED` locale fix
+- [Dialog] `CHANGED` remove empty div when dialog is removed
+- [FormField] `CHANGED` remove errMsg type check
+- [FormField] `FIXED` remove jquery method in test case
+- [Progress] `NEW` add new prop infoType (icon|percent)
+- [Progress] `FIXED` fix state icon lost when success & exception in circle progress
+- [Steps] `FIXED` last step layout cause container overflow
+- [Steps] `FIXED` vertical mode should not calculate width dynamic
+- [Table] `NEW` add new prop expandIconType
+- [Table] `CHANGED` emptyIcon in tree mode will always exist for format & performance
+- [Table] `FIXED` fix a border lost err in tree mode table
+- [Table] `FIXED` fixHeader will spill out of table
+- [Table] `NEW` add new prop fixHeaderOffset for scroll check
+- [Uploader] `NEW` add 'onDownloadFile' hook for custom download behavior
+
 ## 0.22.3
 - [Table] `NEW` add new prop needCheckRightFixed & onRowGroupOpenChange & defaultRowGroupActiveKeys
 - [CascadeMutilSelect] `FIXED` value will change after every checked.

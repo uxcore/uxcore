@@ -3530,6 +3530,7 @@
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 80px;
+  overflow: hidden;
 }
 .uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item {
   display: inline-block;
@@ -3558,6 +3559,10 @@
   display: block;
   height: 26px;
   line-height: 26px;
+}
+.uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item > .uxcore-icon:hover {
+  background-color: #000;
+  opacity: .8;
 }
 .uxcore .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item.disabled > .uxcore-icon {
   color: rgba(255, 255, 255, 0.2);
@@ -6012,7 +6017,7 @@ a .uxcore-count:active {
   height: 28px;
 }
 .uxcore .kuma-calendar-year-select {
-  width: 60px;
+  width: 75px;
 }
 .uxcore .kuma-calendar-year-select.kuma-calendar-cn-select {
   width: 75px;
@@ -6021,10 +6026,10 @@ a .uxcore-count:active {
   left: 7px;
 }
 .uxcore .kuma-calendar-month-select {
-  width: 60px;
+  width: 70px;
 }
 .uxcore .kuma-calendar-month-select.kuma-calendar-cn-select {
-  width: 60px;
+  width: 70px;
 }
 .uxcore .kuma-calendar-month-select .kuma-select2-selection-selected-value {
   left: 12px;
@@ -9457,7 +9462,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_taqqzxp2f7.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_dq82duqxr1.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9975,6 +9980,15 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .uxicon-zuoxuanzhuan:before {
   content: "\e6cf";
+}
+.uxcore .uxicon-minus:before {
+  content: "\e6d0";
+}
+.uxcore .uxicon-zhedie:before {
+  content: "\e663";
+}
+.uxcore .uxicon-zhankai1:before {
+  content: "\e664";
 }
 .uxcore .kuma-layout-2c {
   margin: 0 auto;
@@ -12295,8 +12309,20 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-progress-circle-wrap.status-exception .kuma-progress-circle-path {
   stroke: #F04631;
 }
+.uxcore .kuma-progress-circle-wrap.status-exception .kuma-progress-circle-text {
+  color: #F04631;
+}
+.uxcore .kuma-progress-circle-wrap.status-exception .kuma-progress-circle-text .icon-caution:after {
+  content: '\e605';
+}
 .uxcore .kuma-progress-circle-wrap.status-success .kuma-progress-circle-path {
   stroke: #66bc5c;
+}
+.uxcore .kuma-progress-circle-wrap.status-success .kuma-progress-circle-text {
+  color: #66bc5c;
+}
+.uxcore .kuma-progress-circle-wrap.status-success .kuma-progress-circle-text .icon-success:after {
+  content: '\e601';
 }
 .uxcore .kuma-progress-circle-wrap {
   position: relative;
@@ -12306,7 +12332,16 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   left: 0;
   top: 0;
   width: 100%;
+  height: 22px;
+  line-height: 22px;
   text-align: center;
+}
+.uxcore .kuma-progress-circle-wrap .kuma-progress-circle-text > i {
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  font-family: kuma;
 }
 @keyframes progress-active {
   0% {
