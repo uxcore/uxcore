@@ -1,3 +1,6 @@
+## 0.22.5
+- [Validate] add a new method isNotEmptyIncludeFalse
+
 ## 0.22.4
 - [Album] `NEW` add rotate button when in view mode
 - [Calendar] `FIXED` locale fix
