@@ -1,4 +1,4 @@
-## 0.21.69
+## 0.21.70
 - [Validate] add a new method isNotEmptyIncludeFalse
 
 ## 0.21.68
