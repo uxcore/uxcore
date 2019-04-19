@@ -9457,7 +9457,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_taqqzxp2f7.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_dq82duqxr1.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9975,6 +9975,15 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .uxicon-zuoxuanzhuan:before {
   content: "\e6cf";
+}
+.uxcore .uxicon-minus:before {
+  content: "\e6d0";
+}
+.uxcore .uxicon-zhedie:before {
+  content: "\e663";
+}
+.uxcore .uxicon-zhankai1:before {
+  content: "\e664";
 }
 .uxcore .kuma-layout-2c {
   margin: 0 auto;

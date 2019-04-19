@@ -1,3 +1,6 @@
+## 0.21.69
+- [Validate] add a new method isNotEmptyIncludeFalse
+
 ## 0.21.68
 - [CascadeMutilSelect] `FIXED` value will change after every checked.
 - [CascadeSelect] `NEW` async load will be occurred after clicking a item of search result.
