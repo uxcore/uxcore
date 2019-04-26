@@ -4959,6 +4959,15 @@ a.kuma-button-group-separated-item-first {
 .kuma-calendar-small .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
   height: 272px;
 }
+.date-picker-dropdown-offset-small {
+  padding-top: 27px;
+}
+.date-picker-dropdown-offset-middle {
+  padding-top: 31px;
+}
+.date-picker-dropdown-offset-large {
+  padding-top: 35px;
+}
 .kuma-calendar-picker {
   position: absolute;
   left: -9999px;

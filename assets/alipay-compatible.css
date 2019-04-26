@@ -5292,6 +5292,15 @@ a .uxcore-count:active {
 .uxcore .kuma-calendar-small .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
   height: 272px;
 }
+.uxcore .date-picker-dropdown-offset-small {
+  padding-top: 27px;
+}
+.uxcore .date-picker-dropdown-offset-middle {
+  padding-top: 31px;
+}
+.uxcore .date-picker-dropdown-offset-large {
+  padding-top: 35px;
+}
 .uxcore .kuma-calendar-picker {
   position: absolute;
   left: -9999px;
