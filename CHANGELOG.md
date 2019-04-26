@@ -1,3 +1,7 @@
+## 0.21.71
+- [Calendar] `CHANGED` change date picker offset in MonthCalendar & YearCalendar
+- [Calendar] `FIXED` locale fix
+
 ## 0.21.70
 - [Validate] add a new method isNotEmptyIncludeFalse
 

@@ -5287,6 +5287,15 @@ a .uxcore-count:active {
 .uxcore .kuma-calendar-small .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
   height: 272px;
 }
+.uxcore .date-picker-dropdown-offset-small {
+  padding-top: 27px;
+}
+.uxcore .date-picker-dropdown-offset-middle {
+  padding-top: 31px;
+}
+.uxcore .date-picker-dropdown-offset-large {
+  padding-top: 35px;
+}
 .uxcore .kuma-calendar-picker {
   position: absolute;
   left: -9999px;
@@ -6012,7 +6021,7 @@ a .uxcore-count:active {
   height: 28px;
 }
 .uxcore .kuma-calendar-year-select {
-  width: 60px;
+  width: 75px;
 }
 .uxcore .kuma-calendar-year-select.kuma-calendar-cn-select {
   width: 75px;
@@ -6021,10 +6030,10 @@ a .uxcore-count:active {
   left: 7px;
 }
 .uxcore .kuma-calendar-month-select {
-  width: 60px;
+  width: 70px;
 }
 .uxcore .kuma-calendar-month-select.kuma-calendar-cn-select {
-  width: 60px;
+  width: 70px;
 }
 .uxcore .kuma-calendar-month-select .kuma-select2-selection-selected-value {
   left: 12px;
