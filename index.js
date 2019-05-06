@@ -120,6 +120,8 @@ var UserGuide = require('./lib/UserGuide');
 
 var Validator = require('./lib/Validator');
 
+var Sticky = require('./lib/Sticky');
+
 var Select = require('./lib/Select');
 
 exports.Album = Album;
@@ -182,6 +184,7 @@ exports.TreeSelect = TreeSelect;
 exports.Uploader = Uploader;
 exports.UserGuide = UserGuide;
 exports.Validator = Validator;
+exports.Sticky = Sticky;
 exports.Select = Select;
 module.exports = {
   Album: Album,
@@ -244,5 +247,6 @@ module.exports = {
   Uploader: Uploader,
   UserGuide: UserGuide,
   Validator: Validator,
+  Sticky: Sticky,
   Select: Select
 };

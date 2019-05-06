@@ -18771,3 +18771,23 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   -ms-flex: 38px 0 0px;
       flex: 38px 0 0;
 }
+/**
+ * Sticky Component Style for uxcore
+ * @author taoqili
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.uxcore-sticky .uxcore-sticky-placeholder {
+  display: none;
+}
+.uxcore-sticky .uxcore-sticky-placeholder.sticky {
+  display: block;
+}
+.uxcore-sticky .uxcore-sticky-content {
+  background: #fff;
+  z-index: 900;
+}
+.uxcore-sticky .uxcore-sticky-content.sticky {
+  position: fixed;
+}

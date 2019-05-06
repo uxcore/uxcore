@@ -1,3 +1,8 @@
+## 0.22.7
+- [Sticky] `NEW` add new component uxcore-sticky
+- [Table] `CHANGED` refactor header sticky
+- [Table] `NEW` add new prop fixActionBarToTop & fixActionBarOffset
+- [Form] `FIX` fix a style bug in view mode
 
 ## 0.22.6
 - [Calendar] `CHANGED` change date picker offset in MonthCalendar & YearCalendar
