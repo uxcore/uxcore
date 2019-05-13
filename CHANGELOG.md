@@ -1,3 +1,7 @@
+## 0.22.8
+- [Card] change collapse logic
+- [Table] optimize the performance & fix a column group in tree mode
+
 ## 0.22.7
 - [Sticky] `NEW` add new component uxcore-sticky
 - [Table] `CHANGED` refactor header sticky
