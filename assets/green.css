@@ -5015,6 +5015,22 @@ a.kuma-button-group-separated-item-first {
   width: calc(100% - 61px);
   height: calc(100% - 32px);
 }
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail {
+  overflow: auto;
+  text-overflow: inherit;
+  white-space: pre-wrap;
+}
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail p,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail p,
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail ul,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail ul,
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li {
+  white-space: pre-wrap;
+}
 .kuma-calendar-full-date {
   position: absolute;
   width: 100%;
@@ -5143,7 +5159,13 @@ a.kuma-button-group-separated-item-first {
   border-radius: 3px;
   overflow: hidden;
 }
-.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper div {
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper.hover,
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper:hover {
+  cursor: pointer;
+  background-color: rgba(64, 179, 112, 0.3);
+  opacity: 0.8;
+}
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper .kuma-calendar-content-detail {
   padding-left: 3px;
   white-space: nowrap;
   overflow: hidden;
@@ -5151,7 +5173,11 @@ a.kuma-button-group-separated-item-first {
   height: 100%;
   border-left: 3px solid #40b370;
 }
-.kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper div {
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper .kuma-calendar-content-detail div {
+  display: inline-block;
+  border: none;
+}
+.kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper .kuma-calendar-content-detail {
   border-left: 3px solid #F04631;
 }
 .kuma-calendar-full-date-select {
@@ -5324,7 +5350,12 @@ a.kuma-button-group-separated-item-first {
   font-size: 12px;
   color: #ffffff;
   letter-spacing: 0;
-  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .kuma-calendar-full-month-panel-table {
   table-layout: fixed;
@@ -5364,6 +5395,7 @@ a.kuma-button-group-separated-item-first {
   display: inline-block;
   color: #F04631;
   font-size: 12px;
+  vertical-align: top;
 }
 .kuma-calendar-range {
   overflow: hidden;

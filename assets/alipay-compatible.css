@@ -5355,6 +5355,22 @@ a .uxcore-count:active {
   width: calc(100% - 61px);
   height: calc(100% - 32px);
 }
+.uxcore .kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail,
+.uxcore .kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail {
+  overflow: auto;
+  text-overflow: inherit;
+  white-space: pre-wrap;
+}
+.uxcore .kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.uxcore .kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.uxcore .kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail p,
+.uxcore .kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail p,
+.uxcore .kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail ul,
+.uxcore .kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail ul,
+.uxcore .kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li,
+.uxcore .kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li {
+  white-space: pre-wrap;
+}
 .uxcore .kuma-calendar-full-date {
   position: absolute;
   width: 100%;
@@ -5483,7 +5499,13 @@ a .uxcore-count:active {
   border-radius: 3px;
   overflow: hidden;
 }
-.uxcore .kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper div {
+.uxcore .kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper.hover,
+.uxcore .kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper:hover {
+  cursor: pointer;
+  background-color: rgba(0, 160, 232, 0.3);
+  opacity: 0.8;
+}
+.uxcore .kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper .kuma-calendar-content-detail {
   padding-left: 3px;
   white-space: nowrap;
   overflow: hidden;
@@ -5491,7 +5513,11 @@ a .uxcore-count:active {
   height: 100%;
   border-left: 3px solid #00a0e8;
 }
-.uxcore .kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper div {
+.uxcore .kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper .kuma-calendar-content-detail div {
+  display: inline-block;
+  border: none;
+}
+.uxcore .kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper .kuma-calendar-content-detail {
   border-left: 3px solid #F04631;
 }
 .uxcore .kuma-calendar-full-date-select {
@@ -5664,7 +5690,12 @@ a .uxcore-count:active {
   font-size: 12px;
   color: #ffffff;
   letter-spacing: 0;
-  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .uxcore .kuma-calendar-full-month-panel-table {
   table-layout: fixed;
@@ -5704,6 +5735,7 @@ a .uxcore-count:active {
   display: inline-block;
   color: #F04631;
   font-size: 12px;
+  vertical-align: top;
 }
 .uxcore .kuma-calendar-range {
   overflow: hidden;

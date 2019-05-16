@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.22.8",
+ "version": "0.22.9",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -91,8 +91,8 @@
   "uxcore-badge": "0.3.12",
   "uxcore-button": "0.4.21",
   "uxcore-button-group": "0.2.7",
-  "uxcore-calendar": "0.10.25",
-  "uxcore-card": "0.1.10",
+  "uxcore-calendar": "0.10.26",
+  "uxcore-card": "0.1.15",
   "uxcore-carousel": "0.4.0",
   "uxcore-cascade-multi-select": "0.8.8",
   "uxcore-cascade-select": "0.7.18",

@@ -1,6 +1,7 @@
-## 0.22.8
-- [Card] change collapse logic
+## 0.22.9
+- [Card] add new prop overlayStyleOfTip & placementOfTip & keepAlive
 - [Table] optimize the performance & fix a column group in tree mode
+- [Table] optimize some style for calendarfull
 
 ## 0.22.7
 - [Sticky] `NEW` add new component uxcore-sticky
