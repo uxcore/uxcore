@@ -1,10 +1,18 @@
+## 0.22.11
+- [Calendar] `CHANGED` add events support for vc-calendar
+- [Calendar] `FIX` fix stylest in year panel
+- [CascadeMultiSelect] `FIX` the text in input should be shown when options fetched after data.
+- [FormField] `FIXED` when required is set, jsxrules will auto add not empty rule
+- [FormField] `NEW` add new prop requiredErrMsg for required prop
+- [Formatter] `FIXED` fix bug when fixNum is 0
+
 ## 0.22.10
-- [Calendar] fix a node module lost
+- [Calendar] `FIX` fix a node module lost
 
 ## 0.22.9
-- [Card] add new prop overlayStyleOfTip & placementOfTip & keepAlive
-- [Table] optimize the performance & fix a column group in tree mode
-- [Calendar] optimize some style for calendarfull
+- [Card] `NEW` add new prop overlayStyleOfTip & placementOfTip & keepAlive
+- [Table] `FIX` optimize the performance & fix a column group in tree mode
+- [Calendar] `CHANGED` optimize some style for calendarfull
 
 ## 0.22.7
 - [Sticky] `NEW` add new component uxcore-sticky

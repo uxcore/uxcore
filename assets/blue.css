@@ -6440,6 +6440,19 @@ a.kuma-button-group-separated-item-first {
   content: '\e645';
   font-family: 'kuma' !important;
 }
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year,
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-next-decade-cell .kuma-calendar-year-panel-year {
+  position: relative;
+}
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year:before,
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-next-decade-cell .kuma-calendar-year-panel-year:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  content: '\e645';
+  font-family: 'kuma' !important;
+}
 .kuma-calendar-small .kuma-calendar-year-panel-header {
   height: 28px;
   line-height: 27px;
@@ -6583,9 +6596,17 @@ a.kuma-button-group-separated-item-first {
        user-select: none;
   -webkit-user-select: none;
 }
+.kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade,
+.kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade {
+  position: relative;
+}
 .kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade:before,
 .kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade:before {
   content: '\e645';
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
   font-family: 'kuma' !important;
 }
 .kuma-calendar-full-week-panel-column-header {
