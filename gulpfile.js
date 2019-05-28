@@ -253,7 +253,7 @@ function informDD(log, ver) {
   })
 }
 
-gulp.task('pub', [], function () {
+gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
   getQuestions().then(function (questions) {
     inquirer.prompt(questions).then(function (answers) {
       const ver = answers.version
