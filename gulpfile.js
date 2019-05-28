@@ -24,6 +24,8 @@ var path = require('path');
 var semver = require('semver');
 var to = require('to-case');
 // var fs = require('fs-extra');
+var prependFile = require('prepend-file');
+var request = require('request');
 
 
 var autoprefix = new LessPluginAutoPrefix({
@@ -95,6 +97,15 @@ function getQuestions() {
               return true;
             }
             return 'it seems not a valid npm';
+          },
+        },
+        {
+          type: 'editor',
+          name: 'changeLog',
+          message: 'changelog',
+          validate: function (input) {
+            console.log(input);
+            return true;
           },
         },
       ];
@@ -201,16 +212,60 @@ gulp.task('theme_clean', function (done) {
   });
 });
 
-gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
+function setChangeLog(log, ver) {
+  if (!log) return;
+  let changes = [];
+  changes.push(`## ${ver}`);
+  log.split(/\s*;\s*/gi).forEach(item => {
+    let change = item;
+    if (item.indexOf(':') !== -1) {
+      const keyValue = item.split(':');
+      change = `- [${keyValue[0]}] ${keyValue[1]}`;
+    }
+    changes.push(change);
+  });
+  changes.push('\n');
+  let result = changes.join('\n');
+  prependFile('./CHANGELOG.md', result, function (err) {
+    if (err) {
+      throw err;
+    }
+  });
+  return result;
+}
+
+function informDD(log, ver) {
+  request({
+    url: 'https://1082343973602444.cn-shenzhen.fc.aliyuncs.com/2016-08-15/proxy/UXCoreNotice/publishNotice/',
+    method: 'POST',
+    json: true,
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: {
+      content: log,
+      version: ver
+    }
+  }, function(err) {
+    if (err) {
+      throw err
+    }
+  })
+}
+
+gulp.task('pub', [], function () {
   getQuestions().then(function (questions) {
     inquirer.prompt(questions).then(function (answers) {
-      pkg.version = answers.version;
+      const ver = answers.version
+      const log = setChangeLog(answers.changeLog, ver)
+      informDD(log, ver)
+      pkg.version = ver;
       file.writeFileFromString(JSON.stringify(pkg, null, ' '), 'package.json');
       console.log(colors.info('#### Git Info ####'));
       spawn.sync('git', ['add', '.'], { stdio: 'inherit' });
-      spawn.sync('git', ['commit', '-m', 'ver. ' + pkg.version], { stdio: 'inherit' });
+      spawn.sync('git', ['commit', '-m', 'ver. ' + ver], { stdio: 'inherit' });
       spawn.sync('git', ['push', 'origin', answers.branch], { stdio: 'inherit' });
-      const isBeta = !/^\d+.\d+.\d+$/.test(pkg.version);
+      const isBeta = !/^\d+.\d+.\d+$/.test(ver);
       const npmArgs = isBeta ? ['publish', '--tag', 'beta'] : ['publish'];
       console.log(colors.info(`#### Npm${isBeta ? '(Beta Mode)' : ''} Info ####`));
       spawn.sync(answers.npm, npmArgs, { stdio: 'inherit' });
