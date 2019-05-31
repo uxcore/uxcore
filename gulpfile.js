@@ -104,8 +104,8 @@ function getQuestions() {
           name: 'changeLog',
           message: 'changelog',
           validate: function (input) {
-            console.log(input);
-            return true;
+            if (!input) return 'changlog is empty';
+            return true
           },
         },
       ];

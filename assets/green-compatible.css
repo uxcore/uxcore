@@ -7326,6 +7326,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .uxcore-card-content {
   padding: 24px;
   overflow: hidden;
+  overflow-y: auto;
   transition: all 0.3s ease-out;
 }
 .uxcore .uxcore-card-content-none-padding {
@@ -9112,6 +9113,18 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   clear: both;
   height: 0;
 }
+.uxcore .kuma-uxform .uxcore-card {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.uxcore .kuma-uxform .uxcore-card .uxcore-card-content {
+  overflow-y: auto;
+}
+.uxcore .kuma-uxform .uxcore-card .kuma-uxform-row-title .kuma-title-secondary,
+.uxcore .kuma-uxform .uxcore-card .kuma-uxform-row-title .kuma-title-primary,
+.uxcore .kuma-uxform .uxcore-card .kuma-uxform-row-title .kuma-title-thirdary {
+  margin-top: 0;
+}
 .uxcore .kuma-uxform-row-title {
   clear: both;
   overflow: hidden;
@@ -9120,6 +9133,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   min-width: 100%;
   float: left;
   clear: both;
+}
+.uxcore .kuma-uxform-row .kuma-uxform-field:last-child {
+  padding-right: 0;
 }
 .uxcore .kuma-uxform-field {
   display: table;
@@ -9207,6 +9223,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-left: none;
+  white-space: nowrap;
+  padding: 0 2px;
+  background: #fff;
 }
 .uxcore .kuma-uxform-left-icon {
   display: table-cell;
