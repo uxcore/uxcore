@@ -1,3 +1,9 @@
+## 0.22.12
+- [Calendar ] `FIXED` fix a style bug in fullcalendar when event cross different month-panels
+- [Card]  `NEW` self-adaption-height when inner components update themself
+- [Form]  `NEW` add Form.FormCard for card layout in form, support contain FormXXX components
+- [Message] `CHANGED` revert to 0.5.14
+
 ## 0.22.11
 - [Calendar] `CHANGED` add events support for vc-calendar
 - [Calendar] `FIXED` fix stylest in year panel
