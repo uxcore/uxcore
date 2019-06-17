@@ -5031,6 +5031,10 @@ a.kuma-button-group-separated-item-first {
 .kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li {
   white-space: pre-wrap;
 }
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div {
+  height: auto;
+}
 .kuma-calendar-full-date {
   position: absolute;
   width: 100%;
@@ -5044,7 +5048,7 @@ a.kuma-button-group-separated-item-first {
 }
 .kuma-calendar-full .events-month-wrapper {
   position: absolute;
-  top: 32px;
+  top: 38px;
   left: 0;
   width: 100%;
   height: calc(100% - 32px);
@@ -5066,9 +5070,6 @@ a.kuma-button-group-separated-item-first {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding: 0 2px 2px 2px;
-}
-.kuma-calendar-full .events-month-wrapper .colspan-cell {
-  z-index: 99;
 }
 .kuma-calendar-full .events-month-wrapper .colspan-cell .kuma-calendar-content-box {
   width: 100%;
