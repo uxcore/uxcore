@@ -1,3 +1,12 @@
+## 0.22.13
+- [calendar] fix and refactor some bugs and methods in fullcalendar
+- [talbe] reset currentPage when fetchData type is ‘search’
+- [table]  fix group column header height
+- [table] add new prop tooltipPlacement for messageIcon
+- [table] add new prop fetchHeader
+- [form-field] add new prop fetchHeader
+
+
 ## 0.22.12
 - [Calendar ] `FIXED` fix a style bug in fullcalendar when event cross different month-panels
 - [Card]  `NEW` self-adaption-height when inner components update themself
