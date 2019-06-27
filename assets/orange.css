@@ -14418,6 +14418,19 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   right: 0;
   border-left: 1px solid rgba(31, 56, 88, 0.1);
 }
+.kuma-uxtable-right-fixed-table .kuma-uxtable-subrow {
+  width: 0;
+}
+.kuma-uxtable-right-fixed-table .kuma-uxtable-subrow:after {
+  content: '';
+  background: rgba(31, 56, 88, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 1px;
+}
+.kuma-uxtable-right-fixed-table .kuma-uxtable-subrow > div {
+  opacity: 0;
+}
 .kuma-uxtable-column-message {
   max-width: 200px;
 }
