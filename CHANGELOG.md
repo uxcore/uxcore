@@ -1,3 +1,11 @@
+## 0.22.14
+- [Calendar] `Fixed` rcCalendar support renderFooter
+- [Card]  `New` add new prop tipIconTheme
+- [Form]  `Fixed` fix a format bug in NumberInputFormField
+- [Table] `New`  subRowComp support in rightFixed column
+- [Table] `New` i18n for columnOrder & columnPicker
+
+
 ## 0.22.13
 - [calendar] fix and refactor some bugs and methods in fullcalendar
 - [talbe] reset currentPage when fetchData type is ‘search’
