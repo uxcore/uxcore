@@ -1,3 +1,6 @@
+## 0.21.72
+- [Table] `NEW` support renderSubComp when rightFixed is true.
+
 ## 0.21.71
 - [Calendar] `CHANGED` change date picker offset in MonthCalendar & YearCalendar
 - [Calendar] `FIXED` locale fix

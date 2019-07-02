@@ -14384,6 +14384,19 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   right: 0;
   border-left: 1px solid rgba(31, 56, 88, 0.1);
 }
+.uxcore .kuma-uxtable-right-fixed-table .kuma-uxtable-subrow {
+  width: 0;
+}
+.uxcore .kuma-uxtable-right-fixed-table .kuma-uxtable-subrow:after {
+  content: '';
+  background: rgba(31, 56, 88, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 1px;
+}
+.uxcore .kuma-uxtable-right-fixed-table .kuma-uxtable-subrow > div {
+  opacity: 0;
+}
 .uxcore .kuma-uxtable-column-message {
   max-width: 200px;
 }
@@ -14534,6 +14547,9 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   border-radius: 0;
   min-width: 104px;
   max-width: 232px;
+}
+.uxcore .kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu .kuma-checkbox-group-item {
+  margin-bottom: 0;
 }
 .uxcore .kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu-sub {
   border: 1px solid #bcc3cd;
