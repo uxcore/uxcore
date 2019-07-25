@@ -11100,6 +11100,14 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-multi-select-dropdown .kuma-checkbox-group > label {
   padding: 3px;
   display: inline-block;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.kuma-multi-select-dropdown .kuma-checkbox-group > label .kuma-checkbox-group-item-content {
+  display: inline;
 }
 .kuma-multi-select-content {
   overflow-y: auto;
