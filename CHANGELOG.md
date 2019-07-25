@@ -1,3 +1,13 @@
+## 0.22.16
+- [MultiSelect] `FIXED` long text choice item style fix, support js style export
+- [Table] `NEW` add new prop onToggleSubComp for async loading
+- [Table] `CHANGED`  addSubRow & addSubRowFromTop will wait for async data loaded
+- [Table] `CHANGED` optimize the check of `hasSubComp`
+- [DateFormField] `FIXED` fix a bug in disabledDate function when showTime is true
+- [DateFormField] `NEW` add new prop fixTimezoneOffset
+- [SelectFormField] `CHANGED` add new prop fetchHeader
+
+
 ## 0.22.14
 - [Calendar] `Fixed` rcCalendar support renderFooter
 - [Card]  `New` add new prop tipIconTheme
@@ -7,12 +17,12 @@
 
 
 ## 0.22.13
-- [calendar] fix and refactor some bugs and methods in fullcalendar
-- [talbe] reset currentPage when fetchData type is ‘search’
-- [table]  fix group column header height
-- [table] add new prop tooltipPlacement for messageIcon
-- [table] add new prop fetchHeader
-- [form-field] add new prop fetchHeader
+- [Calendar] fix and refactor some bugs and methods in fullcalendar
+- [Table] reset currentPage when fetchData type is ‘search’
+- [Table]  fix group column header height
+- [Table] add new prop tooltipPlacement for messageIcon
+- [Table] add new prop fetchHeader
+- [FormField] add new prop fetchHeader
 
 
 ## 0.22.12
