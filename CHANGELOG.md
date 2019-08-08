@@ -1,3 +1,6 @@
+## 0.21.73
+- [Message] `FIXED`  fix a bug
+
 ## 0.21.72
 - [Table] `NEW` support renderSubComp when rightFixed is true.
 
