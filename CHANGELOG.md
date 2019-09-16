@@ -1,3 +1,6 @@
+## 0.21.74
+- [Table] `NEW` add third param for callback
+
 ## 0.21.73
 - [Message] `FIXED`  fix a bug
 
