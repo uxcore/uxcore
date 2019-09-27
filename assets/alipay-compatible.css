@@ -8619,6 +8619,26 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   animation-name: drawerSlideOutLeft;
   animation-duration: .5s;
 }
+.uxcore .kuma-dlg-wrap .kuma-drawer.dialogSlideTop-enter,
+.uxcore .kuma-dlg-wrap .kuma-drawer.dialogSlideTop-appear {
+  opacity: 0;
+  transform: translateY(-100px);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.uxcore .kuma-dlg-wrap .kuma-drawer.dialogSlideTop-enter-active,
+.uxcore .kuma-dlg-wrap .kuma-drawer.dialogSlideTop-appear-active {
+  animation-name: drawerSlideInTop;
+}
+.uxcore .kuma-dlg-wrap .kuma-drawer.dialogSlideTop-leave {
+  opacity: 1;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: .5s;
+}
+.uxcore .kuma-dlg-wrap .kuma-drawer.dialogSlideTop-leave-active {
+  animation-name: drawerSlideOutTop;
+  animation-duration: .5s;
+}
 @keyframes drawerSlideInRight {
   0% {
     opacity: 1;
@@ -8673,6 +8693,26 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes drawerSlideInTop {
+  0% {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes drawerSlideOutTop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
   }
 }
 .uxcore .kuma-dropdown {
@@ -14073,8 +14113,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.uxcore .kuma-uxtable-column-picker-group label span {
-  display: inline-block;
+.uxcore .kuma-uxtable-column-picker-group label > span {
   margin: 0 5px;
 }
 .uxcore .kuma-uxtable-column-picker-header {
