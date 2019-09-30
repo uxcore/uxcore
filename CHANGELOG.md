@@ -1,3 +1,6 @@
+## 0.22.18
+- [Uploader] support disabled props
+
 ## 0.22.17
 - [Table] `FIXED` fix a text be hidden for columnPicker in actionBar
 - [Calendar] `FIXED` fix a i18n bug for RangerCalendar
