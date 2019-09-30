@@ -1,3 +1,8 @@
+## 0.22.17
+- [Table] `FIXED` fix a text be hidden for columnPicker in actionBar
+- [Calendar] `FIXED` fix a i18n bug for RangerCalendar
+- [Drawer] `NEW` add a new enter animat
+
 ## 0.22.16
 - [MultiSelect] `FIXED` long text choice item style fix, support js style export
 - [Table] `NEW` add new prop onToggleSubComp for async loading
