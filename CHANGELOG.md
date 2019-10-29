@@ -1,3 +1,7 @@
+## 0.22.19
+- [XXX-form-field] change placeholder from '' to '--' in view mode
+- [CascadeSelect] fix a bug when isMustSelectLeaf is true
+
 ## 0.22.18
 - [Uploader] support disabled props
 
