@@ -5574,9 +5574,8 @@ a .uxcore-count:active {
 .uxcore .kuma-calendar-full-header {
   padding: 3px 10px;
   text-align: center;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
   overflow: hidden;
 }
@@ -5980,9 +5979,8 @@ a .uxcore-count:active {
   line-height: 30px;
   background-color: rgba(31, 56, 88, 0.04);
   text-align: center;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
@@ -6357,9 +6355,8 @@ a .uxcore-count:active {
   line-height: 34px;
   position: relative;
   text-align: center;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
 }
 .uxcore .kuma-calendar-time-panel-body {
@@ -6494,7 +6491,6 @@ a .uxcore-count:active {
   position: relative;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
@@ -6540,7 +6536,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-month-panel-prev-year-btn {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   left: 10px;
@@ -6550,7 +6545,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-month-panel-next-year-btn {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   right: 10px;
@@ -6650,9 +6644,8 @@ a .uxcore-count:active {
   background-color: rgba(31, 56, 88, 0.04);
   position: relative;
   text-align: center;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
 }
 .uxcore .kuma-calendar-year-panel-header > a {
@@ -6705,7 +6698,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-year-panel-prev-decade-btn {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   left: 10px;
@@ -6715,7 +6707,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-year-panel-next-decade-btn {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   right: 10px;
@@ -6771,9 +6762,8 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year,
 .uxcore .kuma-calendar-year-panel-next-decade-cell .kuma-calendar-year-panel-year {
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
 }
 .uxcore .kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year:before,
@@ -6835,7 +6825,6 @@ a .uxcore-count:active {
   position: relative;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
@@ -6883,7 +6872,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-decade-panel-prev-century-btn {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   left: 10px;
@@ -6893,7 +6881,6 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-decade-panel-next-century-btn {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   right: 10px;
@@ -6932,9 +6919,8 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade,
 .uxcore .kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade {
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
 }
 .uxcore .kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade,
@@ -7163,7 +7149,6 @@ a .uxcore-count:active {
   text-align: left;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -7487,7 +7472,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -ms-touch-action: pan-y;
@@ -11180,7 +11164,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-multi-select-selection {
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   border-radius: 3px;
@@ -11426,7 +11409,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -11452,7 +11434,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -11478,7 +11459,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   vertical-align: middle;
   margin-left: 10px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: rgba(0, 0, 0, 0.6);
@@ -11493,7 +11473,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 12px;
   font-family: 'Arial';
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: rgba(31, 56, 88, 0.6);
@@ -11961,7 +11940,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   z-index: 1050;
   cursor: auto;
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
   white-space: normal;
@@ -12576,9 +12554,8 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-select2-selection {
   outline: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
   box-sizing: border-box;
   display: block;
@@ -13787,7 +13764,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   white-space: normal;
   pointer-events: none;
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
@@ -14873,7 +14849,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-next,
 .uxcore .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-next {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   z-index: 10;
@@ -15116,7 +15091,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-prev,
 .uxcore .kuma-tab.kuma-tab-open > .kuma-tab-bar .kuma-tab-tab-next {
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   z-index: 10;
@@ -15782,7 +15756,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   text-align: center;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: rgba(0, 0, 0, 0.6);
@@ -16717,7 +16690,6 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-tree li .draggable {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   /* Required to make elements draggable in old WebKit */
@@ -16939,9 +16911,8 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .uxcore-tree-select-selection {
   outline: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
   box-sizing: border-box;
   display: block;
