@@ -1,3 +1,6 @@
+## 0.22.21
+- [Table] add new param row.index for column.render
+
 ## 0.22.20
 - [Album] support firefox
 - [Card] add style/index.js
