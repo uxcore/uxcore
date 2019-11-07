@@ -1,3 +1,9 @@
+## 0.22.20
+- [Album] support firefox
+- [Card] add style/index.js
+- [Form] add new props viewModePlaceholder
+- [Tree] fix onDoubleClick event bug for ActionTreeNode
+
 ## 0.22.19
 - [XXX-form-field] change placeholder from '' to '--' in view mode
 - [CascadeSelect] fix a bug when isMustSelectLeaf is true
