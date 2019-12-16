@@ -14500,6 +14500,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-uxtable-tree-mode .kuma-uxtable-content .kuma-uxtable-row.kuma-uxtable-row-hover > .kuma-uxtable-row-cells {
   background-color: white;
 }
+.kuma-uxtable-tree-mode .kuma-uxtable-cell:first-child > div.default-cell {
+  display: inline;
+}
 .kuma-uxtable-border-line .kuma-uxtable-content,
 .kuma-uxtable-split-line .kuma-uxtable-content {
   border: 1px solid rgba(31, 56, 88, 0.1);
