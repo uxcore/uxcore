@@ -1,3 +1,10 @@
+## 0.22.22
+- [Badge] Disable animation in windows
+- [Select] Support `title` in `value` prop
+- [Table] Allow action column event propagation
+- [TreeSelect] Fix a bug in multiple bug
+
+
 ## 0.22.21
 - [Table] add new param row.index for column.render
 
