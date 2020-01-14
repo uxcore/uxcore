@@ -1,3 +1,7 @@
+## 0.22.24
+- [CascadeSelect] add new prop onlyStringValue
+
+
 ## 0.22.23
 - [Badge] Disable animation in windows
 - [Select] Support `title` in `value` prop
