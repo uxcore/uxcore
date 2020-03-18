@@ -1,3 +1,7 @@
+## 0.22.25
+- [CascadeMultiSelect] add new prop 'labelWithPath'
+- [TreeSelect] bugfix
+
 ## 0.22.24
 - [CascadeSelect] add new prop onlyStringValue
 
