@@ -1,3 +1,6 @@
+## 0.22.26
+- [Uploader]  add new prop onlineEdit
+
 ## 0.22.25
 - [CascadeMultiSelect] add new prop 'labelWithPath'
 - [TreeSelect] bugfix
