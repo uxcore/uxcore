@@ -18420,13 +18420,19 @@ li.uxcore .uxcore-time-picker-panel-select-option-disabled:hover {
   margin-top: 6px;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 0;
 }
 .uxcore .kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info-wrap .field-info {
+  -ms-flex: 1;
+      flex: 1;
   display: inline-block;
   margin-left: 18px;
-  width: calc(100% - 138px);
   overflow: hidden;
   text-overflow: ellipsis;
 }
