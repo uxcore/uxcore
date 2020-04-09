@@ -1,3 +1,6 @@
+## 0.22.27
+- [Uploader] fix bug about onlineEdit
+
 ## 0.22.26
 - [Uploader]  add new prop onlineEdit
 
