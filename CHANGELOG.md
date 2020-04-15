@@ -1,3 +1,6 @@
+## 0.22.28
+- [Uploader] fixbug
+
 ## 0.22.27
 - [Uploader] fix bug about onlineEdit
 
