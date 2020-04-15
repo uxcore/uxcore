@@ -258,7 +258,7 @@ gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
     inquirer.prompt(questions).then(function (answers) {
       const ver = answers.version
       const log = setChangeLog(answers.changeLog, ver)
-      informDD(log, ver)
+      // informDD(log, ver)
       pkg.version = ver;
       file.writeFileFromString(JSON.stringify(pkg, null, ' '), 'package.json');
       console.log(colors.info('#### Git Info ####'));
