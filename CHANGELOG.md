@@ -1,3 +1,6 @@
+## 0.22.29
+- [CascadeMultiSelect] support jsxSize
+
 ## 0.22.28
 - [Uploader] fixbug
 
