@@ -243,6 +243,7 @@ function informDD(log, ver) {
       'Content-Type': 'application/json;charset=utf-8'
     },
     body: {
+      type: 'uxcore',
       content: log,
       version: ver
     }

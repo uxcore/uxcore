@@ -1,8 +1,9 @@
 {
  "name": "uxcore",
- "version": "0.22.29",
+ "version": "0.22.30",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
+ "browser": "build/uxcore.min.js",
  "scripts": {
   "test": "gulp test",
   "pub": "gulp pub",
