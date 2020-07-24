@@ -1,3 +1,6 @@
+## 0.22.30
+package.json add new prop browser
+
 ## 0.22.29
 - [CascadeMultiSelect] support jsxSize
 
