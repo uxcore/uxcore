@@ -5519,7 +5519,7 @@ a .uxcore-count:active {
   border: none;
 }
 .uxcore .kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper .kuma-calendar-content-detail {
-  border-left: 3px solid #F04631;
+  border-left: 3px solid #f04631;
 }
 .uxcore .kuma-calendar-full-date-select {
   width: 200px;
@@ -5733,7 +5733,7 @@ a .uxcore-count:active {
 }
 .uxcore .kuma-calendar-full .import-event {
   display: inline-block;
-  color: #F04631;
+  color: #f04631;
   font-size: 12px;
   vertical-align: top;
 }
