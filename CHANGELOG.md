@@ -1,3 +1,8 @@
+## 0.22.31
+- [LoadMore] `change` 调整scroll事件触发时机，将冒泡阶段调整成捕获阶段,by 川封
+- [Calendar] `change` 大日历修改事件条数显示规则,by 知蕾
+
+
 ## 0.22.30
 package.json add new prop browser
 
