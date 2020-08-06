@@ -1,4 +1,7 @@
 ## 0.21.74
+- [LoadMore] `CHANGE` change scroll event bind
+
+## 0.21.74
 - [Table] `NEW` add third param for callback
 
 ## 0.21.73
