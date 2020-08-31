@@ -1,3 +1,6 @@
+## 0.22.32
+- [Message] 修复声明周期中调用info等方法时的报错问题。by @光弘
+
 ## 0.22.31
 - [LoadMore] `change` 调整scroll事件触发时机，将冒泡阶段调整成捕获阶段,by 川封
 - [Calendar] `change` 大日历修改事件条数显示规则,by 知蕾
