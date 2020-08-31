@@ -1,3 +1,6 @@
+## 0.22.33
+Message fix bug
+
 ## 0.22.32
 - [Message] 修复声明周期中调用info等方法时的报错问题。by @光弘
 
