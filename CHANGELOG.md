@@ -1,3 +1,6 @@
+## 0.21.76
+- [Message] `FIX` fix a bug when call in lifecycle.
+
 ## 0.21.74
 - [LoadMore] `CHANGE` change scroll event bind
 
