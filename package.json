@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.21.76",
+ "version": "0.21.77",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -116,7 +116,7 @@
   "uxcore-matrix": "0.4.1",
   "uxcore-mention": "0.4.5",
   "uxcore-menu": "4.0.7",
-  "uxcore-message": "0.5.16",
+  "uxcore-message": "0.5.18",
   "uxcore-multi-select": "0.5.3",
   "uxcore-notice-icon": "0.1.24",
   "uxcore-pagination": "0.7.8",
