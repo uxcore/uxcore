@@ -1,3 +1,6 @@
+## 0.22.34
+cascaderSelect bugfix
+
 ## 0.22.33
 Message fix bug
 
