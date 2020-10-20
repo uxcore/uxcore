@@ -8060,7 +8060,6 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   line-height: 28px;
 }
 .uxcore .kuma-cascader-submenu-warpper .kuma-dropdown-menu-item-description-wrap {
-  height: 50px;
   overflow: hidden;
   padding: 10px 15px;
   border-top: 1px solid #ddd;

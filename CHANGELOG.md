@@ -1,3 +1,6 @@
+## 0.22.35
+remove browser key in package.json
+
 ## 0.22.34
 cascaderSelect bugfix
 
