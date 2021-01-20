@@ -1,6 +1,6 @@
 {
  "name": "uxcore",
- "version": "0.22.37",
+ "version": "0.22.38",
  "description": "React Components living for enterprise-class pc backend application",
  "main": "build/uxcore",
  "scripts": {
@@ -98,7 +98,7 @@
   "uxcore-card": "0.1.19",
   "uxcore-carousel": "0.4.0",
   "uxcore-cascade-multi-select": "0.9.1",
-  "uxcore-cascade-select": "0.9.0",
+  "uxcore-cascade-select": "0.9.1",
   "uxcore-checkbox-group": "1.4.6",
   "uxcore-collapse": "2.2.0",
   "uxcore-const": "^1.0.0",
