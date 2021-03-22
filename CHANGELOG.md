@@ -1,3 +1,6 @@
+## 0.22.39
+- [CascaderSelect] `fix` 样式写法问题
+
 ## 0.22.38
 - [CascaderSelect] `fix` bug 修复
 
