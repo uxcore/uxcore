@@ -1,20 +1,20 @@
 ## 0.22.38
-- [[CascaderSelect]]  `fix` bug 修复
+- [CascaderSelect] `fix` bug 修复
 
 ## 0.22.37
-新增宜搭主题
+- [Style] 新增宜搭主题
 
 ## 0.22.36
-cascaderSelectbugfix
+- [CascaderSelect] `fix` bug 修复
 
 ## 0.22.35
-remove browser key in package.json
+- [Main] remove browser key in package.json
 
 ## 0.22.34
-cascaderSelect bugfix
+- [CascaderSelect] `fix` bug 修复
 
 ## 0.22.33
-Message fix bug
+- [Message] `fix` bug 修复
 
 ## 0.22.32
 - [Message] 修复声明周期中调用info等方法时的报错问题。by @光弘
