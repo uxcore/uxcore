@@ -2329,207 +2329,6 @@ a.kuma-button.kuma-button-disabled:visited {
   border-color: #0079F2;
   color: #fff;
 }
-.text-primary-color {
-  color: #0079F2;
-}
-.text-primary-hover-color {
-  color: #1a86f3;
-}
-.text-primary-focus-color {
-  color: #0073e6;
-}
-.text-primary-dark-4-color {
-  color: #006dda;
-}
-.text-primary-dark-5-color {
-  color: #0061c2;
-}
-.text-primary-dark-5-color {
-  color: #0061c2;
-}
-.text-primary-dark-6-color {
-  color: #004991;
-}
-.text-primary-dark-7-color {
-  color: #00366d;
-}
-.text-primary-alpha-2-color {
-  color: rgba(0, 121, 242, 0.8);
-}
-.text-primary-alpha-3-color {
-  color: rgba(0, 121, 242, 0.6);
-}
-.text-primary-alpha-4-color {
-  color: rgba(0, 121, 242, 0.4);
-}
-.text-primary-alpha-5-color {
-  color: rgba(0, 121, 242, 0.3);
-}
-.text-primary-alpha-6-color {
-  color: rgba(0, 121, 242, 0.2);
-}
-.text-primary-alpha-7-color {
-  color: rgba(0, 121, 242, 0.1);
-}
-.text-primary-alpha-8-color {
-  color: rgba(0, 121, 242, 0.06);
-}
-.text-primary-alpha-9-color {
-  color: rgba(0, 121, 242, 0.04);
-}
-.text-normal-alpha-1-color {
-  color: #1f3858;
-}
-.text-normal-alpha-2-color {
-  color: rgba(31, 56, 88, 0.8);
-}
-.text-normal-alpha-3-color {
-  color: rgba(31, 56, 88, 0.6);
-}
-.text-normal-alpha-4-color {
-  color: rgba(31, 56, 88, 0.4);
-}
-.text-normal-alpha-5-color {
-  color: rgba(31, 56, 88, 0.3);
-}
-.text-normal-alpha-6-color {
-  color: rgba(31, 56, 88, 0.2);
-}
-.text-normal-alpha-7-color {
-  color: rgba(31, 56, 88, 0.1);
-}
-.text-normal-alpha-8-color {
-  color: rgba(31, 56, 88, 0.06);
-}
-.text-normal-alpha-9-color {
-  color: rgba(31, 56, 88, 0.04);
-}
-.text-dark-alpha-1-color {
-  color: #000000;
-}
-.text-dark-alpha-2-color {
-  color: rgba(0, 0, 0, 0.8);
-}
-.text-dark-alpha-3-color {
-  color: rgba(0, 0, 0, 0.6);
-}
-.text-dark-alpha-4-color {
-  color: rgba(0, 0, 0, 0.4);
-}
-.text-dark-alpha-5-color {
-  color: rgba(0, 0, 0, 0.3);
-}
-.text-dark-alpha-6-color {
-  color: rgba(0, 0, 0, 0.2);
-}
-.text-dark-alpha-7-color {
-  color: rgba(0, 0, 0, 0.1);
-}
-.text-dark-alpha-8-color {
-  color: rgba(0, 0, 0, 0.06);
-}
-.text-dark-alpha-9-color {
-  color: rgba(0, 0, 0, 0.04);
-}
-.text-white-alpha-1-color {
-  color: #ffffff;
-}
-.text-white-alpha-2-color {
-  color: rgba(255, 255, 255, 0.8);
-}
-.text-white-alpha-3-color {
-  color: rgba(255, 255, 255, 0.6);
-}
-.text-white-alpha-4-color {
-  color: rgba(255, 255, 255, 0.4);
-}
-.text-white-alpha-5-color {
-  color: rgba(255, 255, 255, 0.3);
-}
-.text-white-alpha-6-color {
-  color: rgba(255, 255, 255, 0.2);
-}
-.text-white-alpha-7-color {
-  color: rgba(255, 255, 255, 0.1);
-}
-.text-white-alpha-8-color {
-  color: rgba(255, 255, 255, 0.06);
-}
-.text-white-alpha-9-color {
-  color: rgba(255, 255, 255, 0.04);
-}
-.text-danger-color {
-  color: #F04631;
-}
-.text-warning-color {
-  color: #FABD0E;
-}
-.text-success-color {
-  color: #66bc5c;
-}
-.text-link-color {
-  color: #3C99D8;
-}
-.text-info-color {
-  color: #45a8e6;
-}
-.text-query-color {
-  color: #24bee8;
-}
-.text-danger-color {
-  color: #F04631;
-}
-.text-danger-alpha-2-color {
-  color: rgba(240, 70, 49, 0.8);
-}
-.text-danger-alpha-7-color {
-  color: rgba(240, 70, 49, 0.1);
-}
-.text-danger-alpha-8-color {
-  color: rgba(240, 70, 49, 0.06);
-}
-.text-warning-color {
-  color: #FABD0E;
-}
-.text-warning-alpha-2-color {
-  color: rgba(250, 189, 14, 0.8);
-}
-.text-warning-alpha-7-color {
-  color: rgba(250, 189, 14, 0.1);
-}
-.text-warning-alpha-8-color {
-  color: rgba(250, 189, 14, 0.06);
-}
-.text-success-color {
-  color: #66bc5c;
-}
-.text-success-alpha-2-color {
-  color: rgba(102, 188, 92, 0.8);
-}
-.text-success-alpha-7-color {
-  color: rgba(102, 188, 92, 0.1);
-}
-.text-success-alpha-8-color {
-  color: rgba(102, 188, 92, 0.06);
-}
-.text-link-color {
-  color: #3C99D8;
-}
-.text-link-alpha-2-color {
-  color: rgba(60, 153, 216, 0.8);
-}
-.text-link-alpha-7-color {
-  color: rgba(60, 153, 216, 0.1);
-}
-.text-link-alpha-8-color {
-  color: rgba(60, 153, 216, 0.06);
-}
-.text-danger-hover-color {
-  color: #f25946;
-}
-.text-danger-focus-color {
-  color: #e4432f;
-}
 .border-primary-color {
   border-color: #0079F2;
 }
@@ -7695,7 +7494,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   line-height: 28px;
 }
 .kuma-cascader-submenu-warpper .kuma-dropdown-menu-item-description-wrap {
-  height: 50px;
   overflow: hidden;
   padding: 10px 15px;
   border-top: 1px solid #ddd;
@@ -7722,7 +7520,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #fff url(data:image/gif;base64, R0lGODlhEAAQAKIGAMLY8YSx5HOm4Mjc88/g9Ofw+v ///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAGACwAAAAAEAAQAAADMGi6RbUwGjKIXCAA016PgRBElAVlG/RdLOO0X9nK61W39qvqiwz5Ls/rRqrggsdkAgAh+QQFCgAGACwCAAAABwAFAAADD2hqELAmiFBIYY4MAutdCQAh+QQFCgAGACwGAAAABwAFAAADD1hU1kaDOKMYCGAGEeYFCQAh+QQFCgAGACwKAAIABQAHAAADEFhUZjSkKdZqBQG0IELDQAIAIfkEBQoABgAsCgAGAAUABwAAAxBoVlRKgyjmlAIBqCDCzUoCACH5BAUKAAYALAYACgAHAAUAAAMPaGpFtYYMAgJgLogA610JACH5BAUKAAYALAIACgAHAAUAAAMPCAHWFiI4o1ghZZJB5i0JACH5BAUKAAYALAAABgAFAAcAAAMQCAFmIaEp1motpDQySMNFAgA7) no-repeat;
+  background: #fff url(data:image/gif;base64,R0lGODlhEAAQAKIGAMLY8YSx5HOm4Mjc88/g9Ofw+v///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAGACwAAAAAEAAQAAADMGi6RbUwGjKIXCAA016PgRBElAVlG/RdLOO0X9nK61W39qvqiwz5Ls/rRqrggsdkAgAh+QQFCgAGACwCAAAABwAFAAADD2hqELAmiFBIYY4MAutdCQAh+QQFCgAGACwGAAAABwAFAAADD1hU1kaDOKMYCGAGEeYFCQAh+QQFCgAGACwKAAIABQAHAAADEFhUZjSkKdZqBQG0IELDQAIAIfkEBQoABgAsCgAGAAUABwAAAxBoVlRKgyjmlAIBqCDCzUoCACH5BAUKAAYALAYACgAHAAUAAAMPaGpFtYYMAgJgLogA610JACH5BAUKAAYALAIACgAHAAUAAAMPCAHWFiI4o1ghZZJB5i0JACH5BAUKAAYALAAABgAFAAcAAAMQCAFmIaEp1motpDQySMNFAgA7) no-repeat;
 }
 .kuma-cascader-internal-select-item-wrap {
   position: relative;
@@ -18594,10 +18392,14 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 100;
+  height: 0;
+  width: 0;
+}
+.kuma-user-guide-stage.isBlocking {
   height: 100%;
   width: 100%;
-  z-index: 100;
-  background: rgba(31, 56, 88, 0.04);
+  background: rgba(0, 0, 0, 0.4);
 }
 .kuma-user-guide-breathing-point {
   position: absolute;
@@ -18640,6 +18442,10 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   right: 5px;
   left: auto;
 }
+.kuma-user-guide-step-hint-wrp {
+  display: -ms-flexbox;
+  display: flex;
+}
 .kuma-user-guide-step-hint-title {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
@@ -18669,4 +18475,28 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   font-size: 12px;
   color: rgba(31, 56, 88, 0.4);
   cursor: pointer;
+}
+.kuma-user-guide-skip-checkbox {
+  font-size: 12px;
+  color: rgba(31, 56, 88, 0.4);
+  display: inline-block;
+}
+.kuma-user-guide-skip-checkbox .kuma-checkbox-group-item {
+  margin-bottom: 0;
+}
+.kuma-user-guide--step-hint-wrp {
+  display: -ms-flexbox;
+  display: flex;
+}
+.kuma-user-guide-step-hint-icon {
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid;
+  line-height: 38px;
+  text-align: center;
+  margin-right: 24px;
+  font-size: 20px;
+  display: block;
+  -ms-flex: 38px 0 0px;
+      flex: 38px 0 0;
 }

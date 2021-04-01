@@ -1,3 +1,6 @@
+## 0.21.78
+- [CascadeSelect] bump version to 0.9.2
+
 ## 0.21.76
 - [Message] `FIX` fix a bug when call in lifecycle.
 
