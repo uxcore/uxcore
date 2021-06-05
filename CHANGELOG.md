@@ -1,3 +1,6 @@
+## 0.22.40
+update uxcore-tag to 2.4.0
+
 ## 0.22.39
 - [CascaderSelect] `fix` 样式写法问题
 
