@@ -1,5 +1,8 @@
+## 0.22.41
+- [Style] `fix` checkbox disabled checked style in dark background
+
 ## 0.22.40
-update uxcore-tag to 2.4.0
+- [Tag] update uxcore-tag to 2.4.0
 
 ## 0.22.39
 - [CascaderSelect] `fix` 样式写法问题
