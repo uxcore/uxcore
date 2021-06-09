@@ -760,7 +760,7 @@ a.kuma-button.kuma-button-disabled:visited {
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="checkbox"]:checked:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.checkbox-primary[type="checkbox"] + s {
@@ -776,7 +776,7 @@ a.kuma-button.kuma-button-disabled:visited {
   background-repeat: no-repeat;
 }
 .kuma-checkbox.checkbox-primary[type="checkbox"]:checked:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox-partial,
@@ -2328,6 +2328,207 @@ a.kuma-button.kuma-button-disabled:visited {
   background-color: #0089FF;
   border-color: #0089FF;
   color: #fff;
+}
+.text-primary-color {
+  color: #0089FF;
+}
+.text-primary-hover-color {
+  color: #1a95ff;
+}
+.text-primary-focus-color {
+  color: #0082f2;
+}
+.text-primary-dark-4-color {
+  color: #007be6;
+}
+.text-primary-dark-5-color {
+  color: #006ecc;
+}
+.text-primary-dark-5-color {
+  color: #006ecc;
+}
+.text-primary-dark-6-color {
+  color: #005299;
+}
+.text-primary-dark-7-color {
+  color: #003e73;
+}
+.text-primary-alpha-2-color {
+  color: rgba(0, 137, 255, 0.8);
+}
+.text-primary-alpha-3-color {
+  color: rgba(0, 137, 255, 0.6);
+}
+.text-primary-alpha-4-color {
+  color: rgba(0, 137, 255, 0.4);
+}
+.text-primary-alpha-5-color {
+  color: rgba(0, 137, 255, 0.3);
+}
+.text-primary-alpha-6-color {
+  color: rgba(0, 137, 255, 0.2);
+}
+.text-primary-alpha-7-color {
+  color: rgba(0, 137, 255, 0.1);
+}
+.text-primary-alpha-8-color {
+  color: rgba(0, 137, 255, 0.06);
+}
+.text-primary-alpha-9-color {
+  color: rgba(0, 137, 255, 0.04);
+}
+.text-normal-alpha-1-color {
+  color: #1f3858;
+}
+.text-normal-alpha-2-color {
+  color: rgba(31, 56, 88, 0.8);
+}
+.text-normal-alpha-3-color {
+  color: rgba(31, 56, 88, 0.6);
+}
+.text-normal-alpha-4-color {
+  color: rgba(31, 56, 88, 0.4);
+}
+.text-normal-alpha-5-color {
+  color: rgba(31, 56, 88, 0.3);
+}
+.text-normal-alpha-6-color {
+  color: rgba(31, 56, 88, 0.2);
+}
+.text-normal-alpha-7-color {
+  color: rgba(31, 56, 88, 0.1);
+}
+.text-normal-alpha-8-color {
+  color: rgba(31, 56, 88, 0.06);
+}
+.text-normal-alpha-9-color {
+  color: rgba(31, 56, 88, 0.04);
+}
+.text-dark-alpha-1-color {
+  color: #000000;
+}
+.text-dark-alpha-2-color {
+  color: rgba(0, 0, 0, 0.8);
+}
+.text-dark-alpha-3-color {
+  color: rgba(0, 0, 0, 0.6);
+}
+.text-dark-alpha-4-color {
+  color: rgba(0, 0, 0, 0.4);
+}
+.text-dark-alpha-5-color {
+  color: rgba(0, 0, 0, 0.3);
+}
+.text-dark-alpha-6-color {
+  color: rgba(0, 0, 0, 0.2);
+}
+.text-dark-alpha-7-color {
+  color: rgba(0, 0, 0, 0.1);
+}
+.text-dark-alpha-8-color {
+  color: rgba(0, 0, 0, 0.06);
+}
+.text-dark-alpha-9-color {
+  color: rgba(0, 0, 0, 0.04);
+}
+.text-white-alpha-1-color {
+  color: #ffffff;
+}
+.text-white-alpha-2-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+.text-white-alpha-3-color {
+  color: rgba(255, 255, 255, 0.6);
+}
+.text-white-alpha-4-color {
+  color: rgba(255, 255, 255, 0.4);
+}
+.text-white-alpha-5-color {
+  color: rgba(255, 255, 255, 0.3);
+}
+.text-white-alpha-6-color {
+  color: rgba(255, 255, 255, 0.2);
+}
+.text-white-alpha-7-color {
+  color: rgba(255, 255, 255, 0.1);
+}
+.text-white-alpha-8-color {
+  color: rgba(255, 255, 255, 0.06);
+}
+.text-white-alpha-9-color {
+  color: rgba(255, 255, 255, 0.04);
+}
+.text-danger-color {
+  color: #F04631;
+}
+.text-warning-color {
+  color: #FABD0E;
+}
+.text-success-color {
+  color: #66bc5c;
+}
+.text-link-color {
+  color: #3C99D8;
+}
+.text-info-color {
+  color: #45a8e6;
+}
+.text-query-color {
+  color: #24bee8;
+}
+.text-danger-color {
+  color: #F04631;
+}
+.text-danger-alpha-2-color {
+  color: rgba(240, 70, 49, 0.8);
+}
+.text-danger-alpha-7-color {
+  color: rgba(240, 70, 49, 0.1);
+}
+.text-danger-alpha-8-color {
+  color: rgba(240, 70, 49, 0.06);
+}
+.text-warning-color {
+  color: #FABD0E;
+}
+.text-warning-alpha-2-color {
+  color: rgba(250, 189, 14, 0.8);
+}
+.text-warning-alpha-7-color {
+  color: rgba(250, 189, 14, 0.1);
+}
+.text-warning-alpha-8-color {
+  color: rgba(250, 189, 14, 0.06);
+}
+.text-success-color {
+  color: #66bc5c;
+}
+.text-success-alpha-2-color {
+  color: rgba(102, 188, 92, 0.8);
+}
+.text-success-alpha-7-color {
+  color: rgba(102, 188, 92, 0.1);
+}
+.text-success-alpha-8-color {
+  color: rgba(102, 188, 92, 0.06);
+}
+.text-link-color {
+  color: #3C99D8;
+}
+.text-link-alpha-2-color {
+  color: rgba(60, 153, 216, 0.8);
+}
+.text-link-alpha-7-color {
+  color: rgba(60, 153, 216, 0.1);
+}
+.text-link-alpha-8-color {
+  color: rgba(60, 153, 216, 0.06);
+}
+.text-danger-hover-color {
+  color: #f25946;
+}
+.text-danger-focus-color {
+  color: #e4432f;
 }
 .border-primary-color {
   border-color: #0089FF;
@@ -16631,7 +16832,7 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230089FF%22%20stroke%3D%22%230089FF%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-checked.kuma-tree-checkbox-disabled {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .use-svg .kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230089FF%22%20stroke%3D%22%230089FF%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
@@ -17497,7 +17698,7 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230089FF%22%20stroke%3D%22%230089FF%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .use-svg .uxcore-tree-select-tree-checkbox.uxcore-tree-select-tree-checkbox-checked.uxcore-tree-select-tree-checkbox-disabled {
-  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(31%2C56%2C88%2C0.04)%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(31%2C56%2C88%2C0.2)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
 }
 .use-svg .uxcore-tree-select-tree-checkbox.uxcore-tree-select-tree-checkbox-indeterminate {
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230089FF%22%20stroke%3D%22%230089FF%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E") no-repeat;
