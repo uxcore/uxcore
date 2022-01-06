@@ -136,68 +136,68 @@ gulp.task('js_build', ['js_clean'], function (done) {
 
 gulp.task('js_uglify', ['js_build'], function (done) {
   gulp.src('./build/uxcore.js')
-      .pipe(uglify({
-        mangle: false,
-      }))
-      .pipe(rename('uxcore.min.js'))
-      .pipe(gulp.dest('./build'))
-      .on('end', function () {
-        done();
-      });
+    .pipe(uglify({
+      mangle: false,
+    }))
+    .pipe(rename('uxcore.min.js'))
+    .pipe(gulp.dest('./build'))
+    .on('end', function () {
+      done();
+    });
 });
 
 gulp.task('theme', ['theme_clean', 'iconfont'], function (done) {
   gulp.src(['./style/theme/**/*.less'])
-      .pipe(less({
-        plugins: [autoprefix, LessPluginInlineUrls, new LessPluginFunctions()],
-      }))
-      .pipe(gulp.dest('./assets'))
-      .on('end', function () {
-        done();
-      });
+    .pipe(less({
+      plugins: [autoprefix, LessPluginInlineUrls, new LessPluginFunctions()],
+    }))
+    .pipe(gulp.dest('./assets'))
+    .on('end', function () {
+      done();
+    });
 });
 
 
 gulp.task('theme_transport', ['theme'], function () {
-  var themes = ['blue', 'orange', 'green', 'alipay','yida'];
+  var themes = ['blue', 'orange', 'green', 'alipay', 'yida', 'procurement'];
   themes.forEach(function (theme) {
     gulp.src(['./assets/' + theme + '/kuma.css'])
-        .pipe(concat(theme + '.css'))
-        .pipe(gulp.dest('./assets'))
-        .pipe(cleancss(cleancssOption))
-        .pipe(rename({
-          suffix: '.min',
-        }))
-        .pipe(gulp.dest('./assets'));
+      .pipe(concat(theme + '.css'))
+      .pipe(gulp.dest('./assets'))
+      .pipe(cleancss(cleancssOption))
+      .pipe(rename({
+        suffix: '.min',
+      }))
+      .pipe(gulp.dest('./assets'));
   });
   themes.forEach(function (theme) {
     gulp.src(['./assets/' + theme + '/compatible.css'])
-        .pipe(rename({
-          prefix: theme + '-',
-        }))
-        .pipe(gulp.dest('./assets'))
-        .pipe(cleancss(cleancssOption))
-        .pipe(rename({
-          suffix: '.min',
-        }))
-        .pipe(gulp.dest('./assets'));
+      .pipe(rename({
+        prefix: theme + '-',
+      }))
+      .pipe(gulp.dest('./assets'))
+      .pipe(cleancss(cleancssOption))
+      .pipe(rename({
+        suffix: '.min',
+      }))
+      .pipe(gulp.dest('./assets'));
   });
   themes.forEach(function (theme) {
     gulp.src(['./assets/' + theme + '/'])
-        .pipe(clean({
-          read: false,
-        }));
+      .pipe(clean({
+        read: false,
+      }));
   });
 });
 
 gulp.task('iconfont', ['theme_clean'], function (done) {
   gulp.src(['./iconfont.css'])
-      .pipe(cssimport())
-      .pipe(cleancss({ compatibility: 'ie8' }))
-      .pipe(gulp.dest('./assets'))
-      .on('end', function () {
-        done();
-      });
+    .pipe(cssimport())
+    .pipe(cleancss({ compatibility: 'ie8' }))
+    .pipe(gulp.dest('./assets'))
+    .on('end', function () {
+      done();
+    });
 });
 
 gulp.task('js_clean', function (done) {
@@ -247,7 +247,7 @@ function informDD(log, ver) {
       content: log,
       version: ver
     }
-  }, function(err) {
+  }, function (err) {
     if (err) {
       throw err
     }
