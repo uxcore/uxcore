@@ -1,5 +1,5 @@
 ## 0.22.42
-- [Style] `new` 新增采购主题
+`new` 新增采购主题
 
 ## 0.22.41
 - [Style] `fix` checkbox disabled checked style in dark background
