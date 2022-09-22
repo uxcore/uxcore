@@ -105,7 +105,7 @@ function getQuestions() {
           message: 'changelog',
           validate: function (input) {
             if (!input) return 'changlog is empty';
-            return true
+            return true;
           },
         },
       ];
@@ -240,25 +240,25 @@ function informDD(log, ver) {
     method: 'POST',
     json: true,
     headers: {
-      'Content-Type': 'application/json;charset=utf-8'
+      'Content-Type': 'application/json;charset=utf-8',
     },
     body: {
       type: 'uxcore',
       content: log,
-      version: ver
-    }
+      version: ver,
+    },
   }, function (err) {
     if (err) {
-      throw err
+      throw err;
     }
-  })
+  });
 }
 
 gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
   getQuestions().then(function (questions) {
     inquirer.prompt(questions).then(function (answers) {
-      const ver = answers.version
-      const log = setChangeLog(answers.changeLog, ver)
+      const ver = answers.version;
+      const log = setChangeLog(answers.changeLog, ver);
       // informDD(log, ver)
       pkg.version = ver;
       file.writeFileFromString(JSON.stringify(pkg, null, ' '), 'package.json');
@@ -282,14 +282,23 @@ gulp.task('test', function (done) {
 });
 
 gulp.task('makefiles', function () {
+  const CompNameReplaceMap = {
+    Radiogroup: 'RadioGroup',
+    UserGuideV2: 'UserGuide',
+  };
+
+  const compnameReplaceMap = {
+  };
   rimraf('./lib', {}, () => {
     const components = Object.keys(pkg.dependencies)
       .filter((comp) => /^uxcore-/.test(comp))
       .map((comp) => {
         const compname = comp.split('-').slice(1).join('-');
+        let CompName = to.pascal(compname);
+        CompName = CompNameReplaceMap[CompName] || CompName;
         return {
-          compname,
-          CompName: to.pascal(compname) === 'Radiogroup' ? 'RadioGroup' : to.pascal(compname),
+          compname: compnameReplaceMap[compname] || compname,
+          CompName,
         };
       });
 
