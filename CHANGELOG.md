@@ -1,3 +1,6 @@
+## 0.22.44-beta.0
+`new` support localePack
+
 ## 0.22.43
 - [chore] 更新 user-guide 为 user-guide-v2
 
