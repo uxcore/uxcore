@@ -1,3 +1,6 @@
+## 0.22.44-beta.1
+`new` 新增 locale key zh_CN en_US
+
 ## 0.22.44-beta.0
 `new` support localePack
 
