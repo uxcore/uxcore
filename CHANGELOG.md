@@ -1,14 +1,17 @@
+## 0.22.44-beta.2
+- `new` update calendar
+
 ## 0.22.44-beta.1
-`new` 新增 locale key zh_CN en_US
+- `new` 新增 locale key zh_CN en_US
 
 ## 0.22.44-beta.0
-`new` support localePack
+- `new` support localePack
 
 ## 0.22.43
 - [chore] 更新 user-guide 为 user-guide-v2
 
 ## 0.22.42
-`new` 新增采购主题
+- `new` 新增采购主题
 
 ## 0.22.41
 - [Style] `fix` checkbox disabled checked style in dark background
