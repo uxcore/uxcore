@@ -1,3 +1,6 @@
+## 0.22.44
+- `chore` release 0.22.44
+
 ## 0.22.44-beta.2
 - `new` update calendar
 
