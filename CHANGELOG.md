@@ -1,3 +1,6 @@
+## 0.22.45
+- [Calendar] `fix` locale 兼容性问题
+
 ## 0.22.44
 - `chore` release 0.22.44
 
